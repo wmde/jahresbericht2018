@@ -19,8 +19,8 @@ source $DETA/vcs.sh
 role SOURCE
 role TARGET
 
-# TMP=$(mktemp -d -t deta)
-# defer rm -rf $TMP
+TMP=$(mktemp -d -t deta)
+defer rm -rf $TMP
 
 BRANCH=$(git_current_branch)
 msgwarn "Selected branch %s!" $BRANCH
@@ -85,30 +85,11 @@ cd $TMP
 git submodule update --init --recursive
 cd -
 
-msg "Installing composer packages..."
-cd $TMP/app
-composer --prefer-dist --no-dev install
-composer dump-autoload --optimize
-cd -
-
-msg "Excuting post install scripts..."
-cd $TMP/app/libraries/li3_cldr
-composer run-script post-install-cmd
-cd -
-
-# Last preparations before transfer.
-# msg "Determing data upgrades..."
-# DATA_UPGRADE_FILES=$(git diff-tree --name-only -r ${REV_DEPLOYED}.. -- data/upgrade);
-
 # Version
 fill "__VERSION_BUILD__" "$REV_HEAD" $TMP/config/current.env
-fill "__PROJECT_VERSION_BUILD__" "$REV_HEAD" $TMP/app/assets/css/base.css
-fill "__PROJECT_VERSION_BUILD__" "$REV_HEAD" $TMP/app/assets/js/base.js
-fill "__PROJECT_VERSION_BUILD__" "$REV_HEAD" $TMP/app/libraries/base_core/assets/css/admin.css
-fill "__PROJECT_VERSION_BUILD__" "$REV_HEAD" $TMP/app/libraries/base_core/assets/js/base.js
-
-# Resources
-g11n_compile_mo $TMP/app/resources/g11n/po
+fill "__PROJECT_VERSION_BUILD__" "$REV_HEAD" $TMP/app/webroot/index.html
+fill "__PROJECT_VERSION_BUILD__" "$REV_HEAD" $TMP/assets/css/base.css
+fill "__PROJECT_VERSION_BUILD__" "$REV_HEAD" $TMP/assets/js/base.js
 
 # Assets pipeline
 COMPRESSOR_JS="yuicompressor"
@@ -153,30 +134,12 @@ run_ssh $TARGET_USER@$TARGET_HOST <<-SESSION
 	./deta.sh -c ../config create-config.sh
 	./deta.sh -c ../config fix-perms.sh
 	./deta.sh -c ../config create-integrity-spec.sh
-	echo "Installing crontab..."
-	crontab ../config/crons
 SESSION
-# Add these to the commands above in case async processing is used.
-#	supervisorctl update
-#	supervisorctl restart ${TARGET_NAME}_workers:*
 
 #
 # Post-Deploy
 #
 msg "Entering post-deploy stage..."
-
-# Data Migrations
-# msg "You will need to apply following new data upgrades:"
-# for FILE in $DATA_UPGRADE_FILES; do
-# 	echo " * $FILE"
-# done
-# echo
-# echo '--------------------------✄-----------------------------------'
-# for FILE in $DATA_UPGRADE_FILES; do
-# 	cat $FILE
-# done
-# echo '--------------------------✄-----------------------------------'
-# echo
 
 # Finalize
 cd $SOURCE_PATH
