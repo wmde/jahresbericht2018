@@ -19,8 +19,8 @@ source $DETA/vcs.sh
 role SOURCE
 role TARGET
 
-TMP=$(mktemp -d -t deta)
-defer rm -rf $TMP
+# TMP=$(mktemp -d -t deta)
+# defer rm -rf $TMP
 
 BRANCH=$(git_current_branch)
 msgwarn "Selected branch %s!" $BRANCH
