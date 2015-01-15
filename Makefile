@@ -22,8 +22,8 @@ install:
 	# USER already set in david.env
 	sed -i -e "s|__PATH__|$(_PATH)|g" $(CURDIR)/config/david.env
 	sed -i -e "s|__NAME__|$(NAME)|g" $(CURDIR)/config/vm.env
-	sed -i -e "s|__USER__|$(USER)|g" $(CURDIR)/config/vm.env
-	sed -i -e "s|__PATH__|$(_PATH)|g" $(CURDIR)/config/vm.env
+	# USER already set in vm.env
+	sed -i -e "s|__PATH__|/vagrant/$(NAME)|g" $(CURDIR)/config/vm.env
 	
 	chmod -R a+rwX $(CURDIR)/log
 
