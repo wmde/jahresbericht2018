@@ -1,0 +1,55 @@
+#
+# Atelier Disko Distribution - Nginx App Server Configuration File
+#
+# Copyright (c) 2013-2014 Atelier Disko - All rights reserved.
+#
+# This software is proprietary and confidential. Redistributions
+# not permitted. Unless required by applicable law or agreed to
+# in writing, software distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+# This file is meant to be included *inside* a http directive.
+#
+
+# Rate Limit Requests Server Wide, 1m per 16K IPs; set to hold max. 48K
+limit_req_zone $binary_remote_addr zone=__NAME_____CONTEXT__:3m rate=500r/s;
+
+server {
+	listen 80;
+	server_name www.__DOMAIN__;
+	root __PATH__/app/webroot;
+
+	# The www. server redirects to non-www domain. 
+	return 301 $scheme://__DOMAIN__$request_uri;
+}
+server {
+	listen 80;
+	server_name __DOMAIN__;
+	root __PATH__/app/webroot;
+
+	# Rate limit.
+	# error_page 503 /errors/503.html;
+	limit_req zone=__NAME_____CONTEXT__ burst=50 nodelay;
+
+ 	location /assets/ {
+ 		alias __PATH__/assets/;
+ 		include __PATH__/config/nginx/includes/assets.conf;
+ 	}
+ 	location / {
+ 		root __PATH__/app/webroot;
+ 		include __PATH__/config/nginx/includes/app.conf;
+ 	}
+}
+
+#
+# Variant: Passwor Protection
+#
+# To enable  password protection i.e. on staging environments,
+# add the following include in your servers as per this template.
+#
+# server {
+#	...
+#	include __PATH__/config/nginx/includes/access.conf;
+# 	...
+# }
+

@@ -1,0 +1,57 @@
+Atelier Disko Distribution
+-- Distribution for Atelier Disko projects.
+
+-- REPLACE THIS README WITH YOUR PROJECT'S README  --
+-- REPLACE THE LICENSE WITH YOUR PROJECT'S LICENSE --
+
+Abstract
+--------
+This is an application distribution. This distribution is providing a
+boilerplate for Atelier Disko projects and contains confidential and
+proprietary code.
+
+Running Tasks
+-------------
+The distribution comes with some useful scripts that help with setting up the application
+and reaching as far as deploying the whole project. These tasks can be listed and
+executed as follows. Tasks are based on deta[1], for more information see the
+deta projects documentation.
+
+$ cd /path/to/project/bin
+$ ./deta -c ../config/deta
+$ ./deta -c ../config/deta fix-perms.sh
+
+[1] https://github.com/davidpersson/deta
+
+Deploying
+---------
+$ cd /path/to/project/bin
+$ ./deta -c ../config/deta deploy.sh
+
+Initializing
+------------
+$ cd /path/to/project
+$ make install
+
+$ cd /path/to/project/bin
+$ ./deta -c ../config/deta create-config.sh
+
+... edit /path/to/project/config/deta/dev.conf ...
+
+Authors
+-------
+David Persson for Atelier Disko (david@atelierdisko.de).
+
+Copyright & License
+-------------------
+Copyright (c) 2013-2014 Atelier Disko - All rights reserved.
+
+-- This software is proprietary and confidential. Redistributions   --
+-- not permitted. Unless required by applicable law or agreed to    --
+-- in writing, software distributed on an "AS IS" BASIS, WITHOUT    --
+-- WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. --
+
+Copyright and license information for contained 3rd party libraries can
+be found in (a) the `doc/licenses` directory, (b) the header of the files
+contained in the library or (c) the directory of the library.
+
