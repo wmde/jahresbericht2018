@@ -67,6 +67,9 @@ if [[ "$OPTIMIZE" != "n" ]]; then
 	done
 fi
 
+msg "Moving assets directory in webroot."
+mv -v $TMP/assets $TMP/app/webroot/
+
 vcs_clear $TMP
 
 msg "Fixing group permissions..."
