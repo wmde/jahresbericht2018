@@ -10,6 +10,36 @@ This is an application distribution. This distribution is providing a
 boilerplate for Atelier Disko projects and contains confidential and
 proprietary code.
 
+This distribution especially is made for "micro" projects. Such a project
+doesn't have a backend but consists of plain HTML files, CSS and JS.
+
+Where is What
+-------------
+HTML files are placed within `app/webroot/`. Any assets go into
+`assets/` and their subdirectories. The `assets/js/` directory is
+a bit special.
+
+Inside that directory you'll find `base.js` which is used for
+requireJS configuration and loading. Script files that are included
+directly are contained inside `assets/js/views/`.
+
+Initializing
+------------
+$ cd /path/to/project
+$ make install
+
+$ cd /path/to/project/bin
+$ ./deta create-config.sh
+
+You now must now define which of the available environments
+is the current active one for your environment. In the example below we
+select the VM environment as our current one.
+
+$ cd ../config
+$ ls -l *.env
+$ rm current.env
+$ ln -s vm.env current.env
+
 Running Tasks
 -------------
 The distribution comes with some useful scripts that help with setting up the application
@@ -18,25 +48,15 @@ executed as follows. Tasks are based on deta[1], for more information see the
 deta projects documentation.
 
 $ cd /path/to/project/bin
-$ ./deta -c ../config/deta
-$ ./deta -c ../config/deta fix-perms.sh
+$ ./deta
+$ ./deta fix-perms.sh
 
 [1] https://github.com/davidpersson/deta
 
 Deploying
 ---------
 $ cd /path/to/project/bin
-$ ./deta -c ../config/deta deploy.sh
-
-Initializing
-------------
-$ cd /path/to/project
-$ make install
-
-$ cd /path/to/project/bin
-$ ./deta -c ../config/deta create-config.sh
-
-... edit /path/to/project/config/deta/dev.conf ...
+$ ./deta deploy.sh
 
 Authors
 -------
