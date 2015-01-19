@@ -13,13 +13,25 @@ proprietary code.
 This distribution especially is made for "micro" projects. Such a project
 doesn't have a backend but consists of plain HTML files, CSS and JS.
 
-Where is What
--------------
-HTML files are placed within `app/webroot/`. Any assets go into
-`assets/` and their subdirectories. The `assets/js/` directory is
-a bit special.
+HTML
+----
+HTML files are to be placed in `app/webroot/`.
 
-Inside that directory you'll find `base.js` which is used for
+Autoloading of CSS and JS
+-------------------------
+These libaries will always be loaded and bootstrap
+the applications JavaScript, they must always be present:
+
+  - assets/js/jquery.js
+  - assets/js/require.js
+  - assets/js/base.js
+
+These Stylesheets are always loaded and must be present:
+
+  - asssets/css/reset.css
+  - asssets/css/base.css
+
+Inside `assets/js` you'll find `base.js` which is used for
 requireJS configuration and loading. Script files that are included
 directly are contained inside `assets/js/views/`.
 
