@@ -13,7 +13,7 @@
 NAME ?= $(shell basename $(CURDIR))
 USER ?= $(shell whoami)
 _PATH ?= $(shell pwd)
-UNAME := $(shell uname)
+UNAME := $(shell uname -s)
 
 .PHONY: install
 install: 
@@ -27,15 +27,15 @@ install:
 	
 	chmod -R a+rwX $(CURDIR)/log
 
+ifeq ($(UNAME),Darwin)
+
 .PHONY: install-deploy
 install-deploy:
-	ifeq ($(UNAME, Darwin))
-		brew install node
-		brew install yuicompressor
-		brew install pngcrush
-		# brew install jpegtran
-		# brew install closure-compiler
-	endif
+	brew install node
+	brew install yuicompressor
+	brew install pngcrush
+	# brew install jpegtran
+	# brew install closure-compiler
 	
 	npm install -g myth
 	# npm install -g clean-css
@@ -49,3 +49,4 @@ install-deploy:
 	sed -i -e "s|__USER__|$(USER)|g" $(CURDIR)/config/prod.env
 	sed -i -e "s|__PATH__|$(_PATH)|g" $(CURDIR)/config/prod.env
 
+endif
