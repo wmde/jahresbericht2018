@@ -20,8 +20,6 @@ for N in app assets access; do
 	cp $N.conf{.default,}
 	fill __PATH__ $THIS_PATH ${N}.conf
 	fill __DOMAIN__ $THIS_DOMAIN ${N}.conf
-	fill __NGINX_FASTCGI_CONFIG__ $THIS_NGINX_FASTCGI_CONFIG ${N}.conf
-	fill __PHP_FPM_SOCKET__ $THIS_PHP_FPM_SOCKET ${N}.conf
 done
 cd -
 
@@ -35,13 +33,11 @@ for N in app; do
 	fill __VERSION__ $VERSION ${N}.conf
 	fill __NAME__ $THIS_NAME ${N}.conf
 	fill __CONTEXT__ $THIS_CONTEXT ${N}.conf
-	fill __NGINX_FASTCGI_CONFIG__ $THIS_NGINX_FASTCGI_CONFIG ${N}.conf
-	fill __PHP_FPM_SOCKET__ $THIS_PHP_FPM_SOCKET ${N}.conf
 done
 cd -
 
 cd $THIS_PATH/config
-for N in crons logrotate.conf; do
+for N in logrotate.conf; do
 	msg "Generating configuration from templates for ${N}..."
 
 	cp $N{.default,}
