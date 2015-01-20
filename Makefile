@@ -27,26 +27,11 @@ install:
 	
 	chmod -R a+rwX $(CURDIR)/log
 
-ifeq ($(UNAME),Darwin)
-
 .PHONY: install-deploy
 install-deploy:
-	brew install node
-	brew install yuicompressor
-	brew install pngcrush
-	# brew install jpegtran
-	# brew install closure-compiler
-	
-	npm install -g myth
-	# npm install -g clean-css
-	# npm install -g sqwish
-	# npm install -g uglify-js
-	
 	sed -i -e "s|__NAME__|$(NAME)|g" $(CURDIR)/config/stage.env
 	sed -i -e "s|__USER__|$(USER)|g" $(CURDIR)/config/stage.env
 	sed -i -e "s|__PATH__|$(_PATH)|g" $(CURDIR)/config/stage.env
 	sed -i -e "s|__NAME__|$(NAME)|g" $(CURDIR)/config/prod.env
 	sed -i -e "s|__USER__|$(USER)|g" $(CURDIR)/config/prod.env
 	sed -i -e "s|__PATH__|$(_PATH)|g" $(CURDIR)/config/prod.env
-
-endif

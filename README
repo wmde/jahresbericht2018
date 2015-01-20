@@ -70,6 +70,18 @@ Deploying
 $ cd /path/to/project/bin
 $ ./deta deploy.sh
 
+The following tools are needed in order to deploy, these are build-time dependencies.
+
+- node
+- yuicompressor
+- pngcrush
+- jpegtran
+- closure-compiler
+- myth (via npm)
+- clean-css (via npm)
+- sqwish (via npm)
+- uglify-js (via npm)
+
 Authors
 -------
 David Persson for Atelier Disko (david@atelierdisko.de).
