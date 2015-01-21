@@ -13,8 +13,7 @@ source $DETA/util.sh
 source $DETA/asset.sh
 source $DETA/vcs.sh
 
-role SOURCE
-role TARGET
+role THIS
 
 TMP=$(mktemp -d -t deta)
 
@@ -26,7 +25,7 @@ dry
 msg "Preparing build stage..."
 
 msg "Cloning repository..."
-git clone --verbose --single-branch --recursive --branch $BRANCH $SOURCE_REPO $TMP
+git clone --verbose --single-branch --recursive --branch $BRANCH $THIS_REPO $TMP
 
 msg "Determing versions...."
 REV_HEAD=$(git_rev_for HEAD)
