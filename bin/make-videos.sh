@@ -2,7 +2,7 @@
 #
 # Atelier Disko Video Trancoding Script
 #
-# Copyright (c) 2014-2015 Atelier Disko - All rights reserved.
+# Copyright (c) 2015-2015 Atelier Disko - All rights reserved.
 #
 # This software is proprietary and confidential. Redistributions
 # not permitted. Unless required by applicable law or agreed to
