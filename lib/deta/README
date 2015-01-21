@@ -1,0 +1,191 @@
+
+|===\  (==== ===== /===\
+|    ) |--     |   |-=-|
+|===/  (====   |   |   |
+
+---- Shell build and deploy
+     system foundation.
+
+Synopsis
+--------
+Managing an application is executing commands, tasks are highly specific to
+individual applications. Deta supports you in instantly creating tasks in
+plain shell script. No extra abstraction layers where you don't need them but
+a small tool for launching the tasks, a handful of reusable functions and a
+sane configuration management.
+
+Copyright & License
+-------------------
+Deta is Copyright (c) 2011-2014 David Persson if not otherwise stated.
+The code is distributed under the terms of the MIT License. For
+the full license text see the LICENSE file.
+
+Versions & Requirements
+-----------------------
+0.1.0
+0.2.0
+0.3.0
+0.4.0
+0.5.0
+1.0.0 (in progress)
+
+The BASH (Bourne-Again SHell) is required. Deta is continously
+tested with recent BASH versions on Linux and Darwin.
+
+Installation
+------------
+It is suggested to install deta on a per-project basis.
+
+Clone the repository or extract a downloaded archive, then move
+or copy the resulting directory to /project/lib/deta.
+
+Change to the `deta` directory and run make, preferrably with a prefix:
+```
+$ cd /project/lib/deta
+$ PREFIX=/project make install
+```
+
+This will link the deta tool into the `bin` directory in your project's
+root directory and copy the default development configuraton into
+a `config/deta` directory. Thus making the deta tool available as:
+```
+$ cd /project/bin
+$ ./deta.sh -c ../config/deta
+```
+
+Other setups are possible too but than installation must be performed manually.
+You can remove the tool (but keep the configuration) by running:
+```
+$ cd /project/lib/deta
+$ PREFIX=/project make uninstall
+```
+
+Quickstart
+----------
+1. Start to edit a new task.
+   ```
+   $ $EDITOR deploy.sh
+   ```
+
+2. Source the g11n and transfer modules and require a THIS role.
+   ```
+   source $DETA/g11n.sh
+   source $DETA/transfer.sh
+
+   role THIS
+   # ...
+   ```
+
+3. Our task will clone the project into a temporary directory and recompile
+   all MO files. After the task has finished we want the temporary directory
+   to be deleted.
+   ```
+   # ...
+   TMP=$(mktemp -d -t deta.XXX)
+   defer rm -r $TMP
+
+   download $THIS_REPO $TMP
+   cd $TMP
+
+   g11n_compile_mo app/locale
+   # ...
+   ```
+
+4. Run the tasks through the deta tool.
+   ```
+   $ ./deta.sh deploy.sh
+   ```
+
+Example Tasks
+-------------
+You can find ready-to-use tasks in the "contrib" subdirectory.
+
+Shell Environment Variables
+---------------------------
+There are some environment variables that affect the way deta behaves.
+
+DETA_COMPRESSOR_JS
+Which compressor to use when compressing JavaScript files. Currently
+"yuicompressor", "closure-compiler" and "uglify-js" (>= 2.0) are
+supported. For more information see the documentation for compress_js() in the
+asset module. Defaults to "uglify-js".
+
+DETA_COMPRESSOR_CSS
+Which compressor to use when compressing CSS files. Currently "yuicompressor"
+"clean-css" and "sqwish" are supported. For more information see the documentation
+for compress_css() in the asset module. Defaults to "yuicompressor".
+
+DETA_CACHE_DIR
+Directory which holds the cached items for the internal cache. Will be created
+if it doesn't exist. Caches asset compressions. Defaults to "/tmp/deta_cache".
+
+Terminology
+-----------
+Tasks
+'''''
+Tasks are sourced by the deta tool they automatically have access to all
+the env configurations (loaded from *.conf).
+
+Following global variables are always available within tasks:
+QUIET (y|n), DRYRUN (y|n), DETA (deta directory), TASK (current task),
+CONTEXT (current environment context).
+
+Task are plain text files using `KEY=VALUE` for defining configuration
+variables and `#` for comments.
+
+Tasks can be located wherever you want. In the end you just pass the path to
+the deta tool. However it is nice to be able to group tasks, therefore it is
+suggested to create subdirectories directly in the `bin` directory.
+
+Modules
+'''''''
+Modules contain sets of functions and are loaded on demand by sourcing
+them in the beginning of each task. Modules shipped with deta are located
+in the directory specified by $DETA. Of course you can also built your own
+modules and load them in a similar way.
+
+```
+source $DETA/g11n.sh
+source $DETA/sys.sh
+# ...
+```
+
+By default the core module is always loaded, making functions as role and
+defer available in any task.
+
+Environments
+''''''''''''
+Environments are inspired by the way Lithium[1] detects and handles
+environment configuration. Environments (or env for short) allow you to keep
+host specific configuration settings in one place. You may have an env called
+DEV, STAGE or PROD. Configuration settings are is kept in dedicated files on a
+per env basis.
+
+By default deta comes with a configuration for the DEV env. You can add new
+environments by copying dev.conf to prod.conf.
+
+[1] li3 framework, http://li3.me
+
+Roles
+'''''
+Environments can _take_ roles. Tasks where you transfer transfer things
+between two machines would require SOURCE and a TARGET roles, whereas tasks
+that just build some stuff locally require a THIS role.
+
+To indicate that a task requires a role call the role function (from the core
+module) right below the source statements.
+
+```
+# source ...
+
+role SOURCE
+role TARGET
+# ...
+```
+
+The function will map an env to a role. This means a configuration setting
+available as i.e. HOST will become also available as SOURCE_HOST.
+
+The magic "THIS" role will always map to the current environment context. The
+current environment can be set using the "-e" option when starting deta.
+
