@@ -13,21 +13,28 @@
 
 msginfo "Module %s loaded." "asset"
 
-# Which compressor to use when compressing JavaScript files. Currently
+# Compressor to use when compressing JavaScript files. Currently
 # "yuicompressor", "closure-compiler" and "uglify-js" (>= 2.0) are
-# supported. For more information see the documentation for compress_js().
-COMPRESSOR_JS=${COMPRESSOR_JS:-"uglify-js"}
+# supported.
+COMPRESSOR_JS=${COMPRESSOR_JS:-"closure-compiler"}
 
-# Which compressor to use when compressing CSS files. Currently
-# "yuicompressor", "clean-css" and "sqwish" are supported. For more
-# information see the documentation for compress_css().
+# Compressor to use when compressing CSS files. Currently
+# "yuicompressor", "clean-css" and "sqwish" are supported.
 COMPRESSOR_CSS=${COMPRESSOR_CSS:-"yuicompressor"}
+
+# Compressor to use when compressing PNG files. Currently
+# "pngcrush" and "pngquant" are supported.
+COMPRESSOR_PNG=${COMPRESSOR_PNG:-"pngcrush"}
+
+# Compressor to use when compressing JPG files. Currently
+# "jpegtran" is supported.
+COMPRESSOR_JPG=${COMPRESSOR_JPG:-"jpegtran"}
 
 # @FUNCTION: compress_js
 # @USAGE: <target file> <source file 1> [source file 2] [...]
 # @DESCRIPTION:
-# Compresses and bundles JavaScript files. Depending on the setting of
-# COMPRESSOR_JS relies on certain tools to be available.
+# Compresses and bundles JavaScript files. Generates source maps if a compressing tool supports
+# Cit. Depending on the setting of COMPRESSOR_JS relies on certain tools to be available.
 function compress_js() {
 	local target=$1
 	local key="compress_js_${COMPRESSOR_JS}_$(md5 -q $@ | md5)"
@@ -50,7 +57,6 @@ function compress_js() {
 			;;
 		uglify-js)
 			uglifyjs $@ -c --comments -o $target \
-				--stats \
 				--source-map $target.map
 			;;
 		closure-compiler)
@@ -82,8 +88,8 @@ function bundle_js() {
 # @FUNCTION: compress_css
 # @USAGE: <target file> <source file 1> [source file 2] [...]
 # @DESCRIPTION:
-# Compresses and bundles CSS files. Depending on the setting of
-# COMPRESSOR_CSS relies on certain tools to be available.
+# Compresses and bundles CSS files. Generates source maps if a compressing tool supports
+# Cit. Depending on the setting of COMPRESSOR_CSS relies on certain tools to be available.
 function compress_css() {
 	local target=$1
 	local key="compress_css_${COMPRESSOR_CSS}_$(md5 -q $@ | md5)"
@@ -151,7 +157,7 @@ function bundle_css() {
 # and jpegtran to be available on the system.
 function compress_img() {
 	local file=$1
-	local key="compress_img_$(md5 -q $@ | md5)"
+	local key="compress_img_${COMPRESSOR_PNG}_${COMPRESSOR_JPG}_$(md5 -q $@ | md5)"
 
 	msg "Compressing %s in-place." $file
 
@@ -162,12 +168,24 @@ function compress_img() {
 
 	case $file in
 		*.png)
-			pngcrush -rem alla -rem text -q $file $file.tmp
+			case $COMPRESSOR_PNG in
+				pngcrush)
+					pngcrush -rem alla -rem text -q $file $file.tmp
+				;;
+				pngquant)
+					pngquant --speed 1 $file -o $file.tmp
+				;;
+			esac
 			mv $file.tmp $file
 		;;
 		*.jpg)
 			mogrify -strip $file
-			jpegtran -optimize -copy none $file -outfile $file.tmp
+
+			case $COMPRESSOR_JPG in
+				jpegtran)
+					jpegtran -optimize -copy none $file -outfile $file.tmp
+				;;
+			esac
 			mv $file.tmp $file
 		;;
 	esac
