@@ -15,6 +15,8 @@ source $DETA/vcs.sh
 
 role THIS
 
+COMPRESSOR_JS="uglify-js"
+
 TMP=$(mktemp -d -t deta)
 
 BRANCH=$(git_current_branch)

@@ -19,6 +19,8 @@ source $DETA/vcs.sh
 role SOURCE
 role TARGET
 
+COMPRESSOR_JS="uglify-js"
+
 TMP=$(mktemp -d -t deta)
 defer rm -rf $TMP
 
