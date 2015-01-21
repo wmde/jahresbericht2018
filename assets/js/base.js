@@ -28,7 +28,7 @@ requirejs.config({
     // the existing libraries found in js/compat.
     //
     // See https://github.com/atelierdisko/compat
-    'modernizr': 'compat/modernizr',
+    'modernizr': 'compat/modernizr'
   },
   shim: {
     // Base
