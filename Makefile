@@ -17,7 +17,6 @@ UNAME := $(shell uname -s)
 
 .PHONY: install
 install: 
-	git submodule update --init --recursive
 	sed -i -e "s|__NAME__|$(NAME)|g" $(CURDIR)/config/david.env
 	# USER already set in david.env
 	sed -i -e "s|__PATH__|$(_PATH)|g" $(CURDIR)/config/david.env

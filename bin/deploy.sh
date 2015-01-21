@@ -80,11 +80,6 @@ fi
 #
 msg "Entering build stage..."
 
-msg "Installing submodules..."
-cd $TMP
-git submodule update --init --recursive
-cd -
-
 # Version
 fill "__VERSION_BUILD__" "$REV_HEAD" $TMP/config/current.env
 fill "__PROJECT_VERSION_BUILD__" "$REV_HEAD" $TMP/app/webroot/index.html
