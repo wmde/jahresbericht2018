@@ -16,25 +16,29 @@ role THIS
 # All files will be based on $THIS_PATH/config later.
 FILES=""
 
-FILES+=" nginx/includes/app"
-FILES+=" nginx/includes/assets"
-FILES+=" nginx/includes/media"
-FILES+=" nginx/includes/access"
+FILES+=" nginx/includes/app.conf"
+FILES+=" nginx/includes/assets.conf"
+FILES+=" nginx/includes/access.conf"
 
-FILES+=" nginx/servers/app"
+FILES+=" nginx/servers/app.conf"
 msgok "Building for logrotate."
-FILES+=" logrotate"
+FILES+=" logrotate.conf"
 
 msg "Generating configurations from templates..."
 cd $THIS_PATH/config
 for N in $FILES; do
-	cp $N.conf{.default,}
-	fill __NAME__ $THIS_NAME ${N}.conf
-	fill __PATH__ $THIS_PATH ${N}.conf
-	fill __DOMAIN__ $THIS_DOMAIN ${N}.conf
-	fill __VERSION__ $VERSION ${N}.conf
-	fill __CONTEXT__ $THIS_CONTEXT ${N}.conf
-	fill __NGINX_REOPEN_LOGFILES__ "$THIS_NGINX_REOPEN_LOGFILES" ${N}
+	SOURCE=$N.default
+	TARGET=$(dirname $N)/$(basename -s .default $SOURCE)
+
+	msg "%s -> %s" $SOURCE $TARGET
+	cp -v $SOURCE $TARGET
+
+	fill __NAME__ $THIS_NAME $TARGET
+	fill __PATH__ $THIS_PATH $TARGET
+	fill __DOMAIN__ $THIS_DOMAIN $TARGET
+	fill __VERSION__ $VERSION $TARGET
+	fill __CONTEXT__ $THIS_CONTEXT $TARGET
+	fill __NGINX_REOPEN_LOGFILES__ "$THIS_NGINX_REOPEN_LOGFILES" $TARGET
 done
 cd -
 
