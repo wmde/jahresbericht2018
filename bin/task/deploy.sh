@@ -128,9 +128,9 @@ set -o errexit
 
 run_ssh $TARGET_USER@$TARGET_HOST <<-SESSION
 	cd $TARGET_PATH/bin
-	./deta.sh -c ../config create-config.sh
-	./deta.sh -c ../config fix-perms.sh
-	./deta.sh -c ../config create-integrity-spec.sh
+	./deta.sh -c ../config task/create-config.sh
+	./deta.sh -c ../config task/fix-perms.sh
+	./deta.sh -c ../config task/create-integrity-spec.sh
 SESSION
 
 #
