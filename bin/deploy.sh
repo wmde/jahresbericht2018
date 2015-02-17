@@ -144,3 +144,8 @@ msg "Tagging revision %s as deployed." $REV_HEAD
 git tag -f $TAG_DEPLOYED $REV_HEAD
 cd -
 
+msg "Sending notification to slack."
+MESSAGE="Deployed *${TARGET_NAME}* at revision ${REV_HEAD} from context ${SOURCE_CONTEXT} to <http://${TARGET_DOMAIN}|${TARGET_CONTEXT}>."
+curl -s -S -X POST \
+	--data-urlencode "payload={\"text\": \"${MESSAGE}\"}" \
+	https://hooks.slack.com/services/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
