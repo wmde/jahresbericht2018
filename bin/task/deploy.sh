@@ -68,7 +68,7 @@ if [[ $INITIAL_DEPLOYMENT != "y" ]]; then
 	set +o errexit
 	run_ssh $TARGET_USER@$TARGET_HOST <<-SESSION
 		cd $TARGET_PATH/bin
-		./deta.sh -c ../config/deta check-integrity.sh
+		./deta.sh task/check-integrity.sh
 	SESSION
 	set -o errexit
 	read -p "Integrity OK? (Y/n) " PROCEED
