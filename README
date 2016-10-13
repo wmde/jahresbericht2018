@@ -35,53 +35,6 @@ Inside `assets/js` you'll find `base.js` which is used for
 requireJS configuration and loading. Script files that are included
 directly are contained inside `assets/js/views/`.
 
-Initializing
-------------
-$ cd /path/to/project
-$ make install
-
-$ cd /path/to/project/bin
-$ ./deta create-config.sh
-
-You now must now define which of the available environments
-is the current active one for your environment. In the example below we
-select the VM environment as our current one.
-
-$ cd ../config
-$ ls -l *.env
-$ rm current.env
-$ ln -s vm.env current.env
-
-Running Tasks
--------------
-The distribution comes with some useful scripts that help with setting up the application
-and reaching as far as deploying the whole project. These tasks can be listed and
-executed as follows. Tasks are based on deta[1], for more information see the
-deta projects documentation.
-
-$ cd /path/to/project/bin
-$ ./deta
-$ ./deta fix-perms.sh
-
-[1] https://github.com/davidpersson/deta
-
-Deploying
----------
-$ cd /path/to/project/bin
-$ ./deta deploy.sh
-
-The following tools are needed in order to deploy, these are build-time dependencies.
-
-- node
-- yuicompressor
-- pngcrush
-- jpegtran
-- closure-compiler
-- myth (via npm)
-- clean-css (via npm)
-- sqwish (via npm)
-- uglify-js (via npm)
-
 Authors
 -------
 David Persson for Atelier Disko (david@atelierdisko.de).

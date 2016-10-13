@@ -1,0 +1,55 @@
+#
+# Atelier Disko Distribution
+#
+# Copyright (c) 2016 Atelier Disko - All rights reserved.
+#
+# Licensed under the AD General Software License v1.
+#
+# This software is proprietary and confidential. Redistributions
+# not permitted. Unless required by applicable law or agreed to
+# in writing, software distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+# You should have received a copy of the AD General Software
+# License. If not, see http://atelierdisko.de/licenses.
+#
+
+name = "__NAME__"
+context = "dev"
+
+domain __DOMAIN__ {
+	www = "drop"
+	# Either paths or special string "!self-signed"
+	# SSL = {
+	# 	certificate = "config/ssl/__DOMAIN__.crt"
+	# 	certificateKey = "config/ssl/__DOMAIN__.key"
+	# }
+	# auth {
+	# 	password = "changeme!"
+	# }
+}
+
+database {
+	password = ""
+}
+
+# cron high-freq {
+# 	schedule = "*:0/10"
+# 	command =  "bin/li3.php jobs runFrequency high"
+# }
+# cron medium-freq {
+# 	schedule = "hourly"
+# 	command =  "bin/li3.php jobs runFrequency medium"
+# }
+# cron low-freq {
+# 	schedule = "daily"
+# 	command =  "bin/li3.php jobs runFrequency low"
+# }
+
+# worker media-fix {
+# 	command = "app/libraries/bin/cute-worker --queue=fix --scope={{.P.Name}}_{{.P.Context}} -r app/libraries/base_core/config/bootstrap.php"
+# }
+# worker media-fixflux {
+# 	command = "app/libraries/bin/cute-worker --queue=fix,flux --scope={{.P.Name}}_{{.P.Context}} -r app/libraries/base_core/config/bootstrap.php"
+# }
+

@@ -1,14 +1,10 @@
 #
 # deta
 #
-# Copyright (c) 2011-2014 David Persson
+# Copyright (c) 2011 David Persson
 #
 # Distributed under the terms of the MIT License.
 # Redistributions of files must retain the above copyright notice.
-#
-# @COPYRIGHT 2011-2014 David Persson <nperson@gmx.de>
-# @LICENSE   http://www.opensource.org/licenses/mit-license.php The MIT License
-# @LINK      http://github.com/davidpersson/deta
 #
 
 # @FUNCTION: msg*
@@ -50,36 +46,23 @@ msginfo "Module %s loaded." "core"
 role() {
 	local role=$(echo $1 | tr '[:upper:]' '[:lower:]')
 
-	if [[ $role == "this" ]]; then
-		_env_to_role current $role
-	else
-		local avail=""
-
-		set +o errexit
-		for file in $(ls $CONFIG_PATH/*.env 2> /dev/null); do
-			local avail+="$(basename -s '.env' $file) "
-		done
-		set -o errexit
-
-		local PS3="Please select an env to map to role ${role}: "
-		select env in $avail; do
-			_env_to_role $env $role
-			break
-		done
+	if [[ $role != "this" ]]; then
+		msgfail "No support for any other role than THIS anymore; role %s was given" $role
+		exit 1
 	fi
+	_env_to_role
 	msgok "Using role %s." $role
 }
 
 # @FUNCTION: _env_to_role
-# @USAGE: <env> <role>
 # @DESCRIPTION:
 # Maps an env (left) to role provided to this function (right).
 _env_to_role() {
 	local tmp=$(mktemp -t deta.XXX)
 
-	perl -pe "s/^([a-zA-Z0-9_]+)=/$(echo $2 | tr '[:lower:]' '[:upper:]')_\1=/g" ${CONFIG_PATH}/${1}.env > $tmp
+	perl -pe "s/^([a-zA-Z0-9_]+)=/$(echo "THIS" | tr '[:lower:]' '[:upper:]')_\1=/g" $CONFIG_FILE > $tmp
 	source $tmp
-	msgok "Mapped env %s to role %s." $@
+	msgok "Mapped Envfile to role THIS." $@
 
 	rm $tmp
 }
@@ -176,3 +159,26 @@ _cache_write_from_file() {
 
 	cp $source $DETA_CACHE_DIR/$key
 }
+
+if [[ $(which md5 2>/dev/null || true) != "" ]]; then
+	HAS_BSD_MD5="y"
+else
+	HAS_BSD_MD5="n"
+fi
+
+_calc_md5() {
+	if [[ $HAS_BSD_MD5 == "y" ]]; then
+		echo $1 | md5
+	else
+		echo $1 | md5sum | cut -d " " -f1
+	fi
+}
+
+_calc_md5_file() {
+	if [[ $HAS_BSD_MD5 == "y" ]]; then
+		md5 -q $@ | md5
+	else
+		md5sum $@ | md5sum | cut -d " " -f1
+	fi
+}
+

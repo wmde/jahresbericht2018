@@ -16,19 +16,12 @@ sane configuration management.
 
 Copyright & License
 -------------------
-Deta is Copyright (c) 2011-2014 David Persson if not otherwise stated.
+Deta is Copyright (c) 2011 David Persson if not otherwise stated.
 The code is distributed under the terms of the MIT License. For
 the full license text see the LICENSE file.
 
-Versions & Requirements
+Requirements
 -----------------------
-0.1.0
-0.2.0
-0.3.0
-0.4.0
-0.5.0
-1.0.0 (in progress)
-
 The BASH (Bourne-Again SHell) is required. Deta is continously
 tested with recent BASH versions on Linux and Darwin.
 
@@ -105,23 +98,25 @@ Shell Environment Variables
 There are some environment variables that affect the way deta behaves.
 
 DETA_COMPRESSOR_JS
-Which compressor to use when compressing JavaScript files. Currently
+Which compressor/s to use when compressing JavaScript files. Currently
 "yuicompressor", "closure-compiler" and "uglify-js" (>= 2.0) are
 supported. For more information see the documentation for compress_js() in the
 asset module. Defaults to "uglify-js".
 
 DETA_COMPRESSOR_CSS
-Which compressor to use when compressing CSS files. Currently "yuicompressor"
+Which compressor/s to use when compressing CSS files. Currently "yuicompressor"
 "clean-css" and "sqwish" are supported. For more information see the documentation
 for compress_css() in the asset module. Defaults to "yuicompressor".
 
 COMPRESSOR_PNG
-Compressor to use when compressing PNG files. Currently
+Compressor/s to use when compressing PNG files. Currently
 "pngcrush" and "pngquant" are supported.
 
 COMPRESSOR_JPG
-Compressor to use when compressing JPG files. Currently
-"jpegtran" is supported.
+Compressor/s to use when compressing JPG files. Currently
+"imagemagick" and "jpegtran" is supported.
+
+-- Multiple compressors are delimited by a space. --
 
 DETA_CACHE_DIR
 Directory which holds the cached items for the internal cache. Will be created
@@ -161,39 +156,13 @@ source $DETA/sys.sh
 By default the core module is always loaded, making functions as role and
 defer available in any task.
 
-Environments
-''''''''''''
-Environments are inspired by the way Lithium[1] detects and handles
-environment configuration. Environments (or env for short) allow you to keep
-host specific configuration settings in one place. You may have an env called
-DEV, STAGE or PROD. Configuration settings are is kept in dedicated files on a
-per env basis.
+Environment Configuration
+'''''''''''''''''''''''''
+Environments (or env for short) allow you to keep host specific configuration
+settings in one place. This configuration is kept is an file in the root
+of the project (named "Envfile").
 
-By default deta comes with a configuration for the DEV env. You can add new
-environments by copying dev.conf to prod.conf.
-
-[1] li3 framework, http://li3.me
-
-Roles
-'''''
-Environments can _take_ roles. Tasks where you transfer transfer things
-between two machines would require SOURCE and a TARGET roles, whereas tasks
-that just build some stuff locally require a THIS role.
-
-To indicate that a task requires a role call the role function (from the core
-module) right below the source statements.
-
-```
-# source ...
-
-role SOURCE
-role TARGET
-# ...
-```
-
-The function will map an env to a role. This means a configuration setting
-available as i.e. HOST will become also available as SOURCE_HOST.
-
-The magic "THIS" role will always map to the current environment context. The
-current environment can be set using the "-e" option when starting deta.
+To use the environment configuration simply add `role THIS` to the
+top of your task. After this the configuration is available in
+variables prefixed with "THIS_".
 

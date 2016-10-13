@@ -1,0 +1,40 @@
+# -----------------------------------------------------------
+# Environment
+# -----------------------------------------------------------
+
+# The context of this environment.
+CONTEXT="dev"
+
+# The projects name.
+NAME="__NAME__"
+
+# Project version information.
+VERSION="1.0.0-alpha+__VERSION_BUILD__"
+VERSION_BUILD="__VERSION_BUILD__"
+
+# Enable or disable debug mode.
+DEBUG="y"
+
+# The host i.e. example.org, username and optional password.
+HOST="localhost"
+USER="nobody"
+
+# Absolute path to project (w/o trailing slash) and repository.
+PATH="/var/www/__NAME__"
+
+# The transfer method to use during deployment. Can be either 
+# the follwing. Most methods use HOST, USER and PASSWORD (when set) 
+# to connect.
+# - "ssh+rsync" to transfer files using rsync over ssh
+# - "ssh" to use scp
+# - "ftp" to mirror files via ftp
+# - "manual" to build the package locally but not transfer it
+TRANSFER_METHOD="ssh+rsync"
+
+# Will exclude directories and files in transfer tasks. Separate with
+# spaces. Possible used with rsync and lftp. fnmatch(5) patterns are
+# allowed. To exclude whole directory (not just its contents) DO append
+# slash. Patterns prefixed with a slash are anchored at the base path
+# (when used with rsync).
+TRANSFER_IGNORE=".git/ .svn/"
+
