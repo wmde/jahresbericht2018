@@ -13,7 +13,4 @@ NAME ?= $(shell basename $(CURDIR))
 
 .PHONY: install
 install: 
-	sed -i -e "s|__NAME__|$(NAME)|g" $(CURDIR)/config/david.env
-	sed -i -e "s|__NAME__|$(NAME)|g" $(CURDIR)/config/vm.env
-	sed -i -e "s|__NAME__|$(NAME)|g" $(CURDIR)/config/stage.env
-	sed -i -e "s|__NAME__|$(NAME)|g" $(CURDIR)/config/prod.env
+	sed -i -e "s|__NAME__|$(NAME)|g" $(CURDIR)/Envfile
