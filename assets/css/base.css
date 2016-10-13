@@ -12,18 +12,7 @@
 
 :root {
   /* Colors */
-  --color-dim-black: #1b1b1b;
-  --color-ci-blue: blue;
-  --color-ci-yellow: yellow;
-  --color-ci-green: green;
-  --color-ci-red: red;
-
-  /* Typography */
-  --font-size-alpha: 32px;
-  --font-size-beta:  20px;
-  --font-size-gamma: 16px;
-  --font-size-delta: 14px;
-  --font-size-epsilon: 14px;
+  --color-black: #1b1b1b;
 }
 
 /* Basics
@@ -32,14 +21,15 @@ body {
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
 
-  text-rendering: optimizeLegibility;
-  font-feature-settings: "frac" 1, "kern" 1, "liga" 1, "dlig" 1;
+  /* Disabled due to webkit tabs bug. */
+  /* text-rendering: optimizeLegibility; */
+  font-feature-settings: "kern" 1, "liga" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 
-  color: var(--color-dim-black);
+  color: var(--color-black);
   background-color: #fff;
 
   padding: 40px;
@@ -49,56 +39,20 @@ body {
   box-sizing: border-box;
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
 /* Text Sizes
 ---------------------------------------------------------------- */
-.t--alpha {
-  font-size: var(--font-size-alpha);
-  font-weight: bold;
-}
-.t--beta {
-  font-size: var(--font-size-beta);
-  font-weight: normal;
-}
-.t--gamma {
-  font-size: var(--font-size-gamma);
-}
-.t--delta {
-  font-size: var(--font-size-delta);
-}
-.t--epsilon {
-  font-size: var(--font-size-epsilon);
-}
 
 /* Headlines
 ---------------------------------------------------------------- */
-.h--alpha,
-.h--beta,
-.h--gamma,
-.h--delta,
-.h--epsilon {
-  font-size: var(--font-size-gamma);
-  font-weight: bolder;
-  margin: 0;
-}
-.h--alpha {
-  font-size: var(--font-size-alpha);
-}
-.h--beta {
-  font-size: var(--font-size-beta);
-  font-weight: normal;
-}
-.h--gamma {
-  font-size: var(--font-size-gamma);
-  font-weight: bold;
-}
-.h--delta {
-  font-size: var(--font-size-delta);
-  font-weight: normal;
-}
-.h--epsilon {
-  font-size: var(--font-size-epsilon);
-  font-weight: normal;
-}
 
 /* Hyperlinks
 ---------------------------------------------------------------- */
