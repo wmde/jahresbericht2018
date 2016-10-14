@@ -12,9 +12,6 @@ NAME="example"
 HOST="localhost"
 USER="nobody"
 
-# The domain under which the project is served.
-DOMAIN="example.org"
-
 # Name and absolute path to project (w/o trailing slash) and repository.
 PATH="/var/path/to/example"
 
