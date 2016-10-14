@@ -142,7 +142,7 @@ git tag -f $TAG_DEPLOYED $REV_HEAD
 cd -
 
 msg "Sending notification to slack."
-MESSAGE="Deployed *${THIS_NAME}* at revision ${REV_HEAD} by $(whoami) to <http://${THIS_DOMAIN}|${THIS_CONTEXT}>."
+MESSAGE="Deployed *${THIS_NAME}* at revision ${REV_HEAD} by $(whoami) to ${THIS_CONTEXT}."
 curl -s -S -X POST \
 	--data-urlencode "payload={\"text\": \"${MESSAGE}\"}" \
 	https://hooks.slack.com/services/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
