@@ -113,7 +113,7 @@ if [[ $THIS_TRANSFER_METHOD == "ssh+rsync" ]]; then
 	set -o errexit
 fi
 if [[ $THIS_TRANSFER_METHOD == "manual" ]]; then
-	BUILD_FILE=$TMP/${THIS_NAME}_$(date +%Y-%m-%d-%H-%M).tar.gz
+	BUILD_FILE=/tmp/${THIS_NAME}_$(date +%Y-%m-%d-%H-%M).tar.gz
 	msg "Creating build file %s..." $BUILD_FILE
 	cd $TMP
 	tar cvfz $BUILD_FILE *
