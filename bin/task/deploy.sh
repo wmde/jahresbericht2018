@@ -69,6 +69,7 @@ msg "Entering build stage..."
 # Version
 fill "__VERSION_BUILD__" "$REV_HEAD" $TMP/Envfile
 fill "__PROJECT_VERSION_BUILD__" "$REV_HEAD" $TMP/assets/css/base.css
+fill "__PROJECT_VERSION_BUILD__" "$REV_HEAD" $TMP/assets/js/base.js
 
 # Assets pipeline
 # yui does not work with jquery 2.2
