@@ -1,9 +1,6 @@
 Atelier Disko Distribution
 -- Distribution for Atelier Disko projects.
 
--- REPLACE THIS README WITH YOUR PROJECT'S README  --
--- REPLACE THE LICENSE WITH YOUR PROJECT'S LICENSE --
-
 Abstract
 --------
 This is an application distribution. This distribution is providing a
@@ -35,20 +32,17 @@ Inside `assets/js` you'll find `base.js` which is used for
 requireJS configuration and loading. Script files that are included
 directly are contained inside `assets/js/views/`.
 
-Authors
--------
-David Persson for Atelier Disko (david@atelierdisko.de).
-
 Copyright & License
 -------------------
-Copyright (c) 2013-2015 Atelier Disko - All rights reserved.
+Copyright (c) 2013 Atelier Disko - All rights reserved. 
+
+This project consists of multiple components which have differing licenses.
+Please consult the license contract signed with Atelier Disko for more
+information or the respective directories and file headers.
 
 -- This software is proprietary and confidential. Redistributions   --
 -- not permitted. Unless required by applicable law or agreed to    --
 -- in writing, software distributed on an "AS IS" BASIS, WITHOUT    --
 -- WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. --
 
-Copyright and license information for contained 3rd party libraries can
-be found in (a) the `doc/licenses` directory, (b) the header of the files
-contained in the library or (c) the directory of the library.
 
