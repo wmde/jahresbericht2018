@@ -23,7 +23,7 @@ BUILD_PATH=/tmp/build
 
 # Initializes a freshly cloned project. Must be run only once. 
 .PHONY: init
-init: fix-perms install-deps
+init: 
 	sed -i -e "s|__NAME__|$(NAME)|g" Envfile Hoifile Deployfile
 	sed -i -e "s|__DOMAIN__|$(DOMAIN)|g" Envfile Hoifile
 	rm -f Envfile-e Hoifile-e # older BSDs leave stray files
