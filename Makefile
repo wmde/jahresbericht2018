@@ -26,7 +26,7 @@ BUILD_PATH=/tmp/build
 init: 
 	sed -i -e "s|__NAME__|$(NAME)|g" Envfile Hoifile Deployfile
 	sed -i -e "s|__DOMAIN__|$(DOMAIN)|g" Envfile Hoifile
-	rm -f Envfile-e Hoifile-e # older BSDs leave stray files
+	rm -f Deployfile-e Envfile-e Hoifile-e # older BSDs leave stray files
 
 # -- Dist --
 
