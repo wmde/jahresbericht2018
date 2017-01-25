@@ -14,22 +14,38 @@
 # License. If not, see http://atelierdisko.de/licenses.
 #
 
-# The target host i.e. example.org and user.
-HOST="web0.disko.io"
-USER="deploy"
+# One or multiple target hosts to deploy to. 
+TARGET_HOSTS="web0.disko.io"
+
+# The UNIX user for SSH based deploys.
+# The same user will be used for each host.
+TARGET_USER="deploy"
+
+# Password, i.e. for FTP based deploys.
+TARGET_PASSWORD=""
 
 # The target path on target host.
-PATH="/var/www/__NAME__"
+TARGET_PATH="/var/www/__NAME__"
 
 # The transfer method to use during deployment. Can be either the follwing. Most
-# methods use HOST, USER and PASSWORD (when set) to connect.
+# methods use TARGET_HOST, TARGET_USER and TARGET_PASSWORD (when set) to connect.
 # - "ssh+rsync" to transfer files using rsync over ssh
-# - "ssh" to use scp
 # - "manual" to build the package locally but not transfer it
-METHOD="ssh+rsync"
+TRANSFER_METHOD="ssh+rsync"
 
 # Will exclude directories and files in transfer tasks. Separate with spaces.
 # Possible used with rsync and lftp. fnmatch(5) patterns are allowed. To exclude
 # whole directory (not just its contents) DO append slash. Patterns prefixed
 # with a slash are anchored at the base path (when used with rsync).
-IGNORE="none"
+TRANSFER_IGNORE=""
+
+# Command/s to execute after transferring. Commands will be executed by
+# TARGET_USER on a target host using TARGET_PATH as the working directory.
+POST_TRANSFER_COMMANDS="sudo hoictl load"
+
+# Listing branches that should be deployed automatically, 
+# i.e. when receiving a push.
+AUTO_DEPLOY_BRANCHES="stage"
+
+# To enable notifications via Slack, provide a valid webhook URL here.
+SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
