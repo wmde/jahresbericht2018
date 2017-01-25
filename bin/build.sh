@@ -58,7 +58,7 @@ for f in $(find assets -type f -name *.jpg); do
 	mogrify -strip $f
 	# in place optimization requires jpegtran >=8d
 	# jpegtran -optimize -copy none -outfile $f $f
-	jpegtran -optimize -copy none $f -outfile $f.tmp && mv $f.tmp $f
+	jpegtran -optimize -copy none -outfile $f.tmp $f && mv $f.tmp $f
 done
 
 # Ensure we don't install dev tooling in production, for security (potential
