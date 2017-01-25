@@ -62,7 +62,7 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 	# 2. rsync may fail to set times (this is non-critical)
 	# set +o errexit
 	for H in $TARGET_HOSTS; do
-		if [[ $ASUME_YES != "y" ]]; then
+		if [[ $ASSUME_YES != "y" ]]; then
 			out=$(
 				rsync --stats -h -z -p -r --delete \
 					--exclude=$(echo $TRANSFER_IGNORE | sed  's/ / --exclude=/g') \
