@@ -75,13 +75,13 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 					${TMP}/ ${TARGET_USER}@${H}:${TARGET_PATH}
 			)
 			echo "To be created on target:"
-			echo "$out" | grep '^c'
+			echo "$out" | grep '^c' || true
 			echo
 			echo "To be changed on target:"
-			echo "$out" | grep -E '^<[a-z]+.*[a-z\?].*'
+			echo "$out" | grep -E '^<[a-z]+.*[a-z\?].*' || true
 			echo
 			echo "To be deleted on target:"
-			echo "$out" | grep deleting
+			echo "$out" | grep deleting || true
 			echo
 			read -p "[$(date +%T)] looks good? (y/N) " continue
 			if [[ $continue != "y" ]]; then
