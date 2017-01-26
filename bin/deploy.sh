@@ -37,13 +37,14 @@ SOURCE_PATH=$(pwd)
 # For each deployment we'll use a unique build directory, to allow
 # parallel deployments i.e. of prod and stage branches.
 TMP=$(mktemp -d -t deploy.XXXX)
+DISTOUT=$(mktemp -t deploy.XXXX.dist.out)
 
 # This is the entire build phase.
 git clone --verbose --single-branch --recursive --no-hardlinks \
 	--branch $(git rev-parse --abbrev-ref HEAD) \
 	$SOURCE_PATH $TMP
 cd $TMP
-bin/build.sh 2>&1 | tee $SOURCE_PATH/log/dist.out
+bin/build.sh 2>&1 | tee $DISTOUT
 
 if [[ $TRANSFER_METHOD == "manual" ]]; then
 	BUILD_FILE=$TMP/${NAME}_$(date +%Y-%m-%d-%H-%M).tar.gz
@@ -118,7 +119,7 @@ if [[ $SLACK_WEBHOOK_URL != "" ]]; then
 				"fallback": "Output of build step.",
 				"author_name": "make dist",
 				"title": "Combined output of build step.",
-				"text": "$(cat $SOURCE_PATH/log/dist.out | sed 's/\\/\\\\/g' | sed 's/"/\\"/g' | sed "s/'/\\'/g")"
+				"text": "$(cat $DISTOUT | sed 's/\\/\\\\/g' | sed 's/"/\\"/g' | sed "s/'/\\'/g")"
 			}
 		]
 	}
@@ -126,5 +127,6 @@ EOD
 	curl -s -S -X POST -H 'Content-type: application/json' --data $JSON $SLACK_WEBHOOK_URL
 fi
 
+rm $DISTOUT
 rm -rf $TMP
 echo "[$(date +%T)] deployment finished"
