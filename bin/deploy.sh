@@ -45,6 +45,7 @@ git clone --verbose --single-branch --recursive --no-hardlinks \
 	$SOURCE_PATH $TMP
 cd $TMP
 bin/build.sh 2>&1 | tee $DISTOUT
+cd -
 
 if [[ $TRANSFER_METHOD == "manual" ]]; then
 	BUILD_FILE=$TMP/${NAME}_$(date +%Y-%m-%d-%H-%M).tar.gz
@@ -59,13 +60,10 @@ if [[ $TRANSFER_METHOD == "manual" ]]; then
 	fi
 
 elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
-	# 1. grep may not match anything at all.
-	# 2. rsync may fail to set times (this is non-critical)
-	# set +o errexit
 	for H in $TARGET_HOSTS; do
 		if [[ $ASSUME_YES != "y" ]]; then
 			out=$(
-				rsync --stats -h -z -p -r --delete \
+				rsync --stats -h -z -r --delete \
 					--exclude=$(echo $TRANSFER_IGNORE | sed  's/ / --exclude=/g') \
 					--links \
 					--times \
@@ -83,12 +81,14 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 			echo "To be deleted on target:"
 			echo "$out" | grep deleting || true
 			echo
-			read -p "[$(date +%T)] looks good? (y/N) " continue
+			echo "It's now: $(date +%T)"
+			echo "Confirm sync: ${TMP}/ -> ${TARGET_USER}@${H}:${TARGET_PATH}"
+			read -p "Looks good? (y/N) " continue
 			if [[ $continue != "y" ]]; then
 				return 1
 			fi
 		fi
-		rsync --stats -h -z -p -r --delete \
+		rsync --stats -h -z -r --delete \
 				--exclude=$(echo $TRANSFER_IGNORE | sed  's/ / --exclude=/g') \
 				--links \
 				--times \
@@ -99,34 +99,37 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 
 	if [[ $POST_TRANSFER_COMMANDS != "" ]]; then
 		for H in $TARGET_HOSTS; do
-			echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ${H}"
-			ssh -T ${TARGET_USER}@${H} cd $TARGET_PATH && $POST_TRANSFER_COMMANDS
-			echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ${H}"
+			echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> command execution ${TARGET_USER}@${H}:${TARGET_PATH}"
+			ssh -T ${TARGET_USER}@${H} "cd $TARGET_PATH && $POST_TRANSFER_COMMANDS"
+			echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< command execution ${TARGET_USER}@${H}:${TARGET_PATH} "
 		done
 	fi
-	# set -o errexit
 else
 	echo "error: invalid transfer method"
 	exit 1
 fi
 
 if [[ $SLACK_WEBHOOK_URL != "" ]]; then
-	read -r -d '' JSON <<EOD
+	_DISTOUT=$(cat $DISTOUT | sed 's/\\/\\\\/g' | sed 's/"/\\"/g' | sed "s/'/\'/g")
+	JSON="
 	{
-		"text": "$(whoami) deployed *$(basename pwd)* v$(cat VERSION.txt) to ${TARGET_HOST}",
-		"attachments": [
+		\"text\": \"Project *$(basename $(pwd))* (v$(cat $TMP/VERSION.txt)) has been successfully deployed to ${TARGET_HOSTS// /, } without any errors.\",
+		\"attachments\": [
 			{
-				"fallback": "Output of build step.",
-				"author_name": "make dist",
-				"title": "Combined output of build step.",
-				"text": "$(cat $DISTOUT | sed 's/\\/\\\\/g' | sed 's/"/\\"/g' | sed "s/'/\\'/g")"
+				\"fallback\": \"Combined output of the build step\",
+				\"footer\": \"bin/build.sh\",
+				\"title\": \"Combined output of the build step\",
+				\"text\": \"$_DISTOUT\",
+				\"ts\": $(stat --printf '%Y' $DISTOUT),
+				\"color\": \"#36a64f\"
 			}
 		]
 	}
-EOD
-	curl -s -S -X POST -H 'Content-type: application/json' --data $JSON $SLACK_WEBHOOK_URL
+"
+	curl -s -S -X POST -H 'Content-type: application/json' --data "$JSON" $SLACK_WEBHOOK_URL
 fi
 
 rm $DISTOUT
 rm -rf $TMP
-echo "[$(date +%T)] deployment finished"
+echo "Deployment finished without an error."
+echo "It's now: $(date +%T)"
