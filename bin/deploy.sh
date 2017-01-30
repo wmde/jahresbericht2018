@@ -81,7 +81,7 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 			echo "To be deleted on target:"
 			echo "$out" | grep deleting || true
 			echo
-			echo "It's now: $(date +%T)"
+			echo "It's now: $(date -u +%T) UTC"
 			echo "Confirm sync: ${TMP}/ -> ${TARGET_USER}@${H}:${TARGET_PATH}"
 			read -p "Looks good? (y/N) " continue
 			if [[ $continue != "y" ]]; then
@@ -134,4 +134,4 @@ fi
 rm $DISTOUT
 rm -rf $TMP
 echo "Deployment finished without an error."
-echo "It's now: $(date +%T)"
+echo "It's now: $(date -u +%T) UTC"
