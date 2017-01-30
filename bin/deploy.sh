@@ -126,7 +126,9 @@ if [[ $SLACK_WEBHOOK_URL != "" ]]; then
 		]
 	}
 "
+	echo -n "Sending Slack notification..."
 	curl -s -S -X POST -H 'Content-type: application/json' --data "$JSON" $SLACK_WEBHOOK_URL
+	echo
 fi
 
 rm $DISTOUT
