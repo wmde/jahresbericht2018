@@ -31,6 +31,9 @@ sed -i -e "s|__VERSION_BUILD__|$revision|g" VERSION.txt
 # a suffix after -i while interpreting -e as the suffix.
 [[ -f VERSION.txt-e ]] && rm VERSION.txt-e
 
+sed -i -e "s|__PROJECT_VERSION_BUILD__|$revision|g" app/webroot/index.*
+rm -f app/webroot/index.*-e
+
 # yui does not work with jquery 2.2
 # https://github.com/yui/yuicompressor/issues/234
 for f in $(find assets/js -type f -name *.js ! -name jquery.js); do
