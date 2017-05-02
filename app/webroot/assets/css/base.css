@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/*!
+ * Base Stylesheet
+ *
+ * Copyright (c) 2013-2015 Atelier Disko - All rights reserved.
+ *
+ * This software is proprietary and confidential. Redistribution
+ * not permitted. Unless required by applicable law or agreed to
+ * in writing, software distributed on an "AS IS" BASIS, WITHOUT-
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ */
+
+:root {
+  /* Colors */
+  --color-black: #1b1b1b;
+}
+
+/* Basics
+---------------------------------------------------------------- */
+body {
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+
+  /* Disabled due to webkit tabs bug. */
+  /* text-rendering: optimizeLegibility; */
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  color: var(--color-black);
+  background-color: #fff;
+
+  padding: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* Text Sizes
+---------------------------------------------------------------- */
+
+/* Headlines
+---------------------------------------------------------------- */
+
+/* Hyperlinks
+---------------------------------------------------------------- */
+a:focus {
+  outline: none;
+}
+
+/* Header
+---------------------------------------------------------------- */
+
+/* Footer
+---------------------------------------------------------------- */
+
+/* Forms
+---------------------------------------------------------------- */
+
+/* Buttons
+---------------------------------------------------------------- */
+.button {}

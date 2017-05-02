@@ -1,0 +1,40 @@
+#
+# Atelier Disko Distribution - GIT Exclusion File
+#
+# Copyright (c) 2013 Atelier Disko - All rights reserved.
+#
+# This software is proprietary and confidential. Redistributions 
+# not permitted. No warranty, explicit or implicit provided.
+#
+
+# Entries with a leading slash are anchored at the base directory.
+
+# Libraries
+/app/libraries
+
+# Configuration
+/config/nginx/includes/*.conf
+/config/nginx/servers/*.conf
+/config/crons
+/config/logrotate.conf
+/config/supervisord.conf
+
+# Data
+/data/dumps/*
+!/data/dumps/empty
+
+# Files
+/media_versions/*
+/media/*
+!/assets/robots.txt
+!/media/robots.txt
+
+# Logs
+/log/*
+
+# Other
+*.mo
+/integrity_spec
+
+# Placeholder
+empty
