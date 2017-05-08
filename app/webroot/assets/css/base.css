@@ -153,6 +153,26 @@ a:focus {
   outline: none;
 }
 
+/* Figures
+---------------------------------------------------------------- */
+.fig {
+}
+.fig__image {
+
+}
+.fig__caption {
+  /* inherited from t--epsilon */
+  font-family: var(--font-family-sans);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.figs .fig {
+  display: inline-block;
+  max-width: 50%;
+}
+
 /* Header
 ---------------------------------------------------------------- */
 
