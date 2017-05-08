@@ -1,0 +1,1 @@
+Jahresbericht: Wikidata sucht Datenpartnerschaften
