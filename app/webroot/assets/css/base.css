@@ -13,7 +13,12 @@
 
 :root {
   /* Colors */
-  --color-black: #1b1b1b;
+  --color-purple: #622181;
+  --color-green: #339967;
+  --color-light-blue: #dce4e8;
+  --color-black: #1a1a1a;
+  --color-gray: #636466;
+  --color-light-gray: #a5a5a5;
 
   --font-family-sans: 'Montserrat', sans-serif;
   --font-family-serif: 'Source Serif Pro', serif;
