@@ -33,7 +33,7 @@
 
 <header>
 	<div class="main-logo">Logo</div>
-	<h1>Wikimedia Jahresrückblick 2016</h1>
+	<h1 class="h--alpha">Wikimedia Jahresrückblick 2016</h1>
 	<nav class="main-menu">
 		<ul>
 			<li><a href="<?= $url('/', $lang) ?>">Startseite</a></li>
