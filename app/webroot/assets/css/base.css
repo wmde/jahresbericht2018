@@ -59,9 +59,10 @@ body {
 
 .limit {
   max-width: 1400px;
+  margin: 0 auto;
 }
-.limit--centered {
-  max-width: 1400px;
+.limit--tight {
+  max-width: 1000px;
   margin: 0 auto;
 }
 
