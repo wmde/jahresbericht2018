@@ -125,6 +125,28 @@ body {
   line-height: 1.4;
 }
 
+/* Content Sections
+---------------------------------------------------------------- */
+.section {
+  position: relative; /* __heading is absolute */
+}
+.section__heading { /* == h--delta special */
+  font-family: var(--font-family-sans);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: .05em; /* TODO needs adjustment to design */
+
+  top: 0;
+  left: 0;
+  position: absolute; /* remove from flow */
+  display: inline-block;
+  margin: 0;
+  transform: rotate(-90deg);
+  transform-origin: 100% 100%;
+}
+
 /* Hyperlinks
 ---------------------------------------------------------------- */
 a:focus {
