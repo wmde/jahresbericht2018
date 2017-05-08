@@ -113,13 +113,13 @@ body {
 .h--alpha {
   font-size: 80px;
   font-family: var(--font-family-sans);
-  font-weight: normal;
+  font-weight: 500; /* manually adjusted to design */
   line-height: 1.2;
 }
 .h--beta {
   font-size: 36px;
   font-family: var(--font-family-sans);
-  font-weight: bold;
+  font-weight: 600; /* manually adjusted to design */
   line-height: 1.4;
 }
 
@@ -140,4 +140,19 @@ a:focus {
 
 /* Buttons
 ---------------------------------------------------------------- */
-.button {}
+.button {
+  /* allows in-flow positioning, also equalizes button and a elements */
+  display: inline-block;
+
+  /* inherits t--delta */
+  font-family: var(--font-family-sans);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2;
+
+  padding: 20px; /* TODO needs tuning for actual values */
+  border: 1px solid var(--color-black);
+}
+.button:hover {
+
+}
