@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Source+Serif+Pro:400,600,700');
 /*!
  * Base Stylesheet
  *
@@ -13,16 +14,21 @@
 :root {
   /* Colors */
   --color-black: #1b1b1b;
+
+  --font-family-sans: 'Montserrat', sans-serif;
+  --font-family-serif: 'Source Serif Pro', serif;
 }
 
 /* Basics
 ---------------------------------------------------------------- */
 body {
-  font-size: 16px;
-  font-family: Helvetica, Arial, sans-serif;
+  /* default is t--delta */
+  font-size: 18px;
+  font-family: var(--font-family-sans);
+  line-height: 1.2;
+  font-weight: normal;
 
-  /* Disabled due to webkit tabs bug. */
-  /* text-rendering: optimizeLegibility; */
+  text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1, "liga" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,10 +37,7 @@ body {
 
   color: var(--color-black);
   background-color: #fff;
-
-  padding: 40px;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -48,11 +51,77 @@ body {
     clear: both;
 }
 
+/* Content Padding / Limiters
+---------------------------------------------------------------- */
+.cp {
+  padding: 40px;
+}
+
+.limit {
+  max-width: 1400px;
+}
+.limit--centered {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 /* Text Sizes
 ---------------------------------------------------------------- */
+/* --alpha missing here as used only for headlines */
+/* --beta missing here as used only for headlines */
+.t--gamma {
+  font-family: var(--font-family-sans);
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.4;
+}
+.t--gamma-serif {
+  font-family: var(--font-family-serif);
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.4;
+}
+.t--delta {
+  font-family: var(--font-family-sans);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.t--delta-emph {
+  font-family: var(--font-family-sans);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: .05em; /* TODO needs adjustment to design */
+}
+.t--delta-serif {
+  font-family: var(--font-family-serif);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.t--epsilon {
+  font-family: var(--font-family-sans);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+}
+/* --epsilon-serif does not exist */
 
 /* Headlines
 ---------------------------------------------------------------- */
+.h--alpha {
+  font-size: 80px;
+  font-family: var(--font-family-sans);
+  font-weight: normal;
+  line-height: 1.2;
+}
+.h--beta {
+  font-size: 36px;
+  font-family: var(--font-family-sans);
+  font-weight: bold;
+  line-height: 1.4;
+}
 
 /* Hyperlinks
 ---------------------------------------------------------------- */
