@@ -94,6 +94,7 @@ body {
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: .05em; /* TODO needs adjustment to design */
+  text-transform: uppercase;
 }
 .t--delta-serif {
   font-family: var(--font-family-serif);
