@@ -63,11 +63,11 @@ body {
 }
 
 .limit {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .limit--tight {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -95,7 +95,7 @@ body {
 }
 .t--delta-emph {
   font-family: var(--font-family-sans);
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: .05em; /* TODO needs adjustment to design */
@@ -138,7 +138,7 @@ body {
 .section__heading { /* == h--delta special */
   font-family: var(--font-family-sans);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: .05em; /* TODO needs adjustment to design */
@@ -154,8 +154,36 @@ body {
 
 /* Hyperlinks
 ---------------------------------------------------------------- */
+a {
+  text-decoration: none;
+}
+
 a:focus {
   outline: none;
+}
+
+/* Navigation
+---------------------------------------------------------------- */
+.nav__list {
+  list-style: none;
+  padding: 0;
+}
+.nav__list li {
+  display: inline-block;
+}
+.nav__link {
+  /* inherited from t--delta-emph */
+  font-family: var(--font-family-sans);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: .05em; /* TODO needs adjustment to design */
+  text-transform: uppercase;
+
+  opacity: .8;
+}
+.nav__link:hover {
+  opacity: 1;
 }
 
 /* Figures
@@ -180,9 +208,43 @@ a:focus {
 
 /* Header
 ---------------------------------------------------------------- */
+.main-header {
+  height: 140px;
+}
+.main-header > .limit {
+  position: relative;
+}
+.main-header__logo {
+  line-height: 1;
+  overflow: hidden;
+  color: transparent;
+  width: 200px;
+  height: 50px;
+  background-color: gray;
+  float: left;
+}
+.main-header__nav {
+  float: right;
+}
+.lang-switch {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .05em;
+}
 
 /* Footer
 ---------------------------------------------------------------- */
+
+/* Hero
+---------------------------------------------------------------- */
+.hero {
+  min-height: 33vh;
+  background-color: blue;
+  color: white;
+}
 
 /* Forms
 ---------------------------------------------------------------- */

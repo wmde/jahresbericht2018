@@ -1,5 +1,14 @@
 <main class="home">
-	<section class="intro section">
+	<section class="hero cp">
+		<div class="limit--tight">
+			<h1 class="hero__title">
+				Wikimedia<br>
+				Jahresrückblick<br>
+				2016
+			</h1>
+		</div>
+	</section>
+	<section class="section cp">
 		<h2 class="section__heading">Begrüssung</h2>
 
 		<div class="limit--tight section__body">

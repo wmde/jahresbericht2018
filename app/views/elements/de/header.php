@@ -28,19 +28,19 @@
 	<script src="/assets/js/base.js?v=__PROJECT_VERSION_BUILD__"></script>
 	<script src="/assets/js/views/pages/home.js?v=__PROJECT_VERSION_BUILD__"></script>
 </head>
-
 <body>
 
-<header>
-	<div class="main-logo">Logo</div>
-	<h1 class="h--alpha">Wikimedia Jahresrückblick 2016</h1>
-	<nav class="main-menu">
-		<ul>
-			<li><a href="<?= $url('/', $lang) ?>">Startseite</a></li>
-			<li><a href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
-			<li><a href="<?= $url('report', $lang) ?>">Themen</a></li>
-			<li><a href="<?= $url('finance', $lang) ?>">Finanzreport</a></li>
-			<li><a href="<?= $translateFrom($path, $lang) ?>">Switch to English page</a></li>
-		</ul>
-	</nav>
+<header class="main-header">
+	<div class="limit clearfix cp">
+		<a class="logo main-header__logo" href="/">Wikimedia Deutschland</a>
+		<nav class="nav main-header__nav">
+			<ul class="nav__list">
+				<li><a class="nav__link" href="<?= $url('/', $lang) ?>">Startseite</a></li>
+				<li><a class="nav__link" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
+				<li><a class="nav__link" href="<?= $url('report', $lang) ?>">Themen</a></li>
+				<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzreport</a></li>
+			</ul>
+		</nav>
+		<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
+	</div>
 </header>
