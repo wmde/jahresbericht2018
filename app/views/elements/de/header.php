@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-	<meta charset="UTF-8">	
+	<meta charset="UTF-8">
 	<title>Jahresbericht 2016</title>
-	
+
 	<!-- mark up the canonical page and any other variants; use complete url -->
 	<!-- in this case, pages in default language are duplicated; prefer the prefixed '/de' paths -->
 	<!-- see https://support.google.com/webmasters/answer/139066?visit_id=0-636295122699147333-3497274728&rd=1#2 -->
@@ -16,14 +16,14 @@
 	<link rel="alternate" hreflang="de" href="<?= trim(trim(DOMAIN, '/') . '/de/' . trim($path, '/'), '/') ?>">
 	<link rel="alternate" hreflang="en" href="<?= trim(trim(DOMAIN, '/') . '/en/' . trim($path, '/'), '/') ?>">
 <?php endif ?>
-	
+
 	<link rel="icon" href="/assets/ico/app.png?v=__PROJECT_VERSION_BUILD__">
 	<link rel="stylesheet" href="/assets/css/reset.css?v=__PROJECT_VERSION_BUILD__">
 	<link rel="stylesheet" href="/assets/css/base.css?v=__PROJECT_VERSION_BUILD__">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 	<script src="/assets/js/require.js?v=__PROJECT_VERSION_BUILD__"></script>
 	<script src="/assets/js/base.js?v=__PROJECT_VERSION_BUILD__"></script>
 	<script src="/assets/js/views/pages/home.js?v=__PROJECT_VERSION_BUILD__"></script>
