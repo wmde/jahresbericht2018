@@ -172,6 +172,8 @@ a:focus {
   display: inline-block;
 }
 .nav__link {
+  display: inline-block;
+
   /* inherited from t--delta-emph */
   font-family: var(--font-family-sans);
   font-weight: 600;
@@ -184,6 +186,9 @@ a:focus {
 }
 .nav__link:hover {
   opacity: 1;
+}
+.nav__list li + li {
+  margin-left: 20px;
 }
 
 /* Figures
