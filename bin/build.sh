@@ -42,7 +42,7 @@ for f in $(find app/webroot/assets/js -type f -name *.js ! -name jquery.js); do
 	yuicompressor --type js -o $f.min --nomunge --charset utf-8 $f && mv $f.min $f
 done
 for f in $(find app/webroot/assets/js -type f -name jquery.js); do
-	closure-compiler --warning_level QUIET --js $f --js_output_file $f.min && mv $f.min $f
+	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
 done
 
 for f in $(ls app/webroot/assets/css/*.css); do
