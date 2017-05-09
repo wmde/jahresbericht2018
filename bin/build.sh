@@ -32,8 +32,8 @@ sed -i -e "s|__VERSION_BUILD__|$revision|g" VERSION.txt
 [[ -f VERSION.txt-e ]] && rm VERSION.txt-e
 
 version=$(cat VERSION.txt)
-sed -i -e "s|__PROJECT_VERSION__|$version|g" app/webroot/index.*
-rm -f app/webroot/index.*-e
+sed -i -e "s|__PROJECT_VERSION__|$version|g" app/views/elements/*/header.php
+rm -f app/views/elements/*/header.php-e
 
 # yui does not work with jquery 2.2
 # https://github.com/yui/yuicompressor/issues/234
