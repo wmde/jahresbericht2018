@@ -30,7 +30,7 @@
 
 	<script src="/assets/js/require.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/base.js?v=__PROJECT_VERSION__"></script>
-	<script src="/assets/js/views/pages/home.js?v=__PROJECT_VERSION__"></script>
+	<script src="/assets/js/views/layouts/default.js?v=__PROJECT_VERSION__"></script>
 </head>
 <body>
 
