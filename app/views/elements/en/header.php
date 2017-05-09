@@ -36,7 +36,7 @@
 			<li><a href="<?= $url('/', $lang) ?>">Homepage</a></li>
 			<li><a href="<?= $url('review', $lang) ?>">Annual review</a></li>
 			<li><a href="<?= $url('report', $lang) ?>">Subjects</a></li>
-			<li><a href="<?= $url('finance', $lang) ?>">Finance report</a></li>
+			<li><a href="<?= $url('finance', $lang) ?>">Finance</a></li>
 			<li><a href="<?= $translateFrom($path, $lang) ?>">Zur deutschen Seite wechseln</a></li>
 		</ul>
 	</nav>

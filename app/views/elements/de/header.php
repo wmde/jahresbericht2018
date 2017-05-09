@@ -42,7 +42,7 @@
 				<li><a class="nav__link" href="<?= $url('/', $lang) ?>">Startseite</a></li>
 				<li><a class="nav__link" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
 				<li><a class="nav__link" href="<?= $url('report', $lang) ?>">Themen</a></li>
-				<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzreport</a></li>
+				<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 			</ul>
 		</nav>
 		<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
