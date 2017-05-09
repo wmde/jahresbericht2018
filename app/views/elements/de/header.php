@@ -4,15 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Jahresbericht 2016</title>
 
-	<!-- mark up the canonical page and any other variants; use complete url -->
-	<!-- in this case, pages in default language are duplicated; prefer the prefixed '/de' paths -->
-	<!-- see https://support.google.com/webmasters/answer/139066?visit_id=0-636295122699147333-3497274728&rd=1#2 -->
+	<?php
+	// mark up the canonical page and any other variants; use complete url
+	// in this case, pages in default language are duplicated; prefer the prefixed '/de' paths
+	// see https://support.google.com/webmasters/answer/139066?visit_id=0-636295122699147333-3497274728&rd=1#2
+	?>
 	<link rel="canonical" href="<?= trim(trim(DOMAIN, '/') . '/de/' . trim($path, '/'), '/') ?>">
 
 <?php if ($isCanonical): ?>
-	<!-- each language page should identify different language versions, including itself -->
-	<!-- no need to list hreflang on non-canonical - in this case, unprefixed - urls -->
-	<!-- see https://support.google.com/webmasters/answer/189077 -->
+	<?php
+	// each language page should identify different language versions, including itself
+	// no need to list hreflang on non-canonical - in this case, unprefixed - urls
+	// see https://support.google.com/webmasters/answer/189077
+	?>
 	<link rel="alternate" hreflang="de" href="<?= trim(trim(DOMAIN, '/') . '/de/' . trim($path, '/'), '/') ?>">
 	<link rel="alternate" hreflang="en" href="<?= trim(trim(DOMAIN, '/') . '/en/' . trim($path, '/'), '/') ?>">
 <?php endif ?>

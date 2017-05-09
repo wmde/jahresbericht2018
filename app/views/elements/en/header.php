@@ -5,9 +5,11 @@
 	<title>Annual report 2016</title>
 
 <?php if ($isCanonical): ?>
-	<!-- each language page should identify different language versions, including itself -->
-	<!-- no need to list hreflang on non-canonical - in this case, unprefixed - urls -->
-	<!-- see https://support.google.com/webmasters/answer/189077 -->
+	<?php
+	// each language page should identify different language versions, including itself
+	// no need to list hreflang on non-canonical - in this case, unprefixed - urls
+	// see https://support.google.com/webmasters/answer/189077
+	?>
 	<link rel="alternate" hreflang="de" href="<?= trim(trim(DOMAIN, '/') . '/de/' . trim($path, '/'), '/') ?>">
 	<link rel="alternate" hreflang="en" href="<?= trim(trim(DOMAIN, '/') . '/en/' . trim($path, '/'), '/') ?>">
 <?php endif ?>
