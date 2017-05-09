@@ -62,13 +62,17 @@ body {
   padding: 40px;
 }
 
-.limit {
-  max-width: 1200px;
+.limit--l {
+  max-width: 1360px;
   margin: 0 auto;
 }
-.limit--tight {
-  max-width: 800px;
+.limit--m {
+  max-width: 960px;
   margin: 0 auto;
+}
+.limit--s {
+	max-width: 760px;
+	margin: 0 auto;
 }
 
 /* Text Sizes
