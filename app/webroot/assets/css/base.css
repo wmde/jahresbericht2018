@@ -57,6 +57,12 @@ body {
     clear: both;
 }
 
+.image-replace {
+  line-height: 1;
+  overflow: hidden;
+  color: transparent;
+}
+
 /* Content Padding / Limiters
 ---------------------------------------------------------------- */
 .cp {
@@ -259,10 +265,8 @@ a:focus {
 .main-header .limit--l {
   position: relative;
 }
+
 .main-header__logo {
-  line-height: 1;
-  overflow: hidden;
-  color: transparent;
   float: left;
 }
 .main-header__nav {

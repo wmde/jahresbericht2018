@@ -37,7 +37,7 @@
 <header class="main-header">
 	<div class="cp">
 		<div class="limit--l clearfix">
-			<a class="logo logo--white main-header__logo" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
+			<a class="logo logo--white main-header__logo image-replace" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
 			<nav class="nav main-header__nav">
 				<ul class="nav__list">
 					<li><a class="nav__link" href="<?= $url('/', $lang) ?>">Startseite</a></li>
