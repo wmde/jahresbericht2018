@@ -65,6 +65,9 @@ body {
 .cp--nav-zone {
   padding-top: 140px;
 }
+.cp--section {
+	padding: 160px 40px;
+}
 
 .limit--l {
   max-width: 1360px;
@@ -170,6 +173,13 @@ body {
 	transform-origin: center;
 }
 
+.section__actions {
+	margin-top: 80px;
+	text-align: center;	
+}
+
+
+
 /* Hyperlinks
 ---------------------------------------------------------------- */
 a {
@@ -214,6 +224,7 @@ a:focus {
 /* Figures
 ---------------------------------------------------------------- */
 .fig {
+	margin: 0;
 }
 .fig__image {
 
@@ -305,18 +316,50 @@ a:focus {
   font-size: 18px;
   line-height: 1.2;
 
-  padding: 20px; /* TODO needs tuning for actual values */
+  padding: 11px 30px 9px 30px; /* TODO needs tuning for actual values */
   border: 1px solid var(--color-black);
 }
 .button:hover {
 
 }
 
+.button--bg-green {
+	color: white;
+	background-color: var(--color-green);
+	border: none;
+}
+
 /* Jumpboxes
 ---------------------------------------------------------------- */
 .jb-split--row {
-	height: 400px;
+	height: 420px;
 	background-color: white;
+	display: flex;
+}
+.jb-split--row .fig {
+	width: 50%;
+	background-size: cover;
+	background-position: center center;
+}
+.jb-split--row .jb-split__content {
+	width: 50%;
+}
+.jb-split__content {
+	position: relative;
+	padding: 30px 40px;
+}
+.jb-split__content h1 {
+	margin: 0;
+}
+.jb-split__content h1 em {
+	font-style: normal;
+	color: var(--color-green);
+}
+.jb-split--row .button {
+	position: absolute;
+	bottom: 40px;
+	color: var(--color-green);
+	border-color: var(--color-green);
 }
 
 /* Home

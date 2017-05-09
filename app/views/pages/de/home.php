@@ -31,11 +31,20 @@
 	</section>
 	<section class="fact section">
 	</section>
-	<section class="section cp bg--icons-lavender">
+	<section class="section cp--section bg--icons-lavender">
 		<h2 class="section__heading"><div>Themen</div></h2>
 
 		<div class="jb-split--row limit--m">
-		</div>	
+			<figure class="fig" style="background-image: url('https://unsplash.it/800/600/?blur');">
+			</figure>
+			<div class="jb-split__content">
+				<h1 class="h--beta"><em>Gratulieren:</em> Wikipedia wird 15... und fliegt zum Mond!</h1>
+				<a class="button">Zu diesem Thema</a>
+			</div>	
+		</div>
+		<div class="section__actions">
+			<a class="button button--bg-green">Zur Themenübersicht</a>
+		</div>
 	</section>
 	<section class="jb section">
 	</section>
