@@ -210,6 +210,22 @@ a:focus {
   max-width: 50%;
 }
 
+/* Logo
+---------------------------------------------------------------- */
+.logo {
+  display: block;
+  width: 200px;
+  height: 45px;
+  background: transparent no-repeat top left/contain;
+}
+.logo--white {
+  background-image: url(../img/wmde_logo_black.svg);
+  filter: invert(100%);
+}
+.logo--black {
+  background-image: url(../img/wmde_logo_black.svg);
+}
+
 /* Header
 ---------------------------------------------------------------- */
 .main-header {
@@ -222,9 +238,6 @@ a:focus {
   line-height: 1;
   overflow: hidden;
   color: transparent;
-  width: 200px;
-  height: 50px;
-  background-color: gray;
   float: left;
 }
 .main-header__nav {
