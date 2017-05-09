@@ -20,6 +20,15 @@ require([
   $
 ) {
 
-  // ...
+  var $imprint = $('.imprint');
+
+  $('.imprint-toggle').on('click', function(ev) {
+    ev.preventDefault();
+    $imprint.toggleClass('invis');
+  });
+  $('.imprint-close').on('click', function(ev) {
+    ev.preventDefault();
+    $imprint.removeClass('invis');
+  });
 
 });

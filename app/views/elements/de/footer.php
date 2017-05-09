@@ -36,6 +36,40 @@
 					Dieses Impressum gilt für die Domain
 					<a href="http://jahresbericht.wikimedia.de">jahresbericht.wikimedia.de</a>.
 				</h1>
+				<h2 class="h--delta">Diensteanbieter</h2>
+				<p class="t--delta-serif">
+					Wikimedia Deutschland – Gesellschaft zur Förderung Freien Wissens e. V.<br>
+					Tempelhofer Ufer 23/24<br>
+					10963 Berlin
+				</p>
+				<p class="t--delta-serif">
+					E-Mail: info@wikimedia.de<br>
+					Telefon: +49 (0)30-219 15 826-0<br>
+					Fax: +49 (0)30-219 158 26-9
+				</p>
+				<p class="t--delta-serif">
+					Geschäftsführender Vorstand: Abraham Taherivand
+				</p>
+				<p class="t--delta-serif">
+					Eingetragen im Vereinsregister des Amtsgerichts Charlottenburg, VR 23855. Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: Christian Rickerts (Anschrift wie oben).
+				</p>
+
+				<h2 class="h--delta">Datenschutzerklärung</h2>
+				<p class="t--delta-serif">
+					Personenbezogene Daten werden auf dieser Webseite nur im technisch notwendigen Umfang erhoben. In keinem Fall werden die erhobenen Daten verkauft oder aus anderen Gründen an Dritte weitergegeben. Im Folgenden erhalten Sie einen Überblick über die von uns im Rahmen dieser Website erhobenen Daten.
+				</p>
+				<p class="t--delta-serif">
+					Log-Files: Bei der Nutzung dieses Angebots werden die von Ihrem Browser an den Server übermittelten Daten erfasst und gespeichert. Dies umfasst üblichweise Informationen über den Typ und die Version des von Ihnen verwendeten Browsers, das verwendete Betriebssystem, die Referrer URL (die Webseite, von der aus Sie zu dieser Website gelangt sind), den Hostnamen des zugreifenden Rechners (die IP Adresse) sowie die Uhrzeit der Serveranfrage. In der Regel lassen sich diese Daten nicht bestimmten Personen – und damit auch nicht Ihnen – zuordnen. Weder wird zu diesem Zweck ein Abgleich der Daten mit anderen Daten vorgenommen, noch werden sie hierfür mit anderen Daten zusammengeführt. Die Daten werden regelmäßig nach einer statistischen Auswertung gelöscht.
+				</p>
+				<p class="t--delta-serif">
+					Diese Website verwendet Piwik, eine Open-Source-Software zur statistischen Auswertung und Analyse der Besucherzugriffe. Auch Piwik nutzt Cookies. Die durch Piwik erzeugten und in einem Cookie gespeicherten Informationen über Ihre Benutzung dieser Website werden auf unseren Servern in Deutschland gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich nutzen können. Zudem haben Sie die Möglichkeit, der Datenverarbeitung durch Piwik für die Zukunft zu widersprechen. Entfernen Sie hierfür das Häkchen in dem unten abgebildeten Kasten. In der Folge wird ein Piwik-Deaktivierungs-Cookie in Ihrem Browser abgelegt. Bitte beachten Sie, dass der Piwik-Deaktivierungs-Cookie dieser Website gelöscht wird, wenn Sie die in Ihrem Browser abgelegten Cookies entfernen.
+				</p>
+
+				<h2 class="h--delta">Lizenzhinweise</h2>
+				<p class="t--delta-serif">
+					Design und Umsetzung: Atelier Disko UG (haftungsbeschränkt) & Co. KG, <a href="https://atelierdisko.de" target="new">atelierdisko.de</a><br>
+					Redaktion: Elisabeth Mandl
+				</p>
 			</article>
 		</div>
 	</div>
