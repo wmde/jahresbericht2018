@@ -9,7 +9,7 @@
 		</div>
 	</section>
 	<section class="section cp">
-		<h2 class="section__heading">Begrüssung</h2>
+		<h2 class="section__heading"><div>Begrüssung</div></h2>
 
 		<div class="limit--s section__body">
 			<h1 class="h--beta">Liebe Leserinnen und Leser,</h1>
@@ -31,7 +31,11 @@
 	</section>
 	<section class="fact section">
 	</section>
-	<section class="jb section">
+	<section class="section cp bg--icons-lavender">
+		<h2 class="section__heading"><div>Themen</div></h2>
+
+		<div class="jb-split--row limit--m">
+		</div>	
 	</section>
 	<section class="jb section">
 	</section>
