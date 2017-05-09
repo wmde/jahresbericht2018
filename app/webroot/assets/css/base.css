@@ -3,7 +3,7 @@
 /*!
  * Base Stylesheet
  *
- * Copyright (c) 2013-2015 Atelier Disko - All rights reserved.
+ * Copyright (c) 2013 Atelier Disko - All rights reserved.
  *
  * This software is proprietary and confidential. Redistribution
  * not permitted. Unless required by applicable law or agreed to
@@ -12,7 +12,6 @@
  */
 
 :root {
-  /* Colors */
   --color-purple: #622181;
   --color-green: #339967;
   --color-light-blue: #dce4e8;
