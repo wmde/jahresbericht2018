@@ -66,13 +66,17 @@ body {
   padding-top: 140px;
 }
 
-.limit {
-  max-width: 1200px;
+.limit--l {
+  max-width: 1360px;
   margin: 0 auto;
 }
-.limit--tight {
-  max-width: 800px;
+.limit--m {
+  max-width: 960px;
   margin: 0 auto;
+}
+.limit--s {
+	max-width: 760px;
+	margin: 0 auto;
 }
 
 /* Text Sizes
@@ -134,6 +138,12 @@ body {
   line-height: 1.4;
 }
 
+/* Section Backgrounds
+---------------------------------------------------------------- */
+.bg--icons-lavender {
+	background-color: lavender;
+}
+
 /* Content Sections
 ---------------------------------------------------------------- */
 .section {
@@ -152,8 +162,12 @@ body {
   position: absolute; /* remove from flow */
   display: inline-block;
   margin: 0;
-  transform: rotate(-90deg);
-  transform-origin: 100% 100%;
+  transform: scaleX(-1) rotate(90deg);
+  transform-origin: 0 0;
+}
+.section__heading div {
+	transform: scaleX(-1);
+	transform-origin: center;
 }
 
 /* Hyperlinks
@@ -296,6 +310,13 @@ a:focus {
 }
 .button:hover {
 
+}
+
+/* Jumpboxes
+---------------------------------------------------------------- */
+.jb-split--row {
+	height: 400px;
+	background-color: white;
 }
 
 /* Home
