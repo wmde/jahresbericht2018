@@ -36,7 +36,7 @@
 
 <header class="main-header">
 	<div class="limit--l clearfix cp">
-		<a class="logo logo--white main-header__logo" href="/">Wikimedia Deutschland</a>
+		<a class="logo logo--white main-header__logo" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
 		<nav class="nav main-header__nav">
 			<ul class="nav__list">
 				<li><a class="nav__link" href="<?= $url('/', $lang) ?>">Startseite</a></li>
