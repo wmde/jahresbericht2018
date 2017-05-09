@@ -39,14 +39,16 @@
 			</figure>
 			<div class="jb-split__content">
 				<h1 class="h--beta"><em>Gratulieren:</em> Wikipedia wird 15... und fliegt zum Mond!</h1>
-				<a class="button">Zu diesem Thema</a>
-			</div>	
+				<a class="button" href="<?= $url('report/moon', $lang) ?>">Zu diesem Thema</a>
+			</div>
 		</div>
 		<div class="section__actions">
-			<a class="button button--bg-green">Zur Themenübersicht</a>
+			<a class="button button--bg-green" href="<?= $url('report', $lang) ?>">Zur Themenübersicht</a>
 		</div>
 	</section>
-	<section class="jb section">
+	<section class="finance-banner">
+		<h1 class="h--alpha">Finanzen 2016</h1>
+		<a class="button" href="<?= $url('finance', $lang) ?>">Zum Finanzteil</a>
 	</section>
 	<section class="join section">
 	</section>

@@ -193,7 +193,7 @@ body {
 
 .section__actions {
 	margin-top: 80px;
-	text-align: center;	
+	text-align: center;
 }
 
 
@@ -400,6 +400,25 @@ a:focus {
 	bottom: 40px;
 	color: var(--color-green);
 	border-color: var(--color-green);
+}
+
+/* Finance-Banner
+---------------------------------------------------------------- */
+.finance-banner {
+  min-height: 50vh;
+  padding: 160px 40px;
+  color: white;
+  background: var(--color-diag-gradient);
+  text-align: center;
+}
+.finance-banner h1 {
+  margin: 0;
+}
+.finance-banner .button {
+  margin-top: 40px;
+  color: var(--color-purple);
+  background-color: white;
+  border: none;
 }
 
 /* Home
