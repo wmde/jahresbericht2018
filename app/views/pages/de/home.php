@@ -1,5 +1,5 @@
 <main class="home">
-	<section class="hero cp">
+	<section class="hero cp cp--nav-zone">
 		<div class="limit--tight">
 			<h1 class="hero__title">
 				Wikimedia<br>
