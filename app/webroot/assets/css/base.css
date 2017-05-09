@@ -57,6 +57,18 @@ body {
     clear: both;
 }
 
+.image-replace {
+  line-height: 1;
+  overflow: hidden;
+  color: transparent;
+}
+
+.invis {
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+}
+
 /* Content Padding / Limiters
 ---------------------------------------------------------------- */
 .cp {
@@ -116,7 +128,7 @@ body {
   font-family: var(--font-family-serif);
   font-weight: normal;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.25; /* tuned up from design, was too tight */
 }
 .t--epsilon {
   font-family: var(--font-family-sans);
@@ -139,6 +151,12 @@ body {
   font-family: var(--font-family-sans);
   font-weight: 600; /* manually adjusted to design */
   line-height: 1.4;
+}
+.h--delta {
+  font-family: var(--font-family-sans);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 /* Section Backgrounds
@@ -267,13 +285,11 @@ a:focus {
   top: 0;
   left: 0;
 }
-.main-header > .limit {
+.main-header .limit--l {
   position: relative;
 }
+
 .main-header__logo {
-  line-height: 1;
-  overflow: hidden;
-  color: transparent;
   float: left;
 }
 .main-header__nav {
@@ -282,16 +298,40 @@ a:focus {
 }
 .lang-switch {
   position: absolute;
-  top: 28px; /* align baseline with top of WM logo icon */
-  right: 40px;
+  top: -13px; /* align baseline with top of WM logo icon */
+  right: 0;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .05em;
   color: white;
 }
 
-/* Footer
+/* Footer / Imprint
 ---------------------------------------------------------------- */
+.main-footer {
+  background-color: var(--color-black);
+  color: white;
+}
+.main-footer__logo,
+.main-footer__info-1,
+.main-footer__info-2 {
+  float: left;
+}
+.main-footer__upper .limit--l > * + * {
+  margin-left: 100px;
+}
+
+.main-footer p:first-of-type {
+  margin-top: 0;
+}
+
+.main-footer p a {
+  color: white;
+  border-bottom: 1px solid transparent;
+}
+.main-footer p a:hover {
+  border-color: white;
+}
 
 /* Hero
 ---------------------------------------------------------------- */

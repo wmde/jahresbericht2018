@@ -1,9 +1,44 @@
-<footer>
-	<h1 class="imprint-link h--beta">Impressum</h1>
-	<section class="imprint">
-		<span class="imprint__close">Schließen</span>
-		<p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
-	</section>
+<footer class="main-footer">
+	<div class="main-footer__upper clearfix cp">
+		<div class="limit--l">
+			<a class="logo logo--white main-footer__logo image-replace" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
+			<div class="main-footer__info-1 t--delta-serif">
+				<p>
+					Wikimedia Deutschland e. V.
+				</p>
+				<p>
+					Tempelhofer Ufer 23-24<br>
+					10963 Berlin
+				</p>
+				<p>
+					Telefon: <a href="tel:004930219158260">030 219 158 26-0</a>
+				</p>
+			</div>
+			<div class="main-footer__info-2 t--delta-serif">
+				<p>
+					<a href="mailto:info@wikimedia.de">info@wikimedia.de</a><br>
+					<a href="https://wikimedia.de" target="new">wikimedia.de</a>
+				</p>
+				<p>
+					Blog: <a href="https://blog.wikimedia.de" target="new">blog.wikimedia.de</a><br>
+					Twitter: <a href="https://twitter.com/WikimediaDE" target="new">twitter.com/WikimediaDE</a><br>
+					Facebook: <a href="https://facebook.com/WMDEeV" target="new">facebook.com/WMDEeV</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="main-footer__bottom clearfix cp">
+		<div class="limit--l">
+			<a class="imprint-toggle nav__link" href="#imprint-toggle">Impressum</a>
+			<a class="imprint-close image-replace" href="#imprint-close">Schließen</a>
+			<article id="imprint" class="imprint invis">
+				<h1 class="h--delta">
+					Dieses Impressum gilt für die Domain
+					<a href="http://jahresbericht.wikimedia.de">jahresbericht.wikimedia.de</a>.
+				</h1>
+			</article>
+		</div>
+	</div>
 </footer>
 
 </body>

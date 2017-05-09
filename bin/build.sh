@@ -32,19 +32,20 @@ sed -i -e "s|__VERSION_BUILD__|$revision|g" VERSION.txt
 [[ -f VERSION.txt-e ]] && rm VERSION.txt-e
 
 version=$(cat VERSION.txt)
-sed -i -e "s|__PROJECT_VERSION__|$version|g" app/views/elements/*/header.php
+sed -i -e "s|__PROJECT_VERSION__|$version|g" app/views/elements/de/header.php
+sed -i -e "s|__PROJECT_VERSION__|$version|g" app/views/elements/en/header.php
 rm -f app/views/elements/*/header.php-e
 
 # yui does not work with jquery 2.2
 # https://github.com/yui/yuicompressor/issues/234
-for f in $(find assets/js -type f -name *.js ! -name jquery.js); do
+for f in $(find app/webroot/assets/js -type f -name *.js ! -name jquery.js); do
 	yuicompressor --type js -o $f.min --nomunge --charset utf-8 $f && mv $f.min $f
 done
-for f in $(find assets/js -type f -name jquery.js); do
-	closure-compiler --warning_level QUIET --js $f --js_output_file $f.min && mv $f.min $f
+for f in $(find app/webroot/assets/js -type f -name jquery.js); do
+	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
 done
 
-for f in $(ls assets/css/*.css); do
+for f in $(ls app/webroot/assets/css/*.css); do
 	myth $f $f
 	# yuicompressor breaks spaces in calc() expressions
 	sqwish $f -o $f.min && mv $f.min $f
@@ -52,12 +53,12 @@ done
 
 # We can't restrict image search to ico and img directories as images may be
 # located in i.e. vid directories if they are posters.
-for f in $(find assets -type f -name *.png); do
+for f in $(find app/webroot/assets -type f -name *.png); do
 	# -ow flag requires pngcrush >=1.7.22
 	# pngcrush -rem alla -rem text -q -ow $f
 	pngcrush -rem alla -rem text -q $f $f.tmp && mv $f.tmp $f
 done
-for f in $(find assets -type f -name *.jpg); do
+for f in $(find app/webroot/assets -type f -name *.jpg); do
 	mogrify -strip $f
 	# in place optimization requires jpegtran >=8d
 	# jpegtran -optimize -copy none -outfile $f $f
