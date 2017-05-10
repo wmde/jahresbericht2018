@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.5.0
- * Build https://modernizr.com/download?-audio-backgroundsize-canvas-canvastext-csscalc-csscolumns-csstransforms-csstransforms3d-csstransitions-cssvhunit-cssvmaxunit-cssvminunit-cssvwunit-exiforientation-filereader-flexbox-fullscreen-geolocation-hashchange-history-input-inputtypes-localstorage-multiplebgs-touchevents-video-webaudio-addtest-atrule-domprefixes-hasevent-mq-prefixed-prefixedcss-prefixedcssvalue-prefixes-testallprops-testprop-dontmin
+ * Build https://modernizr.com/download?-audio-audioloop-csscolumns-cssvhunit-cssvmaxunit-cssvminunit-cssvwunit-filereader-flexbox-fullscreen-geolocation-hashchange-history-input-inputtypes-touchevents-video-webaudio-addtest-atrule-domprefixes-hasevent-mq-prefixed-prefixedcss-prefixedcssvalue-prefixes-testallprops-testprop-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -216,56 +216,6 @@ to be the File object's prototype.)
 */
 
   Modernizr.addTest('filereader', !!(window.File && window.FileList && window.FileReader));
-
-/*!
-{
-  "name": "Local Storage",
-  "property": "localstorage",
-  "caniuse": "namevalue-storage",
-  "tags": ["storage"],
-  "knownBugs": [],
-  "notes": [],
-  "warnings": [],
-  "polyfills": [
-    "joshuabell-polyfill",
-    "cupcake",
-    "storagepolyfill",
-    "amplifyjs",
-    "yui-cacheoffline"
-  ]
-}
-!*/
-
-  // In FF4, if disabled, window.localStorage should === null.
-
-  // Normally, we could not test that directly and need to do a
-  //   `('localStorage' in window)` test first because otherwise Firefox will
-  //   throw bugzil.la/365772 if cookies are disabled
-
-  // Similarly, in Chrome with "Block third-party cookies and site data" enabled,
-  // attempting to access `window.sessionStorage` will throw an exception. crbug.com/357625
-
-  // Also in iOS5 Private Browsing mode, attempting to use localStorage.setItem
-  // will throw the exception:
-  //   QUOTA_EXCEEDED_ERROR DOM Exception 22.
-  // Peculiarly, getItem and removeItem calls do not throw.
-
-  // Because we are forced to try/catch this, we'll go aggressive.
-
-  // Just FWIW: IE8 Compat mode supports these features completely:
-  //   www.quirksmode.org/dom/html5.html
-  // But IE8 doesn't support either with local files
-
-  Modernizr.addTest('localstorage', function() {
-    var mod = 'modernizr';
-    try {
-      localStorage.setItem(mod, mod);
-      localStorage.removeItem(mod);
-      return true;
-    } catch (e) {
-      return false;
-    }
-  });
 
 
   /**
@@ -585,30 +535,6 @@ to be the File object's prototype.)
 
   var docElement = document.documentElement;
   
-/*!
-{
-  "name": "CSS Supports",
-  "property": "supports",
-  "caniuse": "css-featurequeries",
-  "tags": ["css"],
-  "builderAliases": ["css_supports"],
-  "notes": [{
-    "name": "W3 Spec",
-    "href": "http://dev.w3.org/csswg/css3-conditional/#at-supports"
-  },{
-    "name": "Related Github Issue",
-    "href": "https://github.com/Modernizr/Modernizr/issues/648"
-  },{
-    "name": "W3 Info",
-    "href": "http://dev.w3.org/csswg/css3-conditional/#the-csssupportsrule-interface"
-  }]
-}
-!*/
-
-  var newSyntax = 'CSS' in window && 'supports' in window.CSS;
-  var oldSyntax = 'supportsCSS' in window;
-  Modernizr.addTest('supports', newSyntax || oldSyntax);
-
 
 
   /**
@@ -920,48 +846,6 @@ to be the File object's prototype.)
 
   
 
-/*!
-{
-  "name": "EXIF Orientation",
-  "property": "exiforientation",
-  "tags": ["image"],
-  "builderAliases": ["exif_orientation"],
-  "async": true,
-  "authors": ["Paul Sayre"],
-  "notes": [{
-    "name": "Article by Dave Perrett",
-    "href": "http://recursive-design.com/blog/2012/07/28/exif-orientation-handling-is-a-ghetto/"
-  },{
-    "name": "Article by Calvin Hass",
-    "href": "http://www.impulseadventure.com/photo/exif-orientation.html"
-  }]
-}
-!*/
-/* DOC
-Detects support for EXIF Orientation in JPEG images.
-
-iOS looks at the EXIF Orientation flag in JPEGs and rotates the image accordingly. Most desktop browsers just ignore this data.
-*/
-
-  // Bug trackers:
-  //    bugzil.la/298619 (unimplemented)
-  //    crbug.com/56845 (looks incomplete)
-  //    webk.it/19688 (available upstream but its up all ports to turn on individually)
-  Modernizr.addAsyncTest(function() {
-    var img = new Image();
-
-    img.onerror = function() {
-      addTest('exiforientation', false, {aliases: ['exif-orientation']});
-    };
-
-    img.onload = function() {
-      addTest('exiforientation', img.width !== 2, {aliases: ['exif-orientation']});
-    };
-
-    // There may be a way to shrink this more, it's a 1x2 white jpg with the orientation flag set to 6
-    img.src = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAASUkqAAgAAAABABIBAwABAAAABgASAAAAAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABAAIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigD/2Q==';
-  });
-
 
   /**
    * createElement is a convenience wrapper around document.createElement. Since we
@@ -1197,47 +1081,6 @@ Detects the audio element
 
 /*!
 {
-  "name": "Canvas",
-  "property": "canvas",
-  "caniuse": "canvas",
-  "tags": ["canvas", "graphics"],
-  "polyfills": ["flashcanvas", "excanvas", "slcanvas", "fxcanvas"]
-}
-!*/
-/* DOC
-Detects support for the `<canvas>` element for 2D drawing.
-*/
-
-  // On the S60 and BB Storm, getContext exists, but always returns undefined
-  // so we actually have to call getContext() to verify
-  // github.com/Modernizr/Modernizr/issues/issue/97/
-  Modernizr.addTest('canvas', function() {
-    var elem = createElement('canvas');
-    return !!(elem.getContext && elem.getContext('2d'));
-  });
-
-/*!
-{
-  "name": "Canvas text",
-  "property": "canvastext",
-  "caniuse": "canvas-text",
-  "tags": ["canvas", "graphics"],
-  "polyfills": ["canvastext"]
-}
-!*/
-/* DOC
-Detects support for the text APIs for `<canvas>` elements.
-*/
-
-  Modernizr.addTest('canvastext',  function() {
-    if (Modernizr.canvas  === false) {
-      return false;
-    }
-    return typeof createElement('canvas').getContext('2d').fillText == 'function';
-  });
-
-/*!
-{
   "name": "HTML5 Video",
   "property": "video",
   "caniuse": "video",
@@ -1300,55 +1143,16 @@ Modernizr.video.ogg     // 'probably'
 
 /*!
 {
-  "name": "CSS Calc",
-  "property": "csscalc",
-  "caniuse": "calc",
-  "tags": ["css"],
-  "builderAliases": ["css_calc"],
-  "authors": ["@calvein"]
+  "name": "Audio Loop Attribute",
+  "property": "audioloop",
+  "tags": ["audio", "media"]
 }
 !*/
 /* DOC
-Method of allowing calculated values for length units. For example:
-
-```css
-//lem {
-  width: calc(100% - 3em);
-}
-```
+Detects if an audio element can automatically restart, once it has finished
 */
 
-  Modernizr.addTest('csscalc', function() {
-    var prop = 'width:';
-    var value = 'calc(10px);';
-    var el = createElement('a');
-
-    el.style.cssText = prop + prefixes.join(value + prop);
-
-    return !!el.style.length;
-  });
-
-/*!
-{
-  "name": "CSS Multiple Backgrounds",
-  "caniuse": "multibackgrounds",
-  "property": "multiplebgs",
-  "tags": ["css"]
-}
-!*/
-
-  // Setting multiple images AND a color on the background shorthand property
-  // and then querying the style.background property value for the number of
-  // occurrences of "url(" is a reliable method for detecting ACTUAL support for this!
-
-  Modernizr.addTest('multiplebgs', function() {
-    var style = createElement('a').style;
-    style.cssText = 'background:url(https://),url(https://),red url(https://)';
-
-    // If the UA supports multiple backgrounds, there should be three occurrences
-    // of the string "url(" in the return value for elemStyle.background
-    return (/(url\s*\(.*?){3}/).test(style.background);
-  });
+  Modernizr.addTest('audioloop', 'loop' in createElement('audio'));
 
 
   /**
@@ -1834,37 +1638,6 @@ This test will also return `true` for Firefox 4 Multitouch support.
 
 /*!
 {
-  "name": "CSS vmin unit",
-  "property": "cssvminunit",
-  "caniuse": "viewport-units",
-  "tags": ["css"],
-  "builderAliases": ["css_vminunit"],
-  "notes": [{
-    "name": "Related Modernizr Issue",
-    "href": "https://github.com/Modernizr/Modernizr/issues/572"
-  },{
-    "name": "JSFiddle Example",
-    "href": "https://jsfiddle.net/glsee/JRmdq/8/"
-  }]
-}
-!*/
-
-  testStyles('#modernizr1{width: 50vm;width:50vmin}#modernizr2{width:50px;height:50px;overflow:scroll}#modernizr3{position:fixed;top:0;left:0;bottom:0;right:0}', function(node) {
-    var elem = node.childNodes[2];
-    var scroller = node.childNodes[1];
-    var fullSizeElem = node.childNodes[0];
-    var scrollbarWidth = parseInt((scroller.offsetWidth - scroller.clientWidth) / 2, 10);
-
-    var one_vw = fullSizeElem.clientWidth / 100;
-    var one_vh = fullSizeElem.clientHeight / 100;
-    var expectedWidth = parseInt(Math.min(one_vw, one_vh) * 50, 10);
-    var compWidth = parseInt(computedStyle(elem, null, 'width'), 10);
-
-    Modernizr.addTest('cssvminunit', roundedEquals(expectedWidth, compWidth) || roundedEquals(expectedWidth, compWidth - scrollbarWidth));
-  }, 3);
-
-/*!
-{
   "name": "CSS vmax unit",
   "property": "cssvmaxunit",
   "caniuse": "viewport-units",
@@ -1892,6 +1665,37 @@ This test will also return `true` for Firefox 4 Multitouch support.
     var compWidth = parseInt(computedStyle(elem, null, 'width'), 10);
 
     Modernizr.addTest('cssvmaxunit', roundedEquals(expectedWidth, compWidth) || roundedEquals(expectedWidth, compWidth - scrollbarWidth));
+  }, 3);
+
+/*!
+{
+  "name": "CSS vmin unit",
+  "property": "cssvminunit",
+  "caniuse": "viewport-units",
+  "tags": ["css"],
+  "builderAliases": ["css_vminunit"],
+  "notes": [{
+    "name": "Related Modernizr Issue",
+    "href": "https://github.com/Modernizr/Modernizr/issues/572"
+  },{
+    "name": "JSFiddle Example",
+    "href": "https://jsfiddle.net/glsee/JRmdq/8/"
+  }]
+}
+!*/
+
+  testStyles('#modernizr1{width: 50vm;width:50vmin}#modernizr2{width:50px;height:50px;overflow:scroll}#modernizr3{position:fixed;top:0;left:0;bottom:0;right:0}', function(node) {
+    var elem = node.childNodes[2];
+    var scroller = node.childNodes[1];
+    var fullSizeElem = node.childNodes[0];
+    var scrollbarWidth = parseInt((scroller.offsetWidth - scroller.clientWidth) / 2, 10);
+
+    var one_vw = fullSizeElem.clientWidth / 100;
+    var one_vh = fullSizeElem.clientHeight / 100;
+    var expectedWidth = parseInt(Math.min(one_vw, one_vh) * 50, 10);
+    var compWidth = parseInt(computedStyle(elem, null, 'width'), 10);
+
+    Modernizr.addTest('cssvminunit', roundedEquals(expectedWidth, compWidth) || roundedEquals(expectedWidth, compWidth - scrollbarWidth));
   }, 3);
 
 /*!
@@ -2418,21 +2222,6 @@ Detects support for the ability to make the current website take over the user's
   
 /*!
 {
-  "name": "Background Size",
-  "property": "backgroundsize",
-  "tags": ["css"],
-  "knownBugs": ["This will false positive in Opera Mini - https://github.com/Modernizr/Modernizr/issues/396"],
-  "notes": [{
-    "name": "Related Issue",
-    "href": "https://github.com/Modernizr/Modernizr/issues/396"
-  }]
-}
-!*/
-
-  Modernizr.addTest('backgroundsize', testAllProps('backgroundSize', '100%', true));
-
-/*!
-{
   "name": "CSS Columns",
   "property": "csscolumns",
   "caniuse": "multicolumn",
@@ -2496,78 +2285,6 @@ Detects support for the Flexible Box Layout model, a.k.a. Flexbox, which allows 
 */
 
   Modernizr.addTest('flexbox', testAllProps('flexBasis', '1px', true));
-
-/*!
-{
-  "name": "CSS Transforms",
-  "property": "csstransforms",
-  "caniuse": "transforms2d",
-  "tags": ["css"]
-}
-!*/
-
-  Modernizr.addTest('csstransforms', function() {
-    // Android < 3.0 is buggy, so we sniff and blacklist
-    // http://git.io/hHzL7w
-    return navigator.userAgent.indexOf('Android 2.') === -1 &&
-           testAllProps('transform', 'scale(1)', true);
-  });
-
-/*!
-{
-  "name": "CSS Transforms 3D",
-  "property": "csstransforms3d",
-  "caniuse": "transforms3d",
-  "tags": ["css"],
-  "warnings": [
-    "Chrome may occassionally fail this test on some systems; more info: https://code.google.com/p/chromium/issues/detail?id=129004"
-  ]
-}
-!*/
-
-  Modernizr.addTest('csstransforms3d', function() {
-    var ret = !!testAllProps('perspective', '1px', true);
-    var usePrefix = Modernizr._config.usePrefixes;
-
-    // Webkit's 3D transforms are passed off to the browser's own graphics renderer.
-    //   It works fine in Safari on Leopard and Snow Leopard, but not in Chrome in
-    //   some conditions. As a result, Webkit typically recognizes the syntax but
-    //   will sometimes throw a false positive, thus we must do a more thorough check:
-    if (ret && (!usePrefix || 'webkitPerspective' in docElement.style)) {
-      var mq;
-      var defaultStyle = '#modernizr{width:0;height:0}';
-      // Use CSS Conditional Rules if available
-      if (Modernizr.supports) {
-        mq = '@supports (perspective: 1px)';
-      } else {
-        // Otherwise, Webkit allows this media query to succeed only if the feature is enabled.
-        // `@media (transform-3d),(-webkit-transform-3d){ ... }`
-        mq = '@media (transform-3d)';
-        if (usePrefix) {
-          mq += ',(-webkit-transform-3d)';
-        }
-      }
-
-      mq += '{#modernizr{width:7px;height:18px;margin:0;padding:0;border:0}}';
-
-      testStyles(defaultStyle + mq, function(elem) {
-        ret = elem.offsetWidth === 7 && elem.offsetHeight === 18;
-      });
-    }
-
-    return ret;
-  });
-
-/*!
-{
-  "name": "CSS Transitions",
-  "property": "csstransitions",
-  "caniuse": "css-transitions",
-  "tags": ["css"]
-}
-!*/
-
-  Modernizr.addTest('csstransitions', testAllProps('transition', 'all', true));
 
 
   // Run each test
