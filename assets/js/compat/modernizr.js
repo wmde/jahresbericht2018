@@ -1,6 +1,6 @@
 /*!
- * modernizr v3.2.0
- * Build http://modernizr.com/download?-audio-backgroundsize-canvas-canvastext-csscalc-csscolumns-csstransforms-csstransforms3d-csstransitions-cssvhunit-cssvmaxunit-cssvminunit-cssvwunit-filereader-fullscreen-generatedcontent-geolocation-hashchange-history-input-inputtypes-localstorage-multiplebgs-touchevents-video-addtest-atrule-domprefixes-hasevent-mq-prefixed-prefixedcss-prefixedcssvalue-prefixes-testallprops-testprop-teststyles-dontmin
+ * modernizr v3.5.0
+ * Build https://modernizr.com/download?-audio-backgroundsize-canvas-canvastext-csscalc-csscolumns-csstransforms-csstransforms3d-csstransitions-cssvhunit-cssvmaxunit-cssvminunit-cssvwunit-exiforientation-filereader-flexbox-fullscreen-geolocation-hashchange-history-input-inputtypes-localstorage-multiplebgs-touchevents-video-webaudio-addtest-atrule-domprefixes-hasevent-mq-prefixed-prefixedcss-prefixedcssvalue-prefixes-testallprops-testprop-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -36,15 +36,15 @@
 
   var ModernizrProto = {
     // The current version, dummy
-    _version: '3.2.0',
+    _version: '3.5.0',
 
     // Any settings that don't work as separate modules
     // can go in here as configuration.
     _config: {
-      'classPrefix' : '',
-      'enableClasses' : true,
-      'enableJSClass' : true,
-      'usePrefixes' : true
+      'classPrefix': '',
+      'enableClasses': true,
+      'enableJSClass': true,
+      'usePrefixes': true
     },
 
     // Queue of tests
@@ -65,11 +65,11 @@
     },
 
     addTest: function(name, fn, options) {
-      tests.push({name : name, fn : fn, options : options});
+      tests.push({name: name, fn: fn, options: options});
     },
 
     addAsyncTest: function(fn) {
-      tests.push({name : null, fn : fn});
+      tests.push({name: null, fn: fn});
     }
   };
 
@@ -127,7 +127,7 @@ Detects support for the Geolocation API for users to provide their location to w
   "authors": ["Hay Kranen", "Alexander Farkas"],
   "notes": [{
     "name": "W3C Spec",
-    "href": "http://www.w3.org/TR/html51/browsers.html#the-history-interface"
+    "href": "https://www.w3.org/TR/html51/browsers.html#the-history-interface"
   }, {
     "name": "MDN documentation",
     "href": "https://developer.mozilla.org/en-US/docs/Web/API/window.history"
@@ -152,7 +152,11 @@ Detects support for the History API for manipulating the browser session history
         (ua.indexOf('Android 4.0') !== -1)) &&
         ua.indexOf('Mobile Safari') !== -1 &&
         ua.indexOf('Chrome') === -1 &&
-        ua.indexOf('Windows Phone') === -1) {
+        ua.indexOf('Windows Phone') === -1 &&
+    // Since all documents on file:// share an origin, the History apis are
+    // blocked there as well
+        location.protocol !== 'file:'
+    ) {
       return false;
     }
 
@@ -162,12 +166,41 @@ Detects support for the History API for manipulating the browser session history
 
 /*!
 {
+  "name": "Web Audio API",
+  "property": "webaudio",
+  "caniuse": "audio-api",
+  "polyfills": ["xaudiojs", "dynamicaudiojs", "audiolibjs"],
+  "tags": ["audio", "media"],
+  "builderAliases": ["audio_webaudio_api"],
+  "authors": ["Addy Osmani"],
+  "notes": [{
+    "name": "W3 Specification",
+    "href": "https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html"
+  }]
+}
+!*/
+/* DOC
+Detects the older non standard webaudio API, (as opposed to the standards based AudioContext API)
+*/
+
+  Modernizr.addTest('webaudio', function() {
+    var prefixed = 'webkitAudioContext' in window;
+    var unprefixed = 'AudioContext' in window;
+
+    if (Modernizr._config.usePrefixes) {
+      return prefixed || unprefixed;
+    }
+    return unprefixed;
+  });
+
+/*!
+{
   "name": "File API",
   "property": "filereader",
   "caniuse": "fileapi",
   "notes": [{
     "name": "W3C Working Draft",
-    "href": "http://www.w3.org/TR/FileAPI/"
+    "href": "https://www.w3.org/TR/FileAPI/"
   }],
   "tags": ["file"],
   "builderAliases": ["file_api"],
@@ -206,8 +239,11 @@ to be the File object's prototype.)
   // In FF4, if disabled, window.localStorage should === null.
 
   // Normally, we could not test that directly and need to do a
-  //   `('localStorage' in window) && ` test first because otherwise Firefox will
+  //   `('localStorage' in window)` test first because otherwise Firefox will
   //   throw bugzil.la/365772 if cookies are disabled
+
+  // Similarly, in Chrome with "Block third-party cookies and site data" enabled,
+  // attempting to access `window.sessionStorage` will throw an exception. crbug.com/357625
 
   // Also in iOS5 Private Browsing mode, attempting to use localStorage.setItem
   // will throw the exception:
@@ -264,7 +300,9 @@ to be the File object's prototype.)
    * ```
    */
 
-  var prefixes = (ModernizrProto._config.usePrefixes ? ' -webkit- -moz- -o- -ms- '.split(' ') : []);
+  // we use ['',''] rather than an empty array in order to allow a pattern of .`join()`ing prefixes to test
+  // values in feature detects to continue to work
+  var prefixes = (ModernizrProto._config.usePrefixes ? ' -webkit- -moz- -o- -ms- '.split(' ') : ['','']);
 
   // expose these for the plugin API. Look in the source for how to join() them against your input
   ModernizrProto._prefixes = prefixes;
@@ -345,7 +383,6 @@ to be the File object's prototype.)
             Modernizr[featureNameSplit[0]] = result;
           } else {
             // cast to a Boolean, if not one already
-            /* jshint -W053 */
             if (Modernizr[featureNameSplit[0]] && !(Modernizr[featureNameSplit[0]] instanceof Boolean)) {
               Modernizr[featureNameSplit[0]] = new Boolean(Modernizr[featureNameSplit[0]]);
             }
@@ -361,45 +398,12 @@ to be the File object's prototype.)
   ;
 
   /**
-   * hasOwnProp is a shim for hasOwnProperty that is needed for Safari 2.0 support
-   *
-   * @author kangax
-   * @access private
-   * @function hasOwnProp
-   * @param {object} object - The object to check for a property
-   * @param {string} property - The property to check for
-   * @returns {boolean}
-   */
-
-  // hasOwnProperty shim by kangax needed for Safari 2.0 support
-  var hasOwnProp;
-
-  (function() {
-    var _hasOwnProperty = ({}).hasOwnProperty;
-    /* istanbul ignore else */
-    /* we have no way of testing IE 5.5 or safari 2,
-     * so just assume the else gets hit */
-    if (!is(_hasOwnProperty, 'undefined') && !is(_hasOwnProperty.call, 'undefined')) {
-      hasOwnProp = function(object, property) {
-        return _hasOwnProperty.call(object, property);
-      };
-    }
-    else {
-      hasOwnProp = function(object, property) { /* yes, this can give false positives/negatives, but most of the time we don't care about those */
-        return ((property in object) && is(object.constructor.prototype[property], 'undefined'));
-      };
-    }
-  })();
-
-  
-
-  /**
-   * If the browsers follow the spec, then they would expose vendor-specific style as:
+   * If the browsers follow the spec, then they would expose vendor-specific styles as:
    *   elem.style.WebkitBorderRadius
-   * instead of something like the following, which would be technically incorrect:
+   * instead of something like the following (which is technically incorrect):
    *   elem.style.webkitBorderRadius
 
-   * Webkit ghosts their properties in lowercase but Opera & Moz do not.
+   * WebKit ghosts their properties in lowercase but Opera & Moz do not.
    * Microsoft uses a lowercase `ms` instead of the correct `Ms` in IE8+
    *   erik.eae.net/archives/2008/03/10/21.48.10/
 
@@ -434,6 +438,39 @@ to be the File object's prototype.)
   ModernizrProto._domPrefixes = domPrefixes;
   
 
+  /**
+   * hasOwnProp is a shim for hasOwnProperty that is needed for Safari 2.0 support
+   *
+   * @author kangax
+   * @access private
+   * @function hasOwnProp
+   * @param {object} object - The object to check for a property
+   * @param {string} property - The property to check for
+   * @returns {boolean}
+   */
+
+  // hasOwnProperty shim by kangax needed for Safari 2.0 support
+  var hasOwnProp;
+
+  (function() {
+    var _hasOwnProperty = ({}).hasOwnProperty;
+    /* istanbul ignore else */
+    /* we have no way of testing IE 5.5 or safari 2,
+     * so just assume the else gets hit */
+    if (!is(_hasOwnProperty, 'undefined') && !is(_hasOwnProperty.call, 'undefined')) {
+      hasOwnProp = function(object, property) {
+        return _hasOwnProperty.call(object, property);
+      };
+    }
+    else {
+      hasOwnProp = function(object, property) { /* yes, this can give false positives/negatives, but most of the time we don't care about those */
+        return ((property in object) && is(object.constructor.prototype[property], 'undefined'));
+      };
+    }
+  })();
+
+  
+
   var cssomPrefixes = (ModernizrProto._config.usePrefixes ? omPrefixes.split(' ') : []);
   ModernizrProto._cssomPrefixes = cssomPrefixes;
   
@@ -449,7 +486,7 @@ to be the File object's prototype.)
    * @access public
    * @function atRule
    * @param {string} prop - String name of the @-rule to test for
-   * @returns {string|false} The string representing the (possibly prefixed)
+   * @returns {string|boolean} The string representing the (possibly prefixed)
    * valid version of the @-rule, or `false` when it is unsupported.
    * @example
    * ```js
@@ -560,7 +597,7 @@ to be the File object's prototype.)
     "href": "http://dev.w3.org/csswg/css3-conditional/#at-supports"
   },{
     "name": "Related Github Issue",
-    "href": "github.com/Modernizr/Modernizr/issues/648"
+    "href": "https://github.com/Modernizr/Modernizr/issues/648"
   },{
     "name": "W3 Info",
     "href": "http://dev.w3.org/csswg/css3-conditional/#the-csssupportsrule-interface"
@@ -572,6 +609,44 @@ to be the File object's prototype.)
   var oldSyntax = 'supportsCSS' in window;
   Modernizr.addTest('supports', newSyntax || oldSyntax);
 
+
+
+  /**
+   * wrapper around getComputedStyle, to fix issues with Firefox returning null when
+   * called inside of a hidden iframe
+   *
+   * @access private
+   * @function computedStyle
+   * @param {HTMLElement|SVGElement} - The element we want to find the computed styles of
+   * @param {string|null} [pseudoSelector]- An optional pseudo element selector (e.g. :before), of null if none
+   * @returns {CSSStyleDeclaration}
+   */
+
+  function computedStyle(elem, pseudo, prop) {
+    var result;
+
+    if ('getComputedStyle' in window) {
+      result = getComputedStyle.call(window, elem, pseudo);
+      var console = window.console;
+
+      if (result !== null) {
+        if (prop) {
+          result = result.getPropertyValue(prop);
+        }
+      } else {
+        if (console) {
+          var method = console.error ? 'error' : 'log';
+          console[method].call(console, 'getComputedStyle returning null, its possible modernizr test results are inaccurate');
+        }
+      }
+    } else {
+      result = !pseudo && elem.currentStyle && elem.currentStyle[prop];
+    }
+
+    return result;
+  }
+
+  ;
 
   /**
    * roundedEquals takes two integers and checks if the first is within 1 of the second
@@ -627,7 +702,11 @@ to be the File object's prototype.)
     if (Modernizr._config.enableClasses) {
       // Add the new classes
       className += ' ' + classPrefix + classes.join(' ' + classPrefix);
-      isSVG ? docElement.className.baseVal = className : docElement.className = className;
+      if (isSVG) {
+        docElement.className.baseVal = className;
+      } else {
+        docElement.className = className;
+      }
     }
 
   }
@@ -817,7 +896,6 @@ to be the File object's prototype.)
         Modernizr[featureNameSplit[0]] = test;
       } else {
         // cast to a Boolean, if not one already
-        /* jshint -W053 */
         if (Modernizr[featureNameSplit[0]] && !(Modernizr[featureNameSplit[0]] instanceof Boolean)) {
           Modernizr[featureNameSplit[0]] = new Boolean(Modernizr[featureNameSplit[0]]);
         }
@@ -826,9 +904,7 @@ to be the File object's prototype.)
       }
 
       // Set a single class (either `feature` or `no-feature`)
-      /* jshint -W041 */
       setClasses([(!!test && test != false ? '' : 'no-') + featureNameSplit.join('-')]);
-      /* jshint +W041 */
 
       // Trigger the event
       Modernizr._trigger(feature, test);
@@ -843,6 +919,48 @@ to be the File object's prototype.)
   });
 
   
+
+/*!
+{
+  "name": "EXIF Orientation",
+  "property": "exiforientation",
+  "tags": ["image"],
+  "builderAliases": ["exif_orientation"],
+  "async": true,
+  "authors": ["Paul Sayre"],
+  "notes": [{
+    "name": "Article by Dave Perrett",
+    "href": "http://recursive-design.com/blog/2012/07/28/exif-orientation-handling-is-a-ghetto/"
+  },{
+    "name": "Article by Calvin Hass",
+    "href": "http://www.impulseadventure.com/photo/exif-orientation.html"
+  }]
+}
+!*/
+/* DOC
+Detects support for EXIF Orientation in JPEG images.
+
+iOS looks at the EXIF Orientation flag in JPEGs and rotates the image accordingly. Most desktop browsers just ignore this data.
+*/
+
+  // Bug trackers:
+  //    bugzil.la/298619 (unimplemented)
+  //    crbug.com/56845 (looks incomplete)
+  //    webk.it/19688 (available upstream but its up all ports to turn on individually)
+  Modernizr.addAsyncTest(function() {
+    var img = new Image();
+
+    img.onerror = function() {
+      addTest('exiforientation', false, {aliases: ['exif-orientation']});
+    };
+
+    img.onload = function() {
+      addTest('exiforientation', img.width !== 2, {aliases: ['exif-orientation']});
+    };
+
+    // There may be a way to shrink this more, it's a 1x2 white jpg with the orientation flag set to 6
+    img.src = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAASUkqAAgAAAABABIBAwABAAAABgASAAAAAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABAAIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigD/2Q==';
+  });
 
 
   /**
@@ -879,8 +997,8 @@ to be the File object's prototype.)
    * @optionProp hasEvent
    * @access public
    * @function hasEvent
-   * @param  {string|*}       eventName  is the name of an event to test for (e.g. "resize")
-   * @param  {Element|string} [element=HTMLDivElement] is the element|document|window|tagName to test on
+   * @param  {string|*} eventName - the name of an event to test for (e.g. "resize")
+   * @param  {Element|string} [element=HTMLDivElement] - is the element|document|window|tagName to test on
    * @returns {boolean}
    * @example
    *  `Modernizr.hasEvent` lets you determine if the browser supports a supplied event.
@@ -899,7 +1017,7 @@ to be the File object's prototype.)
    *
    */
 
-  var hasEvent = (function(undefined) {
+  var hasEvent = (function() {
 
     // Detect whether event support can be detected via `in`. Test on a DOM element
     // using the "blur" event b/c it should always exist. bit.ly/event-detection
@@ -1053,16 +1171,17 @@ Detects the audio element
   //   It was live in FF3.5.0 and 3.5.1, but fixed in 3.5.2
   //   It was also live in Safari 4.0.0 - 4.0.4, but fixed in 4.0.5
   Modernizr.addTest('audio', function() {
-    /* jshint -W053 */
     var elem = createElement('audio');
     var bool = false;
 
     try {
-      if (bool = !!elem.canPlayType) {
+      bool = !!elem.canPlayType
+      if (bool) {
         bool      = new Boolean(bool);
-        bool.ogg  = elem.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/, '');
-        bool.mp3  = elem.canPlayType('audio/mpeg; codecs="mp3"')  .replace(/^no$/, '');
-        bool.opus  = elem.canPlayType('audio/ogg; codecs="opus"') .replace(/^no$/, '');
+        bool.ogg  = elem.canPlayType('audio/ogg; codecs="vorbis"') .replace(/^no$/, '');
+        bool.mp3  = elem.canPlayType('audio/mpeg; codecs="mp3"')   .replace(/^no$/, '');
+        bool.opus  = elem.canPlayType('audio/ogg; codecs="opus"')  ||
+                     elem.canPlayType('audio/webm; codecs="opus"') .replace(/^no$/, '');
 
         // Mimetypes accepted:
         //   developer.mozilla.org/En/Media_formats_supported_by_the_audio_and_video_elements
@@ -1124,7 +1243,7 @@ Detects support for the text APIs for `<canvas>` elements.
   "caniuse": "video",
   "tags": ["html5"],
   "knownBugs": [
-    "Without QuickTime, `Modernizr.video.h264` will be `undefined`; http://github.com/Modernizr/Modernizr/issues/546"
+    "Without QuickTime, `Modernizr.video.h264` will be `undefined`; https://github.com/Modernizr/Modernizr/issues/546"
   ],
   "polyfills": [
     "html5media",
@@ -1155,13 +1274,13 @@ Modernizr.video.ogg     // 'probably'
   //   It was also live in Safari 4.0.0 - 4.0.4, but fixed in 4.0.5
 
   Modernizr.addTest('video', function() {
-    /* jshint -W053 */
     var elem = createElement('video');
     var bool = false;
 
     // IE9 Running on Windows Server SKU can cause an exception to be thrown, bug #224
     try {
-      if (bool = !!elem.canPlayType) {
+      bool = !!elem.canPlayType
+      if (bool) {
         bool = new Boolean(bool);
         bool.ogg = elem.canPlayType('video/ogg; codecs="theora"').replace(/^no$/, '');
 
@@ -1250,7 +1369,7 @@ Method of allowing calculated values for length units. For example:
   "authors": ["Mike Taylor"],
   "notes": [{
     "name": "WHATWG spec",
-    "href": "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#input-type-attr-summary"
+    "href": "https://html.spec.whatwg.org/multipage/forms.html#input-type-attr-summary"
   }],
   "knownBugs": ["Some blackberry devices report false positive for input.multiple"]
 }
@@ -1284,7 +1403,7 @@ Modernizr.input.step
   var inputattrs = 'autocomplete autofocus list placeholder max min multiple pattern required step'.split(' ');
   var attrs = {};
 
-  Modernizr['input'] = (function(props) {
+  Modernizr.input = (function(props) {
     for (var i = 0, len = props.length; i < len; i++) {
       attrs[ props[i] ] = !!(props[i] in inputElem);
     }
@@ -1348,9 +1467,9 @@ Modernizr.inputtypes.week
   var inputtypes = 'search tel url email datetime date month week time datetime-local number range color'.split(' ');
   var inputs = {};
 
-  Modernizr['inputtypes'] = (function(props) {
+  Modernizr.inputtypes = (function(props) {
     var len = props.length;
-    var smile = ':)';
+    var smile = '1)';
     var inputElemType;
     var defaultView;
     var bool;
@@ -1389,7 +1508,7 @@ Modernizr.inputtypes.week
           // Interestingly, opera fails the earlier test, so it doesn't
           //  even make it here.
 
-        } else if (/^(url|email|number)$/.test(inputElemType)) {
+        } else if (/^(url|email)$/.test(inputElemType)) {
           // Real url and email support comes with prebaked validation.
           bool = inputElem.checkValidity && inputElem.checkValidity() === false;
 
@@ -1493,6 +1612,7 @@ Modernizr.inputtypes.week
       body.parentNode.removeChild(body);
       docElement.style.overflow = docOverflow;
       // Trigger layout so kinetic scrolling isn't disabled in iOS6+
+      // eslint-disable-next-line
       docElement.offsetHeight;
     } else {
       div.parentNode.removeChild(div);
@@ -1566,7 +1686,7 @@ Modernizr.inputtypes.week
       injectElementWithStyles('@media ' + mq + ' { #modernizr { position: absolute; } }', function(node) {
         bool = (window.getComputedStyle ?
                 window.getComputedStyle(node, null) :
-                node.currentStyle)['position'] == 'absolute';
+                node.currentStyle).position == 'absolute';
       });
 
       return bool;
@@ -1645,7 +1765,7 @@ Modernizr.inputtypes.week
   "tags": ["media", "attribute"],
   "notes": [{
     "name": "Touch Events spec",
-    "href": "http://www.w3.org/TR/2013/WD-touch-events-20130124/"
+    "href": "https://www.w3.org/TR/2013/WD-touch-events-20130124/"
   }],
   "warnings": [
     "Indicates if the browser supports the Touch Events spec, and does not necessarily reflect a touchscreen device"
@@ -1679,6 +1799,8 @@ This test will also return `true` for Firefox 4 Multitouch support.
     if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
       bool = true;
     } else {
+      // include the 'heartz' as a way to have a non matching MQ to help terminate the join
+      // https://git.io/vznFH
       var query = ['@media (', prefixes.join('touch-enabled),('), 'heartz', ')', '{#modernizr{top:9px;position:absolute}}'].join('');
       testStyles(query, function(node) {
         bool = node.offsetTop === 9;
@@ -1689,25 +1811,25 @@ This test will also return `true` for Firefox 4 Multitouch support.
 
 /*!
 {
-  "name": "CSS Generated Content",
-  "property": "generatedcontent",
+  "name": "CSS vh unit",
+  "property": "cssvhunit",
+  "caniuse": "viewport-units",
   "tags": ["css"],
-  "warnings": ["Android won't return correct height for anything below 7px #738"],
+  "builderAliases": ["css_vhunit"],
   "notes": [{
-    "name": "W3C CSS Selectors Level 3 spec",
-    "href": "http://www.w3.org/TR/css3-selectors/#gen-content"
+    "name": "Related Modernizr Issue",
+    "href": "https://github.com/Modernizr/Modernizr/issues/572"
   },{
-    "name": "MDN article on :before",
-    "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/::before"
-  },{
-    "name": "MDN article on :after",
-    "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/::before"
+    "name": "Similar JSFiddle",
+    "href": "https://jsfiddle.net/FWeinb/etnYC/"
   }]
 }
 !*/
 
-  testStyles('#modernizr{font:0/0 a}#modernizr:after{content:":)";visibility:hidden;font:7px/1 a}', function(node) {
-    Modernizr.addTest('generatedcontent', node.offsetHeight >= 7);
+  testStyles('#modernizr { height: 50vh; }', function(elem) {
+    var height = parseInt(window.innerHeight / 2, 10);
+    var compStyle = parseInt(computedStyle(elem, null, 'height'), 10);
+    Modernizr.addTest('cssvhunit', compStyle == height);
   });
 
 /*!
@@ -1722,7 +1844,7 @@ This test will also return `true` for Firefox 4 Multitouch support.
     "href": "https://github.com/Modernizr/Modernizr/issues/572"
   },{
     "name": "JSFiddle Example",
-    "href": "http://jsfiddle.net/glsee/JRmdq/8/"
+    "href": "https://jsfiddle.net/glsee/JRmdq/8/"
   }]
 }
 !*/
@@ -1736,37 +1858,10 @@ This test will also return `true` for Firefox 4 Multitouch support.
     var one_vw = fullSizeElem.clientWidth / 100;
     var one_vh = fullSizeElem.clientHeight / 100;
     var expectedWidth = parseInt(Math.min(one_vw, one_vh) * 50, 10);
-    var compWidth = parseInt((window.getComputedStyle ?
-                          getComputedStyle(elem, null) :
-                          elem.currentStyle)['width'], 10);
+    var compWidth = parseInt(computedStyle(elem, null, 'width'), 10);
 
     Modernizr.addTest('cssvminunit', roundedEquals(expectedWidth, compWidth) || roundedEquals(expectedWidth, compWidth - scrollbarWidth));
   }, 3);
-
-/*!
-{
-  "name": "CSS vh unit",
-  "property": "cssvhunit",
-  "caniuse": "viewport-units",
-  "tags": ["css"],
-  "builderAliases": ["css_vhunit"],
-  "notes": [{
-    "name": "Related Modernizr Issue",
-    "href": "https://github.com/Modernizr/Modernizr/issues/572"
-  },{
-    "name": "Similar JSFiddle",
-    "href": "http://jsfiddle.net/FWeinb/etnYC/"
-  }]
-}
-!*/
-
-  testStyles('#modernizr { height: 50vh; }', function(elem) {
-    var height = parseInt(window.innerHeight / 2, 10);
-    var compStyle = parseInt((window.getComputedStyle ?
-                              getComputedStyle(elem, null) :
-                              elem.currentStyle)['height'], 10);
-    Modernizr.addTest('cssvhunit', compStyle == height);
-  });
 
 /*!
 {
@@ -1780,7 +1875,7 @@ This test will also return `true` for Firefox 4 Multitouch support.
     "href": "https://github.com/Modernizr/Modernizr/issues/572"
   },{
     "name": "JSFiddle Example",
-    "href": "http://jsfiddle.net/glsee/JDsWQ/4/"
+    "href": "https://jsfiddle.net/glsee/JDsWQ/4/"
   }]
 }
 !*/
@@ -1794,9 +1889,7 @@ This test will also return `true` for Firefox 4 Multitouch support.
     var one_vw = fullSizeElem.clientWidth / 100;
     var one_vh = fullSizeElem.clientHeight / 100;
     var expectedWidth = parseInt(Math.max(one_vw, one_vh) * 50, 10);
-    var compWidth = parseInt((window.getComputedStyle ?
-                          getComputedStyle(elem, null) :
-                          elem.currentStyle)['width'], 10);
+    var compWidth = parseInt(computedStyle(elem, null, 'width'), 10);
 
     Modernizr.addTest('cssvmaxunit', roundedEquals(expectedWidth, compWidth) || roundedEquals(expectedWidth, compWidth - scrollbarWidth));
   }, 3);
@@ -1813,16 +1906,14 @@ This test will also return `true` for Firefox 4 Multitouch support.
     "href": "https://github.com/Modernizr/Modernizr/issues/572"
   },{
     "name": "JSFiddle Example",
-    "href": "http://jsfiddle.net/FWeinb/etnYC/"
+    "href": "https://jsfiddle.net/FWeinb/etnYC/"
   }]
 }
 !*/
 
   testStyles('#modernizr { width: 50vw; }', function(elem) {
     var width = parseInt(window.innerWidth / 2, 10);
-    var compStyle = parseInt((window.getComputedStyle ?
-                              getComputedStyle(elem, null) :
-                              elem.currentStyle).width, 10);
+    var compStyle = parseInt(computedStyle(elem, null, 'width'), 10);
 
     Modernizr.addTest('cssvwunit', compStyle == width);
   });
@@ -1858,7 +1949,7 @@ This test will also return `true` for Firefox 4 Multitouch support.
 
   // Accepts a list of property names and a single value
   // Returns `undefined` if native detection not available
-  function nativeTestProps (props, value) {
+  function nativeTestProps(props, value) {
     var i = props.length;
     // Start with the JS API: http://www.w3.org/TR/css3-conditional/#the-css-interface
     if ('CSS' in window && 'supports' in window.CSS) {
@@ -1879,7 +1970,7 @@ This test will also return `true` for Firefox 4 Multitouch support.
       }
       conditionText = conditionText.join(' or ');
       return injectElementWithStyles('@supports (' + conditionText + ') { #modernizr { position: absolute; } }', function(node) {
-        return getComputedStyle(node, null).position == 'absolute';
+        return computedStyle(node, null, 'position') == 'absolute';
       });
     }
     return undefined;
@@ -1907,6 +1998,13 @@ This test will also return `true` for Firefox 4 Multitouch support.
   /**
    * testDOMProps is a generic DOM property test; if a browser supports
    *   a certain property, it won't return undefined for it.
+   *
+   * @access private
+   * @function testDOMProps
+   * @param {array.<string>} props - An array of properties to test for
+   * @param {object} obj - An object or Element you want to use to test the parameters again
+   * @param {boolean|object} elem - An Element to bind the property lookup again. Use `false` to prevent the check
+   * @returns {false|*} returns false if the prop is unsupported, otherwise the value that is supported
    */
   function testDOMProps(props, obj, elem) {
     var item;
@@ -1943,7 +2041,7 @@ This test will also return `true` for Firefox 4 Multitouch support.
    */
 
   var modElem = {
-    elem : createElement('modernizr')
+    elem: createElement('modernizr')
   };
 
   // Clean up this element
@@ -1954,7 +2052,7 @@ This test will also return `true` for Firefox 4 Multitouch support.
   
 
   var mStyle = {
-    style : modElem.elem.style
+    style: modElem.elem.style
   };
 
   // kill ref for gc, must happen before mod.elem is removed, so we unshift on to
@@ -1998,8 +2096,9 @@ This test will also return `true` for Firefox 4 Multitouch support.
     // inside of an SVG element, in certain browsers, the `style` element is only
     // defined for valid tags. Therefore, if `modernizr` does not have one, we
     // fall back to a less used element and hope for the best.
-    var elems = ['modernizr', 'tspan'];
-    while (!mStyle.style) {
+    // for strict XHTML browsers the hardly used samp element is used
+    var elems = ['modernizr', 'tspan', 'samp'];
+    while (!mStyle.style && elems.length) {
       afterInit = true;
       mStyle.modElem = createElement(elems.shift());
       mStyle.style = mStyle.modElem.style;
@@ -2102,11 +2201,20 @@ This test will also return `true` for Firefox 4 Multitouch support.
    * We specify literally ALL possible (known and/or likely) properties on
    * the element including the non-vendor prefixed one, for forward-
    * compatibility.
+   *
+   * @access private
+   * @function testPropsAll
+   * @param {string} prop - A string of the property to test for
+   * @param {string|object} [prefixed] - An object to check the prefixed properties on. Use a string to skip
+   * @param {HTMLElement|SVGElement} [elem] - An element used to test the property and value against
+   * @param {string} [value] - A string of a css value
+   * @param {boolean} [skipValueTest] - An boolean representing if you want to test if value sticks when set
+   * @returns {false|string} returns the string version of the property, or false if it is unsupported
    */
   function testPropsAll(prop, prefixed, elem, value, skipValueTest) {
 
     var ucProp = prop.charAt(0).toUpperCase() + prop.slice(1),
-    props = (prop + ' ' + cssomPrefixes.join(ucProp + ' ') + ucProp).split(' ');
+      props = (prop + ' ' + cssomPrefixes.join(ucProp + ' ') + ucProp).split(' ');
 
     // did they call .prefixed('boxSizing') or are we just testing a prop?
     if (is(prefixed, 'string') || is(prefixed, 'undefined')) {
@@ -2138,7 +2246,8 @@ This test will also return `true` for Firefox 4 Multitouch support.
    * @access public
    * @function prefixed
    * @param {string} prop - String name of the property to test for
-   * @param {object} [obj]- An object to test for the prefixed properties on
+   * @param {object} [obj] - An object to test for the prefixed properties on
+   * @param {HTMLElement} [elem] - An element used to test specific properties against
    * @returns {string|false} The string representing the (possibly prefixed) valid
    * version of the property, or `false` when it is unsupported.
    * @example
@@ -2302,7 +2411,7 @@ Detects support for the ability to make the current website take over the user's
    * ```
    */
 
-  function testAllProps (prop, value, skipValueTest) {
+  function testAllProps(prop, value, skipValueTest) {
     return testPropsAll(prop, undefined, undefined, value, skipValueTest);
   }
   ModernizrProto.testAllProps = testAllProps;
@@ -2312,10 +2421,10 @@ Detects support for the ability to make the current website take over the user's
   "name": "Background Size",
   "property": "backgroundsize",
   "tags": ["css"],
-  "knownBugs": ["This will false positive in Opera Mini - http://github.com/Modernizr/Modernizr/issues/396"],
+  "knownBugs": ["This will false positive in Opera Mini - https://github.com/Modernizr/Modernizr/issues/396"],
   "notes": [{
     "name": "Related Issue",
-    "href": "http://github.com/Modernizr/Modernizr/issues/396"
+    "href": "https://github.com/Modernizr/Modernizr/issues/396"
   }]
 }
 !*/
@@ -2335,12 +2444,12 @@ Detects support for the ability to make the current website take over the user's
 
   (function() {
 
-    /* jshint -W053 */
     Modernizr.addTest('csscolumns', function() {
       var bool = false;
       var test = testAllProps('columnCount');
       try {
-        if (bool = !!test) {
+        bool = !!test
+        if (bool) {
           bool = new Boolean(bool);
         }
       } catch (e) {}
@@ -2366,6 +2475,27 @@ Detects support for the ability to make the current website take over the user's
 
   })();
 
+
+/*!
+{
+  "name": "Flexbox",
+  "property": "flexbox",
+  "caniuse": "flexbox",
+  "tags": ["css"],
+  "notes": [{
+    "name": "The _new_ flexbox",
+    "href": "http://dev.w3.org/csswg/css3-flexbox"
+  }],
+  "warnings": [
+    "A `true` result for this detect does not imply that the `flex-wrap` property is supported; see the `flexwrap` detect."
+  ]
+}
+!*/
+/* DOC
+Detects support for the Flexible Box Layout model, a.k.a. Flexbox, which allows easy manipulation of layout order and sizing within a container.
+*/
+
+  Modernizr.addTest('flexbox', testAllProps('flexBasis', '1px', true));
 
 /*!
 {
