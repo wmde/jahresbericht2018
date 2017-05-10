@@ -84,6 +84,7 @@ body {
 .limit--l {
   max-width: 1360px;
   margin: 0 auto;
+  position: relative;
 }
 .limit--m {
   max-width: 960px;
@@ -161,8 +162,24 @@ body {
 
 /* Section Backgrounds
 ---------------------------------------------------------------- */
+.bg--icons-white {
+  background-color: white;
+}
 .bg--icons-lavender {
 	background-color: lavender;
+}
+.bg--green {
+  background-color: var(--color-green);
+}
+.bg--stripe {
+  width: 100vw;
+  height: 300px;
+  margin-top: -150px;
+  background: var(--color-diag-gradient);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: skew(0, 165deg);
 }
 
 /* Content Sections
@@ -172,6 +189,7 @@ body {
 }
 .section__heading { /* == h--delta special */
   font-family: var(--font-family-sans);
+  color: var(--color-green);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
@@ -236,7 +254,7 @@ a:focus {
   opacity: 1;
 }
 .nav__list li + li {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 /* Figures
@@ -284,6 +302,7 @@ a:focus {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 .main-header .limit--l {
   position: relative;
@@ -350,9 +369,18 @@ a:focus {
 /* Hero
 ---------------------------------------------------------------- */
 .hero {
-  min-height: 50vh;
+  min-height: 100vh;
   color: white;
   background: var(--color-diag-gradient);
+  transform: skew(0, 165deg);
+  transform-origin: 0 0;
+  position: relative; /* overlap following section */
+  z-index: 20;
+}
+.hero__title {
+  transform: skew(0, -165deg);
+  transform-origin: 0 0;
+  margin-top: 250px;
 }
 
 /* Forms
@@ -400,20 +428,111 @@ a:focus {
 }
 .jb-split__content {
 	position: relative;
-	padding: 30px 40px;
+	padding: 30px 80px 30px 40px;
 }
 .jb-split__content h1 {
 	margin: 0;
+  color: var(--color-green);
 }
-.jb-split__content h1 em {
-	font-style: normal;
-	color: var(--color-green);
+.jb-split__content ul {
+  padding: 0;
+  list-style-position: inside;
+  list-style: none;
+}
+.jb-split__content li:before {
+  content: "\00b7";
+}
+.jb-split__content ul li span {
+  position: relative;
+  left: 5px;
 }
 .jb-split--row .button {
 	position: absolute;
 	bottom: 40px;
 	color: var(--color-green);
 	border-color: var(--color-green);
+}
+
+.jb-fact {
+  display: flex;
+}
+.jb-fact .fig {
+  width: 50%;
+}
+.jb-fact .fig img {
+  display: block;
+  margin: 0 auto;
+}
+.jb-fact__content {
+  position: relative;
+  width: 50%;
+}
+.jb-fact__content h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.jb-fact__content .button {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Home
+---------------------------------------------------------------- */
+.home__intro {
+  margin-top: -1040px; /* fill up background behind hero */
+  padding-top: 1000px;
+  z-index: 10; /* hide overlap from next section */
+  padding-bottom: 120px;
+}
+.home__intro h1 {
+  text-align: center;
+  color: var(--color-green);
+  margin-bottom: 60px;
+}
+.home__intro p {
+  margin-bottom: 40px;
+}
+.home__intro .figs {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.home__intro .fig {
+  width: 450px;
+}
+.home__intro .fig img {
+  max-width: 100%;
+}
+.home__intro .fig__caption {
+  padding-top: 20px;
+}
+
+.home__facts,
+.home__facts .section__heading {
+  color: white;
+}
+.home__facts .button {
+  color: var(--color-green);
+  background-color: white;
+  border: none;
+}
+
+.home__join {
+  text-align: center;
+}
+.home__join h1 {
+  margin-top: -40px;
+  margin-bottom: 0;
+  color: var(--color-green);
+}
+.home__join p {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.home__join .button {
+  color: white;
+  background-color: var(--color-green);
+  border: 0;
 }
 
 /* Finance-Banner
@@ -434,6 +553,3 @@ a:focus {
   background-color: white;
   border: none;
 }
-
-/* Home
----------------------------------------------------------------- */
