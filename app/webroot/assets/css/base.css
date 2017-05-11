@@ -167,6 +167,13 @@ body {
   line-height: 1.2;
 }
 
+.h--alpha,
+.h--beta,
+.h--gamma,
+.h--delta {
+  margin: 0.67em 0;
+}
+
 .h--alpha a,
 .h--beta a,
 .h--gamma a,
