@@ -35,14 +35,16 @@
 		<div class="bg--stripe"></div>
 		<div class="section__body limit--l">
 			<h2 class="section__heading"><div>Jahresrückblick</div></h2>
-			<div class="jb-fact limit--s">
-				<figure class="fig">
-					<img src="assets/img/icon_neuautoren.svg" alt="Icon Neuautoren">
-				</figure>
-				<div class="jb-fact__content">
-					<h1 class="h--alpha jb-fact__title">12000</h1>
-					<p class="t--delta">Videos wurden produziert, um den Einstieg für neue Wikipedia-Autorinnen und -Autoren zu erleichtern.</p>
-					<a class="button" href="<?= $url('review', $lang) ?>">Alle Fakten sehen</a>
+			<div class="section__body">
+				<div class="jb-fact limit--s">
+					<figure class="fig">
+						<img src="assets/img/icon_neuautoren.svg" alt="Icon Neuautoren">
+					</figure>
+					<div class="jb-fact__content">
+						<h1 class="h--alpha jb-fact__title">12000</h1>
+						<p class="t--delta">Videos wurden produziert, um den Einstieg für neue Wikipedia-Autorinnen und -Autoren zu erleichtern.</p>
+						<a class="button" href="<?= $url('review', $lang) ?>">Alle Fakten sehen</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -50,17 +52,19 @@
 	<section class="section cp--center-section bg--icons-lavender">
 		<div class="limit--l">
 			<h2 class="section__heading"><div>Themen</div></h2>
-			<div class="jb-split--row limit--m">
-				<figure class="fig" style="background-image: url('https://unsplash.it/800/600/?blur');">
-				</figure>
-				<div class="jb-split__content">
-					<h1 class="h--beta">Wikipedia wird 15!</h1>
-					<ul class="t--delta">
-						<li><span>Ohne Ehrenamtliche keine Wikipedia</span></li>
-						<li><span>Engagement würdigen</span></li>
-						<li><span>Wikipedia to the Moon</span></li>
-					</ul>
-					<a class="button" href="<?= $url('report/moon', $lang) ?>">Zu diesem Thema</a>
+			<div class="section__body">
+				<div class="jb-split--row limit--m">
+					<figure class="fig" style="background-image: url('https://unsplash.it/800/600/?blur');">
+					</figure>
+					<div class="jb-split__content">
+						<h1 class="h--beta">Wikipedia wird 15!</h1>
+						<ul class="t--delta">
+							<li><span>Ohne Ehrenamtliche keine Wikipedia</span></li>
+							<li><span>Engagement würdigen</span></li>
+							<li><span>Wikipedia to the Moon</span></li>
+						</ul>
+						<a class="button" href="<?= $url('report/moon', $lang) ?>">Zu diesem Thema</a>
+					</div>
 				</div>
 			</div>
 			<div class="section__actions">
@@ -68,7 +72,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section finance-banner">
+	<section class="finance-banner">
 		<div class="home__bagels">
 			<figure class="home__bagel--1">
 				<img src="assets/img/start_finanzen_circle_1.png" alt="Image of a random bagel chart">
@@ -82,7 +86,11 @@
 	</section>
 	<section class="section cp--upped-section home__join">
 		<h1 class="h--beta">Werde Mitglied bei Wikimedia Deutschland!</h1>
-		<p class="t--delta">Es geht ganz einfach online und ab 2 Euro pro Monat.</p>
-		<a href="http://wmde.org/WikimediaMitglied" class="button">Mitglied werden</a>
+		<div class="section__body">
+			<p class="t--delta">Es geht ganz einfach online und ab 2 Euro pro Monat.</p>
+		</div>
+		<div class="section__actions">
+			<a href="http://wmde.org/WikimediaMitglied" class="button">Mitglied werden</a>
+		</div>
 	</section>
 </main>
