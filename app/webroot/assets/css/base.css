@@ -84,6 +84,9 @@ body {
 .cp--section {
 	padding: 160px 40px;
 }
+.cp--2x-bottom {
+	padding-bottom: 80px;
+}
 
 .limit--l {
   max-width: 1360px;
