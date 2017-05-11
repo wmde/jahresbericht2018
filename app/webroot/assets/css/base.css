@@ -73,6 +73,10 @@ body {
   max-height: 0 !important;
 }
 
+figure {
+  margin: 0;
+}
+
 /* Content Padding / Limiters
 ---------------------------------------------------------------- */
 .cp {
@@ -284,12 +288,8 @@ a:focus {
 
 /* Figures
 ---------------------------------------------------------------- */
-.fig {
-	margin: 0;
-}
-.fig__image {
-
-}
+.fig {}
+.fig__image {}
 .fig__caption {
   /* inherited from t--epsilon */
   font-family: var(--font-family-sans);
@@ -615,9 +615,6 @@ a:focus {
   color: var(--color-purple);
   background-color: white;
   border: none;
-}
-.home__bagels figure {
-  margin: 0;
 }
 .home__bagels img {
   max-width: 100%;
