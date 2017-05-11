@@ -513,6 +513,31 @@ a:focus {
 	border-color: var(--color-green);
 }
 
+/* Jumpbox: HSPLIT
+---------------------------------------------------------------- */
+.jb-hsplit {
+	background-color: white;
+  position: relative;
+}
+.jb-hsplit__cover {
+  height: 400px;
+  width: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+.jb-hsplit__content {
+	padding: 30px 80px 30px 40px;
+}
+.jb-hsplit__title {
+  margin: 0;
+}
+.jb-hsplit-list {
+  margin: -40px;
+}
+.jb-hsplit-list .jb-hsplit {
+  margin: 40px;
+}
+
 /* Jumpbox: FACT
 ---------------------------------------------------------------- */
 .jb-fact {
