@@ -9,14 +9,10 @@ $path = $_SERVER['REQUEST_URI'];
 $isCanonical = false;
 
 // language controller
-list($first, $tail) = explode('/', trim($path, '/'), 2);
-if ($first === 'de') {
-	$path = $tail;
+if (preg_match('#^/(de|en)/(.*)#', $path, $matches)) {
 	$isCanonical = true;
-} elseif ($first === 'en') {
-	$lang = 'en';
-	$path = $tail;
-	$isCanonical = true;
+	$lang = $matches[1];
+	$path = '/' . $matches[2];
 }
 
 // link controller
@@ -62,7 +58,7 @@ if ($viewFile === false || trim($path, '/') === 'home') {
 }
 
 // "Model" Layer
-if (preg_match('#/(report)?#', $path)) {
+if (preg_match('#^(/|/report|/report/.*)$#', $path)) {
 	$reports = include APP_PATH .'/data/reports.php';
 }
 
