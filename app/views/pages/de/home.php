@@ -56,14 +56,17 @@
 				<div class="swiper-wrapper">
 					<?php foreach ($reports as $report): ?>
 					<div class="swiper-slide">
-						<div class="jb-split--row">
-							<figure class="fig" style="background-image: url('<?= $report['cover'] ?>');"></figure>
-							<div class="jb-split__content">
-								<h1 class="h--beta"><?= $report['title'][$lang] ?></h1>
-								<div class="jb-split__teaser">
+						<div class="jb-vsplit">
+							<figure
+								class="jb-vsplit__cover"
+								style="background-image: url('<?= $report['cover'] ?>');"
+							></figure>
+							<div class="jb-vsplit__content">
+								<h1 class="h--beta jb-vsplit__title"><?= $report['title'][$lang] ?></h1>
+								<div class="jb-vsplit__teaser">
 									<?php echo $report['teaser'][$lang] ?>
 								</div>
-								<a class="button" href="<?= $url('report/' . $report['name'], $lang) ?>">Zu diesem Thema</a>
+								<a class="jb-vsplit__button button" href="<?= $url('report/' . $report['name'], $lang) ?>">Zu diesem Thema</a>
 							</div>
 						</div>
 					</div>

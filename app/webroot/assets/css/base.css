@@ -463,44 +463,44 @@ a:focus {
 	border: none;
 }
 
-/* Jumpbox: SPLIT
+/* Jumpbox: VSPLIT
 ---------------------------------------------------------------- */
-.jb-split--row {
+.jb-vsplit {
 	height: 420px;
   width: 80vw;
   max-width: 960px;
 	background-color: white;
 	display: flex;
 }
-.jb-split--row .fig {
+.jb-vsplit__cover,
+.jb-vsplit__content {
 	width: 50%;
+}
+.jb-vsplit__cover {
 	background-size: cover;
 	background-position: center center;
 }
-.jb-split--row .jb-split__content {
-	width: 50%;
-}
-.jb-split__content {
-	position: relative;
-	padding: 30px 80px 30px 40px;
-}
-.jb-split__content h1 {
+.jb-vsplit__title {
 	margin: 0;
   color: var(--color-green);
 }
-.jb-split__content ul {
+.jb-vsplit__content {
+	position: relative;
+	padding: 30px 80px 30px 40px;
+}
+.jb-vsplit__content ul {
   padding: 0;
   list-style-position: inside;
   list-style: none;
 }
-.jb-split__content li:before {
+.jb-vsplit__content li:before {
   content: "\00b7";
 }
-.jb-split__content ul li span {
+.jb-vsplit__content ul li span {
   position: relative;
   left: 5px;
 }
-.jb-split--row .button {
+.jb-vsplit__button {
 	position: absolute;
 	bottom: 40px;
 	color: var(--color-green);
