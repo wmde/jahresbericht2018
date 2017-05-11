@@ -51,4 +51,25 @@ require([
       var s = Skrollr.init();
     });
   }
+
+  var $slider = $('.slider');
+  if ($slider.length) {
+    require(['swiper'], function(Swiper) {
+      $slider.each(function() {
+        var $el = $(this);
+
+        var swiper = new Swiper($el.get(0), {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            keyboardControl: true,
+            onImagesReady: function() {
+              $el.removeClass('loading');
+            }
+        });
+      });
+    });
+  }
+
 });

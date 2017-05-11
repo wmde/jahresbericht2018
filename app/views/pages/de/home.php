@@ -52,20 +52,40 @@
 	<section class="section cp--center-section bg--icons-lavender">
 		<div class="limit--l">
 			<h2 class="section__heading"><div>Themen</div></h2>
-			<div class="section__body">
-				<div class="jb-split--row limit--m">
-					<figure class="fig" style="background-image: url('https://unsplash.it/800/600/?blur');">
-					</figure>
-					<div class="jb-split__content">
-						<h1 class="h--beta">Wikipedia wird 15!</h1>
-						<ul class="t--delta">
-							<li><span>Ohne Ehrenamtliche keine Wikipedia</span></li>
-							<li><span>Engagement würdigen</span></li>
-							<li><span>Wikipedia to the Moon</span></li>
-						</ul>
-						<a class="button" href="<?= $url('report/moon', $lang) ?>">Zu diesem Thema</a>
+			<div class="section__body slider swiper-container loading">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="jb-split--row">
+							<figure class="fig" style="background-image: url('https://unsplash.it/800/600/?blur');">
+							</figure>
+							<div class="jb-split__content">
+								<h1 class="h--beta">Wikipedia wird 15!</h1>
+								<ul class="t--delta">
+									<li><span>Ohne Ehrenamtliche keine Wikipedia</span></li>
+									<li><span>Engagement würdigen</span></li>
+									<li><span>Wikipedia to the Moon</span></li>
+								</ul>
+								<a class="button" href="<?= $url('report/moon', $lang) ?>">Zu diesem Thema</a>
+							</div>
+						</div>
 					</div>
+					<div class="swiper-slide">
+						<div class="jb-split--row">
+							<figure class="fig" style="background-image: url('https://unsplash.it/800/600/?blur');">
+							</figure>
+							<div class="jb-split__content">
+								<h1 class="h--beta">Wikipedia wird 15!</h1>
+								<ul class="t--delta">
+									<li><span>Ohne Ehrenamtliche keine Wikipedia</span></li>
+									<li><span>Engagement würdigen</span></li>
+									<li><span>Wikipedia to the Moon</span></li>
+								</ul>
+								<a class="button" href="<?= $url('report/moon', $lang) ?>">Zu diesem Thema</a>
+							</div>
+						</div>
 				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
 			<div class="section__actions">
 				<a class="button button--bg-green" href="<?= $url('report', $lang) ?>">Zur Themenübersicht</a>

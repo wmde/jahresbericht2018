@@ -241,8 +241,6 @@ body {
 	text-align: center;
 }
 
-
-
 /* Hyperlinks
 ---------------------------------------------------------------- */
 a {
@@ -469,6 +467,8 @@ a:focus {
 ---------------------------------------------------------------- */
 .jb-split--row {
 	height: 420px;
+  /* width: 960px; */
+  max-width: 960px;
 	background-color: white;
 	display: flex;
 }
@@ -646,4 +646,80 @@ a:focus {
   right: -430px;
   bottom: -400px;
   transform: rotate(50deg);
+}
+
+/* Swiper
+---------------------------------------------------------------- */
+.swiper-container.loading .swiper-slide {
+/*  opacity: 0; */
+}
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  transform: translate3d(0px, 0, 0);
+}
+.swiper-slide {
+  opacity: 1;
+  width: auto;
+  height: 100%;
+  position: relative;
+  transition: opacity .5s;
+}
+
+/* Auto Height */
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-container-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: 52px;
+  height: 99px;
+  margin-top: -50px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  filter: invert(100%);
+  background-image: url("../ico/arrow_white_left.svg");
+  left: 10px;
+  right: auto
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background-image: url("../ico/arrow_white_right.svg");
+  right: 10px;
+  left: auto
 }
