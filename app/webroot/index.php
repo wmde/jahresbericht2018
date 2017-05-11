@@ -61,6 +61,11 @@ if ($viewFile === false || trim($path, '/') === 'home') {
 	exit();
 }
 
+// "Model" Layer
+if (preg_match('#/(report)?#', $path)) {
+	$reports = include APP_PATH .'/data/reports.php';
+}
+
 require APP_PATH . '/views/elements/' . $lang . '/header.php';
 require $viewFile;
 require APP_PATH . '/views/elements/' . $lang . '/footer.php';

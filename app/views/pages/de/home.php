@@ -54,36 +54,20 @@
 			<h2 class="section__heading"><div>Themen</div></h2>
 			<div class="section__body slider swiper-container loading">
 				<div class="swiper-wrapper">
+					<?php foreach ($reports as $report): ?>
 					<div class="swiper-slide">
 						<div class="jb-split--row">
-							<figure class="fig" style="background-image: url('https://unsplash.it/800/600/?blur');">
-							</figure>
+							<figure class="fig" style="background-image: url('<?= $report['cover'] ?>');"></figure>
 							<div class="jb-split__content">
-								<h1 class="h--beta">Wikipedia wird 15!</h1>
-								<ul class="t--delta">
-									<li><span>Ohne Ehrenamtliche keine Wikipedia</span></li>
-									<li><span>Engagement würdigen</span></li>
-									<li><span>Wikipedia to the Moon</span></li>
-								</ul>
-								<a class="button" href="<?= $url('report/moon', $lang) ?>">Zu diesem Thema</a>
+								<h1 class="h--beta"><?= $report['title'][$lang] ?></h1>
+								<div class="jb-split__teaser">
+									<?php echo $report['teaser'][$lang] ?>
+								</div>
+								<a class="button" href="<?= $url('report/' . $report['name'], $lang) ?>">Zu diesem Thema</a>
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide">
-						<div class="jb-split--row">
-							<figure class="fig" style="background-image: url('https://unsplash.it/800/600/?blur');">
-							</figure>
-							<div class="jb-split__content">
-								<h1 class="h--beta">Wikipedia wird 15!</h1>
-								<ul class="t--delta">
-									<li><span>Ohne Ehrenamtliche keine Wikipedia</span></li>
-									<li><span>Engagement würdigen</span></li>
-									<li><span>Wikipedia to the Moon</span></li>
-								</ul>
-								<a class="button" href="<?= $url('report/moon', $lang) ?>">Zu diesem Thema</a>
-							</div>
-						</div>
-					</div>
+					<?php endforeach ?>
 				</div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
