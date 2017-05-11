@@ -69,6 +69,14 @@
 		</div>
 	</section>
 	<section class="section finance-banner">
+		<div class="home__bagels">
+			<figure class="home__bagel--1">
+				<img src="assets/img/start_finanzen_circle_1.png" alt="Image of a random bagel chart">
+			</figure>
+			<figure class="home__bagel--2">
+				<img src="assets/img/start_finanzen_circle_2.png" alt="Image of random bagel chart">
+			</figure>
+		</div>
 		<h1 class="h--alpha">Finanzen 2016</h1>
 		<a class="button" href="<?= $url('finance', $lang) ?>">Zum Finanzteil</a>
 	</section>

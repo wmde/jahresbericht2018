@@ -508,7 +508,7 @@ a:focus {
 }
 
 .home__facts {
-  overflow: hidden;
+  overflow: hidden; /* prevent bg--stripe overflow */
 }
 .home__facts,
 .home__facts .section__heading {
@@ -540,19 +540,72 @@ a:focus {
 
 /* Finance-Banner
 ---------------------------------------------------------------- */
+@keyframes rotating--cw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating--ccw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
 .finance-banner {
   min-height: 50vh;
-  padding: 160px 40px;
+  padding: 200px 40px;
   color: white;
   background: var(--color-diag-gradient);
   text-align: center;
+  overflow: hidden;
 }
 .finance-banner h1 {
+  position: relative;
+  z-index: 10;
   margin: 0;
 }
 .finance-banner .button {
+  position: relative;
+  z-index: 10;
   margin-top: 40px;
   color: var(--color-purple);
   background-color: white;
   border: none;
+}
+.home__bagels figure {
+  margin: 0;
+}
+.home__bagels img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.home__bagels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 800px;
+  height: 100%;
+}
+.home__bagel--1,
+.home__bagel--2 {
+  position: absolute;
+  width: 860px;
+  height: 860px;
+}
+.home__bagel--1 {
+  left: -430px;
+  top: -300px;
+  animation: rotating--cw 60s linear infinite;
+}
+.home__bagel--2 {
+  right: -430px;
+  bottom: -400px;
+  animation: rotating--ccw 60s linear infinite;
 }
