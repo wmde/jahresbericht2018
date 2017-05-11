@@ -81,8 +81,11 @@ body {
 .cp--nav-zone {
   padding-top: 140px;
 }
-.cp--section {
+.cp--center-section {
 	padding: 160px 40px;
+}
+.cp--upped-section {
+	padding: 120px 40px 160px 40px;
 }
 .cp--2x-bottom {
 	padding-bottom: 80px;
@@ -573,7 +576,6 @@ a:focus {
   text-align: center;
 }
 .home__join h1 {
-  margin-top: -40px;
   margin-bottom: 0;
   color: var(--color-green);
 }

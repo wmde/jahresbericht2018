@@ -31,7 +31,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section cp--section bg--green home__facts">
+	<section class="section cp--center-section bg--green home__facts">
 		<div class="bg--stripe"></div>
 		<div class="section__body limit--l">
 			<h2 class="section__heading"><div>Jahresrückblick</div></h2>
@@ -40,14 +40,14 @@
 					<img src="assets/img/icon_neuautoren.svg" alt="Icon Neuautoren">
 				</figure>
 				<div class="jb-fact__content">
-					<h1 class="h--alpha">12000</h1>
+					<h1 class="h--alpha jb-fact__title">12000</h1>
 					<p class="t--delta">Videos wurden produziert, um den Einstieg für neue Wikipedia-Autorinnen und -Autoren zu erleichtern.</p>
 					<a class="button" href="<?= $url('review', $lang) ?>">Alle Fakten sehen</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="section cp--section bg--icons-lavender">
+	<section class="section cp--upped-section bg--icons-lavender">
 		<div class="limit--l">
 			<h2 class="section__heading"><div>Themen</div></h2>
 			<div class="jb-split--row limit--m">
@@ -80,7 +80,7 @@
 		<h1 class="h--alpha">Finanzen 2016</h1>
 		<a class="button" href="<?= $url('finance', $lang) ?>">Zum Finanzteil</a>
 	</section>
-	<section class="section cp--section home__join">
+	<section class="section cp--center-section home__join">
 		<h1 class="h--beta">Werde Mitglied bei Wikimedia Deutschland!</h1>
 		<p class="t--delta">Es geht ganz einfach online und ab 2 Euro pro Monat.</p>
 		<a href="http://wmde.org/WikimediaMitglied" class="button">Mitglied werden</a>
