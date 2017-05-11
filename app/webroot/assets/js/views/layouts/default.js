@@ -20,14 +20,14 @@ require([
 ], function(
   $
 ) {
-  // Bridge between PHP flash messaging and JS notify.
-  // Load libraries only when required to reduce request count.
-  var flashMessage = $('#messages').data('flash-message');
-  var flashLevel = $('#messages').data('flash-level') || 'neutral';
+  var $imprint = $('.imprint');
 
-  if (flashMessage) {
-    require(['notify'], function() {
-      $.notify(flashMessage, {level: flashLevel});
-    });
-  }
+  $('.imprint-toggle').on('click', function(ev) {
+    ev.preventDefault();
+    $imprint.toggleClass('invis');
+  });
+  $('.imprint-close').on('click', function(ev) {
+    ev.preventDefault();
+    $imprint.removeClass('invis');
+  });
 });
