@@ -507,6 +507,9 @@ a:focus {
   padding-top: 20px;
 }
 
+.home__facts {
+  overflow: hidden;
+}
 .home__facts,
 .home__facts .section__heading {
   color: white;
