@@ -47,7 +47,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section cp--upped-section bg--icons-lavender">
+	<section class="section cp--center-section bg--icons-lavender">
 		<div class="limit--l">
 			<h2 class="section__heading"><div>Themen</div></h2>
 			<div class="jb-split--row limit--m">
@@ -80,7 +80,7 @@
 		<h1 class="h--alpha">Finanzen 2016</h1>
 		<a class="button" href="<?= $url('finance', $lang) ?>">Zum Finanzteil</a>
 	</section>
-	<section class="section cp--center-section home__join">
+	<section class="section cp--upped-section home__join">
 		<h1 class="h--beta">Werde Mitglied bei Wikimedia Deutschland!</h1>
 		<p class="t--delta">Es geht ganz einfach online und ab 2 Euro pro Monat.</p>
 		<a href="http://wmde.org/WikimediaMitglied" class="button">Mitglied werden</a>
