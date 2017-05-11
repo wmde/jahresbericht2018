@@ -58,9 +58,13 @@ body {
 }
 
 .image-replace {
+  display: inline-block;
   line-height: 1;
   overflow: hidden;
   color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
 }
 
 .invis {
@@ -284,7 +288,6 @@ a:focus {
   display: block;
   width: 200px;
   height: 45px;
-  background: transparent no-repeat top left/contain;
 }
 .logo--white {
   background-image: url(../img/wmde_logo_black.svg);
