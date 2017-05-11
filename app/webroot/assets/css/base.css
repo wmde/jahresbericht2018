@@ -221,7 +221,7 @@ body {
   line-height: 1.2;
   letter-spacing: .05em; /* TODO needs adjustment to design */
 
-  top: 0;
+  top: 5px; /* visually aligned to content */
   left: 0;
   position: absolute; /* remove from flow */
   display: inline-block;
@@ -590,22 +590,6 @@ a:focus {
 
 /* Finance-Banner
 ---------------------------------------------------------------- */
-@keyframes rotating--cw {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotating--ccw {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-}
 .finance-banner {
   min-height: 50vh;
   padding: 200px 40px;
@@ -640,7 +624,7 @@ a:focus {
   left: 0;
   right: 0;
   margin: auto;
-  width: 800px;
+  max-width: 800px;
   height: 100%;
 }
 .home__bagel--1,
@@ -652,10 +636,9 @@ a:focus {
 .home__bagel--1 {
   left: -430px;
   top: -300px;
-  animation: rotating--cw 60s linear infinite;
 }
 .home__bagel--2 {
   right: -430px;
   bottom: -400px;
-  animation: rotating--ccw 60s linear infinite;
+  transform: rotate(50deg);
 }

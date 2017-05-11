@@ -44,4 +44,11 @@ require([
     $close.addClass('invis');
     $imprint.addClass('invis');
   });
+
+  var $fb = $('.finance-banner');
+  if ($fb.length) {
+    require(['skrollr'], function(Skrollr) {
+      var s = Skrollr.init();
+    });
+  }
 });

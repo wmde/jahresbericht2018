@@ -70,10 +70,11 @@
 	</section>
 	<section class="section finance-banner">
 		<div class="home__bagels">
-			<figure class="home__bagel--1">
+			<?php // animation powered by skrollr; vertical translation according to bagel css values, e.g. "top" or "bottom" ?>
+			<figure class="home__bagel--1" data-anchor-target=".finance-banner" data-bottom-top="top: -1300px; transform:rotate(-180deg);" data-top-bottom="top: 700px; transform:rotate(180deg);">
 				<img src="assets/img/start_finanzen_circle_1.png" alt="Image of a random bagel chart">
 			</figure>
-			<figure class="home__bagel--2">
+			<figure class="home__bagel--2" data-anchor-target=".finance-banner" data-bottom-top="bottom: 600px; transform:rotate(80deg);" data-top-bottom="bottom: -1400px; transform:rotate(0deg);">
 				<img src="assets/img/start_finanzen_circle_2.png" alt="Image of random bagel chart">
 			</figure>
 		</div>
