@@ -83,6 +83,7 @@
 								<a class="button" href="<?= $url('report/moon', $lang) ?>">Zu diesem Thema</a>
 							</div>
 						</div>
+					</div>
 				</div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>

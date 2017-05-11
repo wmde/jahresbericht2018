@@ -467,7 +467,7 @@ a:focus {
 ---------------------------------------------------------------- */
 .jb-split--row {
 	height: 420px;
-  /* width: 960px; */
+  width: 80vw;
   max-width: 960px;
 	background-color: white;
 	display: flex;
@@ -656,7 +656,7 @@ a:focus {
 .swiper-container {
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  / overflow: hidden; */
   /* Fix of Webkit flickering */
   z-index: 1;
   width: 100%;
@@ -674,7 +674,6 @@ a:focus {
 }
 .swiper-slide {
   opacity: 1;
-  width: auto;
   height: 100%;
   position: relative;
   transition: opacity .5s;
@@ -703,6 +702,7 @@ a:focus {
   background-position: center;
   background-repeat: no-repeat
 }
+
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   opacity: .35;
@@ -719,6 +719,7 @@ a:focus {
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
+  filter: invert(100%);
   background-image: url("../ico/arrow_white_right.svg");
   right: 10px;
   left: auto

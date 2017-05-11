@@ -62,8 +62,9 @@ require([
             pagination: '.swiper-pagination',
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
-            slidesPerView: 1,
-            keyboardControl: true,
+            spaceBetween: 80,
+            centeredSlides: true,
+            slidesPerView: 'auto',
             onImagesReady: function() {
               $el.removeClass('loading');
             }
