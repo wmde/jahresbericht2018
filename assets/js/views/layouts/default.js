@@ -1,7 +1,7 @@
 /*!
  * App
  *
- * Copyright (c) 2013-2015 Atelier Disko - All rights reserved.
+ * Copyright (c) 2013 Atelier Disko - All rights reserved.
  *
  * Licensed under the AD App Software License v1.
  *
