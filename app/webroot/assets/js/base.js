@@ -11,7 +11,7 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *
  * You should have received a copy of the AD General Software
- * License. If not, see http://atelierdisko.de/licenses.
+ * License. If not, see https://atelierdisko.de/licenses.
  */
 
 requirejs.config({
@@ -27,6 +27,7 @@ requirejs.config({
 
     // App
     // Add your app specific js paths here.
+    'scrollTo': 'scrollTo',
 
     // For compat and polyfills it is recommended to use
     // Atelier Disko's compat distribution and agument

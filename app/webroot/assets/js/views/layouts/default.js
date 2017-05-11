@@ -1,34 +1,47 @@
 /*!
  * App
  *
- * Copyright (c) 2013 Atelier Disko - All rights reserved.
+ * Copyright (c) 2013-2015 Atelier Disko - All rights reserved.
  *
- * Licensed under the AD General Software License v1.
+ * Licensed under the AD App Software License v1.
  *
  * This software is proprietary and confidential. Redistribution
  * not permitted. Unless required by applicable law or agreed to
  * in writing, software distributed on an "AS IS" BASIS, WITHOUT-
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *
- * You should have received a copy of the AD General Software
- * License. If not, see http://atelierdisko.de/licenses.
+ * You should have received a copy of the AD App Software
+ * License. If not, see https://atelierdisko.de/licenses.
  */
 
 require([
-  'jquery', 'domready!'
+  'jquery',
+  'scrollTo',
+  'domready!'
 ], function(
-  $
+  $, ScrollTo
 ) {
-
   var $imprint = $('.imprint');
+  var $close = $('.imprint-close');
+  var $toggle = $('.imprint-toggle');
 
-  $('.imprint-toggle').on('click', function(ev) {
+  $toggle.on('click', function(ev) {
     ev.preventDefault();
+    var o = $toggle.offset();
+
+    // When hiding reset scroll position to bottom so, when
+    // revealing the section again, we do not jump into the middle
+    // of the section.
+    if ($imprint.hasClass('invis')) {
+      ScrollTo.offsets(o.left, o.top - 40);
+    }
+
     $imprint.toggleClass('invis');
+    $close.toggleClass('invis');
   });
-  $('.imprint-close').on('click', function(ev) {
+  $close.on('click', function(ev) {
     ev.preventDefault();
-    $imprint.removeClass('invis');
+    $close.addClass('invis');
+    $imprint.addClass('invis');
   });
-
 });
