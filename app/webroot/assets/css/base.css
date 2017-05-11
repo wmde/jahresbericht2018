@@ -174,7 +174,7 @@ body {
 .h--beta,
 .h--gamma,
 .h--delta {
-  margin: 0.67em 0;
+  margin: 20px 0;
 }
 
 .h--alpha a,
@@ -515,13 +515,12 @@ a:focus {
   display: block;
   margin: 0 auto;
 }
+.jb-fact__title {
+  margin-top: 0; /* roughly align with top of illu */
+}
 .jb-fact__content {
   position: relative;
   width: 50%;
-}
-.jb-fact__content h1 {
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 .jb-fact__content .button {
   position: absolute;
