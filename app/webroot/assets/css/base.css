@@ -360,24 +360,52 @@ a:focus {
 
 .main-footer p a {
   color: white;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid rgba(255,255,255,0.8);
 }
-.main-footer p a:hover {
+
+.main-footer__upper p a {
+  border-color: transparent;
+}
+.main-footer__upper p a:hover {
   border-color: white;
 }
 
 .imprint-toggle {
   float: left;
+  margin-right: 40px;
 }
+.imprint-close {
+  float: right;
+  width: 48px;
+  height: 48px;
+  background-image: url(../ico/close.svg);
+}
+
 .imprint.invis {
   opacity: 0;
+	padding: 0;
 }
 .imprint {
   opacity: 1;
   max-width: 760px;
   max-height: 2000px;
-  float: right;
+  float: left;
   transition: all 1s;
+  padding-bottom: 80px;
+}
+.imprint h1:first-of-type {
+  margin-top: 0;
+}
+.imprint > section {
+  margin-top: 40px;
+}
+
+.imprint p a {
+  color: white;
+}
+.imprint__cc-logo {
+  display: inline-block;
+  margin-top: 40px;
 }
 
 /* Hero

@@ -16,18 +16,32 @@
 
 require([
   'jquery',
+  'scrollTo',
   'domready!'
 ], function(
-  $
+  $, ScrollTo
 ) {
   var $imprint = $('.imprint');
+  var $close = $('.imprint-close');
+  var $toggle = $('.imprint-toggle');
 
-  $('.imprint-toggle').on('click', function(ev) {
+  $toggle.on('click', function(ev) {
     ev.preventDefault();
+    var o = $toggle.offset();
+
+    // When hiding reset scroll position to bottom so, when
+    // revealing the section again, we do not jump into the middle
+    // of the section.
+    if ($imprint.hasClass('invis')) {
+      ScrollTo.offsets(o.left, o.top - 40);
+    }
+
     $imprint.toggleClass('invis');
+    $close.toggleClass('invis');
   });
-  $('.imprint-close').on('click', function(ev) {
+  $close.on('click', function(ev) {
     ev.preventDefault();
-    $imprint.removeClass('invis');
+    $close.addClass('invis');
+    $imprint.addClass('invis');
   });
 });
