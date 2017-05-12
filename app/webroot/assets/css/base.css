@@ -416,6 +416,11 @@ a:focus {
   color: white;
   border-bottom: 1px solid rgba(255,255,255,0.8);
 }
+.main-footer .nav__link {
+  opacity: 1;
+  text-transform: none;
+  letter-spacing: 0;
+}
 
 .main-footer__upper p a {
   border-color: transparent;
