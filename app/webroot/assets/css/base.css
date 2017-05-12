@@ -441,6 +441,18 @@ a:focus {
   margin-top: 40px;
 }
 
+/* Hero
+---------------------------------------------------------------- */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: var(--color-light-gray) no-repeat center/cover;
+}
+.hero__center-illu {
+}
+
 /* Hero Home
 ---------------------------------------------------------------- */
 .home-hero {

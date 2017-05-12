@@ -1,9 +1,9 @@
-<main class="report-detail report-home cp cp--6x-bottom">
+<main class="report-detail report-home cp--6x-bottom">
 	<section
 		class="hero cp cp--nav-zone"
-		style="background-image: url(/assets/img/report_moon_hero.jpg)"
+		style="background-image: url(/assets/img/hero_moon.jpg)"
 	>
-		<img class="hero__center-illu" src="/assets/img/report_moon_hero_illu.jpg" alt="Illustration">
+		<img class="hero__center-illu" src="/assets/ico/moon.svg" alt="Illustration" >
 	</section>
 	<section class="section cp">
 		<div class="limit--m">
