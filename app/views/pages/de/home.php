@@ -97,7 +97,7 @@
 			</figure>
 		</div>
 		<h1 class="h--alpha">Finanzen 2016</h1>
-		<a class="button" href="<?= $url('finance', $lang) ?>">Zum Finanzteil</a>
+		<a class="button finance-banner__button" href="<?= $url('finance', $lang) ?>">Zum Finanzteil</a>
 	</section>
 	<section class="section cp--upped-section home__join">
 		<h1 class="h--beta">Werde Mitglied bei Wikimedia Deutschland!</h1>

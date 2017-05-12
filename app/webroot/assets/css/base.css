@@ -647,7 +647,7 @@ a:focus {
   z-index: 10;
   margin: 0;
 }
-.finance-banner .button {
+.finance-banner__button {
   position: relative;
   z-index: 10;
   margin-top: 40px;
