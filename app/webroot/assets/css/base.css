@@ -243,6 +243,26 @@ body > main {
   margin-right: 5px;
 }
 
+/* Border Boxes
+---------------------------------------------------------------- */
+.border-box {
+  border: 1px solid var(--color-black);
+  padding: 40px;
+}
+.border-box :first-child {
+  margin-top: 0;
+}
+.border-box :last-child {
+  margin-bottom: 0;
+}
+.border-box--green {
+  color: var(--color-green);
+  border-color: green;
+}
+.border-box--green a {
+  color: var(--color-green);
+}
+
 /* Section Backgrounds
 ---------------------------------------------------------------- */
 .bg--icons-white {
