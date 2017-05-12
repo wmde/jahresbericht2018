@@ -513,7 +513,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 66vh;
   background: var(--color-light-gray) no-repeat center/cover;
 }
 .hero__center-illu {
