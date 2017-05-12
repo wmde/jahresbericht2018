@@ -58,6 +58,13 @@ if ($viewFile === false || trim($path, '/') === 'home') {
 }
 
 // "Model" Layer
+if ($path === '/') {
+	$facts = require APP_PATH .'/data/facts.php';
+	$fact = $facts[array_rand($facts)];
+}
+if ($path === '/review') {
+	$facts = require APP_PATH .'/data/facts.php';
+}
 if (preg_match('#^(/|/report)$#', $path)) {
 	$reports = require APP_PATH .'/data/reports.php';
 }

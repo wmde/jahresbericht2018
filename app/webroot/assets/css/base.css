@@ -518,31 +518,6 @@ a:focus {
 .hero__center-illu {
 }
 
-/* Hero Home
----------------------------------------------------------------- */
-.home-hero {
-  min-height: 100vh;
-  color: white;
-  background: var(--color-diag-gradient);
-  transform: skew(0, 165deg);
-  transform-origin: 0 0;
-  position: relative; /* overlap following section */
-  z-index: 20;
-  overflow: hidden;
-}
-.home-hero__title {
-  transform: skew(0, -165deg);
-  transform-origin: 0 0;
-  margin-top: 250px;
-}
-.home-hero__16 {
-  position: absolute;
-  width: 800px;
-  bottom: -470px;
-  left: 370px;
-  transform: skew(-165deg);
-}
-
 /* Forms
 ---------------------------------------------------------------- */
 
@@ -664,7 +639,8 @@ a:focus {
   display: block;
   margin: 0 auto;
 }
-.jb-fact__title {
+.jb-fact__title,
+.jb-fact__content-head {
   margin-top: 0; /* roughly align with top of illu */
 }
 .jb-fact__content {
@@ -678,6 +654,29 @@ a:focus {
 
 /* Home
 ---------------------------------------------------------------- */
+.home-hero {
+  min-height: 800px;
+  color: white;
+  background: var(--color-diag-gradient);
+  transform: skew(0, 165deg);
+  transform-origin: 0 0;
+  position: relative; /* overlap following section */
+  z-index: 20;
+  overflow: hidden;
+}
+.home-hero__title {
+  transform: skew(0, -165deg);
+  transform-origin: 0 0;
+  margin-top: 250px;
+}
+.home-hero__16 {
+  position: absolute;
+  width: 800px;
+  bottom: -470px;
+  left: 370px;
+  transform: skew(-165deg);
+}
+
 .home__intro {
   margin-top: -1040px; /* fill up background behind hero */
   padding-top: 1000px;
@@ -787,6 +786,33 @@ a:focus {
   transform: rotate(50deg);
 }
 
+/* Review Page
+---------------------------------------------------------------- */
+.review {
+  color: white;
+  overflow: hidden;
+}
+.review__head-stripe {
+  height: 800px;
+  top: -400px;
+}
+.review__tail-stripe {
+  position: relative;
+}
+.review__intro {
+  padding-top: 200px;
+}
+.review__intro h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 100;
+}
+.review__swiper {
+  padding: 100px 0 140px 0;
+}
+
+
 /* Report Landing Page
 ---------------------------------------------------------------- */
 .report-landing__title {
@@ -836,6 +862,7 @@ a:focus {
   text-align: center;
 }
 .swiper-slide .jb-vsplit,
+.swiper-slide .jb-fact,
 .swiper-slide .fig__caption {
   text-align: left;
 }
@@ -876,14 +903,12 @@ a:focus {
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  filter: invert(100%);
   background-image: url("../ico/arrow_white_left.svg");
   left: 10px;
   right: auto
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  filter: invert(100%);
   background-image: url("../ico/arrow_white_right.svg");
   right: 10px;
   left: auto
