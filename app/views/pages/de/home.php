@@ -38,13 +38,15 @@
 			<h2 class="section__heading"><div>Jahresrückblick</div></h2>
 			<div class="section__body">
 				<div class="jb-fact limit--s">
-					<figure class="fig">
-						<img src="assets/ico/neuautoren.svg" alt="Icon Neuautoren">
+					<figure class="fig jb-fact__icon">
+						<img src="<?= $fact['icon'] ?>"></img>
 					</figure>
 					<div class="jb-fact__content">
-						<h1 class="h--alpha jb-fact__title">12000</h1>
-						<p class="t--delta">Videos wurden produziert, um den Einstieg für neue Wikipedia-Autorinnen und -Autoren zu erleichtern.</p>
-						<a class="button" href="<?= $url('review', $lang) ?>">Alle Fakten sehen</a>
+						<?php if ($fact['head'][$lang] !== ''): ?>
+							<p class="t--deltai jb-fact__content-head"><?= $fact['head'][$lang] ?></p>
+						<?php endif ?>
+						<h1 class="h--alpha jb-fact__title"><?= $fact['number'][$lang] ?></h1>
+						<p class="t--delta"><?= $fact['tail'][$lang] ?></p>
 					</div>
 				</div>
 			</div>
