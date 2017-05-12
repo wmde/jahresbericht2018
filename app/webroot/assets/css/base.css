@@ -343,8 +343,13 @@ a:focus {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.2;
-}
 
+  margin-top: 10px;
+  font-weight: 600;
+}
+.fig__caption a {
+  color: var(--color-green);
+}
 .figs .fig {
   display: inline-block;
   max-width: 50%;
@@ -676,9 +681,6 @@ a:focus {
 }
 .home__intro .fig img {
   max-width: 100%;
-}
-.home__intro .fig__caption {
-  padding-top: 20px;
 }
 
 .home__facts {
