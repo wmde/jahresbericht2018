@@ -379,7 +379,6 @@ a:focus {
 
   margin-top: 10px;
   font-weight: 600;
-  text-align: left;
 }
 .fig__caption a {
   color: var(--color-green);
@@ -838,6 +837,7 @@ a:focus {
   text-align: center;
 }
 .swiper-slide > * {
+  text-align: left;
   margin: 0 auto;
 }
 
