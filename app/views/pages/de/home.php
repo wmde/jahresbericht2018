@@ -66,7 +66,12 @@
 								<div class="jb-vsplit__teaser">
 									<?php echo $report['teaser'][$lang] ?>
 								</div>
-								<a class="jb-vsplit__button button" href="<?= $url('report/' . $report['name'], $lang) ?>">Zu diesem Thema</a>
+								<a
+									class="jb-vsplit__button button"
+									href="<?= $url('report/' . $report['name'], $lang) ?>"
+								>
+									Zu diesem Thema
+								</a>
 							</div>
 						</div>
 					</div>
