@@ -50,7 +50,17 @@
 					<div class="swiper-slide">
 						<figure class="fig">
 							<img class="fig__image" src="/assets/img/abraham_taherivand.jpg" alt="Porträt von Abraham Taherivand">
-							<figcaption class="fig__caption">
+							<figcaption class="fig__caption limit--s">
+								Abraham Taherivand.
+								<a href="http://renezieger.de" target="new">Bild: René Zieger</a>,
+								<a href="https://creativecommons.org/licenses/by/4.0/" target="new">CC BY 4.0</a>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="swiper-slide">
+						<figure class="fig">
+							<img class="fig__image" src="/assets/img/abraham_taherivand.jpg" alt="Porträt von Abraham Taherivand">
+							<figcaption class="fig__caption limit--s">
 								Abraham Taherivand.
 								<a href="http://renezieger.de" target="new">Bild: René Zieger</a>,
 								<a href="https://creativecommons.org/licenses/by/4.0/" target="new">CC BY 4.0</a>
@@ -60,6 +70,17 @@
 				</div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</section>
+	<section class="section cp--center-section">
+		<div class="limit--s">
+			<div class="border-box border-box--green">
+				<div class="h--gamma">LINKS</div>
+				<ul class="bullet-list">
+					<li><a href="https://example.org" target="new">Projektseite</a>
+					<li><a href="https://example.org" target="new">Lorem</a>
+				</ul>
 			</div>
 		</div>
 	</section>
