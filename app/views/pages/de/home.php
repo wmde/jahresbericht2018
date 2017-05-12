@@ -1,11 +1,12 @@
 <main class="home">
-	<section class="hero cp cp--nav-zone">
+	<section class="home-hero cp cp--nav-zone">
 		<div class="limit--l">
-			<h1 class="hero__title">
+			<h1 class="home-hero__title">
 				Wikimedia<br>
 				Jahresrückblick<br>
 				2016
 			</h1>
+			<img class="home-hero__16" src="assets/img/16_b.png" alt="2016">
 		</div>
 	</section>
 	<section class="section cp bg--icons-white home__intro">
