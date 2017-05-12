@@ -441,31 +441,6 @@ a:focus {
   margin-top: 40px;
 }
 
-/* Hero Home
----------------------------------------------------------------- */
-.home-hero {
-  min-height: 100vh;
-  color: white;
-  background: var(--color-diag-gradient);
-  transform: skew(0, 165deg);
-  transform-origin: 0 0;
-  position: relative; /* overlap following section */
-  z-index: 20;
-  overflow: hidden;
-}
-.home-hero__title {
-  transform: skew(0, -165deg);
-  transform-origin: 0 0;
-  margin-top: 250px;
-}
-.home-hero__16 {
-  position: absolute;
-  width: 800px;
-  bottom: -470px;
-  left: 370px;
-  transform: skew(-165deg);
-}
-
 /* Forms
 ---------------------------------------------------------------- */
 
@@ -612,6 +587,29 @@ a:focus {
 
 /* Home
 ---------------------------------------------------------------- */
+.home-hero {
+  min-height: 100vh;
+  color: white;
+  background: var(--color-diag-gradient);
+  transform: skew(0, 165deg);
+  transform-origin: 0 0;
+  position: relative; /* overlap following section */
+  z-index: 20;
+  overflow: hidden;
+}
+.home-hero__title {
+  transform: skew(0, -165deg);
+  transform-origin: 0 0;
+  margin-top: 250px;
+}
+.home-hero__16 {
+  position: absolute;
+  width: 800px;
+  bottom: -470px;
+  left: 370px;
+  transform: skew(-165deg);
+}
+
 .home__intro {
   margin-top: -1040px; /* fill up background behind hero */
   padding-top: 1000px;
