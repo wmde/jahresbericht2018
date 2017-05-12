@@ -9,10 +9,10 @@ $path = $_SERVER['REQUEST_URI'];
 $isCanonical = false;
 
 // language controller
-if (preg_match('#^/(de|en)/(.*)#', $path, $matches)) {
+if (preg_match('#^/(de|en)(/.*)?#', $path, $matches)) {
 	$isCanonical = true;
 	$lang = $matches[1];
-	$path = '/' . $matches[2];
+	$path = '/' . ltrim($matches[2], '/');
 }
 
 // link controller
