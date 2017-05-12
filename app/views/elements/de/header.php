@@ -1,8 +1,19 @@
+<?php
+
+$title = ['Jahresbericht 2016'];
+
+if (isset($report)) {
+	$title[] = $report['title'][$lang];
+} elseif ($path === '/report') {
+	$title[] = 'Themen';
+}
+
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
 	<meta charset="UTF-8">
-	<title>Jahresbericht 2016</title>
+	<title><?php echo implode(' – ', array_reverse($title)) ?></title>
 
 	<?php
 	// mark up the canonical page and any other variants; use complete url
