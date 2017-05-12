@@ -468,6 +468,14 @@ a:focus {
 	background-color: var(--color-green);
 	border: none;
 }
+.button--outline-green {
+	color: var(--color-green);
+	border-color: var(--color-green);
+}
+.button--outline-white {
+	color: white;
+	border-color: white;
+}
 
 /* Jumpbox: VSPLIT
 ---------------------------------------------------------------- */
@@ -509,8 +517,6 @@ a:focus {
 .jb-vsplit__button {
 	position: absolute;
 	bottom: 40px;
-	color: var(--color-green);
-	border-color: var(--color-green);
 }
 
 /* Jumpbox: HSPLIT
