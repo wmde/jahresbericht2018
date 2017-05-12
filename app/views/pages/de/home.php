@@ -39,7 +39,7 @@
 			<div class="section__body">
 				<div class="jb-fact limit--s">
 					<figure class="fig">
-						<img src="assets/img/icon_neuautoren.svg" alt="Icon Neuautoren">
+						<img src="assets/ico/neuautoren.svg" alt="Icon Neuautoren">
 					</figure>
 					<div class="jb-fact__content">
 						<h1 class="h--alpha jb-fact__title">12000</h1>
