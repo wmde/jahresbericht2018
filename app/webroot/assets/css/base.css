@@ -324,13 +324,8 @@ a:focus {
   display: block;
   width: 200px;
   height: 45px;
-}
-.logo--white {
   background-image: url(../img/wmde_logo_black.svg);
   filter: invert(100%);
-}
-.logo--black {
-  background-image: url(../img/wmde_logo_black.svg);
 }
 
 /* Header
@@ -343,6 +338,10 @@ a:focus {
   left: 0;
   z-index: 100;
 }
+.main-header--black {
+  filter: invert(100%);
+}
+
 .main-header .limit--l {
   position: relative;
 }

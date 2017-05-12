@@ -1,7 +1,7 @@
 <footer class="main-footer">
 	<div class="main-footer__upper clearfix cp">
 		<div class="limit--l">
-			<a class="logo logo--white main-footer__logo image-replace" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
+			<a class="logo main-footer__logo image-replace" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
 			<div class="main-footer__info-1 t--delta-serif">
 				<p>
 					Wikimedia Deutschland e. V.

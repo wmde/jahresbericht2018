@@ -73,6 +73,9 @@ if (preg_match('#^/report/(.*)$#', $path, $matches)) {
 	}
 }
 
+// Some pages will need an inverted header.
+$hasBlackHeader = (boolean) preg_match('#^/report/?$#', $path);
+
 require APP_PATH . '/views/elements/' . $lang . '/header.php';
 require $viewFile;
 require APP_PATH . '/views/elements/' . $lang . '/footer.php';
