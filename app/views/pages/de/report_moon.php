@@ -21,6 +21,16 @@
 				<p>
 					Zum 15. Geburtstag bekam Wikipedia ein ganz besonderes Geschenk: Weil sie die größte Enzyklopädie der Geschichte und ein Symbol der Zusammenarbeit ist, darf Wikipedia auf eine Reise zum Mond gehen. Schließlich lebt das Projekt davon, dass Menschen ihr Wissen teilen – mit der ganzen Welt und nun sogar noch weit darüber hinaus.
 				</p>
+				<blockquote class="quote">
+					<div class="quote__body">
+						<p class="t--beta">
+							„Meines Erachtens ist die Bedeutung der Idee Freies Wissen kaum zu überschätzen. Offene Konzepte, die nicht nur kostenlosen Zugriff, sondern vor allem auch eine transformative Nachnutzung ermöglichen, haben nicht nur in der Wissenschaft großes Potenzial, sondern können insgesamt zu einem effektiveren, effizienteren, aber auch gerechteren Umgang mit Wissen beitragen."
+						</p>
+					</div>
+					<footer class="quote__author t--gamma">
+						Marion Goller, Fellow von der Westfälischen Wilhelms-Universität Münster
+					</footer>
+				</blockquote>
 				<p>
 					Die PT Scientists aus Berlin, die als Freizeit-Wissenschaftler beim Google Lunar-X-Prize gestartet sind, möchten Wikipedia mit ihrem ersten rein privat finanzierten Mondflug ein Denkmal setzen. Als Einsteiger in die Thematik der Raumfahrt haben sich die PT Scientists nämlich selbst viel Wissen aus Wikipedia angeeignet. Robert Böhme, Leiter der PT Scientists, erinnert sich: „Für uns war Wikipedia am Anfang eine unheimlich wichtige Wissensquelle, weil wir einfach Außenseiter aus der Raumfahrt sind. Und es hat uns geholfen, den Einstieg zu kriegen und einfach das Nötigste zu lernen und zu sehen, was mit einem freien Austausch von Informationen alles möglich ist.“
 				</p>

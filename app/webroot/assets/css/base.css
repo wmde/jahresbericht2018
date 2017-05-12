@@ -124,7 +124,12 @@ body > main {
 /* Text Sizes
 ---------------------------------------------------------------- */
 /* --alpha missing here as used only for headlines */
-/* --beta missing here as used only for headlines */
+.t--beta {
+  font-size: 36px;
+  font-family: var(--font-family-sans);
+  font-weight: 600; /* manually adjusted to design */
+  line-height: 1.4;
+}
 .t--gamma {
   font-family: var(--font-family-sans);
   font-weight: normal;
@@ -207,6 +212,22 @@ body > main {
 .h--delta em {
   font-style: normal;
   color: var(--color-green);
+}
+
+/* Blockquotes
+---------------------------------------------------------------- */
+.quote {
+  margin: 60px 80px 80px -80px;
+  color: var(--color-green);
+}
+.quote__body > p:first-of-type {
+  margin-top: 0;
+}
+.quote__body > p:last-of-type {
+  margin-bottom: 0;
+}
+.quote__author {
+  margin-top: 10px;
 }
 
 /* Section Backgrounds
