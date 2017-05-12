@@ -1,6 +1,6 @@
 <main class="review bg--green">
 	<section class="review__intro section section__body cp">
-		<div class="bg--stripe review__hero-stripe"></div>
+		<div class="bg--stripe review__head-stripe"></div>
 		<div class="limit--s">
 			<h1 class="h--beta">Zurückblicken: So war das Jahr für Wikimedia Deutschland</h1>
 			<p class="t--gamma-serif">Für 2016 hatten wir uns vor allem vorgenommen, die Anzahl der Freiwilligen in Wikipedia sowie die Reichweite der freien Wissensdatenbank Wikidata zu erhöhen. Außerdem wollten wir unsere Möglichkeiten, uns gemeinsam mit Partnern für Freies Wissen auch politisch einzusetzen, ausbauen.</p>
@@ -9,7 +9,10 @@
 			<p class="t--gamma-serif">Neben unserer inhaltlichen Arbeit haben wir 2016 wieder eine erfolgreiche Spendenkampagne durchgeführt und konnten einen starken Zuwachs unserer Mitgliederzahlen verzeichnen. Zudem gab es personelle Änderungen: Im Dezember wurde der Geschäftsführende Vorstand des Vereins, Christian Rickerts, zum Staatssekretär in der Berliner Landesregierung berufen. Ihm folgte Abraham Taherivand nach, der bis dahin unsere Software-Entwicklung leitete.</p>
 		</div>
 	</section>
-	<section class="section cp--center-section">
+	<section class="review__tail-stripe">
+		<div class="bg--stripe"></div>
+	<section>
+	<section class="section cp--center-section review__swiper">
 		<div class="limit--l">
 			<div class="section__body slider swiper-container loading">
 				<div class="swiper-wrapper">
@@ -21,7 +24,7 @@
 							</figure>
 							<div class="jb-fact__content">
 								<?php if ($fact['head'][$lang] !== ''): ?>
-									<p class="t--delta"><?= $fact['head'][$lang] ?></p>
+									<p class="t--deltai jb-fact__content-head"><?= $fact['head'][$lang] ?></p>
 								<?php endif ?>
 								<h1 class="h--alpha jb-fact__title"><?= $fact['number'][$lang] ?></h1>
 								<p class="t--delta"><?= $fact['tail'][$lang] ?></p>
@@ -33,87 +36,6 @@
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 			</div>
-		</div>
-	</section>
-
-	<section class="facts">
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 1. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 2. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 3. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 4. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 5. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 6. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 7. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 8. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 9. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 10. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 11. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 12. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
-		</div>
-		<div class="fact">
-			<figure>
-				<img src="" alt="">
-			</figure>
-			<p>Fakt 13. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet.</p>
 		</div>
 	</section>
 </main>

@@ -640,7 +640,8 @@ a:focus {
   display: block;
   margin: 0 auto;
 }
-.jb-fact__title {
+.jb-fact__title,
+.jb-fact__content-head {
   margin-top: 0; /* roughly align with top of illu */
 }
 .jb-fact__content {
@@ -790,10 +791,14 @@ a:focus {
 ---------------------------------------------------------------- */
 .review {
   color: white;
+  overflow: hidden;
 }
-.review__hero-stripe {
+.review__head-stripe {
   height: 800px;
   top: -400px;
+}
+.review__tail-stripe {
+  position: relative;
 }
 .review__intro {
   padding-top: 200px;
@@ -803,6 +808,9 @@ a:focus {
   margin-bottom: 60px;
   position: relative;
   z-index: 100;
+}
+.review__swiper {
+  padding: 100px 0 140px 0;
 }
 
 
@@ -855,6 +863,7 @@ a:focus {
   text-align: center;
 }
 .swiper-slide .jb-vsplit,
+.swiper-slide .jb-fact,
 .swiper-slide .fig__caption {
   text-align: left;
 }
@@ -895,14 +904,12 @@ a:focus {
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  filter: invert(100%);
   background-image: url("../ico/arrow_white_left.svg");
   left: 10px;
   right: auto
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  filter: invert(100%);
   background-image: url("../ico/arrow_white_right.svg");
   right: 10px;
   left: auto
