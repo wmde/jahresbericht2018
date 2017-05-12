@@ -201,6 +201,14 @@ body > main {
   border-bottom: 1px solid rgba(255,255,255,0.8);
 }
 
+.h--alpha em,
+.h--beta em,
+.h--gamma em,
+.h--delta em {
+  font-style: normal;
+  color: var(--color-green);
+}
+
 /* Section Backgrounds
 ---------------------------------------------------------------- */
 .bg--icons-white {
