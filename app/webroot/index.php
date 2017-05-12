@@ -58,9 +58,23 @@ if ($viewFile === false || trim($path, '/') === 'home') {
 }
 
 // "Model" Layer
-if (preg_match('#^(/|/report|/report/.*)$#', $path)) {
+if (preg_match('#^(/|/report)$#', $path)) {
 	$reports = require APP_PATH .'/data/reports.php';
 }
+if (preg_match('#^/report/(.*)$#', $path, $matches)) {
+	$reports = require APP_PATH .'/data/reports.php';
+	$report = null;
+
+	foreach ($reports as $_report) {
+		if ($_report['name'] === $matches[1]) {
+			$report = $_report;
+			break;
+		}
+	}
+}
+
+// Some pages will need an inverted header.
+$hasBlackHeader = (boolean) preg_match('#^/report/?$#', $path);
 
 require APP_PATH . '/views/elements/' . $lang . '/header.php';
 require $viewFile;

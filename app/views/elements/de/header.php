@@ -45,10 +45,16 @@ if (isset($report)) {
 </head>
 <body>
 
-<header class="main-header">
+<header
+	<?php if ($hasBlackHeader): ?>
+		class="main-header main-header--black"
+	<?php else: ?>
+		class="main-header main-header--white"
+	<?php endif ?>
+>
 	<div class="cp">
 		<div class="limit--l clearfix">
-			<a class="logo logo--white main-header__logo image-replace" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
+			<a class="logo main-header__logo image-replace" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
 			<nav class="nav main-header__nav">
 				<ul class="nav__list">
 					<li><a class="nav__link" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>

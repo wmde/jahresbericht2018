@@ -91,6 +91,12 @@ body > main {
 .cp--nav-zone {
   padding-top: 140px;
 }
+.cp--6x-top {
+  padding-top: 240px;
+}
+.cp--6x-bottom {
+  padding-bottom: 240px;
+}
 .cp--center-section {
 	padding: 160px 40px;
 }
@@ -202,6 +208,9 @@ body > main {
 }
 .bg--icons-light-blue {
 	background-color: var(--color-light-blue);
+}
+.bg--big-icons-green {
+  background-color: var(--color-green);
 }
 .bg--green {
   background-color: var(--color-green);
@@ -316,13 +325,8 @@ a:focus {
   display: block;
   width: 200px;
   height: 45px;
-}
-.logo--white {
   background-image: url(../img/wmde_logo_black.svg);
   filter: invert(100%);
-}
-.logo--black {
-  background-image: url(../img/wmde_logo_black.svg);
 }
 
 /* Header
@@ -335,6 +339,10 @@ a:focus {
   left: 0;
   z-index: 100;
 }
+.main-header--black {
+  filter: invert(100%);
+}
+
 .main-header .limit--l {
   position: relative;
 }
@@ -477,6 +485,14 @@ a:focus {
 	background-color: var(--color-green);
 	border: none;
 }
+.button--outline-green {
+	color: var(--color-green);
+	border-color: var(--color-green);
+}
+.button--outline-white {
+	color: white;
+	border-color: white;
+}
 
 /* Jumpbox: VSPLIT
 ---------------------------------------------------------------- */
@@ -518,13 +534,12 @@ a:focus {
 .jb-vsplit__button {
 	position: absolute;
 	bottom: 40px;
-	color: var(--color-green);
-	border-color: var(--color-green);
 }
 
 /* Jumpbox: HSPLIT
 ---------------------------------------------------------------- */
 .jb-hsplit {
+  display: inline-block;
 	background-color: white;
   position: relative;
 }
@@ -538,13 +553,29 @@ a:focus {
 	padding: 30px 80px 30px 40px;
 }
 .jb-hsplit__title {
+  color: var(--color-green);
   margin: 0;
 }
+.jb-hsplit__overlay {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all .25s;
+}
+.jb-hsplit:hover .jb-hsplit__overlay {
+  opacity: 1;
+}
+
 .jb-hsplit-list {
   margin: -40px;
 }
 .jb-hsplit-list .jb-hsplit {
   margin: 40px;
+  max-width: calc(49% - 80px);
 }
 
 /* Jumpbox: FACT
@@ -683,6 +714,13 @@ a:focus {
   right: -430px;
   bottom: -400px;
   transform: rotate(50deg);
+}
+
+/* Report Landing Page
+---------------------------------------------------------------- */
+.report-landing__title {
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 /* Swiper

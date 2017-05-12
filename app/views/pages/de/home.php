@@ -68,7 +68,7 @@
 									<?php echo $report['teaser'][$lang] ?>
 								</div>
 								<a
-									class="jb-vsplit__button button"
+									class="jb-vsplit__button button button--outline-green"
 									href="<?= $url('report/' . $report['name'], $lang) ?>"
 								>
 									Zu diesem Thema
