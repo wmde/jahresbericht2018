@@ -59,7 +59,7 @@ if ($viewFile === false || trim($path, '/') === 'home') {
 
 // "Model" Layer
 if (preg_match('#^(/|/report|/report/.*)$#', $path)) {
-	$reports = include APP_PATH .'/data/reports.php';
+	$reports = require APP_PATH .'/data/reports.php';
 }
 
 require APP_PATH . '/views/elements/' . $lang . '/header.php';
