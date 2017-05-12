@@ -48,7 +48,9 @@ require([
   var $fb = $('.finance-banner');
   if ($fb.length) {
     require(['skrollr'], function(Skrollr) {
-      var s = Skrollr.init();
+      var s = Skrollr.init({
+        forceHeight: false
+      });
     });
   }
 
