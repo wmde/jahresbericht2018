@@ -49,7 +49,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section cp--center-section bg--icons-lavender">
+	<section class="section cp--center-section bg--icons-light-blue">
 		<div class="limit--l">
 			<h2 class="section__heading"><div>Themen</div></h2>
 			<div class="section__body slider swiper-container loading">

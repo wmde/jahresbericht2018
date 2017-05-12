@@ -200,8 +200,8 @@ body > main {
 .bg--icons-white {
   background-color: white;
 }
-.bg--icons-lavender {
-	background-color: lavender;
+.bg--icons-ligh-blue {
+	background-color: var(--color-light-blue);
 }
 .bg--green {
   background-color: var(--color-green);

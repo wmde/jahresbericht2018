@@ -1,4 +1,4 @@
-<main class="report-landing bg--icons-lavender cp cp--nav-zone">
+<main class="report-landing bg--icons-light-blue cp cp--nav-zone">
 	<h1 class="h--beta">Unsere Themen im Überblick</h1>
 
 	<div class="jb-hsplit-list">
