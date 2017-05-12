@@ -22,11 +22,11 @@
 			</div>
 			<div class="limit--m figs">
 				<figure class="fig">
-					<img class="fig__image" src="assets/img/abraham_taherivand.jpg" alt="Porträt von Abraham Taherivand">
+					<img class="fig__image" src="/assets/img/abraham_taherivand.jpg" alt="Porträt von Abraham Taherivand">
 					<figcaption class="fig__caption">Abraham Taherivand<br>Geschäftsführender Vorstand</figcaption>
 				</figure>
 				<figure class="fig">
-					<img class="fig__image" src="assets/img/tim_moritz_hector.jpg" alt="Porträt von Tim Moritz Hector">
+					<img class="fig__image" src="/assets/img/tim_moritz_hector.jpg" alt="Porträt von Tim Moritz Hector">
 					<figcaption class="fig__caption">Tim Moritz Hector<br>Vorsitzender des Präsidiums</figcaption>
 				</figure>
 			</div>
@@ -90,10 +90,10 @@
 		<div class="home__bagels">
 			<?php // animation powered by skrollr; vertical translation according to bagel css values, e.g. "top" or "bottom" ?>
 			<figure class="home__bagel--1" data-anchor-target=".finance-banner" data-bottom-top="top: -1300px; transform:rotate(-180deg);" data-top-bottom="top: 700px; transform:rotate(180deg);">
-				<img src="assets/img/start_finanzen_circle_1.png" alt="Image of a random bagel chart">
+				<img src="/assets/img/start_finanzen_circle_1.png" alt="Image of a random bagel chart">
 			</figure>
 			<figure class="home__bagel--2" data-anchor-target=".finance-banner" data-bottom-top="bottom: 600px; transform:rotate(80deg);" data-top-bottom="bottom: -1400px; transform:rotate(0deg);">
-				<img src="assets/img/start_finanzen_circle_2.png" alt="Image of random bagel chart">
+				<img src="/assets/img/start_finanzen_circle_2.png" alt="Image of random bagel chart">
 			</figure>
 		</div>
 		<h1 class="h--alpha">Finanzen 2016</h1>
