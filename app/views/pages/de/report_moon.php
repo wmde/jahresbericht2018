@@ -1,4 +1,4 @@
-<main class="report-detail report-home cp--6x-bottom">
+<main class="report-detail">
 	<section
 		class="hero cp cp--nav-zone"
 		style="background-image: url(/assets/img/hero_moon.jpg)"
@@ -6,7 +6,7 @@
 		<img class="hero__center-illu" src="/assets/ico/moon.svg" alt="Illustration" >
 	</section>
 	<section class="section cp">
-		<div class="limit--m">
+		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Gratulieren:</em><br>Wikipedia wird 15…und fliegt zum Mond!
 			</h1>
@@ -41,6 +41,31 @@
 					Wikimedia Deutschland begleitete diesen Prozess kommunikativ und logistisch. Wir wollten das Projekt nutzen, um auf die Möglichkeit der Mit­arbeit in Wikipedia aufmerksam zu machen. Auf der Abschlussveranstaltung des Projekts am 05. Dezember 2016, dem Internationalen Tag des Ehren­amtes, waren die PT Scientists mit ihrem Lande­modul ALINA und einem Mondrover bei Wikimedia Deutschland zu Besuch. Sie erhielten die Wikipedia-Disc und beantworteten Fragen rund um ihre Mission zum Mond. Voraussichtlich Anfang 2018 wird der Datenträger am Landemodul befestigt und zum Mond geschossen, wo er dann für mindestens 1.000 Jahre als Zeitkapsel zu finden sein wird. Gemeinsam mit den Artikeln, werden auch die Benutzernamen der jeweiligen Autorinnen und Autoren auf dem Mond hinterlegt, um ihr Engagement im digitalen Ehrenamt zu würdigen.
 				</p>
 			</div>
+		</div>
+	</section>
+	<section class="section cp--center-section">
+		<div class="limit--l">
+			<div class="section__body slider swiper-container loading">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<figure class="fig">
+							<img class="fig__image" src="/assets/img/abraham_taherivand.jpg" alt="Porträt von Abraham Taherivand">
+							<figcaption class="fig__caption">
+								Abraham Taherivand.
+								<a href="http://renezieger.de" target="new">Bild: René Zieger</a>,
+								<a href="https://creativecommons.org/licenses/by/4.0/" target="new">CC BY 4.0</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</section>
+	<section class="section cp--center-section bg--icons-light-blue">
+		<div class="section__actions">
+			<a href="<?= $url('/report', $lang) ?>" class="button button--bg-green">Zur Themenübersicht</a>
 		</div>
 	</section>
 </main>
