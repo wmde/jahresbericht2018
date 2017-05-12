@@ -59,12 +59,10 @@ require([
         var $el = $(this);
 
         var swiper = new Swiper($el.get(0), {
-            pagination: '.swiper-pagination',
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
-            spaceBetween: 80,
             centeredSlides: true,
-            slidesPerView: 'auto',
+            slidesPerView: 1,
             onImagesReady: function() {
               $el.removeClass('loading');
             }
