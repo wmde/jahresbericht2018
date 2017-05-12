@@ -230,6 +230,19 @@ body > main {
   margin-top: 10px;
 }
 
+/* Lists
+---------------------------------------------------------------- */
+.bullet-list {
+  padding: 0;
+  list-style-position: inside;
+  list-style: none;
+}
+.bullet-list li:before {
+  display: inline-block;
+  content: "\00b7";
+  margin-right: 5px;
+}
+
 /* Section Backgrounds
 ---------------------------------------------------------------- */
 .bg--icons-white {
@@ -572,18 +585,7 @@ a:focus {
 	position: relative;
 	padding: 30px 80px 30px 40px;
 }
-.jb-vsplit__content ul {
-  padding: 0;
-  list-style-position: inside;
-  list-style: none;
-}
-.jb-vsplit__content li:before {
-  content: "\00b7";
-}
-.jb-vsplit__content ul li span {
-  position: relative;
-  left: 5px;
-}
+
 .jb-vsplit__button {
 	position: absolute;
 	bottom: 40px;
