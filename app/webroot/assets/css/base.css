@@ -655,7 +655,7 @@ a:focus {
 /* Home
 ---------------------------------------------------------------- */
 .home-hero {
-  min-height: 100vh;
+  min-height: 800px;
   color: white;
   background: var(--color-diag-gradient);
   transform: skew(0, 165deg);
