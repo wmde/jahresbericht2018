@@ -394,8 +394,7 @@ a:focus {
   display: block;
   width: 200px;
   height: 45px;
-  background-image: url(../img/wmde_logo_black.svg);
-  filter: invert(100%);
+  background-image: url(../img/wmde_logo_white.svg);
 }
 
 /* Header
