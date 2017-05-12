@@ -724,6 +724,26 @@ a:focus {
   transform: rotate(50deg);
 }
 
+/* Review Page
+---------------------------------------------------------------- */
+.review {
+  color: white;
+}
+.review__hero-stripe {
+  height: 800px;
+  top: -400px;
+}
+.review__intro {
+  padding-top: 200px;
+}
+.review__intro h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 100;
+}
+
+
 /* Report Landing Page
 ---------------------------------------------------------------- */
 .report-landing__title {
