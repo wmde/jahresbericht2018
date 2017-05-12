@@ -221,6 +221,7 @@ body > main {
 ---------------------------------------------------------------- */
 .section {
   position: relative; /* __heading is absolute */
+  overflow: hidden;
 }
 .section__heading { /* == h--delta special */
   font-family: var(--font-family-sans);
