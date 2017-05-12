@@ -1,12 +1,12 @@
-<main class="report-detail report-home cp cp--6x-bottom">
+<main class="report-detail">
 	<section
 		class="hero cp cp--nav-zone"
-		style="background-image: url(/assets/img/report_moon_hero.jpg)"
+		style="background-image: url(/assets/img/hero_moon.jpg)"
 	>
-		<img class="hero__center-illu" src="/assets/img/report_moon_hero_illu.jpg" alt="Illustration">
+		<img class="hero__center-illu" src="/assets/ico/moon.svg" alt="Illustration" >
 	</section>
 	<section class="section cp">
-		<div class="limit--m">
+		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Gratulieren:</em><br>Wikipedia wird 15…und fliegt zum Mond!
 			</h1>
@@ -21,6 +21,16 @@
 				<p>
 					Zum 15. Geburtstag bekam Wikipedia ein ganz besonderes Geschenk: Weil sie die größte Enzyklopädie der Geschichte und ein Symbol der Zusammenarbeit ist, darf Wikipedia auf eine Reise zum Mond gehen. Schließlich lebt das Projekt davon, dass Menschen ihr Wissen teilen – mit der ganzen Welt und nun sogar noch weit darüber hinaus.
 				</p>
+				<blockquote class="quote">
+					<div class="quote__body">
+						<p class="t--beta">
+							„Meines Erachtens ist die Bedeutung der Idee Freies Wissen kaum zu überschätzen. Offene Konzepte, die nicht nur kostenlosen Zugriff, sondern vor allem auch eine transformative Nachnutzung ermöglichen, haben nicht nur in der Wissenschaft großes Potenzial, sondern können insgesamt zu einem effektiveren, effizienteren, aber auch gerechteren Umgang mit Wissen beitragen."
+						</p>
+					</div>
+					<footer class="quote__author t--gamma">
+						Marion Goller, Fellow von der Westfälischen Wilhelms-Universität Münster
+					</footer>
+				</blockquote>
 				<p>
 					Die PT Scientists aus Berlin, die als Freizeit-Wissenschaftler beim Google Lunar-X-Prize gestartet sind, möchten Wikipedia mit ihrem ersten rein privat finanzierten Mondflug ein Denkmal setzen. Als Einsteiger in die Thematik der Raumfahrt haben sich die PT Scientists nämlich selbst viel Wissen aus Wikipedia angeeignet. Robert Böhme, Leiter der PT Scientists, erinnert sich: „Für uns war Wikipedia am Anfang eine unheimlich wichtige Wissensquelle, weil wir einfach Außenseiter aus der Raumfahrt sind. Und es hat uns geholfen, den Einstieg zu kriegen und einfach das Nötigste zu lernen und zu sehen, was mit einem freien Austausch von Informationen alles möglich ist.“
 				</p>
@@ -31,6 +41,52 @@
 					Wikimedia Deutschland begleitete diesen Prozess kommunikativ und logistisch. Wir wollten das Projekt nutzen, um auf die Möglichkeit der Mit­arbeit in Wikipedia aufmerksam zu machen. Auf der Abschlussveranstaltung des Projekts am 05. Dezember 2016, dem Internationalen Tag des Ehren­amtes, waren die PT Scientists mit ihrem Lande­modul ALINA und einem Mondrover bei Wikimedia Deutschland zu Besuch. Sie erhielten die Wikipedia-Disc und beantworteten Fragen rund um ihre Mission zum Mond. Voraussichtlich Anfang 2018 wird der Datenträger am Landemodul befestigt und zum Mond geschossen, wo er dann für mindestens 1.000 Jahre als Zeitkapsel zu finden sein wird. Gemeinsam mit den Artikeln, werden auch die Benutzernamen der jeweiligen Autorinnen und Autoren auf dem Mond hinterlegt, um ihr Engagement im digitalen Ehrenamt zu würdigen.
 				</p>
 			</div>
+		</div>
+	</section>
+	<section class="section cp--center-section">
+		<div class="limit--l">
+			<div class="section__body slider swiper-container loading">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<figure class="fig">
+							<img class="fig__image" src="/assets/img/abraham_taherivand.jpg" alt="Porträt von Abraham Taherivand">
+							<figcaption class="fig__caption limit--s">
+								Abraham Taherivand.
+								<a href="http://renezieger.de" target="new">Bild: René Zieger</a>,
+								<a href="https://creativecommons.org/licenses/by/4.0/" target="new">CC BY 4.0</a>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="swiper-slide">
+						<figure class="fig">
+							<img class="fig__image" src="/assets/img/abraham_taherivand.jpg" alt="Porträt von Abraham Taherivand">
+							<figcaption class="fig__caption limit--s">
+								Abraham Taherivand.
+								<a href="http://renezieger.de" target="new">Bild: René Zieger</a>,
+								<a href="https://creativecommons.org/licenses/by/4.0/" target="new">CC BY 4.0</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</section>
+	<section class="section cp--center-section">
+		<div class="limit--s">
+			<div class="border-box border-box--green">
+				<div class="h--gamma">LINKS</div>
+				<ul class="bullet-list">
+					<li><a href="https://example.org" target="new">Projektseite</a>
+					<li><a href="https://example.org" target="new">Lorem</a>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="section cp--center-section bg--icons-light-blue">
+		<div class="section__actions">
+			<a href="<?= $url('/report', $lang) ?>" class="button button--bg-green">Zur Themenübersicht</a>
 		</div>
 	</section>
 </main>

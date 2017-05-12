@@ -124,7 +124,12 @@ body > main {
 /* Text Sizes
 ---------------------------------------------------------------- */
 /* --alpha missing here as used only for headlines */
-/* --beta missing here as used only for headlines */
+.t--beta {
+  font-size: 36px;
+  font-family: var(--font-family-sans);
+  font-weight: 600; /* manually adjusted to design */
+  line-height: 1.4;
+}
 .t--gamma {
   font-family: var(--font-family-sans);
   font-weight: normal;
@@ -209,6 +214,55 @@ body > main {
   color: var(--color-green);
 }
 
+/* Blockquotes
+---------------------------------------------------------------- */
+.quote {
+  margin: 60px 80px 80px -80px;
+  color: var(--color-green);
+}
+.quote__body > p:first-of-type {
+  margin-top: 0;
+}
+.quote__body > p:last-of-type {
+  margin-bottom: 0;
+}
+.quote__author {
+  margin-top: 10px;
+}
+
+/* Lists
+---------------------------------------------------------------- */
+.bullet-list {
+  padding: 0;
+  list-style-position: inside;
+  list-style: none;
+}
+.bullet-list li:before {
+  display: inline-block;
+  content: "\00b7";
+  margin-right: 5px;
+}
+
+/* Border Boxes
+---------------------------------------------------------------- */
+.border-box {
+  border: 1px solid var(--color-black);
+  padding: 40px;
+}
+.border-box :first-child {
+  margin-top: 0;
+}
+.border-box :last-child {
+  margin-bottom: 0;
+}
+.border-box--green {
+  color: var(--color-green);
+  border-color: green;
+}
+.border-box--green a {
+  color: var(--color-green);
+}
+
 /* Section Backgrounds
 ---------------------------------------------------------------- */
 .bg--icons-white {
@@ -264,8 +318,10 @@ body > main {
 .section__body {
 
 }
-.section__actions {
+.section__body + .section__actions {
 	margin-top: 80px;
+}
+.section__actions {
 	text-align: center;
 }
 
@@ -320,8 +376,13 @@ a:focus {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.2;
-}
 
+  margin-top: 10px;
+  font-weight: 600;
+}
+.fig__caption a {
+  color: var(--color-green);
+}
 .figs .fig {
   display: inline-block;
   max-width: 50%;
@@ -395,6 +456,11 @@ a:focus {
   color: white;
   border-bottom: 1px solid rgba(255,255,255,0.8);
 }
+.main-footer .nav__link {
+  opacity: 1;
+  text-transform: none;
+  letter-spacing: 0;
+}
 
 .main-footer__upper p a {
   border-color: transparent;
@@ -439,6 +505,18 @@ a:focus {
 .imprint__cc-logo {
   display: inline-block;
   margin-top: 40px;
+}
+
+/* Hero
+---------------------------------------------------------------- */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 66vh;
+  background: var(--color-light-gray) no-repeat center/cover;
+}
+.hero__center-illu {
 }
 
 /* Forms
@@ -502,18 +580,7 @@ a:focus {
 	position: relative;
 	padding: 30px 80px 30px 40px;
 }
-.jb-vsplit__content ul {
-  padding: 0;
-  list-style-position: inside;
-  list-style: none;
-}
-.jb-vsplit__content li:before {
-  content: "\00b7";
-}
-.jb-vsplit__content ul li span {
-  position: relative;
-  left: 5px;
-}
+
 .jb-vsplit__button {
 	position: absolute;
 	bottom: 40px;
@@ -635,9 +702,6 @@ a:focus {
 .home__intro .fig img {
   max-width: 100%;
 }
-.home__intro .fig__caption {
-  padding-top: 20px;
-}
 
 .home__facts {
   overflow: hidden; /* prevent bg--stripe overflow */
@@ -756,6 +820,7 @@ a:focus {
   margin-bottom: 80px;
 }
 
+
 /* Swiper
 ---------------------------------------------------------------- */
 .swiper-container.loading .swiper-slide {
@@ -776,15 +841,25 @@ a:focus {
   height: 100%;
   z-index: 1;
   display: flex;
-  transition-property: transform;
   box-sizing: content-box;
+  transition-property: transform;
   transform: translate3d(0px, 0, 0);
 }
 .swiper-slide {
   opacity: 1;
   height: 100%;
+  width: 100%;
   position: relative;
+  flex-shrink: 0;
   transition: opacity .5s;
+  text-align: center;
+}
+.swiper-slide .jb-vsplit,
+.swiper-slide .fig__caption {
+  text-align: left;
+}
+.swiper-slide > * {
+  margin: 0 auto;
 }
 
 /* Auto Height */
