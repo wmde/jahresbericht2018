@@ -285,8 +285,10 @@ body > main {
 .section__body {
 
 }
-.section__actions {
+.section__body + .section__actions {
 	margin-top: 80px;
+}
+.section__actions {
 	text-align: center;
 }
 
