@@ -731,6 +731,13 @@ a:focus {
   margin-bottom: 80px;
 }
 
+/* Report Detail Pages
+---------------------------------------------------------------- */
+.report-detail .section__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
 /* Swiper
 ---------------------------------------------------------------- */
 .swiper-container.loading .swiper-slide {
