@@ -15,10 +15,10 @@
  */
 
 require([
-  'jquery',
+  // 'jquery',
   'domready!'
 ], function(
-  $
+  // $
 ) {
 
   // ...
