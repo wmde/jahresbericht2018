@@ -47,6 +47,7 @@
 						<?php endif ?>
 						<h1 class="h--alpha jb-fact__title"><?= $fact['number'][$lang] ?></h1>
 						<p class="t--delta"><?= $fact['tail'][$lang] ?></p>
+						<a class="button" href="<?= $url('review', $lang) ?>">Alle Fakten sehen</a>
 					</div>
 				</div>
 			</div>
