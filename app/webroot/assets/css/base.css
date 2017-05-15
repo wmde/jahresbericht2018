@@ -937,7 +937,7 @@ a:focus {
 .finance .section__body {
   padding-top: 200px;
 }
-.finance__intro h1 {
+.finance__intro-heading {
   text-align: center;
   margin-bottom: 60px;
   position: relative;
@@ -969,4 +969,77 @@ a:focus {
 }
 .finance__p {
   margin-bottom: 80px;
+}
+.fin-soc__heading {
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 0;
+}
+.fin-soc__heading-s {
+  margin-bottom: 0;
+}
+.fin-soc__heading-l {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Finance Table
+---------------------------------------------------------------- */
+.ft__heading {
+  padding-bottom: 40px;
+}
+.ft {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ft th {
+  text-align: center;
+}
+.ft tfoot td {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.ft th,
+.ft td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ft__row-head td {
+  padding-top: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.ft__row-line td,
+.ft__cell-line  {
+  border-bottom: 1px solid var(--color-light-gray);
+}
+.ft__col-key {
+  width: 35%;
+}
+.ft__col-val {
+  width: 20%;
+  color: var(--color-black);
+  background-color: white;
+  text-align: right;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.ft__col-void {
+  width: 2.5%;
+  text-align: right;
+}
+.ft__empty {
+  background-color: rgba(255, 255, 255, .2);
+}
+.ft__green-bg {
+  color: white;
+  background-color: var(--color-green);
+}
+.ft__green-txt {
+  color: var(--color-green);
+}
+.ft__green-border {
+ border-right: 3px solid var(--color-green);
+ border-left: 3px solid var(--color-green);
 }

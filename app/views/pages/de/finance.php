@@ -2,7 +2,7 @@
 	<div class="bg--stripe finance__head-stripe"></div>
 	<section class="section section__body cp">
 		<div class="limit--s finance__intro">
-			<h1 class="h--beta">Finanzen 2016</h1>
+			<h1 class="h--beta finance__intro-heading">Finanzen 2016</h1>
 			<p class="t--gamma">2016 war für den Verein Wikimedia Deutschland — Gesellschaft zur Förderung Freien Wissens e. V. aus finanzieller Sicht ein gutes Jahr.</p>
 		</div>
 		<div class="limit--m finance__boxes">
