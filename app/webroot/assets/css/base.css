@@ -184,6 +184,12 @@ body > main {
   font-weight: 600; /* manually adjusted to design */
   line-height: 1.4;
 }
+.h--gamma {
+  font-family: var(--font-family-sans);
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.4;
+}
 .h--delta {
   font-family: var(--font-family-sans);
   font-weight: 600;
@@ -276,6 +282,9 @@ body > main {
 }
 .bg--green {
   background-color: var(--color-green);
+}
+.bg--purple {
+  background-color: var(--color-purple);
 }
 .bg--stripe {
   width: 100vw;
@@ -912,4 +921,52 @@ a:focus {
   background-image: url("../ico/arrow_white_right.svg");
   right: 10px;
   left: auto
+}
+
+/* Finance Page
+---------------------------------------------------------------- */
+.finance {
+  color: white;
+  overflow: hidden;
+}
+.finance__head-stripe {
+  height: 400px;
+  top: 270px;
+  transform: rotate(180deg) skew(0, 165deg);
+}
+.finance .section__body {
+  padding-top: 200px;
+}
+.finance__intro h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 100;
+}
+.finance__boxes {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.finance .border-box {
+  color: white;
+  border-color: white;
+  width: 450px;
+  padding: 30px 40px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.finance .border-box em {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  padding-top: 5px;
+  font-weight: bold;
+  line-height: 1.35;
+}
+.finance__p {
+  margin-bottom: 80px;
 }
