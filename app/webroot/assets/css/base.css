@@ -845,7 +845,7 @@ a:focus {
 .swiper-container {
   margin: 0 auto;
   position: relative;
-  / overflow: hidden; */
+  /* overflow: hidden; */
   /* Fix of Webkit flickering */
   z-index: 1;
   width: 100%;
