@@ -17,6 +17,7 @@
 
 set -o nounset
 set -o errexit
+set -o pipefail
 
 # Must be executed from the project root (where Envfile is located).
 [[ ! -f Envfile ]] && echo "error: not invoked from project root" && exit 1
