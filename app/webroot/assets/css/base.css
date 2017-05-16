@@ -996,7 +996,8 @@ a:focus {
 .ft th {
   text-align: center;
 }
-.ft tfoot td {
+.ft tfoot td,
+.ft__row-foot {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -1010,6 +1011,10 @@ a:focus {
   text-transform: uppercase;
   font-weight: bold;
 }
+.ft__row-low td {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .ft__row-line td,
 .ft__cell-line  {
   border-bottom: 1px solid var(--color-light-gray);
@@ -1022,8 +1027,8 @@ a:focus {
   color: var(--color-black);
   background-color: white;
   text-align: right;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 .ft__col-void {
   width: 2.5%;

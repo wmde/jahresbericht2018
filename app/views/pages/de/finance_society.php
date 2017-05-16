@@ -249,7 +249,176 @@
 	<section class="section cp">
 		<div class="limit--m fin-soc__rechnung">
 			<h2 class="h--beta ft__heading">Gewinn- und Verlustrechnung</h2>
-
+			<table class="ft">
+				<thead>
+					<th class="ft__col-key"></th>
+					<th class="ft__col-val ft__green-bg ft__green-border">31.12.2016</th>
+					<th class="ft__col-void"></th>
+					<th class="ft__col-val ft__green-txt ft__cell-line">31.12.2015</th>
+					<th class="ft__col-void"></th>
+					<th class="ft__col-val ft__green-txt ft__cell-line">31.12.2014</th>
+				</thead>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Spendenerträge</td>
+					<td class="ft__col-val ft__green-border">3.218.133 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ">3.530.014 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ">3.776.325 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Mitgliedsbeiträge</td>
+					<td class="ft__col-val ft__green-border">1.632.360 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">1.196.638 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">532.987 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Übrige Erlöse</td>
+					<td class="ft__col-val ft__green-border">265.760 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">443.686 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">157.178 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Sonstige betriebliche Erträge</td>
+					<td class="ft__col-val ft__green-border">61.096 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">195.256 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">203.140 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Erträge aus anderen Wertpapieren</td>
+					<td class="ft__col-val ft__green-border">345 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">0 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">0 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Sonstige Zinsen und ähnliche Erträge</td>
+					<td class="ft__col-val ft__green-border">14 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">7.411 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">185 €</td>
+				</tr>
+				<tr class="ft__row-foot ft__row-line">
+					<td class="ft__col-key">Summe Erträge</td>
+					<td class="ft__col-val ft__green-border">5.177.709 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">5.373.004 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">4.669.815 €</td>
+				</tr>
+				<tr class="ft__row-head ft__row-line">
+					<td class="ft__col-key">&nbsp;</td>
+					<td class="ft__col-val ft__green-border ft__empty"></td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ft__empty"></td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ft__empty"></td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Personalaufwendungen</td>
+					<td class="ft__col-val ft__green-border">-3.095.159 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-2.916.042 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-2.554.270 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Abschreibungen</td>
+					<td class="ft__col-val ft__green-border">-78.572 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-50.584 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-76.993 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Sonstige betriebliche Aufwendungen</td>
+					<td class="ft__col-val ft__green-border">-2.003.978 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-1.923.667 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-2.037.041 €</td>
+				</tr>
+				<tr class="ft__row-foot ft__row-line">
+					<td class="ft__col-key">Summe Aufwendungen aus gewöhnlicher Geschäftstätigkeit</td>
+					<td class="ft__col-val ft__green-border">-5.177.709 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-4.890.293 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-4.668.304 €</td>
+				</tr>
+				<tr class="ft__row-head ft__row-line">
+					<td class="ft__col-key">&nbsp;</td>
+					<td class="ft__col-val ft__green-border ft__empty"></td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ft__empty"></td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ft__empty"></td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Außerordentliche Aufwendungen</td>
+					<td class="ft__col-val ft__green-border">0 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">0 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-1.511 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Steuern vom Einkommen und Ertrag</td>
+					<td class="ft__col-val ft__green-border">0 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-4.099 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">0 €</td>
+				</tr>
+				<tr class="ft__row-low ft__row-line">
+					<td class="ft__col-key">&nbsp;</td>
+					<td class="ft__col-val ft__green-border ft__empty"></td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ft__empty"></td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ft__empty"></td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Jahresüberschuss</td>
+					<td class="ft__col-val ft__green-border">0 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">478.612 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">0 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Einstellungen in satzungsmäßige Rücklagen</td>
+					<td class="ft__col-val ft__green-border">0 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">-478.612 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val">0 €</td>
+				</tr>
+				<tr class="ft__row-low ft__row-line">
+					<td class="ft__col-key">&nbsp;</td>
+					<td class="ft__col-val ft__green-border ft__empty"></td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ft__empty"></td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ft__empty"></td>
+				</tr>
+				<tfoot>
+					<td class="ft__col-key">Bilanzgewinn</td>
+					<td class="ft__col-val ft__green-border ft__green-bg">0 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ft__green-txt">0 €</td>
+					<td class="ft__col-void"></td>
+					<td class="ft__col-val ft__green-txt">0 €</td>
+				</tfoot>
+			</table>
 		</div>
 	</section>
 	<section class="section cp">
