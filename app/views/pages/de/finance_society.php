@@ -2,23 +2,23 @@
 	<div class="bg--stripe finance__head-stripe"></div>
 	<section class="section section__body cp">
 		<div class="limit--s finance__intro">
-			<h1 class="fin-soc__heading">
-				<div class="h--delta fin-soc__heading-s">Finanzen 2016</div>
-				<div class="h--beta fin-soc__heading-l">Wikimedia Deutschland e. V.</div>
+			<h1 class="fin-detail__heading">
+				<div class="h--delta fin-detail__heading-s">Finanzen 2016</div>
+				<div class="h--beta fin-detail__heading-l">Wikimedia Deutschland e. V.</div>
 			</h1>
 		</div>
 	</section>
 	<section class="section cp">
-		<div class="limit--m fin-soc__aktiva">
+		<div class="limit--m fin-detail__aktiva">
 			<h2 class="h--beta ft__heading">Bilanz &mdash; Aktiva</h2>
 			<table class="ft">
 				<thead>
 					<th class="ft__col-key"></th>
 					<th class="ft__col-val ft__green-bg ft__green-border">31.12.2016</th>
 					<th class="ft__col-void"></th>
-					<th class="ft__col-val ft__green-txt">31.12.2015</th>
+					<th class="ft__col-val ft__em">31.12.2015</th>
 					<th class="ft__col-void"></th>
-					<th class="ft__col-val ft__green-txt">31.12.2014</th>
+					<th class="ft__col-val ft__em">31.12.2014</th>
 				</thead>
 				<tr class="ft__row-head ft__row-line">
 					<td class="ft__col-key">Anlagevermögen</td>
@@ -128,24 +128,24 @@
 					<td class="ft__col-key">Bilanzsumme</td>
 					<td class="ft__col-val ft__green-border ft__green-bg">4.723.856 €</td>
 					<td class="ft__col-void"></td>
-					<td class="ft__col-val ft__green-txt">5.121.660 €</td>
+					<td class="ft__col-val ft__em">5.121.660 €</td>
 					<td class="ft__col-void"></td>
-					<td class="ft__col-val ft__green-txt">3.332.595 €</td>
+					<td class="ft__col-val ft__em">3.332.595 €</td>
 				</tfoot>
 			</table>
 		</div>
 	</section>
 	<section class="section cp">
-		<div class="limit--m fin-soc__passiva">
+		<div class="limit--m fin-detail__passiva">
 			<h2 class="h--beta ft__heading">Bilanz &mdash; Passiva</h2>
 			<table class="ft">
 				<thead>
 					<th class="ft__col-key"></th>
 					<th class="ft__col-val ft__green-bg ft__green-border">31.12.2016</th>
 					<th class="ft__col-void"></th>
-					<th class="ft__col-val ft__green-txt ft__cell-line">31.12.2015</th>
+					<th class="ft__col-val ft__em ft__cell-line">31.12.2015</th>
 					<th class="ft__col-void"></th>
-					<th class="ft__col-val ft__green-txt ft__cell-line">31.12.2014</th>
+					<th class="ft__col-val ft__em ft__cell-line">31.12.2014</th>
 				</thead>
 				<tr class="ft__row-line">
 					<td class="ft__col-key">Noch nicht verbrauchte Spendenmittel</td>
@@ -239,24 +239,24 @@
 					<td class="ft__col-key">Bilanzsumme</td>
 					<td class="ft__col-val ft__green-border ft__green-bg">4.723.856 €</td>
 					<td class="ft__col-void"></td>
-					<td class="ft__col-val ft__green-txt">5.121.660 €</td>
+					<td class="ft__col-val ft__em">5.121.660 €</td>
 					<td class="ft__col-void"></td>
-					<td class="ft__col-val ft__green-txt">3.332.595 €</td>
+					<td class="ft__col-val ft__em">3.332.595 €</td>
 				</tfoot>
 			</table>
 		</div>
 	</section>
 	<section class="section cp">
-		<div class="limit--m fin-soc__rechnung">
+		<div class="limit--m fin-detail__rechnung">
 			<h2 class="h--beta ft__heading">Gewinn- und Verlustrechnung</h2>
 			<table class="ft">
 				<thead>
 					<th class="ft__col-key"></th>
 					<th class="ft__col-val ft__green-bg ft__green-border">31.12.2016</th>
 					<th class="ft__col-void"></th>
-					<th class="ft__col-val ft__green-txt ft__cell-line">31.12.2015</th>
+					<th class="ft__col-val ft__em ft__cell-line">31.12.2015</th>
 					<th class="ft__col-void"></th>
-					<th class="ft__col-val ft__green-txt ft__cell-line">31.12.2014</th>
+					<th class="ft__col-val ft__em ft__cell-line">31.12.2014</th>
 				</thead>
 				<tr class="ft__row-line">
 					<td class="ft__col-key">Spendenerträge</td>
@@ -414,15 +414,15 @@
 					<td class="ft__col-key">Bilanzgewinn</td>
 					<td class="ft__col-val ft__green-border ft__green-bg">0 €</td>
 					<td class="ft__col-void"></td>
-					<td class="ft__col-val ft__green-txt">0 €</td>
+					<td class="ft__col-val ft__em">0 €</td>
 					<td class="ft__col-void"></td>
-					<td class="ft__col-val ft__green-txt">0 €</td>
+					<td class="ft__col-val ft__em">0 €</td>
 				</tfoot>
 			</table>
 		</div>
 	</section>
 	<section class="section cp">
-		<div class="limit--m fin-soc__mittel">
+		<div class="limit--m fin-detail__mittel">
 			<h2 class="h--beta ft__heading">Mittelverwendung</h2>
 			<div class="bagel">
 				<figure class="fig bagel__image bagel__image--l">
@@ -586,8 +586,8 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m finance__boxes">
-			<a class="border-box t--epsilon" href="<?= $url('finance/society', $lang) ?>">
-				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
+			<a class="border-box t--epsilon" href="<?= $url('finance', $lang) ?>">
+				<span>Zur Übersicht  <em class="t--delta">Finanzreport 2016</em></span>
 			</a>
 			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Gemeinnützige Wikimedia Fördergesellschaft mbH</em></span>

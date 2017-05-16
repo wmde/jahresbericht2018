@@ -25,6 +25,7 @@
   --color-light-gray: #a5a5a5;
 
   --color-diag-gradient: linear-gradient(45deg, #339967, #622181);
+  --color-diag-gradient-fund: linear-gradient(45deg, #ffffff, #dce4e8);
 
   --font-family-sans: 'Montserrat', sans-serif;
   --font-family-serif: 'Source Serif Pro', serif;
@@ -291,11 +292,24 @@ body > main {
 .bg--purple {
   background-color: var(--color-purple);
 }
+.bg--light-blue {
+  background-color: var(--color-light-blue);
+}
 .bg--stripe {
   width: 100vw;
   height: 300px;
   margin-top: -150px;
   background: var(--color-diag-gradient);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: skew(0, 165deg);
+}
+.bg--stripe-fund {
+  width: 100vw;
+  height: 300px;
+  margin-top: -150px;
+  background: var(--color-diag-gradient-fund);
   position: absolute;
   top: 50%;
   left: 0;
@@ -935,6 +949,9 @@ a:focus {
   overflow: hidden;
   position: relative;
 }
+.finance--fund {
+  color: var(--color-black);
+}
 .finance__head-stripe {
   height: 400px;
   top: 270px;
@@ -976,16 +993,16 @@ a:focus {
 .finance__p {
   margin-bottom: 80px;
 }
-.fin-soc__heading {
+.fin-detail__heading {
   text-align: center;
   position: relative;
   z-index: 100;
   margin-bottom: 0;
 }
-.fin-soc__heading-s {
+.fin-detail__heading-s {
   margin-bottom: 0;
 }
-.fin-soc__heading-l {
+.fin-detail__heading-l {
   margin-top: 5px;
   margin-bottom: 0;
 }
@@ -1022,11 +1039,18 @@ a:focus {
 .ft__row-line td {
   border-bottom: 1px solid var(--color-light-blue);
 }
+.finance--fund .ft__row-line td {
+  border-bottom: 1px solid white;
+}
+.finance--fund .ft__row-line .ft__col-val {
+  border-bottom: 1px solid var(--color-light-blue);
+}
 .ft__cell-line {
   border-bottom: 1px solid var(--color-purple);
 }
 .ft__col-key {
   width: 35%;
+  padding-right: 35px;
 }
 .ft--alloc .ft__col-key {
   width: 80%;
@@ -1050,8 +1074,12 @@ a:focus {
   color: white;
   background-color: var(--color-green);
 }
-.ft__green-txt {
+.ft__em {
   color: var(--color-green);
+}
+.finance--fund .ft__em {
+  color: white;
+  background-color: var(--color-light-gray);
 }
 .ft__green-border {
  border-right: 3px solid var(--color-green);
@@ -1091,12 +1119,14 @@ a:focus {
 }
 .bagel__line-1,
 .bagel__line-2,
-.bagel__line-3 {
+.bagel__line-3,
+.bagel__line-4 {
   position: relative;
 }
 .bagel__line-1 span,
 .bagel__line-2 span,
-.bagel__line-3 span {
+.bagel__line-3 span,
+.bagel__line-4 span {
   position: absolute;
   bottom: 0;
 }
@@ -1112,24 +1142,52 @@ a:focus {
 .bagel__line-3 {
   height: 80px;
 }
+.finance--fund .bagel__line-3 {
+  height: 60px;
+}
+.bagel__line-4 {
+  height: 80px;
+}
 
 .bagel__ratio {
   width: 400px;
+}
+.finance--fund .bagel__ratio {
+  color: var(--color-green);
 }
 .bagel__ratio span {
   right: 0;
   text-align: right;
   border-bottom: 1px solid white;
 }
+.finance--fund .bagel__ratio span {
+  border-bottom: 1px solid var(--color-black);
+}
 .bagel__ratio .bagel__line-1 span {
   width: 300px;
+}
+.finance--fund .bagel__ratio .bagel__line-1 span {
+  width: 280px;
 }
 .bagel__ratio .bagel__line-2 span {
   width: 160px;
 }
+.finance--fund .bagel__ratio .bagel__line-2 span {
+  width: 360px;
+}
 .bagel--s .bagel__ratio .bagel__line-2 span {
   width: 170px;
 }
+.finance--fund .bagel--s .bagel__ratio .bagel__line-2 span {
+  width: 350px;
+}
+.bagel__ratio .bagel__line-3 span {
+  width: 148px;
+}
+.bagel--s .bagel__ratio .bagel__line-3 span {
+  width: 168px;
+}
+
 .bagel__circle {
 	background-color: white;
   width: 4px;
@@ -1140,6 +1198,9 @@ a:focus {
   bottom: 0;
   transform: translate(-50%, 50%);
 }
+.finance--fund .bagel__circle {
+  background-color: var(--color-black);
+}
 
 .bagel__info {
   margin-left: 40px;
@@ -1149,10 +1210,22 @@ a:focus {
 .bagel__info .bagel__line-2 {
   border-bottom: 1px solid white;
 }
+.finance--fund .bagel__info .bagel__line-1,
+.finance--fund .bagel__info .bagel__line-2,
+.finance--fund .bagel__info .bagel__line-3 {
+  border-bottom: 1px solid var(--color-black);
+}
+.bagel__label {
+  max-width: 300px;
+}
 .bagel__amount {
   right: 0;
   font-weight: bold;
 }
-.bagel__line-3 .bagel__label {
+.bagel__line-3 .bagel__label,
+.bagel__line-4 .bagel__label {
   font-weight: bold;
+}
+.finance--fund .bagel__line-3 .bagel__label {
+  font-weight: normal;
 }
