@@ -933,6 +933,7 @@ a:focus {
 .finance {
   color: white;
   overflow: hidden;
+  position: relative;
 }
 .finance__head-stripe {
   height: 400px;
@@ -1004,25 +1005,25 @@ a:focus {
 .ft tfoot td,
 .ft__row-foot {
   font-weight: bold;
-  text-transform: uppercase;
 }
 .ft th,
 .ft td {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .ft__row-head td {
   padding-top: 30px;
-  text-transform: uppercase;
   font-weight: bold;
 }
 .ft__row-low td {
   padding-top: 0;
   padding-bottom: 0;
 }
-.ft__row-line td,
-.ft__cell-line  {
-  border-bottom: 1px solid var(--color-light-gray);
+.ft__row-line td {
+  border-bottom: 1px solid var(--color-light-blue);
+}
+.ft__cell-line {
+  border-bottom: 1px solid var(--color-purple);
 }
 .ft__col-key {
   width: 35%;
