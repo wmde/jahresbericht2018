@@ -982,6 +982,10 @@ a:focus {
   justify-content: center;
   align-items: center;
 }
+.finance--fund .border-box {
+  color: var(--color-black);
+  border-color: var(--color-black);
+}
 .finance .border-box em {
   display: block;
   font-style: normal;

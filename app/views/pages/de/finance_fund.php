@@ -402,4 +402,14 @@
 			</div>
 		</div>
 	</section>
+	<section class="section cp">
+		<div class="limit--m finance__boxes">
+			<a class="border-box t--epsilon" href="<?= $url('finance', $lang) ?>">
+				<span>Zur Übersicht  <em class="t--delta">Finanzreport 2016</em></span>
+			</a>
+			<a class="border-box t--epsilon" href="<?= $url('finance/society', $lang) ?>">
+				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
+			</a>
+		</div>
+	</section>
 </main>
