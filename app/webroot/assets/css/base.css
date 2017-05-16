@@ -1028,6 +1028,9 @@ a:focus {
 .ft__col-key {
   width: 35%;
 }
+.ft--alloc .ft__col-key {
+  width: 80%;
+}
 .ft__col-val {
   width: 20%;
   color: var(--color-black);

@@ -426,7 +426,7 @@
 			<h2 class="h--beta ft__heading">Mittelverwendung</h2>
 			<div class="bagel">
 				<figure class="fig bagel__image bagel__image--l">
-					<img src="/assets/img/Kreis_3_path.svg" alt="">
+					<img src="/assets/img/bagel-22-78.svg" alt="">
 					<figcaption class="t--beta bagel__cap">2016</figcaption>
 				</figure>
 				<div class="bagel__text">
@@ -458,7 +458,7 @@
 			</div>
 			<div class="bagel bagel--s">
 				<figure class="fig bagel__image bagel__image--s">
-					<img src="/assets/img/Kreis_3_path.svg" alt="">
+					<img src="/assets/img/bagel-22-78.svg" alt="">
 					<figcaption class="t--gamma bagel__cap">2015</figcaption>
 				</figure>
 				<div class="bagel__text">
@@ -475,51 +475,113 @@
 					<div class="bagel__info">
 						<div class="bagel__line-1">
 							<span class="t--delta bagel__label">Indirekte Projektaufwendungen</span>
-							<span class="t--delta bagel__amount">1.116.153 €</span>
+							<span class="t--delta bagel__amount">1.058.727 €</span>
 						</div>
 						<div class="bagel__line-2">
 							<span class="t--delta bagel__label">Direkte Projektaufwendungen</span>
-							<span class="t--delta bagel__amount">4.061.556 €</span>
+							<span class="t--delta bagel__amount">3.835.666 €</span>
 						</div>
 						<div class="bagel__line-3">
 							<span class="t--delta bagel__label">Gesamt</span>
-							<span class="t--delta bagel__amount">5.177.709 €</span>
+							<span class="t--delta bagel__amount">4.894.393 €</span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="bagel bagel--s">
 				<figure class="fig bagel__image bagel__image--s">
-					<img src="/assets/img/Kreis_3_path.svg" alt="">
+					<img src="/assets/img/bagel-30-70.svg" alt="">
 					<figcaption class="t--gamma bagel__cap">2014</figcaption>
 				</figure>
 				<div class="bagel__text">
 					<div class="bagel__ratio">
 						<div class="t--gamma bagel__line-1"><span>
 							<div class="bagel__circle"></div>
-							22%
+							30%
 						</span></div>
 						<div class="t--gamma bagel__line-2"><span>
 							<div class="bagel__circle"></div>
-							78%
+							70%
 						</span></div>
 					</div>
 					<div class="bagel__info">
 						<div class="bagel__line-1">
 							<span class="t--delta bagel__label">Indirekte Projektaufwendungen</span>
-							<span class="t--delta bagel__amount">1.116.153 €</span>
+							<span class="t--delta bagel__amount">1.389.591 €</span>
 						</div>
 						<div class="bagel__line-2">
 							<span class="t--delta bagel__label">Direkte Projektaufwendungen</span>
-							<span class="t--delta bagel__amount">4.061.556 €</span>
+							<span class="t--delta bagel__amount">3.280.224 €</span>
 						</div>
 						<div class="bagel__line-3">
 							<span class="t--delta bagel__label">Gesamt</span>
-							<span class="t--delta bagel__amount">5.177.709 €</span>
+							<span class="t--delta bagel__amount">4.669.815 €</span>
 						</div>
 					</div>
 				</div>
 			</div>
+			<table class="ft ft--alloc">
+				<thead>
+					<th class="ft__col-key"></th>
+					<th class="ft__col-val ft__green-bg ft__green-border">31.12.2016</th>
+				</thead>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Neue Freiwillige für Wikimedia-Projekte gewinnen und halten</td>
+					<td class="ft__col-val ft__green-border">439.667 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Software-Entwicklung: Wikidata ausbauen, Community-Bedarfe umsetzen und MediaWiki weiterentwickeln</td>
+					<td class="ft__col-val ft__green-border">1.469.247 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Die politische und rechtliche Arbeit für Freies Wissen stärken</td>
+					<td class="ft__col-val ft__green-border">227.907 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Das Verhältnis zwischen Verein und Communitys verbessern</td>
+					<td class="ft__col-val ft__green-border">735.158 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Bildungs-, Wissenschafts- und Kulturinstitutionen für Leuchtturm-Projekte gewinnen</td>
+					<td class="ft__col-val ft__green-border">189.853 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Die Rahmenbedingungen für Freies Wissen durch Freie Lehr- und Lernmaterialien fördern</td>
+					<td class="ft__col-val ft__green-border">355.272 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Die Position von Wikimedia Deutschland im internationalen Movement definieren und festigen</td>
+					<td class="ft__col-val ft__green-border">308.350 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Regionalisierung: Fortsetzen und analysieren</td>
+					<td class="ft__col-val ft__green-border">91.535 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Freiwillige einbeziehen</td>
+					<td class="ft__col-val ft__green-border">612 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Klarheit über die Identität und Strategie des Vereins schaffen</td>
+					<td class="ft__col-val ft__green-border">54.392 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Programmunterstützende Bereiche<br>(z. B. Kommunikation, Veranstaltungsmanagement, etc.)</td>
+					<td class="ft__col-val ft__green-border">189.563 €</td>
+				</tr>
+				<tr class="ft__row-line">
+					<td class="ft__col-key">Indirekte Projektaufwendungen<br>(Miete, Personal, Buchhaltung, IT, etc.)</td>
+					<td class="ft__col-val ft__green-border">1.116.153 €</td>
+				</tr>
+				<tr class="ft__row-low ft__row-line">
+					<td class="ft__col-key">&nbsp;</td>
+					<td class="ft__col-val ft__green-border ft__empty"></td>
+				</tr>
+				<tfoot>
+					<td class="ft__col-key">Gesamt</td>
+					<td class="ft__col-val ft__green-border ft__green-bg">5.177.709 €</td>
+				</tfoot>
+			</table>
 		</div>
 	</section>
 	<section class="section cp">
