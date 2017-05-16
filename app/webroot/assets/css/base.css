@@ -1,14 +1,19 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Source+Serif+Pro:400,600,700');
 /*!
- * Base Stylesheet
+ * App Base Stylesheet
  *
  * Copyright (c) 2013 Atelier Disko - All rights reserved.
+ *
+ * Licensed under the AD App Software License v1.
  *
  * This software is proprietary and confidential. Redistribution
  * not permitted. Unless required by applicable law or agreed to
  * in writing, software distributed on an "AS IS" BASIS, WITHOUT-
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * You should have received a copy of the AD App Software
+ * License. If not, see https://atelierdisko.de/licenses.
  */
 
 :root {
