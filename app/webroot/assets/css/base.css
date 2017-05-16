@@ -1054,3 +1054,102 @@ a:focus {
  border-right: 3px solid var(--color-green);
  border-left: 3px solid var(--color-green);
 }
+
+/* Finance Bagels
+---------------------------------------------------------------- */
+.bagel {
+  position: relative;
+  padding: 40px 0;
+}
+.bagel img {
+  height: 100%;
+}
+.bagel__image {
+  position: absolute;
+  height: 280px;
+}
+.bagel__image--l {
+}
+.bagel__image--s {
+  padding: 20px;
+}
+.bagel__cap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bagel__text {
+  height: 280px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+}
+.bagel__line-1,
+.bagel__line-2,
+.bagel__line-3 {
+  position: relative;
+}
+.bagel__line-1 span,
+.bagel__line-2 span,
+.bagel__line-3 span {
+  position: absolute;
+  bottom: 0;
+}
+.bagel__line-1 {
+  height: 35px;
+}
+.bagel--s .bagel__line-1 {
+  height: 50px;
+}
+.bagel__line-2 {
+  height: 60px;
+}
+.bagel__line-3 {
+  height: 80px;
+}
+
+.bagel__ratio {
+  width: 400px;
+}
+.bagel__ratio span {
+  right: 0;
+  text-align: right;
+  border-bottom: 1px solid white;
+}
+.bagel__ratio .bagel__line-1 span {
+  width: 300px;
+}
+.bagel__ratio .bagel__line-2 span {
+  width: 160px;
+}
+.bagel--s .bagel__ratio .bagel__line-2 span {
+  width: 170px;
+}
+.bagel__circle {
+	background-color: white;
+  width: 4px;
+	height: 4px;
+	border-radius: 2px;
+
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.bagel__info {
+  margin-left: 40px;
+  width: 440px;
+}
+.bagel__info .bagel__line-1,
+.bagel__info .bagel__line-2 {
+  border-bottom: 1px solid white;
+}
+.bagel__amount {
+  right: 0;
+  font-weight: bold;
+}
+.bagel__line-3 .bagel__label {
+  font-weight: bold;
+}

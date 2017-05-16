@@ -422,6 +422,107 @@
 		</div>
 	</section>
 	<section class="section cp">
+		<div class="limit--m fin-soc__mittel">
+			<h2 class="h--beta ft__heading">Mittelverwendung</h2>
+			<div class="bagel">
+				<figure class="fig bagel__image bagel__image--l">
+					<img src="/assets/img/Kreis_3_path.svg" alt="">
+					<figcaption class="t--beta bagel__cap">2016</figcaption>
+				</figure>
+				<div class="bagel__text">
+					<div class="bagel__ratio">
+						<div class="t--beta bagel__line-1"><span>
+							<div class="bagel__circle"></div>
+							22%
+						</span></div>
+						<div class="t--beta bagel__line-2"><span>
+							<div class="bagel__circle"></div>
+							78%
+						</span></div>
+					</div>
+					<div class="bagel__info">
+						<div class="bagel__line-1">
+							<span class="t--delta bagel__label">Indirekte Projektaufwendungen</span>
+							<span class="t--delta bagel__amount">1.116.153 €</span>
+						</div>
+						<div class="bagel__line-2">
+							<span class="t--delta bagel__label">Direkte Projektaufwendungen</span>
+							<span class="t--delta bagel__amount">4.061.556 €</span>
+						</div>
+						<div class="bagel__line-3">
+							<span class="t--delta bagel__label">Gesamt</span>
+							<span class="t--delta bagel__amount">5.177.709 €</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bagel bagel--s">
+				<figure class="fig bagel__image bagel__image--s">
+					<img src="/assets/img/Kreis_3_path.svg" alt="">
+					<figcaption class="t--gamma bagel__cap">2015</figcaption>
+				</figure>
+				<div class="bagel__text">
+					<div class="bagel__ratio">
+						<div class="t--gamma bagel__line-1"><span>
+							<div class="bagel__circle"></div>
+							22%
+						</span></div>
+						<div class="t--gamma bagel__line-2"><span>
+							<div class="bagel__circle"></div>
+							78%
+						</span></div>
+					</div>
+					<div class="bagel__info">
+						<div class="bagel__line-1">
+							<span class="t--delta bagel__label">Indirekte Projektaufwendungen</span>
+							<span class="t--delta bagel__amount">1.116.153 €</span>
+						</div>
+						<div class="bagel__line-2">
+							<span class="t--delta bagel__label">Direkte Projektaufwendungen</span>
+							<span class="t--delta bagel__amount">4.061.556 €</span>
+						</div>
+						<div class="bagel__line-3">
+							<span class="t--delta bagel__label">Gesamt</span>
+							<span class="t--delta bagel__amount">5.177.709 €</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bagel bagel--s">
+				<figure class="fig bagel__image bagel__image--s">
+					<img src="/assets/img/Kreis_3_path.svg" alt="">
+					<figcaption class="t--gamma bagel__cap">2014</figcaption>
+				</figure>
+				<div class="bagel__text">
+					<div class="bagel__ratio">
+						<div class="t--gamma bagel__line-1"><span>
+							<div class="bagel__circle"></div>
+							22%
+						</span></div>
+						<div class="t--gamma bagel__line-2"><span>
+							<div class="bagel__circle"></div>
+							78%
+						</span></div>
+					</div>
+					<div class="bagel__info">
+						<div class="bagel__line-1">
+							<span class="t--delta bagel__label">Indirekte Projektaufwendungen</span>
+							<span class="t--delta bagel__amount">1.116.153 €</span>
+						</div>
+						<div class="bagel__line-2">
+							<span class="t--delta bagel__label">Direkte Projektaufwendungen</span>
+							<span class="t--delta bagel__amount">4.061.556 €</span>
+						</div>
+						<div class="bagel__line-3">
+							<span class="t--delta bagel__label">Gesamt</span>
+							<span class="t--delta bagel__amount">5.177.709 €</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section cp">
 		<div class="limit--m finance__boxes">
 			<a class="border-box t--epsilon" href="<?= $url('finance/society', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
