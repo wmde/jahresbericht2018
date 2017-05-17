@@ -3,7 +3,7 @@
 		class="hero cp cp--nav-zone"
 		style="background-image: url(/assets/img/hero_moon.jpg)"
 	>
-		<img class="hero__center-illu" src="/assets/ico/moon.svg" alt="Illustration" >
+		<img class="hero__center-illu" src="/assets/ico/moon_white.svg" alt="Illustration" >
 	</section>
 	<section class="section cp">
 		<div class="limit--s">
