@@ -280,7 +280,7 @@ body > main {
 .bg--icons-white {
   background-color: white;
   background-image: url('/assets/img/pattern_15D.png');
-  background-position-y: -300px;
+  background-position-y: -120px;
 }
 .bg--icons-light-blue {
 	background-color: var(--color-light-blue);
