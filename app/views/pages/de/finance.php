@@ -7,7 +7,7 @@
 		</div>
 		<div class="limit--m finance__boxes">
 			<a class="border-box t--epsilon" href="<?= $url('finance/society', $lang) ?>">
-				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
+				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e.&nbsp;V.</em></span>
 			</a>
 			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Gemeinnützige Wikimedia Fördergesellschaft mbH</em></span>
