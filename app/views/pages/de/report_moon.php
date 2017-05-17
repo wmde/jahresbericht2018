@@ -57,16 +57,20 @@
 							</figcaption>
 						</figure>
 					</div>
+					<?php foreach ($videos as $video): ?>
 					<div class="swiper-slide">
-						<figure class="fig">
-							<img class="fig__image" src="/assets/img/abraham_taherivand.jpg" alt="Porträt von Abraham Taherivand">
-							<figcaption class="fig__caption limit--s">
-								Abraham Taherivand.
-								<a href="http://renezieger.de" target="new">Bild: René Zieger</a>,
-								<a href="https://creativecommons.org/licenses/by/4.0/" target="new">CC BY 4.0</a>
-							</figcaption>
-						</figure>
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/<?= $video['id']?>?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								<?= $video['title'][$lang] ?>
+								Wird mein Text in der Wikipedia sofort veröffentlicht?
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
 					</div>
+					<?php endforeach ?>
 				</div>
 				<div class="swiper-button-next swiper-button-next--green"></div>
 				<div class="swiper-button-prev swiper-button-prev--green"></div>
