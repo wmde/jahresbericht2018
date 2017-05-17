@@ -279,9 +279,12 @@ body > main {
 ---------------------------------------------------------------- */
 .bg--icons-white {
   background-color: white;
+  background-image: url('/assets/img/pattern_15D.png');
+  background-position-y: -300px;
 }
 .bg--icons-light-blue {
 	background-color: var(--color-light-blue);
+  background-image: url('/assets/img/pattern_15D.png');
 }
 .bg--big-icons-green {
   background-color: var(--color-green);
