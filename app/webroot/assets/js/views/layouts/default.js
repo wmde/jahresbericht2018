@@ -64,6 +64,7 @@ require([
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             centeredSlides: true,
+            loop: true,
             slidesPerView: 1,
             onImagesReady: function() {
               $el.removeClass('loading');

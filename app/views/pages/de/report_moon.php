@@ -68,8 +68,8 @@
 						</figure>
 					</div>
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next swiper-button-next--green"></div>
+				<div class="swiper-button-prev swiper-button-prev--green"></div>
 			</div>
 		</div>
 	</section>

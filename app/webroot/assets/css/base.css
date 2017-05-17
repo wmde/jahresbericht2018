@@ -941,6 +941,12 @@ a:focus {
   right: 10px;
   left: auto
 }
+.swiper-button-next--green {
+  background-image: url("../ico/arrow_green_right.svg");
+}
+.swiper-button-prev--green {
+  background-image: url("../ico/arrow_green_left.svg");
+}
 
 /* Finance Page
 ---------------------------------------------------------------- */

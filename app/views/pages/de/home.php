@@ -81,8 +81,8 @@
 					</div>
 					<?php endforeach ?>
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next swiper-button-next--green"></div>
+				<div class="swiper-button-prev swiper-button-prev--green"></div>
 			</div>
 			<div class="section__actions">
 				<a class="button button--bg-green" href="<?= $url('report', $lang) ?>">Zur Themenübersicht</a>
