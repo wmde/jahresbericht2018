@@ -79,6 +79,9 @@ if (preg_match('#^/report/(.*)$#', $path, $matches)) {
 		}
 	}
 }
+if ($path === '/report/moon') {
+	$videos = require APP_PATH .'/data/videos.php';
+}
 
 // Some pages will need an inverted header.
 $hasBlackHeader = (boolean) preg_match('#^(/report/?|/finance/fund)$#', $path);

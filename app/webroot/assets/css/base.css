@@ -401,6 +401,8 @@ a:focus {
 ---------------------------------------------------------------- */
 .fig {}
 .fig__image {}
+
+.video__caption,
 .fig__caption {
   /* inherited from t--epsilon */
   font-family: var(--font-family-sans);
@@ -411,12 +413,33 @@ a:focus {
   margin-top: 10px;
   font-weight: 600;
 }
+.video__caption a,
 .fig__caption a {
   color: var(--color-green);
 }
 .figs .fig {
   display: inline-block;
   max-width: 50%;
+}
+
+/* Media
+---------------------------------------------------------------- */
+.video__embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video__embed-container iframe,
+.video__embed-container object,
+.video__embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Logo
@@ -622,6 +645,7 @@ a:focus {
   display: inline-block;
 	background-color: white;
   position: relative;
+  box-shadow: -4px 4px 28px -8px rgba(0,0,0,0.75);
 }
 .jb-hsplit__cover {
   height: 400px;
@@ -861,13 +885,9 @@ a:focus {
 
 /* Swiper
 ---------------------------------------------------------------- */
-.swiper-container.loading .swiper-slide {
-/*  opacity: 0; */
-}
 .swiper-container {
   margin: 0 auto;
   position: relative;
-  /* overflow: hidden; */
   /* Fix of Webkit flickering */
   z-index: 1;
   width: 100%;
@@ -880,6 +900,7 @@ a:focus {
   z-index: 1;
   display: flex;
   box-sizing: content-box;
+  align-items: center;
   transition-property: transform;
   transform: translate3d(0px, 0, 0);
 }
@@ -891,6 +912,7 @@ a:focus {
   flex-shrink: 0;
   transition: opacity .5s;
   text-align: center;
+  padding: 0 80px;
 }
 .swiper-slide .jb-vsplit,
 .swiper-slide .jb-fact,
@@ -943,6 +965,12 @@ a:focus {
   background-image: url("../ico/arrow_white_right.svg");
   right: 10px;
   left: auto
+}
+.swiper-button-next--green {
+  background-image: url("../ico/arrow_green_right.svg");
+}
+.swiper-button-prev--green {
+  background-image: url("../ico/arrow_green_left.svg");
 }
 
 /* Finance Page
