@@ -21,6 +21,7 @@ require([
 ], function(
   $, ScrollTo
 ) {
+  var $body = $('body');
   var $imprint = $('.imprint');
   var $close = $('.imprint-close');
   var $toggle = $('.imprint-toggle');
@@ -74,4 +75,20 @@ require([
     });
   }
 
+  var $mnTrigger = $('.mn-trigger');
+  var $mncontainer = $('.mn-container');
+  var $logo = $('.real-logo');
+  var $mnClose = $('.mn-close');
+
+  $mnTrigger.on('click', function(ev) {
+    $mncontainer.addClass('mn-inframe');
+    $body.addClass('no-scroll');
+    $logo.addClass('no-filter');
+  });
+
+  $mnClose.on('click', function(ev) {
+    $mncontainer.removeClass('mn-inframe');
+    $body.removeClass('no-scroll');
+    $logo.removeClass('no-filter');
+  });
 });

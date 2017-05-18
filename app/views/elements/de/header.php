@@ -45,6 +45,23 @@ if (isset($report)) {
 </head>
 <body>
 
+<?php if ($hasBlackHeader): ?>
+<div class="cp real-logo-black real-logo">
+<?php else: ?>
+<div class="cp real-logo-white real-logo">
+<?php endif ?>
+	<a class="logo main-header__logo image-replace" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
+</div>
+<div class="mn-container cp">
+	<div class="mn-close"></div>
+	<ul class="mn__list">
+		<li><a class="mn__link" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
+		<li><a class="mn__link" href="<?= $url('report', $lang) ?>">Themen</a></li>
+		<li><a class="mn__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
+	</ul>
+	<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
+</div>
+
 <header
 	<?php if ($hasBlackHeader): ?>
 		class="main-header main-header--black"
@@ -54,15 +71,17 @@ if (isset($report)) {
 >
 	<div class="cp">
 		<div class="limit--l clearfix">
-			<a class="logo main-header__logo image-replace" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
 			<nav class="nav main-header__nav">
 				<ul class="nav__list">
 					<li><a class="nav__link" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
 					<li><a class="nav__link" href="<?= $url('report', $lang) ?>">Themen</a></li>
 					<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 				</ul>
-			</nav>
 			<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
+			</nav>
+			<nav class="nav mobile__nav">
+				<div class="nav__link mn-trigger">Menü</div>
+			</nav>
 		</div>
 	</div>
 </header>

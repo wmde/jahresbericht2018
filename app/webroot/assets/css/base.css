@@ -83,6 +83,10 @@ figure {
   margin: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Layout
 ---------------------------------------------------------------- */
 body > main {
@@ -397,6 +401,94 @@ a:focus {
   margin-left: 40px;
 }
 
+/* Mobile Navigation
+---------------------------------------------------------------- */
+.mobile__nav {
+  display: none;
+  margin-top: 10px;
+  float: right;
+}
+.mn-trigger {
+  cursor: pointer;
+}
+.mn-container {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  width: 101%;
+  height: 100%;
+  top: 50%;
+  left: 155%;
+  transform: translate(-50%, -50%);
+  z-index: -1000;
+  text-align: center;
+  background: var(--color-diag-gradient);
+  transition: opacity .5s, left 0s .5s;
+}
+.mn-container .logo {
+  padding: 10px;
+}
+.mn-inframe {
+  left: 50%;
+  opacity: 1;
+  transition: opacity .5s;
+}
+.mn-container ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 30vh;
+}
+.mn-container li {
+  padding: 20px;
+}
+.mn-close {
+  float: right;
+  width: 48px;
+  height: 48px;
+  background-image: url(../ico/close.svg);
+  cursor: pointer;
+  opacity: .8;
+}
+.mn__link {
+  /* inherited from t--delta-emph */
+  font-family: var(--font-family-sans);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: .05em; /* TODO needs adjustment to design */
+  text-transform: uppercase;
+
+  color: white;
+  opacity: .8;
+}
+.mn-container .lang-switch {
+  position: absolute;
+  bottom: 40px;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .05em;
+  color: white;
+  opacity: .8;
+}
+.mn__link:hover,
+.mn-container .lang-switch:hover,
+.mn-close:hover {
+  opacity: 1;
+}
+@media (max-width: 550px) {
+  .main-header__nav {
+    display: none;
+  }
+  .mobile__nav, .mn-container {
+    display: block;
+  }
+  .mn-container {
+    z-index: 1000;
+  }
+}
+
+
 /* Figures
 ---------------------------------------------------------------- */
 .fig {}
@@ -450,6 +542,23 @@ a:focus {
   background-image: url(../img/wmde_logo_white.svg);
 }
 
+.real-logo-black {
+  position: absolute;
+  z-index: 100000;
+  filter: invert(100%);
+  transition: filter 500ms;
+}
+.real-logo-white {
+  position: absolute;
+  z-index: 100000;
+}
+.logo.invis {
+  opacity: 0;
+}
+.no-filter {
+  filter: invert(0);
+}
+
 /* Header
 ---------------------------------------------------------------- */
 .main-header {
@@ -475,7 +584,12 @@ a:focus {
   margin-top: 25px; /* baseline with DEUTSCHLAND of WM logo */
   float: right;
 }
-.lang-switch {
+@media (max-width: 800px) {
+  .main-header__nav {
+    margin-top: 80px;
+  }
+}
+.main-header__nav .lang-switch {
   position: absolute;
   top: -13px; /* align baseline with top of WM logo icon */
   right: 0;
