@@ -735,7 +735,7 @@ a:focus {
 ---------------------------------------------------------------- */
 .jb-vsplit {
 	height: 420px;
-  width: 80vw;
+  width: 100%;
   max-width: 960px;
 	background-color: white;
 	display: flex;
@@ -760,6 +760,29 @@ a:focus {
 .jb-vsplit__button {
 	position: absolute;
 	bottom: 40px;
+}
+
+@media (max-width: 940px) {
+  .jb-vsplit {
+    height: inherit;
+    flex-flow: column;
+  }
+  .jb-vsplit__cover {
+    width: 100%;
+    height: 35vw;
+  }
+  .jb-vsplit__content {
+    width: 100%;
+    padding: 20px;
+  }
+  .jb-vsplit__button {
+    position: relative;
+    bottom: 0;
+    display: block;
+    margin: 0 auto;
+    max-width: 240px;
+    text-align: center;
+  }
 }
 
 /* Jumpbox: HSPLIT
@@ -1510,6 +1533,22 @@ a:focus {
   .cp--upped-section {
     padding: 60px 20px 40px 20px;
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 25px;
+    height: 50px;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-slide {
+    padding: 0 35px;
+  }
+
   .home__intro {
     padding-top: 1050px;
     padding-bottom: 60px;
@@ -1533,6 +1572,16 @@ a:focus {
   }
   .finance-banner {
     padding: 160px 10px;
+  }
+  .home__bagels {
+    width: 200px;
+    margin-left: -100px;
+    height: 20%;
+  }
+  .home__bagel--1,
+  .home__bagel--2 {
+    width: 540px;
+    height: 540px;
   }
   .figs .fig {
     width: 100%;
