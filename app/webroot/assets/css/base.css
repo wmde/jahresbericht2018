@@ -1231,20 +1231,20 @@ a:focus {
   display: flex;
   justify-content: space-between;
   padding: 80px 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .finance .border-box {
   color: white;
   border-color: white;
   width: 450px;
   padding: 30px 40px;
+  margin: 15px;
   text-align: center;
 
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.finance .border-box:first-of-type {
-  margin-right: 30px;
 }
 .finance--fund .border-box {
   color: var(--color-black);
@@ -1526,6 +1526,10 @@ a:focus {
   .quote {
     margin: 60px 0 80px 0;
   }
+  .ft__col-val {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 /* Responsive 550px
@@ -1612,11 +1616,16 @@ a:focus {
   .cp--6x-bottom {
     padding-bottom: 120px;
   }
-
+  .finance .section__body {
+    padding-top: 140px;
+  }
   .h--alpha {
     font-size: 36px;
   }
   .h--beta {
+    font-size: 18px;
+  }
+  .t--gamma {
     font-size: 18px;
   }
   .t--gamma-serif {
