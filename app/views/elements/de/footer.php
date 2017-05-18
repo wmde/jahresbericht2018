@@ -36,7 +36,7 @@
 			<article id="imprint" class="imprint invis cp--2x-bottom">
 				<h1 class="h--delta">
 					Dieses Impressum gilt für die Domain
-					<a href="http://jahresbericht.wikimedia.de">jahresbericht.wikimedia.de</a>.
+					<a href="http://2016.wikimedia.de">2016.wikimedia.de</a>.
 				</h1>
 				<section>
 					<h1 class="h--delta">Diensteanbieter</h1>
