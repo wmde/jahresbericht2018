@@ -350,8 +350,9 @@ body > main {
 	transform: scaleX(-1);
 	transform-origin: center;
 }
-.section__body {
-
+.section__body p {
+  position: relative;
+  z-index: 10;
 }
 .section__body + .section__actions {
 	margin-top: 80px;
@@ -822,10 +823,13 @@ a:focus {
 
 .jb-hsplit-list {
   margin: -40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .jb-hsplit-list .jb-hsplit {
   margin: 40px;
-  max-width: calc(49% - 80px);
+  width: 430px;
 }
 
 /* Jumpbox: FACT
@@ -1144,6 +1148,9 @@ a:focus {
 }
 .swiper-slide > * {
   margin: 0 auto;
+}
+.swiper-slide img {
+  max-width: 100%;
 }
 
 /* Auto Height */
@@ -1516,6 +1523,9 @@ a:focus {
   .cp--6x-bottom {
     padding-bottom: 240px;
   }
+  .quote {
+    margin: 60px 0 80px 0;
+  }
 }
 
 /* Responsive 550px
@@ -1587,13 +1597,20 @@ a:focus {
     width: 100%;
   }
   .review__intro {
-    padding-top: 200px;
+    padding-top: 120px;
+  }
+  .jb-hsplit-list .jb-hsplit {
+    margin: 40px;
+    width: 430px;
+  }
+  .jb-hsplit__cover {
+    height: 75vw;
   }
   .cp--6x-top {
-    padding-top: 240px;
+    padding-top: 120px;
   }
   .cp--6x-bottom {
-    padding-bottom: 240px;
+    padding-bottom: 120px;
   }
 
   .h--alpha {
