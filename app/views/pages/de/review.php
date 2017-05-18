@@ -24,7 +24,7 @@
 							</figure>
 							<div class="jb-fact__content">
 								<?php if ($fact['head'][$lang] !== ''): ?>
-									<p class="t--deltai jb-fact__content-head"><?= $fact['head'][$lang] ?></p>
+									<p class="t--delta jb-fact__content-head"><?= $fact['head'][$lang] ?></p>
 								<?php endif ?>
 								<h1 class="h--alpha jb-fact__title"><?= $fact['number'][$lang] ?></h1>
 								<p class="t--delta"><?= $fact['tail'][$lang] ?></p>
