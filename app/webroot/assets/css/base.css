@@ -1280,6 +1280,16 @@ a:focus {
 .ft__heading {
   padding-bottom: 40px;
 }
+
+.ft-wrapper {
+  overflow-x: auto;
+}
+.ft tr {
+  position: relative;
+}
+.ft__col-key {
+}
+
 .ft {
   width: 100%;
   border-collapse: collapse;
@@ -1328,6 +1338,7 @@ a:focus {
 }
 .ft__col-val {
   width: 20%;
+  min-width: 150px;
   color: var(--color-black);
   background-color: white;
   text-align: right;
@@ -1527,8 +1538,8 @@ a:focus {
     margin: 60px 0 80px 0;
   }
   .ft__col-val {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -1636,6 +1647,17 @@ a:focus {
   }
   .t--delta-serif {
     font-size: 12px;
+  }
+  .ft td, .ft th {
+    font-size: 12px;
+  }
+  .ft__col-key {
+    padding-right: 10px;
+  }
+  .ft__col-val {
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .main-footer {
     padding: 20px 0;
