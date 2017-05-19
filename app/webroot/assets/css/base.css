@@ -1284,12 +1284,6 @@ a:focus {
 .ft-wrapper {
   overflow-x: auto;
 }
-.ft tr {
-  position: relative;
-}
-.ft__col-key {
-}
-
 .ft {
   width: 100%;
   border-collapse: collapse;
@@ -1541,6 +1535,52 @@ a:focus {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .bagel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bagel__image {
+    position: relative;
+  }
+  .bagel__ratio {
+    width: auto;
+  }
+  .finance--fund .bagel__ratio > div,
+  .bagel__ratio > div {
+    border-bottom: 1px solid var(--color-black);
+  }
+  .bagel__ratio span {
+    width: auto !important;
+    border: none;
+  }
+  .finance--fund .bagel__ratio span {
+    border: none;
+  }
+  .bagel__circle {
+    display: none;
+  }
+  .bagel__info {
+    width: 400px;
+    margin-left: 20px;
+  }
+  .bagel__line-1 span,
+  .bagel__line-2 span,
+  .bagel__line-3 span,
+  .bagel__line-4 span {
+    position: relative;
+  }
+  .bagel__line-1,
+  .bagel__line-2,
+  .bagel__line-3,
+  .bagel__line-4 {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
 /* Responsive 550px
@@ -1642,6 +1682,9 @@ a:focus {
   .t--gamma-serif {
     font-size: 18px;
   }
+  .t--beta {
+    font-size: 22px;
+  }
   .t--delta {
     font-size: 12px;
   }
@@ -1659,7 +1702,23 @@ a:focus {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .bagel__info {
+    width: 280px;
+    margin-left: 10px;
+  }
+
+
   .main-footer {
     padding: 20px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .bagel__ratio {
+    display: none;
+  }
+  .bagel__info {
+    margin: 0;
   }
 }

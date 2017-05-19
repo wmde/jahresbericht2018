@@ -309,19 +309,19 @@
 					<div class="bagel__info">
 						<div class="bagel__line-1">
 							<span class="t--delta bagel__label">Operative Aufwendungen</span>
-							<span class="t--delta bagel__amount">689.196 €</span>
+							<span class="t--delta bagel__amount">689.196&nbsp;€</span>
 						</div>
 						<div class="bagel__line-2">
 							<span class="t--delta bagel__label">Mittelweitergabe an Wikimedia&nbsp;Deutschland e. V.</span>
-							<span class="t--delta bagel__amount">2.632.389 €</span>
+							<span class="t--delta bagel__amount">2.632.389&nbsp;€</span>
 						</div>
 						<div class="bagel__line-3">
 							<span class="t--delta bagel__label">Mittelweitergabe an die Wikimedia&nbsp;Foundation</span>
-							<span class="t--delta bagel__amount">7.069.838 €</span>
+							<span class="t--delta bagel__amount">7.069.838&nbsp;€</span>
 						</div>
 						<div class="bagel__line-4">
 							<span class="t--delta bagel__label">Gesamt</span>
-							<span class="t--delta bagel__amount">10.391.422 €</span>
+							<span class="t--delta bagel__amount">10.391.422&nbsp;€</span>
 						</div>
 					</div>
 				</div>
@@ -349,19 +349,19 @@
 					<div class="bagel__info">
 						<div class="bagel__line-1">
 							<span class="t--delta bagel__label">Operative Aufwendungen</span>
-							<span class="t--delta bagel__amount">1.108.154 €</span>
+							<span class="t--delta bagel__amount">1.108.154&nbsp;€</span>
 						</div>
 						<div class="bagel__line-2">
 							<span class="t--delta bagel__label">Mittelweitergabe an Wikimedia&nbsp;Deutschland e. V.</span>
-							<span class="t--delta bagel__amount">3.040.732 €</span>
+							<span class="t--delta bagel__amount">3.040.732&nbsp;€</span>
 						</div>
 						<div class="bagel__line-3">
 							<span class="t--delta bagel__label">Mittelweitergabe an die Wikimedia&nbsp;Foundation</span>
-							<span class="t--delta bagel__amount">6.960.885 €</span>
+							<span class="t--delta bagel__amount">6.960.885&nbsp;€</span>
 						</div>
 						<div class="bagel__line-4">
 							<span class="t--delta bagel__label">Gesamt</span>
-							<span class="t--delta bagel__amount">11.109.772 €</span>
+							<span class="t--delta bagel__amount">11.109.772&nbsp;€</span>
 						</div>
 					</div>
 				</div>
@@ -389,19 +389,19 @@
 					<div class="bagel__info">
 						<div class="bagel__line-1">
 							<span class="t--delta bagel__label">Operative Aufwendungen</span>
-							<span class="t--delta bagel__amount">900.121 €</span>
+							<span class="t--delta bagel__amount">900.121&nbsp;€</span>
 						</div>
 						<div class="bagel__line-2">
 							<span class="t--delta bagel__label">Mittelweitergabe an Wikimedia&nbsp;Deutschland e. V.</span>
-							<span class="t--delta bagel__amount">2.558.145 €</span>
+							<span class="t--delta bagel__amount">2.558.145&nbsp;€</span>
 						</div>
 						<div class="bagel__line-3">
 							<span class="t--delta bagel__label">Mittelweitergabe an die Wikimedia&nbsp;Foundation</span>
-							<span class="t--delta bagel__amount">6.127.106 €</span>
+							<span class="t--delta bagel__amount">6.127.106&nbsp;€</span>
 						</div>
 						<div class="bagel__line-4">
 							<span class="t--delta bagel__label">Gesamt</span>
-							<span class="t--delta bagel__amount">9.585.372 €</span>
+							<span class="t--delta bagel__amount">9.585.372&nbsp;€</span>
 						</div>
 					</div>
 				</div>
