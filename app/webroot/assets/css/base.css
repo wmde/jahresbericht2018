@@ -808,7 +808,7 @@ a:focus {
   display: inline-block;
 	background-color: white;
   position: relative;
-  box-shadow: -4px 4px 28px -8px rgba(0,0,0,0.75);
+  box-shadow: -4px 4px 28px -8px rgba(0,0,0,0.5);
 }
 .jb-hsplit__cover {
   height: 400px;
