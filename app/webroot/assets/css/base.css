@@ -253,10 +253,15 @@ body > main {
   list-style-position: inside;
   list-style: none;
 }
+.bullet-list li {
+  position: relative;
+}
 .bullet-list li:before {
   display: inline-block;
   content: "\00b7";
   margin-right: 5px;
+  position: absolute;
+  left: -10px;
 }
 
 /* Border Boxes
