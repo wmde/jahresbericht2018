@@ -125,7 +125,7 @@
 			'de' => 'Lernmaterialien wurden veröffentlicht, um den internationalen Austausch zu fördern.',
 			'en' => ''
 		],
-		'icon' => '/assets/ico/08_exchange.svg',
+		'icon' => '/assets/ico/08_intl.svg',
 	],
 	[
 		'name' => '09',
