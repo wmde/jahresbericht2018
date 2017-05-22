@@ -1142,6 +1142,9 @@ a:focus {
   text-decoration: none;
   color: var(--color-black);
 }
+.report-detail .section__teaser {
+  font-weight: bold;
+}
 
 
 /* Swiper
