@@ -847,9 +847,11 @@ a:focus {
 ---------------------------------------------------------------- */
 .jb-fact {
   display: flex;
+  min-height: 300px;
 }
 .jb-fact .fig {
   width: 50%;
+  display: flex;
 }
 .jb-fact .fig img {
   display: block;
