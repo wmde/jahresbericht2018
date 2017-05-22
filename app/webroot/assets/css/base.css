@@ -851,6 +851,8 @@ a:focus {
 }
 .jb-fact .fig {
   width: 50%;
+}
+.home .jb-fact .fig {
   display: flex;
 }
 .jb-fact .fig img {

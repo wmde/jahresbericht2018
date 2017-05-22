@@ -109,7 +109,7 @@
 			'de' => 'Partnerorganisationen setzten wir uns für freie Bildung ein.',
 			'en' => ''
 		],
-		'icon' => '/assets/ico/07_edu.svg',
+		'icon' => '/assets/ico/07_oer.svg',
 	],
 	[
 		'name' => '08',
@@ -178,22 +178,6 @@
 	[
 		'name' => '12',
 		'head' => [
-			'de' => 'Wir haben über',
-			'en' => ''
-		],
-		'number' => [
-			'de' => '15.000',
-			'en' => ''
-		],
-		'tail' => [
-			'de' => 'neue Mitgliedschaften für den Verein gewonnen.',
-			'en' => ''
-		],
-		'icon' => '/assets/ico/12_50k.svg',
-	],
-	[
-		'name' => '13',
-		'head' => [
 			'de' => 'Mit',
 			'en' => ''
 		],
@@ -205,7 +189,23 @@
 			'de' => 'Euro erhielt Wikimedia die bisher größte Einzelspende.',
 			'en' => ''
 		],
-		'icon' => '/assets/ico/13_finance.svg',
+		'icon' => '/assets/ico/12_finance.svg',
+	],
+	[
+		'name' => '13',
+		'head' => [
+			'de' => 'Wir haben über',
+			'en' => ''
+		],
+		'number' => [
+			'de' => '15.000',
+			'en' => ''
+		],
+		'tail' => [
+			'de' => 'neue Mitgliedschaften für den Verein gewonnen.',
+			'en' => ''
+		],
+		'icon' => '/assets/ico/13_members.svg',
 	],
 
 ] ?>
