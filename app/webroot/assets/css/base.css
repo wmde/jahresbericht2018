@@ -1136,7 +1136,8 @@ a:focus {
   padding-top: 10px;
 }
 .report-detail__text a {
-  color: var(--color-green);
+  color: black;
+  text-decoration: underline;
 }
 .report-detail .hero__caption {
   text-align: center;
