@@ -1,22 +1,22 @@
 <?php return [
 	[
-		'name' => 'moon',
+		'name' => 'volunteers',
 		'title' => [
-			'de' => 'Wikipedia wird 15!',
+			'de' => 'Neue Freiwillige',
 			'en' => ''
 		],
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
-					<li>Ohne Ehrenamtliche keine Wikipedia</li>
-					<li>Engagement würdigen</li>
-					<li>Wikipedia to the Moon</li>
+					<li><span>sinkende Autorenzahl</span></li>
+					<li><span>Mitmachen erleichtern</span></li>
+					<li><span>Erklärvideos</span></li>
 				</ul>
 			',
 			'en' => '
 			'
 		],
-		'cover' => 'https://unsplash.it/800/600/?blur',
+		'cover' => '/assets/img/01_volunteers_hero.jpg',
 	],
 	[
 		'name' => 'moon',
