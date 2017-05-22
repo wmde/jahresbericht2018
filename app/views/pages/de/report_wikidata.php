@@ -52,6 +52,16 @@
 			</div>
 		</div>
 	</section>
+	<section class="section cp--center-section">
+		<div class="limit--s">
+			<div class="border-box border-box--green">
+				<div class="h--gamma">LINKS</div>
+				<ul class="bullet-list">
+					<li><a href="https://www.wikidata.org/wiki/Wikidata:Data_donation" target="new">Portal zur Datenspende</a>
+				</ul>
+			</div>
+		</div>
+	</section>
 	<section class="section cp--center-section bg--icons-light-blue">
 		<div class="section__actions">
 			<a href="<?= $url('/report', $lang) ?>" class="button button--bg-green">Zur Themenübersicht</a>
