@@ -1,5 +1,5 @@
 <?php return [
-	[
+	 '197892849' => [
 		'id' => '197892849',
 		'title' => [
 			'de' => 'Wird mein Text in der Wikipedia sofort veröffentlicht?',

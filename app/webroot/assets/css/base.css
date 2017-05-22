@@ -1126,7 +1126,21 @@ a:focus {
 ---------------------------------------------------------------- */
 .report-detail .section__title {
   text-align: center;
+  margin-top: 80px;
   margin-bottom: 80px;
+}
+.report-detail .cp--center-section {
+  padding: 60px 40px;
+}
+.report-detail__text.cp {
+  padding-top: 10px;
+}
+.report-detail .hero__caption {
+  text-align: center;
+}
+.report-detail .hero__caption a {
+  text-decoration: none;
+  color: var(--color-black);
 }
 
 

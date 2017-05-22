@@ -6,13 +6,15 @@
 		<img class="hero__center-illu" src="/assets/ico/01_volunteers_white.svg" alt="Illustration" >
 		<div class="hero__filter"></div>
 	</section>
-	<section class="section cp">
+	<section class="section cp report-detail__text">
+		<div class="hero__caption t--epsilon">Alexander Lehmann und Lena Schall (motionensemble.de) (<a href="https://commons.wikimedia.org/wiki/%20File:Mach_mit_bei_Wikipedia_Weltkugel.png" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
-				<em>Neue Freiwillige</em><br>Neue Autorinnen und Autoren für die Wikipedia gesucht
+				<em>Neue Freiwillige</em><br>Autorinnen und Autoren für die Wikipedia gesucht
 			</h1>
 			<div class="section__teaser t--gamma">
-				Wikipedia zu lesen ist einfach und alltäglich für Viele. Dass sie auch mitschreiben und ihre Kenntnisse einbringen ­können, wissen aber die Wenigsten. Bei Wikipedia gibt es keine hauptamtliche Redaktion; alle Inhalte sind ehrenamtlichem Engagement zu verdanken. Die Wikipedia lebt also von der Mitarbeit möglichst vieler Menschen. Doch die Zahl der ­Autorinnen und Autoren, die regelmäßig Bearbeitungen durchführen, geht jedes Jahr zurück. Und das bei immer mehr ­Artikeln – im November 2016 wurde die 2 Millionen-Marke in der deutschsprachigen Wikipedia geknackt.					</div>
+				Wikipedia zu lesen ist einfach und alltäglich für Viele. Dass sie auch mitschreiben und ihre Kenntnisse einbringen ­können, wissen aber die Wenigsten. Bei Wikipedia gibt es keine hauptamtliche Redaktion; alle Inhalte sind ehrenamtlichem Engagement zu verdanken. Die Wikipedia lebt also von der Mitarbeit möglichst vieler Menschen. Doch die Zahl der ­Autorinnen und Autoren, die regelmäßig Bearbeitungen durchführen, geht jedes Jahr zurück. Und das bei immer mehr ­Artikeln – im November 2016 wurde die 2 Millionen-Marke in der deutschsprachigen Wikipedia geknackt.
+			</div>
 			<div class="section__body t--gamma-serif">
 				<p>
 					Wenn sich auch in Zukunft immer weniger Menschen engagieren, können bestehende Artikel nicht mehr aktuell gehalten werden – oder keine neuen entstehen. Das würde dazu führen, dass man Wikipedia irgendwann nicht mehr sinnvoll nutzen kann und sich auf die (leider vergebliche) Suche nach anderen kosten­losen und freien Wissensquellen machen müsste.
@@ -40,29 +42,127 @@
 			<div class="section__body slider swiper-container loading">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<figure class="fig">
-							<img class="fig__image" src="/assets/img/abraham_taherivand.jpg" alt="Porträt von Abraham Taherivand">
-							<figcaption class="fig__caption limit--s">
-								Abraham Taherivand.
-								<a href="http://renezieger.de" target="new">Bild: René Zieger</a>,
-								<a href="https://creativecommons.org/licenses/by/4.0/" target="new">CC BY 4.0</a>
-							</figcaption>
-						</figure>
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/197889226?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Mach mit bei Wikipedia!
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
 					</div>
-					<?php foreach ($videos as $video): ?>
 					<div class="swiper-slide">
 						<div class="video">
 							<div class="video__embed-container">
-								<iframe src="https://player.vimeo.com/video/<?= $video['id']?>?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<iframe src="https://player.vimeo.com/video/197914763?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								<?= $video['title'][$lang] ?>
+								Darum bin ich bei Wikipedia dabei...
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/197892770?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Welche Informationen dürfen eigentlich in die Wikipedia?
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/197892976?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Wie funktioniert die Arbeit in Wikipedia?
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/197892849?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
 								Wird mein Text in der Wikipedia sofort veröffentlicht?
 								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
 							</div>
 						</div>
 					</div>
-					<?php endforeach ?>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/197893127?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Deine Wikipedia-Benutzerseite anlegen
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/197898263?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Diskutieren in der Wikipedia
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/197904080?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Die Bearbeitungsoberflächen von Wikipedia
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/197909241?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Wikipedia-Artikel ergänzen und verbessern
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/198338036?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Bilder in Wikipedia hochladen und einbinden
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/198340267?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Wikipedia-Artikel erstellen
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
+					</div>
+
 				</div>
 				<div class="swiper-button-next swiper-button-next--green"></div>
 				<div class="swiper-button-prev swiper-button-prev--green"></div>
@@ -74,8 +174,8 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="https://example.org" target="new">Projektseite</a>
-					<li><a href="https://example.org" target="new">Lorem</a>
+					<li><a href="http://www.wikipedia.de/machmit" target="new">Alle produzierten Videos</a>
+					<li><a href="http://wmde.org/Projekt_Neuautorengewinnung" target="new">Alle Infos zum Projekt</a>
 				</ul>
 			</div>
 		</div>
