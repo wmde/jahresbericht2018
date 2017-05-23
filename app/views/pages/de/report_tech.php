@@ -7,6 +7,7 @@
 		<div class="hero__filter"></div>
 	</section>
 	<section class="section cp report-detail__text">
+		<div class="hero__caption t--epsilon">Jan Dittrich (WMDE) (<a href="https://commons.wikimedia.org/wiki/File:2016-11-31_workshop_Search_Materials_Munich.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Technische Wünsche</em><br>Wikimedia Deutschland erfüllt Bedarfe der Community
