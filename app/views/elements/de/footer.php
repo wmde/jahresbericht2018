@@ -75,7 +75,7 @@
 						Design und Umsetzung: Atelier Disko UG (haftungsbeschränkt) & Co. KG, <a href="https://atelierdisko.de" target="new">atelierdisko.de</a><br>
 						Redaktion: Elisabeth Mandl
 					</p>
-					<p>
+					<p class="t--delta">
 						Soweit nicht anders angegeben, stehen die Texte, Bilder, das Layout und der Code dieser Webseite unter der <a href="https://creativecommons.org/licenses/by/4.0/" target="new">Creative Commons Attribution-Lizenz (CC BY-SA) in der Version 4.0</a>.
 					</p>
 					<a href="https://creativecommons.org/licenses/by/4.0/" target="new" class="imprint__cc-logo">
