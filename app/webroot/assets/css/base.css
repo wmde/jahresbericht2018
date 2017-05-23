@@ -737,11 +737,23 @@ a:focus {
 .button--bg-green {
 	color: white;
 	background-color: var(--color-green);
-	border: none;
+  border: 1px solid var(--color-green);
+  transition: all .5s;
+}
+.button--bg-green:hover {
+  color: var(--color-green);
+  background-color: white;
+  border: 1px solid var(--color-green);
 }
 .button--outline-green {
 	color: var(--color-green);
 	border-color: var(--color-green);
+  transition: all .5s;
+}
+.button--outline-green:hover {
+  color: white;
+  background-color: var(--color-green);
+  border: 1px solid white;
 }
 .button--outline-white {
 	color: white;
@@ -1028,7 +1040,13 @@ a:focus {
 .home__facts .button {
   color: var(--color-green);
   background-color: white;
-  border: none;
+  border: 1px solid white;
+  transition: all .5s;
+}
+.home__facts .button:hover {
+  color: white;
+  background-color: var(--color-green);
+  border: 1px solid white;
 }
 
 .home__join {
@@ -1041,11 +1059,6 @@ a:focus {
 .home__join p {
   margin-top: 10px;
   margin-bottom: 40px;
-}
-.home__join .button {
-  color: white;
-  background-color: var(--color-green);
-  border: 0;
 }
 
 /* Finance-Banner
@@ -1070,7 +1083,13 @@ a:focus {
   margin-top: 40px;
   color: var(--color-purple);
   background-color: white;
-  border: none;
+  border: 1px solid white;
+  transition: all .5s;
+}
+.finance-banner__button:hover {
+  color: white;
+  background-color: var(--color-purple);
+  border: 1px solid white;
 }
 .home__bagels img {
   max-width: 100%;
@@ -1299,10 +1318,19 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all .5s;
+}
+.finance .border-box:hover {
+  color: var(--color-purple);
+  background-color: white;
 }
 .finance--fund .border-box {
   color: var(--color-black);
   border-color: var(--color-black);
+}
+.finance--fund .border-box:hover {
+  color: white;
+  background-color: var(--color-black);
 }
 .finance .border-box em {
   display: block;

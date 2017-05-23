@@ -118,7 +118,7 @@
 			<p class="t--delta">Es geht ganz einfach online und ab 2 Euro pro Monat.</p>
 		</div>
 		<div class="section__actions">
-			<a href="http://wmde.org/WikimediaMitglied" class="button">Mitglied werden</a>
+			<a href="http://wmde.org/WikimediaMitglied" class="button button--bg-green">Mitglied werden</a>
 		</div>
 	</section>
 </main>
