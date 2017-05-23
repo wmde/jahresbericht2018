@@ -1172,6 +1172,9 @@ a:focus {
 
 /* Report Landing Page
 ---------------------------------------------------------------- */
+.report-landing > div {
+  overflow: hidden;
+}
 .report-landing__title {
   text-align: center;
   margin-bottom: 80px;
