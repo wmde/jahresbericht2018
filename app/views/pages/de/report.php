@@ -19,6 +19,20 @@
 				</div>
 			</a>
 		<?php endforeach ?>
+			<a class="jb-hsplit" href="<?= $url('/report/monuments', $lang) ?>">
+				<div class="jb-hsplit__overlay bg--big-icons-green">
+					<span class="button button--outline-white">
+						Zu diesem Thema
+					</span>
+				</div>
+				<figure
+					class="jb-hsplit__cover"
+					style="background-image: url('/assets/img/13_monuments_hero.jpg');"
+				></figure>
+				<div class="jb-hsplit__content">
+					<h1 class="h--beta jb-hsplit__title">Wikipedia Loves Monuments</h1>
+				</div>
+			</a>
 		</div>
 	</div>
 </main>
