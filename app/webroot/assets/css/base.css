@@ -1435,6 +1435,9 @@ a:focus {
   width: 35%;
   padding-right: 35px;
 }
+.ft--alloc {
+  margin-top: 80px;
+}
 .ft--alloc .ft__col-key {
   width: 80%;
 }
