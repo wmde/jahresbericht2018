@@ -7,6 +7,7 @@
 		<div class="hero__filter"></div>
 	</section>
 	<section class="section cp report-detail__text">
+		<div class="hero__caption t--epsilon">Denis Schröder (WMDE) (<a href="https://commons.wikimedia.org/wiki/File:WMDE_19MV_Kalkscheune_Saal.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>50.000 Mitglieder</em><br>...können aktiv etwas bewegen
