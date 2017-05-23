@@ -365,6 +365,8 @@ body > main {
 }
 .section__actions {
 	text-align: center;
+}
+.report-detail .section__actions {
   padding-top: 100px;
   padding-bottom: 100px;
 }
