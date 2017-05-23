@@ -7,7 +7,7 @@
 		<div class="hero__filter"></div>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="hero__caption t--epsilon">Atelier Disko (atelierdisko.de) (<a href=https://commons.wikimedia.org/wiki/File:PanamaPapers_Grafik.svg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="hero__caption t--epsilon">Atelier Disko (atelierdisko.de) (<a href="https://commons.wikimedia.org/wiki/File:PanamaPapers_Grafik.svg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Wikidata</em><br>Freie Datenbank sucht Datenpartnerschaften
@@ -57,7 +57,7 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="https://www.wikidata.org/wiki/Wikidata:Data_donation" target="new">Portal zur Datenspende</a>
+					<li><a href="https://www.wikidata.org/wiki/Wikidata:Data_donation" target="new">Portal zur Datenspende</a></li>
 				</ul>
 			</div>
 		</div>

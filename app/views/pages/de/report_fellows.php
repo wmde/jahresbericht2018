@@ -61,7 +61,7 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="https://wikimedia.de/wiki/BildungWissenschaftKultur/Fellowprogramm" target="new">Projektseite</a>
+					<li><a href="https://wikimedia.de/wiki/BildungWissenschaftKultur/Fellowprogramm" target="new">Projektseite</a></li>
 				</ul>
 			</div>
 		</div>

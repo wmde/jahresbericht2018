@@ -63,7 +63,7 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="https://www.lizenzhinweisgenerator.de" target="new">Lizenzhinweisgenerator</a>
+					<li><a href="https://www.lizenzhinweisgenerator.de" target="new">Lizenzhinweisgenerator</a></li>
 				</ul>
 			</div>
 		</div>

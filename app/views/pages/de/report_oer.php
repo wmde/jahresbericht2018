@@ -34,7 +34,7 @@
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
 					<li><a href="http://www.mapping-oer.de" target="new">Mapping OER</a>
-					<li><a href="http://www.buendnis-freie-bildung.de" target="new">Bündnis Freie Bildung</a>
+					<li><a href="http://www.buendnis-freie-bildung.de" target="new">Bündnis Freie Bildung</a></li>
 				</ul>
 			</div>
 		</div>

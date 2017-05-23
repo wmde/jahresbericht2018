@@ -30,7 +30,7 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="https://de.wikipedia.org/wiki/Wikipedia:Förderung/Lokale_Community-Räume" target="new">Mehr Infos zu den lokalen Räumen</a>
+					<li><a href="https://de.wikipedia.org/wiki/Wikipedia:Förderung/Lokale_Community-Räume" target="new">Mehr Infos zu den lokalen Räumen</a></li>
 				</ul>
 			</div>
 		</div>

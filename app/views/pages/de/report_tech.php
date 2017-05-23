@@ -27,7 +27,7 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="https://de.wikipedia.org/wiki/Wikipedia:Technische_Wünsche" target="new">Die Projektseite</a>
+					<li><a href="https://de.wikipedia.org/wiki/Wikipedia:Technische_Wünsche" target="new">Die Projektseite</a></li>
 				</ul>
 			</div>
 		</div>

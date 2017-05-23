@@ -83,7 +83,7 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="https://meta.wikimedia.org/wiki/Wikipedia_to_the_Moon/de" target="new">Internationale Projektseite</a>
+					<li><a href="https://meta.wikimedia.org/wiki/Wikipedia_to_the_Moon/de" target="new">Internationale Projektseite</a></li>
 				</ul>
 			</div>
 		</div>

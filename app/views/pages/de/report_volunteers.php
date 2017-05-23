@@ -174,8 +174,8 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="http://www.wikipedia.de/machmit" target="new">Alle produzierten Videos</a>
-					<li><a href="http://wmde.org/Projekt_Neuautorengewinnung" target="new">Alle Infos zum Projekt</a>
+					<li><a href="http://www.wikipedia.de/machmit" target="new">Alle produzierten Videos</a></li>
+					<li><a href="http://wmde.org/Projekt_Neuautorengewinnung" target="new">Alle Infos zum Projekt</a></li>
 				</ul>
 			</div>
 		</div>

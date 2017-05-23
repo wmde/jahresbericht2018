@@ -21,7 +21,7 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="http://www.wikilovesmonuments.org" target="new">Website des internationalen Fotowettbewerbs</a>
+					<li><a href="http://www.wikilovesmonuments.org" target="new">Website des internationalen Fotowettbewerbs</a></li>
 				</ul>
 			</div>
 		</div>
