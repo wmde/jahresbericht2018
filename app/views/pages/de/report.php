@@ -6,6 +6,9 @@
 		<?php foreach ($reports as $report): ?>
 			<a class="jb-hsplit" href="<?= $url('report/' . $report['name'], $lang) ?>">
 				<div class="jb-hsplit__overlay bg--big-icons-green">
+					<figure class="jb-hsplit__bg-icon">
+						<img src="<?= $report['icon'] ?>" alt="">
+					</figure>
 					<span class="button button--outline-white">
 						Zu diesem Thema
 					</span>

@@ -17,6 +17,7 @@
 			'
 		],
 		'cover' => '/assets/img/01_volunteers_hero.jpg',
+		'icon' => '/assets/ico/01_volunteers_white.svg',
 	],
 	[
 		'name' => 'wikidata',
@@ -36,6 +37,7 @@
 			'
 		],
 		'cover' => '/assets/img/02_wikidata_hero.jpg',
+		'icon' => '/assets/ico/02_wikidata_white.svg',
 	],
 	[
 		'name' => 'tech',
@@ -55,6 +57,7 @@
 			'
 		],
 		'cover' => '/assets/img/03_tech_hero.jpg',
+		'icon' => '/assets/ico/03_tech_white.svg',
 	],
 	[
 		'name' => 'generator',
@@ -74,6 +77,7 @@
 			'
 		],
 		'cover' => '/assets/img/04_generator_hero.jpg',
+		'icon' => '/assets/ico/04_generator_white.svg',
 	],
 	[
 		'name' => 'wikicon',
@@ -93,6 +97,7 @@
 			'
 		],
 		'cover' => '/assets/img/05_wikicon_hero.jpg',
+		'icon' => '/assets/ico/05_wikicon_white.svg',
 	],
 	[
 		'name' => 'fellows',
@@ -112,6 +117,7 @@
 			'
 		],
 		'cover' => '/assets/img/06_fellows_hero.jpg',
+		'icon' => '/assets/ico/06_fellows_white.svg',
 	],
 	[
 		'name' => 'oer',
@@ -131,6 +137,7 @@
 			'
 		],
 		'cover' => '/assets/img/07_oer_hero.jpg',
+		'icon' => '/assets/ico/07_oer_white.svg',
 	],
 	[
 		'name' => 'intl',
@@ -150,6 +157,7 @@
 			'
 		],
 		'cover' => '/assets/img/08_intl_hero.jpg',
+		'icon' => '/assets/ico/08_intl_white.svg',
 	],
 	[
 		'name' => 'rooms',
@@ -169,6 +177,7 @@
 			'
 		],
 		'cover' => '/assets/img/09_rooms_hero.jpg',
+		'icon' => '/assets/ico/09_rooms_white.svg',
 	],
 	[
 		'name' => '2017',
@@ -188,6 +197,7 @@
 			'
 		],
 		'cover' => '/assets/img/10_2017_hero.jpg',
+		'icon' => '/assets/ico/10_2017_white.svg',
 	],
 	[
 		'name' => 'moon',
@@ -207,6 +217,7 @@
 			'
 		],
 		'cover' => '/assets/img/11_moon_hero.jpg',
+		'icon' => '/assets/ico/11_moon_white.svg',
 	],
 	[
 		'name' => 'members',
@@ -226,5 +237,6 @@
 			'
 		],
 		'cover' => '/assets/img/12_members_hero.jpg',
+		'icon' => '/assets/ico/13_members_white.svg',
 	],
 ] ?>

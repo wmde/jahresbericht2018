@@ -809,6 +809,19 @@ a:focus {
 	background-color: white;
   position: relative;
   box-shadow: -4px 4px 28px -8px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+.jb-hsplit__bg-icon {
+  position: absolute;
+  width: 125%;
+  height: 125%;
+  transform: rotate(-15deg);
+  opacity: .2;
+}
+.jb-hsplit__bg-icon img {
+  width: 100%;
+  margin-top: 50%;
+  transform: translateY(-50%);
 }
 .jb-hsplit__cover {
   height: 400px;
