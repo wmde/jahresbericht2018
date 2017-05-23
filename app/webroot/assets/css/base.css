@@ -1819,6 +1819,7 @@ a:focus {
   .main-footer__info-1 {
     width: inherit;
     min-width: inherit;
+    margin-right: 40px;
   }
 }
 
