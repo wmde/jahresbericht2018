@@ -17,6 +17,7 @@
 require([
   'jquery',
   'scrollTo',
+  'modernizr',
   'domready!'
 ], function(
   $, ScrollTo
@@ -47,7 +48,7 @@ require([
   });
 
   var $fb = $('.finance-banner');
-  if ($fb.length) {
+  if ($fb.length && !Modernizr.touchevents) {
     require(['skrollr'], function(Skrollr) {
       var s = Skrollr.init({
         forceHeight: false
