@@ -6,6 +6,16 @@ if (isset($report)) {
 	$title[] = $report['title'][$lang];
 } elseif ($path === '/report') {
 	$title[] = 'Themen';
+} elseif ($path === '/report/monuments') {
+	$title[] = 'Wikipedia Loves Monuments';
+} elseif ($path === '/review') {
+	$title[] = 'Jahresrückblick';
+} elseif ($path === '/finance') {
+	$title[] = 'Finanzreport';
+} elseif ($path === '/finance/society') {
+	$title[] = 'Finanzen WMDE e.V.';
+} elseif ($path === '/finance/fund') {
+	$title[] = 'Finanzen Fördergesellschaft';
 }
 
 ?>
