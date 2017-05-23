@@ -843,7 +843,7 @@ a:focus {
 	background-position: center center;
 }
 .jb-hsplit__content {
-	padding: 30px 80px 30px 40px;
+	padding: 30px 60px 60px 30px;
 }
 .jb-hsplit__title {
   color: var(--color-green);
@@ -1743,6 +1743,9 @@ a:focus {
   }
   .jb-hsplit__cover {
     height: 75vw;
+  }
+  .jb-hsplit__content {
+    padding: 20px 40px 40px 20px;
   }
   .cp--6x-top {
     padding-top: 120px;
