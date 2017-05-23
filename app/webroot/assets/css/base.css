@@ -269,7 +269,7 @@ body > main {
 ---------------------------------------------------------------- */
 .border-box {
   border: 1px solid var(--color-black);
-  padding: 40px;
+  padding: 20px 40px;
 }
 .border-box :first-child {
   margin-top: 0;
