@@ -1659,8 +1659,10 @@ a:focus {
   .bagel__ratio {
     width: auto;
   }
-  .finance--fund .bagel__ratio > div,
   .bagel__ratio > div {
+    border-bottom: 1px solid white;
+  }
+  .finance--fund .bagel__ratio > div {
     border-bottom: 1px solid var(--color-black);
   }
   .bagel__ratio span {
