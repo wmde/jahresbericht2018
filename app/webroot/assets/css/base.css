@@ -25,6 +25,7 @@
   --color-light-gray: #a5a5a5;
 
   --color-diag-gradient: linear-gradient(45deg, #339967, #622181);
+  --color-diag-gradient-home: linear-gradient(-45deg, #622181, #339967);
   --color-diag-gradient-fund: linear-gradient(45deg, #ffffff, #dce4e8);
 
   --font-family-sans: 'Montserrat', sans-serif;
@@ -934,7 +935,7 @@ a:focus {
 .home-hero {
   height: 800px;
   color: white;
-  background: var(--color-diag-gradient);
+  background: var(--color-diag-gradient-home);
   transform: skew(0, 165deg);
   transform-origin: 0 0;
   position: relative; /* overlap following section */
