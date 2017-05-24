@@ -61,7 +61,7 @@ if (isset($report)) {
 <?php else: ?>
 <div class="cp real-logo-white real-logo">
 <?php endif ?>
-	<a class="logo main-header__logo image-replace" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
+	<a class="logo main-header__logo image-replace logo--s" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
 </div>
 <div class="mn-container cp">
 	<div class="mn-close"></div>
@@ -82,6 +82,7 @@ if (isset($report)) {
 >
 	<div class="cp">
 		<div class="limit--l clearfix">
+			<a class="logo main-header__logo image-replace logo--l" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
 			<nav class="nav main-header__nav">
 				<ul class="nav__list">
 					<?php if ($path === '/review'): ?>

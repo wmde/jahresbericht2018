@@ -609,6 +609,17 @@ a:focus {
 .main-header__logo {
   float: left;
 }
+.logo--s {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .logo--s {
+    display: block;
+  }
+  .logo--l {
+    display: none;
+  }
+}
 .main-header__nav {
   margin-top: 25px; /* baseline with DEUTSCHLAND of WM logo */
   float: right;
