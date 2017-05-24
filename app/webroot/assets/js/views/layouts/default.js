@@ -97,7 +97,7 @@ require([
         }
       });
 
-    }, 500);
+    }, 100);
 
     win.scroll(throttled);
   }
@@ -134,7 +134,7 @@ require([
         }
       });
 
-    }, 500);
+    }, 100);
 
     win.scroll(throttled);
   }
