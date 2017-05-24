@@ -79,6 +79,9 @@ body {
   overflow: hidden;
   max-height: 0 !important;
 }
+.visible {
+  opacity: 1 !important;
+}
 
 figure {
   margin: 0;
@@ -874,6 +877,9 @@ a:focus {
   position: relative;
   box-shadow: -4px 4px 28px -8px rgba(0,0,0,0.5);
   overflow: hidden;
+
+  opacity: 0;
+  transition: opacity .5s;
 }
 .jb-hsplit__bg-icon {
   position: absolute;
@@ -923,6 +929,19 @@ a:focus {
 .jb-hsplit-list .jb-hsplit {
   margin: 40px;
   width: 430px;
+}
+
+.come-in {
+  opacity: 1;
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
 }
 
 /* Jumpbox: FACT

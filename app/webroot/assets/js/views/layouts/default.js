@@ -27,6 +27,20 @@ require([
   var $close = $('.imprint-close');
   var $toggle = $('.imprint-toggle');
 
+  function visible(element, partial) {
+    var $t            = $(element),
+        $w            = $(window),
+        viewTop       = $w.scrollTop(),
+        viewBottom    = viewTop + $w.height(),
+        _top          = $t.offset().top,
+        _bottom       = _top + $t.height(),
+        compareTop    = partial === true ? _bottom : _top,
+        compareBottom = partial === true ? _top : _bottom;
+
+    return _top <= viewBottom;
+    // return compareBottom <= viewBottom && compareTop >= viewTop;
+  }
+
   $toggle.on('click', function(ev) {
     ev.preventDefault();
     var o = $toggle.offset();
@@ -53,6 +67,39 @@ require([
       var s = Skrollr.init({
         forceHeight: false
       });
+    });
+  }
+
+  var $rl = $('.report-landing');
+  if ($rl.length && !Modernizr.touchevents) {
+    var win = $(window);
+    var allMods = $(".jb-hsplit");
+
+    // Already visible modules
+    allMods.each(function(i, el) {
+      var el = $(el);
+      if (visible(el, true)) {
+        el.addClass("already-visible");
+        el.addClass("come-in");
+      }
+    });
+
+    win.scroll(function(event) {
+
+      allMods.each(function(i, el) {
+        var el = $(el);
+        if (visible(el, true)) {
+           el.addClass("come-in");
+        }
+      });
+
+    });
+  }
+  if ($rl.length && Modernizr.touchevents) {
+    var allMods = $(".jb-hsplit");
+    allMods.each(function(i, el) {
+      var el = $(el);
+      el.addClass("visible");
     });
   }
 
