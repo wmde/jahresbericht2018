@@ -29,6 +29,7 @@ requirejs.config({
     // Add your app specific js paths here.
     'scrollTo': 'scrollTo',
     'swiper': 'swiper',
+    'underscore': 'underscore',
 
     // For compat and polyfills it is recommended to use
     // Atelier Disko's compat distribution and agument

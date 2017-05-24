@@ -16,11 +16,12 @@
 
 require([
   'jquery',
+  'underscore',
   'scrollTo',
   'modernizr',
   'domready!'
 ], function(
-  $, ScrollTo
+  $, _, ScrollTo
 ) {
   var $body = $('body');
   var $imprint = $('.imprint');
@@ -37,7 +38,7 @@ require([
         compareTop    = partial === true ? _bottom : _top,
         compareBottom = partial === true ? _top : _bottom;
 
-    return _top + 200 <= viewBottom;
+    return _top + 100 <= viewBottom;
     // return compareBottom <= viewBottom && compareTop >= viewTop;
   }
 
@@ -61,6 +62,7 @@ require([
     $imprint.addClass('invis');
   });
 
+  // Use Skrollr for finance banner animation
   var $fb = $('.finance-banner');
   if ($fb.length && !Modernizr.touchevents) {
     require(['skrollr'], function(Skrollr) {
@@ -70,6 +72,7 @@ require([
     });
   }
 
+  // Animate tiles on report landing page
   var $rl = $('.report-landing');
   if ($rl.length && !Modernizr.touchevents) {
     var win = $(window);
@@ -84,7 +87,7 @@ require([
       }
     });
 
-    win.scroll(function(event) {
+    var throttled = _.throttle(function() {
 
       allMods.each(function(i, el) {
         var el = $(el);
@@ -93,7 +96,9 @@ require([
         }
       });
 
-    });
+    }, 500);
+
+    win.scroll(throttled);
   }
   if ($rl.length && Modernizr.touchevents) {
     var allMods = $(".jb-hsplit");
@@ -103,6 +108,7 @@ require([
     });
   }
 
+  // Animate slider
   var $slider = $('.slider');
   if ($slider.length) {
     require(['swiper'], function(Swiper) {
@@ -128,6 +134,7 @@ require([
     });
   }
 
+  // Animate mobile navigation
   var $mnTrigger = $('.mn-trigger');
   var $mncontainer = $('.mn-container');
   var $logo = $('.real-logo');
