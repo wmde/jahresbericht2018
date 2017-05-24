@@ -928,7 +928,8 @@ a:focus {
 }
 .jb-hsplit-list .jb-hsplit {
   margin: 40px;
-  width: 430px;
+  width: 100%;
+  max-width: 430px;
 }
 
 .come-in {
@@ -942,6 +943,16 @@ a:focus {
 
 @keyframes come-in {
   to { transform: translateY(0); }
+}
+@media (max-width: 1100px) {
+  .jb-hsplit-list {
+    display: block;
+    margin: 0;
+  }
+  .jb-hsplit-list .jb-hsplit {
+    display: block;
+    margin: 40px auto;
+  }
 }
 
 /* Jumpbox: FACT
@@ -1220,9 +1231,6 @@ a:focus {
 
 /* Report Landing Page
 ---------------------------------------------------------------- */
-.report-landing > div {
-  overflow: hidden;
-}
 .report-landing__title {
   text-align: center;
   margin-bottom: 80px;
@@ -1814,10 +1822,6 @@ a:focus {
   }
   .review__intro {
     padding-top: 120px;
-  }
-  .jb-hsplit-list .jb-hsplit {
-    margin: 40px;
-    width: 430px;
   }
   .jb-hsplit__cover {
     height: 75vw;
