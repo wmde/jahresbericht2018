@@ -37,7 +37,7 @@ require([
         compareTop    = partial === true ? _bottom : _top,
         compareBottom = partial === true ? _top : _bottom;
 
-    return _top <= viewBottom;
+    return _top + 200 <= viewBottom;
     // return compareBottom <= viewBottom && compareTop >= viewTop;
   }
 
