@@ -73,6 +73,7 @@ require([
   }
 
   // Animate tiles on report landing page
+  // see: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
   var $rl = $('.report-landing');
   if ($rl.length && !Modernizr.touchevents) {
     var win = $(window);
@@ -105,6 +106,43 @@ require([
     allMods.each(function(i, el) {
       var el = $(el);
       el.addClass("visible");
+    });
+  }
+
+  // Animate bagels on finance sub-pages
+  // see: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
+  var $bagel = $('.bagel');
+  if ($bagel.length && !Modernizr.touchevents) {
+    var win = $(window);
+    var allMods = $(".bagel__image img");
+
+    // Already visible modules
+    allMods.each(function(i, el) {
+      var el = $(el);
+      if (visible(el, true)) {
+        el.addClass("already-visible");
+        el.addClass("turn-in");
+      }
+    });
+
+    var throttled = _.throttle(function() {
+
+      allMods.each(function(i, el) {
+        var el = $(el);
+        if (visible(el, true)) {
+           el.addClass("turn-in");
+        }
+      });
+
+    }, 500);
+
+    win.scroll(throttled);
+  }
+  if ($bagel.length && Modernizr.touchevents) {
+    var allMods = $(".bagel__image img");
+    allMods.each(function(i, el) {
+      var el = $(el);
+      el.addClass("turn-in");
     });
   }
 

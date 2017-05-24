@@ -1537,6 +1537,13 @@ a:focus {
 }
 .bagel img {
   height: 100%;
+  opacity: 0;
+  transform: rotate(-45deg) scale(.8);
+  transition: all .5s;
+}
+.turn-in {
+  opacity: 1 !important;
+  transform: rotate(0) scale(1) !important;
 }
 .bagel__image {
   position: absolute;
