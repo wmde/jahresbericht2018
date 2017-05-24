@@ -412,6 +412,24 @@ a:focus {
   margin-left: 40px;
 }
 
+.nav__active--rev {
+  opacity: 1;
+}
+.nav__active--rep {
+  color: var(--color-green);
+  filter: invert(100%);
+}
+.nav__active--rep-sub {
+  opacity: 1;
+}
+.nav__active--fin-lo {
+  color: var(--color-purple);
+}
+.nav__active--fin-hi {
+  color: var(--color-green);
+  filter: invert(100%);
+}
+
 /* Mobile Navigation
 ---------------------------------------------------------------- */
 .mobile__nav {

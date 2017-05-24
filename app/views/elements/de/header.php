@@ -1,5 +1,6 @@
 <?php
 
+// Page Title Controller
 $title = ['Jahresbericht 2016'];
 
 if (isset($report)) {
@@ -83,9 +84,23 @@ if (isset($report)) {
 		<div class="limit--l clearfix">
 			<nav class="nav main-header__nav">
 				<ul class="nav__list">
-					<li><a class="nav__link" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
-					<li><a class="nav__link" href="<?= $url('report', $lang) ?>">Themen</a></li>
-					<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
+					<?php if ($path === '/review'): ?>
+						<li><a class="nav__link nav__active--rev" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
+					<?php else: ?>
+						<li><a class="nav__link" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
+					<?php endif; if (preg_match('#^/report/.*$#', $path)): ?>
+						<li><a class="nav__link nav__active--rep-sub" href="<?= $url('report', $lang) ?>">Themen</a></li>
+					<?php elseif ($path === '/report'): ?>
+						<li><a class="nav__link nav__active--rep" href="<?= $url('report', $lang) ?>">Themen</a></li>
+					<?php else: ?>
+						<li><a class="nav__link" href="<?= $url('report', $lang) ?>">Themen</a></li>
+					<?php endif; if ($path === '/finance' || $path === '/finance/society'): ?>
+						<li><a class="nav__link nav__active--fin-lo" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
+					<?php elseif ($path === '/finance/fund'): ?>
+						<li><a class="nav__link nav__active--fin-hi" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
+					<?php else: ?>
+						<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
+					<?php endif ?>
 				</ul>
 			<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
 			</nav>
