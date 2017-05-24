@@ -54,7 +54,7 @@
 						Geschäftsführender Vorstand: Abraham Taherivand
 					</p>
 					<p class="t--delta-serif">
-						Eingetragen im Vereinsregister des Amtsgerichts Charlottenburg, VR 23855. Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: Christian Rickerts (Anschrift wie oben).
+						Eingetragen im Vereinsregister des Amtsgerichts Charlottenburg, VR 23855. Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: Abraham Taherivand (Anschrift wie oben).
 					</p>
 				</section>
 				<section>
