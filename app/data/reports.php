@@ -8,7 +8,7 @@
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
-					<li><span>sinkende Autorenzahl</span></li>
+					<li><span>Sinkende Autorenzahl</span></li>
 					<li><span>Mitmachen erleichtern</span></li>
 					<li><span>Erklärvideos</span></li>
 				</ul>
@@ -129,7 +129,7 @@
 			'de' => '
 				<ul class="t--delta bullet-list">
 					<li><span>Bildungsmaterialien sind nicht ohne Hürden nutzbar</span></li>
-					<li><span>freie Bildungspraxis fördern</span></li>
+					<li><span>Freie Bildungspraxis fördern</span></li>
 					<li><span>Mapping OER und Bündnis Freie Bildung</span></li>
 				</ul>
 			',
@@ -189,8 +189,8 @@
 			'de' => '
 				<ul class="t--delta bullet-list">
 					<li><span>Viele Beteiligte, viele Ideen</span></li>
-					<li><span>gemeinsam Zukunft gestalten</span></li>
-					<li><span>partizipative Planung</span></li>
+					<li><span>Gemeinsam Zukunft gestalten</span></li>
+					<li><span>Partizipative Planung</span></li>
 				</ul>
 			',
 			'en' => '
