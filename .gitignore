@@ -1,10 +1,10 @@
 #
-# Atelier Disko Distribution - GIT Exclusion File
+# Wikimedia Jahresbericht 2016
 #
-# Copyright (c) 2013 Atelier Disko - All rights reserved.
+# Copyright (c) 2017 Atelier Disko - All rights reserved.
 #
-# This software is proprietary and confidential. Redistributions 
-# not permitted. No warranty, explicit or implicit provided.
+# Use of this source code is governed by the AGPL v3
+# license that can be found in the LICENSE file.
 #
 
 # Entries with a leading slash are anchored at the base directory.
