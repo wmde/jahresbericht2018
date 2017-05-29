@@ -285,12 +285,12 @@ body > main {
 ---------------------------------------------------------------- */
 .bg--icons-white {
   background-color: white;
-  background-image: url('/assets/img/pattern_15D.png');
+  background-image: url('../img/pattern_15D.png');
   background-position-y: -120px;
 }
 .bg--icons-light-blue {
 	background-color: var(--color-light-blue);
-  background-image: url('/assets/img/pattern_15D.png');
+  background-image: url('../img/pattern_15D.png');
 }
 .bg--big-icons-green {
   background-color: var(--color-green);
@@ -1243,8 +1243,8 @@ a:focus {
   padding-top: 10px;
 }
 .report-detail__text a {
-  color: black;
-  text-decoration: underline;
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-black);
 }
 .report-detail .hero__caption {
   text-align: center;

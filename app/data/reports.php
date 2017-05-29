@@ -3,7 +3,7 @@
 		'name' => 'volunteers',
 		'title' => [
 			'de' => 'Neue Freiwillige',
-			'en' => ''
+			'en' => 'New volunteers'
 		],
 		'teaser' => [
 			'de' => '
@@ -14,6 +14,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>Declining number of authors</span></li>
+					<li><span>Facilitating participation</span></li>
+					<li><span>Explainer videos</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/01_volunteers_hero.jpg',
@@ -23,7 +28,7 @@
 		'name' => 'wikidata',
 		'title' => [
 			'de' => 'Wikidata',
-			'en' => ''
+			'en' => 'Wikidata'
 		],
 		'teaser' => [
 			'de' => '
@@ -34,6 +39,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>Knowledge needs data</span></li>
+					<li><span>Developing and strengthening Wikidata</span></li>
+					<li><span>Data partnerships</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/02_wikidata_hero.jpg',
@@ -43,7 +53,7 @@
 		'name' => 'tech',
 		'title' => [
 			'de' => 'Technische Wünsche',
-			'en' => ''
+			'en' => 'Technical wishes'
 		],
 		'teaser' => [
 			'de' => '
@@ -54,6 +64,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>Editors need good tools</span></li>
+					<li><span>Co-developing software and meeting community demands</span></li>
+					<li><span>RevisionSlider</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/03_tech_hero.jpg',
@@ -63,7 +78,7 @@
 		'name' => 'generator',
 		'title' => [
 			'de' => 'Politik und Recht',
-			'en' => ''
+			'en' => 'Political and legal work'
 		],
 		'teaser' => [
 			'de' => '
@@ -74,6 +89,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>Copyright is complicated</span></li>
+					<li><span>Simplifying photo credits</span></li>
+					<li><span>Attribution generator</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/04_generator_hero.jpg',
@@ -83,7 +103,7 @@
 		'name' => 'wikicon',
 		'title' => [
 			'de' => 'Verein und Communitys',
-			'en' => ''
+			'en' => 'Association and communities'
 		],
 		'teaser' => [
 			'de' => '
@@ -94,6 +114,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>Personal exchange is important for online engagement</span></li>
+					<li><span>Supporting community meet-ups</span></li>
+					<li><span>WikiCon</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/05_wikicon_hero.jpg',
@@ -103,7 +128,7 @@
 		'name' => 'fellows',
 		'title' => [
 			'de' => 'Offene Wissenschaft',
-			'en' => ''
+			'en' => 'Open Science'
 		],
 		'teaser' => [
 			'de' => '
@@ -114,6 +139,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>Science is exclusive</span></li>
+					<li><span>Open Science</span></li>
+					<li><span>Open Science Fellows Program</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/06_fellows_hero.jpg',
@@ -123,7 +153,7 @@
 		'name' => 'oer',
 		'title' => [
 			'de' => 'Freie Bildung',
-			'en' => ''
+			'en' => 'Open education'
 		],
 		'teaser' => [
 			'de' => '
@@ -134,6 +164,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>Usability of educational resources has hurdles</span></li>
+					<li><span>Promoting open education</span></li>
+					<li><span>Mapping OER and Bündnis Freie Bildung</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/07_oer_hero.jpg',
@@ -143,7 +178,7 @@
 		'name' => 'intl',
 		'title' => [
 			'de' => 'Internationales',
-			'en' => ''
+			'en' => 'Wikimedia movement'
 		],
 		'teaser' => [
 			'de' => '
@@ -154,6 +189,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>One vision, many paths</span></li>
+					<li><span>Facilitating exchange, shaping the future</span></li>
+					<li><span>Wikimedia Conference</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/08_intl_hero.jpg',
@@ -163,7 +203,7 @@
 		'name' => 'rooms',
 		'title' => [
 			'de' => 'Regionalisierung',
-			'en' => ''
+			'en' => 'Regionalization'
 		],
 		'teaser' => [
 			'de' => '
@@ -174,6 +214,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>Finding like-minded people in your vicinity can be difficult</span></li>
+					<li><span>Creating spaces for volunteers</span></li>
+					<li><span>Wikipedia offices</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/09_rooms_hero.jpg',
@@ -183,7 +228,7 @@
 		'name' => '2017',
 		'title' => [
 			'de' => 'Jahresplan 2017',
-			'en' => ''
+			'en' => 'Annual Plan for 2017'
 		],
 		'teaser' => [
 			'de' => '
@@ -194,6 +239,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>Many participants, many ideas</span></li>
+					<li><span>Building a future together</span></li>
+					<li><span>Participative planning</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/10_2017_hero.jpg',
@@ -203,7 +253,7 @@
 		'name' => 'moon',
 		'title' => [
 			'de' => 'Wikipedia wird 15!',
-			'en' => ''
+			'en' => 'Wikipedia turns 15'
 		],
 		'teaser' => [
 			'de' => '
@@ -214,6 +264,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>No volunteers, no Wikipedia</span></li>
+					<li><span>Honoring volunteer engagement</span></li>
+					<li><span>Wikipedia to the Moon</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/11_moon_hero.jpg',
@@ -223,7 +278,7 @@
 		'name' => 'members',
 		'title' => [
 			'de' => '50.000 Mitglieder',
-			'en' => ''
+			'en' => '50.000 members'
 		],
 		'teaser' => [
 			'de' => '
@@ -234,6 +289,11 @@
 				</ul>
 			',
 			'en' => '
+				<ul class="t--delta bullet-list">
+					<li><span>Free Knowledge is no matter of course</span></li>
+					<li><span>Educating together</span></li>
+					<li><span>Becoming a member</span></li>
+				</ul>
 			'
 		],
 		'cover' => '/assets/img/12_members_hero.jpg',
