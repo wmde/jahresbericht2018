@@ -74,7 +74,7 @@
 									class="jb-vsplit__button button button--outline-green"
 									href="<?= $url('report/' . $report['name'], $lang) ?>"
 								>
-									Go to this project
+									More on this project
 								</a>
 							</div>
 						</div>
@@ -118,7 +118,7 @@
 			<p class="t--delta">It’s easy and it starts at only 2 euros per month.</p>
 		</div>
 		<div class="section__actions">
-			<a href="http://wmde.org/WikimediaMitglied" target="new" class="button button--bg-green">Become a member</a>
+			<a href="http://wmde.org/WikimediaMitglied" target="new" class="button button--bg-green">Become a member!</a>
 		</div>
 	</section>
 </main>
