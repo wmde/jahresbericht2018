@@ -1,21 +1,16 @@
-Atelier Disko Distribution
--- Distribution for Atelier Disko projects.
+Wikimedia Deutschland Jahresbericht 2016
 
 Abstract
 --------
-This is an application distribution. This distribution is providing a
-boilerplate for Atelier Disko projects and contains confidential and
-proprietary code.
+This is the Wikimedia Deutschland Jahresbericht 2016 website. 
 
-This distribution especially is made for "micro" projects. Such a project
-doesn't have a backend but consists of plain HTML files, CSS and JS.
+Server-side rendering
+----------------------
+PHP >= 5.5 is required to render the website on the server side. The front 
+controller is at `app/webroot/index.php`.
 
-HTML
-----
-HTML files are to be placed in `app/webroot/`.
-
-Autoloading of CSS and JS
--------------------------
+Loading of CSS and JS
+---------------------
 These libaries will always be loaded and bootstrap
 the applications JavaScript, they must always be present:
 
@@ -34,15 +29,26 @@ directly are contained inside `assets/js/views/`.
 
 Copyright & License
 -------------------
-Copyright (c) 2013 Atelier Disko - All rights reserved. 
+This project is Copyright (c) 2017 Atelier Disko, the code is distributed under
+the terms of the GNU Affero General Public License v3.0 if not otherwise stated.
+For the full license text see the LICENSE file.
 
-This project consists of multiple components which have differing licenses.
-Please consult the license contract signed with Atelier Disko for more
-information or the respective directories and file headers.
+Vendor Libraries
+----------------
+This project contains 3rd party libraries/source code. These are licensed
+and located as follows.
 
--- This software is proprietary and confidential. Redistributions   --
--- not permitted. Unless required by applicable law or agreed to    --
--- in writing, software distributed on an "AS IS" BASIS, WITHOUT    --
--- WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. --
-
-
+Path                                     Copyright Holder                License
+....................................................................................................
+assets/js/jquery.js                      JS Foundation and other         MIT
+                                         contributors
+assets/js/require.js                     JS Foundation and other         MIT
+                                         contributors
+assets/js/require/domReady.js            The Dojo Foundation             MIT or new BSD
+assets/js/scrollTo.js                    Atelier Disko                   BSD 3 Clause
+assets/js/skrollr.js                     Alexander Prinzhorn             MIT
+assets/js/swiper.js                      Vladimir Kharlampidi            MIT
+assets/js/underscore.js                  Jeremy Ashkenas, DocumentCloud  MIT
+                                         and Investigative 
+                                         Reporters & Editors
+assets/js/compat/modernizr.js            - see file header -             MIT
