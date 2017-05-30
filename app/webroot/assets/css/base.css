@@ -1260,6 +1260,11 @@ a:focus {
 
 /* Swiper
 ---------------------------------------------------------------- */
+.pseudo-slider .swiper-button-next,
+.pseudo-slider .swiper-button-prev {
+  display: none;
+}
+
 .swiper-container {
   margin: 0 auto;
   position: relative;

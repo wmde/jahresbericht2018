@@ -148,20 +148,21 @@ require([
       $slider.each(function() {
         var $el = $(this);
         var $slides = $el.find('.swiper-slide');
-        var trigger = true;
+
         if ($slides.length <= 1) {
-           trigger = false;
+          $el.removeClass('loading');
+        } else {
+          var swiper = new Swiper($el.get(0), {
+              nextButton: '.swiper-button-next',
+              prevButton: '.swiper-button-prev',
+              centeredSlides: true,
+              loop: true,
+              slidesPerView: 1,
+              onImagesReady: function() {
+                $el.removeClass('loading');
+              }
+          });
         }
-        var swiper = new Swiper($el.get(0), {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            centeredSlides: true,
-            loop: trigger,
-            slidesPerView: 1,
-            onImagesReady: function() {
-              $el.removeClass('loading');
-            }
-        });
 
       });
     });

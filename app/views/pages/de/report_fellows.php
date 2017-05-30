@@ -37,7 +37,7 @@
 	</section>
 	<section class="section cp--center-section">
 		<div class="limit--l">
-			<div class="section__body slider swiper-container loading">
+			<div class="section__body slider pseudo-slider swiper-container loading">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="video">
