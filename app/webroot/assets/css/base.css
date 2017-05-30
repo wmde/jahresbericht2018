@@ -265,7 +265,7 @@ body > main {
 ---------------------------------------------------------------- */
 .border-box {
   border: 1px solid var(--color-black);
-  padding: 20px 40px;
+  padding: 30px 40px;
 }
 .border-box :first-child {
   margin-top: 0;
@@ -277,8 +277,12 @@ body > main {
   color: var(--color-green);
   border-color: green;
 }
+.border-box--green .bullet-list li {
+  padding-top: 5px;
+}
 .border-box--green a {
   color: var(--color-green);
+  border-bottom: 1px solid var(--color-green);
 }
 
 /* Section Backgrounds
