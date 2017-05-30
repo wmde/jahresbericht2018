@@ -12,7 +12,7 @@
 						10963 Berlin
 					</p>
 					<p>
-						Telefon: <a href="tel:004930219158260">030 219 158 26-0</a>
+						Telefon: <a href="tel:004930219158260">+49 (0)30-219 15 826-0</a>
 					</p>
 				</div>
 				<div class="main-footer__info-2 t--delta-serif">

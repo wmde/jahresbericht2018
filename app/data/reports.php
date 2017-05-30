@@ -278,7 +278,7 @@
 		'name' => 'members',
 		'title' => [
 			'de' => '50.000 Mitglieder',
-			'en' => '50.000 members'
+			'en' => '50,000 members'
 		],
 		'teaser' => [
 			'de' => '

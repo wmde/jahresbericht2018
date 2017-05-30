@@ -29,7 +29,7 @@
 					Im Juli 2016 folgte die englische Übersetzung. Weitere Übersetzungen wie Französisch und Indonesisch sind geplant. Das Erfolgsprojekt führte nicht nur zu bereits 16.000 generierten Lizenzhinweisen, sondern auch zu mehr öffentlichem Interesse für Freies Wissen, freie Lizenzen und die einfache Nachnutzung frei lizenzierter Bilder.
 				</p>
 				<p>
-					Zur Zeit kann der Lizenzhinweisgenerator nur Lizenz­angaben zu Bildern von Wikipedia und Wikimedia Commons ausgeben. Wir sind interessiert daran, auch andere Plattformen einzubinden; dies gestaltet sich aber durch deren unterschiedlichen Aufbau technisch schwierig. ­Auch muss die Website www.lizenzhinweisgenerator.de zukünftig noch bekannter werden.
+					Zur Zeit kann der Lizenzhinweisgenerator nur Lizenz­angaben zu Bildern von Wikipedia und Wikimedia Commons ausgeben. Wir sind interessiert daran, auch andere Plattformen einzubinden; dies gestaltet sich aber durch deren unterschiedlichen Aufbau technisch schwierig. ­Auch muss die Website <a href="http://www.lizenzhinweisgenerator.de">www.lizenzhinweisgenerator.de</a> zukünftig noch bekannter werden.
 				</p>
 				<p>
 					Die einfache Verbreitung von Freiem Wissen ist Teil unserer politischen Mission bei Wikimedia Deutschland. Der Lizenzhinweisgenerator zeigt, wie einfach es ist, freie Inhalte zu nutzen und regt hoffentlich sogar dazu an, eigene freie Inhalte zu erstellen.
@@ -39,7 +39,7 @@
 	</section>
 	<section class="section cp--center-section">
 		<div class="limit--l">
-			<div class="section__body slider swiper-container loading">
+			<div class="section__body slider pseudo-slider swiper-container loading">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="video">

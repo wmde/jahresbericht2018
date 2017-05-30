@@ -33,7 +33,7 @@
 					style="background-image: url('/assets/img/13_monuments_hero.jpg');"
 				></figure>
 				<div class="jb-hsplit__content">
-					<h1 class="h--beta jb-hsplit__title">Wikipedia Loves Monuments</h1>
+					<h1 class="h--beta jb-hsplit__title">Wiki Loves Monuments</h1>
 				</div>
 			</a>
 		</div>

@@ -21,6 +21,8 @@ require([
   var $close = $('.imprint-close');
   var $toggle = $('.imprint-toggle');
 
+  var allMods, win, throttled;
+
   function visible(element, partial) {
     var $t            = $(element),
         $w            = $(window),
@@ -69,22 +71,22 @@ require([
   // see: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
   var $rl = $('.report-landing');
   if ($rl.length && !Modernizr.touchevents) {
-    var win = $(window);
-    var allMods = $(".jb-hsplit");
+    win = $(window);
+    allMods = $(".jb-hsplit");
 
     // Already visible modules
     allMods.each(function(i, el) {
-      var el = $(el);
+      el = $(el);
       if (visible(el, true)) {
         el.addClass("already-visible");
         el.addClass("come-in");
       }
     });
 
-    var throttled = _.throttle(function() {
+    throttled = _.throttle(function() {
 
       allMods.each(function(i, el) {
-        var el = $(el);
+        el = $(el);
         if (visible(el, true)) {
            el.addClass("come-in");
         }
@@ -95,9 +97,9 @@ require([
     win.scroll(throttled);
   }
   if ($rl.length && Modernizr.touchevents) {
-    var allMods = $(".jb-hsplit");
+    allMods = $(".jb-hsplit");
     allMods.each(function(i, el) {
-      var el = $(el);
+      el = $(el);
       el.addClass("visible");
     });
   }
@@ -106,22 +108,22 @@ require([
   // see: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
   var $bagel = $('.bagel');
   if ($bagel.length && !Modernizr.touchevents) {
-    var win = $(window);
-    var allMods = $(".bagel__image img");
+    win = $(window);
+    allMods = $(".bagel__image img");
 
     // Already visible modules
     allMods.each(function(i, el) {
-      var el = $(el);
+      el = $(el);
       if (visible(el, true)) {
         el.addClass("already-visible");
         el.addClass("turn-in");
       }
     });
 
-    var throttled = _.throttle(function() {
+    throttled = _.throttle(function() {
 
       allMods.each(function(i, el) {
-        var el = $(el);
+        el = $(el);
         if (visible(el, true)) {
            el.addClass("turn-in");
         }
@@ -132,9 +134,9 @@ require([
     win.scroll(throttled);
   }
   if ($bagel.length && Modernizr.touchevents) {
-    var allMods = $(".bagel__image img");
+    allMods = $(".bagel__image img");
     allMods.each(function(i, el) {
-      var el = $(el);
+      el = $(el);
       el.addClass("turn-in");
     });
   }
@@ -146,20 +148,21 @@ require([
       $slider.each(function() {
         var $el = $(this);
         var $slides = $el.find('.swiper-slide');
-        var trigger = true;
+
         if ($slides.length <= 1) {
-           trigger = false;
+          $el.removeClass('loading');
+        } else {
+          var swiper = new Swiper($el.get(0), {
+              nextButton: '.swiper-button-next',
+              prevButton: '.swiper-button-prev',
+              centeredSlides: true,
+              loop: true,
+              slidesPerView: 1,
+              onImagesReady: function() {
+                $el.removeClass('loading');
+              }
+          });
         }
-        var swiper = new Swiper($el.get(0), {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            centeredSlides: true,
-            loop: trigger,
-            slidesPerView: 1,
-            onImagesReady: function() {
-              $el.removeClass('loading');
-            }
-        });
 
       });
     });
