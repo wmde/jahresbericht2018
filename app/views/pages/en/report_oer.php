@@ -20,7 +20,7 @@
 					Open educational resources (OER) offer a solution to this challenge: They are not only available free of charge, but can also be freely copied, adapted, and disseminated. Today, these kinds of materials are still relatively unfamiliar. The aim is therefore to make the use of open educational resources common practice in the German educational system. This is the focal point of Wikimedia Deutschland’s educational policy work.
 				</p>
 				<p>
-					In the "<a href="http://mapping-oer.de/" target="new">Mapping OER – Bildungsmaterialien gemeinsam gestalten</a>” project, funded by the Federal Ministry of Education and Research, Wikimedia Deutschland brought together the key actors in education to jointly examine the general framework for OER in Germany. The findings were published in early 2016 in "<a href="http://mapping-oer.de/praxisrahmen/" target="new">Praxisrahmen für Open Educational Resources (OER) in Deutschland</a>”. The report contains concrete proposals for policy makers and educational leaders on how to further promote and expand on open educational practice with the help of OER. The findings were sent to political decision makers over the course of the year and communicated within the context of events and publications.
+					In the “<a href="http://mapping-oer.de/" target="new">Mapping OER – Bildungsmaterialien gemeinsam gestalten</a>” project, funded by the Federal Ministry of Education and Research, Wikimedia Deutschland brought together the key actors in education to jointly examine the general framework for OER in Germany. The findings were published in early 2016 in “<a href="http://mapping-oer.de/praxisrahmen/" target="new">Praxisrahmen für Open Educational Resources (OER) in Deutschland</a>”. The report contains concrete proposals for policy makers and educational leaders on how to further promote and expand on open educational practice with the help of OER. The findings were sent to political decision makers over the course of the year and communicated within the context of events and publications.
 				</p>
 				<p>
 					In addition, Wikimedia Deutschland continued its involvement over the past year with <a href="http://buendnis-freie-bildung.de/" target="new">Bündnis Freie Bildung</a>. This alliance calls on political parties to comment publicly on the topics of open education and open education resources, takes a stance on the latest education policy developments, and releases recommendations for political and social decision makers. Wikimedia Deutschland thus brings a variety of perspectives to the subject of open education and mediates between the various groups.
@@ -33,8 +33,8 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="http://www.mapping-oer.de" target="new">Mapping OER</a>
-					<li><a href="http://www.buendnis-freie-bildung.de" target="new">Bündnis Freie Bildung</a></li>
+					<li><a href="http://www.mapping-oer.de" target="new">Mapping OER</a> (in German)</li>
+					<li><a href="http://www.buendnis-freie-bildung.de" target="new">Bündnis Freie Bildung</a> (in German)</li>
 				</ul>
 			</div>
 		</div>

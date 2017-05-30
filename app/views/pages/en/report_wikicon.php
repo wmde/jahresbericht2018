@@ -17,12 +17,12 @@
 			</div>
 			<div class="section__body t--gamma-serif">
 				<p>
-					The WikiCon is organized by volunteers for volunteers. Supporting the organizing team are the employees of Wikimedia Deutschland, Wikimedia Österreich, and Wikimedia Schweiz. In addition to project presentations, and lectures and discussions on all things relating to the Wikimedia projects, there were plenty of chances in September for members to get to know one another and to collectively work on new ideas. The "<a href="https://de.wikipedia.org/wiki/Wikipedia:Wiki_Loves_Cocktails" target="new">Wiki Loves Cocktails</a>" evening project offered ample opportunity for this. After all, it would have been a shame to not take advantage of all the great articles and pictures of delicious drinks that had been produced!
+					The WikiCon is organized by volunteers for volunteers. Supporting the organizing team are the employees of Wikimedia Deutschland, Wikimedia Österreich, and Wikimedia Schweiz. In addition to project presentations, and lectures and discussions on all things relating to the Wikimedia projects, there were plenty of chances in September for members to get to know one another and to collectively work on new ideas. The “<a href="https://de.wikipedia.org/wiki/Wikipedia:Wiki_Loves_Cocktails" target="new">Wiki Loves Cocktails</a>” evening project offered ample opportunity for this. After all, it would have been a shame to not take advantage of all the great articles and pictures of delicious drinks that had been produced!
 				</p>
 				<blockquote class="quote">
 					<div class="quote__body">
 						<p class="t--beta">
-							"The WikiCon is the perfect opportunity to meet other contributors whom, for many years, I only knew virtually.”
+							“The WikiCon is the perfect opportunity to meet other contributors whom, for many years, I only knew virtually.”
 						</p>
 					</div>
 					<footer class="quote__author t--gamma">

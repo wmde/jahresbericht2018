@@ -29,7 +29,7 @@
 					Whether it’s the years of origin of paintings, names of artists, or the latest exhibition catalog – the knowledge of an institution thus is not confined to a single site, but is available worldwide.
 				</p>
 				<p>
-					By the same token, we are not interested in accumulating as much content as possible or just any content in Wikidata. We are concentrating on partnerships with reputable institutions. In 2016, we created a process for them to easily share their data with one of the world's largest websites. Along with John Cummings, "Wikimedian in residence” at UNESCO, we were able to identify all the practical pitfalls in the data-partnership process. Here, we recognized the actual complexity of the process and included every finding in a comprehensive documentation. A portal for data donations was also developed. It has already been translated into numerous languages and explains the individual steps for making a successful data donation. The TED organization (short for Technology, Entertainment, Design) has already started to enter the data on its educational TED talks into Wikidata with the help of two "Wikipedians in residence.”
+					By the same token, we are not interested in accumulating as much content as possible or just any content in Wikidata. We are concentrating on partnerships with reputable institutions. In 2016, we created a process for them to easily share their data with one of the world's largest websites. Along with John Cummings, “Wikimedian in residence” at UNESCO, we were able to identify all the practical pitfalls in the data-partnership process. Here, we recognized the actual complexity of the process and included every finding in a comprehensive documentation. A portal for data donations was also developed. It has already been translated into numerous languages and explains the individual steps for making a successful data donation. The TED organization (short for Technology, Entertainment, Design) has already started to enter the data on its educational TED talks into Wikidata with the help of two “Wikipedians in residence.”
 				</p>
 				<p>
 					With the development of a clear data donation process, we have gone a long way towards our goal of explaining to institutions exactly why open data is a great thing and why they should make theirs available.
@@ -63,7 +63,7 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="https://www.wikidata.org/wiki/Wikidata:Data_donation" target="new">Portal zur Datenspende</a></li>
+					<li><a href="https://www.wikidata.org/wiki/Wikidata:Data_donation" target="new">Portal for data donations</a></li>
 				</ul>
 			</div>
 		</div>

@@ -37,31 +37,11 @@
 		</div>
 	</section>
 	<section class="section cp--center-section">
-		<div class="limit--l">
-			<div class="section__body slider pseudo-slider swiper-container loading">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://player.vimeo.com/video/211492471?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Der Lizenzhinweisgenerator kurz vorgestellt
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-button-next swiper-button-next--green"></div>
-				<div class="swiper-button-prev swiper-button-prev--green"></div>
-			</div>
-		</div>
-	</section>
-	<section class="section cp--center-section">
 		<div class="limit--s">
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
+					<li><a href="http://wmde.org/ErklaervideoLHG" target="new">The attribution generator is presented here in this video</a> (in German)</li>
 					<li><a href="http://www.attributiongenerator.org" target="new">Attribution Generator</a></li>
 				</ul>
 			</div>

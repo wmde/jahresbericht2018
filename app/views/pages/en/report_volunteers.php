@@ -99,72 +99,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://player.vimeo.com/video/197893127?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Deine Wikipedia-Benutzerseite anlegen
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://player.vimeo.com/video/197898263?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Diskutieren in der Wikipedia
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://player.vimeo.com/video/197904080?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Die Bearbeitungsoberflächen von Wikipedia
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://player.vimeo.com/video/197909241?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Wikipedia-Artikel ergänzen und verbessern
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://player.vimeo.com/video/198338036?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Bilder in Wikipedia hochladen und einbinden
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://player.vimeo.com/video/198340267?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Wikipedia-Artikel erstellen
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
-							</div>
-						</div>
-					</div>
 
 				</div>
 				<div class="swiper-button-next swiper-button-next--green"></div>
@@ -177,15 +111,15 @@
 			<div class="border-box border-box--green">
 				<div class="h--gamma">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="http://www.wikipedia.de/machmit" target="new">Alle produzierten Videos</a></li>
-					<li><a href="http://wmde.org/Projekt_Neuautorengewinnung" target="new">Alle Infos zum Projekt</a></li>
+					<li><a href="http://www.wikipedia.de/machmit" target="new">All of the produced videos</a> (in German)</li>
+					<li><a href="http://wmde.org/Projekt_Neuautorengewinnung" target="new">Complete information about the project</a> (in German)</li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section class="section cp--center-section bg--icons-light-blue">
 		<div class="section__actions">
-			<a href="<?= $url('/report', $lang) ?>" class="button button--bg-green">Go to project overview</a>
+			<a href="<?= $url('/report', $lang) ?>" class="button button--bg-green">Go to focal points’ overview</a>
 		</div>
 	</section>
 </main>
