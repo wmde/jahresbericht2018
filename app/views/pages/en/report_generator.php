@@ -28,7 +28,7 @@
 				<p>
 					The English translation followed in July 2016. Further translations such as French and Indonesian are in the works. The successful project has not only already led to the generation of 16,000 attributions, but also to greater public interest in open knowledge, open licenses, and the simple reuse of licensed images.				</p>
 				<p>
-					At the moment, the attribution generator can only provide license information on images from Wikipedia and Wikimedia Commons. We would like to integrate other platforms, but this is technically challenging due to their varying designs. The website www.attributiongenerator.org also needs to become more familiar.
+					At the moment, the attribution generator can only provide license information on images from Wikipedia and Wikimedia Commons. We would like to integrate other platforms, but this is technically challenging due to their varying designs. The website <a href="http://www.attributiongenerator.org">www.attributiongenerator.org</a> also needs to become more familiar.
 				</p>
 				<p>
 					At Wikimedia Deutschland, the convenient dissemination of open knowledge is part of our political mission. The attribution generator shows how easy it is to use open content and hopefully even inspires people to create their own open content.
