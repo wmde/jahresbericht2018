@@ -413,7 +413,7 @@
 			<a class="border-box t--epsilon" href="<?= $url('finance', $lang) ?>">
 				<span>Go to overview <em class="t--delta">Finances 2016</em></span>
 			</a>
-			<a class="border-box t--epsilon" href="<?= $url('finance/society', $lang) ?>">
+			<a class="border-box t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
 				<span>Go to financial section <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
 			</a>
 		</div>

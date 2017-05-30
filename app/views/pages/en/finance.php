@@ -6,7 +6,7 @@
 			<p class="t--gamma">From a financial standpoint, 2016 was a good year for Wikimedia Deutschland — Gesellschaft zur Förderung Freien Wissens e. V.</p>
 		</div>
 		<div class="limit--m finance__boxes">
-			<a class="border-box t--epsilon" href="<?= $url('finance/society', $lang) ?>">
+			<a class="border-box t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
 				<span>Go to financial section <em class="t--delta">Wikimedia Deutschland e.&nbsp;V.</em></span>
 			</a>
 			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
@@ -29,7 +29,7 @@ The use of funds is more precisely laid out in the summary “Use of funds”.</
 			<p class="t--gamma-serif">Wikimedia Deutschland voluntarily allows audits of its internal operations, allocation of donations, along with its assets, earnings, and financial position. The audit of Wikimedia Deutschland – Gesellschaft zur Förderung Freien Wissens e. V. and the non-profit Wikimedia Fördergesellschaft mbH was conducted by the KWP Revision GmbH Wirtschaftsprüfungsgesellschaft Berlin and carried out in December 2016 and February/March 2017. An unqualified audit certificate was issued. It confirmed that the accounting of Wikimedia Deutschland and its affiliated organizations was carried out completely and conscientiously and that the audit did not result in any objections.</p>
 		</div>
 		<div class="limit--m finance__boxes">
-			<a class="border-box t--epsilon" href="<?= $url('finance/society', $lang) ?>">
+			<a class="border-box t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
 				<span>Go to financial section <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
 			</a>
 			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">

@@ -13,7 +13,7 @@ if (isset($report)) {
 	$title[] = 'Year in Review 2016';
 } elseif ($path === '/finance') {
 	$title[] = 'Finances';
-} elseif ($path === '/finance/society') {
+} elseif ($path === '/finance/assn') {
 	$title[] = 'Finances WMDE e.V.';
 } elseif ($path === '/finance/fund') {
 	$title[] = 'Finances Fördergesellschaft';
@@ -88,7 +88,7 @@ if (isset($report)) {
 						<li><a class="nav__link nav__active--rep" href="<?= $url('report', $lang) ?>">Projects</a></li>
 					<?php else: ?>
 						<li><a class="nav__link" href="<?= $url('report', $lang) ?>">Projects</a></li>
-					<?php endif; if ($path === '/finance' || $path === '/finance/society'): ?>
+					<?php endif; if ($path === '/finance' || $path === '/finance/assn'): ?>
 						<li><a class="nav__link nav__active--fin-lo" href="<?= $url('finance', $lang) ?>">Finances</a></li>
 					<?php elseif ($path === '/finance/fund'): ?>
 						<li><a class="nav__link nav__active--fin-hi" href="<?= $url('finance', $lang) ?>">Finances</a></li>

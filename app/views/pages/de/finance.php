@@ -6,7 +6,7 @@
 			<p class="t--gamma">2016 war für den Verein Wikimedia Deutschland — Gesellschaft zur Förderung Freien Wissens e. V. aus finanzieller Sicht ein gutes Jahr.</p>
 		</div>
 		<div class="limit--m finance__boxes">
-			<a class="border-box t--epsilon" href="<?= $url('finance/society', $lang) ?>">
+			<a class="border-box t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e.&nbsp;V.</em></span>
 			</a>
 			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
@@ -29,7 +29,7 @@ Aus der Übersicht „Mittelverwendung“ wird die inhaltliche Verwendung der Mi
 			<p class="t--gamma-serif">Wikimedia Deutschland lässt interne Abläufe, die Spendenverteilung sowie die Vermögens-, Ertrags-, und Finanzlage freiwillig prüfen. Die Prüfung des Wikimedia Deutschland – Gesellschaft zur Förderung Freien Wissens e. V. und der Gemeinnützigen Wiki­media Fördergesellschaft mbH erfolgte durch die KWP Revision GmbH Wirtschaftsprüfungsgesellschaft Berlin und wurde im Dezember 2016 und Februar/März 2017 durchgeführt. Es wurde ein uneingeschränkter Bestätigungsvermerk erteilt. Demnach wurde die Buchführung des Vereins und der Gesellschaft vollständig und gewissenhaft vorgenommen und die Prüfung hat insgesamt zu keinerlei Einwänden geführt.</p>
 		</div>
 		<div class="limit--m finance__boxes">
-			<a class="border-box t--epsilon" href="<?= $url('finance/society', $lang) ?>">
+			<a class="border-box t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
 			</a>
 			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
