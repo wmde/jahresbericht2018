@@ -1,5 +1,5 @@
 <main class="report-landing bg--icons-light-blue cp cp--6x-top cp--6x-bottom">
-	<h1 class="h--beta report-landing__title">The overview of our projects</h1>
+	<h1 class="h--beta report-landing__title">Focal points’ overview</h1>
 
 	<div class="limit--m">
 		<div class="jb-hsplit-list">
