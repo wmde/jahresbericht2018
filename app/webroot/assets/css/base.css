@@ -465,10 +465,13 @@ a:focus {
 .mn-container ul {
   list-style: none;
   padding: 0;
-  padding-top: 30vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .mn-container li {
-  padding: 20px;
+  padding: 4vh;
 }
 .mn-close {
   float: right;
@@ -492,7 +495,8 @@ a:focus {
 }
 .mn-container .lang-switch {
   position: absolute;
-  bottom: 40px;
+  bottom: 7vh;
+  left: 50%;
   transform: translateX(-50%);
   text-transform: uppercase;
   font-weight: 600;
