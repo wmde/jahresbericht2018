@@ -25,6 +25,16 @@
 			</div>
 		</div>
 	</section>
+	<section class="section cp--center-section">
+		<div class="limit--s">
+			<div class="border-box border-box--green">
+				<div class="h--gamma">LINKS</div>
+				<ul class="bullet-list">
+					<li><a href="https://meta.wikimedia.org/wiki/Wikimedia_Conference_2016" target="new">Projektseite der Wikimedia Conference 2016</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
 	<section class="section cp--center-section bg--icons-light-blue">
 		<div class="section__actions">
 			<a href="<?= $url('/report', $lang) ?>" class="button button--bg-green">Zur Themenübersicht</a>
