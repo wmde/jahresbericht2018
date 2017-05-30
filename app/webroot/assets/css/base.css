@@ -1427,6 +1427,10 @@ a:focus {
 .finance__p {
   margin-bottom: 80px;
 }
+.finance__p a {
+  color: white;
+  border-bottom: 1px solid white;
+}
 .fin-detail__heading {
   text-align: center;
   position: relative;
