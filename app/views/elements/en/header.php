@@ -6,7 +6,7 @@ $title = ['Annual Report 2016'];
 if (isset($report)) {
 	$title[] = $report['title'][$lang];
 } elseif ($path === '/report') {
-	$title[] = 'Projects';
+	$title[] = 'Focal points';
 } elseif ($path === '/report/monuments') {
 	$title[] = 'Wikipedia Loves Monuments';
 } elseif ($path === '/review') {
@@ -60,7 +60,7 @@ if (isset($report)) {
 	<div class="mn-close"></div>
 	<ul class="mn__list">
 		<li><a class="mn__link" href="<?= $url('review', $lang) ?>">Year in Review 2016</a></li>
-		<li><a class="mn__link" href="<?= $url('report', $lang) ?>">Projects</a></li>
+		<li><a class="mn__link" href="<?= $url('report', $lang) ?>">Focal points</a></li>
 		<li><a class="mn__link" href="<?= $url('finance', $lang) ?>">Finances</a></li>
 	</ul>
 	<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">Deutsch</a>
@@ -83,11 +83,11 @@ if (isset($report)) {
 					<?php else: ?>
 						<li><a class="nav__link" href="<?= $url('review', $lang) ?>">Year in Review 2016</a></li>
 					<?php endif; if (preg_match('#^/report/.*$#', $path)): ?>
-						<li><a class="nav__link nav__active--rep-sub" href="<?= $url('report', $lang) ?>">Projects</a></li>
+						<li><a class="nav__link nav__active--rep-sub" href="<?= $url('report', $lang) ?>">Focal points</a></li>
 					<?php elseif ($path === '/report'): ?>
-						<li><a class="nav__link nav__active--rep" href="<?= $url('report', $lang) ?>">Projects</a></li>
+						<li><a class="nav__link nav__active--rep" href="<?= $url('report', $lang) ?>">Focal points</a></li>
 					<?php else: ?>
-						<li><a class="nav__link" href="<?= $url('report', $lang) ?>">Projects</a></li>
+						<li><a class="nav__link" href="<?= $url('report', $lang) ?>">Focal points</a></li>
 					<?php endif; if ($path === '/finance' || $path === '/finance/assn'): ?>
 						<li><a class="nav__link nav__active--fin-lo" href="<?= $url('finance', $lang) ?>">Finances</a></li>
 					<?php elseif ($path === '/finance/fund'): ?>

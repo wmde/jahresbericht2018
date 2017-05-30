@@ -56,7 +56,7 @@
 	</section>
 	<section class="section cp--center-section bg--icons-light-blue">
 		<div class="limit--l">
-			<h2 class="section__heading"><div>Projects</div></h2>
+			<h2 class="section__heading"><div>Focal points</div></h2>
 			<div class="section__body slider swiper-container loading">
 				<div class="swiper-wrapper">
 					<?php foreach ($reports as $report): ?>
@@ -75,7 +75,7 @@
 									class="jb-vsplit__button button button--outline-green"
 									href="<?= $url('report/' . $report['name'], $lang) ?>"
 								>
-									More on this project
+									More on this focal point
 								</a>
 							</div>
 						</div>
@@ -86,7 +86,7 @@
 				<div class="swiper-button-prev swiper-button-prev--green"></div>
 			</div>
 			<div class="section__actions">
-				<a class="button button--bg-green" href="<?= $url('report', $lang) ?>">Go to project overview</a>
+				<a class="button button--bg-green" href="<?= $url('report', $lang) ?>">Go to focal points’ overview</a>
 			</div>
 		</div>
 	</section>

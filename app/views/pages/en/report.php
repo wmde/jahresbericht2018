@@ -10,7 +10,7 @@
 						<img src="<?= $report['icon'] ?>" alt="">
 					</figure>
 					<span class="button button--outline-white">
-						More on this project
+						More on this focal point
 					</span>
 				</div>
 				<figure
@@ -25,7 +25,7 @@
 			<a class="jb-hsplit" href="<?= $url('/report/monuments', $lang) ?>">
 				<div class="jb-hsplit__overlay bg--big-icons-green">
 					<span class="button button--outline-white">
-						More on this project
+						More on this focal point
 					</span>
 				</div>
 				<figure

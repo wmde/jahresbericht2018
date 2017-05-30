@@ -34,7 +34,7 @@
 	</section>
 	<section class="section cp--center-section bg--icons-light-blue">
 		<div class="section__actions">
-			<a href="<?= $url('/report', $lang) ?>" class="button button--bg-green">Go to project overview</a>
+			<a href="<?= $url('/report', $lang) ?>" class="button button--bg-green">Go to focal points’ overview</a>
 		</div>
 	</section>
 </main>
