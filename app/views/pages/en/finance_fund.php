@@ -4,7 +4,7 @@
 		<div class="limit--s finance__intro">
 			<h1 class="fin-detail__heading">
 				<div class="h--delta fin-detail__heading-s">Finances 2016</div>
-				<div class="h--beta fin-detail__heading-l">Non-profit Wikimedia Fördergesellschaft mbH</div>
+				<div class="h--beta fin-detail__heading-l">Gemeinnützige Wikimedia Fördergesellschaft mbH</div>
 			</h1>
 		</div>
 	</section>

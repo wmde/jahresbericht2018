@@ -10,7 +10,7 @@
 				<span>Go to financial section <em class="t--delta">Wikimedia Deutschland e.&nbsp;V.</em></span>
 			</a>
 			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
-				<span>Go to financial section <em class="t--delta">Non-profit Wikimedia Fördergesellschaft mbH</em></span>
+				<span>Go to financial section <em class="t--delta">Gemeinnützige Wikimedia Fördergesellschaft mbH</em></span>
 			</a>
 		</div>
 		<div class="limit--s">
@@ -33,7 +33,7 @@ The use of funds is more precisely laid out in the summary “Use of funds”.</
 				<span>Go to financial section <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
 			</a>
 			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
-				<span>Go to financial section <em class="t--delta">Non-profit Wikimedia Fördergesellschaft mbH</em></span>
+				<span>Go to financial section <em class="t--delta">Gemeinnützige Wikimedia Fördergesellschaft mbH</em></span>
 			</a>
 		</div>
 	</section>

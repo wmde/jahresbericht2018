@@ -596,7 +596,7 @@
 				<span>Go to overview <em class="t--delta">Finances 2016</em></span>
 			</a>
 			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
-				<span>Go to financial section <em class="t--delta">Non-profit Wikimedia Fördergesellschaft mbH</em></span>
+				<span>Go to financial section <em class="t--delta">Gemeinnützige Wikimedia Fördergesellschaft mbH</em></span>
 			</a>
 		</div>
 	</section>
