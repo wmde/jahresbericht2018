@@ -19,9 +19,9 @@
 					<?php foreach ($facts as $fact): ?>
 					<div class="swiper-slide">
 						<div class="jb-fact limit--s">
-							<figure class="fig jb-fact__icon">
+							<a href="<?= $url($fact['path'], $lang) ?>" class="fig jb-fact__icon">
 								<img src="<?= $fact['icon'] ?>"></img>
-							</figure>
+							</a>
 							<div class="jb-fact__content">
 								<?php if ($fact['head'][$lang] !== ''): ?>
 									<p class="t--delta jb-fact__content-head"><?= $fact['head'][$lang] ?></p>
