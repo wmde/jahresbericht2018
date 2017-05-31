@@ -37,7 +37,7 @@
 		'name' => '03',
 		'head' => [
 			'de' => 'Der „Versionsblätterer“ ist fortan in',
-			'en' => 'The "RevisionSlider" will now be available in'
+			'en' => 'The “RevisionSlider” will now be available in'
 		],
 		'number' => [
 			'de' => '3',
