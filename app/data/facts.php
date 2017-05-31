@@ -14,6 +14,7 @@
 			'en' => 'videos were produced to facilitate the onboarding of new Wikipedia authors.'
 		],
 		'icon' => '/assets/ico/01_volunteers.svg',
+		'path' => '/report/volunteers'
 	],
 	[
 		'name' => '02',
@@ -30,6 +31,7 @@
 			'en' => 'times the new portal for data donations was visited.'
 		],
 		'icon' => '/assets/ico/02_wikidata.svg',
+		'path' => '/report/wikidata'
 	],
 	[
 		'name' => '03',
@@ -46,6 +48,7 @@
 			'en' => 'Wikipedia language versions (German, Arabic, Hebrew) as well as an optional feature in all other languages.'
 		],
 		'icon' => '/assets/ico/03_tech.svg',
+		'path' => '/report/tech'
 	],
 	[
 		'name' => '04',
@@ -62,6 +65,7 @@
 			'en' => 'photo credits were created with the attribution generator.'
 		],
 		'icon' => '/assets/ico/04_generator.svg',
+		'path' => '/report/generator'
 	],
 	[
 		'name' => '05',
@@ -78,6 +82,7 @@
 			'en' => 'participants went to WikiCon – a record for the largest gathering of Wikipedia contributors in Germany.'
 		],
 		'icon' => '/assets/ico/05_wikicon.svg',
+		'path' => '/report/wikicon'
 	],
 	[
 		'name' => '06',
@@ -94,6 +99,7 @@
 			'en' => 'researchers were trained in the area of Open Science.'
 		],
 		'icon' => '/assets/ico/06_fellows.svg',
+		'path' => '/report/fellows'
 	],
 	[
 		'name' => '07',
@@ -110,6 +116,7 @@
 			'en' => 'partner organizations, we advocated for open education.'
 		],
 		'icon' => '/assets/ico/07_oer.svg',
+		'path' => '/report/oer'
 	],
 	[
 		'name' => '08',
@@ -126,6 +133,7 @@
 			'en' => 'learning materials were published to strengthen international exchange.'
 		],
 		'icon' => '/assets/ico/08_intl.svg',
+		'path' => '/report/intl'
 	],
 	[
 		'name' => '09',
@@ -142,6 +150,7 @@
 			'en' => 'new local Wikipedia space was opened in Munich.'
 		],
 		'icon' => '/assets/ico/09_rooms.svg',
+		'path' => '/report/rooms'
 	],
 	[
 		'name' => '10',
@@ -158,6 +167,7 @@
 			'en' => 'people participated in our annual planning for 2017.'
 		],
 		'icon' => '/assets/ico/10_2017.svg',
+		'path' => '/report/2017'
 	],
 	[
 		'name' => '11',
@@ -174,6 +184,7 @@
 			'en' => 'outstanding Wikipedia articles and lists were prepared for the moon.'
 		],
 		'icon' => '/assets/ico/11_moon.svg',
+		'path' => '/report/moon'
 	],
 	[
 		'name' => '12',
@@ -190,6 +201,7 @@
 			'en' => 'euros, Wikimedia received its so far largest single donation.'
 		],
 		'icon' => '/assets/ico/12_finance.svg',
+		'path' => '/finance'
 	],
 	[
 		'name' => '13',
@@ -206,6 +218,7 @@
 			'en' => 'new members to the organization.'
 		],
 		'icon' => '/assets/ico/13_members.svg',
+		'path' => '/report/members'
 	],
 
 ] ?>
