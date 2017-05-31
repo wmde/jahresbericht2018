@@ -4,7 +4,7 @@
 			<h1 class="home-hero__title">
 				Wikimedia<br>
 				Deutschland<br>
-				Jahresrückblick<br>
+				Jahresbericht<br>
 				2016
 			</h1>
 			<img class="home-hero__16" src="assets/img/16_b.png" alt="2016">
