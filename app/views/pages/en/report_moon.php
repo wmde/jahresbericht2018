@@ -46,6 +46,17 @@
 			<div class="section__body slider swiper-container loading">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/196446247?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Summary of the Wikipedia to the Moon project
+								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
 						<figure class="fig">
 							<img class="fig__image" src="/assets/img/11_moon_scientists.jpg" alt="Die Part-Time Scientists mit der Wikipedia-Datendisc">
 							<figcaption class="fig__caption limit--s">
@@ -60,17 +71,6 @@
 								Denis Schroeder (WMDE) <a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_mit_Wikipedia-Datendisc.jpg" target="new">(Wikimedia Commons)</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY 4.0</a>
 							</figcaption>
 						</figure>
-					</div>
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://player.vimeo.com/video/196446247?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Summary of the Wikipedia to the Moon project
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div class="swiper-button-next swiper-button-next--green"></div>
