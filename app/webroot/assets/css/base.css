@@ -929,8 +929,12 @@ a:focus {
 }
 .jb-hsplit-list .jb-hsplit {
   margin: 40px;
-  width: 100%;
-  max-width: 430px;
+  width: 430px;
+}
+@media (max-width: 500px) {
+  .jb-hsplit-list .jb-hsplit {
+    width: 100%;
+  }
 }
 
 .come-in {
