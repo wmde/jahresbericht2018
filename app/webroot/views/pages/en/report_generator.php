@@ -7,7 +7,11 @@
 		<div class="hero__filter"></div>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="hero__caption t--epsilon">Atelier Disko (atelierdisko.de) (<a href="https://commons.wikimedia.org/wiki/File:Lizenzhinweisgenerator_Webseitenansicht.png" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="hero__caption t--epsilon">
+			<a href="https://commons.wikimedia.org/wiki/User:Gabriel_Castaldini" target="new">Gabriel Castaldini</a>,
+			<a href="https://commons.wikimedia.org/wiki/File:Carnavalesco.jpg" target="new">Carnavalesco</a>, graphic elements by Atelier Disko,
+			<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" target="new">CC BY-SA 3.0</a>
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Political and legal work</em><br>The right attribution in just a few clicks
