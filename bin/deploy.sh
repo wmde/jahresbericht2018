@@ -86,7 +86,7 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 			echo "Confirm sync: ${TMP}/ -> ${TARGET_USER}@${H}:${TARGET_PATH}"
 			read -p "Looks good? (y/N) " continue
 			if [[ $continue != "y" ]]; then
-				return 1
+				exit 1
 			fi
 		fi
 		rsync --stats -h -z -r --delete \
