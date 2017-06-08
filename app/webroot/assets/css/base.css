@@ -493,23 +493,17 @@ a:focus {
   color: white;
   opacity: .8;
 }
-.mn-container .mn__mini-nav {
+.mn-container .lang-switch {
   position: absolute;
-  bottom: 5vh;
+  bottom: 7vh;
   left: 50%;
   transform: translateX(-50%);
-}
-.mn-container .lang-switch,
-.mn-container .pdf-download {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .05em;
   color: white;
   opacity: .8;
-  padding: 10px;
-  display: inline-block;
 }
-
 .mn__link:hover,
 .mn-container .lang-switch:hover,
 .mn-close:hover {
@@ -649,18 +643,7 @@ a:focus {
   color: white;
   opacity: .8;
 }
-.main-header__nav .pdf-download {
-  position: absolute;
-  top: -13px;
-  right: 100px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: .05em;
-  color: white;
-  opacity: .8;
-}
-.lang-switch:hover,
-.pdf-download:hover {
+.lang-switch:hover {
   opacity: 1;
 }
 
