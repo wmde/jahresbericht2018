@@ -93,7 +93,10 @@ if (isset($report)) {
 		<li><a class="mn__link" href="<?= $url('report', $lang) ?>">Themen</a></li>
 		<li><a class="mn__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 	</ul>
-	<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
+	<div class="mn__mini-nav">
+		<a class="pdf-download t--epsilon" href="">PDF Download</a>
+		<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
+	</div>
 </div>
 
 <header
@@ -126,6 +129,7 @@ if (isset($report)) {
 						<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 					<?php endif ?>
 				</ul>
+			<a class="pdf-download t--epsilon" href="">PDF Download</a>
 			<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
 			</nav>
 			<nav class="nav mobile__nav">
