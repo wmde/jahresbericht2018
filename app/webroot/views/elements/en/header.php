@@ -83,7 +83,10 @@ style="border:0;" alt="" /></p></noscript>
 		<li><a class="mn__link" href="<?= $url('report', $lang) ?>">Focal points</a></li>
 		<li><a class="mn__link" href="<?= $url('finance', $lang) ?>">Finances</a></li>
 	</ul>
-	<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">Deutsch</a>
+	<div class="mn__mini-nav">
+		<a class="pdf-download t--epsilon" href="">PDF Download</a>
+		<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">Deutsch</a>
+	</div>
 </div>
 
 <header
@@ -116,6 +119,7 @@ style="border:0;" alt="" /></p></noscript>
 						<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finances</a></li>
 					<?php endif ?>
 				</ul>
+			<a class="pdf-download t--epsilon" href="">PDF Download</a>
 			<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">Deutsch</a>
 			</nav>
 			<nav class="nav mobile__nav">
