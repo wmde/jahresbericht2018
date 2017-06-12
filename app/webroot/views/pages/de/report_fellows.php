@@ -37,8 +37,19 @@
 	</section>
 	<section class="section cp--center-section">
 		<div class="limit--l">
-			<div class="section__body slider pseudo-slider swiper-container loading">
+			<div class="section__body slider swiper-container loading">
 				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://player.vimeo.com/video/221251282?byline=0&title=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Das Fellow-Programm Freies Wissen ist ein gemeinsames Projekt von Wikimedia Deutschland, dem Stifterverband und der VolkswagenStiftung und richtet sich an Nachwuchswissenschaftlerinnen und -wissenschaftler, die ihre Forschungsprozesse offen gestalten möchten. Kamera: Ian Delú, Joana Kauer, Schnitt: Joana Kauer,
+								<a href="http://creativecommons.org/licenses/by/4.0/deed.de" target="new">CC-BY 4.0</a>
+							</div>
+						</div>
+					</div>
 					<div class="swiper-slide">
 						<div class="video">
 							<div class="video__embed-container">
