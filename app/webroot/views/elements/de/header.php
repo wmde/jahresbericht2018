@@ -129,7 +129,7 @@ if (isset($report)) {
 						<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 					<?php endif ?>
 				</ul>
-			<a class="pdf-download t--epsilon" href="">PDF Download</a>
+			<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2016_de.pdf">PDF Download</a>
 			<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
 			</nav>
 			<nav class="nav mobile__nav">

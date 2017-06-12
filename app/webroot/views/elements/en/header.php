@@ -119,7 +119,7 @@ style="border:0;" alt="" /></p></noscript>
 						<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finances</a></li>
 					<?php endif ?>
 				</ul>
-			<a class="pdf-download t--epsilon" href="">PDF Download</a>
+			<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2016_en.pdf">PDF Download</a>
 			<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">Deutsch</a>
 			</nav>
 			<nav class="nav mobile__nav">
