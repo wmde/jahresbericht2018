@@ -664,6 +664,11 @@ a:focus {
   opacity: 1;
 }
 
+/* TODO: Remove once english pdf download exists. */
+[lang="en"] .pdf-download {
+  opacity: 0 !important;
+}
+
 /* Footer / Imprint
 ---------------------------------------------------------------- */
 .main-footer {

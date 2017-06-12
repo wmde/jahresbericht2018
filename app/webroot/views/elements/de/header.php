@@ -94,7 +94,7 @@ if (isset($report)) {
 		<li><a class="mn__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 	</ul>
 	<div class="mn__mini-nav">
-		<a class="pdf-download t--epsilon" href="">PDF Download</a>
+		<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2016_de.pdf">PDF Download</a>
 		<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
 	</div>
 </div>

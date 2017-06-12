@@ -84,7 +84,7 @@ style="border:0;" alt="" /></p></noscript>
 		<li><a class="mn__link" href="<?= $url('finance', $lang) ?>">Finances</a></li>
 	</ul>
 	<div class="mn__mini-nav">
-		<a class="pdf-download t--epsilon" href="">PDF Download</a>
+		<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2016_en.pdf">PDF Download</a>
 		<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">Deutsch</a>
 	</div>
 </div>
