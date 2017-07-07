@@ -1,0 +1,14 @@
+# -----------------------------------------------------------
+# Environment
+# -----------------------------------------------------------
+
+# The context of this environment.
+CONTEXT="dev"
+
+# The projects name.
+NAME="wmde_bericht2016"
+
+# Enable or disable debug mode.
+DEBUG="y"
+
+
