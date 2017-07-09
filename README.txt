@@ -39,7 +39,7 @@ This project contains 3rd party libraries/source code. These are licensed
 and located as follows.
 
 Path                                     Copyright Holder                License
-....................................................................................................
+..................................................................................................
 assets/js/jquery.js                      JS Foundation and other         MIT
                                          contributors
 assets/js/require.js                     JS Foundation and other         MIT
