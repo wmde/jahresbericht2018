@@ -25,7 +25,7 @@ the applications JavaScript, they must always be present:
 
 These Stylesheets are always loaded and must be present:
 
-  - asssets/css/reset.css
+  - asssets/css/normalize.css
   - asssets/css/base.css
 
 Inside `assets/js` you'll find `base.js` which is used for
