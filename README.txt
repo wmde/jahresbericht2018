@@ -8,7 +8,8 @@ boilerplate for Atelier Disko projects and contains confidential and
 proprietary code.
 
 This distribution especially is made for "micro" projects. Such a project
-doesn't have a backend but consists of plain HTML files, CSS and JS.
+doesn't have a backend but consists of plain HTML files or some simple PHP
+files, CSS and JS.
 
 HTML
 ----
