@@ -20,6 +20,7 @@ requirejs.config({
   paths: {
     // Base
     'jquery': 'jquery',
+    'underscore': 'underscore',
 
     // More requirejs plugins are available in
     // js/require/*. Register them here if needed.
