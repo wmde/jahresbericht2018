@@ -25,6 +25,7 @@ requirejs.config({
     // More requirejs plugins are available in
     // js/require/*. Register them here if needed.
     'domready': 'require/domReady',
+    'async': 'require/async',
 
     // App
     // Add your app specific js paths here.
