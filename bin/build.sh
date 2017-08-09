@@ -35,6 +35,11 @@ version=$(cat VERSION.txt)
 sed -i -e "s|__PROJECT_VERSION__|$version|g" app/webroot/index.*
 rm -f app/webroot/index.*-e
 
+# Babelify in-place for ES2015 compatiblity. Once we do not want to support IE11
+# and iOS Safari <= 9.3 anymore we can safely remove this line or use babel
+# to continously upgrade supported ECMAScript versions.
+babel assets/js --presets es2015 -d assets/js
+
 # yui does not work with jquery 2.2
 # https://github.com/yui/yuicompressor/issues/234
 for f in $(find assets/js -type f -name *.js ! -name jquery.js); do
