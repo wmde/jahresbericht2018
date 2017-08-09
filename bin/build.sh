@@ -74,3 +74,14 @@ done
 # composer -d app dump-autoload --optimize
 
 rm -fr .git*
+
+# Install .htaccess file into webroot, so Apache Webserver picks it up
+# and enables pretty URLs.
+# cat <<EOT >> app/webroot/.htaccess
+# RewriteEngine On
+# RewriteBase /
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^ index.php [L]
+# EOT
+
+
