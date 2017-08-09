@@ -17,16 +17,9 @@
 NAME ?= $(shell basename $(CURDIR))
 DOMAIN ?= $(subst _,-,$(NAME)).dev
 
-ASSETS_PATH = app/assets
+ASSETS_PATH = assets
 
 BUILD_PATH=/tmp/build
-
-# Initializes a freshly cloned project. Must be run only once. 
-.PHONY: init
-init: 
-	sed -i -e "s|__NAME__|$(NAME)|g" Envfile Hoifile Deployfile
-	sed -i -e "s|__DOMAIN__|$(DOMAIN)|g" Envfile Hoifile
-	rm -f Deployfile-e Envfile-e Hoifile-e # older BSDs leave stray files
 
 # -- Dist --
 
@@ -42,4 +35,21 @@ dist: $(BUILD_PATH)
 dist-clean:
 	rm -fr $(BUILD_PATH)
 
+# -- Integrator/Creator --
 
+# Initializes a freshly cloned project. Must be run only once. 
+.PHONY: init
+init: 
+	sed -i -e "s|__NAME__|$(NAME)|g" Envfile Hoifile Deployfile
+	sed -i -e "s|__DOMAIN__|$(DOMAIN)|g" Envfile Hoifile
+	rm -f Deployfile-e Envfile-e Hoifile-e # older BSDs leave stray files
+
+# -- Maintainer --
+
+.PHONY: update-assets
+update-assets:
+	curl https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css > $(ASSETS_PATH)/css/normalize.css
+	curl https://code.jquery.com/jquery-3.2.1.js > $(ASSETS_PATH)/js/jquery.js
+	curl http://requirejs.org/docs/release/2.3.2/comments/require.js > $(ASSETS_PATH)/js/require.js
+	curl https://raw.githubusercontent.com/requirejs/domReady/latest/domReady.js > $(ASSETS_PATH)/js/require/domready.js
+	curl http://underscorejs.org/underscore.js > $(ASSETS_PATH)/js/underscore.js
