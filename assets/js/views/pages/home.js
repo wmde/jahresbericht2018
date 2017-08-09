@@ -20,5 +20,7 @@ require([
 ], function(
   // $
 ) {
+  'use strict';
+
   // ...
 });
