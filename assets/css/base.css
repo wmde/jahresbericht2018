@@ -43,6 +43,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Clearfix */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -50,6 +51,11 @@ body {
 }
 .clearfix:after {
     clear: both;
+}
+
+/* Most often applied to body to prevent scrolling. */
+.no-scroll {
+  overflow: hidden;
 }
 
 /* Text Sizes
