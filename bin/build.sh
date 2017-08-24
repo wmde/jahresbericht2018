@@ -43,18 +43,12 @@ babel assets/js \
 	--presets babel-preset-es2015 \
 	--ignore underscore.js,require.js
 
-# yui does not work with jquery 2.2
-# https://github.com/yui/yuicompressor/issues/234
-for f in $(find assets/js -type f -name *.js ! -name jquery.js); do
-	yuicompressor --type js -o $f.min --nomunge --charset utf-8 $f && mv $f.min $f
-done
-for f in $(find assets/js -type f -name jquery.js); do
+for f in $(find assets/js -type f -name *.js); do
 	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
 done
 
 for f in $(ls assets/css/*.css); do
-	myth $f $f
-	# yuicompressor breaks spaces in calc() expressions
+	cssnextgen $f > $f.tmp && mv $f.tmp $f
 	sqwish $f -o $f.min && mv $f.min $f
 done
 
