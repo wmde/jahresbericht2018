@@ -10,7 +10,7 @@
 # Entries with a leading slash are anchored at the base directory.
 
 # Libraries
-/app/vendors
+/app/vendor
 
 # Data
 /data/dumps/*
