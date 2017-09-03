@@ -10,5 +10,3 @@ NAME="__NAME__"
 
 # Enable or disable debug mode.
 DEBUG="y"
-
-

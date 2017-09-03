@@ -85,5 +85,3 @@ rm -fr .git*
 # RewriteCond %{REQUEST_FILENAME} !-f
 # RewriteRule ^ index.php [L]
 # EOT
-
-
