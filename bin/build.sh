@@ -68,12 +68,14 @@ done
 
 # Ensure we don't install dev tooling in production, for security (potential
 # information disclosure) and performance (larger file search trees) reasons.
-# if [[ $CONTEXT != "prod" ]]; then
-# 	composer -d app --prefer-dist install
-# else
-# 	composer -d app --prefer-dist --no-dev install
-# fi
-# composer -d app dump-autoload --optimize
+if [[ -f app/composer.json ]]; then
+	if [[ $CONTEXT != "prod" ]]; then
+		composer -d app --prefer-dist install
+	else
+		composer -d app --prefer-dist --no-dev install
+	fi
+	composer -d app dump-autoload --optimize
+fi
 
 rm -fr .git*
 
