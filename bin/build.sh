@@ -41,7 +41,7 @@ rm -f app/webroot/index.*-e
 babel assets/js \
 	-d assets/js \
 	--presets babel-preset-es2015 \
-	--ignore underscore.js,require.js,jquery.js,modernizr.js
+	--ignore underscore.js,require.js,require,jquery.js,modernizr.js
 
 for f in $(find assets/js -type f -name *.js); do
 	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
