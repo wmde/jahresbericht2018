@@ -15,6 +15,12 @@ HTML
 ----
 HTML files are to be placed in `app/webroot/`.
 
+PHP
+---
+To enable PHP on this project simply rename `app/webroot/index.html` to 
+`index.php`. You may also create `app/composer.json` when you plan to
+use composer.
+
 Autoloading of CSS and JS
 -------------------------
 These libaries will always be loaded and bootstrap
@@ -45,5 +51,3 @@ information or the respective directories and file headers.
 -- not permitted. Unless required by applicable law or agreed to    --
 -- in writing, software distributed on an "AS IS" BASIS, WITHOUT    --
 -- WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. --
-
-
