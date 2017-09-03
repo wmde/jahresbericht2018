@@ -10,14 +10,7 @@
 # Entries with a leading slash are anchored at the base directory.
 
 # Libraries
-/app/libraries
-
-# Configuration
-/config/nginx/includes/*.conf
-/config/nginx/servers/*.conf
-/config/crons
-/config/logrotate.conf
-/config/supervisord.conf
+/app/vendors
 
 # Data
 /data/dumps/*
@@ -29,12 +22,14 @@
 !/assets/robots.txt
 !/media/robots.txt
 
+# Temporary Files
+/tmp/*
+
 # Logs
 /log/*
 
 # Other
 *.mo
-/integrity_spec
 
 # Placeholder
 empty
