@@ -15,7 +15,7 @@
 #
 
 NAME ?= $(shell basename $(CURDIR))
-DOMAIN ?= $(subst _,-,$(NAME)).dev
+DOMAIN ?= $(subst _,-,$(NAME)).test
 
 ASSETS_PATH = assets
 
