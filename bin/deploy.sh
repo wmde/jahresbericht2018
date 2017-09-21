@@ -12,7 +12,7 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #
 # You should have received a copy of the AD General Software
-# License. If not, see http://atelierdisko.de/licenses.
+# License. If not, see https://atelierdisko.de/licenses.
 #
 
 set -o nounset
@@ -38,14 +38,15 @@ SOURCE_PATH=$(pwd)
 # For each deployment we'll use a unique build directory, to allow
 # parallel deployments i.e. of prod and stage branches.
 TMP=$(mktemp -d -t deploy.XXXX)
-DISTOUT=$(mktemp -t deploy.XXXX.dist.out)
+function cleanup { rm -rf $TMP; }
+trap cleanup EXIT
 
 # This is the entire build phase.
 git clone --verbose --single-branch --recursive --no-hardlinks \
 	--branch $(git rev-parse --abbrev-ref HEAD) \
 	$SOURCE_PATH $TMP
 cd $TMP
-bin/build.sh 2>&1 | tee $DISTOUT
+bin/build.sh
 cd -
 
 if [[ $TRANSFER_METHOD == "manual" ]]; then
@@ -111,28 +112,13 @@ else
 fi
 
 if [[ $SLACK_WEBHOOK_URL != "" ]]; then
-	_DISTOUT=$(cat $DISTOUT | sed 's/\\/\\\\/g' | sed 's/"/\\"/g' | sed "s/'/\'/g")
-	JSON="
-	{
-		\"text\": \"Project *$(basename $(pwd))* (v$(cat $TMP/VERSION.txt)) has been successfully deployed to ${TARGET_HOSTS// /, } without any errors.\",
-		\"attachments\": [
-			{
-				\"fallback\": \"Combined output of the build step\",
-				\"footer\": \"bin/build.sh\",
-				\"title\": \"Combined output of the build step\",
-				\"text\": \"$_DISTOUT\",
-				\"ts\": $(stat --printf '%Y' $DISTOUT),
-				\"color\": \"#36a64f\"
-			}
-		]
-	}
-"
+	JSON="{
+		\"text\": \"Deployed project *$(basename $(pwd))* (v$(cat $TMP/VERSION.txt)) successfully to ${TARGET_HOSTS// /, } without any errors.\"
+	}"
 	echo -n "Sending Slack notification..."
 	curl -s -S -X POST -H 'Content-type: application/json' --data "$JSON" $SLACK_WEBHOOK_URL
 	echo
 fi
 
-rm $DISTOUT
-rm -rf $TMP
 echo "Deployment finished without an error."
 echo "It's now: $(date -u +%T) UTC"
