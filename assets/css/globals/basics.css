@@ -1,0 +1,38 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Licensed under the AD App Software License v1.
+ *
+ * This software is proprietary and confidential. Redistribution
+ * not permitted. Unless required by applicable law or agreed to
+ * in writing, software distributed on an "AS IS" BASIS, WITHOUT-
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * You should have received a copy of the AD App Software
+ * License. If not, see https://atelierdisko.de/licenses.
+ */
+
+body {
+  font-family: var(--font-family-sans);
+  line-height: 1.35;
+
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  color: var(--color-dim-black);
+  background-color: #fff;
+
+  padding: 20px 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+abbr[title] {
+  text-decoration: none;
+}

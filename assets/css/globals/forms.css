@@ -1,0 +1,52 @@
+/*!
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Licensed under the AD App Software License v1.
+ *
+ * This software is proprietary and confidential. Redistribution
+ * not permitted. Unless required by applicable law or agreed to
+ * in writing, software distributed on an "AS IS" BASIS, WITHOUT-
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *
+ * You should have received a copy of the AD App Software
+ * License. If not, see https://atelierdisko.de/licenses.
+ */
+
+input,
+textarea {
+  /* All inputs need to have font-family set on them again,
+     they sometimes not inherit from body correctly. */
+  font-family: var(--font-family-sans);
+
+  /* Fix iOS styling. */
+  -webkit-appearance: none;
+  -webkit-border-radius:0;
+  border-radius: 0;
+
+  color: var(--color-dim-black);
+  background: transparent;
+  border: 1px solid var(--color-dim-black);
+  padding: .5em;
+}
+textarea:focus,
+input:focus {
+  background: white;
+  color: #000;
+  outline: none; /* Disable auto glow for webkit. */
+}
+form label {
+  display: block;
+  margin-bottom: .25em;
+}
+form input,
+form textarea {
+  margin-bottom: 1em;
+}
+input,
+textarea {
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: #030303;
+}

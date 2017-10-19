@@ -1,8 +1,6 @@
-@charset "UTF-8";
 /*!
- * App Base Stylesheet
- *
- * Copyright (c) 2013 Atelier Disko - All rights reserved.
+ * Copyright 2013 David Persson. All rights reserved.
+ * Copyright 2016 Atelier Disko. All rights reserved.
  *
  * Licensed under the AD App Software License v1.
  *
@@ -15,70 +13,21 @@
  * License. If not, see https://atelierdisko.de/licenses.
  */
 
-:root {
-  /* Colors */
-  --color-black: #1b1b1b;
-}
+@import "normalize.css";
+@import "globals/variables.css";
+@import "globals/basics.css";
+@import "globals/hyperlinks.css";
+@import "globals/text.css";
+@import "globals/util.css";
+@import "globals/headlines.css";
+@import "globals/layout.css";
+@import "globals/header.css";
+@import "globals/footer.css";
+@import "globals/forms.css";
+@import "globals/buttons.css";
 
-/* Basics
----------------------------------------------------------------- */
-body {
-  font-size: 16px;
-  font-family: Helvetica, Arial, sans-serif;
-
-  text-rendering: optimizeLegibility;
-  font-feature-settings: "kern" 1, "liga" 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-
-  color: var(--color-black);
-  background-color: #fff;
-
-  padding: 40px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Clearfix */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-
-/* Most often applied to body to prevent scrolling. */
-.no-scroll {
-  overflow: hidden;
-}
-
-/* Text Sizes
----------------------------------------------------------------- */
-
-/* Headlines
----------------------------------------------------------------- */
-
-/* Hyperlinks
----------------------------------------------------------------- */
-a:focus {
-  outline: none;
-}
-
-/* Header
----------------------------------------------------------------- */
-
-/* Footer
----------------------------------------------------------------- */
-
-/* Forms
----------------------------------------------------------------- */
-
-/* Buttons
----------------------------------------------------------------- */
-.button {}
+/*
+  All "views" CSS files, except those in "elements", are loaded
+  automatically when needed. However its good practive to scope
+  them to their page.
+*/
