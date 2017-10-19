@@ -1,7 +1,5 @@
-#
-# Atelier Disko Distribution
-#
-# Copyright (c) 2013 Atelier Disko - All rights reserved.
+# Copyright 2013 David Persson. All rights reserved.
+# Copyright 2016 Atelier Disko. All rights reserved.
 #
 # Licensed under the AD General Software License v1.
 #
@@ -11,8 +9,7 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #
 # You should have received a copy of the AD General Software
-# License. If not, see http://atelierdisko.de/licenses.
-#
+# License. If not, see https://atelierdisko.de/licenses.
 
 NAME ?= $(shell basename $(CURDIR))
 DOMAIN ?= $(subst _,-,$(NAME)).test

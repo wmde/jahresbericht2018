@@ -3,8 +3,15 @@
 # Copyright 2013 David Persson. All rights reserved.
 # Copyright 2016 Atelier Disko. All rights reserved.
 #
-# Use of this source code is governed by a BSD-style
-# license that can be found in the LICENSE file.
+# Licensed under the AD General Software License v1.
+#
+# This software is proprietary and confidential. Redistributions
+# not permitted. Unless required by applicable law or agreed to
+# in writing, software distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#
+# You should have received a copy of the AD General Software
+# License. If not, see https://atelierdisko.de/licenses.
 
 set -o nounset
 set -o errexit

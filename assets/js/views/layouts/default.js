@@ -1,7 +1,6 @@
 /*!
- * App
- *
- * Copyright (c) 2013 Atelier Disko - All rights reserved.
+ * Copyright 2013 David Persson. All rights reserved.
+ * Copyright 2016 Atelier Disko. All rights reserved.
  *
  * Licensed under the AD App Software License v1.
  *

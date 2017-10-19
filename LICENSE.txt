@@ -1,5 +1,5 @@
-Copyright (c) 2013 David Persson - All rights reserved. 
-Copyright (c) 2016 Atelier Disko - All rights reserved. 
+Copyright 2013 David Persson. All rights reserved.
+Copyright 2016 Atelier Disko. All rights reserved.
 
 This project consists of multiple components which have differing licenses.
 Please consult the license contract signed with Atelier Disko for more
