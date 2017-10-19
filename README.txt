@@ -1,5 +1,5 @@
-Atelier Disko Distribution
--- Distribution for Atelier Disko projects.
+Atelier Disko Micro Distribution
+-- Distribution for Atelier Disko micro projects.
 
 Abstract
 --------
@@ -20,34 +20,3 @@ PHP
 To enable PHP on this project simply rename `app/webroot/index.html` to 
 `index.php`. You may also create `app/composer.json` when you plan to
 use composer.
-
-Autoloading of CSS and JS
--------------------------
-These libaries will always be loaded and bootstrap
-the applications JavaScript, they must always be present:
-
-  - assets/js/jquery.js
-  - assets/js/require.js
-  - assets/js/base.js
-
-These Stylesheets are always loaded and must be present:
-
-  - asssets/css/normalize.css
-  - asssets/css/base.css
-
-Inside `assets/js` you'll find `base.js` which is used for
-requireJS configuration and loading. Script files that are included
-directly are contained inside `assets/js/views/`.
-
-Copyright & License
--------------------
-Copyright (c) 2013 Atelier Disko - All rights reserved. 
-
-This project consists of multiple components which have differing licenses.
-Please consult the license contract signed with Atelier Disko for more
-information or the respective directories and file headers.
-
--- This software is proprietary and confidential. Redistributions   --
--- not permitted. Unless required by applicable law or agreed to    --
--- in writing, software distributed on an "AS IS" BASIS, WITHOUT    --
--- WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. --
