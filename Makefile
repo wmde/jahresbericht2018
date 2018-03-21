@@ -34,6 +34,9 @@ EXTRACT_SOURCES = $(shell bash -c "find app/{views,config,documents,models,contr
 
 # -- Integrator/Creator --
 
+.PHONY: install
+install: prefill
+
 .PHONY: prefill
 prefill: 
 	sed -i -e "s|__NAME__|$(NAME)|g" Hoifile Envfile Deployfile
@@ -41,9 +44,6 @@ prefill:
 	sed -i -e "s|__SECRET_BASE__|$(SECRET_BASE)|g" Envfile
 	# Some sed leave stray files.
 	rm -f Hoifile-e Envfile-e Deployfile-e
-
-.PHONY: init
-init: 
 
 # -- Utilities --
 
