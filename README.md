@@ -19,7 +19,7 @@ HTML files are to be placed in `app/webroot/`.
 
 To enable PHP on this project simply rename `app/webroot/index.html` to 
 `index.php`. You may also create `app/composer.json` when you plan to
-use composer.
+use composer. You also need to change the `app` directive inside the `Hoifile`.
 
 # Copyright & License
 

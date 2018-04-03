@@ -13,8 +13,9 @@ name = "__NAME__"
 context = "dev"
 
 app {
-	kind = "php"
-	version = "5.6.0"
+	kind = "static"
+	# kind = "php"
+	# version = "5.6.0"
 }
 
 domain "__DOMAIN__" {
