@@ -3,15 +3,13 @@
 # Copyright 2013 David Persson. All rights reserved.
 # Copyright 2016 Atelier Disko. All rights reserved.
 #
-# Licensed under the AD General Software License v1.
+# Use of this source code is governed by the AD General Software
+# License v1 that can be found under https://atelierdisko.de/licenses
 #
 # This software is proprietary and confidential. Redistributions
 # not permitted. Unless required by applicable law or agreed to
 # in writing, software distributed on an "AS IS" BASIS, WITHOUT
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#
-# You should have received a copy of the AD General Software
-# License. If not, see https://atelierdisko.de/licenses.
 
 set -o nounset
 set -o errexit
@@ -28,18 +26,36 @@ sed -i -e "s|__VERSION_BUILD__|$revision|g" VERSION.txt
 # Workaround for older BSD versions of sed that need
 # a suffix after -i while interpreting -e as the suffix.
 [[ -f VERSION.txt-e ]] && rm VERSION.txt-e
-
-version=$(cat VERSION.txt)
-sed -i -e "s|__PROJECT_VERSION__|$version|g" app/webroot/index.*
+sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/index.*
 rm -f app/webroot/index.*-e
 
-# Babelify in-place for ES2015 compatiblity. Once we do not want to support IE11
-# and iOS Safari <= 9.3 anymore we can safely remove this line or use babel
-# to continously upgrade supported ECMAScript versions.
-babel assets/js \
-	-d assets/js \
-	--presets babel-preset-es2015 \
-	--ignore underscore.js,require.js,require,jquery.js,modernizr.js
+# Restricts assets building to app's assets. Libraries must
+# provide their own buildscript when they ship assets. This
+# is because we cannot know if certain assets will need
+# special compressors.
+
+# Babelify in-place for full current ESx compatiblity.
+cat << EOF > .babelrc
+{
+	"presets": [
+		["env", {"targets": {"browsers": [
+			"last 2 versions",
+			"> 5%",
+			"ie 11",
+			"ff >= 48"
+		]}}]
+	],
+	"ignore": [
+		"underscore.js",
+		"require.js",
+		"require",
+		"jquery.js",
+		"modernizr.js",
+		"core.js"
+	]
+}
+EOF
+babel assets/js -d assets/js
 
 for f in $(find assets/js -type f -name *.js); do
 	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
@@ -48,6 +64,10 @@ done
 for f in $(ls assets/css/*.css); do
 	cssnextgen $f > $f.tmp && mv $f.tmp $f
 	sqwish $f -o $f.min && mv $f.min $f
+done
+for f in $(find assets/css/views -type f -name *.css); do
+    cssnextgen $f > $f.tmp && mv $f.tmp $f
+    sqwish $f -o $f.min && mv $f.min $f
 done
 
 # We can't restrict image search to ico and img directories as images may be
@@ -68,20 +88,11 @@ done
 # information disclosure) and performance (larger file search trees) reasons.
 if [[ -f app/composer.json ]]; then
 	if [[ $CONTEXT != "prod" ]]; then
-		composer -d app --prefer-dist install
+		composer install -d app --prefer-dist
 	else
-		composer -d app --prefer-dist --no-dev install
+		composer install -d app --prefer-dist --no-dev
 	fi
-	composer -d app dump-autoload --optimize
+	composer dump-autoload  -d app --optimize
 fi
 
 rm -fr .git*
-
-# Install .htaccess file into webroot, so Apache Webserver picks it up
-# and enables pretty URLs.
-# cat <<EOT >> app/webroot/.htaccess
-# RewriteEngine On
-# RewriteBase /
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteRule ^ index.php [L]
-# EOT

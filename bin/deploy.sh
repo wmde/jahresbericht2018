@@ -3,15 +3,13 @@
 # Copyright 2013 David Persson. All rights reserved.
 # Copyright 2016 Atelier Disko. All rights reserved.
 #
-# Licensed under the AD General Software License v1.
+# Use of this source code is governed by the AD General Software
+# License v1 that can be found under https://atelierdisko.de/licenses
 #
 # This software is proprietary and confidential. Redistributions
 # not permitted. Unless required by applicable law or agreed to
 # in writing, software distributed on an "AS IS" BASIS, WITHOUT
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#
-# You should have received a copy of the AD General Software
-# License. If not, see https://atelierdisko.de/licenses.
 
 set -o nounset
 set -o errexit
@@ -63,8 +61,10 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 	for H in $TARGET_HOSTS; do
 		if [[ $ASSUME_YES != "y" ]]; then
 			out=$(
-				rsync --stats -h -z -r --delete \
-					--exclude=$(echo $TRANSFER_IGNORE | sed  's/ / --exclude=/g') \
+				rsync --stats -h -z -r \
+					--rsh "ssh -p ${TARGET_PORT}" \
+					--delete \
+					--exclude=$(echo ${TRANSFER_IGNORE} | sed  's/ / --exclude=/g') \
 					--links \
 					--times \
 					--verbose \
@@ -88,8 +88,10 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 				exit 1
 			fi
 		fi
-		rsync --stats -h -z -r --delete \
-				--exclude=$(echo $TRANSFER_IGNORE | sed  's/ / --exclude=/g') \
+		rsync --stats -h -z -r \
+				--rsh "ssh -p ${TARGET_PORT}" \
+				--delete \
+				--exclude=$(echo ${TRANSFER_IGNORE} | sed  's/ / --exclude=/g') \
 				--links \
 				--times \
 				--verbose \
@@ -100,7 +102,7 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 	if [[ $POST_TRANSFER_COMMANDS != "" ]]; then
 		for H in $TARGET_HOSTS; do
 			echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> command execution ${TARGET_USER}@${H}:${TARGET_PATH}"
-			ssh -T ${TARGET_USER}@${H} "cd $TARGET_PATH && $POST_TRANSFER_COMMANDS"
+			ssh -p ${TARGET_PORT} -T ${TARGET_USER}@${H} "cd ${TARGET_PATH} && ${POST_TRANSFER_COMMANDS}"
 			echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< command execution ${TARGET_USER}@${H}:${TARGET_PATH} "
 		done
 	fi

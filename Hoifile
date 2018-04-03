@@ -1,22 +1,37 @@
 # Copyright 2013 David Persson. All rights reserved.
 # Copyright 2016 Atelier Disko. All rights reserved.
 #
-# Licensed under the AD General Software License v1.
+# Use of this source code is governed by the AD General Software
+# License v1 that can be found under https://atelierdisko.de/licenses
 #
 # This software is proprietary and confidential. Redistributions
 # not permitted. Unless required by applicable law or agreed to
 # in writing, software distributed on an "AS IS" BASIS, WITHOUT
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#
-# You should have received a copy of the AD General Software
-# License. If not, see https://atelierdisko.de/licenses.
 
 name = "__NAME__"
 context = "dev"
 
-domain __DOMAIN__ {
+app {
+	kind = "php"
+	version = "5.6.0"
+}
+
+domain "__DOMAIN__" {
 	www = "drop"
+	# Either paths or special string "!self-signed"
+	SSL = {
+		certificate = "!self-signed"
+		certificateKey = "!self-signed"
+	}
 	# auth {
-	# 	password = "changeme!"
+	# 	password = "__DOMAIN_AUTH_PASSWORD__"
 	# }
+}
+
+volume "tmp" {
+	isTemporary = true
+}
+volume "log" {
+	isTemporary = true
 }

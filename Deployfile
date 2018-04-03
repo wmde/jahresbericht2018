@@ -1,15 +1,12 @@
-# Copyright 2013 David Persson. All rights reserved.
 # Copyright 2016 Atelier Disko. All rights reserved.
 #
-# Licensed under the AD General Software License v1.
+# Use of this source code is governed by the AD General Software
+# License v1 that can be found under https://atelierdisko.de/licenses
 #
 # This software is proprietary and confidential. Redistributions
 # not permitted. Unless required by applicable law or agreed to
 # in writing, software distributed on an "AS IS" BASIS, WITHOUT
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#
-# You should have received a copy of the AD General Software
-# License. If not, see https://atelierdisko.de/licenses.
 
 # One or multiple target hosts to deploy to. 
 TARGET_HOSTS="web0.disko.io"
@@ -18,8 +15,8 @@ TARGET_HOSTS="web0.disko.io"
 # The same user will be used for each host.
 TARGET_USER="deploy"
 
-# Password, i.e. for FTP based deploys.
-TARGET_PASSWORD=""
+# Allows to switch to a non-standard port when using SSH.
+TARGET_PORT="22"
 
 # The target path on target host.
 TARGET_PATH="/var/www/__NAME__"
@@ -38,7 +35,7 @@ TRANSFER_IGNORE=""
 
 # Command/s to execute after transferring. Commands will be executed by
 # TARGET_USER on a target host using TARGET_PATH as the working directory.
-POST_TRANSFER_COMMANDS="sudo hoictl load"
+POST_TRANSFER_COMMANDS="chmod -R a+rwX tmp log && sudo hoictl load"
 
 # Listing branches that should be deployed automatically, 
 # i.e. when receiving a push.

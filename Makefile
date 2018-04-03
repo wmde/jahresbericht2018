@@ -1,36 +1,25 @@
 # Copyright 2014 David Persson. All rights reserved.
 # Copyright 2017 Atelier Disko. All rights reserved.
 #
-# Licensed under the AD General Software License v1.
+# Use of this source code is governed by the AD General Software
+# License v1 that can be found under https://atelierdisko.de/licenses
 #
 # This software is proprietary and confidential. Redistributions
 # not permitted. Unless required by applicable law or agreed to
 # in writing, software distributed on an "AS IS" BASIS, WITHOUT
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#
-# You should have received a copy of the AD General Software
-# License. If not, see https://atelierdisko.de/licenses.
 
 NAME ?= $(shell basename $(CURDIR))
 DOMAIN ?= $(subst _,-,$(NAME)).test
 
-ASSETS_PATH = assets
-
-# Used when building the project, allowd to be overwritten, so external scripts
-# may pick a unique or simply differnent location where they want to process
-# the build for themselves without the possibility it being touch from other
+# Used when building the project, allowed to be overwritten, so external scripts
+# may pick a unique or simply different location where they want to process
+# the build for themselves without the possibility it being touched by other
 # processes.
 BUILD_PATH ?= /tmp/build
 
-# Base path for assets, here to make it easy to change..
-ASSETS_PATH = app/assets
-
-# Asset directories that need to be linked from modules.
-MODULE_ASSETS_LINKS = $(patsubst %/,%,$(subst app/libraries/,assets/,$(dir $(shell find app/libraries -type d -name 'assets'))))
-
-# These files will be checked for translatable strings. When they
-# are modified strings will be re-extracted.
-EXTRACT_SOURCES = $(shell bash -c "find app/{views,config,documents,models,controllers,extensions,mails} -name '*.php'")
+# Base path for assets, here to make it easy to change.
+ASSETS_PATH = assets
 
 # -- Integrator/Creator --
 
@@ -74,3 +63,4 @@ update-assets:
 	curl http://requirejs.org/docs/release/2.3.2/comments/require.js > $(ASSETS_PATH)/js/require.js
 	curl https://raw.githubusercontent.com/requirejs/domReady/latest/domReady.js > $(ASSETS_PATH)/js/require/domready.js
 	curl http://underscorejs.org/underscore.js > $(ASSETS_PATH)/js/underscore.js
+	curl -L https://raw.githubusercontent.com/zloirock/core-js/master/client/shim.js > $(ASSETS_PATH)/js/compat/core.js
