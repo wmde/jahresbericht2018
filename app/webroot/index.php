@@ -1,21 +1,29 @@
 <?php
+/**
+ * Wikimedia Jahresbericht 2017
+ *
+ * Copyright (c) 2017 Atelier Disko - All rights reserved.
+ *
+ * Use of this source code is governed by the AGPL v3
+ * license that can be found in the LICENSE file.
+ */
 
 define('APP_PATH', __DIR__);
-define('DOMAIN', 'wmde-bericht2017.dev');
+define('DOMAIN', 'wmde-bericht2017.test');
 
-// default language is german
+// The default language is german.
 $lang = 'de';
 $path = $_SERVER['REQUEST_URI'];
 $isCanonical = false;
 
-// language controller
+// Language Controller
 if (preg_match('#^/(de|en)(/.*)?#', $path, $matches)) {
 	$isCanonical = true;
 	$lang = $matches[1];
 	$path = '/' . ltrim($matches[2], '/');
 }
 
-// link controller
+// Link Controller
 $url = function($goal, $lang) {
 	$path = $lang . '/' . trim($goal, '/');
 	return '/' . trim($path, '/');
@@ -29,7 +37,7 @@ $translateFrom = function($path, $lang) use ($url) {
 	}
 };
 
-// view controller
+// View controller
 $viewFileFromURI = function($path, $lang) {
 	$viewBase = APP_PATH . '/views/pages/' . $lang;
 	$viewName = str_replace('/', '_', trim($path, '/'));
@@ -49,7 +57,7 @@ $viewFileFromURI = function($path, $lang) {
 	return $viewFile;
 };
 
-// view renderer
+// View Renderer
 $viewFile = $viewFileFromURI($path, $lang);
 
 if ($viewFile === false || trim($path, '/') === 'home') {
