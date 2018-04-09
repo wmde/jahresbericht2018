@@ -31,14 +31,15 @@ SOURCE_PATH=$(pwd)
 # For each deployment we'll use a unique build directory, to allow
 # parallel deployments i.e. of prod and stage branches.
 TMP=$(mktemp -d -t deploy.XXXX)
-DISTOUT=$(mktemp -t deploy.XXXX.dist.out)
+function cleanup { rm -rf $TMP; }
+trap cleanup EXIT
 
 # This is the entire build phase.
 git clone --verbose --single-branch --recursive --no-hardlinks \
 	--branch $(git rev-parse --abbrev-ref HEAD) \
 	$SOURCE_PATH $TMP
 cd $TMP
-bin/build.sh 2>&1 | tee $DISTOUT
+bin/build.sh
 cd -
 
 if [[ $TRANSFER_METHOD == "manual" ]]; then
@@ -57,8 +58,10 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 	for H in $TARGET_HOSTS; do
 		if [[ $ASSUME_YES != "y" ]]; then
 			out=$(
-				rsync --stats -h -z -r --delete \
-					--exclude=$(echo $TRANSFER_IGNORE | sed  's/ / --exclude=/g') \
+				rsync --stats -h -z -r \
+					--rsh "ssh -p ${TARGET_PORT}" \
+					--delete \
+					--exclude=$(echo ${TRANSFER_IGNORE} | sed  's/ / --exclude=/g') \
 					--links \
 					--times \
 					--verbose \
@@ -79,11 +82,13 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 			echo "Confirm sync: ${TMP}/ -> ${TARGET_USER}@${H}:${TARGET_PATH}"
 			read -p "Looks good? (y/N) " continue
 			if [[ $continue != "y" ]]; then
-				return 1
+				exit 1
 			fi
 		fi
-		rsync --stats -h -z -r --delete \
-				--exclude=$(echo $TRANSFER_IGNORE | sed  's/ / --exclude=/g') \
+		rsync --stats -h -z -r \
+				--rsh "ssh -p ${TARGET_PORT}" \
+				--delete \
+				--exclude=$(echo ${TRANSFER_IGNORE} | sed  's/ / --exclude=/g') \
 				--links \
 				--times \
 				--verbose \
@@ -94,7 +99,7 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 	if [[ $POST_TRANSFER_COMMANDS != "" ]]; then
 		for H in $TARGET_HOSTS; do
 			echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> command execution ${TARGET_USER}@${H}:${TARGET_PATH}"
-			ssh -T ${TARGET_USER}@${H} "cd $TARGET_PATH && $POST_TRANSFER_COMMANDS"
+			ssh -p ${TARGET_PORT} -T ${TARGET_USER}@${H} "cd ${TARGET_PATH} && ${POST_TRANSFER_COMMANDS}"
 			echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< command execution ${TARGET_USER}@${H}:${TARGET_PATH} "
 		done
 	fi
@@ -104,28 +109,13 @@ else
 fi
 
 if [[ $SLACK_WEBHOOK_URL != "" ]]; then
-	_DISTOUT=$(cat $DISTOUT | sed 's/\\/\\\\/g' | sed 's/"/\\"/g' | sed "s/'/\'/g")
-	JSON="
-	{
-		\"text\": \"Project *$(basename $(pwd))* (v$(cat $TMP/VERSION.txt)) has been successfully deployed to ${TARGET_HOSTS// /, } without any errors.\",
-		\"attachments\": [
-			{
-				\"fallback\": \"Combined output of the build step\",
-				\"footer\": \"bin/build.sh\",
-				\"title\": \"Combined output of the build step\",
-				\"text\": \"$_DISTOUT\",
-				\"ts\": $(stat --printf '%Y' $DISTOUT),
-				\"color\": \"#36a64f\"
-			}
-		]
-	}
-"
+	JSON="{
+		\"text\": \"Deployed project *$(basename $(pwd))* (v$(cat $TMP/VERSION.txt)) successfully to ${TARGET_HOSTS// /, } without any errors.\"
+	}"
 	echo -n "Sending Slack notification..."
 	curl -s -S -X POST -H 'Content-type: application/json' --data "$JSON" $SLACK_WEBHOOK_URL
 	echo
 fi
 
-rm $DISTOUT
-rm -rf $TMP
 echo "Deployment finished without an error."
 echo "It's now: $(date -u +%T) UTC"

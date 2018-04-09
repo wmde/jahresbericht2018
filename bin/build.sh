@@ -23,25 +23,46 @@ sed -i -e "s|__VERSION_BUILD__|$revision|g" VERSION.txt
 # Workaround for older BSD versions of sed that need
 # a suffix after -i while interpreting -e as the suffix.
 [[ -f VERSION.txt-e ]] && rm VERSION.txt-e
-
-version=$(cat VERSION.txt)
-sed -i -e "s|__PROJECT_VERSION__|$version|g" app/webroot/views/elements/de/header.php
-sed -i -e "s|__PROJECT_VERSION__|$version|g" app/webroot/views/elements/en/header.php
+sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/index.*
+sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/views/elements/de/header.php
+sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/views/elements/en/header.php
+rm -f app/webroot/index.*-e
 rm -f app/webroot/views/elements/*/header.php-e
 
-# yui does not work with jquery 2.2
-# https://github.com/yui/yuicompressor/issues/234
-for f in $(find app/webroot/assets/js -type f -name *.js ! -name jquery.js); do
-	yuicompressor --type js -o $f.min --nomunge --charset utf-8 $f && mv $f.min $f
-done
-for f in $(find app/webroot/assets/js -type f -name jquery.js); do
+# Babelify in-place for full current ESx compatiblity.
+cat << EOF > .babelrc
+{
+	"presets": [
+		["env", {"targets": {"browsers": [
+			"last 2 versions",
+			"> 5%",
+			"ie 11",
+			"ff >= 48"
+		]}}]
+	],
+	"ignore": [
+		"underscore.js",
+		"require.js",
+		"require",
+		"jquery.js",
+		"modernizr.js",
+		"core.js"
+	]
+}
+EOF
+babel app/webroot/assets/js -d app/webroot/assets/js
+
+for f in $(find app/webroot/assets/js -type f -name *.js); do
 	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
 done
 
 for f in $(ls app/webroot/assets/css/*.css); do
-	myth $f $f
-	# yuicompressor breaks spaces in calc() expressions
+	cssnextgen $f > $f.tmp && mv $f.tmp $f
 	sqwish $f -o $f.min && mv $f.min $f
+done
+for f in $(find app/webroot/assets/css/views -type f -name *.css); do
+    cssnextgen $f > $f.tmp && mv $f.tmp $f
+    sqwish $f -o $f.min && mv $f.min $f
 done
 
 # We can't restrict image search to ico and img directories as images may be
@@ -60,11 +81,13 @@ done
 
 # Ensure we don't install dev tooling in production, for security (potential
 # information disclosure) and performance (larger file search trees) reasons.
-# if [[ $CONTEXT != "prod" ]]; then
-# 	composer -d app --prefer-dist install
-# else
-# 	composer -d app --prefer-dist --no-dev install
-# fi
-# composer -d app dump-autoload --optimize
+if [[ -f app/composer.json ]]; then
+	if [[ $CONTEXT != "prod" ]]; then
+		composer install -d app --prefer-dist
+	else
+		composer install -d app --prefer-dist --no-dev
+	fi
+	composer dump-autoload  -d app --optimize
+fi
 
 rm -fr .git*

@@ -14,8 +14,8 @@ TARGET_HOSTS="web0.disko.io"
 # The same user will be used for each host.
 TARGET_USER="deploy"
 
-# Password, i.e. for FTP based deploys.
-TARGET_PASSWORD=""
+# Allows to switch to a non-standard port when using SSH.
+TARGET_PORT="22"
 
 # The target path on target host.
 TARGET_PATH="/var/www/wmde_bericht2017"
@@ -34,7 +34,7 @@ TRANSFER_IGNORE=""
 
 # Command/s to execute after transferring. Commands will be executed by
 # TARGET_USER on a target host using TARGET_PATH as the working directory.
-POST_TRANSFER_COMMANDS="sudo hoictl load"
+POST_TRANSFER_COMMANDS="chmod -R a+rwX tmp log && sudo hoictl load"
 
 # Listing branches that should be deployed automatically, 
 # i.e. when receiving a push.
