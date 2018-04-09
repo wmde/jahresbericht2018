@@ -1,5 +1,5 @@
 #
-# Wikimedia Jahresbericht 2016
+# Wikimedia Jahresbericht 2017
 #
 # Copyright (c) 2017 Atelier Disko - All rights reserved.
 #
@@ -18,7 +18,7 @@ TARGET_USER="deploy"
 TARGET_PASSWORD=""
 
 # The target path on target host.
-TARGET_PATH="/var/www/wmde_bericht2016"
+TARGET_PATH="/var/www/wmde_bericht2017"
 
 # The transfer method to use during deployment. Can be either the follwing. Most
 # methods use TARGET_HOST, TARGET_USER and TARGET_PASSWORD (when set) to connect.

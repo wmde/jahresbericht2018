@@ -1,5 +1,5 @@
 #
-# Wikimedia Jahresbericht 2016
+# Wikimedia Jahresbericht 2017
 #
 # Copyright (c) 2017 Atelier Disko - All rights reserved.
 #
@@ -7,9 +7,9 @@
 # license that can be found in the LICENSE file.
 #
 
-name = "wmde_bericht2016"
+name = "wmde_bericht2017"
 context = "dev"
 
-domain "wmde-bericht2016.dev" {
+domain "wmde-bericht2017.dev" {
 	www = "drop"
 }

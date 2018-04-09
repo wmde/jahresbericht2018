@@ -1,7 +1,7 @@
 <?php
 
 define('APP_PATH', __DIR__);
-define('DOMAIN', 'wmde-bericht2016.dev');
+define('DOMAIN', 'wmde-bericht2017.dev');
 
 // default language is german
 $lang = 'de';

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Wikimedia Jahresbericht 2016
+# Wikimedia Jahresbericht 2017
 #
 # Copyright (c) 2017 Atelier Disko - All rights reserved.
 #

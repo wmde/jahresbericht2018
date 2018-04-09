@@ -1,8 +1,8 @@
-Wikimedia Deutschland Jahresbericht 2016
+Wikimedia Deutschland Jahresbericht 2017
 
 Abstract
 --------
-This is the Wikimedia Deutschland Jahresbericht 2016 website. 
+This is the Wikimedia Deutschland Jahresbericht 2017 website. 
 
 Server-side rendering
 ----------------------

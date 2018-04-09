@@ -6,7 +6,7 @@
 CONTEXT="dev"
 
 # The projects name.
-NAME="wmde_bericht2016"
+NAME="wmde_bericht2017"
 
 # Enable or disable debug mode.
 DEBUG="y"
