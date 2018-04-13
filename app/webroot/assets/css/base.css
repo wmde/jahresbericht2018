@@ -10,16 +10,15 @@
  */
 
 :root {
-  --color-purple: #622181;
-  --color-green: #339967;
-  --color-light-blue: #dce4e8;
+  --color-orange: #f29400;
+  --color-green: #339966;
   --color-black: #1a1a1a;
-  --color-gray: #636466;
-  --color-light-gray: #a5a5a5;
-
-  --color-diag-gradient: linear-gradient(45deg, #339967, #622181);
-  --color-diag-gradient-home: linear-gradient(-45deg, #622181, #339967);
-  --color-diag-gradient-fund: linear-gradient(45deg, #ffffff, #dce4e8);
+  --color-gray: #f6f6f6;
+  --color-lightgreen: #e2efe9;
+  --color-lightorange: #fceed9;
+  --color-gradient-orange: linear-gradient(#F8B54A, #f29400);
+  --color-gradient-green: linear-gradient(#339966, #50B78D);
+  --color-gradient-green--inverse: linear-gradient(#50B78D, #339966);
 
   --font-family-sans: 'Montserrat', sans-serif;
   --font-family-serif: 'Source Serif Pro', serif;
@@ -182,11 +181,11 @@ body > main {
 .h--alpha {
   font-size: 80px;
   font-family: var(--font-family-sans);
-  font-weight: 500; /* manually adjusted to design */
+  font-weight: 700; /* manually adjusted to design */
   line-height: 1.2;
 }
 .h--beta {
-  font-size: 36px;
+  font-size: 30px;
   font-family: var(--font-family-sans);
   font-weight: 600; /* manually adjusted to design */
   line-height: 1.4;
@@ -293,8 +292,7 @@ body > main {
   background-position-y: -120px;
 }
 .bg--icons-light-blue {
-	background-color: var(--color-light-blue);
-  background-image: url('../img/pattern_15D.png');
+	background-color: var(--color-gradient-green);
 }
 .bg--big-icons-green {
   background-color: var(--color-green);
@@ -303,30 +301,10 @@ body > main {
   background-color: var(--color-green);
 }
 .bg--purple {
-  background-color: var(--color-purple);
+  background: var(--color-gradient-orange);
 }
 .bg--light-blue {
-  background-color: var(--color-light-blue);
-}
-.bg--stripe {
-  width: 100vw;
-  height: 300px;
-  margin-top: -150px;
-  background: var(--color-diag-gradient);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: skew(0, 165deg);
-}
-.bg--stripe-fund {
-  width: 100vw;
-  height: 300px;
-  margin-top: -150px;
-  background: var(--color-diag-gradient-fund);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: skew(0, 165deg);
+  background-color: var(--color-lightgreen);
 }
 
 /* Content Sections
@@ -423,7 +401,7 @@ a:focus {
   opacity: 1;
 }
 .nav__active--fin-lo {
-  color: var(--color-purple);
+  color: var(--color-orange);
 }
 .nav__active--fin-hi {
   color: var(--color-green);
@@ -451,7 +429,6 @@ a:focus {
   transform: translate(-50%, -50%);
   z-index: -1000;
   text-align: center;
-  background: var(--color-diag-gradient);
   transition: opacity .5s, left 0s .5s;
 }
 .mn-container .logo {
@@ -774,7 +751,7 @@ a:focus {
   justify-content: center;
   align-items: center;
   min-height: 66vh;
-  background: var(--color-light-gray) no-repeat center/cover;
+  background: var(--color-lightgreen) no-repeat center/cover;
   position: relative;
 }
 .hero__center-illu {
@@ -1043,7 +1020,7 @@ a:focus {
 .home-hero {
   height: 800px;
   color: white;
-  background: var(--color-diag-gradient-home);
+  background: var(--color-gradient-green);
   transform: skew(0, 165deg);
   transform-origin: 0 0;
   position: relative; /* overlap following section */
@@ -1177,7 +1154,6 @@ a:focus {
   min-height: 50vh;
   padding: 200px 40px;
   color: white;
-  background: var(--color-diag-gradient);
   text-align: center;
   overflow: hidden;
 }
@@ -1190,15 +1166,15 @@ a:focus {
   position: relative;
   z-index: 10;
   margin-top: 40px;
-  color: var(--color-purple);
+  color: var(--color-orange);
   background-color: white;
   border: 1px solid white;
   transition: all .5s;
 }
 .finance-banner__button:hover {
   color: white;
-  background-color: var(--color-purple);
-  border: 1px solid var(--color-purple);
+  background-color: var(--color-orange);
+  border: 1px solid var(--color-orange);
 }
 .home__bagels img {
   max-width: 100%;
@@ -1234,10 +1210,6 @@ a:focus {
 .review {
   color: white;
   overflow: hidden;
-}
-.review__head-stripe {
-  height: 800px;
-  top: -400px;
 }
 .review__tail-stripe {
   position: relative;
@@ -1400,11 +1372,6 @@ a:focus {
 .finance--fund {
   color: var(--color-black);
 }
-.finance__head-stripe {
-  height: 400px;
-  top: 270px;
-  transform: rotate(180deg) skew(0, 165deg);
-}
 .finance .section__body {
   padding-top: 200px;
 }
@@ -1435,7 +1402,7 @@ a:focus {
   transition: all .5s;
 }
 .finance .border-box:hover {
-  color: var(--color-purple);
+  color: var(--color-orange);
   background-color: white;
 }
 .finance--fund .border-box {
@@ -1509,16 +1476,16 @@ a:focus {
   padding-bottom: 0;
 }
 .ft__row-line td {
-  border-bottom: 1px solid var(--color-light-blue);
+  border-bottom: 1px solid var(--color-lightgreen);
 }
 .finance--fund .ft__row-line td {
   border-bottom: 1px solid white;
 }
 .finance--fund .ft__row-line .ft__col-val {
-  border-bottom: 1px solid var(--color-light-blue);
+  border-bottom: 1px solid var(--color-lightgreen);
 }
 .ft__cell-line {
-  border-bottom: 1px solid var(--color-purple);
+  border-bottom: 1px solid var(--color-orange);
 }
 .finance--fund .ft__cell-line {
   border-bottom: none;
@@ -1558,7 +1525,7 @@ a:focus {
 }
 .finance--fund .ft__em {
   color: white;
-  background-color: var(--color-light-gray);
+  background-color: var(--color-lightgreen);
 }
 .ft__green-border {
  border-right: 3px solid var(--color-green);

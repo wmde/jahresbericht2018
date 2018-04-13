@@ -1,6 +1,5 @@
 <main class="review bg--green">
 	<section class="review__intro section section__body cp">
-		<div class="bg--stripe review__head-stripe"></div>
 		<div class="limit--s">
 			<h1 class="h--beta">Zurückblicken: So war das Jahr für Wikimedia Deutschland</h1>
 			<p class="t--gamma-serif">Für 2016 hatten wir uns vor allem vorgenommen, die Anzahl der Freiwilligen in Wikipedia sowie die Reichweite der freien Wissensdatenbank Wikidata zu erhöhen. Außerdem wollten wir unsere Möglichkeiten, uns gemeinsam mit Partnern für Freies Wissen auch politisch einzusetzen, ausbauen.</p>
@@ -10,7 +9,6 @@
 		</div>
 	</section>
 	<section class="review__tail-stripe">
-		<div class="bg--stripe"></div>
 	<section>
 	<section class="section cp--center-section review__swiper">
 		<div class="limit--l">

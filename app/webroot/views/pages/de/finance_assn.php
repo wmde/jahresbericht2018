@@ -1,5 +1,4 @@
 <main class="finance bg--purple">
-	<div class="bg--stripe finance__head-stripe"></div>
 	<section class="section section__body cp">
 		<div class="limit--s finance__intro">
 			<h1 class="fin-detail__heading">
