@@ -34,7 +34,6 @@
 		</div>
 	</section>
 	<section class="section cp--center-section bg--green home__facts">
-		<div class="bg--stripe"></div>
 		<div class="section__body limit--l">
 			<h2 class="section__heading"><div>Jahresrückblick</div></h2>
 			<div class="section__body">

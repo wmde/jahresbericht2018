@@ -1,6 +1,5 @@
 <main class="review bg--green">
 	<section class="review__intro section section__body cp">
-		<div class="bg--stripe review__head-stripe"></div>
 		<div class="limit--s">
 			<h1 class="h--beta">Looking back at 2016</h1>
 			<p class="t--gamma-serif">In 2016, one of our primary goals was to increase the number of Wikipedia volunteers and the reach of Wikidata, the open knowledge database. Together with our partners, we also wanted to expand our opportunities for advocating on behalf of open knowledge on a political level.</p>
@@ -10,7 +9,6 @@
 		</div>
 	</section>
 	<section class="review__tail-stripe">
-		<div class="bg--stripe"></div>
 	<section>
 	<section class="section cp--center-section review__swiper">
 		<div class="limit--l">
