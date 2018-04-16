@@ -8,14 +8,20 @@
  */
 
 require([
-  'jquery',
   'components/example',
   'domready!'
 ], function(
-  $,
   Example
 ) {
 
-  new Example($('.example'));
+  //  let chart;
+  //
+  //  new Waypoint('.member-chart', {
+  //    handler: () => {
+  //      if (!chart) { // Initialize just once.
+  //        chart = new Chart(document.querySelector('.chart'));
+  //      }
+  //    }
+  //  });
 
 });

@@ -7,9 +7,15 @@
  * license that can be found in the LICENSE file.
  */
 
-return class Example {
-  constructor(element) {
-    this.element = element;
+define('components/example', ['underscore'], function(_) {
+ return class Example {
+    constructor(element) {
+      this.element = element;
+    }
+
+    startAnimation() {
+      this.element.classList.add('blink');
+    }
   }
-}
+});
 
