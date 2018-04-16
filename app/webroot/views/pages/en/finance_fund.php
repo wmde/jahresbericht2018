@@ -13,84 +13,84 @@
 			<div class="ft-wrapper">
 				<table class="ft">
 					<thead>
-						<th class="ft__col-key"></th>
-						<th class="ft__col-val ft__green-bg ft__green-border">31.12.2016</th>
+						<th class="ft__col-key--black"></th>
+						<th class="ft__col-val ft__orange-bg ft__orange-border">31.12.2016</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em">31.12.2015</th>
+						<th class="ft__col-val ft__em--orange">31.12.2015</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em">31.12.2014</th>
+						<th class="ft__col-val ft__em--orange">31.12.2014</th>
 					</thead>
-					<tr class="ft__row-head ft__row-line">
-						<td class="ft__col-key">Fixed assets</td>
-						<td class="ft__col-val ft__empty ft__green-border"></td>
+					<tr class="ft__row-head ft__row-line--black">
+						<td class="ft__col-key--black">Fixed assets</td>
+						<td class="ft__col-val ft__empty ft__orange-border"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Intangible assets</td>
-						<td class="ft__col-val ft__green-border">0 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Intangible assets</td>
+						<td class="ft__col-val ft__orange-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">1 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">1 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Tangible assets</td>
-						<td class="ft__col-val ft__green-border">0 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Tangible assets</td>
+						<td class="ft__col-val ft__orange-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">182 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">1.384 €</td>
 					</tr>
-					<tr class="ft__row-head ft__row-line">
-						<td class="ft__col-key">Current assets</td>
-						<td class="ft__col-val ft__green-border ft__empty"></td>
+					<tr class="ft__row-head ft__row-line--black">
+						<td class="ft__col-key--black">Current assets</td>
+						<td class="ft__col-val ft__orange-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Receivables and other assets</td>
-						<td class="ft__col-val ft__green-border">569.171 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Receivables and other assets</td>
+						<td class="ft__col-val ft__orange-border">569.171 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">367.364 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">365.787 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Bank deposits</td>
-						<td class="ft__col-val ft__green-border">7.765.241 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Bank deposits</td>
+						<td class="ft__col-val ft__orange-border">7.765.241 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">8.328.541 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">7.913.666 €</td>
 					</tr>
-					<tr class="ft__row-head ft__row-line">
-						<td class="ft__col-key">&nbsp;</td>
-						<td class="ft__col-val ft__green-border ft__empty"></td>
+					<tr class="ft__row-head ft__row-line--black">
+						<td class="ft__col-key--black">&nbsp;</td>
+						<td class="ft__col-val ft__orange-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Deferred items</td>
-						<td class="ft__col-val ft__green-border">1.820 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Deferred items</td>
+						<td class="ft__col-val ft__orange-border">1.820 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">1.897 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">1.898 €</td>
 					</tr>
 					<tfoot>
-						<td class="ft__col-key">Balance sheet total</td>
-						<td class="ft__col-val ft__green-border ft__green-bg">8.336.232 €</td>
+						<td class="ft__col-key--black">Balance sheet total</td>
+						<td class="ft__col-val ft__orange-border ft__orange-bg">8.336.232 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em">8.697.986 €</td>
+						<td class="ft__col-val ft__em--orange">8.697.986 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em">8.282.735 €</td>
+						<td class="ft__col-val ft__em--orange">8.282.735 €</td>
 					</tfoot>
 				</table>
 			</div>
@@ -102,84 +102,84 @@
 			<div class="ft-wrapper">
 				<table class="ft">
 					<thead>
-						<th class="ft__col-key"></th>
-						<th class="ft__col-val ft__green-bg ft__green-border">31.12.2016</th>
+						<th class="ft__col-key--black"></th>
+						<th class="ft__col-val ft__orange-bg ft__orange-border">31.12.2016</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em ft__cell-line">31.12.2015</th>
+						<th class="ft__col-val ft__em--orange ft__cell-line">31.12.2015</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em ft__cell-line">31.12.2014</th>
+						<th class="ft__col-val ft__em--orange ft__cell-line">31.12.2014</th>
 					</thead>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Equity</td>
-						<td class="ft__col-val ft__green-border">25.000 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Equity</td>
+						<td class="ft__col-val ft__orange-border">25.000 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">25.000 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">25.000 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Unused donations</td>
-						<td class="ft__col-val ft__green-border">0 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Unused donations</td>
+						<td class="ft__col-val ft__orange-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">516.146 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Accrued liabilities</td>
-						<td class="ft__col-val ft__green-border">218.785 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Accrued liabilities</td>
+						<td class="ft__col-val ft__orange-border">218.785 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">299.134 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">274.317 €</td>
 					</tr>
-					<tr class="ft__row-head ft__row-line">
-						<td class="ft__col-key">Accounts payable</td>
-						<td class="ft__col-val ft__green-border ft__empty"></td>
+					<tr class="ft__row-head ft__row-line--black">
+						<td class="ft__col-key--black">Accounts payable</td>
+						<td class="ft__col-val ft__orange-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">From forwarded funds</td>
-						<td class="ft__col-val ft__green-border">8.065.148 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">From forwarded funds</td>
+						<td class="ft__col-val ft__orange-border">8.065.148 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">8.349.482 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">7.420.318 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Trade payables</td>
-						<td class="ft__col-val ft__green-border">24.517 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Trade payables</td>
+						<td class="ft__col-val ft__orange-border">24.517 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">20.191 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">42.330 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Other accounts payable</td>
-						<td class="ft__col-val ft__green-border">2.782 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Other accounts payable</td>
+						<td class="ft__col-val ft__orange-border">2.782 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">4.179 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">4.624 €</td>
 					</tr>
-					<tr class="ft__row-head ft__row-line">
-						<td class="ft__col-key">&nbsp;</td>
-						<td class="ft__col-val ft__green-border ft__empty"></td>
+					<tr class="ft__row-head ft__row-line--black">
+						<td class="ft__col-key--black">&nbsp;</td>
+						<td class="ft__col-val ft__orange-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tfoot>
-						<td class="ft__col-key">Balance sheet total</td>
-						<td class="ft__col-val ft__green-border ft__green-bg">8.336.232 €</td>
+						<td class="ft__col-key--black">Balance sheet total</td>
+						<td class="ft__col-val ft__orange-border ft__orange-bg">8.336.232 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em">8.697.986 €</td>
+						<td class="ft__col-val ft__em--orange">8.697.986 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em">8.282.735 €</td>
+						<td class="ft__col-val ft__em--orange">8.282.735 €</td>
 					</tfoot>
 				</table>
 			</div>
@@ -191,92 +191,92 @@
 			<div class="ft-wrapper">
 				<table class="ft">
 					<thead>
-						<th class="ft__col-key"></th>
-						<th class="ft__col-val ft__green-bg ft__green-border">31.12.2016</th>
+						<th class="ft__col-key--black"></th>
+						<th class="ft__col-val ft__orange-bg ft__orange-border">31.12.2016</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em ft__cell-line">31.12.2015</th>
+						<th class="ft__col-val ft__em--orange ft__cell-line">31.12.2015</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em ft__cell-line">31.12.2014</th>
+						<th class="ft__col-val ft__em--orange ft__cell-line">31.12.2014</th>
 					</thead>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Donation revenue</td>
-						<td class="ft__col-val ft__green-border">10.363.878 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Donation revenue</td>
+						<td class="ft__col-val ft__orange-border">10.363.878 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">10.902.065 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">9.567.373 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Other operational income</td>
-						<td class="ft__col-val ft__green-border">26.784 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Other operational income</td>
+						<td class="ft__col-val ft__orange-border">26.784 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">198.864 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">2.768 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Other interest and related revenue</td>
-						<td class="ft__col-val ft__green-border">761 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Other interest and related revenue</td>
+						<td class="ft__col-val ft__orange-border">761 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">8.844 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">15.231 €</td>
 					</tr>
-					<tr class="ft__row-head ft__row-line">
-						<td class="ft__col-key">&nbsp;</td>
-						<td class="ft__col-val ft__green-border ft__empty"></td>
+					<tr class="ft__row-head ft__row-line--black">
+						<td class="ft__col-key--black">&nbsp;</td>
+						<td class="ft__col-val ft__orange-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Expenditures from forwarded funds</td>
-						<td class="ft__col-val ft__green-border">-9.702.226 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Expenditures from forwarded funds</td>
+						<td class="ft__col-val ft__orange-border">-9.702.226 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">-10.001.618 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">-8.685.251 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Personnel expenditures</td>
-						<td class="ft__col-val ft__green-border">-179.321 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Personnel expenditures</td>
+						<td class="ft__col-val ft__orange-border">-179.321 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-206.416 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-202.065 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Depreciation</td>
-						<td class="ft__col-val ft__green-border">-180 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Depreciation</td>
+						<td class="ft__col-val ft__orange-border">-180 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-1.202 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-7.169 €</td>
 					</tr>
-					<tr class="ft__row-line">
-						<td class="ft__col-key">Other operating expenditures</td>
-						<td class="ft__col-val ft__green-border">-509.695 €</td>
+					<tr class="ft__row-line--black">
+						<td class="ft__col-key--black">Other operating expenditures</td>
+						<td class="ft__col-val ft__orange-border">-509.695 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-900.537 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-690.887 €</td>
 					</tr>
-					<tr class="ft__row-head ft__row-line">
-						<td class="ft__col-key">&nbsp;</td>
-						<td class="ft__col-val ft__green-border ft__empty"></td>
+					<tr class="ft__row-head ft__row-line--black">
+						<td class="ft__col-key--black">&nbsp;</td>
+						<td class="ft__col-val ft__orange-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tfoot>
-						<td class="ft__col-key">Annual net profit</td>
-						<td class="ft__col-val ft__green-border ft__green-bg">0 €</td>
+						<td class="ft__col-key--black">Annual net profit</td>
+						<td class="ft__col-val ft__orange-border ft__orange-bg">0 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em">0 €</td>
+						<td class="ft__col-val ft__em--orange">0 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em">0 €</td>
+						<td class="ft__col-val ft__em--orange">0 €</td>
 					</tfoot>
 				</table>
 			</div>

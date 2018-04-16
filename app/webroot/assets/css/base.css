@@ -16,9 +16,9 @@
   --color-gray: #f6f6f6;
   --color-lightgreen: #e2efe9;
   --color-lightorange: #fceed9;
-  --color-gradient-orange: linear-gradient(#F8B54A, #f29400);
-  --color-gradient-green: linear-gradient(#339966, #50B78D);
-  --color-gradient-green--inverse: linear-gradient(#50B78D, #339966);
+  --color-gradient-orange: linear-gradient(#F8B54A, #f29400 30%);
+  --color-gradient-green: linear-gradient(#339966, #50B78D 60%);
+  --color-gradient-green--inverse: linear-gradient(#50B78D, #339966 30%);
 
   --font-family-sans: 'Montserrat', sans-serif;
   --font-family-serif: 'Source Serif Pro', serif;
@@ -28,10 +28,10 @@
 ---------------------------------------------------------------- */
 body {
   /* default is t--delta */
-  font-size: 18px;
+  font-size: 16px;
   font-family: var(--font-family-sans);
   line-height: 1.2;
-  font-weight: normal;
+  font-weight: 500;
 
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1, "liga" 1;
@@ -131,48 +131,51 @@ body > main {
 ---------------------------------------------------------------- */
 /* --alpha missing here as used only for headlines */
 .t--beta {
-  font-size: 36px;
+  font-size: 30px;
   font-family: var(--font-family-sans);
-  font-weight: 600; /* manually adjusted to design */
+  font-weight: 800; /* manually adjusted to design */
   line-height: 1.4;
 }
 .t--gamma {
   font-family: var(--font-family-sans);
-  font-weight: normal;
-  font-size: 22px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 1.4;
 }
 .t--gamma-serif {
   font-family: var(--font-family-serif);
-  font-weight: normal;
-  font-size: 22px;
+  font-weight:400;
+  font-size: 20px;
   line-height: 1.4;
 }
 .t--delta {
   font-family: var(--font-family-sans);
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 16px;
   line-height: 1.2;
+  letter-spacing: .03em;
 }
 .t--delta-emph {
   font-family: var(--font-family-sans);
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 16px;
   line-height: 1.2;
-  letter-spacing: .05em; /* TODO needs adjustment to design */
+  letter-spacing: .03em; /* TODO needs adjustment to design */
   text-transform: uppercase;
 }
 .t--delta-serif {
   font-family: var(--font-family-serif);
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.25; /* tuned up from design, was too tight */
 }
 .t--epsilon {
   font-family: var(--font-family-sans);
-  font-weight: normal;
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 /* --epsilon-serif does not exist */
 
@@ -181,25 +184,25 @@ body > main {
 .h--alpha {
   font-size: 80px;
   font-family: var(--font-family-sans);
-  font-weight: 700; /* manually adjusted to design */
+  font-weight: 800; /* manually adjusted to design */
   line-height: 1.2;
 }
 .h--beta {
   font-size: 30px;
   font-family: var(--font-family-sans);
-  font-weight: 600; /* manually adjusted to design */
+  font-weight: 800; /* manually adjusted to design */
   line-height: 1.4;
 }
 .h--gamma {
   font-family: var(--font-family-sans);
-  font-weight: normal;
-  font-size: 22px;
+  font-weight: 800;
+  font-size: 20px;
   line-height: 1.4;
 }
 .h--delta {
   font-family: var(--font-family-sans);
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 12px;
   line-height: 1.2;
 }
 
@@ -283,6 +286,10 @@ body > main {
   color: var(--color-green);
   border-bottom: 1px solid var(--color-green);
 }
+.border-box--black {
+  color: var(--color-black) !important;
+  border-color: var(--color-black) !important;
+}
 
 /* Section Backgrounds
 ---------------------------------------------------------------- */
@@ -300,7 +307,11 @@ body > main {
 .bg--green {
   background-color: var(--color-green);
 }
-.bg--purple {
+.bg--finance-assn {
+  background: var(--color-lightorange);
+  color: var(--color-green);
+}
+.bg--finance-main {
   background: var(--color-gradient-orange);
 }
 .bg--light-blue {
@@ -1365,7 +1376,6 @@ a:focus {
 /* Finance Page
 ---------------------------------------------------------------- */
 .finance {
-  color: white;
   overflow: hidden;
   position: relative;
 }
@@ -1410,7 +1420,6 @@ a:focus {
   border-color: var(--color-black);
 }
 .finance--fund .border-box:hover {
-  color: white;
   background-color: var(--color-black);
 }
 .finance .border-box em {
@@ -1425,8 +1434,8 @@ a:focus {
   margin-bottom: 80px;
 }
 .finance__p a {
-  color: white;
-  border-bottom: 1px solid white;
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-black);
 }
 .fin-detail__heading {
   text-align: center;
@@ -1436,10 +1445,14 @@ a:focus {
 }
 .fin-detail__heading-s {
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .fin-detail__heading-l {
   margin-top: 5px;
   margin-bottom: 0;
+}
+.fin-detail__mittel {
+  color: var(--color-black);
 }
 
 /* Finance Table
@@ -1461,6 +1474,7 @@ a:focus {
 .ft tfoot td,
 .ft__row-foot {
   font-weight: bold;
+  text-transform: uppercase;
 }
 .ft th,
 .ft td {
@@ -1470,18 +1484,30 @@ a:focus {
 .ft__row-head td {
   padding-top: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .ft__row-low td {
   padding-top: 0;
   padding-bottom: 0;
 }
 .ft__row-line td {
-  border-bottom: 1px solid var(--color-lightgreen);
+  border-bottom: 1px solid var(--color-gray);
+  color: var(--color-green);
+}
+.ft__row-line--black td {
+  border-bottom: 1px solid white;
+  color: var(--color-black);
 }
 .finance--fund .ft__row-line td {
+  border-bottom: 1px solid var(--color-gray);
+}
+.finance--fund .ft__row-line--black td {
   border-bottom: 1px solid white;
 }
 .finance--fund .ft__row-line .ft__col-val {
+  border-bottom: 1px solid var(--color-gray);
+}
+.finance--fund .ft__row-line--black .ft__col-val {
   border-bottom: 1px solid var(--color-lightgreen);
 }
 .ft__cell-line {
@@ -1493,6 +1519,10 @@ a:focus {
 .ft__col-key {
   width: 35%;
   padding-right: 35px;
+  color: var(--color-green);
+}
+.ft__col-key--black {
+  color: var(--color-black);
 }
 .ft--alloc {
   margin-top: 80px;
@@ -1520,16 +1550,26 @@ a:focus {
   color: white;
   background-color: var(--color-green);
 }
+.ft__orange-bg {
+  color: white;
+  background-color: var(--color-orange);
+}
 .ft__em {
   color: var(--color-green);
 }
+.ft__em--orange {
+  color: var(--color-orange);
+}
 .finance--fund .ft__em {
-  color: white;
   background-color: var(--color-lightgreen);
 }
 .ft__green-border {
  border-right: 3px solid var(--color-green);
  border-left: 3px solid var(--color-green);
+}
+.ft__orange-border {
+ border-right: 3px solid var(--color-orange);
+ border-left: 3px solid var(--color-orange);
 }
 
 /* Finance Bagels
@@ -1606,12 +1646,12 @@ a:focus {
   width: 400px;
 }
 .finance--fund .bagel__ratio {
-  color: var(--color-green);
+  color: var(--color-black);
 }
 .bagel__ratio span {
   right: 0;
   text-align: right;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--color-black);
 }
 .finance--fund .bagel__ratio span {
   border-bottom: 1px solid var(--color-black);
@@ -1661,7 +1701,7 @@ a:focus {
 }
 .bagel__info .bagel__line-1,
 .bagel__info .bagel__line-2 {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--color-black);
 }
 .finance--fund .bagel__info .bagel__line-1,
 .finance--fund .bagel__info .bagel__line-2,
@@ -1669,6 +1709,7 @@ a:focus {
   border-bottom: 1px solid var(--color-black);
 }
 .bagel__label {
+  font-weight: 500;
   max-width: 300px;
 }
 .bagel__amount {
@@ -1680,7 +1721,7 @@ a:focus {
   font-weight: bold;
 }
 .finance--fund .bagel__line-3 .bagel__label {
-  font-weight: normal;
+  font-weight: 500;
 }
 
 /* Responsive 1100px

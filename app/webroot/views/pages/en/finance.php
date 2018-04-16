@@ -1,4 +1,4 @@
-<main class="finance bg--purple">
+<main class="finance bg--finance-main">
 	<section class="section section__body cp">
 		<div class="limit--s finance__intro">
 			<h1 class="h--beta finance__intro-heading">Finances 2016</h1>

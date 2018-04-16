@@ -1,4 +1,4 @@
-<main class="finance bg--purple">
+<main class="finance bg--finance-assn">
 	<section class="section section__body cp">
 		<div class="limit--s finance__intro">
 			<h1 class="fin-detail__heading">
@@ -591,10 +591,10 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m finance__boxes">
-			<a class="border-box t--epsilon" href="<?= $url('finance', $lang) ?>">
+			<a class="border-box border-box--black t--epsilon" href="<?= $url('finance', $lang) ?>">
 				<span>Zur Übersicht  <em class="t--delta">Finanzreport 2016</em></span>
 			</a>
-			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
+			<a class="border-box border-box--black t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Gemeinnützige Wikimedia Fördergesellschaft mbH</em></span>
 			</a>
 		</div>
