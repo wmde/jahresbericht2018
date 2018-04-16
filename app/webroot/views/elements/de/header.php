@@ -19,6 +19,20 @@ if (isset($report)) {
 	$title[] = 'Finanzen Fördergesellschaft';
 }
 
+// Constructs a script path for the current page path. And will check if a script under
+// that name is present in the filesystem. If not simply returns `null` otherwise
+// it returns the script path, good for constructing the full script URL.
+//
+// Does not support pages with underscores.
+$pageSpecificScript = function() use ($path) {
+	$fragment = 'pages/' . (ltrim($path, '/') ?: 'home') . '.js';
+
+	if (file_exists(APP_PATH . '/assets/js/views/' . $fragment)) {
+		return $fragment;
+	}
+	return null;
+};
+
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -53,6 +67,9 @@ if (isset($report)) {
 	<script src="/assets/js/require.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/base.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/views/layouts/default.js?v=__PROJECT_VERSION__"></script>
+	<?php if ($scriptPath = $pageSpecificScript()): ?>
+		<script src="/assets/js/views/<?= $scriptPath ?>?v=__PROJECT_VERSION__"></script>
+	<?php endif ?>
 </head>
 <body>
 
