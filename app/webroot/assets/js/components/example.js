@@ -7,15 +7,9 @@
  * license that can be found in the LICENSE file.
  */
 
-require([
-  'jquery',
-  'components/example',
-  'domready!'
-], function(
-  $,
-  Example
-) {
+return class Example {
+  constructor(element) {
+    this.element = element;
+  }
+}
 
-  new Example($('.example'));
-
-});

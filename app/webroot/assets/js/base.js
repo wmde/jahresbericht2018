@@ -24,6 +24,9 @@ requirejs.config({
     'swiper': 'swiper',
     'underscore': 'underscore',
 
+    // Components
+    'components/example': 'components/example',
+
     // For compat and polyfills it is recommended to use
     // Atelier Disko's compat distribution and agument
     // the existing libraries found in js/compat.
