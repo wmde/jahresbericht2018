@@ -27,7 +27,7 @@ if (isset($report)) {
 $pageSpecificScript = function() use ($path) {
 	$fragment = 'pages/' . (ltrim($path, '/') ?: 'home') . '.js';
 
-	if (file_exists(APP_PATH . '/assets/js/views/' . $fragment)) {
+	if (file_exists(PROJECT_APP_PATH . '/assets/js/views/' . $fragment)) {
 		return $fragment;
 	}
 	return null;
@@ -45,7 +45,7 @@ $pageSpecificScript = function() use ($path) {
 	// in this case, pages in default language are duplicated; prefer the prefixed '/de' paths
 	// see https://support.google.com/webmasters/answer/139066?visit_id=0-636295122699147333-3497274728&rd=1#2
 	?>
-	<link rel="canonical" href="<?= trim(trim(DOMAIN, '/') . '/de/' . trim($path, '/'), '/') ?>">
+	<link rel="canonical" href="<?= trim(trim(PROJECT_DOMAIN, '/') . '/de/' . trim($path, '/'), '/') ?>">
 
 <?php if ($isCanonical): ?>
 	<?php
@@ -53,8 +53,8 @@ $pageSpecificScript = function() use ($path) {
 	// no need to list hreflang on non-canonical - in this case, unprefixed - urls
 	// see https://support.google.com/webmasters/answer/189077
 	?>
-	<link rel="alternate" hreflang="de" href="<?= trim(trim(DOMAIN, '/') . '/de/' . trim($path, '/'), '/') ?>">
-	<link rel="alternate" hreflang="en" href="<?= trim(trim(DOMAIN, '/') . '/en/' . trim($path, '/'), '/') ?>">
+	<link rel="alternate" hreflang="de" href="<?= trim(trim(PROJECT_DOMAIN, '/') . '/de/' . trim($path, '/'), '/') ?>">
+	<link rel="alternate" hreflang="en" href="<?= trim(trim(PROJECT_DOMAIN, '/') . '/en/' . trim($path, '/'), '/') ?>">
 <?php endif ?>
 
 	<link rel="icon" href="/assets/ico/app.png?v=__PROJECT_VERSION__">

@@ -32,8 +32,8 @@ if (isset($report)) {
 	// no need to list hreflang on non-canonical - in this case, unprefixed - urls
 	// see https://support.google.com/webmasters/answer/189077
 	?>
-	<link rel="alternate" hreflang="de" href="<?= trim(trim(DOMAIN, '/') . '/de/' . trim($path, '/'), '/') ?>">
-	<link rel="alternate" hreflang="en" href="<?= trim(trim(DOMAIN, '/') . '/en/' . trim($path, '/'), '/') ?>">
+	<link rel="alternate" hreflang="de" href="<?= trim(trim(PROJECT_DOMAIN, '/') . '/de/' . trim($path, '/'), '/') ?>">
+	<link rel="alternate" hreflang="en" href="<?= trim(trim(PROJECT_DOMAIN, '/') . '/en/' . trim($path, '/'), '/') ?>">
 <?php endif ?>
 
 	<link rel="icon" href="/assets/ico/app.png?v=__PROJECT_VERSION__">

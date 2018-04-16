@@ -8,8 +8,8 @@
  * license that can be found in the LICENSE file.
  */
 
-define('APP_PATH', __DIR__);
-define('DOMAIN', 'wmde-bericht2017.test');
+define('PROJECT_APP_PATH', __DIR__);
+define('PROJECT_DOMAIN', 'wmde-bericht2017.test');
 
 // The default language is german.
 $lang = 'de';
@@ -39,7 +39,7 @@ $translateFrom = function($path, $lang) use ($url) {
 
 // View controller
 $viewFileFromURI = function($path, $lang) {
-	$viewBase = APP_PATH . '/views/pages/' . $lang;
+	$viewBase = PROJECT_APP_PATH . '/views/pages/' . $lang;
 	$viewName = str_replace('/', '_', trim($path, '/'));
 
 	$viewFile = $viewBase . '/' . $viewName . '.php';
@@ -67,17 +67,17 @@ if ($viewFile === false || trim($path, '/') === 'home') {
 
 // "Model" Layer
 if ($path === '/') {
-	$facts = require APP_PATH .'/data/facts.php';
+	$facts = require PROJECT_APP_PATH .'/data/facts.php';
 	$fact = $facts[array_rand($facts)];
 }
 if ($path === '/review') {
-	$facts = require APP_PATH .'/data/facts.php';
+	$facts = require PROJECT_APP_PATH .'/data/facts.php';
 }
 if (preg_match('#^(/|/report)$#', $path)) {
-	$reports = require APP_PATH .'/data/reports.php';
+	$reports = require PROJECT_APP_PATH .'/data/reports.php';
 }
 if (preg_match('#^/report/(.*)$#', $path, $matches)) {
-	$reports = require APP_PATH .'/data/reports.php';
+	$reports = require PROJECT_APP_PATH .'/data/reports.php';
 	$report = null;
 
 	foreach ($reports as $_report) {
@@ -91,8 +91,8 @@ if (preg_match('#^/report/(.*)$#', $path, $matches)) {
 // Some pages will need an inverted header.
 $hasBlackHeader = (boolean) preg_match('#^(/report/?|/finance/fund)$#', $path);
 
-require APP_PATH . '/views/elements/' . $lang . '/header.php';
+require PROJECT_APP_PATH . '/views/elements/' . $lang . '/header.php';
 require $viewFile;
-require APP_PATH . '/views/elements/' . $lang . '/footer.php';
+require PROJECT_APP_PATH . '/views/elements/' . $lang . '/footer.php';
 
 ?>
