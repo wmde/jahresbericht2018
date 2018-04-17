@@ -38,7 +38,7 @@ $pageSpecificScript = function() use ($path) {
 <html lang="de">
 <head>
 	<meta charset="UTF-8">
-	<title><?php echo implode(' – ', array_reverse($title)) ?></title>
+	<title><?php echo implode(' – ', array_reverse($title)) ?> – Wikimedia Deutschland e. V.</title>
 
 	<?php
 	// mark up the canonical page and any other variants; use complete url
