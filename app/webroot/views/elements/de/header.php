@@ -62,6 +62,7 @@ $pageSpecificScript = function() use ($path) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
+	<script src="/assets/js/compat/core.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/require.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/base.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/views/layouts/default.js?v=__PROJECT_VERSION__"></script>
