@@ -9,8 +9,6 @@ if (isset($report)) {
 	$title[] = 'Themen';
 } elseif ($path === '/report/monuments') {
 	$title[] = 'Wikipedia Loves Monuments';
-} elseif ($path === '/review') {
-	$title[] = 'Jahresrückblick';
 } elseif ($path === '/finance') {
 	$title[] = 'Finanzreport';
 } elseif ($path === '/finance/assn') {
@@ -106,7 +104,6 @@ $pageSpecificScript = function() use ($path) {
 <div class="mn-container cp">
 	<div class="mn-close"></div>
 	<ul class="mn__list">
-		<li><a class="mn__link" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
 		<li><a class="mn__link" href="<?= $url('report', $lang) ?>">Themen</a></li>
 		<li><a class="mn__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 	</ul>
@@ -128,11 +125,7 @@ $pageSpecificScript = function() use ($path) {
 			<a class="logo main-header__logo image-replace logo--l" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
 			<nav class="nav main-header__nav">
 				<ul class="nav__list">
-					<?php if ($path === '/review'): ?>
-						<li><a class="nav__link nav__active--rev" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
-					<?php else: ?>
-						<li><a class="nav__link" href="<?= $url('review', $lang) ?>">Jahresrückblick</a></li>
-					<?php endif; if (preg_match('#^/report/.*$#', $path)): ?>
+					<?php if (preg_match('#^/report/.*$#', $path)): ?>
 						<li><a class="nav__link nav__active--rep-sub" href="<?= $url('report', $lang) ?>">Themen</a></li>
 					<?php elseif ($path === '/report'): ?>
 						<li><a class="nav__link nav__active--rep" href="<?= $url('report', $lang) ?>">Themen</a></li>

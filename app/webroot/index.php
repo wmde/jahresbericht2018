@@ -59,13 +59,6 @@ $routes['#^/$#'] = function() {
 $routes['#^/finance#'] = function($path) {
 	return ['hasBlackHeader' => $path === '/finance/fund'];
 };
-$routes['#^/review$#'] = function() {
-	$facts = require PROJECT_APP_PATH .'/data/facts.php';
-
-	return compact('facts') + [
-		'hasBlackHeader' => false
-	];
-};
 $routes['#^/report$#'] = function($path, $query, $matches) {
 	$filter = isset($query['filter']) ? $query['filter'] : null;
 

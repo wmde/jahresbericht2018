@@ -1257,29 +1257,6 @@ a:focus {
   transform: rotate(50deg);
 }
 
-/* Review Page
----------------------------------------------------------------- */
-.review {
-  color: white;
-  overflow: hidden;
-}
-.review__tail-stripe {
-  position: relative;
-}
-.review__intro {
-  padding-top: 200px;
-}
-.review__intro h1 {
-  text-align: center;
-  margin-bottom: 60px;
-  position: relative;
-  z-index: 100;
-}
-.review__swiper {
-  padding: 100px 0 140px 0;
-}
-
-
 /* Report Landing Page
 ---------------------------------------------------------------- */
 .report-landing-hero {
@@ -1803,9 +1780,6 @@ a:focus {
     padding-top: 1050px;
     padding-bottom: 120px;
   }
-  .review__intro {
-    padding-top: 200px;
-  }
 
   .quote {
     margin: 60px 0 80px 0;
@@ -1918,9 +1892,6 @@ a:focus {
   }
   .figs .fig {
     width: 100%;
-  }
-  .review__intro {
-    padding-top: 120px;
   }
   .jb-hsplit__cover {
     height: 75vw;
