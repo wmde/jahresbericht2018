@@ -39,8 +39,8 @@ $helpers['url'] = function($goal, $lang) {
 
 // Used to construct a URL for switching the language, but
 // staying on the same page.
-$helpers['switchLanguageFromUrl'] = function($lang) use ($helpers) {
-	return $helpers['url']($lang === 'de' ? 'en' : 'de');
+$helpers['switchLanguageFromUrl'] = function($lang) use ($path) {
+	return rtrim('/' . ($lang === 'de' ? 'en' : 'de') . '' . $path, '/');
 };
 
 //
