@@ -366,14 +366,14 @@
 							<span class="t--delta bagel__label">Mittelweitergabe an die Wikimedia&nbsp;Foundation</span>
 							<span class="t--delta bagel__amount">8.389.988&nbsp;€</span>
 						</div>
-						<div class="bagel__line-4">
+						<div class="bagel__line-4--alt">
 							<span class="t--delta bagel__label">Rücklage</span>
 							<span class="t--delta bagel__amount">217.141&nbsp;€</span>
 						</div>
 						<!-- TOFIX: Establish bagel__line-5 -->
 						<div class="bagel__line-5">
 							<span class="t--delta bagel__label">Gesamt</span>
-							<span class="t--delta bagel__amount">10.391.422&nbsp;€</span>
+							<span class="t--delta bagel__amount">11.236.130&nbsp;€</span>
 						</div>
 					</div>
 				</div>
