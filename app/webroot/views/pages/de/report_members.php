@@ -61,7 +61,7 @@ Es ist ein Dankeschön, eine Wertschätzung und eine Unterstützung. Letztendlic
 			</div>
 		</div>
 	</section>
-	<section class="section cp--center-section bg--icons-light-blue">
+	<section class="section cp--center-section">
 		<div class="section__actions">
 			<a href="<?= $url('/report', $lang) ?>" class="button button--bg-green">Zur Themenübersicht</a>
 		</div>

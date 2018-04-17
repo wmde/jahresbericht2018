@@ -10,7 +10,7 @@
 			<img class="home-hero__16" src="assets/img/16_b.png" alt="2016">
 		</div>
 	</section>
-	<section class="section cp bg--icons-white home__intro">
+	<section class="section cp home__intro">
 		<div class="section__body">
 			<h1 class="h--beta">Liebe Leserinnen und Leser,</h1>
 			<div class="limit--l">
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section cp--center-section bg--icons-light-blue">
+	<section class="section cp--center-section">
 		<div class="limit--l">
 			<h2 class="section__heading"><div>Themen</div></h2>
 			<div class="section__body slider swiper-container loading">

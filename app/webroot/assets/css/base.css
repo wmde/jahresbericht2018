@@ -345,17 +345,6 @@ body > main {
 
 /* Section Backgrounds
 ---------------------------------------------------------------- */
-.bg--icons-white {
-  background-color: white;
-  background-image: url('../img/pattern_15D.png');
-  background-position-y: -120px;
-}
-.bg--icons-light-blue {
-	background-color: var(--color-gradient-green);
-}
-.bg--big-icons-green {
-  background-color: var(--color-green);
-}
 .bg--green {
   background-color: var(--color-green);
 }
