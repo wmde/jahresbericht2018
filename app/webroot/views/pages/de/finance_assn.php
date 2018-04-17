@@ -117,7 +117,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line">
-						<td class="ft__col-key">Rechnungs&shy;abgrenzungs&shy;posten</td>
+						<td class="ft__row-foot ft__col-key">Rechnungs&shy;abgrenzungs&shy;posten</td>
 						<td class="ft__col-val ft__green-border">55.459 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">48.322 €</td>
@@ -150,7 +150,7 @@
 						<th class="ft__col-val ft__em ft__cell-line">31.12.2015</th>
 					</thead>
 					<tr class="ft__row-line">
-						<td class="ft__col-key">Noch nicht verbrauchte Spendenmittel</td>
+						<td class="ft__col-key ft__row-foot">Noch nicht verbrauchte Spendenmittel</td>
 						<td class="ft__col-val ft__green-border">4.968.500 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">>4.349.061 €</td>
@@ -164,6 +164,14 @@
 						<td class="ft__col-val">605.246 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">605.246 €</td>
+					</tr>
+					<tr class="ft__row-head ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__green-border ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-head ft__row-line">
 						<td class="ft__col-key">Rückstellungen</td>
@@ -188,6 +196,14 @@
 						<td class="ft__col-val">143.626 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">149.257 €</td>
+					</tr>
+					<tr class="ft__row-head ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__green-border ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-head ft__row-line">
 						<td class="ft__col-key">Verbindlichkeiten</td>
@@ -230,7 +246,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line">
-						<td class="ft__col-key">Rechnungs&shy;abgrenzungs&shy;posten</td>
+						<td class="ft__col-key ft__row-foot">Rechnungs&shy;abgrenzungs&shy;posten</td>
 						<td class="ft__col-val ft__green-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">20.213 €</td>
@@ -370,7 +386,7 @@
 						<td class="ft__col-key">&nbsp;</td>
 						<td class="ft__col-val ft__green-border ft__empty"></td>
 					</tr>
-					<tr class="ft__row-line">
+					<tr class="ft__row-line ft__row-foot">
 						<td class="ft__col-key">Jahresüberschuss</td>
 						<td class="ft__col-val ft__green-border">0 €</td>
 						<td class="ft__col-void"></td>
