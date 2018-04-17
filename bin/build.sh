@@ -25,7 +25,9 @@ sed -i -e "s|__VERSION_BUILD__|$revision|g" VERSION.txt
 [[ -f VERSION.txt-e ]] && rm VERSION.txt-e
 sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/index.*
 sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/views/elements/de/header.php
-sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/views/elements/en/header.php
+if [[ -f app/webroot/views/elements/en/header.php ]]; then
+	sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/views/elements/en/header.php
+fi
 rm -f app/webroot/index.*-e
 rm -f app/webroot/views/elements/*/header.php-e
 
