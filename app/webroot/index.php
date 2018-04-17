@@ -56,11 +56,8 @@ $routes['#^/$#'] = function() {
 		'hasBlackHeader' => false
 	];
 };
-$routes['#^/finance/fund$#'] = function() {
-	return ['hasBlackHeader' => true];
-};
-$routes['#^/finance#'] = function() {
-	return ['hasBlackHeader' => false];
+$routes['#^/finance#'] = function($path) {
+	return ['hasBlackHeader' => $path === '/finance/fund'];
 };
 $routes['#^/review$#'] = function() {
 	$facts = require PROJECT_APP_PATH .'/data/facts.php';
@@ -69,7 +66,7 @@ $routes['#^/review$#'] = function() {
 		'hasBlackHeader' => false
 	];
 };
-$routes['#^/report$#'] = function($matches, $query) {
+$routes['#^/report$#'] = function($path, $query, $matches) {
 	$reports = require PROJECT_APP_PATH .'/data/reports.php';
 
 	if (isset($query['filter'])) {
@@ -81,7 +78,7 @@ $routes['#^/report$#'] = function($matches, $query) {
 		'hasBlackHeader' => true
 	];
 };
-$routes['#^/report/(.*)$#'] = function($matches) {
+$routes['#^/report/(.*)$#'] = function($path, $query, $matches) {
 	$reports = require PROJECT_APP_PATH .'/data/reports.php';
 	$report = null;
 
