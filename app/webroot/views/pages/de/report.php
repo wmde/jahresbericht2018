@@ -1,14 +1,20 @@
-<main class="report-landing bg--icons-light-blue cp cp--6x-top cp--6x-bottom">
+<main class="report-landing cp--6x-bottom">
 
-	<section class="cube-hero">
-		<h1 class="h--beta cube-hero__title">Unsere Themen im Überblick</h1>
-		<a href="?filter=wikimedia">Wikimedia</a>
-		<a href="?filter=volunteers">Freiwillige</a>
-		<a href="?filter=software">Software-Entwicklung</a>
-		<a href="?filter=framework">Rahmenbedingungen</a>
+	<section class="report-landing-hero cp cp--6x-top cp--4x-bottom">
+		<h1 class="h--beta report-landing-hero__title">Unsere Themen im Überblick</h1>
+		<div class="report-landing-hero__cubes limit--l cp--2x-top">
+			<?php foreach ($filters as $f): ?>
+				<a
+					class="report-landing-hero__cube nav-cube<?= ($filter == $f['name'] ? ' active' : '') ?>"
+					href="?filter=<?= $f['name'] ?>"
+				>
+					<span class="nav-cube__title t--epsilon-emph"><?= $f['title'][$lang] ?></span>
+				</a>
+			<?php endforeach ?>
+		</div>
 	</section>
 
-	<div class="limit--m">
+	<div class="limit--m report-landing__jbs">
 		<div class="jb-hsplit-list">
 		<?php foreach ($reports as $report): ?>
 			<a class="jb-hsplit" href="<?= $url('report/' . $report['name'], $lang) ?>">

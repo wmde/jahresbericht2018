@@ -67,15 +67,19 @@ $routes['#^/review$#'] = function() {
 	];
 };
 $routes['#^/report$#'] = function($path, $query, $matches) {
-	$reports = require PROJECT_APP_PATH .'/data/reports.php';
+	$filter = isset($query['filter']) ? $query['filter'] : null;
 
-	if (isset($query['filter'])) {
-		$reports = array_filter($reports, function($v) use ($query) {
-			return $v['category'] === $query['filter'];
+	$reports = require PROJECT_APP_PATH .'/data/reports.php';
+	$filters = require PROJECT_APP_PATH .'/data/report_filters.php';
+
+	if ($filter) {
+		$reports = array_filter($reports, function($v) use ($filter) {
+			return $v['category'] === $filter;
 		});
 	}
-	return compact('reports') + [
-		'hasBlackHeader' => true
+
+	return compact('reports', 'filter', 'filters') + [
+		'hasBlackHeader' => false
 	];
 };
 $routes['#^/report/(.*)$#'] = function($path, $query, $matches) {

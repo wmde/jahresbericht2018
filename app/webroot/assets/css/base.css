@@ -1293,9 +1293,40 @@ a:focus {
 
 /* Report Landing Page
 ---------------------------------------------------------------- */
-.report-landing__title {
+.report-landing-hero {
+  background-color: var(--color-green);
   text-align: center;
-  margin-bottom: 80px;
+  color: white;
+}
+.report-landing-hero__cubes {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.report-landing__jbs {
+  margin-top: -100px;
+}
+
+/* Nav Cube
+---------------------------------------------------------------- */
+.nav-cube {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 240px;
+  background: url(../img/cube_themen_green.svg) no-repeat center/contain;
+  margin: 20px;
+}
+.nav-cube__title {
+  color: white;
+  margin-top: -120px;
+}
+.nav-cube:hover,
+.nav-cube.active {
+  background-image: url(../img/cube_themen_orange.svg);
 }
 
 /* Report Detail Pages
