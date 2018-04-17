@@ -5,6 +5,7 @@
 			'de' => 'Neue Freiwillige',
 			'en' => 'New volunteers'
 		],
+		'category' => 'volunteers',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
@@ -30,6 +31,7 @@
 			'de' => 'Wikidata',
 			'en' => 'Wikidata'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
@@ -55,6 +57,7 @@
 			'de' => 'Technische Wünsche',
 			'en' => 'Technical wishes'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
@@ -80,6 +83,7 @@
 			'de' => 'Politik und Recht',
 			'en' => 'Political and legal work'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
@@ -105,6 +109,7 @@
 			'de' => 'Verein und Communitys',
 			'en' => 'Association and communities'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
@@ -130,6 +135,7 @@
 			'de' => 'Offene Wissenschaft',
 			'en' => 'Open Science'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
@@ -155,6 +161,7 @@
 			'de' => 'Freie Bildung',
 			'en' => 'Open education'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
@@ -205,6 +212,7 @@
 			'de' => 'Regionalisierung',
 			'en' => 'Regionalization'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
@@ -230,6 +238,7 @@
 			'de' => 'Jahresplan 2017',
 			'en' => 'Annual Plan for 2017'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
@@ -255,6 +264,7 @@
 			'de' => 'Wikipedia wird 15!',
 			'en' => 'Wikipedia turns 15'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
@@ -280,6 +290,7 @@
 			'de' => '50.000 Mitglieder',
 			'en' => '50,000 members'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">

@@ -1,5 +1,12 @@
 <main class="report-landing bg--icons-light-blue cp cp--6x-top cp--6x-bottom">
-	<h1 class="h--beta report-landing__title">Unsere Themen im Überblick</h1>
+
+	<section class="cube-hero">
+		<h1 class="h--beta cube-hero__title">Unsere Themen im Überblick</h1>
+		<a href="?filter=wikimedia">Wikimedia</a>
+		<a href="?filter=volunteers">Freiwillige</a>
+		<a href="?filter=software">Software-Entwicklung</a>
+		<a href="?filter=framework">Rahmenbedingungen</a>
+	</section>
 
 	<div class="limit--m">
 		<div class="jb-hsplit-list">

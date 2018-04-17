@@ -71,8 +71,14 @@ $routes['#^/review$#'] = function() {
 	$facts = require PROJECT_APP_PATH .'/data/facts.php';
 	return compact('facts');
 };
-$routes['#^/report$#'] = function() {
+$routes['#^/report$#'] = function($matches, $query) {
 	$reports = require PROJECT_APP_PATH .'/data/reports.php';
+
+	if (isset($query['filter'])) {
+		$reports = array_filter($reports, function($v) use ($query) {
+			return $v['category'] === $query['filter'];
+		});
+	}
 	return compact('reports');
 };
 $routes['#^/report/(.*)$#'] = function($matches) {
