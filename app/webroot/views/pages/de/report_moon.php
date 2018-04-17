@@ -1,13 +1,13 @@
 <main class="report-detail">
 	<section
-		class="hero cp cp--nav-zone"
+		class="report-detail-hero cp cp--nav-zone"
 		style="background-image: url(/assets/img/11_moon_hero.jpg)"
 	>
-		<img class="hero__center-illu" src="/assets/ico/11_moon_white.svg" alt="Illustration" >
-		<div class="hero__filter"></div>
+		<img class="report-detail-hero__center-illu" src="/assets/ico/11_moon_white.svg" alt="Illustration" >
+		<div class="report-detail-hero__filter"></div>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="hero__caption t--epsilon">Denis Schroeder (WMDE) (<a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_und_Lunar_Quattro_2.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail-hero__caption t--epsilon">Denis Schroeder (WMDE) (<a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_und_Lunar_Quattro_2.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Wikipedia wird 15!</em><br>…und fliegt zum Mond

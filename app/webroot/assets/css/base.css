@@ -796,9 +796,9 @@ a:focus {
   margin-top: 40px;
 }
 
-/* Hero
+/* Report Detail Hero
 ---------------------------------------------------------------- */
-.hero {
+.report-detail-hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -806,10 +806,10 @@ a:focus {
   background: var(--color-lightgreen) no-repeat center/cover;
   position: relative;
 }
-.hero__center-illu {
+.report-detail-hero__center-illu {
   z-index: 10;
 }
-.hero__filter {
+.report-detail-hero__filter {
   position: absolute;
   top: 0;
   left: 0;
