@@ -200,7 +200,8 @@ body > main {
   font-size: 20px;
   line-height: 1.4;
 }
-.t--delta {
+.t--delta,
+.t--delta-emph {
   font-family: var(--font-family-sans);
   font-weight: 800;
   font-size: 16px;
@@ -208,11 +209,6 @@ body > main {
   letter-spacing: .03em;
 }
 .t--delta-emph {
-  font-family: var(--font-family-sans);
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: .03em; /* TODO needs adjustment to design */
   text-transform: uppercase;
 }
 .t--delta-serif {
@@ -221,13 +217,17 @@ body > main {
   font-size: 16px;
   line-height: 1.25; /* tuned up from design, was too tight */
 }
-.t--epsilon {
+.t--epsilon,
+.t--epsilon-emph {
   font-family: var(--font-family-sans);
   font-weight: 500;
   font-size: 12px;
   line-height: 1.2;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .08em;
+}
+.t--epsilon-emph {
+  font-weight: 800;
 }
 /* --epsilon-serif does not exist */
 
