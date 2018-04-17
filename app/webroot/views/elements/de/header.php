@@ -112,7 +112,7 @@ $pageSpecificScript = function() use ($path) {
 	</ul>
 	<div class="mn__mini-nav">
 		<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2017_de.pdf">PDF Download</a>
-		<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
+		<a class="lang-switch t--epsilon" href="<?= $switchLanguageFromUrl($lang) ?>">English</a>
 	</div>
 </div>
 
@@ -147,7 +147,7 @@ $pageSpecificScript = function() use ($path) {
 					<?php endif ?>
 				</ul>
 			<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2017_de.pdf">PDF Download</a>
-			<a class="lang-switch t--epsilon" href="<?= $translateFrom($path, $lang) ?>">English</a>
+			<a class="lang-switch t--epsilon" href="<?= $switchLanguageFromUrl($lang) ?>">English</a>
 			</nav>
 			<nav class="nav mobile__nav">
 				<div class="nav__link mn-trigger">Menü</div>
