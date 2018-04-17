@@ -94,25 +94,77 @@ body > main {
 .cp {
   padding: 40px;
 }
+.cp--center-section {
+  padding: 160px 40px;
+}
+.cp--upped-section {
+  padding: 120px 40px 160px 40px;
+}
+
+.cp--2x-top {
+	padding-top: 80px;
+}
 .cp--nav-zone {
   padding-top: 140px;
+}
+.cp--4x-top {
+  padding-top: 160px;
 }
 .cp--6x-top {
   padding-top: 240px;
 }
-.cp--6x-bottom {
-  padding-bottom: 240px;
-}
-.cp--center-section {
-	padding: 160px 40px;
-}
-.cp--upped-section {
-	padding: 120px 40px 160px 40px;
-}
+
 .cp--2x-bottom {
 	padding-bottom: 80px;
 }
+.cp--4x-bottom {
+  padding-bottom: 160px;
+}
+.cp--6x-bottom {
+  padding-bottom: 240px;
+}
 
+@media (max-width: 1100px) {
+  .cp {
+    padding: 30px;
+  }
+
+  .cp--nav-zone {
+    padding-top: 140px;
+  }
+  .cp--6x-top {
+    padding-top: 240px;
+  }
+
+  .cp--6x-bottom {
+    padding-bottom: 240px;
+  }
+}
+@media (max-width: 550px) {
+  .cp {
+    padding: 10px;
+  }
+  .cp--center-section {
+    padding: 40px 10px;
+  }
+  .cp--upped-section {
+    padding: 60px 20px 40px 20px;
+  }
+
+  .cp--nav-zone {
+    padding-top: 140px;
+  }
+  .cp--6x-top {
+    padding-top: 120px;
+  }
+
+  .cp--6x-bottom {
+    padding-bottom: 120px;
+  }
+}
+
+/* Limiters
+---------------------------------------------------------------- */
 .limit--l {
   max-width: 1360px;
   margin: 0 auto;
@@ -1727,12 +1779,6 @@ a:focus {
 /* Responsive 1100px
 ---------------------------------------------------------------- */
 @media (max-width: 1100px) {
-  .cp {
-    padding: 30px;
-  }
-  .cp--nav-zone {
-    padding-top: 140px;
-  }
   .home__intro {
     padding-top: 1050px;
     padding-bottom: 120px;
@@ -1740,12 +1786,7 @@ a:focus {
   .review__intro {
     padding-top: 200px;
   }
-  .cp--6x-top {
-    padding-top: 240px;
-  }
-  .cp--6x-bottom {
-    padding-bottom: 240px;
-  }
+
   .quote {
     margin: 60px 0 80px 0;
   }
@@ -1806,19 +1847,6 @@ a:focus {
 /* Responsive 550px
 ---------------------------------------------------------------- */
 @media (max-width: 550px) {
-  .cp {
-    padding: 10px;
-  }
-  .cp--center-section {
-    padding: 40px 10px;
-  }
-  .cp--nav-zone {
-    padding-top: 140px;
-  }
-  .cp--upped-section {
-    padding: 60px 20px 40px 20px;
-  }
-
   .swiper-button-next,
   .swiper-button-prev {
     width: 25px;
@@ -1879,12 +1907,6 @@ a:focus {
   }
   .jb-hsplit__content {
     padding: 20px 40px 40px 20px;
-  }
-  .cp--6x-top {
-    padding-top: 120px;
-  }
-  .cp--6x-bottom {
-    padding-bottom: 120px;
   }
   .finance .section__body {
     padding-top: 140px;
