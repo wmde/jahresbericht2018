@@ -8,181 +8,71 @@
  */
 
 require([
-  'jquery',
   'underscore',
-  'scrollTo',
   'modernizr',
   'domready!'
 ], function(
-  $, _, ScrollTo
+  _, Modernizr
 ) {
-  var $body = $('body');
-  var $imprint = $('.imprint');
-  var $close = $('.imprint-close');
-  var $toggle = $('.imprint-toggle');
+  let $1 = document.querySelector.bind(document);
+  let $ = document.querySelectorAll.bind(document);
 
-  var allMods, win, throttled;
+  let body = $1('body');
+  let imprint = $1('.imprint');
+  let close = $1('.imprint-close');
+  let toggle = $1('.imprint-toggle');
 
-  function visible(element, partial) {
-    var $t            = $(element),
-        $w            = $(window),
-        viewTop       = $w.scrollTop(),
-        viewBottom    = viewTop + $w.height(),
-        _top          = $t.offset().top,
-        _bottom       = _top + $t.height(),
-        compareTop    = partial === true ? _bottom : _top,
-        compareBottom = partial === true ? _top : _bottom;
+  let allMods, throttled;
 
-    return _top + 100 <= viewBottom;
-    // return compareBottom <= viewBottom && compareTop >= viewTop;
+  // this function replaces jquery.offset()
+  function offset(el) {
+      let rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
   }
 
-  $toggle.on('click', function(ev) {
-    ev.preventDefault();
-    var o = $toggle.offset();
+  function visible(element, partial) { // returns true if 100px of an element are visible in the view
+    let viewTop       = window.pageYOffset || document.documentElement.scrollTop,
+        viewBottom    = viewTop + (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight),
+        _top          = offset(element).top
+    return _top + 100 <= viewBottom;
+  }
 
-    // When hiding reset scroll position to bottom so, when
-    // revealing the section again, we do not jump into the middle
-    // of the section.
-    if ($imprint.hasClass('invis')) {
-      ScrollTo.offsets(o.left, o.top - 40);
+  // Imprint toggle
+  toggle.addEventListener("click", function(ev) {
+    ev.preventDefault();
+    let o = offset(toggle);
+
+    imprint.classList.toggle("invis");
+    close.classList.toggle("invis");
+
+    if (!imprint.classList.contains("invis")) {
+      window.scrollTo(o.left, o.top - 40);
     }
 
-    $imprint.toggleClass('invis');
-    $close.toggleClass('invis');
   });
-  $close.on('click', function(ev) {
+  close.addEventListener("click", function(ev) {
     ev.preventDefault();
-    $close.addClass('invis');
-    $imprint.addClass('invis');
+    close.classList.add("invis");
+    imprint.classList.add("invis");
   });
-
-  // Use Skrollr for finance banner animation
-  var $fb = $('.finance-banner');
-  if ($fb.length && !Modernizr.touchevents) {
-    require(['skrollr'], function(Skrollr) {
-      var s = Skrollr.init({
-        forceHeight: false
-      });
-    });
-  }
-
-  // Animate tiles on report landing page
-  // see: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
-  var $rl = $('.report-landing');
-  if ($rl.length && !Modernizr.touchevents) {
-    win = $(window);
-    allMods = $(".jb-hsplit");
-
-    // Already visible modules
-    allMods.each(function(i, el) {
-      el = $(el);
-      if (visible(el, true)) {
-        el.addClass("already-visible");
-        el.addClass("come-in");
-      }
-    });
-
-    throttled = _.throttle(function() {
-
-      allMods.each(function(i, el) {
-        el = $(el);
-        if (visible(el, true)) {
-           el.addClass("come-in");
-        }
-      });
-
-    }, 100);
-
-    win.scroll(throttled);
-  }
-  if ($rl.length && Modernizr.touchevents) {
-    allMods = $(".jb-hsplit");
-    allMods.each(function(i, el) {
-      el = $(el);
-      el.addClass("visible");
-    });
-  }
-
-  // Animate bagels on finance sub-pages
-  // see: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
-  var $bagel = $('.bagel');
-  if ($bagel.length && !Modernizr.touchevents) {
-    win = $(window);
-    allMods = $(".bagel__image img");
-
-    // Already visible modules
-    allMods.each(function(i, el) {
-      el = $(el);
-      if (visible(el, true)) {
-        el.addClass("already-visible");
-        el.addClass("turn-in");
-      }
-    });
-
-    throttled = _.throttle(function() {
-
-      allMods.each(function(i, el) {
-        el = $(el);
-        if (visible(el, true)) {
-           el.addClass("turn-in");
-        }
-      });
-
-    }, 100);
-
-    win.scroll(throttled);
-  }
-  if ($bagel.length && Modernizr.touchevents) {
-    allMods = $(".bagel__image img");
-    allMods.each(function(i, el) {
-      el = $(el);
-      el.addClass("turn-in");
-    });
-  }
-
-  // Animate slider
-  var $slider = $('.slider');
-  if ($slider.length) {
-    require(['swiper'], function(Swiper) {
-      $slider.each(function() {
-        var $el = $(this);
-        var $slides = $el.find('.swiper-slide');
-
-        if ($slides.length <= 1) {
-          $el.removeClass('loading');
-        } else {
-          var swiper = new Swiper($el.get(0), {
-              nextButton: '.swiper-button-next',
-              prevButton: '.swiper-button-prev',
-              centeredSlides: true,
-              loop: true,
-              slidesPerView: 1,
-              onImagesReady: function() {
-                $el.removeClass('loading');
-              }
-          });
-        }
-
-      });
-    });
-  }
 
   // Animate mobile navigation
-  var $mnTrigger = $('.mn-trigger');
-  var $mncontainer = $('.mn-container');
-  var $logo = $('.real-logo');
-  var $mnClose = $('.mn-close');
+  let mnTrigger = $1('.mn-trigger');
+  let mncontainer = $1('.mn-container');
+  let logo = $1('.real-logo');
+  let mnClose = $1('.mn-close');
 
-  $mnTrigger.on('click', function(ev) {
-    $mncontainer.addClass('mn-inframe');
-    $body.addClass('no-scroll');
-    $logo.addClass('no-filter');
+  mnTrigger.addEventListener("click", ev => {
+    mncontainer.addClass('mn-inframe');
+    body.addClass('no-scroll');
+    logo.addClass('no-filter');
   });
 
-  $mnClose.on('click', function(ev) {
-    $mncontainer.removeClass('mn-inframe');
-    $body.removeClass('no-scroll');
-    $logo.removeClass('no-filter');
+  mnClose.addEventListener("click", ev => {
+    mncontainer.removeClass('mn-inframe');
+    body.removeClass('no-scroll');
+    logo.removeClass('no-filter');
   });
 });

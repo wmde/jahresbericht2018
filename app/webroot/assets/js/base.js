@@ -20,7 +20,7 @@ requirejs.config({
 
     // App
     // Add your app specific js paths here.
-    'scrollTo': 'scrollTo',
+    'waypoint': 'waypoint',
     'swiper': 'swiper',
     'underscore': 'underscore',
 
@@ -39,6 +39,10 @@ requirejs.config({
 
     // App
     // Add your app specific shims here...
+    'waypoint': {
+      exports: 'Waypoint',
+      deps: ['domready!']
+    },
 
     // Compat
     'modernizr': {

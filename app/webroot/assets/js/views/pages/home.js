@@ -8,20 +8,22 @@
  */
 
 require([
+  'skrollr',
+  'waypoint',
+  'modernizr',
   'components/example',
   'domready!'
 ], function(
-  Example
+  Skrollr, Waypoint, Modernizr, Example
 ) {
+  let $1 = document.querySelector.bind(document);
+  let $ = document.querySelectorAll.bind(document);
 
-  //  let chart;
-  //
-  //  new Waypoint('.member-chart', {
-  //    handler: () => {
-  //      if (!chart) { // Initialize just once.
-  //        chart = new Chart(document.querySelector('.chart'));
-  //      }
-  //    }
-  //  });
-
+  // finance-banner - turn bagels on scroll
+  let fb = $('.finance-banner');
+  if (fb.length && !Modernizr.touchevents) {
+    let s = Skrollr.init({
+      forceHeight: false
+    })
+  }
 });
