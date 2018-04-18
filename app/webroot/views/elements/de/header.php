@@ -109,8 +109,8 @@ $pageSpecificScript = function() use ($path) {
 		<li><a class="mn__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 	</ul>
 	<div class="mn__mini-nav">
-		<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2017_de.pdf">PDF Download</a>
-		<a class="lang-switch t--epsilon" href="<?= $switchLanguageFromUrl($lang) ?>">English</a>
+		<a class="lang-switch t--epsilon" href="<?= $switchLanguageFromUrl($lang) ?>">English Site</a>
+		<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2017_de.pdf">PDF</a>
 	</div>
 </div>
 
@@ -140,8 +140,8 @@ $pageSpecificScript = function() use ($path) {
 						<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 					<?php endif ?>
 				</ul>
-			<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2017_de.pdf">PDF Download</a>
-			<a class="lang-switch t--epsilon" href="<?= $switchLanguageFromUrl($lang) ?>">English</a>
+			<a class="lang-switch t--epsilon" href="<?= $switchLanguageFromUrl($lang) ?>">English Site</a>
+			<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2017_de.pdf">PDF</a>
 			</nav>
 			<nav class="nav mobile__nav">
 				<div class="nav__link mn-trigger">Menü</div>

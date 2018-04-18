@@ -5,20 +5,21 @@
 			<div class="main-footer__info">
 				<div class="main-footer__info-1 t--delta-serif">
 					<p>
-						Wikimedia Deutschland e. V.
+						Wikimedia Deutschland — Gesellschaft zur Förderung Freien Wissens e. V.
 					</p>
 					<p>
-						Tempelhofer Ufer 23-24<br>
-						10963 Berlin
+						Postfach 61 03 49 / 10925 Berlin
 					</p>
 					<p>
-						Telefon: <a href="tel:004930219158260">+49 (0)30-219 15 826-0</a>
+						Tempelhofer Ufer 23-24 / 10963 Berlin</br>
+						Telefon: <a href="tel:004930219158260">030 219 158 26-0</a></br>
+						Fax: 030 219 158 26-9
 					</p>
 				</div>
 				<div class="main-footer__info-2 t--delta-serif">
 					<p>
 						<a href="mailto:info@wikimedia.de">info@wikimedia.de</a><br>
-						<a href="https://wikimedia.de" target="new">wikimedia.de</a>
+						<a href="https://wikimedia.de" target="new">www.wikimedia.de</a>
 					</p>
 					<p>
 						Blog: <a href="https://blog.wikimedia.de" target="new">blog.wikimedia.de</a><br>
@@ -36,7 +37,7 @@
 			<article id="imprint" class="imprint invis cp--2x-bottom">
 				<h1 class="h--delta">
 					Dieses Impressum gilt für die Domain
-					<a href="http://2016.wikimedia.de">2016.wikimedia.de</a>.
+					<a href="http://2017.wikimedia.de">2017.wikimedia.de</a>.
 				</h1>
 				<section>
 					<h1 class="h--delta">Diensteanbieter</h1>

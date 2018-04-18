@@ -213,9 +213,9 @@ body > main {
 }
 .t--delta-serif {
   font-family: var(--font-family-serif);
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25; /* tuned up from design, was too tight */
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5; /* tuned up from design, was too tight */
 }
 .t--epsilon,
 .t--epsilon-emph {
@@ -426,15 +426,12 @@ a:focus {
 }
 .nav__link {
   display: inline-block;
-
   /* inherited from t--delta-emph */
   font-family: var(--font-family-sans);
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 16px;
   line-height: 1.2;
   letter-spacing: .05em; /* TODO needs adjustment to design */
-  text-transform: uppercase;
-
   color: white;
   opacity: .8;
 }
@@ -449,18 +446,16 @@ a:focus {
   opacity: 1;
 }
 .nav__active--rep {
-  color: var(--color-green);
-  filter: invert(100%);
+  border-bottom: 1px solid white;
 }
 .nav__active--rep-sub {
   opacity: 1;
 }
 .nav__active--fin-lo {
-  color: var(--color-orange);
+  border-bottom: 1px solid white;
 }
 .nav__active--fin-hi {
-  color: var(--color-green);
-  filter: invert(100%);
+  border-bottom: 1px solid white;
 }
 
 /* Mobile Navigation
@@ -721,6 +716,7 @@ a:focus {
 .main-footer__info-1 {
   width: 300px;
   min-width: 300px;
+  margin-right: 100px;
 }
 
 .main-footer p:first-of-type {
@@ -753,6 +749,13 @@ a:focus {
   width: 300px;
   min-width: 300px;
   height: 100px;
+  margin-left: 300px;
+}
+
+@media (max-width:1000px) {
+  .imprint-toggle {
+    margin-left: 0px;
+  }
 }
 @media (max-width: 800px) {
   .main-footer__bottom > div {
