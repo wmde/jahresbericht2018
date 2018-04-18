@@ -1554,7 +1554,8 @@ a:focus {
 .finance--fund .ft__row-line td {
   border-bottom: 1px solid var(--color-gray);
 }
-.finance--fund .ft__row-line--black td {
+.finance--fund .ft__row-line--black td,
+.finance--assn .ft__row-line td {
   border-bottom: 1px solid white;
 }
 .finance--fund .ft__row-line .ft__col-val {
@@ -1562,6 +1563,9 @@ a:focus {
 }
 .finance--fund .ft__row-line--black .ft__col-val {
   border-bottom: 1px solid var(--color-lightgreen);
+}
+.finance--assn .ft__row-line .ft__col-val {
+  border-bottom: 1px solid var(--color-lightorange);
 }
 .ft__cell-line {
   border-bottom: 1px solid var(--color-orange);
@@ -1821,7 +1825,7 @@ a:focus {
     width: auto;
   }
   .bagel__ratio > div {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--color-black);
   }
   .finance--fund .bagel__ratio > div {
     border-bottom: 1px solid var(--color-black);
@@ -1843,14 +1847,21 @@ a:focus {
   .bagel__line-1 span,
   .bagel__line-2 span,
   .bagel__line-3 span,
-  .bagel__line-4 span {
+  .bagel__line-4 span,
+  .bagel__line-4--alt {
     position: relative;
   }
   .bagel__line-1,
   .bagel__line-2,
   .bagel__line-3,
-  .bagel__line-4 {
+  .bagel__line-4--alt {
     height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .bagel__line-4 {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

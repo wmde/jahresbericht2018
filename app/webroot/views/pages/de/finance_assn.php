@@ -1,4 +1,4 @@
-<main class="finance bg--finance-assn">
+<main class="finance finance--assn bg--finance-assn">
 	<section class="section section__body cp">
 		<div class="limit--s finance__intro">
 			<h1 class="fin-detail__heading">
