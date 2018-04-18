@@ -57,7 +57,7 @@ $routes['#^/$#'] = function() {
 	];
 };
 $routes['#^/finance#'] = function($path) {
-	return ['hasBlackHeader' => $path === '/finance/fund'];
+	return ['hasBlackHeader' => $path !== '/finance'];
 };
 $routes['#^/report$#'] = function($path, $query, $matches) {
 	$filter = isset($query['filter']) ? $query['filter'] : null;
