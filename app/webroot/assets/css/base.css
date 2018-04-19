@@ -1412,8 +1412,6 @@ a:focus {
   margin-top: 80px;
   margin-bottom: 80px;
 }
-
-/* TODO(Fra) Achtung: umbauen! so solles nicht aussehen! */
 .report-detail{
   padding: 100px 0 0 0;
 }
@@ -1446,7 +1444,24 @@ a:focus {
   justify-content: center;
   padding: 140px 0 0 0;
 }
+.success-box {
+  max-width: 300px;
+  background-color: var(--color-gray);
+  padding: 20px;
+  margin-left: -80px;
+}
+.success-box__title {
+  background-color: white;
+  padding: 5px;
+}
+.success-box__number {
+  color: var(--color-orange);
+  display:block;
+  margin: 0;
+}
+.success-box__text {
 
+}
 
 /* Swiper
 ---------------------------------------------------------------- */

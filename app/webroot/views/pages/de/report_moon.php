@@ -21,6 +21,14 @@
 				<p>
 					Die <a href="http://ptscientists.com/" target="new">PT Scientists</a> aus Berlin, die als Freizeit-Wissenschaftler beim Google Lunar-X-Prize gestartet sind, möchten Wikipedia mit ihrem ersten rein privat finanzierten Mondflug ein Denkmal setzen. Als Einsteiger in die Thematik der Raumfahrt haben sich die PT Scientists nämlich selbst viel Wissen aus Wikipedia angeeignet. Robert Böhme, Leiter der PT Scientists, erinnert sich: „Für uns war Wikipedia am Anfang eine unheimlich wichtige Wissensquelle, weil wir einfach Außenseiter aus der Raumfahrt sind. Und es hat uns geholfen, den Einstieg zu kriegen und einfach das Nötigste zu lernen und zu sehen, was mit einem freien Austausch von Informationen alles möglich ist.“
 				</p>
+				<div class ="success-box">
+					<span class="success-box__title t--epsilon">Technologie
+					</span>
+					<span class="success-box__number h--alpha">81%
+					</span>
+					<span class="success-box__text t--delta-serif">Menschen haben aufgrund unserer Kampagnen ihre erste Bearbeitung in der Wikipedia gemacht
+					</span>
+				</div>
 				<p>
 					Da die Enzyklopädie in ihrem Umfang mittlerweile jedoch alle Grenzen herkömmlicher Datenträger sprengt, musste zuerst entschieden werden, welche Artikel für den Mond festgehalten werden sollen. Für das Projekt stand uns eine 20 Gigabyte umfassende Datendisc zur Verfügung, die durch ihre besondere Beschaffenheit die Reise ins All überstehen soll. In der ersten Phase des Projekts Wikipedia to the Moon wurde von der internationalen Wikipedia-Community diskutiert, welche der Millionen Artikel verewigt werden sollen. Einer der Vorschläge lautete, den Wikipedia-Artikel über den Mond aus allen Sprachen der Welt zum Mond zu schicken. Auch der Vorschlag, alle Artikel zu nehmen, mit deren Hilfe menschliche DNA von Außerirdischen künstlich rekonstruiert werden könne, fand einige Anhänger. Mit den exzellenten Artikeln und Listen aus allen Sprachversionen, entschied sich die Community schließlich dafür, die exzellenten Artikel aus der Wikipedia als Zeitkapsel für die Nachwelt festzuhalten. Dies sind Artikel, die nach einem umfangreichen Bewertungsprozess der Wikipedia-Community als die besten und vollständigsten gelten. Von Juli bis Oktober arbeiteten daraufhin Wikipedia-Autorinnen und -Autoren aus aller Welt an ihren Lieblingsartikeln, um diese noch besser zu machen und sie für einen Platz auf der Mond-Datendisc zu qualifizieren. Mehr als 450 neue exzellente Artikel sind so innerhalb von vier Monaten entstanden, 19 davon aus Deutschland. Das Münchner Olympiastadion wird nun ebenso auf dem Mond verewigt wie Dalís Schnurrbart.
 				</p>
