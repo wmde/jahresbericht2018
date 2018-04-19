@@ -571,10 +571,10 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m finance__boxes">
-			<a class="border-box border-box--green t--epsilon" href="<?= $url('finance', $lang) ?>">
+			<a class="border-box border-box--assn t--epsilon" href="<?= $url('finance', $lang) ?>">
 				<span>Zur Übersicht  <em class="t--delta">Finanzreport 2017</em></span>
 			</a>
-			<a class="border-box border-box--green t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
+			<a class="border-box border-box--assn t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Gemeinnützige Wikimedia Fördergesellschaft mbH</em></span>
 			</a>
 		</div>

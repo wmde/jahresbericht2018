@@ -463,10 +463,10 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m finance__boxes">
-			<a class="border-box t--epsilon" href="<?= $url('finance', $lang) ?>">
+			<a class="border-box border-box--fund t--epsilon" href="<?= $url('finance', $lang) ?>">
 				<span>Zur Übersicht  <em class="t--delta">Finanzreport 2017</em></span>
 			</a>
-			<a class="border-box t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
+			<a class="border-box border-box--fund t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
 			</a>
 		</div>

@@ -5,10 +5,10 @@
 			<p class="t--gamma">2017 war für Wikimedia Deutschland aus finanzieller Sicht erneut ein gutes Jahr.</p>
 		</div>
 		<div class="limit--m finance__boxes">
-			<a class="border-box t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
+			<a class="border-box border-box--finance t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e.&nbsp;V.</em></span>
 			</a>
-			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
+			<a class="border-box border-box--finance t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Gemeinnützige Wikimedia Fördergesellschaft mbH</em></span>
 			</a>
 		</div>
@@ -28,10 +28,10 @@ Aus der Übersicht „<a href="<?= $url('finance/assn', $lang) ?>">Mittelverwend
 			<p class="t--gamma-serif finance__p">Wikimedia Deutschland lässt interne Abläufe, die Spendenverteilung sowie die Vermögens-, Ertrags-, und Finanzlage freiwillig prüfen. Die Prüfung des Wikimedia Deutschland - Gesellschaft zur Förderung Freien Wissens e. V. und der Gemeinnützigen Wikimedia Fördergesellschaft mbH erfolgte durch die KWP Revision GmbH Wirtschaftsprüfungsgesellschaft Berlin und wurde im Dezember 2017 und Februar / März 2018 durchgeführt. Es wurde ein uneingeschränkter Bestätigungsvermerk erteilt. Demnach wurde die Buchführung des <a href="https://www.wikimedia.de/w/images.homepage/9/9f/BV_WMDE_JA2016.pdf" target="new">Vereins</a> und der <a href="https://www.wikimedia.de/w/images.homepage/f/f8/BV_WMFG_JA2016.pdf" target="new">Gesellschaft</a> vollständig und gewissenhaft vorgenommen und die Prüfung hat insgesamt zu keinerlei Einwänden geführt.</p>
 		</div>
 		<div class="limit--m finance__boxes">
-			<a class="border-box t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
+			<a class="border-box border-box--finance t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
 			</a>
-			<a class="border-box t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
+			<a class="border-box border-box--finance t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Gemeinnützige Wikimedia Fördergesellschaft mbH</em></span>
 			</a>
 		</div>

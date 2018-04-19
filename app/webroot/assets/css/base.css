@@ -95,7 +95,7 @@ body > main {
   padding: 40px;
 }
 .cp--center-section {
-  padding: 160px 0px;
+  padding: 160px 40px;
 }
 .cp--upped-section {
   padding: 120px 40px 160px 40px;
@@ -145,7 +145,7 @@ body > main {
     padding: 10px;
   }
   .cp--center-section {
-    padding: 40px 0px;
+    padding: 40px 10px;
   }
   .cp--upped-section {
     padding: 60px 20px 40px 20px;
@@ -331,6 +331,11 @@ body > main {
 .border-box {
   border: 1px solid var(--color-black);
   padding: 30px 40px;
+  padding: 30px 40px;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
 }
 .border-box :first-child {
   margin-top: 0;
@@ -338,23 +343,11 @@ body > main {
 .border-box :last-child {
   margin-bottom: 0;
 }
-.border-box--green {
-  color: var(--color-green) !important;
-  border-color: var(--color-green) !important;
-}
-.border-box--green .bullet-list li {
+.border-box .bullet-list li {
   padding-top: 5px;
 }
-.border-box--green a {
-  color: var(--color-green);
-  border-bottom: 1px solid var(--color-green);
-}
-.border-box--black {
-  color: var(--color-black) !important;
-  border-color: var(--color-black) !important;
-}
 .border-box--report {
-  border-color: var(--color-green) !important;
+  border-color: var(--color-green);
 }
 .border-box--report .bullet-list li {
   padding-top: 5px;
@@ -362,6 +355,69 @@ body > main {
 .border-box--report a {
   color: var(--color-black);
   border-bottom: 1px solid var(--color-black);
+}
+
+
+.border-box--finance {
+  color: white;
+  border-color: white;
+  width: 450px;
+  text-align: center;
+  display: flex;
+}
+.border-box--finance:hover {
+  color: var(--color-orange);
+  background-color: white;
+}
+.border-box--finance em {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  padding-top: 5px;
+  font-weight: bold;
+  line-height: 1.35;
+}
+.border-box--fund {
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+  width: 450px;
+  text-align: center;
+  display: flex;
+}
+.border-box--fund:hover {
+  color: white;
+  background-color: var(--color-orange);
+}
+.border-box--fund em {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  padding-top: 5px;
+  font-weight: bold;
+  line-height: 1.35;
+}
+.border-box--assn {
+  color: var(--color-green);
+  border-color: var(--color-green);
+  width: 450px;
+  text-align: center;
+  display: flex;
+}
+.border-box--assn a {
+  color: var(--color-green);
+  border-bottom: 1px solid var(--color-green);
+}
+.border-box--assn:hover {
+  color: white;
+  background-color: var(--color-green);
+}
+.border-box--assn em {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  padding-top: 5px;
+  font-weight: bold;
+  line-height: 1.35;
 }
 
 /* Section Backgrounds
@@ -1520,43 +1576,6 @@ a:focus {
   padding: 80px 0;
   flex-wrap: wrap;
   justify-content: center;
-}
-.finance .border-box {
-  color: white;
-  border-color: white;
-  width: 450px;
-  padding: 30px 40px;
-  margin: 15px;
-  text-align: center;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all .5s;
-}
-.finance .border-box:hover {
-  color: var(--color-orange);
-  background-color: white;
-}
-.finance--fund .border-box {
-  color: var(--color-orange);
-  border-color: var(--color-orange);
-}
-.finance--fund .border-box:hover {
-  color: white;
-  background-color: var(--color-orange);
-}
-.finance--assn .border-box:hover {
-  color: white !important;
-  background-color: var(--color-green);
-}
-.finance .border-box em {
-  display: block;
-  font-style: normal;
-  text-transform: uppercase;
-  padding-top: 5px;
-  font-weight: bold;
-  line-height: 1.35;
 }
 .finance__p {
   margin-bottom: 80px;
