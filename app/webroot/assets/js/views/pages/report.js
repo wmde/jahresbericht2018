@@ -16,10 +16,18 @@ require([
   let $1 = document.querySelector.bind(document);
   let $ = document.querySelectorAll.bind(document);
 
+  // this function replaces jquery.offset()
+  function offset(el) {
+    let rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+  }
   function visible(element, partial) { // returns true if 100px of an element are visible in the view
     let viewTop       = window.pageYOffset || document.documentElement.scrollTop,
         viewBottom    = viewTop + (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight),
-        _top          = offset(element).top,
+        _top          = offset(element).top;
+
     return _top + 100 <= viewBottom;
   }
 
