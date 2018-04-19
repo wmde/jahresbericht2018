@@ -22,7 +22,8 @@ require([
 
   // Animate bagels on finance sub-pages
   // see: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
-  let bagel = $('.bagel');
+  // FIXME: Refakturisierung ohne JQUERY
+  let bagel = $('.bagel'); // hier auch noch .bagel--alt hinzufügen
   if (bagel.length && !Modernizr.touchevents) {
     allMods = $(".bagel__image img");
 

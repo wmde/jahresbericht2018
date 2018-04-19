@@ -95,7 +95,7 @@ body > main {
   padding: 40px;
 }
 .cp--center-section {
-  padding: 160px 40px;
+  padding: 160px 0px;
 }
 .cp--upped-section {
   padding: 120px 40px 160px 40px;
@@ -145,7 +145,7 @@ body > main {
     padding: 10px;
   }
   .cp--center-section {
-    padding: 40px 10px;
+    padding: 40px 0px;
   }
   .cp--upped-section {
     padding: 60px 20px 40px 20px;
@@ -229,6 +229,17 @@ body > main {
 .t--epsilon-emph {
   font-weight: 800;
 }
+.t--zeta,
+.t--zeta-emph {
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+}
+.t--zeta-emph {
+  font-weight: 800;
+}
+
 /* --epsilon-serif does not exist */
 
 /* Headlines
@@ -328,8 +339,8 @@ body > main {
   margin-bottom: 0;
 }
 .border-box--green {
-  color: var(--color-green);
-  border-color: green;
+  color: var(--color-green) !important;
+  border-color: var(--color-green) !important;
 }
 .border-box--green .bullet-list li {
   padding-top: 5px;
@@ -341,6 +352,16 @@ body > main {
 .border-box--black {
   color: var(--color-black) !important;
   border-color: var(--color-black) !important;
+}
+.border-box--report {
+  border-color: var(--color-green) !important;
+}
+.border-box--report .bullet-list li {
+  padding-top: 5px;
+}
+.border-box--report a {
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-black);
 }
 
 /* Section Backgrounds
@@ -399,10 +420,6 @@ body > main {
 .section__actions {
 	text-align: center;
 }
-.report-detail .section__actions {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 
 /* Hyperlinks
 ---------------------------------------------------------------- */
@@ -433,10 +450,10 @@ a:focus {
   line-height: 1.2;
   letter-spacing: .05em; /* TODO needs adjustment to design */
   color: white;
-  opacity: .8;
+  opacity: 1;
 }
 .nav__link:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 .nav__list li + li {
   margin-left: 40px;
@@ -834,23 +851,48 @@ a:focus {
   /* allows in-flow positioning, also equalizes button and a elements */
   display: inline-block;
 
-  /* inherits t--delta */
+  /* inherits h--gamma */
   font-family: var(--font-family-sans);
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 20px;
   line-height: 1.2;
 
-  padding: 11px 30px 9px 30px; /* TODO needs tuning for actual values */
+  padding: 11px 30px 9px 30px;
   border: 1px solid var(--color-black);
+}
+.button--small {
+  display: inline-block;
+  /* inherits t--epsilon */
+  font-family: var(--font-family-sans);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  border: none;
 }
 .button:hover {
 
 }
-
+.button--report {
+  padding: 140px 140px 140px 140px;
+}
 .button--bg-green {
 	color: white;
 	background-color: var(--color-green);
   border: 1px solid var(--color-green);
+  transition: all .5s;
+}
+.button--bg-report--first {
+	color: white;
+	background-color: var(--color-green);
+  border: none;
+  transition: all .5s;
+}
+.button--bg-report--second {
+	color: var(--color-green);
+	background-color: var(--color-gray);
+  border: none;
   transition: all .5s;
 }
 .button--bg-green:hover {
@@ -1309,7 +1351,7 @@ a:focus {
   margin-bottom: 80px;
 }
 .report-detail .cp--center-section {
-  padding: 60px 40px;
+  padding: 100px 0 0 0;
 }
 .report-detail__text.cp {
   padding-top: 10px;
@@ -1326,7 +1368,14 @@ a:focus {
   color: var(--color-black);
 }
 .report-detail .section__teaser {
-  font-weight: bold;
+    line-height: 1.6;
+    padding-bottom: 25px;
+}
+.report__boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
@@ -1392,7 +1441,7 @@ a:focus {
 .swiper-button-prev {
   position: absolute;
   top: 50%;
-  width: 52px;
+  width: 32px;
   height: 99px;
   margin-top: -50px;
   z-index: 10;
@@ -1426,6 +1475,12 @@ a:focus {
 }
 .swiper-button-prev--green {
   background-image: url("../ico/arrow_green_left.svg");
+}
+.swiper-button-next--black {
+  background-image: url("../ico/arrow_black_right.svg");
+}
+.swiper-button-prev--black {
+  background-image: url("../ico/arrow_black_left.svg");
 }
 
 /* Finance Page
@@ -1471,11 +1526,16 @@ a:focus {
   background-color: white;
 }
 .finance--fund .border-box {
-  color: var(--color-black);
-  border-color: var(--color-black);
+  color: var(--color-orange);
+  border-color: var(--color-orange);
 }
 .finance--fund .border-box:hover {
-  background-color: var(--color-black);
+  color: white;
+  background-color: var(--color-orange);
+}
+.finance--assn .border-box:hover {
+  color: white !important;
+  background-color: var(--color-green);
 }
 .finance .border-box em {
   display: block;
@@ -1638,9 +1698,12 @@ a:focus {
   position: relative;
   padding: 40px 0;
 }
+.bagel--alt {
+  padding-bottom: 100px;
+}
 .bagel img {
   height: 100%;
-  opacity: 0;
+  opacity: 1;
   transform: rotate(-45deg) scale(.8);
   transition: all .5s;
 }
@@ -1675,6 +1738,7 @@ a:focus {
 .bagel__line-3,
 .bagel__line-4,
 .bagel__line-4--alt,
+.bagel__line-4--alt-number,
 .bagel__line-5{
   position: relative;
 }
@@ -1683,6 +1747,7 @@ a:focus {
 .bagel__line-3 span,
 .bagel__line-4 span,
 .bagel__line-4--alt span,
+.bagel__line-4--alt-number span,
 .bagel__line-5 span {
   position: absolute;
   bottom: 0;
@@ -1702,8 +1767,11 @@ a:focus {
 .finance--fund .bagel__line-3 {
   height: 60px;
 }
+.finance--fund .bagel__line-4--alt-number {
+  height: 60px;
+}
 .finance--fund .bagel__line-4--alt {
-  height: 80px;
+  height: 60px;
 }
 .bagel__line-4 {
   height: 80px;
@@ -1730,7 +1798,7 @@ a:focus {
   width: 300px;
 }
 .finance--fund .bagel__ratio .bagel__line-1 span {
-  width: 280px;
+  width: 290px;
 }
 .bagel__ratio .bagel__line-2 span {
   width: 160px;
@@ -1752,7 +1820,7 @@ a:focus {
 }
 
 .bagel__circle {
-	background-color: white;
+	background-color: var(--color-black);
   width: 4px;
 	height: 4px;
 	border-radius: 2px;

@@ -3,11 +3,10 @@
 		class="report-detail-hero cp cp--nav-zone"
 		style="background-image: url(/assets/img/11_moon_hero.jpg)"
 	>
-		<img class="report-detail-hero__center-illu" src="/assets/ico/11_moon_white.svg" alt="Illustration" >
-		<div class="report-detail-hero__filter"></div>
+		<!-- <div class="report-detail-hero__filter"></div> -->
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail-hero__caption t--epsilon">Denis Schroeder (WMDE) (<a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_und_Lunar_Quattro_2.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">Denis Schroeder (WMDE) (<a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_und_Lunar_Quattro_2.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Wikipedia wird 15!</em><br>…und fliegt zum Mond
@@ -73,24 +72,36 @@
 						</figure>
 					</div>
 				</div>
-				<div class="swiper-button-next swiper-button-next--green"></div>
-				<div class="swiper-button-prev swiper-button-prev--green"></div>
+				<div class="swiper-button-next swiper-button-next--black"></div>
+				<div class="swiper-button-prev swiper-button-prev--black"></div>
 			</div>
 		</div>
 	</section>
 	<section class="section cp--center-section">
 		<div class="limit--s">
-			<div class="border-box border-box--green">
-				<div class="h--gamma">LINKS</div>
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li><a href="https://meta.wikimedia.org/wiki/Wikipedia_to_the_Moon/de" target="new">Internationale Projektseite</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
-	<section class="section cp--center-section">
-		<div class="section__actions">
-			<a href="<?= $url('/report', $lang) ?>" class="button button--bg-green">Zur Themenübersicht</a>
+	<section class="section">
+		<div class="report__boxes">
+			<section class="section cp--center-section">
+				<div class="section__actions">
+					<a href="<?= $url('/report', $lang) ?>" class="button button--report button--bg-report--first">Zur Themenübersicht</a>
+				</div>
+			</section>
+			<section class="section cp--center-section">
+				<div class="section__actions">
+					<a href="<?= $url('/report', $lang) ?>" class="button button--report button--bg-report--second">
+						<p class="button--small"> Zum nächsten Projekt </p>
+						<p> Freiwillige unterstützen </p>
+					</a>
+				</div>
+			</section>
 		</div>
 	</section>
 </main>

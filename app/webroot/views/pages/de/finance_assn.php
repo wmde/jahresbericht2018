@@ -423,7 +423,7 @@
 			<h2 class="h--beta ft__heading">Mittelverwendung</h2>
 			<div class="bagel">
 				<figure class="fig bagel__image bagel__image--l">
-					<img src="/assets/img/bagel-22-78.png" alt="">
+					<img src="/assets/img/bagel_ev_17.png" alt="">
 					<figcaption class="t--beta bagel__cap">2017</figcaption>
 				</figure>
 				<div class="bagel__text">
@@ -455,7 +455,7 @@
 			</div>
 			<div class="bagel bagel--s">
 				<figure class="fig bagel__image bagel__image--s">
-					<img src="/assets/img/bagel-22-78.png" alt="">
+					<img src="/assets/img/bagel_ev_1615.png" alt="">
 					<figcaption class="t--gamma bagel__cap">2016</figcaption>
 				</figure>
 				<div class="bagel__text">
@@ -487,7 +487,7 @@
 			</div>
 			<div class="bagel bagel--s">
 				<figure class="fig bagel__image bagel__image--s">
-					<img src="/assets/img/bagel-22-78.png" alt="">
+					<img src="/assets/img/bagel_ev_1615.png" alt="">
 					<figcaption class="t--gamma bagel__cap">2015</figcaption>
 				</figure>
 				<div class="bagel__text">
@@ -571,10 +571,10 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m finance__boxes">
-			<a class="border-box border-box--black t--epsilon" href="<?= $url('finance', $lang) ?>">
+			<a class="border-box border-box--green t--epsilon" href="<?= $url('finance', $lang) ?>">
 				<span>Zur Übersicht  <em class="t--delta">Finanzreport 2017</em></span>
 			</a>
-			<a class="border-box border-box--black t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
+			<a class="border-box border-box--green t--epsilon" href="<?= $url('finance/fund', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Gemeinnützige Wikimedia Fördergesellschaft mbH</em></span>
 			</a>
 		</div>
