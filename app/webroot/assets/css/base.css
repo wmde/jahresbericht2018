@@ -17,7 +17,7 @@
   --color-lightgreen: #e2efe9;
   --color-lightorange: #fceed9;
   --color-gradient-orange: linear-gradient(#F8B54A, #f29400 30%);
-  --color-gradient-green: linear-gradient(#339966, #50B78D 60%);
+  --color-gradient-green: linear-gradient(#339966, #50B78D 90%);
   --color-gradient-green--inverse: linear-gradient(#50B78D, #339966 30%);
 
   --font-family-sans: 'Montserrat', sans-serif;
@@ -870,29 +870,35 @@ a:focus {
   text-transform: uppercase;
   letter-spacing: .08em;
   border: none;
+  margin: 0;
 }
 .button:hover {
 
 }
 .button--report {
-  padding: 140px 140px 140px 140px;
+  width: 50%;
+  text-align: center;
+  padding: 100px;
+  border: none;
+  transition: all .5s;
 }
+.button--report:nth-of-type(1n) {
+  color: white;
+  background-image: url(/assets/img/cubes_themenuebersicht.svg),var(--color-gradient-green);
+  background-repeat: no-repeat;
+  background-position: center 40px, 0;
+  background-size: 60%,100%;
+}
+.button--report:nth-of-type(2n) {
+  color: var(--color-green);
+  background-image: none;
+	background-color: var(--color-gray);
+}
+
 .button--bg-green {
 	color: white;
 	background-color: var(--color-green);
   border: 1px solid var(--color-green);
-  transition: all .5s;
-}
-.button--bg-report--first {
-	color: white;
-	background-color: var(--color-green);
-  border: none;
-  transition: all .5s;
-}
-.button--bg-report--second {
-	color: var(--color-green);
-	background-color: var(--color-gray);
-  border: none;
   transition: all .5s;
 }
 .button--bg-green:hover {
@@ -1350,11 +1356,13 @@ a:focus {
   margin-top: 80px;
   margin-bottom: 80px;
 }
-.report-detail .cp--center-section {
+
+/* TODO(Fra) Achtung: umbauen! so solles nicht aussehen! */
+.report-detail{
   padding: 100px 0 0 0;
 }
-.report-detail__text.cp {
-  padding-top: 10px;
+.report-detail__text {
+  padding: 10px 40px 40px 40px;
 }
 .report-detail__text a {
   color: var(--color-black);
@@ -1362,6 +1370,7 @@ a:focus {
 }
 .report-detail .hero__caption {
   text-align: center;
+  padding-top: 10px;
 }
 .report-detail .hero__caption a {
   text-decoration: none;
@@ -1371,11 +1380,15 @@ a:focus {
     line-height: 1.6;
     padding-bottom: 25px;
 }
+.report__links {
+  padding: 100px 0 0 0;
+}
 .report__boxes {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 140px 0 0 0;
 }
 
 
@@ -1937,6 +1950,21 @@ a:focus {
     justify-content: space-between;
     align-items: flex-end;
   }
+  .button--report:nth-of-type(1n) {
+    background-size: 60%,100%;
+  }
+  .button--report {
+    width: 100%;
+  }
+  .report__links {
+    padding: 60px 40px;
+  }
+  .report__boxes {
+    padding: 40px 0 0 0;
+  }
+  .report-detail__text {
+    padding: 10px 30px 30px 30px;
+  }
 }
 
 /* Responsive 550px
@@ -2035,13 +2063,19 @@ a:focus {
     padding-left: 10px;
     padding-right: 10px;
   }
-
   .bagel__info {
     width: 280px;
     margin-left: 10px;
   }
-
-
+  .button--report:nth-of-type(1n) {
+    background-size: 80%,100%;
+  }
+  .report-detail__text {
+    padding: 10px 10px 10px 10px;
+  }
+  .report__links {
+    padding: 20px 40px;
+  }
   .main-footer {
     padding: 20px 0;
   }

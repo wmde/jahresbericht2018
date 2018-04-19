@@ -40,7 +40,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section cp--center-section">
+	<section class="section report__links">
 		<div class="limit--l">
 			<div class="section__body slider swiper-container loading">
 				<div class="swiper-wrapper">
@@ -77,7 +77,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section cp--center-section">
+	<section class="section report__links">
 		<div class="limit--s">
 			<div class="border-box border-box--report">
 				<div class="t--delta">LINKS</div>
@@ -87,21 +87,11 @@
 			</div>
 		</div>
 	</section>
-	<section class="section">
-		<div class="report__boxes">
-			<section class="section cp--center-section">
-				<div class="section__actions">
-					<a href="<?= $url('/report', $lang) ?>" class="button button--report button--bg-report--first">Zur Themenübersicht</a>
-				</div>
-			</section>
-			<section class="section cp--center-section">
-				<div class="section__actions">
-					<a href="<?= $url('/report', $lang) ?>" class="button button--report button--bg-report--second">
+	<section class="report__boxes">
+					<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
+					<a href="<?= $url('/report', $lang) ?>" class="button button--report">
 						<p class="button--small"> Zum nächsten Projekt </p>
 						<p> Freiwillige unterstützen </p>
 					</a>
-				</div>
-			</section>
-		</div>
 	</section>
 </main>
