@@ -23,6 +23,7 @@ requirejs.config({
     'waypoint': 'waypoint',
     'swiper': 'swiper',
     'underscore': 'underscore',
+    'visible': 'visible',
 
     // Components
     'components/example': 'components/example',
