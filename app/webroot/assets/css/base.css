@@ -713,7 +713,7 @@ a:focus {
 }
 
 .main-header .limit--l {
-  position: relative;
+  margin-top: 10px;
 }
 
 .main-header__logo {
@@ -721,6 +721,27 @@ a:focus {
 }
 .logo--s {
   display: none;
+}
+.nav__list--upper {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: var(--font-family-sans);
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: .05em;
+  top: -10px;
+  right: 0px;
+  text-decoration: none;
+}
+.nav__list--upper a {
+  color: white;
+}
+.nav__list--upper a:nth-last-of-type(2) {
+  margin: 0 20px 0 20px;
+}
+.nav__list--upper a:hover {
+  opacity: 0.5;
 }
 @media (max-width: 1000px) {
   .logo--s {
@@ -738,30 +759,6 @@ a:focus {
   .main-header__nav {
     margin-top: 80px;
   }
-}
-.main-header__nav .lang-switch {
-  position: absolute;
-  top: -13px; /* align baseline with top of WM logo icon */
-  right: 0;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: .05em;
-  color: white;
-  opacity: .8;
-}
-.main-header__nav .pdf-download {
-  position: absolute;
-  top: -13px;
-  right: 100px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: .05em;
-  color: white;
-  opacity: .8;
-}
-.lang-switch:hover,
-.pdf-download:hover {
-  opacity: 1;
 }
 
 /* TODO: Remove once english pdf download exists. */

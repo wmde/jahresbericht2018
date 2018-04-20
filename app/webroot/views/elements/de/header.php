@@ -140,8 +140,11 @@ $pageSpecificScript = function() use ($path) {
 						<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 					<?php endif ?>
 				</ul>
-			<a class="lang-switch t--epsilon" href="<?= $switchLanguageFromUrl($lang) ?>">English Site</a>
-			<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2017_de.pdf">PDF</a>
+				<main class="nav__list--upper">
+					<a class="lang-switch" href="<?= $switchLanguageFromUrl($lang) ?>">English Site</a>
+					<a class="pdf-download" href="/assets/doc/jahresbericht2017_de.pdf">PDF</a>
+					<a class="pdf-download" href="">Mitglied werden</a>
+				</main>
 			</nav>
 			<nav class="nav mobile__nav">
 				<div class="nav__link mn-trigger">Menü</div>
