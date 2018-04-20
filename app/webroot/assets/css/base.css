@@ -746,6 +746,7 @@ a:focus {
 @media (max-width: 1000px) {
   .logo--s {
     display: block;
+    margin-top: 9px;
   }
   .logo--l {
     display: none;
@@ -764,6 +765,12 @@ a:focus {
 /* TODO: Remove once english pdf download exists. */
 [lang="en"] .pdf-download {
   opacity: 0 !important;
+}
+@media (max-width: 550px) {
+  .logo--s {
+    max-width: 150px;
+    margin-top: 16px;
+  }
 }
 
 /* Footer / Imprint
