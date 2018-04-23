@@ -5,6 +5,10 @@
 			'de' => 'Wikimedia',
 			'en' => 'Wikimedia'
 		],
+		'teaser' => [
+			'de' => 'Deutscher Text',
+			'en' => 'English text'
+		]
 	],
 	[
 		'name' => 'volunteers',

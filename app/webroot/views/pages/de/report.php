@@ -2,16 +2,26 @@
 
 	<section class="report-landing-hero cp cp--6x-top cp--4x-bottom">
 		<h1 class="h--beta report-landing-hero__title">Unsere Themen im Überblick</h1>
+		<?php if ($filter): ?>
+		<div class="big-cube">
+
+			<a href="/">Zur Übersicht</a>
+			BIG CUBE
+			<?= $filter['title'][$lang] ?>
+			<?= $filter['teaser'][$lang] ?>
+		</div>
+		<?php else: ?>
 		<div class="report-landing-hero__cubes limit--l cp--2x-top">
 			<?php foreach ($filters as $f): ?>
 				<a
-					class="report-landing-hero__cube nav-cube<?= ($filter == $f['name'] ? ' active' : '') ?>"
+					class="report-landing-hero__cube"
 					href="?filter=<?= $f['name'] ?>"
 				>
 					<span class="nav-cube__title t--epsilon-emph"><?= $f['title'][$lang] ?></span>
 				</a>
 			<?php endforeach ?>
 		</div>
+		<?php endif ?>
 	</section>
 
 	<div class="limit--m report-landing__jbs">
