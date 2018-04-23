@@ -32,8 +32,7 @@
 		<div class="jb-hsplit-list">
 		<?php foreach ($reports as $report): ?>
 			<a class="jb-hsplit" href="<?= $url('report/' . $report['name'], $lang) ?>">
-				<div class="bg--big-icons-green">
-				</div>
+				<div class="bg--big-icons-green jb-hsplit__overlay"></div>
 				<figure
 					class="jb-hsplit__cover"
 					style="background-image: url('<?= $report['cover'] ?>');"
@@ -44,9 +43,8 @@
 				</div>
 			</a>
 		<?php endforeach ?>
-			<a class="jb-hsplit" href="<?= $url('/report/monuments', $lang) ?>">
-				<div class="bg--big-icons-green">
-				</div>
+			<!-- <a class="jb-hsplit" href="<?= $url('/report/monuments', $lang) ?>">
+				<div class="bg--big-icons-green jb-hsplit__overlay"></div>
 				<figure
 					class="jb-hsplit__cover"
 					style="background-image: url('/assets/img/13_monuments_hero.jpg');"
@@ -54,7 +52,7 @@
 				<div class="jb-hsplit__content">
 					<h1 class="h--gamma jb-hsplit__title">Wiki Loves Monuments</h1>
 				</div>
-			</a>
+			</a> -->
 		</div>
 	</div>
 </main>
