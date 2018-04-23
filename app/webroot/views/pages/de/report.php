@@ -1,28 +1,32 @@
 <main class="report-landing cp--6x-bottom">
 
-	<section class="report-landing-hero cp cp--6x-top cp--4x-bottom">
-		<h1 class="h--beta report-landing-hero__title">Unsere Themen im Überblick</h1>
 		<?php if ($filter): ?>
-		<div class="big-cube">
-
-			<a href="/">Zur Übersicht</a>
-			BIG CUBE
-			<?= $filter['title'][$lang] ?>
-			<?= $filter['teaser'][$lang] ?>
-		</div>
+		<section class="report-landing-hero cp cp--4x-top cp--4x-bottom">
+			<div class="filter">
+				<div class ="filter-head">
+					<a href="<?= $url('report/' . $report['name'], $lang) ?>" class="filter-head--back h--delta">Zur Übersicht</a>
+					<div class="filter-head--menu h--beta"><?= $filter['title'][$lang] ?></div>
+					<img class="filter-head--image" src="/assets/img/cube_themen_orange.svg" alt="">
+					<div class="filter-text t--gamma-serif"><?= $filter['teaser'][$lang] ?></div>
+				</div>
+			</div>
+		</section>
 		<?php else: ?>
-		<div class="report-landing-hero__cubes limit--l cp--2x-top">
-			<?php foreach ($filters as $f): ?>
-				<a
-					class="report-landing-hero__cube"
-					href="?filter=<?= $f['name'] ?>"
-				>
-					<span class="nav-cube__title t--epsilon-emph"><?= $f['title'][$lang] ?></span>
-				</a>
-			<?php endforeach ?>
-		</div>
+		<section class="report-landing-hero cp cp--6x-top cp--4x-bottom">
+			<h1 class="h--beta report-landing-hero__title">Unsere Themen im Überblick</h1>
+			<div class="report-landing-hero__cubes limit--l cp--2x-top">
+				<?php foreach ($filters as $f): ?>
+					<a
+						class="report-landing-hero__cube nav-cube"
+						href="?filter=<?= $f['name'] ?>"
+					>
+						<span class="nav-cube__title t--epsilon-emph"><?= $f['title'][$lang] ?></span>
+					</a>
+				<?php endforeach ?>
+			</div>
+		</section>
 		<?php endif ?>
-	</section>
+
 
 	<div class="limit--m report-landing__jbs">
 		<div class="jb-hsplit-list">

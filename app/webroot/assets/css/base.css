@@ -18,7 +18,7 @@
   --color-lightorange: #fceed9;
   --color-gradient-orange: linear-gradient(#F8B54A, #f29400 30%);
   --color-gradient-green: linear-gradient(#339966, #50B78D 90%);
-  --color-gradient-green--inverse: linear-gradient(#50B78D, #339966 30%);
+  --color-gradient-green--inverse: linear-gradient(#5AC59B, #339966 60%);
 
   --font-family-sans: 'Montserrat', sans-serif;
   --font-family-serif: 'Source Serif Pro', serif;
@@ -901,6 +901,52 @@ a:focus {
   background-color: var(--color-black);
   opacity: .45;
 }
+.report-landing .report-landing-hero {
+  background: var(--color-gradient-green--inverse);
+}
+.filter {
+  background-repeat: no-repeat;
+  background-position: center 0px, 0px;
+  background-size: 400px, 0px;
+}
+.filter-head {
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 70px;
+}
+.filter-head--back {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+.filter-head--menu {
+  position: relative;
+}
+.filter-head--image {
+  width: 450px;
+  margin-top: -170px;
+}
+.filter-text {
+  max-width: 760px;
+  text-align: left;
+  margin: -200px auto 0 auto;
+}
+
+@media(max-width: 1100px) {
+  .filter-head {
+    padding-top: 150px;
+  }
+}
+@media(max-width: 550px) {
+  .filter-head--image {
+    width: 300px;
+    margin-top: -120px;
+  }
+  .filter-text {
+    margin-top: -150px;
+  }
+}
 
 /* Forms
 ---------------------------------------------------------------- */
@@ -944,7 +990,7 @@ a:focus {
 }
 .button--report:nth-of-type(1n) {
   color: white;
-  background-image: url(/assets/img/cubes_themenuebersicht.svg),var(--color-gradient-green);
+  background: var(--color-green) url(/assets/img/cubes_themenuebersicht.svg);
   background-repeat: no-repeat;
   background-position: center 40px, 0;
   background-size: 60%,100%;
