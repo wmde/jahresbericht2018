@@ -5,7 +5,7 @@
 			<div class="filter">
 				<div class ="filter-head">
 					<a href="<?= $url('report/' . $report['name'], $lang) ?>" class="filter-head--back h--delta">Zur Übersicht</a>
-					<div class="filter-head--menu h--beta"><?= $filter['title'][$lang] ?></div>
+					<div class="filter-head--menu h--gamma"><?= $filter['title'][$lang] ?></div>
 					<img class="filter-head--image" src="/assets/img/cube_themen_orange.svg" alt="">
 					<div class="filter-text t--gamma-serif"><?= $filter['teaser'][$lang] ?></div>
 				</div>
@@ -32,35 +32,27 @@
 		<div class="jb-hsplit-list">
 		<?php foreach ($reports as $report): ?>
 			<a class="jb-hsplit" href="<?= $url('report/' . $report['name'], $lang) ?>">
-				<div class="jb-hsplit__overlay bg--big-icons-green">
-					<figure class="jb-hsplit__bg-icon">
-						<img src="<?= $report['icon'] ?>" alt="">
-					</figure>
-					<span class="button button--outline-white">
-						Zu diesem Thema
-					</span>
+				<div class="bg--big-icons-green">
 				</div>
 				<figure
 					class="jb-hsplit__cover"
 					style="background-image: url('<?= $report['cover'] ?>');"
 				></figure>
 				<div class="jb-hsplit__content">
-					<h1 class="h--beta jb-hsplit__title"><?= $report['title'][$lang] ?></h1>
+					<h1 class="h--gamma jb-hsplit__title"><?= $report['title'][$lang] ?></h1>
+					<p class ="h--delta jb-hsplit__title">&mdash; Zum Projekt</p>
 				</div>
 			</a>
 		<?php endforeach ?>
 			<a class="jb-hsplit" href="<?= $url('/report/monuments', $lang) ?>">
-				<div class="jb-hsplit__overlay bg--big-icons-green">
-					<span class="button button--outline-white">
-						Zu diesem Thema
-					</span>
+				<div class="bg--big-icons-green">
 				</div>
 				<figure
 					class="jb-hsplit__cover"
 					style="background-image: url('/assets/img/13_monuments_hero.jpg');"
 				></figure>
 				<div class="jb-hsplit__content">
-					<h1 class="h--beta jb-hsplit__title">Wiki Loves Monuments</h1>
+					<h1 class="h--gamma jb-hsplit__title">Wiki Loves Monuments</h1>
 				</div>
 			</a>
 		</div>
