@@ -66,7 +66,11 @@ $fragment = null;
 if (!ltrim($path, '/')) {
 	$fragment = 'pages/home';
 } elseif (strpos($path, '/report') === 0)  {
+	// Sub-pages all use the same JS file, so we don't need to duplicate logic.
 	$fragment = 'pages/report';
+} elseif (strpos($path, '/finance') === 0)  {
+	// Sub-pages all use the same JS file, so we don't need to duplicate logic.
+	$fragment = 'pages/finance';
 } else {
 	$fragment = 'pages/' . ltrim($path, '/');
 }
