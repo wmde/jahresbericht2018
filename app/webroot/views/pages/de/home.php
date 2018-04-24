@@ -5,9 +5,9 @@
 				Wikimedia<br>
 				Deutschland<br>
 				Jahresbericht<br>
-				2016
+				2017
 			</h1>
-			<img class="home-hero__16" src="assets/img/16_b.png" alt="2016">
+			<img class="home-hero__17" src="assets/img/17.png" alt="2016">
 		</div>
 	</section>
 	<section class="section cp home__intro">

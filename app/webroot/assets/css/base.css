@@ -359,7 +359,7 @@ body > main {
   margin-top: 0;
 }
 .border-box :last-child {
-  margin-bottom: 0;
+  margin-top: 0;
 }
 .border-box .bullet-list li {
   padding-top: 5px;
@@ -1240,39 +1240,37 @@ a:focus {
 .home-hero {
   height: 800px;
   color: white;
-  background: var(--color-gradient-green);
-  transform: skew(0, 165deg);
+  background: var(--color-gradient-green--inverse);
   transform-origin: 0 0;
   position: relative; /* overlap following section */
   z-index: 20;
   overflow: hidden;
 }
 .home-hero__title {
-  transform: skew(0, -165deg);
   transform-origin: 0 0;
-  margin-top: 250px;
+  margin-top: 60px;
 }
-.home-hero__16 {
+.home-hero__17 {
   position: absolute;
-  width: 800px;
-  bottom: -440px;
+  width: 620px;
+  bottom: -510px;
   left: 370px;
-  transform: skew(-165deg);
   z-index: -1000;
 }
 @media (max-width: 1300px) {
-  .home-hero__16 {
+  .home-hero__17 {
     left: initial;
-    right: 40px;
+    right: 220px;
   }
 }
 @media (max-width: 1100px) {
   .home-hero {
     height: 700px;
   }
-  .home-hero__16 {
-    width: 600px;
-    bottom: -290px;
+  .home-hero__17 {
+    width: 400px;
+    bottom: -250px;
+    right: 80px;
   }
 }
 @media (max-width: 800px) {
@@ -1282,9 +1280,10 @@ a:focus {
   .home-hero__title {
     margin-top: 100px;
   }
-  .home-hero__16 {
-    width: 400px;
-    bottom: -240px;
+  .home-hero__17 {
+    width: 260px;
+    bottom: -40px;
+    right: 20px;
   }
 }
 @media (max-width: 550px) {
@@ -1295,7 +1294,7 @@ a:focus {
     font-size: 18px;
     margin-top: 10px;
   }
-  .home-hero__16 {
+  .home-hero__17 {
     width: 200px;
     bottom: -120px;
     right: 10px;
@@ -2379,5 +2378,3 @@ a:focus {
     text-align: center;
   }
 }
-
-
