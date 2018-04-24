@@ -8,8 +8,16 @@
  * license that can be found in the LICENSE file.
  */
 
+define('PROJECT_CONTEXT', 'dev');
 define('PROJECT_APP_PATH', __DIR__);
 define('PROJECT_DOMAIN', 'wmde-bericht2017.test');
+
+if (PROJECT_CONTEXT === 'dev') {
+	error_reporting(E_ALL);
+	ini_set('display_errors', true);
+} else {
+	ini_set('display_errors', false);
+}
 
 $routes = [];
 $helpers = [];
