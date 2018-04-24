@@ -15,7 +15,6 @@ $routes = [];
 $helpers = [];
 $viewVars = [];
 
-// Variables that are always available in views.
 $lang = 'de';
 $path = $_SERVER['REQUEST_URI'];
 $isCanonical = false;
@@ -130,8 +129,8 @@ $matchRoute = function($path, $routes) {
 	return false;
 };
 
-$renderView = function($viewVars, $helpers, $path, $lang) {
-	$viewFileFromURI = function($path, $lang) {
+$renderView = function($viewVars, $helpers, $_path, $_lang) {
+	$_viewFileFromURI = function($path, $lang) {
 		// $path may contain query string
 		$path = parse_url($path, PHP_URL_PATH);
 
@@ -152,24 +151,25 @@ $renderView = function($viewVars, $helpers, $path, $lang) {
 		}
 		return $viewFile;
 	};
-	$viewFile = $viewFileFromURI($path, $lang);
+	$_viewFile = $_viewFileFromURI($_path, $_lang);
 
-	if ($viewFile === false || trim($path, '/') === 'home') {
+	if ($_viewFile === false || trim($_path, '/') === 'home') {
 		return false;
 	}
 	extract($helpers, EXTR_SKIP);
 	extract($viewVars, EXTR_SKIP);
 
-	require PROJECT_APP_PATH . '/views/elements/' . $lang . '/header.php';
-	require $viewFile;
-	require PROJECT_APP_PATH . '/views/elements/' . $lang . '/footer.php';
+	require PROJECT_APP_PATH . '/views/elements/' . $_lang . '/header.php';
+	require $_viewFile;
+	require PROJECT_APP_PATH . '/views/elements/' . $_lang . '/footer.php';
 };
 
 //
 // Handle the request
 //
+$viewVars += compact('lang', 'isCanonical', 'path');
 
-if (($viewVars = $matchRoute($path, $routes)) === false) {
+if (($viewVars += $matchRoute($path, $routes)) === false) {
 	header('HTTP/1.1 404 Not Found');
 	exit();
 }
