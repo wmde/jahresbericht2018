@@ -19,7 +19,7 @@ requirejs.config({
 
     // App
     // Add your app specific js paths here.
-    'waypoint': 'noframework.waypoints',
+    'waypoint': 'waypoints',
     'swiper': 'swiper',
     'underscore': 'underscore',
     'visible': 'visible',

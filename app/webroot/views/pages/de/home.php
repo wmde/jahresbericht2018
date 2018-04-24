@@ -35,66 +35,93 @@
 	</section>
 	<section class="achievements">
 		<ul>
-			<li class="achievement--store" data-category="xeins" data-number="999" data-postfix=" %">
-				Hier steht text
+			<li class="achievement--store" data-category="Freiwillige" data-number=436 data-postfix="">
+				Freiwillige haben wir 2017 direkt gefördert
 			</li>
-			<li class="achievement--store" data-category="xzwei" data-number="9" data-postfix="">
-				Hier steht text2
+			<li class="achievement--store" data-category="Freiwillige" data-number=5844 data-postfix="">
+				Mal haben Menschen an Aktivitäten rund um die Wikimedia-Projekte teilgenommen
 			</li>
-			<li class="achievement--store" data-category="xdrei" data-number="129809" data-postfix="">
-				Hier steht text3
+			<li class="achievement--store" data-category="Freiwillige" data-number=1531 data-postfix="">
+				Neuregistrierungen bei Wikipedia aufgrund unserer 4 Kampagnen
 			</li>
-			<li class="achievement--store" data-category="xvier" data-number="329" data-postfix="%">
-				Hier steht text4
+			<li class="achievement--store" data-category="Software" data-number=450 data-postfix="">
+				Wikimedia-Aktiven arbeiteten gemeinsam mit uns an technischen Wünschen
 			</li>
-			<li class="achievement--store" data-category="xfünf" data-number="1024" data-postfix="px">
-				Hier steht text5
+			<li class="achievement--store" data-category="Software" data-number=180 data-postfix="">
+				ehrenamtlich Entwickelnde nahmen an der ersten WikidataCon teil
+			</li>
+			<li class="achievement--store" data-category="Rahmenbedingung" data-number=39345 data-postfix="">
+				Mal wurde der Digital-O-Mat vor der Bundestagswahl genutzt
+			</li>
+			<li class="achievement--store" data-category="Rahmenbedingung" data-number=8 data-postfix="">
+				Kulturinstitutionen öffneten im Rahmen von Glam on Tour ihre Türen für Freiwillige
+			</li>
+			<li class="achievement--store" data-category="Rahmenbedingung" data-number=20 data-postfix="">
+				Nachwuchs-Wissenschaftlerinnen und -Wissenschaftler wurden im Fellow-Programm Freies Wissen gefördert (doppelt so viele wie im Vorjahr)
+			</li>
+			<li class="achievement--store" data-category="Wikimedia" data-number=65000 data-postfix="">
+				Menschen unterstützen Freies Wissen als Mitglied bei Wikimedia Deutschland
+			</li>
+			<li class="achievement--store" data-category="Wikimedia" data-number=94 data-postfix="">
+				Organisationen aus der Wikimedia-Bewegung haben die neue strategische Ausrichtung unterstützt
 			</li>
 		</ul>
+
+		<div class="achievements__cube achievements__cube--mobile">
+			<div class="achievements__cube-side achievements__cube-side--left">
+				<div class="achievements__cube-side achievements__cube-side--left"></div>
+			</div>
+			<div class="achievements__cube-side achievements__cube-side--top">
+				<div class="achievements__cube-side achievements__cube-side--top"></div>
+			</div>
+			<div class="achievements__cube-side achievements__cube-side--right">
+				<div class="achievements__cube-side achievements__cube-side--right"></div>
+			</div>
+		</div>
 
 		<div class="achievements__flex-wrapper">
 			<div class="achievements__left">
 				<div class="achievement">
-					<h2 class="achievement__category t--epsilon">Technologie</h2>
-					<div class="achievement__number t--alpha" data-number="999">
-						<div class="achievement__number__placeholder">
-							999
+					<div class="achievement__category t--epsilon">Freiwillige</div>
+					<div class="achievement__number t--alpha" data-number=436>
+						<div class="achievement__number-placeholder">
+							436
 						</div>
-						<div class="achievement__number__postfix">%</div>
+						<div class="achievement__number-postfix"></div>
 					</div>
-					<div class="achievement__teaser t--delta-serif">Menschen haben aufgrund unserer Kampagnen ihre erste Bearbeitung in der Wikipedia gemacht</div>
+					<div class="achievement__teaser t--delta-serif">Freiwillige haben wir 2017 direkt gefördert</div>
 					<a href="" class="achievement__link t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</a>
 				</div>
 			</div>
 			<div class="achievements__cube">
-				<div class="achievements__cube__side achievements__cube__side--left">
-					<div class="achievements__cube__side achievements__cube__side--left"></div>
+				<div class="achievements__cube-side achievements__cube-side--left">
+					<div class="achievements__cube-side achievements__cube-side--left"></div>
 				</div>
-				<div class="achievements__cube__side achievements__cube__side--top">
-					<div class="achievements__cube__side achievements__cube__side--top"></div>
+				<div class="achievements__cube-side achievements__cube-side--top">
+					<div class="achievements__cube-side achievements__cube-side--top"></div>
 				</div>
-				<div class="achievements__cube__side achievements__cube__side--right">
-					<div class="achievements__cube__side achievements__cube__side--right"></div>
+				<div class="achievements__cube-side achievements__cube-side--right">
+					<div class="achievements__cube-side achievements__cube-side--right"></div>
 				</div>
 			</div>
 			<div class="achievements__right">
 				<div class="achievement">
-					<h2 class="achievement__category t--epsilon">Technologie</h2>
-					<div class="achievement__number t--alpha" data-number="40321">
-						<div class="achievement__number__placeholder">
-							40.321
+					<div class="achievement__category t--epsilon">Technologie</div>
+					<div class="achievement__number t--alpha" data-number="65000">
+						<div class="achievement__number-placeholder">
+							65.000
 						</div>
-						<div class="achievement__number__postfix">%</div>
+						<div class="achievement__number-postfix"></div>
 					</div>
-					<div class="achievement__teaser t--delta-serif">Menschen haben aufgrund unserer Kampagnen ihre erste Bearbeitung in der Wikipedia gemacht</div>
+					<div class="achievement__teaser t--delta-serif">Menschen unterstützen Freies Wissen als Mitglied bei Wikimedia Deutschland</div>
 					<a href="" class="achievement__link t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</a>
 				</div>
 			</div>
 		</div>
-		<div class="achievements__button invis">
+		<button class="achievements__button invis">
 			<div class="achievements__button--symbol"></div>
 			Neue Erfolge laden
-		</div>
+		</button>
 	</section>
 	<section class="section cp--center-section bg--green home__facts">
 		<div class="section__body limit--l">
