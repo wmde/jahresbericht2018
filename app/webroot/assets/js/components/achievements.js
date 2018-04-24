@@ -14,15 +14,11 @@ define('components/achievements', [], function() {
       this.state = {
         alreadyVisible: false,
         runningTasks: 0,
-        loading: false
+        loading: true, // set in HTML
+        store: this.element.querySelectorAll('.achievement--store'),
+        unseen: [], // Store indexes of unseen achievements.
+        lastStoreIndexes: []
       }
-
-      this.element.classList.add('loading');
-      this.state.loading = true;
-
-      this.state.store = this.element.querySelectorAll('.achievement--store');
-      this.state.unseen = []; // Store indexes of unseen achievements.
-      this.state.lastStoreIndexes = [];
 
       this.element.querySelector('.achievements__button').addEventListener('click', () => {
         if (this.state.runningTasks == 0) {

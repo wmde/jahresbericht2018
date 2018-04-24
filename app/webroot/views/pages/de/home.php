@@ -33,7 +33,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="achievements">
+	<section class="achievements loading">
 		<ul>
 			<li class="achievement--store" data-category="Freiwillige" data-number=436 data-postfix="">
 				Freiwillige haben wir 2017 direkt gefördert
