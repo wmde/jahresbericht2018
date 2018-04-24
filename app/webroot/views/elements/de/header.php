@@ -38,11 +38,11 @@ $pageSpecificScript = function() use ($path) {
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116576892-1"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-116576892-1');
+		// window.dataLayer = window.dataLayer || [];
+		// function gtag(){dataLayer.push(arguments);}
+		// gtag('js', new Date());
+		//
+		// gtag('config', 'UA-116576892-1', { 'anonymize_ip': true });
 	</script>
 	<meta charset="UTF-8">
 	<title><?php echo implode(' – ', array_reverse($title)) ?> – Wikimedia Deutschland e. V.</title>
