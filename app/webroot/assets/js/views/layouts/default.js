@@ -34,7 +34,13 @@ require([
     close.classList.toggle("invis");
 
     if (!imprint.classList.contains("invis")) {
-      window.scrollTo(o.left, o.top - 40);
+      if ('scrollBehavior' in document.documentElement.style) {
+          window.scrollTo(o.left, o.top - 40);
+      } else {
+        require(['smoothscroll'], function() {
+          window.scrollTo(o.left, o.top - 40);
+        });
+      }
     }
 
   });
