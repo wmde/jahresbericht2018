@@ -22,6 +22,7 @@ if (PROJECT_CONTEXT === 'dev') {
 $routes = [];
 $helpers = [];
 $viewVars = [];
+$scripts = [];
 
 $lang = 'de';
 $path = $_SERVER['REQUEST_URI'];
@@ -50,19 +51,29 @@ $helpers['switchLanguageFromUrl'] = function($lang) use ($path) {
 	return rtrim('/' . ($lang === 'de' ? 'en' : 'de') . '' . $path, '/');
 };
 
+//
+// Scripts
+//
+$scripts[] = 'views/layouts/default';
+
 // Constructs a script path for the current page path. And will check if a script under
 // that name is present in the filesystem. If not simply returns `null` otherwise
 // it returns the script path, good for constructing the full script URL.
 //
 // Does not support pages with underscores.
-$helpers['pageSpecificScript'] = function() use ($path) {
-	$fragment = 'pages/' . (ltrim($path, '/') ?: 'home') . '.js';
+$fragment = null;
 
-	if (file_exists(PROJECT_APP_PATH . '/assets/js/views/' . $fragment)) {
-		return $fragment;
-	}
-	return null;
-};
+if (!ltrim($path, '/')) {
+	$fragment = 'pages/home';
+} elseif (strpos($path, '/report') === 0)  {
+	$fragment = 'pages/report';
+} else {
+	$fragment = 'pages/' . ltrim($path, '/');
+}
+
+if (file_exists(PROJECT_APP_PATH . '/assets/js/views/' . $fragment . '.js')) {
+	$scripts[] = "views/{$fragment}";
+}
 
 //
 // Routes
@@ -137,7 +148,7 @@ $matchRoute = function($path, $routes) {
 	return false;
 };
 
-$renderView = function($viewVars, $helpers, $_path, $_lang) {
+$renderView = function($viewVars, $scripts, $helpers, $_path, $_lang) {
 	$_viewFileFromURI = function($path, $lang) {
 		// $path may contain query string
 		$path = parse_url($path, PHP_URL_PATH);
@@ -181,7 +192,7 @@ if (($viewVars += $matchRoute($path, $routes)) === false) {
 	header('HTTP/1.1 404 Not Found');
 	exit();
 }
-if ($renderView($viewVars, $helpers, $path, $lang) === false) {
+if ($renderView($viewVars, $scripts, $helpers, $path, $lang) === false) {
 	header('HTTP/1.1 404 Not Found');
 	exit();
 }

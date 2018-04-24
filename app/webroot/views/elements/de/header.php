@@ -60,10 +60,9 @@ if (isset($report)) {
 	<script src="/assets/js/compat/core.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/require.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/base.js?v=__PROJECT_VERSION__"></script>
-	<script src="/assets/js/views/layouts/default.js?v=__PROJECT_VERSION__"></script>
-	<?php if ($scriptPath = $pageSpecificScript()): ?>
-		<script src="/assets/js/views/<?= $scriptPath ?>?v=__PROJECT_VERSION__"></script>
-	<?php endif ?>
+	<?php foreach ($scripts as $script): ?>
+		<script async src="/assets/js/<?= $script ?>.js?v=__PROJECT_VERSION__"></script>
+	<?php endforeach ?>
 </head>
 <body>
 
