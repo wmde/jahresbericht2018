@@ -43,6 +43,20 @@ $helpers['switchLanguageFromUrl'] = function($lang) use ($path) {
 	return rtrim('/' . ($lang === 'de' ? 'en' : 'de') . '' . $path, '/');
 };
 
+// Constructs a script path for the current page path. And will check if a script under
+// that name is present in the filesystem. If not simply returns `null` otherwise
+// it returns the script path, good for constructing the full script URL.
+//
+// Does not support pages with underscores.
+$helpers['pageSpecificScript'] = function() use ($path) {
+	$fragment = 'pages/' . (ltrim($path, '/') ?: 'home') . '.js';
+
+	if (file_exists(PROJECT_APP_PATH . '/assets/js/views/' . $fragment)) {
+		return $fragment;
+	}
+	return null;
+};
+
 //
 // Routes
 //

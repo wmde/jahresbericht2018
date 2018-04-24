@@ -17,20 +17,6 @@ if (isset($report)) {
 	$title[] = 'Finanzen Fördergesellschaft';
 }
 
-// Constructs a script path for the current page path. And will check if a script under
-// that name is present in the filesystem. If not simply returns `null` otherwise
-// it returns the script path, good for constructing the full script URL.
-//
-// Does not support pages with underscores.
-$pageSpecificScript = function() use ($path) {
-	$fragment = 'pages/' . (ltrim($path, '/') ?: 'home') . '.js';
-
-	if (file_exists(PROJECT_APP_PATH . '/assets/js/views/' . $fragment)) {
-		return $fragment;
-	}
-	return null;
-};
-
 ?>
 <!DOCTYPE html>
 <html lang="de">
