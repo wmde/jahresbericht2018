@@ -35,6 +35,15 @@ $pageSpecificScript = function() use ($path) {
 <!DOCTYPE html>
 <html lang="de">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116576892-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-116576892-1');
+	</script>
 	<meta charset="UTF-8">
 	<title><?php echo implode(' – ', array_reverse($title)) ?> – Wikimedia Deutschland e. V.</title>
 
@@ -71,29 +80,6 @@ $pageSpecificScript = function() use ($path) {
 	<?php endif ?>
 </head>
 <body>
-
-<!-- Piwik -->
-<script type="text/javascript">
-// 	var _paq = _paq || [];
-// 	_paq.push(["setDomains", ["*.2016.wikimedia.de"]]);
-// 	_paq.push(['trackPageView']);
-// 	_paq.push(['enableLinkTracking']);
-// 	(function() {
-// 		var u="//piwik2.wikimedia.de/";
-// 		_paq.push(['setTrackerUrl', u+'piwik.php']);
-// 		_paq.push(['setSiteId', '5']);
-// 		var d=document, g=d.createElement('script'),
-// 		s=d.getElementsByTagName('script')[0];
-// 		g.type='text/javascript'; g.async=true; g.defer=true;
-// 		g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-// 	})();
-</script>
-<noscript>
-	<p>
-		<img src="//piwik2.wikimedia.de/piwik.php?idsite=5" style="border:0;" alt="" />
-	</p>
-</noscript>
-<!-- End Piwik Code -->
 
 <?php if ($hasBlackHeader): ?>
 <div class="cp real-logo-black real-logo">
