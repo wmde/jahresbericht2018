@@ -187,6 +187,7 @@
 			'de' => 'Internationales',
 			'en' => 'Wikimedia movement'
 		],
+		'category' => 'software',
 		'teaser' => [
 			'de' => '
 				<ul class="t--delta bullet-list">
