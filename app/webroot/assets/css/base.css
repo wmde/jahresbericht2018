@@ -1685,7 +1685,7 @@ a:focus {
 /* Finance Table
 ---------------------------------------------------------------- */
 .ft__heading {
-  padding-bottom: 40px;
+  padding: 40px 0 40px 0;
 }
 
 .ft-wrapper {
@@ -1742,11 +1742,11 @@ a:focus {
 .finance--assn .ft__row-line .ft__col-val {
   border-bottom: 1px solid var(--color-lightorange);
 }
-.ft__cell-line {
-  border-bottom: 1px solid var(--color-orange);
+.finance--assn .ft__cell-line {
+  border-bottom: 1px solid var(--color-lightorange);
 }
 .finance--fund .ft__cell-line {
-  border-bottom: none;
+  border-bottom: 1px solid var(--color-lightgreen);
 }
 .ft__col-key {
   width: 35%;

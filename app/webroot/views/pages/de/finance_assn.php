@@ -153,7 +153,7 @@
 						<td class="ft__col-key ft__row-foot">Noch nicht verbrauchte Spendenmittel</td>
 						<td class="ft__col-val ft__green-border">4.968.500 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ">>4.349.061 €</td>
+						<td class="ft__col-val ">4.349.061 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">4.238.145 €</td>
 					</tr>

@@ -5,7 +5,7 @@
 			<div class="filter">
 				<div class ="filter-head">
 					<a href="<?= $url('report/' . $report['name'], $lang) ?>" class="filter-head--back h--delta">Zur Übersicht</a>
-					<div class="filter-head--menu h--gamma"><?= $filter['title'][$lang] ?></div>
+					<div class="filter-head--menu h--beta"><?= $filter['title'][$lang] ?></div>
 					<img class="filter-head--image" src="/assets/img/cube_themen_orange.svg" alt="">
 					<div class="filter-text t--gamma-serif"><?= $filter['teaser'][$lang] ?></div>
 				</div>
