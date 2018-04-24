@@ -69,6 +69,12 @@ $routes['#^/report$#'] = function($path, $query, $matches) {
 		$reports = array_filter($reports, function($v) use ($filter) {
 			return $v['category'] === $filter;
 		});
+		foreach ($filters as $f) {
+			if ($f['name'] === $filter) {
+				$filter = $f;
+				break;
+			}
+		}
 	}
 
 	return compact('reports', 'filter', 'filters') + [
