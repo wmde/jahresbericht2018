@@ -32,7 +32,12 @@ $isCanonical = false;
 if (preg_match('#^/(de|en)(/.*)?#', $path, $matches)) {
 	$isCanonical = true;
 	$lang = $matches[1];
-	$path = '/' . ltrim($matches[2], '/');
+
+	if (isset($matches[2])) {
+		$path = '/' . ltrim($matches[2], '/');
+	} else {
+		$path = '/';
+	}
 }
 
 //
