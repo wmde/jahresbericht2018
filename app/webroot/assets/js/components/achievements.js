@@ -29,7 +29,7 @@ define('components/achievements', [], function() {
           this.toggleAnimation();
         }
       });
-      this.element.querySelectorAll('.achievements__cube').forEach( cube => {
+      this.element.querySelectorAll('.achievements__cube').forEach(cube => {
         cube.addEventListener('click', () => {
           if (this.state.runningTasks == 0) {
             this.toggleAnimation();

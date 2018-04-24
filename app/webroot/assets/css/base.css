@@ -2244,6 +2244,7 @@ a:focus {
 
   border: none;
   background: none;
+  padding: 0;
   transition: opacity 2s ease;
   opacity: 1;
 }
@@ -2393,3 +2394,5 @@ a:focus {
     text-align: center;
   }
 }
+
+
