@@ -9,12 +9,12 @@
 
 require([
   'skrollr',
-  'waypoint',
   'modernizr',
-  'components/example',
+  'waypoint',
+  'components/achievements',
   'domready!'
 ], function(
-  Skrollr, Waypoint, Modernizr, Example
+  Skrollr, Modernizr, Waypoint, Achievements
 ) {
   let $1 = document.querySelector.bind(document);
   let $ = document.querySelectorAll.bind(document);
@@ -26,4 +26,28 @@ require([
       forceHeight: false
     })
   }
+
+  let achievements = new Achievements($1('.achievements'));
+  new Waypoint({
+    element: $1('.achievements'),
+    handler: dir => {
+			if (dir == 'down') {
+        achievements.init();
+			} else {
+        //el.classList.add('inset');
+      }
+    },
+    offset: '70%'
+  })
+
+  //  let chart;
+  //
+  //  new Waypoint('.member-chart', {
+  //    handler: () => {
+  //      if (!chart) { // Initialize just once.
+  //        chart = new Chart(document.querySelector('.chart'));
+  //      }
+  //    }
+  //  });
+
 });

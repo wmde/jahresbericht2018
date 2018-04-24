@@ -12,7 +12,6 @@ requirejs.config({
   waitSeconds: 60,
   paths: {
     // Base
-    'jquery': 'jquery',
 
     // More requirejs plugins are available in
     // js/require/*. Register them here if needed.
@@ -20,13 +19,13 @@ requirejs.config({
 
     // App
     // Add your app specific js paths here.
-    'waypoint': 'waypoint',
+    'waypoint': 'noframework.waypoints',
     'swiper': 'swiper',
     'underscore': 'underscore',
     'visible': 'visible',
 
     // Components
-    'components/example': 'components/example',
+    'components/achievements': 'components/achievements',
 
     // For compat and polyfills it is recommended to use
     // Atelier Disko's compat distribution and agument

@@ -33,6 +33,69 @@
 			</div>
 		</div>
 	</section>
+	<section class="achievements">
+		<ul>
+			<li class="achievement--store" data-category="xeins" data-number="999" data-postfix=" %">
+				Hier steht text
+			</li>
+			<li class="achievement--store" data-category="xzwei" data-number="9" data-postfix="">
+				Hier steht text2
+			</li>
+			<li class="achievement--store" data-category="xdrei" data-number="129809" data-postfix="">
+				Hier steht text3
+			</li>
+			<li class="achievement--store" data-category="xvier" data-number="329" data-postfix="%">
+				Hier steht text4
+			</li>
+			<li class="achievement--store" data-category="xfünf" data-number="1024" data-postfix="px">
+				Hier steht text5
+			</li>
+		</ul>
+
+		<div class="achievements__flex-wrapper">
+			<div class="achievements__left">
+				<div class="achievement">
+					<h2 class="achievement__category t--epsilon">Technologie</h2>
+					<div class="achievement__number t--alpha" data-number="999">
+						<div class="achievement__number__placeholder">
+							999
+						</div>
+						<div class="achievement__number__postfix">%</div>
+					</div>
+					<div class="achievement__teaser t--delta-serif">Menschen haben aufgrund unserer Kampagnen ihre erste Bearbeitung in der Wikipedia gemacht</div>
+					<a href="" class="achievement__link t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</a>
+				</div>
+			</div>
+			<div class="achievements__cube">
+				<div class="achievements__cube__side achievements__cube__side--left">
+					<div class="achievements__cube__side achievements__cube__side--left"></div>
+				</div>
+				<div class="achievements__cube__side achievements__cube__side--top">
+					<div class="achievements__cube__side achievements__cube__side--top"></div>
+				</div>
+				<div class="achievements__cube__side achievements__cube__side--right">
+					<div class="achievements__cube__side achievements__cube__side--right"></div>
+				</div>
+			</div>
+			<div class="achievements__right">
+				<div class="achievement">
+					<h2 class="achievement__category t--epsilon">Technologie</h2>
+					<div class="achievement__number t--alpha" data-number="40321">
+						<div class="achievement__number__placeholder">
+							40.321
+						</div>
+						<div class="achievement__number__postfix">%</div>
+					</div>
+					<div class="achievement__teaser t--delta-serif">Menschen haben aufgrund unserer Kampagnen ihre erste Bearbeitung in der Wikipedia gemacht</div>
+					<a href="" class="achievement__link t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</a>
+				</div>
+			</div>
+		</div>
+		<div class="achievements__button invis">
+			<div class="achievements__button--symbol"></div>
+			Neue Erfolge laden
+		</div>
+	</section>
 	<section class="section cp--center-section bg--green home__facts">
 		<div class="section__body limit--l">
 			<h2 class="section__heading"><div>Jahresrückblick</div></h2>
