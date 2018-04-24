@@ -560,6 +560,7 @@ a:focus {
   z-index: -1000;
   text-align: center;
   transition: opacity .5s, left 0s .5s;
+  background: var(--color-gradient-green);
 }
 .mn-container .logo {
   padding: 10px;
@@ -584,7 +585,7 @@ a:focus {
   float: right;
   width: 48px;
   height: 48px;
-  background-image: url(../ico/close.svg);
+  background: url(../ico/close.svg) no-repeat center/contain;
   cursor: pointer;
   opacity: .8;
 }
@@ -606,8 +607,7 @@ a:focus {
   left: 50%;
   transform: translateX(-50%);
 }
-.mn-container .lang-switch,
-.mn-container .pdf-download {
+.mn__mini-nav a {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .05em;
@@ -769,10 +769,6 @@ a:focus {
   }
 }
 
-/* TODO: Remove once english pdf download exists. */
-[lang="en"] .pdf-download {
-  opacity: 0 !important;
-}
 @media (max-width: 550px) {
   .logo--s {
     max-width: 150px;

@@ -81,8 +81,9 @@ if (isset($report)) {
 		<li><a class="mn__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
 	</ul>
 	<div class="mn__mini-nav">
-		<a class="lang-switch t--epsilon" href="<?= $switchLanguageFromUrl($lang) ?>">English Site</a>
-		<a class="pdf-download t--epsilon" href="/assets/doc/jahresbericht2017_de.pdf">PDF</a>
+		<a class="t--epsilon lang-switch" href="<?= $switchLanguageFromUrl($lang) ?>">English Site</a>
+		<a class="pdf-download t--epsilon" download href="/assets/doc/jahresbericht2017_de.pdf">PDF</a>
+		<a class="t--epsilon" href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new">Mitglied werden</a>
 	</div>
 </div>
 
@@ -117,8 +118,8 @@ if (isset($report)) {
 				</ul>
 				<main class="nav__list--upper">
 					<a class="lang-switch" href="<?= $switchLanguageFromUrl($lang) ?>">English Site</a>
-					<a class="pdf-download" href="/assets/doc/jahresbericht2017_de.pdf">PDF</a>
-					<a class="pdf-download" href="">Mitglied werden</a>
+					<a class="pdf-download" download href="/assets/doc/jahresbericht2017_de.pdf">PDF</a>
+					<a href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new">Mitglied werden</a>
 				</main>
 			</nav>
 			<nav class="nav mobile__nav">

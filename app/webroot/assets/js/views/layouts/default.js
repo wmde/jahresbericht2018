@@ -51,14 +51,14 @@ require([
   let mnClose = $1('.mn-close');
 
   mnTrigger.addEventListener("click", ev => {
-    mncontainer.addClass('mn-inframe');
-    body.addClass('no-scroll');
-    logo.addClass('no-filter');
+    mncontainer.classList.add('mn-inframe');
+    body.classList.add('no-scroll');
+    logo.classList.add('no-filter');
   });
 
   mnClose.addEventListener("click", ev => {
-    mncontainer.removeClass('mn-inframe');
-    body.removeClass('no-scroll');
-    logo.removeClass('no-filter');
+    mncontainer.classList.remove('mn-inframe');
+    body.classList.remove('no-scroll');
+    logo.classList.remove('no-filter');
   });
 });
