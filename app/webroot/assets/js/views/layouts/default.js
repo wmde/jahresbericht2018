@@ -10,10 +10,9 @@
 require([
   'underscore',
   'modernizr',
-  'visible',
   'domready!'
 ], function(
-  _, Modernizr, visible
+  _, Modernizr
 ) {
   let $1 = document.querySelector.bind(document);
   let $ = document.querySelectorAll.bind(document);
@@ -28,17 +27,17 @@ require([
   // Imprint toggle
   toggle.addEventListener("click", function(ev) {
     ev.preventDefault();
-    let o = offset(toggle);
 
     imprint.classList.toggle("invis");
     close.classList.toggle("invis");
 
     if (!imprint.classList.contains("invis")) {
+      let rect = imprint.getBoundingClientRect();
       if ('scrollBehavior' in document.documentElement.style) {
-          window.scrollTo(o.left, o.top - 40);
+          window.scrollTo({top: window.pageYOffset + rect.top - 40, behavior: 'smooth'});
       } else {
         require(['smoothscroll'], function() {
-          window.scrollTo(o.left, o.top - 40);
+          window.scrollTo({top: window.pageYOffset + rect.top - 40, behavior: 'smooth'});
         });
       }
     }
