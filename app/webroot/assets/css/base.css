@@ -516,6 +516,10 @@ a:focus {
 .nav__list li {
   display: inline-block;
 }
+.nav__list li + li {
+  margin-left: 40px;
+}
+
 .nav__link {
   display: inline-block;
   /* inherited from t--delta-emph */
@@ -530,23 +534,7 @@ a:focus {
 .nav__link:hover {
   opacity: 0.5;
 }
-.nav__list li + li {
-  margin-left: 40px;
-}
-
-.nav__active--rev {
-  opacity: 1;
-}
-.nav__active--rep {
-  border-bottom: 1px solid white;
-}
-.nav__active--rep-sub {
-  opacity: 1;
-}
-.nav__active--fin-lo {
-  border-bottom: 1px solid white;
-}
-.nav__active--fin-hi {
+.nav__link.active {
   border-bottom: 1px solid white;
 }
 

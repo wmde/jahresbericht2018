@@ -98,19 +98,22 @@ if (isset($report)) {
 			<a class="logo main-header__logo image-replace logo--l" href="<?= $url('/', $lang) ?>">Wikimedia Deutschland</a>
 			<nav class="nav main-header__nav">
 				<ul class="nav__list">
-					<?php if (preg_match('#^/report/.*$#', $path)): ?>
-						<li><a class="nav__link nav__active--rep-sub" href="<?= $url('report', $lang) ?>">Themen</a></li>
-					<?php elseif ($path === '/report'): ?>
-						<li><a class="nav__link nav__active--rep" href="<?= $url('report', $lang) ?>">Themen</a></li>
-					<?php else: ?>
-						<li><a class="nav__link" href="<?= $url('report', $lang) ?>">Themen</a></li>
-					<?php endif; if ($path === '/finance' || $path === '/finance/assn'): ?>
-						<li><a class="nav__link nav__active--fin-lo" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
-					<?php elseif ($path === '/finance/fund'): ?>
-						<li><a class="nav__link nav__active--fin-hi" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
-					<?php else: ?>
-						<li><a class="nav__link" href="<?= $url('finance', $lang) ?>">Finanzen</a></li>
-					<?php endif ?>
+					<li>
+						<a
+							class="nav__link<?= (preg_match('#^/report.*$#', $path) ? ' active' : '')?>"
+							href="<?= $url('report', $lang) ?>"
+						>
+							Themen
+						</a>
+					</li>
+					<li>
+						<a
+							class="nav__link<?= (preg_match('#^/finance.*$#', $path) ? ' active' : '')?>"
+							href="<?= $url('finance', $lang) ?>"
+						>
+							Finanzen
+						</a>
+					</li>
 				</ul>
 				<main class="nav__list--upper">
 					<a class="lang-switch" href="<?= $switchLanguageFromUrl($lang) ?>">English Site</a>
