@@ -1237,13 +1237,16 @@ a:focus {
 
 /* Home
 ---------------------------------------------------------------- */
+
+.home .wrapper {
+  position: relative;
+}
 .home-hero {
-  height: 800px;
+  height: 880px;
   color: white;
   background: var(--color-gradient-green--inverse);
   transform-origin: 0 0;
-  position: relative; /* overlap following section */
-  z-index: 20;
+  position: relative;
   overflow: hidden;
 }
 .home-hero__title {
@@ -1255,8 +1258,44 @@ a:focus {
   width: 620px;
   bottom: -510px;
   left: 370px;
-  z-index: -1000;
 }
+.home-hero__img {
+  position: absolute;
+  top: 520px;
+  z-index: 10;
+}
+.home-hero__img img {
+  width: 930px;
+}
+.home-hero__img p {
+  padding-left: 40px;
+}
+.home__intro {
+  height: 600px;
+  background-image: url(/assets/img/wk_conference_tinted.jpg);
+  background-repeat: no-repeat;
+  padding: 0;
+  position: relative;
+}
+.home__intro--layer {
+  height: 600px;
+  background-color: var(--color-orange);
+  opacity: 0.8;
+  width: 100%;
+}
+.home__box {
+  display: flex;
+  position: absolute;
+  bottom: 140px;
+  justify-content: center;
+  width: 100%;
+}
+.home .h--alpha {
+  text-align: center;
+  color: white;
+  opacity: 1;
+}
+
 @media (max-width: 1300px) {
   .home-hero__17 {
     left: initial;
@@ -1290,6 +1329,7 @@ a:focus {
   .home-hero {
     height: 300px;
   }
+
   .home-hero__title {
     font-size: 18px;
     margin-top: 10px;
@@ -1301,26 +1341,16 @@ a:focus {
   }
 }
 
-.home__intro {
-  margin-top: -1040px; /* fill up background behind hero */
-  padding-top: 1000px;
-  z-index: 10; /* hide overlap from next section */
-  padding-bottom: 120px;
-}
-.home__intro h1 {
-  text-align: center;
-  color: var(--color-green);
-  margin-bottom: 60px;
-}
-.home__intro p {
+/* .home__intro p {
   margin-bottom: 40px;
-}
-.home__intro .figs {
+} */
+
+/* .home__intro .figs {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-}
-.home__intro .fig {
+} */
+/* .home__intro .fig {
   width: 450px;
 }
 .home__intro .fig img {
@@ -1328,7 +1358,7 @@ a:focus {
 }
 .home__intro .fig:first-of-type {
   margin-right: 30px;
-}
+} */
 
 .home__facts {
   overflow: hidden; /* prevent bg--stripe overflow */

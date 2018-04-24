@@ -1,38 +1,28 @@
 <main class="home">
-	<section class="home-hero cp cp--nav-zone">
-		<div class="limit--l">
-			<h1 class="home-hero__title">
-				Wikimedia<br>
-				Deutschland<br>
-				Jahresbericht<br>
-				2017
-			</h1>
-			<img class="home-hero__17" src="assets/img/17.png" alt="2016">
-		</div>
-	</section>
-	<section class="section cp home__intro">
-		<div class="section__body">
-			<h1 class="h--beta">Liebe Leserinnen und Leser,</h1>
+	<div class="wrapper">
+		<section class="home-hero cp cp--nav-zone">
 			<div class="limit--l">
-				<h2 class="section__heading"><div>Begrüssung</div></h2>
-				<div class="limit--s">
-					<p class="t--gamma-serif">im Januar 2016 wurde die Wikipedia 15 Jahre alt – und an vielen Orten auf der ganzen Welt wurde gratuliert und gefeiert. Bei Wikimedia Deutschland begleitete uns dieses Jubiläum das ganze Jahr über. Als Geschenk an die Wikipedia-Aktiven übergaben wir im Dezember einen Datenträger mit Wikipedia-Artikeln in knapp 180 Sprachen an eine private Weltraummission. Welche Artikel als Momentaufnahme des Wissens der Menschheit auf dem Mond verewigt werden sollen, entschied die weltweite Wikipedia-Community gemeinsam. Die Aktion zeigt, was in nur 15 Jahren aus der Idee einer Enzyklopädie geworden ist, die alle frei bearbeiten können. Es ist das erfolgreichste Projekt seiner Art, genutzt von Millionen Menschen – und wäre undenkbar ohne das ehrenamtliche Engagement tausender Helferinnen und Helfer.</p>
-					<p class="t--gamma-serif">15 Jahre nach dem Entstehen der Wikipedia bedeutet Freies Wissen weit mehr als kostenlose Artikel auf einer Website: Communitys schreiben, fotografieren, verfolgen Projekte, treffen sich virtuell und persönlich. Bei Wikimedia Deutschland unterstützen wir sie und versuchen, noch mehr Menschen zur Mitarbeit zu motivieren. Wir entwickeln Software, die die Arbeit in den Projekten einfacher macht. Wir setzen uns außerdem für politische und rechtliche Rahmenbedingungen ein, durch die Wissen auch in Zukunft frei geteilt und genutzt werden kann. Auf dieser Website blicken wir nicht nur auf diese drei, sondern auf alle Schwerpunkte unserer Vereinsarbeit 2016 zurück.</p>
-					<p class="t--gamma-serif">Wikipedia ist nur möglich dank der Menschen, die sie schreiben. Das Gleiche gilt für die Arbeit von Wikimedia Deutschland und unsere zahlreichen Mitglieder ‒ 50.000 sind es Anfang 2017 ‒ sowie Spenderinnen und Spender. Herzlichen Dank an Alle, die uns im Jahr 2016 unterstützt haben!</p>
-				</div>
+				<h1 class="home-hero__title">
+					Wikimedia<br>
+					Deutschland<br>
+					Jahresbericht<br>
+					2017
+				</h1>
+				<img class="home-hero__17" src="assets/img/17.png" alt="2017">
 			</div>
-			<div class="limit--m figs">
-				<figure class="fig">
-					<img class="fig__image" src="/assets/img/abraham_taherivand.jpg" alt="Porträt von Abraham Taherivand">
-					<figcaption class="fig__caption">Abraham Taherivand<br>Geschäftsführender Vorstand</figcaption>
-				</figure>
-				<figure class="fig">
-					<img class="fig__image" src="/assets/img/tim_moritz_hector.jpg" alt="Porträt von Tim Moritz Hector">
-					<figcaption class="fig__caption">Tim Moritz Hector<br>Vorsitzender des Präsidiums</figcaption>
-				</figure>
-			</div>
+		</section>
+		<div class="home-hero__img">
+			<img src="assets/img/wk_conference_tinted.jpg">
+			<p>René Zieger (Wikimedia Commons), CC BY-SA 4.0</p>
 		</div>
-	</section>
+		<section class="section cp home__intro">
+			<div class="section__body"></div>
+			<div class="home__intro--layer"></div>
+		</section>
+		<div class="home__box">
+			<div class="limit--m h--alpha">Gemeinsam wissen wir mehr</div>
+		</div>
+	</div>
 	<section class="achievements loading">
 		<ul>
 			<li class="achievement--store" data-category="Freiwillige" data-number=436 data-postfix="">

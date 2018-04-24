@@ -21,15 +21,6 @@ if (isset($report)) {
 <!DOCTYPE html>
 <html lang="de">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116576892-1"></script>
-	<script>
-		// window.dataLayer = window.dataLayer || [];
-		// function gtag(){dataLayer.push(arguments);}
-		// gtag('js', new Date());
-		//
-		// gtag('config', 'UA-116576892-1', { 'anonymize_ip': true });
-	</script>
 	<meta charset="UTF-8">
 	<title><?php echo implode(' – ', array_reverse($title)) ?> – Wikimedia Deutschland e. V.</title>
 
@@ -56,6 +47,16 @@ if (isset($report)) {
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116576892-1"></script>
+	<script>
+		// window.dataLayer = window.dataLayer || [];
+		// function gtag(){dataLayer.push(arguments);}
+		// gtag('js', new Date());
+		//
+		// gtag('config', 'UA-116576892-1', { 'anonymize_ip': true });
+	</script>
 
 	<script src="/assets/js/compat/core.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/require.js?v=__PROJECT_VERSION__"></script>
