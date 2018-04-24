@@ -9,46 +9,31 @@
 
 require([
   'modernizr',
-  'visible',
+  'waypoint',
   'domready!'
 ], function(
   Modernizr,
-  visible
+  Waypoint
 ) {
   let $1 = document.querySelector.bind(document);
   let $ = document.querySelectorAll.bind(document);
 
   // Animate tiles on report landing page
-  // see: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
-  var rl = $(".report-landing");
-  if (rl.length && !Modernizr.touchevents) {
-    allMods = $(".jb-hsplit");
-
-    // Already visible modules
-    allMods.forEach(el => {
-      if (visible(el, true)) {
-        el.classList.add("already-visible");
-        el.classList.add("come-in");
-      }
-    });
-
-    throttled = _.throttle(function() {
-      // Already visible modules
-      allMods.forEach(el => {
-        if (visible(el, true)) {
-          el.classList.add("come-in");
-        }
+  let jbs = $('.jb-hsplit');
+  if (jbs.length) {
+    if (Modernizr.touchevents) {
+      jbs.forEach((el) => el.classList.add('come-in'));
+    } else {
+      jbs.forEach((el) => {
+        new Waypoint({
+          element: el,
+          handler: () => {
+            el.classList.add('come-in');
+          },
+          offset: '90%'
+        })
       });
-    }, 100);
-
-    window.addEventListener('scroll', throttled);
-  }
-  if (rl.length && Modernizr.touchevents) {
-    allMods = $('.jb-hsplit');
-
-    allMods.forEach(el => {
-      el.classList.add("visible");
-    });
+    }
   }
 
   // Animate slider

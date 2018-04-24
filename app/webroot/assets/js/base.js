@@ -22,7 +22,6 @@ requirejs.config({
     'waypoint': 'waypoints',
     'swiper': 'swiper',
     'underscore': 'underscore',
-    'visible': 'visible',
 
     // Components
     'components/achievements': 'components/achievements',

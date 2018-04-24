@@ -8,40 +8,27 @@
  */
 
 require([
-  'visible',
   'underscore',
   'modernizr',
+  'waypoint',
   'domready!'
-], function(visible, _, Modernizr) {
-
-  let $1 = document.querySelector.bind(document);
-  let $ = document.querySelectorAll.bind(document);
-
+], function(
+  _,
+  Modernizr,
+  Waypoint
+) {
   // Animate bagels on finance sub-pages
-  // see: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
-  let bagel = $('.bagel'); // hier auch noch .bagel--alt hinzufügen
+  let bagels = document.querySelectorAll('.bagel');
 
-  if (bagel.length && !Modernizr.touchevents) {
-    allMods = $('.bagel__image img');
-
-    // Already visible modules
-    allMods.forEach(el => {
-      if (visible(el, true)) {
-        el.classList.add('already-visble');
-        el.classList.add('turn-in');
-      }
-    });
-    window.addEventListener('scroll', _.throttle(function() {
-      allMods.forEach(el => {
-        if (visible(el, true)) {
-           el.classList.add('turn-in');
-        }
-      });
-    }, 100));
-
-    allMods = $('.bagel__image img');
-    allMods.forEach(el => {
-      el.classList.add('turn-in');
+  if (bagels.length && !Modernizr.touchevents) {
+    bagels.forEach((el) => {
+      new Waypoint({
+        element: el,
+        handler: () => {
+          el.querySelector('.bagel__image img').classList.add('turn-in');
+        },
+        offset: '70%'
+      })
     });
   }
 });

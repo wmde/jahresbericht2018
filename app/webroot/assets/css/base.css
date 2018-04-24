@@ -1156,8 +1156,9 @@ a:focus {
 }
 
 .come-in {
+  position: relative;
   opacity: 1;
-  transform: translateY(150px);
+  top: 150px;;
   animation: come-in 0.8s ease forwards;
 }
 .come-in:nth-child(odd) {
@@ -1165,7 +1166,7 @@ a:focus {
 }
 
 @keyframes come-in {
-  to { transform: translateY(0); }
+  to { top: 0; }
 }
 @media (max-width: 1100px) {
   .jb-hsplit-list {
