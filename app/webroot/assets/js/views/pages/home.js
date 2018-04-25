@@ -31,7 +31,7 @@ require([
   new Waypoint({
     element: $1('.achievements'),
     handler: dir => {
-			if (dir == 'down') {
+			if (dir === 'down') {
         achievements.init();
 			} else {
         //el.classList.add('inset');
@@ -44,11 +44,11 @@ require([
   new Waypoint({
     element: $1('.home__box'),
     handler: dir => {
-      if (dir == 'down') {
+      if (dir === 'down') {
          $1('.home__box').classList.add('comes-in')
       }
     },
-    offset: '70%'
+    offset: '80%'
   })
 
   //  let chart;

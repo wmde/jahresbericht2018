@@ -12,7 +12,8 @@
 			</div>
 		</section>
 		<div class="home-hero__img t--zeta">
-			<img src="assets/img/wk_conference_tinted.jpg">
+			<img class="home-hero__img--first" src="assets/img/wk_conference_colored.jpg">
+			<img class="home-hero__img--second" src="assets/img/wk_conference_tinted.jpg">
 			<p>René Zieger (Wikimedia Commons), CC BY-SA 4.0</p>
 		</div>
 		<section class="section cp home__intro">
@@ -175,22 +176,22 @@
 			<figure
 				class="home__bagel--1"
 				data-anchor-target=".finance-banner"
-				data-bottom-top="top: -700px; transform:rotate(-180deg);"
-				data-top-bottom="top: 100px; transform:rotate(180deg);"
+				data-bottom-top="top: -700px; transform:rotate(0deg);"
+				data-top-bottom="top: 100px; transform:rotate(-100deg);"
 			>
 				<img src="/assets/img/start_finanzen_circle_1.png" alt="Image of a random bagel chart">
 			</figure>
 			<figure
 				class="home__bagel--2"
 				data-anchor-target=".finance-banner"
-				data-bottom-top="bottom: 0px; transform:rotate(80deg);"
-				data-top-bottom="bottom: -800px; transform:rotate(0deg);"
+				data-bottom-top="bottom: -400px; transform:rotate(0deg);"
+				data-top-bottom="bottom: 100px; transform:rotate(-100deg);"
 			>
 				<img src="/assets/img/start_finanzen_circle_2.png" alt="Image of random bagel chart">
 			</figure>
 		</div>
-		<h1 class="h--alpha">Finanzen 2016</h1>
-		<a class="button finance-banner__button" href="<?= $url('finance', $lang) ?>">Zum Finanzteil</a>
+		<p class="h--beta">Unsere Finanzen 2017</p>
+		<a class="finance-banner__button h--delta" href="<?= $url('finance', $lang) ?>">&mdash; Zum Finanzteil</a>
 	</section>
 	<section class="section cp--upped-section home__join">
 		<h1 class="h--beta">Werde Mitglied bei Wikimedia Deutschland!</h1>
