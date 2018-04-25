@@ -1541,11 +1541,41 @@ a:focus {
 }
 .nav-cube__title {
   color: white;
-  margin-top: -120px;
 }
 .nav-cube:hover,
 .nav-cube.active {
   background-image: url(../img/cube_themen_orange.svg);
+}
+@media (min-width: 1181px) {
+  .nav-cube__title {
+    margin-top: -144px;
+  }
+  .nav-cube {
+    height: 300px;
+    margin: 20px;
+  }
+}
+@media (max-width: 1180px) {
+  .nav-cube__title {
+    margin-top: -137px;
+  }
+  .nav-cube {
+    height: 270px;
+    margin: 8px;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-cube__title {
+    margin-top: -116px;
+  }
+  .nav-cube {
+    margin: 5px;
+  }
+}
+@media (max-width: 900px) {
+  .nav-cube {
+    margin: 20px;
+  }
 }
 
 /* Report Detail Pages
