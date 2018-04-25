@@ -40,6 +40,17 @@ require([
     offset: '70%'
   })
 
+
+  new Waypoint({
+    element: $1('.home__box'),
+    handler: dir => {
+      if (dir == 'down') {
+         $1('.home__box').classList.add('comes-in')
+      }
+    },
+    offset: '70%'
+  })
+
   //  let chart;
   //
   //  new Waypoint('.member-chart', {
