@@ -4,7 +4,7 @@
 		<section class="report-landing-hero cp cp--4x-top cp--4x-bottom">
 			<div class="filter">
 				<div class ="filter-head">
-					<a href="<?= $url('report/' . $report['name'], $lang) ?>" class="filter-head--back h--delta">Zur Übersicht</a>
+					<a href="<?= $url('report', $lang) ?>" class="filter-head--back h--delta">Zur Übersicht</a>
 					<div class="filter-head--menu h--beta"><?= $filter['title'][$lang] ?></div>
 					<img class="filter-head--image" src="/assets/img/cube_themen_orange.svg" alt="">
 					<div class="filter-text t--gamma-serif"><?= $filter['teaser'][$lang] ?></div>
