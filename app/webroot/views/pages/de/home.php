@@ -24,6 +24,63 @@
 			<div class="limit--m h--alpha">Gemeinsam wissen wir mehr</div>
 		</div>
 	</div>
+	</section>
+	<section class="reports clearfix cp">
+		<div class="reports__left">
+			<div class="reports__canvas">
+				<div class="reports__cube reports__cube--1"></div>
+				<div class="reports__cube reports__cube--2"></div>
+				<div class="reports__cube reports__cube--3"></div>
+			</div>
+		</div>
+		<div class="reports__right">
+			<a class="reports__link" href="">
+				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+			</a>
+		</div>
+	</section>
+	<section class="reports clearfix cp">
+		<div class="reports__left">
+			<div class="reports__canvas">
+				<div class="reports__cube reports__cube--1"></div>
+				<div class="reports__cube reports__cube--2"></div>
+				<div class="reports__cube reports__cube--3"></div>
+			</div>
+		</div>
+		<div class="reports__right">
+			<a class="reports__link" href="">
+				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+			</a>
+		</div>
+	</section>
+	<section class="reports clearfix cp">
+		<div class="reports__left">
+			<div class="reports__canvas">
+				<div class="reports__cube reports__cube--1"></div>
+				<div class="reports__cube reports__cube--2"></div>
+				<div class="reports__cube reports__cube--3"></div>
+			</div>
+		</div>
+		<div class="reports__right">
+			<a class="reports__link" href="">
+				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+			</a>
+		</div>
+	</section>
+	<section class="reports clearfix cp">
+		<div class="reports__left">
+			<div class="reports__canvas">
+				<div class="reports__cube reports__cube--1"></div>
+				<div class="reports__cube reports__cube--2"></div>
+				<div class="reports__cube reports__cube--3"></div>
+			</div>
+		</div>
+		<div class="reports__right">
+			<a class="reports__link" href="">
+				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+			</a>
+		</div>
+	</section>
 	<section class="achievements loading">
 		<ul>
 			<li class="achievement--store" data-category="Freiwillige" data-number=436 data-postfix="">
@@ -159,8 +216,7 @@
 								</a>
 							</div>
 						</div>
-					</div>
-					<?php endforeach ?>
+					</div> <?php endforeach ?>
 				</div>
 				<div class="swiper-button-next swiper-button-next--green"></div>
 				<div class="swiper-button-prev swiper-button-prev--green"></div>

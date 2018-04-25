@@ -2510,3 +2510,57 @@ a:focus {
     text-align: center;
   }
 }
+
+.reports {}
+.reports__left {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.reports__right {
+  width: 50%;
+  float: right;
+}
+.reports__link {
+  display: block;
+  color: var(--color-green);
+}
+.reports__canvas {
+  position: inline-block;
+  position: relative;
+  width: 375px;
+  height: 375px;
+  overflow: visible;
+}
+.reports__cube {
+  background: url(../img/cube_achievements.svg) no-repeat center/contain;
+  width: 160px;
+  height: 184px;
+  position: absolute;
+  overflow: visible;
+  transition-timing-function: ease;
+  transition-property: all;
+}
+
+.reports__cube--1 {
+  top: 92px;
+  left: 80px;
+  z-index: 3;
+}
+.reports__cube--2 {
+  left: 0;
+  top: 46px;
+  z-index: 2;
+}
+.reports__cube--3 {
+  left: 160px;
+  top: 46px;
+  z-index: 1;
+}
+@media (max-width: 560px) {
+  .reports__left,
+  .reports__right {
+    width: 100%;
+    float: none;
+  }
+}

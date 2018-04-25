@@ -12,9 +12,10 @@ require([
   'modernizr',
   'waypoint',
   'components/achievements',
+  'components/reports',
   'domready!'
 ], function(
-  Skrollr, Modernizr, Waypoint, Achievements
+  Skrollr, Modernizr, Waypoint, Achievements, Reports
 ) {
   let $1 = document.querySelector.bind(document);
   let $ = document.querySelectorAll.bind(document);
@@ -39,7 +40,9 @@ require([
     },
     offset: '70%'
   })
+  let reports = new Reports($1('.reports'));
 
+  let reports = new Reports($1('.reports'));
 
   new Waypoint({
     element: $1('.home__box'),

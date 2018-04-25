@@ -25,6 +25,7 @@ requirejs.config({
 
     // Components
     'components/achievements': 'components/achievements',
+    'reports/achievements': 'components/reports',
 
     // For compat and polyfills it is recommended to use
     // Atelier Disko's compat distribution and agument

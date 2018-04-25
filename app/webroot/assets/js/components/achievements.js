@@ -18,7 +18,7 @@ define('components/achievements', [], function() {
         store: this.element.querySelectorAll('.achievement--store'),
         unseen: [], // Store indexes of unseen achievements.
         lastStoreIndexes: []
-      }
+      };
 
       this.element.querySelector('.achievements__button').addEventListener('click', () => {
         if (this.state.runningTasks == 0) {
