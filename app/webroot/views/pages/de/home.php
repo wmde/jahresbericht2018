@@ -2,21 +2,21 @@
 	<div class="wrapper">
 		<section class="home-hero cp cp--nav-zone">
 			<div class="limit--l">
-				<h1 class="home-hero__title">
+				<div class="home-hero__title h--beta">
 					Wikimedia<br>
 					Deutschland<br>
 					Jahresbericht<br>
 					2017
-				</h1>
+				</div>
 				<img class="home-hero__17" src="assets/img/17.png" alt="2017">
 			</div>
 		</section>
-		<div class="home-hero__img">
+		<div class="home-hero__img t--zeta">
 			<img src="assets/img/wk_conference_tinted.jpg">
 			<p>René Zieger (Wikimedia Commons), CC BY-SA 4.0</p>
 		</div>
 		<section class="section cp home__intro">
-			<div class="section__body"></div>
+			<img src="assets/img/wk_conference_tinted.jpg">
 			<div class="home__intro--layer"></div>
 		</section>
 		<div class="home__box">

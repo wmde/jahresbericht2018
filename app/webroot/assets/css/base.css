@@ -1252,6 +1252,8 @@ a:focus {
 .home-hero__title {
   transform-origin: 0 0;
   margin-top: 60px;
+  position: relative;
+  z-index: 20;
 }
 .home-hero__17 {
   position: absolute;
@@ -1261,104 +1263,158 @@ a:focus {
 }
 .home-hero__img {
   position: absolute;
-  top: 520px;
-  z-index: 10;
+  top: 540px;
+  z-index: 15;
 }
 .home-hero__img img {
   width: 930px;
 }
 .home-hero__img p {
   padding-left: 40px;
+  margin-top: 10px;
+  color: white;
 }
 .home__intro {
   height: 600px;
-  background-image: url(/assets/img/wk_conference_tinted.jpg);
-  background-repeat: no-repeat;
   padding: 0;
   position: relative;
+}
+.home__intro img {
+  position: absolute;
+  width: 100%;
 }
 .home__intro--layer {
   height: 600px;
   background-color: var(--color-orange);
   opacity: 0.8;
   width: 100%;
+  position: absolute;
+  z-index: 5;
 }
 .home__box {
   display: flex;
   position: absolute;
-  bottom: 140px;
+  bottom: 120px;
   justify-content: center;
   width: 100%;
+  z-index: 10;
 }
-.home .h--alpha {
+.home__box .h--alpha {
   text-align: center;
   color: white;
   opacity: 1;
+  max-width: 750px;
 }
 
-@media (max-width: 1300px) {
-  .home-hero__17 {
-    left: initial;
-    right: 220px;
-  }
-}
 @media (max-width: 1100px) {
   .home-hero {
-    height: 700px;
+    height: 820px;
   }
   .home-hero__17 {
-    width: 400px;
-    bottom: -250px;
-    right: 80px;
+    width: 500px;
+    bottom: -370px;
+    left: 270px;
   }
+  .home-hero__img {
+    top: 540px;
+  }
+  .home-hero__img img {
+    width: 750px;
+  }
+  .home__box .h--alpha {
+    max-width: 600px;
+  }
+  .home__box {
+    bottom: 180px;
+  }
+  .home__intro img {
+    height: 100%;
+  }
+  /* .home__intro {
+    padding-top: 1050px;
+    padding-bottom: 120px;
+  } */
 }
 @media (max-width: 800px) {
   .home-hero {
-    height: 550px;
+    height: 700px;
   }
   .home-hero__title {
-    margin-top: 100px;
+    margin-top: 60px;
   }
   .home-hero__17 {
-    width: 260px;
-    bottom: -40px;
-    right: 20px;
+    width: 500px;
+    bottom: -370px;
+    left: 140px;
+  }
+  .home-hero__img {
+    top: 500px;
+  }
+  .home-hero__img img {
+    width: 570px;
+  }
+  .home__intro {
+    height: 500px;
+  }
+  .home__box {
+    bottom: 120px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .home-hero {
-    height: 300px;
+    height: 580px;
   }
-
   .home-hero__title {
-    font-size: 18px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .home-hero__17 {
-    width: 200px;
-    bottom: -120px;
-    right: 10px;
+    width: 390px;
+    bottom: -290px;
+    left: 100px;
+  }
+  .home-hero__img {
+    top: 420px;
+  }
+  .home-hero__img img {
+    width: 450px;
+  }
+  .home__box .h--alpha {
+    max-width: 300px;
+    font-size: 40px;
+  }
+  .home__intro {
+    height: 360px;
+  }
+  .home__box {
+    bottom: 40px;
   }
 }
-
-/* .home__intro p {
-  margin-bottom: 40px;
-} */
-
-/* .home__intro .figs {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-} */
-/* .home__intro .fig {
-  width: 450px;
+@media (max-width: 480px) {
+  .home-hero {
+    height: 450px;
+  }
+  .home-hero__17 {
+    width: 250px;
+    bottom: -130px;
+    left: 51px;
+  }
+  .home-hero__img{
+    top: 350px;
+  }
+  .home-hero__img img {
+    width: 280px;
+  }
+  .home-hero__img p {
+    padding-left: 10px;
+    max-width: 280px;
+  }
+  .home__intro {
+    height: 320px;
+  }
+  .home__box {
+    bottom: 30px;
+  }
 }
-.home__intro .fig img {
-  max-width: 100%;
-}
-.home__intro .fig:first-of-type {
-  margin-right: 30px;
-} */
 
 .home__facts {
   overflow: hidden; /* prevent bg--stripe overflow */
@@ -2015,10 +2071,6 @@ a:focus {
   .h--alpha {
     font-size: 60px;
   }
-  .home__intro {
-    padding-top: 1050px;
-    padding-bottom: 120px;
-  }
   .quote {
     margin: 60px 0 80px 0;
   }
@@ -2117,27 +2169,6 @@ a:focus {
   }
   .swiper-slide {
     padding: 0 35px;
-  }
-  .home__intro {
-    padding-top: 1050px;
-    padding-bottom: 60px;
-  }
-  .home__intro h1 {
-    margin-bottom: 18px;
-  }
-  .home__intro p {
-    margin-bottom: 20px;
-  }
-  .home__intro .figs {
-    padding-top: 0;
-    flex-wrap: wrap;
-  }
-  .home__intro .fig {
-    width: 100%;
-  }
-  .home__intro .fig:first-of-type {
-    margin: 0;
-    padding-bottom: 20px;
   }
   .finance-banner {
     padding: 160px 10px;
