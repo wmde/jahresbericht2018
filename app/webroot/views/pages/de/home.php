@@ -32,7 +32,7 @@
 		</div>
 	</div>
 	</section>
-	<section class="reports clearfix loading">
+	<section class="reports clearfix cp--component-section loading">
 		<div class="reports__left">
 			<div class="reports__canvas">
 				<div class="reports__cube reports__cube--1"></div>
@@ -73,7 +73,7 @@
 			</button>
 		</div>
 	</section>
-	<section class="achievements loading">
+	<section class="achievements cp--component-section loading">
 		<ul>
 			<li class="achievement--store" data-category="Freiwillige" data-number=436 data-postfix="">
 				Freiwillige haben wir 2017 direkt gefördert
