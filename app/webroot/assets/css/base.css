@@ -1272,13 +1272,13 @@ a:focus {
 }
 .home-hero__img--first {
   position: absolute;
-  opacity: 0.3;
-  z-index: 16;
+  opacity: 1;
+  z-index: 15;
 }
 .home-hero__img--second {
   position: relative;
   opacity: 1;
-  z-index: 15;
+  z-index: 16;
 }
 .home-hero__img p {
   padding-left: 40px;
@@ -1526,14 +1526,14 @@ a:focus {
   height: 860px;
 }
 .home__bagel--1 {
-  left: 600px;
+  left: 660px;
   top: 0px;
   transform: rotate(50deg);
 }
 .home__bagel--2 {
   right: -290px;
   bottom: 0px;
-  transform: rotate(50deg);
+  transform: rotate(300deg);
 }
 
 /* Report Landing Page

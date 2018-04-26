@@ -20,6 +20,14 @@ require([
   let $1 = document.querySelector.bind(document);
   let $ = document.querySelectorAll.bind(document);
 
+  // home hero image - change saturation
+  let hh = $('.home-hero__img--second');
+  if (hh.length && !Modernizr.touchevents) {
+    let s = Skrollr.init({
+      forceHeight: false
+    })
+  }
+
   // finance-banner - turn bagels on scroll
   let fb = $('.finance-banner');
   if (fb.length && !Modernizr.touchevents) {
