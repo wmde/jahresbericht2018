@@ -21,19 +21,9 @@ require([
   let $ = document.querySelectorAll.bind(document);
 
   // home hero image - change saturation
-  let hh = $('.home-hero__img--second');
-  if (hh.length && !Modernizr.touchevents) {
-    let s = Skrollr.init({
-      forceHeight: false
-    })
-  }
-
   // finance-banner - turn bagels on scroll
-  let fb = $('.finance-banner');
-  if (fb.length && !Modernizr.touchevents) {
-    let s = Skrollr.init({
-      forceHeight: false
-    })
+  if (!Modernizr.touchevents) {
+    Skrollr.init({ forceHeight: false });
   }
 
   let achievements = new Achievements($1('.achievements'));

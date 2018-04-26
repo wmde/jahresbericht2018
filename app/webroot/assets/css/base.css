@@ -1507,34 +1507,83 @@ a:focus {
   opacity: 0.5;
 }
 .home__bagels img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 350px;
+  height: 350px;
 }
 .home__bagels {
   position: absolute;
   top: 0;
   left: 50%;
   right: 0;
-  margin-left: -400px;
-  width: 800px;
-  height: 100%;
 }
 .home__bagel--1,
 .home__bagel--2 {
   position: absolute;
-  width: 860px;
-  height: 860px;
+  width: 350px;
+  height: 350px;
 }
 .home__bagel--1 {
-  left: 660px;
-  top: 0px;
+  left: 50px;
+  top: 60px;
   transform: rotate(50deg);
 }
 .home__bagel--2 {
-  right: -290px;
-  bottom: 0px;
+  right: 680px;
+  bottom: -500px;
   transform: rotate(300deg);
 }
+@media (min-width: 1450px) {
+  .home__bagel--2 {
+    right: 900px;
+  }
+}
+@media (max-width: 1300px) {
+  .home__bagel--1 {
+    left: 50px;
+    top: 60px;
+    transform: rotate(50deg);
+  }
+  .home__bagel--2 {
+    right: 600px;
+    bottom: -500px;
+  }
+}
+@media (max-width: 1000px) {
+  .home__bagel--2 {
+    right: 470px;
+    bottom: -540px;
+  }
+}
+@media (max-width: 768px) {
+  .home__bagel--2 {
+    right: 350px;
+  }
+}
+@media (max-width: 550px) {
+  .home__bagels img,
+  .home__bagel--1,
+  .home__bagel--2 {
+    width: 250px;
+    height: 250px;
+  }
+  .home__bagel--1 {
+    left: 50px;
+    top: 30px;
+  }
+  .home__bagel--2 {
+    right: 240px;
+    bottom: -340px;
+  }
+}
+@media (max-width: 400px) {
+  .home__bagel--1 {
+    left: 10px;
+  }
+  .home__bagel--2 {
+    right: 200px;
+  }
+}
+
 
 /* Report Landing Page
 ---------------------------------------------------------------- */
@@ -2240,16 +2289,6 @@ a:focus {
   }
   .finance-banner {
     padding: 160px 10px;
-  }
-  .home__bagels {
-    width: 200px;
-    margin-left: -100px;
-    height: 20%;
-  }
-  .home__bagel--1,
-  .home__bagel--2 {
-    width: 540px;
-    height: 540px;
   }
   .figs .fig {
     width: 100%;

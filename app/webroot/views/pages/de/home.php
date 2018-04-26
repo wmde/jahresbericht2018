@@ -13,20 +13,14 @@
 		</section>
 		<div class="home-hero__img t--zeta">
 			<img class="home-hero__img--first" src="assets/img/wk_conference_colored.jpg">
-
-
-			<?php ?>
 			<figure
 				class="home-hero__img--second"
 				data-anchor-target=".home-hero__img--second"
 				data-0="opacity:1;"
 				data-500="opacity:0;"
 				>
-
 				<img class="home-hero__img--second" src="assets/img/wk_conference_tinted.jpg">
 			</figure>
-
-
 			<p>René Zieger (Wikimedia Commons), CC BY-SA 4.0</p>
 		</div>
 		<section class="section cp home__intro">
@@ -226,34 +220,24 @@
 	</section>
 	<section class="finance-banner">
 		<div class="home__bagels">
-			<?php // animation powered by skrollr; vertical translation according to bagel css values, e.g. "top" or "bottom" ?>
 			<figure
 				class="home__bagel--1"
 				data-anchor-target=".finance-banner"
-				data-bottom-top="top: -200px; transform:rotate(320deg);"
-				data-top-bottom="top: -200px; transform:rotate(360deg);"
+				data-bottom-top="transform:rotate(0deg);"
+				data-top-bottom="transform:rotate(360deg);"
 			>
 				<img src="/assets/img/start_finanzen_circle_1.png" alt="Image of a random bagel chart">
 			</figure>
 			<figure
 				class="home__bagel--2"
 				data-anchor-target=".finance-banner"
-				data-bottom-top="bottom: -400px; transform:rotate(0deg);"
-				data-top-bottom="bottom: 100px; transform:rotate(-100deg);"
+				data-bottom-top="transform:rotate(360deg);"
+				data-top-bottom="transform:rotate(0deg);"
 			>
 				<img src="/assets/img/start_finanzen_circle_2.png" alt="Image of random bagel chart">
 			</figure>
 		</div>
 		<p class="h--beta">Unsere Finanzen 2017</p>
 		<a class="finance-banner__button h--delta" href="<?= $url('finance', $lang) ?>">&mdash; Zum Finanzteil</a>
-	</section>
-	<section class="section cp--upped-section home__join">
-		<h1 class="h--beta">Werde Mitglied bei Wikimedia Deutschland!</h1>
-		<div class="section__body">
-			<p class="t--delta">Es geht ganz einfach online und ab 2 Euro pro Monat.</p>
-		</div>
-		<div class="section__actions">
-			<a href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new" class="button button--bg-green">Mitglied werden</a>
-		</div>
 	</section>
 </main>
