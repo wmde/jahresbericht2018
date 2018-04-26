@@ -185,41 +185,6 @@
 			</div>
 		</div>
 	</section>
-	<section class="section cp--center-section">
-		<div class="limit--l">
-			<h2 class="section__heading"><div>Themen</div></h2>
-			<div class="section__body slider swiper-container loading">
-				<div class="swiper-wrapper">
-					<?php foreach ($reports as $report): ?>
-					<div class="swiper-slide">
-						<div class="jb-vsplit">
-							<figure
-								class="jb-vsplit__cover"
-								style="background-image: url('<?= $report['cover'] ?>');"
-							></figure>
-							<div class="jb-vsplit__content">
-								<h1 class="h--beta jb-vsplit__title"><?= $report['title'][$lang] ?></h1>
-								<div class="jb-vsplit__teaser">
-									<?php echo $report['teaser'][$lang] ?>
-								</div>
-								<a
-									class="jb-vsplit__button button button--outline-green"
-									href="<?= $url('report/' . $report['name'], $lang) ?>"
-								>
-									Zu diesem Thema
-								</a>
-							</div>
-						</div>
-					</div> <?php endforeach ?>
-				</div>
-				<div class="swiper-button-next swiper-button-next--green"></div>
-				<div class="swiper-button-prev swiper-button-prev--green"></div>
-			</div>
-			<div class="section__actions">
-				<a class="button button--bg-green" href="<?= $url('report', $lang) ?>">Zur Themenübersicht</a>
-			</div>
-		</div>
-	</section>
 	<section class="finance-banner">
 		<div class="home__bagels">
 			<figure

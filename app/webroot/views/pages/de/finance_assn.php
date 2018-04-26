@@ -456,15 +456,15 @@
 			<div class="bagel bagel--s">
 				<figure class="fig bagel__image bagel__image--s">
 					<img src="/assets/img/bagel_ev_1615.png" alt="">
-					<figcaption class="t--gamma bagel__cap">2016</figcaption>
+					<figcaption class="h--gamma bagel__cap">2016</figcaption>
 				</figure>
 				<div class="bagel__text">
 					<div class="bagel__ratio">
-						<div class="t--gamma bagel__line-1"><span>
+						<div class="h--gamma bagel__line-1"><span>
 							<div class="bagel__circle"></div>
 							22%
 						</span></div>
-						<div class="t--gamma bagel__line-2"><span>
+						<div class="h--gamma bagel__line-2"><span>
 							<div class="bagel__circle"></div>
 							78%
 						</span></div>
@@ -488,15 +488,15 @@
 			<div class="bagel bagel--s">
 				<figure class="fig bagel__image bagel__image--s">
 					<img src="/assets/img/bagel_ev_1615.png" alt="">
-					<figcaption class="t--gamma bagel__cap">2015</figcaption>
+					<figcaption class="h--gamma bagel__cap">2015</figcaption>
 				</figure>
 				<div class="bagel__text">
 					<div class="bagel__ratio">
-						<div class="t--gamma bagel__line-1"><span>
+						<div class="h--gamma bagel__line-1"><span>
 							<div class="bagel__circle"></div>
 							22%
 						</span></div>
-						<div class="t--gamma bagel__line-2"><span>
+						<div class="h--gamma bagel__line-2"><span>
 							<div class="bagel__circle"></div>
 							78%
 						</span></div>

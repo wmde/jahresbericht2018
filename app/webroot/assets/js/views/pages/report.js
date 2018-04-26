@@ -37,26 +37,23 @@ require([
   }
 
   // Animate slider
-  let slider = $('.slider');
-  if (slider.length) {
+  let sliders = $('.slider');
+  if (sliders.length) {
     require(['swiper'], function(Swiper) {
-      slider.forEach(el => {
+      sliders.forEach(el => {
         let slides = el.querySelectorAll('.swiper-slide');
-          console.log(".swiper-slide wird getriggert")
-
         if (slides.length <= 1) {
           el.classList.remove('loading');
         } else {
-          console.log("es gibt mehrere Slides")
-          let swiper = new Swiper(el[0], {
-              nextButton: '.swiper-button-next',
-              prevButton: '.swiper-button-prev',
-              centeredSlides: true,
-              loop: true,
-              slidesPerView: 1,
-              onImagesReady: function() {
-                el.removeClass('loading');
-              }
+          new Swiper(el, {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: 1,
+            onImagesReady: function() {
+              el.classList.remove('loading');
+            }
           });
         }
       });

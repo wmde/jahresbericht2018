@@ -1179,7 +1179,7 @@ a:focus {
 @media (max-width: 1100px) {
   .jb-hsplit-list {
     display: block;
-    margin: 0;
+    margin: 0 20px 0 20px;
   }
   .jb-hsplit-list .jb-hsplit {
     display: block;
@@ -1658,6 +1658,19 @@ a:focus {
   .nav-cube {
     margin: 20px;
   }
+  .nav-cube__title {
+    margin-top: -133px;
+  }
+}
+@media (max-width: 550px) {
+  .nav-cube__title {
+    margin-top: -113px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-cube__title {
+    margin-top: -133px;
+  }
 }
 
 /* Report Detail Pages
@@ -1801,7 +1814,7 @@ a:focus {
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url("../ico/arrow_white_left.svg");
+  background-image: url("../ico/arrow_black_left.svg");
   left: 10px;
   right: auto
 }
@@ -1810,24 +1823,12 @@ a:focus {
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("../ico/arrow_white_right.svg");
+  background-image: url("../ico/arrow_black_right.svg");
   right: 10px;
   left: auto
 }
 .report-detail .swiper-button-next {
   right: 60px;
-}
-.swiper-button-next--green {
-  background-image: url("../ico/arrow_green_right.svg");
-}
-.swiper-button-prev--green {
-  background-image: url("../ico/arrow_green_left.svg");
-}
-.swiper-button-next--black {
-  background-image: url("../ico/arrow_black_right.svg");
-}
-.swiper-button-prev--black {
-  background-image: url("../ico/arrow_black_left.svg");
 }
 
 @media (max-width: 550px) {
@@ -1968,6 +1969,7 @@ a:focus {
 }
 .ft--alloc {
   margin-top: 80px;
+  font-feature-settings: "tnum" 1;
 }
 .ft--alloc .ft__col-key {
   width: 80%;
@@ -2029,6 +2031,9 @@ a:focus {
   transform: rotate(-45deg) scale(.8);
   transition: all .5s;
 }
+.bagel .h--gamma {
+  margin: 0 !important;
+}
 .turn-in {
   opacity: 1 !important;
   transform: rotate(0) scale(1) !important;
@@ -2073,6 +2078,7 @@ a:focus {
 .bagel__line-5 span {
   position: absolute;
   bottom: 0;
+  font-feature-settings: "tnum" 1;
 }
 .bagel__line-1 {
   height: 35px;
@@ -2304,7 +2310,7 @@ a:focus {
     height: 75vw;
   }
   .jb-hsplit__content {
-    padding: 20px 40px 40px 20px;
+    padding: 20px 0 40px 20px;
   }
   .finance .section__body {
     padding-top: 140px;
