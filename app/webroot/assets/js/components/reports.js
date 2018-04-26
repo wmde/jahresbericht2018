@@ -132,7 +132,7 @@ define('components/reports', [], function() {
             this.loadNextUnseen(link);
           });
           this.loadNewReports();
-        }, 800);
+        }, 500);
       }
     }
 

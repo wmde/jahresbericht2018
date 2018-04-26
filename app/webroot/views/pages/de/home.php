@@ -51,18 +51,20 @@
 			<li class="reports--store" data-url="">Freiwillige Unterstützen(8)</li>
 		</ul>
 		<div class="reports__right">
-			<a class="reports__link h--beta" href="">
-				<div class="reports__link-title">Movement Strategy</div>
-				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
-			</a>
-			<a class="reports__link h--beta" href="">
-				<div class="reports__link-title">Fellow Programm</div>
-				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
-			</a>
-			<a class="reports__link h--beta" href="">
-				<div class="reports__link-title">Freiwillige unterstützen</div>
-				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
-			</a>
+			<div class="reports__link-wrapper">
+				<a class="reports__link h--beta" href="">
+					<div class="reports__link-title">Movement Strategy</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+				</a>
+				<a class="reports__link h--beta" href="">
+					<div class="reports__link-title">Fellow Programm</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+				</a>
+				<a class="reports__link h--beta" href="">
+					<div class="reports__link-title">Freiwillige unterstützen</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+				</a>
+			</div>
 			<button class="animation-ctl-button reports__button reports__button--reload invis">
 				<div class="animation-ctl-button__symbol"></div>
 				Neue Themen laden
