@@ -42,10 +42,12 @@ require([
     require(['swiper'], function(Swiper) {
       slider.forEach(el => {
         let slides = el.querySelectorAll('.swiper-slide');
+          console.log(".swiper-slide wird getriggert")
 
         if (slides.length <= 1) {
           el.classList.remove('loading');
         } else {
+          console.log("es gibt mehrere Slides")
           let swiper = new Swiper(el[0], {
               nextButton: '.swiper-button-next',
               prevButton: '.swiper-button-prev',

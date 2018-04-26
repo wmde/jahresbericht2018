@@ -50,8 +50,6 @@ require([
   })
   let reports = new Reports($1('.reports'));
 
-  let reports = new Reports($1('.reports'));
-
   new Waypoint({
     element: $1('.home__box'),
     handler: dir => {
