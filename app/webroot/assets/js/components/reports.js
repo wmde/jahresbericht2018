@@ -13,34 +13,11 @@ define('components/reports', [], function() {
       this.element = element;
       this.state = {
         runningTransitions: 0,
-        animationState: 1
-      };
-      // Timing Functions
-      this.timing = {
-        linear(timeFraction) {
-          return timeFraction;
-        },
-        quad(timeFraction) {
-            return Math.pow(timeFraction, 2)
-        },
-        circ(timeFraction) {
-            return 1 - Math.sin(Math.acos(timeFraction));
-        },
-        bounce(timeFraction) {
-          for (let a = 0, b = 1, result; 1; a += b, b /= 2) {
-            if (timeFraction >= (7 - 4 * a) / 11) {
-              return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
-            }
-          }
-        },
-        bow(timeFraction) {
-          let x = 20; // Pull in opposite direction first.
-          return Math.pow(timeFraction, 2) * ((x + 1) * timeFraction - x)
-        },
-        elastic(timeFraction) {
-          let x = 5; // Hit and shake.
-          return Math.pow(2, 10 * (timeFraction - 1)) * Math.cos(20 * Math.PI * x / 3 * timeFraction)
-        }
+        animationState: 1,
+        store: this.element.querySelectorAll('.reports--store'),
+        unseen: [], // Store indexes of unseen reports.
+        lastStoreIndexes: [],
+        loading: true
       };
 
       let cube1 = this.element.querySelector('.reports__cube--1');
@@ -60,45 +37,103 @@ define('components/reports', [], function() {
       ];
       */
 
-      let hu = 80; // isometric cube horizontal units
-      let vu = 46; // isometric cube vertical units
-      let t = 1000; // duration
-      let pps = 80; // pixel per second
-      let tf = this.makeEaseInOut(this.timing.quad);
+      let hu = cube1.offsetWidth / 2; // Isometric cube horizontal units.
+      let vu = cube1.offsetHeight / 4;
+      let pps = 80; // Pixel per second to adjust speed of every transition.
 
-      let shuffleLoop = [
+      this.shuffleLoop = [
         [
-          { el: cube1, styles: { left: 1*hu, top: 2*vu }, pixelSpeed: pps, timing: tf },
-          { el: cube2, styles: { left: 0*hu, top: 1*vu }, pixelSpeed: pps, timing: tf },
-          { el: cube3, styles: { left: 2*hu, top: 1*vu }, pixelSpeed: pps, timing: tf }
+          { el: cube1, styles: { left: 1*hu, top: 2*vu }, pixelSpeed: pps },
+          { el: cube2, styles: { left: 0*hu, top: 1*vu }, pixelSpeed: pps },
+          { el: cube3, styles: { left: 2*hu, top: 1*vu }, pixelSpeed: pps }
         ],
         [
-          { el: cube1, styles: { left: 1*hu, top: 0*vu }, pixelSpeed: pps, timing: tf }
+          { el: cube1, styles: { left: 1*hu, top: 0*vu }, pixelSpeed: pps }
         ],
         [
-          { el: cube1, styles: { left: 1*hu, top: 4*vu }, pixelSpeed: pps, timing: tf }
+          { el: cube1, styles: { left: 1*hu, top: 4*vu }, pixelSpeed: pps }
         ],
         [
-          { el: cube2, styles: { left: 0*hu, top: 3*vu }, pixelSpeed: pps, timing: tf }
+          { el: cube2, styles: { left: 0*hu, top: 3*vu }, pixelSpeed: pps }
         ],
         [
-          { el: cube1, styles: { left: 1*hu, top: 2*vu }, pixelSpeed: pps, timing: tf },
-          { el: cube3, styles: { left: 1*hu, top: 0*vu }, pixelSpeed: pps, timing: tf }
+          { el: cube1, styles: { left: 1*hu, top: 2*vu }, pixelSpeed: pps },
+          { el: cube3, styles: { left: 1*hu, top: 0*vu }, pixelSpeed: pps }
         ],
         [
-          { el: cube1, styles: { left: 0*hu, top: 1*vu }, pixelSpeed: pps, timing: tf }
+          { el: cube1, styles: { left: 0*hu, top: 1*vu }, pixelSpeed: pps }
         ],
         [
-          { el: cube1, styles: { left: 1*hu, top: 2*vu }, pixelSpeed: pps, timing: tf },
-          { el: cube3, styles: { left: 2*hu, top: 1*vu }, pixelSpeed: pps, timing: tf }
+          { el: cube1, styles: { left: 1*hu, top: 2*vu }, pixelSpeed: pps },
+          { el: cube3, styles: { left: 2*hu, top: 1*vu }, pixelSpeed: pps }
         ]
       ];
 
-      //this.executeAnimation(shuffleLoop, () => { console.log("animation end"); });
-
-      this.element.querySelector('.reports__canvas').addEventListener('click', () => {
-        this.toggleAnimationState(shuffleLoop);
+      this.element.querySelector('.reports__button--reload').addEventListener('click', () => {
+        if (this.state.runningTransitions == 0) {
+          //this.toggleAnimationState(shuffleLoop);
+          this.loadNewReports();
+          //this.performAnimation(shuffleLoop, () => { console.log(this.state); });
+        }
       });
+
+      // init
+      this.element.querySelectorAll('.reports__link').forEach(link => {
+        this.loadNextUnseen(link);
+      });
+      this.loadNewReports();
+      this.element.querySelectorAll('.reports__button').forEach(button => {
+        button.classList.remove('invis');
+      });
+    }
+
+    loadNextUnseen(el) {
+      // Reset unseen storeIndexes.
+      if (this.state.unseen.length == 0) {
+        this.state.store.forEach( (achievement, index) => {
+          this.state.unseen.push(index);
+        });
+        // Remove the last visible storeIndexes from unseen.
+        this.state.lastStoreIndexes.forEach((index) => {
+          this.state.unseen = this.state.unseen.filter(e => e !== index);
+        });
+      }
+      // Get random unseen storeIndex.
+      let storeIndex = this.state.unseen[Math.floor(Math.random() * this.state.unseen.length)];
+      // Save the 3 most recent storeIndexes to prevent repetition.
+      this.state.lastStoreIndexes.push(storeIndex);
+      if (this.state.lastStoreIndexes.length > 3) {
+        this.state.lastStoreIndexes.shift();
+      }
+      this.state.unseen = this.state.unseen.filter(e => e !== storeIndex);
+
+      // Insert data of next unseen achievement.
+      let source = this.state.store[storeIndex];
+      el.href = source.dataset.url;
+      el.querySelector('.reports__link-title').innerHTML = source.innerHTML;
+    }
+
+    loadNewReports() {
+      let el = this.element;
+      let links = el.querySelectorAll('.reports__link');
+
+      if (this.state.loading) {
+          el.classList.remove('loading');
+          this.state.loading = false;
+      } else {
+        this.toggleAnimationState(this.shuffleLoop);
+        el.classList.add('loading');
+        this.state.loading = true;
+        this.state.runningTasks++;
+
+        setTimeout(() => {
+          this.state.runningTasks--;
+          links.forEach(link => {
+            this.loadNextUnseen(link);
+          });
+          this.loadNewReports();
+        }, 800);
+      }
     }
 
     toggleAnimationState(animation) {
@@ -118,21 +153,9 @@ define('components/reports', [], function() {
     performAnimation(animation, onFinishAnimation, state = 0) {
       if (animation[state]) {
         this.performAnimationState(animation[state], () => { this.performAnimation(animation, onFinishAnimation, state+1); });
-      } else {
+      } else if (onFinishAnimation) {
         onFinishAnimation();
       }
-    }
-
-    draw(transition, animatedStylesBefore, progress) {
-      let el = transition.el;
-      Object.entries(transition.styles).forEach(pair => {
-        // Get style value saved before the animation.
-        let valueBefore = animatedStylesBefore[pair[0]][1] || 0;
-        let unit = animatedStylesBefore[pair[0]][2] || '';
-        // Get target value.
-        let valueTarget = transition.styles[pair[0]];
-        transition.el.style[pair[0]] = (valueBefore + ((valueTarget - valueBefore) * progress)) + unit;
-      });
     }
 
     performTransition(transition, onFinishState) {
@@ -141,18 +164,11 @@ define('components/reports', [], function() {
       // Save current state of animated style values.
       let animatedStylesBefore = []
       Object.entries(transition.styles).forEach(pair => {
-        let computedStyle = window.getComputedStyle(transition.el, null)[pair[0]];
         // Split value from unit (px/%) example '1px' -> ['1px', '1', 'px'].
-        let inlineStyle = transition.el.style[pair[0]];
-        let value;
-        // Set inline style (eg. width = '100%') to animate percentages.
-        // The unit is otherwise px taken from computedStyle.
         let splitValueUnitRegex = /(-?\d*\.?\d*)(.*)/;
-        if (inlineStyle) {
-          value = inlineStyle.match(splitValueUnitRegex);
-        } else {
-          value = computedStyle.match(splitValueUnitRegex);
-        }
+        // Prefer inlinestyle ('px, %, pt etc.') rather than computedstyle (only px).
+        let value = (transition.el.style[pair[0]] || window.getComputedStyle(transition.el, null)[pair[0]]).match(splitValueUnitRegex);
+        // Set inline style (eg. width = '100%') to animate percentages.
         value[1] = parseInt(value[1]);
         animatedStylesBefore[pair[0]] = value;
       });
@@ -176,17 +192,12 @@ define('components/reports', [], function() {
       Object.entries(transition.styles).forEach(pair => {
         // Setup css transition.
         // Get style unit saved before the animation.
-        let unit = animatedStylesBefore[pair[0]][2] || '';
+
         // Get target value.
         let valueTarget = transition.styles[pair[0]];
-        transition.el.style[pair[0]] = valueTarget + unit;
-      });
-
-      // Run animation.
-      /*
-      this.state.runningTransitions++;
-      this.animate(transition.duration,
-        transition.timing, () => {
+        transition.el.style[pair[0]] = valueTarget + animatedStylesBefore[pair[0]][2];
+        this.state.runningTransitions++;
+        setTimeout(() => {
           this.state.runningTransitions--;
           if (this.state.runningTransitions == 0) {
             if(onFinishState) onFinishState();
@@ -194,50 +205,8 @@ define('components/reports', [], function() {
           if (transition.onEnd) {
             transition.onEnd();
           }
-      }, (progress) => {
-        this.draw(transition, animatedStylesBefore, progress);
+        }, transition.duration);
       });
-      */
-    }
-
-    // This is the animation core.
-    animate(duration = 500, timing, onFinish, draw) {
-      let startTime;
-      requestAnimationFrame(function animate(time) {
-        startTime = startTime || time;
-        // Get the Fraction of already passed Time.
-        // timeFraction goes from 0 to 1.
-        let timeFraction = (time - startTime) / duration;
-        if (timeFraction > 1) timeFraction = 1;
-
-        // Calculate the progress.
-        let progress = timing(timeFraction);
-
-        draw(progress);
-
-        if (timeFraction < 1) {
-          requestAnimationFrame(animate);
-        } else if (onFinish) {
-          onFinish();
-        }
-      });
-    }
-
-    // Reverse timing function (example fast beginning will be a fast end).
-    makeEaseOut(timing) {
-      return function(timeFraction) {
-        return 1 - timing(1 - timeFraction);
-      }
-    }
-
-    // Reverse timing function at 0.5.
-    makeEaseInOut(timing) {
-      return function(timeFraction) {
-        if (timeFraction < .5)
-          return timing(2 * timeFraction) / 2;
-        else
-          return (2 - timing(2 * (1 - timeFraction))) / 2;
-      }
     }
 
   }

@@ -38,7 +38,7 @@
 		</div>
 	</div>
 	</section>
-	<section class="reports clearfix cp">
+	<section class="reports clearfix loading">
 		<div class="reports__left">
 			<div class="reports__canvas">
 				<div class="reports__cube reports__cube--1"></div>
@@ -46,52 +46,37 @@
 				<div class="reports__cube reports__cube--3"></div>
 			</div>
 		</div>
+		<ul>
+			<li class="reports--store" data-url="">Movement Strategy(1)</li>
+			<li class="reports--store" data-url="">Fellow Programm(2)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(3)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(4)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(5)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(6)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(7)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(8)</li>
+		</ul>
 		<div class="reports__right">
-			<a class="reports__link" href="">
+			<a class="reports__link h--beta" href="">
+				<div class="reports__link-title">Movement Strategy</div>
 				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
 			</a>
-		</div>
-	</section>
-	<section class="reports clearfix cp">
-		<div class="reports__left">
-			<div class="reports__canvas">
-				<div class="reports__cube reports__cube--1"></div>
-				<div class="reports__cube reports__cube--2"></div>
-				<div class="reports__cube reports__cube--3"></div>
-			</div>
-		</div>
-		<div class="reports__right">
-			<a class="reports__link" href="">
+			<a class="reports__link h--beta" href="">
+				<div class="reports__link-title">Fellow Programm</div>
 				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
 			</a>
-		</div>
-	</section>
-	<section class="reports clearfix cp">
-		<div class="reports__left">
-			<div class="reports__canvas">
-				<div class="reports__cube reports__cube--1"></div>
-				<div class="reports__cube reports__cube--2"></div>
-				<div class="reports__cube reports__cube--3"></div>
-			</div>
-		</div>
-		<div class="reports__right">
-			<a class="reports__link" href="">
+			<a class="reports__link h--beta" href="">
+				<div class="reports__link-title">Freiwillige unterstützen</div>
 				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
 			</a>
-		</div>
-	</section>
-	<section class="reports clearfix cp">
-		<div class="reports__left">
-			<div class="reports__canvas">
-				<div class="reports__cube reports__cube--1"></div>
-				<div class="reports__cube reports__cube--2"></div>
-				<div class="reports__cube reports__cube--3"></div>
-			</div>
-		</div>
-		<div class="reports__right">
-			<a class="reports__link" href="">
-				<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
-			</a>
+			<button class="animation-ctl-button reports__button reports__button--reload invis">
+				<div class="animation-ctl-button__symbol"></div>
+				Neue Themen laden
+			</button>
+			<button class="animation-ctl-button reports__button reports__button--all invis">
+				<div class="animation-ctl-button__symbol"></div>
+				Alle Themen anzeigen
+			</button>
 		</div>
 	</section>
 	<section class="achievements loading">
@@ -179,8 +164,8 @@
 				</div>
 			</div>
 		</div>
-		<button class="achievements__button invis">
-			<div class="achievements__button--symbol"></div>
+		<button class="achievements__button animation-ctl-button invis">
+			<div class="animation-ctl-button__symbol"></div>
 			Neue Erfolge laden
 		</button>
 	</section>

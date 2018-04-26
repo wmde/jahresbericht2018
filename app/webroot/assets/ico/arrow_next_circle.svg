@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="15" cy="15" r="15" fill="#339967"/>
+    <g stroke="#FFFFFF" transform="translate(9 11)">
+      <path d="M0.161764706,0.5 L10.8431361,0.5" transform="translate(0 4)" stroke-linecap="square"/>
+      <polyline points="5.714 6.511 9.714 2.511 13.714 6.511" transform="rotate(90 9.714 4.51)"/>
+    </g>
+  </g>
+</svg>

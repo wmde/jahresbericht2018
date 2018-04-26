@@ -2334,6 +2334,37 @@ a:focus {
   }
 }
 
+/* Component animation buttons */
+.animation-ctl-button {
+  color: var(--color-green);
+  border: none;
+  background: none;
+  padding: 0;
+  transition: opacity 2s ease;
+  opacity: 1;
+
+  display: inline-block;
+  text-align: center;
+}
+.animation-ctl-button__symbol {
+  padding-bottom: 5px;
+  width: 30px;
+  height: 30px;
+}
+.animation-ctl-button:focus {
+  outline: none;
+}
+.animation-ctl-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+@keyframes rotate {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg); }
+}
+
+/* Achievements
+---------------------------------------------------------------- */
 .achievements {
   text-align: center;
   padding: 80px 0;
@@ -2353,41 +2384,17 @@ a:focus {
   text-align: left;
   width: calc(50% - 129px);
 }
-.achievements__button {
-  display: inline-block;
-  text-align: center;
-  color: var(--color-green);
-
-  border: none;
-  background: none;
-  padding: 0;
-  transition: opacity 2s ease;
-  opacity: 1;
-}
-.achievements__button:focus {
-  outline: none;
-}
 .achievements__button.invis {
   opacity: 0;
 }
-.achievements__button--symbol {
+.achievements__button .animation-ctl-button__symbol{
   margin: 0 auto 8px auto;
-  padding-bottom: 5px;
-  width: 30px;
-  height: 30px;
   background: url(../ico/reload_circle.svg) no-repeat center/contain;
 }
-.achievements__button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-.achievements__button:hover .achievements__button--symbol {
+.achievements__button:hover .animation-ctl-button__symbol {
   animation: rotate 0.5s 1 ease;
 }
-@keyframes rotate {
-  from { transform:rotate(0deg); }
-  to { transform:rotate(360deg); }
-}
+
 /* achievements cube */
 .achievements__cube {
   flex-grow: 0;
@@ -2421,6 +2428,7 @@ a:focus {
   left: 6.49%;
   top: 5.64%;
 }
+
 /* achievements cube - animated state */
 .achievements.loading .achievements__cube-side--left {
   left: -2.16%;
@@ -2467,6 +2475,7 @@ a:focus {
   float: right;
   color: var(--color-darkgray);
 }
+
 /* achievements numbers */
 .achievement__number {
   color: var(--color-orange);
@@ -2487,6 +2496,7 @@ a:focus {
 .achievements__cube--mobile {
   display: none;
 }
+
 @media (max-width: 960px) {
   .achievements__left,
   .achievements__right {
@@ -2511,26 +2521,75 @@ a:focus {
   }
 }
 
-.reports {}
+/* Reports
+---------------------------------------------------------------- */
+.reports {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 50px;
+}
 .reports__left {
   width: 50%;
   float: left;
   text-align: center;
+  padding-right: 25px;
 }
 .reports__right {
   width: 50%;
   float: right;
+  padding-left: 25px;
+}
+.reports--store {
+  display: none;
 }
 .reports__link {
   display: block;
   color: var(--color-green);
+  max-width: 250px;
+  margin: 0 50px 50px 0;
+  transition: opacity 2s ease;
+  opacity: 1;
 }
+.reports.loading .reports__link {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+.reports__link-project {
+  padding-top: 5px;
+}
+.reports__button {
+  padding-right: 50px;
+  margin-top: 20px;
+}
+.reports__button.invis {
+  opacity: 0;
+}
+.reports__button .animation-ctl-button__symbol {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.reports__button--reload .animation-ctl-button__symbol {
+  background: url(../ico/reload_circle.svg) no-repeat center/contain;
+}
+.reports__button--all .animation-ctl-button__symbol {
+  background: url(../ico/arrow_next_circle.svg) no-repeat center/contain;
+}
+.reports__button--reload:hover .animation-ctl-button__symbol {
+  animation: rotate 0.5s 1 ease;
+}
+/* reports animation */
 .reports__canvas {
-  position: inline-block;
   position: relative;
   width: 375px;
   height: 375px;
+  display: inline-block;
   overflow: visible;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  transform: scale(0.875);
 }
 .reports__cube {
   background: url(../img/cube_achievements.svg) no-repeat center/contain;
