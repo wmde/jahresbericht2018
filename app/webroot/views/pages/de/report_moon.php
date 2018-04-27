@@ -20,16 +20,16 @@
 				<p>
 					Die <a href="http://ptscientists.com/" target="new">PT Scientists</a> aus Berlin, die als Freizeit-Wissenschaftler beim Google Lunar-X-Prize gestartet sind, möchten Wikipedia mit ihrem ersten rein privat finanzierten Mondflug ein Denkmal setzen. Als Einsteiger in die Thematik der Raumfahrt haben sich die PT Scientists nämlich selbst viel Wissen aus Wikipedia angeeignet. Robert Böhme, Leiter der PT Scientists, erinnert sich: „Für uns war Wikipedia am Anfang eine unheimlich wichtige Wissensquelle, weil wir einfach Außenseiter aus der Raumfahrt sind. Und es hat uns geholfen, den Einstieg zu kriegen und einfach das Nötigste zu lernen und zu sehen, was mit einem freien Austausch von Informationen alles möglich ist.“
 				</p>
-				<?php if ($achievement): ?>
+				<?php if (isset($achievements[0])): ?>
 				<div class="achievement-box">
 					<span class="achievement-box__category t--epsilon">
-						<?= $achievement['category'][$lang] ?>
+						<?= $achievements[0]['category'][$lang] ?>
 					</span>
 					<span class="achievement-box__number h--alpha">
-						<?= $achievement['number'] ?>
+						<?= $achievements[0]['number'] ?>
 					</span>
 					<span class="achievement-box__teaser t--delta-serif">
-						<?= $achievement['teaser'][$lang] ?>
+						<?= $achievements[0]['teaser'][$lang] ?>
 					</span>
 				</div>
 				<?php endif ?>
