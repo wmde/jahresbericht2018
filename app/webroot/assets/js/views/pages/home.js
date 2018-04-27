@@ -15,7 +15,11 @@ require([
   'components/reports',
   'domready!'
 ], function(
-  Skrollr, Modernizr, Waypoint, Achievements, Reports
+  Skrollr,
+  Modernizr,
+  Waypoint,
+  Achievements,
+  Reports
 ) {
   let $1 = document.querySelector.bind(document);
   let $ = document.querySelectorAll.bind(document);
@@ -32,13 +36,12 @@ require([
     handler: dir => {
 			if (dir === 'down') {
         achievements.init();
-			} else {
-        //el.classList.add('inset');
-      }
+			}
     },
     offset: '70%'
   })
-  let reports = new Reports($1('.reports'));
+
+  new Reports($1('.reports'));
 
   new Waypoint({
     element: $1('.home__box'),
@@ -49,15 +52,4 @@ require([
     },
     offset: '80%'
   })
-
-  //  let chart;
-  //
-  //  new Waypoint('.member-chart', {
-  //    handler: () => {
-  //      if (!chart) { // Initialize just once.
-  //        chart = new Chart(document.querySelector('.chart'));
-  //      }
-  //    }
-  //  });
-
 });

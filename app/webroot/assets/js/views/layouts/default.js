@@ -24,13 +24,13 @@ require([
   let allMods, throttled;
 
   // Imprint toggle
-  toggle.addEventListener("click", function(ev) {
+  toggle.addEventListener('click', function(ev) {
     ev.preventDefault();
 
-    imprint.classList.toggle("invis");
-    close.classList.toggle("invis");
+    imprint.classList.toggle('invis');
+    close.classList.toggle('invis');
 
-    if (!imprint.classList.contains("invis")) {
+    if (!imprint.classList.contains('invis')) {
       let rect = imprint.getBoundingClientRect();
       if ('scrollBehavior' in document.documentElement.style) {
           window.scrollTo({top: window.pageYOffset + rect.top - 40, behavior: 'smooth'});
@@ -42,10 +42,10 @@ require([
     }
 
   });
-  close.addEventListener("click", function(ev) {
+  close.addEventListener('click', function(ev) {
     ev.preventDefault();
-    close.classList.add("invis");
-    imprint.classList.add("invis");
+    close.classList.add('invis');
+    imprint.classList.add('invis');
   });
 
   // Animate mobile navigation
@@ -54,13 +54,13 @@ require([
   let logo = $1('.real-logo');
   let mnClose = $1('.mn-close');
 
-  mnTrigger.addEventListener("click", ev => {
+  mnTrigger.addEventListener('click', ev => {
     mncontainer.classList.add('mn-inframe');
     body.classList.add('no-scroll');
     logo.classList.add('no-filter');
   });
 
-  mnClose.addEventListener("click", ev => {
+  mnClose.addEventListener('click', ev => {
     mncontainer.classList.remove('mn-inframe');
     body.classList.remove('no-scroll');
     logo.classList.remove('no-filter');

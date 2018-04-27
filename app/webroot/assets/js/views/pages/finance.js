@@ -17,7 +17,6 @@ require([
 ) {
   // Animate bagels on finance sub-pages
   let bagels = document.querySelectorAll('.bagel');
-
   if (bagels.length && !Modernizr.touchevents) {
     bagels.forEach((el) => {
       new Waypoint({
