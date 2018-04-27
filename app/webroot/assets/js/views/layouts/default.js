@@ -8,11 +8,10 @@
  */
 
 require([
-  'underscore',
   'modernizr',
   'domready!'
 ], function(
-  _, Modernizr
+  Modernizr
 ) {
   let $1 = document.querySelector.bind(document);
   let $ = document.querySelectorAll.bind(document);

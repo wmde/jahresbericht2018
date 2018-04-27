@@ -8,12 +8,10 @@
  */
 
 require([
-  'underscore',
   'modernizr',
   'waypoint',
   'domready!'
 ], function(
-  _,
   Modernizr,
   Waypoint
 ) {

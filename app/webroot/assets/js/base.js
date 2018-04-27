@@ -21,7 +21,6 @@ requirejs.config({
     // Add your app specific js paths here.
     'waypoint': 'waypoints',
     'swiper': 'swiper',
-    'underscore': 'underscore',
 
     // Components
     'components/achievements': 'components/achievements',
