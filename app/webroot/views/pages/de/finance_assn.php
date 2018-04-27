@@ -517,14 +517,6 @@
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-
-
-
 			<table class="ft ft--alloc">
 				<thead>
 					<th class="ft__col-key"></th>

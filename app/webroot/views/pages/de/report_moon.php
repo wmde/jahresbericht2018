@@ -3,7 +3,6 @@
 		class="report-detail-hero cp cp--nav-zone"
 		style="background-image: url(/assets/img/11_moon_hero.jpg)"
 	>
-		<!-- <div class="report-detail-hero__filter"></div> -->
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">Denis Schroeder (WMDE) (<a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_und_Lunar_Quattro_2.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
@@ -96,10 +95,10 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-					<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-					<a href="<?= $url('/report', $lang) ?>" class="button button--report">
-						<p class="button--small"> Zum nächsten Projekt </p>
-						<p> Freiwillige unterstützen </p>
-					</a>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">
+			<p class="button--small"> Zum nächsten Projekt </p>
+			<p> Freiwillige unterstützen </p>
+		</a>
 	</section>
 </main>
