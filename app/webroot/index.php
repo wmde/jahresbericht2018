@@ -122,6 +122,16 @@ $routes['#^/report$#'] = function($path, $query, $matches) {
 	];
 };
 $routes['#^/report/(.*)$#'] = function($path, $query, $matches) {
+	$achievements = require PROJECT_APP_PATH .'/data/achievements.php';
+	$achievement = null;
+
+	foreach ($achievements as $a) {
+		if ($a['url'] === $path) {
+			$achievement = $a;
+			break;
+		}
+	}
+
 	$reports = require PROJECT_APP_PATH .'/data/reports.php';
 	$report = null;
 
@@ -131,7 +141,7 @@ $routes['#^/report/(.*)$#'] = function($path, $query, $matches) {
 			break;
 		}
 	}
-	return compact('report') + [
+	return compact('report', 'achievement') + [
 		'hasBlackHeader' => true
 	];
 };
