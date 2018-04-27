@@ -2522,7 +2522,6 @@ a:focus {
   }
 }
 
-
 /* Report Landing Page
 ---------------------------------------------------------------- */
 .report-landing-hero {
@@ -2786,4 +2785,79 @@ a:focus {
   .report__links {
     padding: 0px 20px;
   }
+}
+
+/* Chart
+---------------------------------------------------------------- */
+.chart-test {
+  position: absolute;
+  z-index: 100;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #999;
+}
+.chart {
+  background-color: var(--color-green);
+  min-height: 800px;
+  padding-top: 600px;
+  position: relative;
+  width: 100%;
+}
+.chart__cards-wrapper {
+  position: relative;
+  margin-left: 150px;
+}
+.chart__card {
+  position: absolute;
+  width: 152px;
+  height: 264px;
+  background: url(../img/chart_card.svg) no-repeat left/contain;
+  overflow: visible;
+  /*transition: bottom 1s ease, margin-bottom 0.3 ease, opacity 0.3 ease;*/
+  transition: margin-bottom 0.4s ease, opacity 1s ease, bottom 0.8s ease;
+  opacity: 0.8;
+}
+.chart__card:hover {
+  opacity: 1;
+  margin-bottom: 50px;
+  transition: margin-bottom 0.3s ease;
+}
+.chart.fix .chart__card {
+  bottom: 0px !important;
+}
+.chart__dates-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+.chart__date {
+  position: relative;
+  color: #FFF;
+  opacity: 0.5;
+  bottom: 0px;
+  transition: all 0.5s;
+}
+.chart__date.active {
+  bottom: 20px;
+  opacity: 1;
+}
+.chart__date-value {
+  font-weight: bold;
+}
+.chart__cards-wrapper--small {
+  display: none;
+}
+@media (max-width: 960px) {
+  .chart__cards-wrapper {
+    display: none;
+  }
+  .chart__cards-wrapper--small {
+    display: block;
+  }
+  .chart__card--2 {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
 }

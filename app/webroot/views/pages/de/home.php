@@ -32,49 +32,6 @@
 		</div>
 	</div>
 	</section>
-	<section class="reports clearfix cp--component-section loading">
-		<div class="reports__left">
-			<div class="reports__canvas">
-				<div class="reports__cube reports__cube--1"></div>
-				<div class="reports__cube reports__cube--2"></div>
-				<div class="reports__cube reports__cube--3"></div>
-			</div>
-		</div>
-		<ul>
-			<li class="reports--store" data-url="">Movement Strategy(1)</li>
-			<li class="reports--store" data-url="">Fellow Programm(2)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(3)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(4)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(5)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(6)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(7)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(8)</li>
-		</ul>
-		<div class="reports__right">
-			<div class="reports__link-wrapper">
-				<a class="reports__link h--beta" href="">
-					<div class="reports__link-title">Movement Strategy</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
-				</a>
-				<a class="reports__link h--beta" href="">
-					<div class="reports__link-title">Fellow Programm</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
-				</a>
-				<a class="reports__link h--beta" href="">
-					<div class="reports__link-title">Freiwillige unterstützen</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
-				</a>
-			</div>
-			<button class="animation-ctl-button reports__button reports__button--reload invis">
-				<div class="animation-ctl-button__symbol"></div>
-				Neue Themen laden
-			</button>
-			<button class="animation-ctl-button reports__button reports__button--all invis">
-				<div class="animation-ctl-button__symbol"></div>
-				Alle Themen anzeigen
-			</button>
-		</div>
-	</section>
 	<section class="achievements cp--component-section loading">
 		<ul>
 			<?php foreach($achievements as $item): ?>
@@ -159,6 +116,78 @@
 			<div class="animation-ctl-button__symbol"></div>
 			Neue Erfolge laden
 		</button>
+	</section>
+	<section class="chart cp--component-section fix">
+		<?php
+			$chartValues = [
+				'01.01.2013' => 2618,
+				'03.05.2013' => 5480,
+				'01.09.2013' =>	6931,
+				'01.01.2014' =>	9803,
+				'01.05.2014' =>	10796,
+				'01.09.2014' =>	11470,
+				'01.01.2015' =>	15778,
+				'01.05.2015' =>	22015,
+				'01.09.2015' =>	23879,
+				'01.01.2016' =>	29169,
+				'02.05.2016' =>	34304,
+				'22.08.2016' =>	35959,
+				'03.01.2017' =>	43138,
+				'20.04.2017' =>	50249,
+				'07.09.2017' => 52710,
+				'03.01.2018' =>	53967,
+				'07.03.2018' =>	65374
+			];
+			echo '<script type="text/javascript">let chartValues = '.json_encode($chartValues).'</script>';
+		?>
+		<div class="chart-wrapper">
+			<div class="chart__cards-wrapper"></div>
+			<div class="chart__cards-wrapper chart__cards-wrapper--small"></div>
+			<div class="chart__dates-wrapper"></div>
+		</div>
+	</section>
+	<section class="reports clearfix cp--component-section loading">
+		<div class="reports__left">
+			<div class="reports__canvas">
+				<div class="reports__cube reports__cube--1"></div>
+				<div class="reports__cube reports__cube--2"></div>
+				<div class="reports__cube reports__cube--3"></div>
+			</div>
+		</div>
+		<ul>
+			<li class="reports--store" data-url="">Movement Strategy(1)</li>
+			<li class="reports--store" data-url="">Fellow Programm(2)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(3)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(4)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(5)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(6)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(7)</li>
+			<li class="reports--store" data-url="">Freiwillige Unterstützen(8)</li>
+		</ul>
+		<div class="reports__right">
+			<div class="reports__link-wrapper">
+				<a class="reports__link h--beta" href="">
+					<div class="reports__link-title">Movement Strategy</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+				</a>
+				<a class="reports__link h--beta" href="">
+					<div class="reports__link-title">Fellow Programm</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+				</a>
+				<a class="reports__link h--beta" href="">
+					<div class="reports__link-title">Freiwillige unterstützen</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+				</a>
+			</div>
+			<button class="animation-ctl-button reports__button reports__button--reload invis">
+				<div class="animation-ctl-button__symbol"></div>
+				Neue Themen laden
+			</button>
+			<button class="animation-ctl-button reports__button reports__button--all invis">
+				<div class="animation-ctl-button__symbol"></div>
+				Alle Themen anzeigen
+			</button>
+		</div>
 	</section>
 	<section class="finance-banner">
 		<div class="home__bagels">

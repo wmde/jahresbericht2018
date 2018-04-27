@@ -13,13 +13,15 @@ require([
   'waypoint',
   'components/achievements',
   'components/reports',
+  'components/chart',
   'domready!'
 ], function(
   Skrollr,
   Modernizr,
   Waypoint,
   Achievements,
-  Reports
+  Reports,
+  Chart
 ) {
   let $1 = document.querySelector.bind(document);
   let $ = document.querySelectorAll.bind(document);
@@ -42,6 +44,17 @@ require([
   })
 
   new Reports($1('.reports'));
+
+  let chart = new Chart($1('.chart'));
+  new Waypoint({
+    element: $1('.chart'),
+    handler: dir => {
+			if (dir === 'down') {
+        chart.init();
+			}
+    },
+    offset: '60%'
+  })
 
   new Waypoint({
     element: $1('.home__box'),
