@@ -40,15 +40,12 @@ and located as follows.
 
 Path                                     Copyright Holder                License
 ..................................................................................................
-assets/js/jquery.js                      JS Foundation and other         MIT
-                                         contributors
+assets/js/compat/core.js                 Denis Pushkarev                 MIT
+assets/js/compat/modernizr.js            - see file header -             MIT
+assets/js/compat/smoothscroll.js         Dustan Kasten                   MIT
 assets/js/require.js                     JS Foundation and other         MIT
                                          contributors
 assets/js/require/domReady.js            The Dojo Foundation             MIT or new BSD
-assets/js/scrollTo.js                    Atelier Disko                   BSD 3 Clause
 assets/js/skrollr.js                     Alexander Prinzhorn             MIT
 assets/js/swiper.js                      Vladimir Kharlampidi            MIT
-assets/js/underscore.js                  Jeremy Ashkenas, DocumentCloud  MIT
-                                         and Investigative 
-                                         Reporters & Editors
-assets/js/compat/modernizr.js            - see file header -             MIT
+assets/js/waypoints.js                   Caleb Troughton                 MIT
