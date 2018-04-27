@@ -35,7 +35,7 @@
 	[
 		'name' => 'framework',
 		'title' => [
-			'de' => 'Rahmenbedingungen',
+			'de' => 'Rahmen&shy;bedingungen',
 			'en' => ''
 		],
 		'teaser' => [
