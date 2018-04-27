@@ -77,36 +77,17 @@
 	</section>
 	<section class="achievements cp--component-section loading">
 		<ul>
-			<li class="achievement--store" data-category="Freiwillige" data-number=436 data-postfix="">
-				Freiwillige haben wir 2017 direkt gefördert
+			<?php foreach($achievements as $item): ?>
+			<li
+				class="achievement--store"
+				data-category="<?= $item['category'][$lang] ?>"
+				data-number="<?= $item['number'] ?>"
+				data-url="<?= $item['url'] ?>"
+				data-postfix=""
+			>
+				<?= $item['teaser'][$lang] ?>
 			</li>
-			<li class="achievement--store" data-category="Freiwillige" data-number=5844 data-postfix="">
-				Mal haben Menschen an Aktivitäten rund um die Wikimedia-Projekte teilgenommen
-			</li>
-			<li class="achievement--store" data-category="Freiwillige" data-number=1531 data-postfix="">
-				Neuregistrierungen bei Wikipedia aufgrund unserer 4 Kampagnen
-			</li>
-			<li class="achievement--store" data-category="Software" data-number=450 data-postfix="">
-				Wikimedia-Aktiven arbeiteten gemeinsam mit uns an technischen Wünschen
-			</li>
-			<li class="achievement--store" data-category="Software" data-number=180 data-postfix="">
-				ehrenamtlich Entwickelnde nahmen an der ersten WikidataCon teil
-			</li>
-			<li class="achievement--store" data-category="Rahmenbedingung" data-number=39345 data-postfix="">
-				Mal wurde der Digital-O-Mat vor der Bundestagswahl genutzt
-			</li>
-			<li class="achievement--store" data-category="Rahmenbedingung" data-number=8 data-postfix="">
-				Kulturinstitutionen öffneten im Rahmen von Glam on Tour ihre Türen für Freiwillige
-			</li>
-			<li class="achievement--store" data-category="Rahmenbedingung" data-number=20 data-postfix="">
-				Nachwuchs-Wissenschaftlerinnen und -Wissenschaftler wurden im Fellow-Programm Freies Wissen gefördert (doppelt so viele wie im Vorjahr)
-			</li>
-			<li class="achievement--store" data-category="Wikimedia" data-number=65000 data-postfix="">
-				Menschen unterstützen Freies Wissen als Mitglied bei Wikimedia Deutschland
-			</li>
-			<li class="achievement--store" data-category="Wikimedia" data-number=94 data-postfix="">
-				Organisationen aus der Wikimedia-Bewegung haben die neue strategische Ausrichtung unterstützt
-			</li>
+			<?php endforeach ?>
 		</ul>
 
 		<div class="achievements__cube achievements__cube--mobile">
@@ -124,15 +105,22 @@
 		<div class="achievements__flex-wrapper">
 			<div class="achievements__left">
 				<div class="achievement">
-					<div class="achievement__category t--epsilon">Freiwillige</div>
-					<div class="achievement__number t--alpha" data-number=436>
+					<div class="achievement__category t--epsilon">
+						<?= $achievements[0]['category'][$lang] ?>
+					</div>
+					<div class="achievement__number t--alpha" data-number="<?= $achievements[0]['number'] ?>">
 						<div class="achievement__number-placeholder">
-							436
+							<?= $achievements[0]['number'] ?>
 						</div>
 						<div class="achievement__number-postfix"></div>
 					</div>
-					<div class="achievement__teaser t--delta-serif">Freiwillige haben wir 2017 direkt gefördert</div>
-					<a href="" class="achievement__link t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</a>
+					<div class="achievement__teaser t--delta-serif"><?= $achievements[0]['teaser'][$lang] ?></div>
+					<a
+						href="<?= $url($achievements[0]['teaser'], $lang) ?>"
+						class="achievement__link t--zeta-emph"
+					>
+						&mdash;&nbsp;&nbsp; Zum Projekt
+					</a>
 				</div>
 			</div>
 			<div class="achievements__cube">
@@ -148,15 +136,22 @@
 			</div>
 			<div class="achievements__right">
 				<div class="achievement">
-					<div class="achievement__category t--epsilon">Technologie</div>
-					<div class="achievement__number t--alpha" data-number="65000">
+					<div class="achievement__category t--epsilon">
+						<?= $achievements[1]['category'][$lang] ?>
+					</div>
+					<div class="achievement__number t--alpha" data-number="<?= $achievements[1]['number'] ?>">
 						<div class="achievement__number-placeholder">
-							65.000
+							<?= $achievements[1]['number'] ?>
 						</div>
 						<div class="achievement__number-postfix"></div>
 					</div>
-					<div class="achievement__teaser t--delta-serif">Menschen unterstützen Freies Wissen als Mitglied bei Wikimedia Deutschland</div>
-					<a href="" class="achievement__link t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</a>
+					<div class="achievement__teaser t--delta-serif"><?= $achievements[1]['teaser'][$lang] ?></div>
+					<a
+						href="<?= $url($achievements[1]['teaser'], $lang) ?>"
+						class="achievement__link t--zeta-emph"
+					>
+						&mdash;&nbsp;&nbsp; Zum Projekt
+					</a>
 				</div>
 			</div>
 		</div>
@@ -164,26 +159,6 @@
 			<div class="animation-ctl-button__symbol"></div>
 			Neue Erfolge laden
 		</button>
-	</section>
-	<section class="section cp--center-section bg--green home__facts">
-		<div class="section__body limit--l">
-			<h2 class="section__heading"><div>Jahresrückblick</div></h2>
-			<div class="section__body">
-				<div class="jb-fact limit--s">
-					<a href="<?= $url($fact['path'], $lang) ?>" class="fig jb-fact__icon">
-						<img src="<?= $fact['icon'] ?>"></img>
-					</a>
-					<div class="jb-fact__content">
-						<?php if ($fact['head'][$lang] !== ''): ?>
-							<p class="t--delta jb-fact__content-head"><?= $fact['head'][$lang] ?></p>
-						<?php endif ?>
-						<h1 class="h--alpha jb-fact__title"><?= $fact['number'][$lang] ?></h1>
-						<p class="t--delta"><?= $fact['tail'][$lang] ?></p>
-						<a class="button" href="<?= $url('review', $lang) ?>">Alle Fakten sehen</a>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 	<section class="finance-banner">
 		<div class="home__bagels">

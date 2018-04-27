@@ -90,10 +90,9 @@ if (file_exists(PROJECT_APP_PATH . '/assets/js/views/' . $fragment . '.js')) {
 
 $routes['#^/$#'] = function() {
 	$reports = require PROJECT_APP_PATH .'/data/reports.php';
-	$facts = require PROJECT_APP_PATH .'/data/facts.php';
-	$fact = $facts[array_rand($facts)];
+	$achievements = require PROJECT_APP_PATH .'/data/achievements.php';
 
-	return compact('reports', 'facts', 'fact') + [
+	return compact('reports', 'achievements') + [
 		'hasBlackHeader' => false
 	];
 };
