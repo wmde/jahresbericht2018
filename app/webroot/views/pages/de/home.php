@@ -117,7 +117,7 @@
 			Neue Erfolge laden
 		</button>
 	</section>
-	<section class="chart cp--component-section fix">
+	<section class="chart cp--component-section">
 		<?php
 			$chartValues = [
 				'01.01.2013' => 2618,
@@ -140,11 +140,41 @@
 			];
 			echo '<script type="text/javascript">let chartValues = '.json_encode($chartValues).'</script>';
 		?>
-		<div class="chart-wrapper">
-			<div class="chart__cards-wrapper"></div>
-			<div class="chart__cards-wrapper chart__cards-wrapper--small"></div>
-			<div class="chart__dates-wrapper"></div>
+
+		<div class="limit--l">
+			<div class="chart__headline">
+				<div class="chart__headline--description">
+					Januar 2013 - März 2018
+				</div>
+				<h1 class="h--beta">Mitgliederentwicklung</h1>
+			</div>
+			<div class="chart__cards-wrapper">
+				<div class="chart__cards chart__cards--desktop loading"></div>
+				<div class="chart__cards chart__cards--small loading"></div>
+				<div class="chart__cards chart__cards--mobile loading"></div>
+			</div>
+			<div class="chart__dates-wrapper t--epsilon">
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>01.01.2013
+					<div class="chart__date-value">2.618</div>
+				</div>
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>01.01.2014
+					<div class="chart__date-value">9.803</div>
+				</div>
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>01.01.2015
+					<div class="chart__date-value">15.778</div>
+				</div>
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>01.01.2016
+					<div class="chart__date-value">29.169</div>
+				</div>
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>03.01.2017
+					<div class="chart__date-value">43.138</div>
+				</div>
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>07.03.2018
+					<div class="chart__date-value">65.374</div>
+				</div>
+			</div>
 		</div>
+		<a href="" class="chart__button button button--outline-white">Jetzt Mitglied werden</a>
 	</section>
 	<section class="reports clearfix cp--component-section loading">
 		<div class="reports__left">

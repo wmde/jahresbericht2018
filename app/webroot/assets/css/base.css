@@ -2789,24 +2789,41 @@ a:focus {
 
 /* Chart
 ---------------------------------------------------------------- */
-.chart-test {
-  position: absolute;
-  z-index: 100;
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-color: #999;
-}
 .chart {
-  background-color: var(--color-green);
-  min-height: 800px;
-  padding-top: 600px;
+  background: var(--color-gradient-green--inverse);
   position: relative;
   width: 100%;
+  text-align: center;
+}
+.chart-wrapper {
+  padding-top: 50px 0;
+}
+.chart__headline {
+  position: absolute;
+  text-align: left;
+  color: #FFF;
+  z-index: 10;
+}
+.chart__headline--description {
+  font-size: 12px;
+}
+.chart__headline h1 {
+  margin-top: 10px;
+}
+.chart__headline--description {
+  text-transform: uppercase;
 }
 .chart__cards-wrapper {
   position: relative;
-  margin-left: 150px;
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  padding-top: 264px;
+  padding-left: 150px;
+}
+.chart__cards {
+  position: relative;
+  height: 100%;
 }
 .chart__card {
   position: absolute;
@@ -2814,50 +2831,94 @@ a:focus {
   height: 264px;
   background: url(../img/chart_card.svg) no-repeat left/contain;
   overflow: visible;
-  /*transition: bottom 1s ease, margin-bottom 0.3 ease, opacity 0.3 ease;*/
-  transition: margin-bottom 0.4s ease, opacity 1s ease, bottom 0.8s ease;
-  opacity: 0.8;
+  transition: margin-bottom 0.4s ease, bottom 0.8s ease;
 }
-.chart__card:hover {
+.chart__cards:not(.loading) .chart__card:hover {
   opacity: 1;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   transition: margin-bottom 0.3s ease;
 }
-.chart.fix .chart__card {
+.chart__card.fix {
   bottom: 0px !important;
 }
 .chart__dates-wrapper {
   display: flex;
   justify-content: space-between;
+  align-content: space-between;
   padding: 70px 0;
+  text-align: left;
 }
 .chart__date {
   position: relative;
   color: #FFF;
-  opacity: 0.5;
   bottom: 0px;
-  transition: all 0.5s;
+  transition: bottom 0.5s;
+}
+.chart__date-line {
+  position: absolute;
+  left: -20px;
 }
 .chart__date.active {
-  bottom: 20px;
-  opacity: 1;
+  bottom: 5px;
 }
 .chart__date-value {
   font-weight: bold;
 }
-.chart__cards-wrapper--small {
+.chart__button {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid white;
+}
+.chart__button:focus,
+.chart__button:hover {
+  color: var(--color-green);
+  background-color: white;
+}
+.chart__date-linebreak,
+.chart__cards--small,
+.chart__cards--mobile {
   display: none;
 }
 @media (max-width: 960px) {
-  .chart__cards-wrapper {
+  .chart__headline {
+    position: relative;
+  }
+  .chart__cards--desktop {
     display: none;
   }
-  .chart__cards-wrapper--small {
+  .chart__cards--small {
     display: block;
   }
-  .chart__card--2 {
+  .chart__date-line {
     display: none;
   }
 }
 @media (max-width: 720px) {
+  .chart__cards--small {
+    display: none;
+  }
+  .chart__cards.chart__cards--mobile {
+    display: block;
+  }
+  .chart__cards-wrapper {
+    height: 350px;
+  }
+}
+@media (max-width: 560px) {
+  .chart__dates-wrapper {
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    padding: 70px 10px 0 10px;
+  }
+  .chart__dates-wrapper:after {
+    content: '';
+    width: 100%;
+  }
+  .chart__date {
+    margin-bottom: 50px;
+  }
+  .chart__date:nth-child(n + 4) {
+    order: 1;
+  }
 }

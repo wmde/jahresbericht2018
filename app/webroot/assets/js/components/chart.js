@@ -12,7 +12,7 @@ define('components/chart', [], function() {
     constructor(element) {
       this.element = element;
       this.state = {};
-      this.chartHeight = 250;
+      this.chartHeight = 100;
       this.numberOfDates = 6;
 
       // Readout and prepare data from JSON chartValues set in HTML.
@@ -37,29 +37,51 @@ define('components/chart', [], function() {
 
       this.rangeOfDays = this.source[this.source.length - 1].days - this.source[0].days;
 
-      this.insertDates(this.element.querySelector('.chart__dates-wrapper'), this.numberOfDates);
-      this.insertCards(this.element.querySelector('.chart__cards-wrapper'), 17);
-      this.insertCards(this.element.querySelector('.chart__cards-wrapper--small'), 10);
-
+      this.chartCards1 = this.insertCards(this.element.querySelector('.chart__cards--desktop'), 17);
+      this.chartCards2 = this.insertCards(this.element.querySelector('.chart__cards--small'), 11);
+      this.chartCards3 = this.insertCards(this.element.querySelector('.chart__cards--mobile'), 6);
     }
 
     init() {
-      this.element.classList.remove('fix');
+      this.delayedDropClass(this.chartCards1, 50, '.chart__cards--desktop');
+      this.delayedDropClass(this.chartCards2, 50, '.chart__cards--small');
+      this.delayedDropClass(this.chartCards3, 50, '.chart__cards--mobile');
+    }
+
+    delayedDropClass(collection, delay, parentClass, i = undefined) {
+      if (i === undefined) { i = collection.length - 1; }
+      collection[i].classList.remove('fix');
+      if (i > 0) {
+        setTimeout(() => {
+          this.delayedDropClass(collection, delay, parentClass, (i - 1));
+        }, delay + (Math.random() * 30));
+      } else {
+        setTimeout(() => {
+          this.element.querySelector(parentClass).classList.remove('loading');
+        }, 1000);
+      }
     }
 
     insertCards(element, number) {
       let card = document.createElement('div');
-      card.className = 'chart__card';
+      card.className = 'chart__card fix';
       let dates = this.element.querySelectorAll('.chart__date');
+      let chartButton = this.element.querySelector('.chart__button');
 
       for (let i = 0; i < number; i++) {
         let node = card.cloneNode();
         node.style.right = (i * 100 / (number - 1)) + '%';
-        node.style.bottom = (this.getValue(((number - 1) - i) / (number - 1)) * this.chartHeight) + 'px';
+        node.style.bottom = (this.getValue(((number - 1) - i) / (number - 1)) * this.chartHeight) + '%';
 
         // Add mouseover event to change relating chart__date.
-        let index = Math.floor((number - i) / ((number -1) / (this.numberOfDates - 1)));
+        let index = Math.floor((number - i) / (number / (this.numberOfDates - 1)));
         node.addEventListener('mouseover',() => {
+          // Set chart__button on focus while hovering last card.
+          if (i == 0) {
+            chartButton.focus();
+          } else {
+            chartButton.blur();
+          }
           this.element.querySelectorAll('.chart__date.active').forEach( date => {
             if (date.classList.contains('active')) {
               date.classList.remove('active');
@@ -74,7 +96,10 @@ define('components/chart', [], function() {
         this.element.querySelectorAll('.chart__date.active').forEach( date => {
           date.classList.remove('active');
         });
+        // Unfocus chartButton - this is no graphical blur.
+        chartButton.blur();
       });
+      return element.querySelectorAll('.chart__card');
     }
 
     insertDates(element, number, cards) {
