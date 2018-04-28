@@ -112,7 +112,7 @@
 				</div>
 			</div>
 		</div>
-		<button class="achievements__button animation-ctl-button invis">
+		<button class="achievements__button t--zeta-emph animation-ctl-button invis">
 			<div class="animation-ctl-button__symbol"></div>
 			Neue Erfolge laden
 		</button>

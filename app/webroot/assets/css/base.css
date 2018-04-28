@@ -2175,8 +2175,10 @@ a:focus {
 .achievements__flex-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 350px;
   overflow: visible;
+  margin-top: 50px;
 }
 .achievements__left {
   text-align: right;
@@ -2185,6 +2187,9 @@ a:focus {
 .achievements__right {
   text-align: left;
   width: calc(50% - 129px);
+}
+.achievements__button {
+  margin-bottom: 50px;
 }
 .achievements__button.invis {
   opacity: 0;
@@ -2292,6 +2297,11 @@ a:focus {
 }
 
 @media (max-width: 960px) {
+  .achievements__button,
+  .achievements__flex-wrapper  {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .achievements__left,
   .achievements__right {
     width: 100%;
