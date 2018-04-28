@@ -78,9 +78,9 @@ define('components/chart', [], function() {
         node.addEventListener('mouseover',() => {
           // Set chart__button on focus while hovering last card.
           if (i == 0) {
-            chartButton.focus();
+            chartButton.classList.add('active');
           } else {
-            chartButton.blur();
+            chartButton.classList.remove('active');
           }
           this.element.querySelectorAll('.chart__date.active').forEach( date => {
             if (date.classList.contains('active')) {
@@ -96,8 +96,7 @@ define('components/chart', [], function() {
         this.element.querySelectorAll('.chart__date.active').forEach( date => {
           date.classList.remove('active');
         });
-        // Unfocus chartButton - this is no graphical blur.
-        chartButton.blur();
+        chartButton.classList.remove('active');
       });
       return element.querySelectorAll('.chart__card');
     }

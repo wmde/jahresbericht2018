@@ -2887,7 +2887,7 @@ a:focus {
   font-weight: 500;
   border: 1px solid white;
 }
-.chart__button:focus,
+.chart__button.active,
 .chart__button:hover {
   color: var(--color-green);
   background-color: white;
