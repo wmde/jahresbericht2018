@@ -74,6 +74,7 @@ define('components/achievements', [], function() {
       el.querySelector('.achievement__number-postfix').innerHTML = source.dataset.postfix;
       el.querySelector('.achievement__category').innerHTML = source.dataset.category;
       el.querySelector('.achievement__teaser').innerHTML = source.innerHTML;
+      el.querySelector('.achievement__link').href = source.dataset.url;
     }
 
     toggleAnimation() {
