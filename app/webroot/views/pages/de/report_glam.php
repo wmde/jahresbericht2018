@@ -5,7 +5,7 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">NEU (<a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_und_Lunar_Quattro_2.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">Brunswyk (<a href="https://commons.wikimedia.org/wiki/File:GLAM-on-Tour_Museum_Schloss_Fuerstenberg_Wikipedianer_bei_der_Arbeit_(Brunswyk_2017).JPG" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Auf Tour zu Kulturgütern für die Wikipedia</em>
@@ -40,8 +40,8 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href='<?= $url('/report', $lang) ?>' class="button button--report">Zur Themenübersicht</a>
-		<a href='/report/fellow' class="button button--report">
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
+		<a href="/report/fellow" class="button button--report">
 			<p class="button--small"> Zum nächsten Projekt </p>
 			<p> Offene Wissenschaft aktiv vorantreiben </p>
 		</a>

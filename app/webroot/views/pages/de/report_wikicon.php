@@ -5,7 +5,7 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">NEU (<a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_und_Lunar_Quattro_2.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">Fuzheado (<a href="https://commons.wikimedia.org/wiki/File:Wikidatacon-2017-group-pano-1.jpg" target="new">Wikimedia Commons</a>), beschnitten von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>WikidataCon: Die erste internationale Konferenz rund um Wikidata</em>
@@ -76,8 +76,8 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href='<?= $url('/report', $lang) ?>' class="button button--report">Zur Themenübersicht</a>
-		<a href='/report/digitalomat' class="button button--report">
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
+		<a href="/report/digitalomat" class="button button--report">
 			<p class="button--small"> Zum nächsten Projekt </p>
 			<p> Digital-O-Mat: Die netzpolitische Wahlhilfe </p>
 		</a>

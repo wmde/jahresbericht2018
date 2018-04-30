@@ -5,7 +5,7 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">NEU (<a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_und_Lunar_Quattro_2.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">Jason Krüger for Wikimedia Deutschland e.V. (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2017_–_147.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Wikimedias strategische Ausrichtung anpacken</em>
@@ -72,8 +72,8 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href='<?= $url('/report', $lang) ?>' class="button button--report">Zur Themenübersicht</a>
-		<a href='/report/2018' class="button button--report">
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
+		<a href="/report/2018" class="button button--report">
 			<p class="button--small"> Zum nächsten Projekt </p>
 			<p> Ausblick: So geht es 2018 weiter </p>
 		</a>

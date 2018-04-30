@@ -5,7 +5,7 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">NEU (<a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_und_Lunar_Quattro_2.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">René Zieger (<a href="https://commons.wikimedia.org/wiki/File:171118_Wikimedia_MV_08.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Schon Mitglied?</em>
@@ -62,8 +62,8 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href='<?= $url('/report', $lang) ?>' class="button button--report">Zur Themenübersicht</a>
-		<a href='/report/international' class="button button--report">
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
+		<a href="/report/international" class="button button--report">
 			<p class="button--small"> Zum nächsten Projekt </p>
 			<p> Wikimedias strategische Ausrichtung anpacken </p>
 		</a>
