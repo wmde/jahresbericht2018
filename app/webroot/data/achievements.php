@@ -9,7 +9,7 @@
 			'de' => 'Freiwillige haben wir 2017 direkt gefördert',
 			'en' => ''
 		],
-		'url' => ''
+		'url' => '/report/volunteers'
 	],
 	[
 		'category' => [
@@ -21,7 +21,7 @@
 			'de' => 'Mal haben Menschen an Aktivitäten rund um die Wikimedia-Projekte teilgenommen',
 			'en' => ''
 		],
-		'url' => ''
+		'url' => '/report/volunteers'
 	],
 	[
 		'category' => [
@@ -33,7 +33,7 @@
 			'de' => 'Neuregistrierungen bei Wikipedia aufgrund unserer 4 Kampagnen',
 			'en' => ''
 		],
-		'url' => ''
+		'url' => '/report/newvolunteers'
 	],
 	[
 		'category' => [
@@ -45,7 +45,7 @@
 			'de' => 'Wikimedia-Aktiven arbeiteten gemeinsam mit uns an technischen Wünschen',
 			'en' => ''
 		],
-		'url' => ''
+		'url' => '/report/knowledge'
 	],
 	[
 		'category' => [
@@ -57,7 +57,7 @@
 			'de' => 'ehrenamtlich Entwickelnde nahmen an der ersten WikidataCon teil',
 			'en' => ''
 		],
-		'url' => ''
+		'url' => '/report/wikicon'
 	],
 	[
 		'category' => [
@@ -69,7 +69,7 @@
 			'de' => 'Mal wurde der Digital-O-Mat vor der Bundestagswahl genutzt',
 			'en' => ''
 		],
-		'url' => ''
+		'url' => '/report/digitalomat'
 	],
 	[
 		'category' => [
@@ -81,7 +81,7 @@
 			'de' => 'Kulturinstitutionen öffneten im Rahmen von Glam on Tour ihre Türen für Freiwillige',
 			'en' => ''
 		],
-		'url' => ''
+		'url' => '/report/glam'
 	],
 	[
 		'category' => [
@@ -93,7 +93,7 @@
 			'de' => 'Nachwuchs-Wissenschaftlerinnen und -Wissenschaftler wurden im Fellow-Programm Freies Wissen gefördert (doppelt so viele wie im Vorjahr)',
 			'en' => ''
 		],
-		'url' => ''
+		'url' => '/report/fellow'
 	],
 	[
 		'category' => [
@@ -105,7 +105,7 @@
 			'de' => 'Menschen unterstützen Freies Wissen als Mitglied bei Wikimedia Deutschland',
 			'en' => ''
 		],
-		'url' => ''
+		'url' => '/report/members'
 	],
 	[
 		'category' => [
@@ -117,6 +117,6 @@
 			'de' => 'Organisationen aus der Wikimedia-Bewegung haben die neue strategische Ausrichtung unterstützt',
 			'en' => ''
 		],
-		'url' => ''
+		'url' => '/report/international'
 	],
 ] ?>

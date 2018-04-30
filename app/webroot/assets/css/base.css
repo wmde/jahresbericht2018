@@ -615,7 +615,7 @@ a:focus {
   float: right;
   width: 48px;
   height: 48px;
-  background: url(../ico/close.svg) no-repeat center/contain;
+  background: url(/assets/ico/close.svg) no-repeat center/contain;
   cursor: pointer;
   opacity: .8;
 }
@@ -717,7 +717,7 @@ a:focus {
   display: block;
   width: 200px;
   height: 45px;
-  background-image: url(../img/wmde_logo_white.svg);
+  background-image: url(/assets/img/wmde_logo_white.svg);
 }
 .real-logo-black {
   position: absolute;
@@ -876,7 +876,7 @@ a:focus {
   right: 0;
   width: 48px;
   height: 48px;
-  background-image: url(../ico/close.svg);
+  background-image: url(/assets/ico/close.svg);
 }
 .imprint.invis {
   opacity: 0;
@@ -1131,14 +1131,11 @@ a:focus {
 
 @media (max-width: 550px) {
   .jb-hsplit__cover {
-    height: 75vw;
+    height: 65vw;
   }
   .jb-hsplit__content {
     padding: 20px 0 40px 20px;
   }
-}
-
-@media (max-width: 500px) {
   .jb-hsplit-list .jb-hsplit {
     width: 100%;
   }
@@ -1672,7 +1669,7 @@ a:focus {
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url("../ico/arrow_black_left.svg");
+  background-image: url(/assets/ico/arrow_black_left.svg);
   left: 10px;
   right: auto
 }
@@ -1681,7 +1678,7 @@ a:focus {
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("../ico/arrow_black_right.svg");
+  background-image: url(/assets/ico/arrow_black_right.svg);
   right: 10px;
   left: auto
 }
@@ -1763,6 +1760,12 @@ a:focus {
 }
 .fin-detail__mittel {
   color: var(--color-black);
+}
+
+@media (max-width: 1100px) {
+  .finance__boxes {
+    padding: 40px 0;
+  }
 }
 
 /* Finance Table
@@ -2099,6 +2102,7 @@ a:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
   .bagel__image {
     position: relative;
@@ -2195,7 +2199,7 @@ a:focus {
 }
 .achievements__button .animation-ctl-button__symbol{
   margin: 0 auto 8px auto;
-  background: url(../ico/reload_circle.svg) no-repeat center/contain;
+  background: url(/assets/ico/reload_circle.svg) no-repeat center/contain;
 }
 .achievements__button:hover .animation-ctl-button__symbol {
   animation: rotate 0.5s 1 ease;
@@ -2211,7 +2215,7 @@ a:focus {
   width: 155px;
   height: 178px;
   margin: 20px 40px;
-  background: url(../img/cube_achievements.svg) no-repeat center/contain;
+  background: url(/assets/img/cube_achievements.svg) no-repeat center/contain;
 }
 .achievements__cube-side {
   position: absolute;
@@ -2220,16 +2224,16 @@ a:focus {
   transition: left 1s ease, top 1s ease;
 }
 .achievements__cube-side--left {
-  background: url(../img/cube_achievements_left.svg) no-repeat center/contain;
+  background: url(/assets/img/cube_achievements_left.svg) no-repeat center/contain;
   left: -6.49%;
   top: 5.64%;
 }
 .achievements__cube-side--top {
-  background: url(../img/cube_achievements_top.svg) no-repeat center/contain;
+  background: url(/assets/img/cube_achievements_top.svg) no-repeat center/contain;
   top: -7.89%;
 }
 .achievements__cube-side--right {
-  background: url(../img/cube_achievements_right.svg) no-repeat center/contain;
+  background: url(/assets/img/cube_achievements_right.svg) no-repeat center/contain;
   left: 6.49%;
   top: 5.64%;
 }
@@ -2418,10 +2422,10 @@ a:focus {
   margin-right: 10px;
 }
 .reports__button--reload .animation-ctl-button__symbol {
-  background: url(../ico/reload_circle.svg) no-repeat center/contain;
+  background: url(/assets/ico/reload_circle.svg) no-repeat center/contain;
 }
 .reports__button--all .animation-ctl-button__symbol {
-  background: url(../ico/arrow_next_circle.svg) no-repeat center/contain;
+  background: url(/assets/ico/arrow_next_circle.svg) no-repeat center/contain;
 }
 .reports__button--reload:hover .animation-ctl-button__symbol {
   animation: rotate 0.5s 1 ease;
@@ -2437,7 +2441,7 @@ a:focus {
   transform: scale(0.875);
 }
 .reports__cube {
-  background: url(../img/cube_achievements.svg) no-repeat center/contain;
+  background: url(/assets/img/cube_achievements.svg) no-repeat center/contain;
   width: 160px;
   height: 184px;
   position: absolute;
@@ -2564,6 +2568,11 @@ a:focus {
     padding-bottom: 100px
   }
 }
+@media (max-width: 550px) {
+  .report-landing .cp--6x-top {
+    padding-bottom: 510px;
+  }
+}
 
 /* Nav Cube
 ---------------------------------------------------------------- */
@@ -2574,7 +2583,7 @@ a:focus {
   justify-content: center;
   width: 200px;
   height: 240px;
-  background: url(../img/cube_themen_green.svg) no-repeat center/contain;
+  background: url(/assets/img/cube_themen_green.svg) no-repeat center/contain;
   margin: 20px;
 }
 .nav-cube__title {
@@ -2582,7 +2591,7 @@ a:focus {
 }
 .nav-cube:hover,
 .nav-cube.active {
-  background-image: url(../img/cube_themen_orange.svg);
+  background-image: url(/assets/img/cube_themen_orange.svg);
 }
 
 @media (min-width: 1181px) {
@@ -2663,9 +2672,6 @@ a:focus {
     left: 49px;
     max-width: 40px;
     text-align: center;
-  }
-  .report-landing .cp {
-    padding-bottom: 510px;
   }
 }
 
@@ -2755,6 +2761,9 @@ a:focus {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 80px;
+}
+.report-detail .h--gamma {
+  margin-top: 40px;
 }
 .report-detail{
   padding: 120px 0 0 0;
