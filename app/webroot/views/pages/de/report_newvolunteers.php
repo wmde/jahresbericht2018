@@ -5,7 +5,7 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">NEU (<a href="https://commons.wikimedia.org/wiki/File:Landemodul_ALINA_und_Lunar_Quattro_2.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">Lena Schall (motionensemble.de) (<a href="https://commons.wikimedia.org/wiki/File:Figur_Machmit_3_Wikipedia-Animation.png" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Mehr Menschen für die Wikipedia begeistern</em>

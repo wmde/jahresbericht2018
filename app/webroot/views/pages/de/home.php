@@ -21,7 +21,7 @@
 				>
 				<img class="home-hero__img--second" src="assets/img/wk_conference_tinted.jpg" alt="Wikimedia Konferenz">
 			</figure>
-			<p>René Zieger (Wikimedia Commons), CC BY-SA 4.0</p>
+			<p>Jason Krüger for Wikimedia Deutschland e.V.; adapted by user: David Saroyan (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2017_–_Group_photo_2_(big)_with_WMCON_logo.jpg" target="new">Wikimedia Commons</a>), beschnitten, eingefärbt von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new"> <span style ="white-space: nowrap">CC BY-SA 4.0</span></a></p>
 		</div>
 		<section class="section cp home__intro">
 			<img src="assets/img/wk_conference_tinted.jpg" alt="Wikimedia Konferenz">
