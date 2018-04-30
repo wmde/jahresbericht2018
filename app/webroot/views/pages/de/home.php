@@ -174,7 +174,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="" class="chart__button button button--outline-white">Jetzt Mitglied werden</a>
+		<a href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new" class="chart__button button button--outline-white">Jetzt Mitglied werden</a>
 	</section>
 	<section class="reports clearfix cp--component-section loading">
 		<div class="reports__left">
@@ -185,14 +185,9 @@
 			</div>
 		</div>
 		<ul>
-			<li class="reports--store" data-url="">Movement Strategy(1)</li>
-			<li class="reports--store" data-url="">Fellow Programm(2)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(3)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(4)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(5)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(6)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(7)</li>
-			<li class="reports--store" data-url="">Freiwillige Unterstützen(8)</li>
+			<?php foreach ($reports as $report) : ?>
+				<li class="reports--store" data-url="<?= $url("/report/{$report['name']}", $lang) ?>" data-cover="<?= $report['cover'] ?>"><?= $report['title'][$lang] ?></li>
+			<?php endforeach ?>
 		</ul>
 		<div class="reports__right">
 			<div class="reports__link-wrapper">
@@ -209,14 +204,14 @@
 					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
 				</a>
 			</div>
-			<button class="animation-ctl-button reports__button reports__button--reload invis">
+			<button class="animation-ctl-button reports__button reports__button--reload t--zeta-emph invis">
 				<div class="animation-ctl-button__symbol"></div>
 				Neue Themen laden
 			</button>
-			<button class="animation-ctl-button reports__button reports__button--all invis">
+			<a href="<?= $lang . '/report' ?>" class="animation-ctl-button reports__button reports__button--all t--zeta-emph invis">
 				<div class="animation-ctl-button__symbol"></div>
 				Alle Themen anzeigen
-			</button>
+			</a>
 		</div>
 	</section>
 	<section class="finance-banner">

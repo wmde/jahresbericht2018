@@ -90,7 +90,7 @@ define('components/reports', [], function() {
     loadNextUnseen(el) {
       // Reset unseen storeIndexes.
       if (this.state.unseen.length == 0) {
-        this.state.store.forEach( (achievement, index) => {
+        this.state.store.forEach((achievement, index) => {
           this.state.unseen.push(index);
         });
         // Remove the last visible storeIndexes from unseen.
@@ -132,12 +132,12 @@ define('components/reports', [], function() {
             this.loadNextUnseen(link);
           });
           this.loadNewReports();
-        }, 500);
+        }, 300);
       }
     }
 
     toggleAnimationState(animation) {
-        this.performAnimationState(animation[this.state.animationState], () => {});
+        this.performAnimationState(animation[this.state.animationState],() => {});
         this.state.animationState = ((this.state.animationState + 1) < animation.length) ? this.state.animationState + 1 : 0;
     }
 
@@ -200,7 +200,9 @@ define('components/reports', [], function() {
         setTimeout(() => {
           this.state.runningTransitions--;
           if (this.state.runningTransitions == 0) {
-            if(onFinishState) onFinishState();
+            if(onFinishState) {
+              onFinishState();
+            }
           }
           if (transition.onEnd) {
             transition.onEnd();
