@@ -85,10 +85,10 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">
+		<a href='<?= $url('/report', $lang) ?>' class="button button--report">Zur Themenübersicht</a>
+		<a href='/report/glam' class="button button--report">
 			<p class="button--small"> Zum nächsten Projekt </p>
-			<p> Freiwillige unterstützen </p>
+			<p> Auf Tour zu Kulturgütern für die Wikipedia </p>
 		</a>
 	</section>
 </main>

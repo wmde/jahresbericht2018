@@ -72,10 +72,10 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">
+		<a href='<?= $url('/report', $lang) ?>' class="button button--report">Zur Themenübersicht</a>
+		<a href='/report/2018' class="button button--report">
 			<p class="button--small"> Zum nächsten Projekt </p>
-			<p> Freiwillige unterstützen </p>
+			<p> Ausblick: So geht es 2018 weiter </p>
 		</a>
 	</section>
 </main>

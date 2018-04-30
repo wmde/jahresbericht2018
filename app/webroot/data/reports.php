@@ -41,7 +41,7 @@
 			'de' => 'Digital-O-Mat: Die netzpolitische Wahlhilfe',
 			'en' => ''
 		],
-		'category' => 'condition',
+		'category' => 'framework',
 		'cover' => '/assets/img/05_digitalomat_hero.jpg',
 	],
 	[
@@ -50,7 +50,7 @@
 			'de' => 'Auf Tour zu Kulturgütern für die Wikipedia',
 			'en' => ''
 		],
-		'category' => 'condition',
+		'category' => 'framework',
 		'cover' => '/assets/img/06_glam_hero.jpg',
 	],
 	[
@@ -59,7 +59,7 @@
 			'de' => 'Offene Wissenschaft aktiv vorantreiben',
 			'en' => ''
 		],
-		'category' => 'condition',
+		'category' => 'framework',
 		'cover' => '/assets/img/07_fellow_hero.jpg',
 	],
 	[

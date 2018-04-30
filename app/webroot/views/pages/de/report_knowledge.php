@@ -40,10 +40,10 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">
+		<a href='<?= $url('/report', $lang) ?>' class="button button--report">Zur Themenübersicht</a>
+		<a href='/report/wikicon' class="button button--report">
 			<p class="button--small"> Zum nächsten Projekt </p>
-			<p> Freiwillige unterstützen </p>
+			<p> WikidataCon: Die erste internationale Konferenz rund um Wikidata </p>
 		</a>
 	</section>
 </main>
