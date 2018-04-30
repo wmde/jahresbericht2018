@@ -331,7 +331,7 @@
 			<h2 class="h--beta ft__heading">Mittelverwendung</h2>
 			<div class="bagel bagel--alt">
 				<figure class="fig bagel__image bagel__image--l">
-					<img src="/assets/img/bagel_fg_17.png" alt="">
+					<img src="/assets/img/bagel_fg_17.png" alt="Mittelverwendung Diagramm 2017">
 					<figcaption class="t--beta bagel__cap">2017</figcaption>
 				</figure>
 				<div class="bagel__text">
@@ -380,7 +380,7 @@
 			</div>
 			<div class="bagel bagel--s">
 				<figure class="fig bagel__image bagel__image--s">
-					<img src="/assets/img/bagel_fg_16.png" alt="">
+					<img src="/assets/img/bagel_fg_16.png" alt="Mittelverwendung Diagramm 2016">
 					<figcaption class="t--gamma bagel__cap">2016</figcaption>
 				</figure>
 				<div class="bagel__text">
@@ -420,7 +420,7 @@
 			</div>
 			<div class="bagel bagel--s">
 				<figure class="fig bagel__image bagel__image--s">
-					<img src="/assets/img/bagel_fg_15.png" alt="">
+					<img src="/assets/img/bagel_fg_15.png" alt="Mittelverwendung Diagramm 2015">
 					<figcaption class="t--gamma bagel__cap">2015</figcaption>
 				</figure>
 				<div class="bagel__text">

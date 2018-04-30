@@ -12,19 +12,19 @@
 			</div>
 		</section>
 		<div class="home-hero__img t--zeta">
-			<img class="home-hero__img--first" src="assets/img/wk_conference_colored.jpg">
+			<img class="home-hero__img--first" src="assets/img/wk_conference_colored.jpg" alt="Wikimedia Konferenz">
 			<figure
 				class="home-hero__img--second"
 				data-anchor-target=".home-hero__img--second"
 				data-0="opacity:1;"
 				data-500="opacity:0;"
 				>
-				<img class="home-hero__img--second" src="assets/img/wk_conference_tinted.jpg">
+				<img class="home-hero__img--second" src="assets/img/wk_conference_tinted.jpg" alt="Wikimedia Konferenz">
 			</figure>
 			<p>René Zieger (Wikimedia Commons), CC BY-SA 4.0</p>
 		</div>
 		<section class="section cp home__intro">
-			<img src="assets/img/wk_conference_tinted.jpg">
+			<img src="assets/img/wk_conference_tinted.jpg" alt="Wikimedia Konferenz">
 			<div class="home__intro--layer"></div>
 		</section>
 		<div class="home__box">
@@ -223,7 +223,7 @@
 				data-bottom-top="transform:rotate(0deg);"
 				data-top-bottom="transform:rotate(360deg);"
 			>
-				<img src="/assets/img/start_finanzen_circle_1.png" alt="Image of a random bagel chart">
+				<img src="/assets/img/start_finanzen_circle_1.png" alt="Finanzvisualisierung">
 			</figure>
 			<figure
 				class="home__bagel--2"
@@ -231,7 +231,7 @@
 				data-bottom-top="transform:rotate(360deg);"
 				data-top-bottom="transform:rotate(0deg);"
 			>
-				<img src="/assets/img/start_finanzen_circle_2.png" alt="Image of random bagel chart">
+				<img src="/assets/img/start_finanzen_circle_2.png" alt="Finanzvisualisierung">
 			</figure>
 		</div>
 		<p class="h--beta">Unsere Finanzen 2017</p>
