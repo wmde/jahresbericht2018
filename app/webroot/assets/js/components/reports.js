@@ -41,13 +41,18 @@ define('components/reports', [], function() {
         });
       });
       this.element.querySelector('.reports__link-wrapper').addEventListener('mouseleave', () => {
-          background.classList.add('hidden');
-          this.backgroundTransition = true;
-          setTimeout(() => {
-            this.backgroundTransition = false;
-            background.style.backgroundImage = 'none';
-            background.classList.remove('hidden');
-          }, 200);
+          this.state.backgroundImage = 'none';
+          if (this.backgroundTransition) {
+            background.style.backgroundImage = this.state.backgroundImage;
+          } else {
+            background.classList.add('hidden');
+            this.backgroundTransition = true;
+            setTimeout(() => {
+              this.backgroundTransition = false;
+              background.style.backgroundImage = this.state.backgroundImage;
+              background.classList.remove('hidden');
+            }, 200);
+          }
       });
 
 
