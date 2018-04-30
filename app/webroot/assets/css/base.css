@@ -424,7 +424,7 @@ body > main {
   font-style: normal;
   text-transform: uppercase;
   padding-top: 5px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.35;
 }
 .border-box--fund {
@@ -443,7 +443,7 @@ body > main {
   font-style: normal;
   text-transform: uppercase;
   padding-top: 5px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.35;
 }
 .border-box--assn {
@@ -466,7 +466,7 @@ body > main {
   font-style: normal;
   text-transform: uppercase;
   padding-top: 5px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.35;
 }
 
@@ -672,7 +672,6 @@ a:focus {
 .fig__caption {
   /* inherited from t--epsilon */
   font-family: var(--font-family-sans);
-  font-weight: normal;
   font-size: 12px;
   line-height: 1.2;
   margin-top: 10px;
@@ -681,6 +680,10 @@ a:focus {
 .video__caption a,
 .fig__caption a {
   color: var(--color-green);
+}
+.video__caption a:hover,
+.fig__caption a:hover {
+  opacity: 0.5;
 }
 .figs .fig {
   display: inline-block;
@@ -838,11 +841,15 @@ a:focus {
   text-transform: none;
   letter-spacing: 0;
 }
+.main-footer .nav__link:hover {
+  opacity: 0.5;
+}
 .main-footer__upper p a {
   border-color: transparent;
 }
 .main-footer__upper p a:hover {
   border-color: white;
+  opacity: 0.5;
 }
 .main-footer__bottom > div {
   display: flex;
@@ -1626,7 +1633,7 @@ a:focus {
   padding: 0 80px;
 }
 .report-detail .swiper-slide {
-  padding: 0 140px;
+  padding: 40px 140px 0 140px;
 }
 .swiper-slide .jb-vsplit,
 .swiper-slide .jb-fact,
@@ -1675,6 +1682,12 @@ a:focus {
 }
 .report-detail .swiper-button-prev {
   left: 60px;
+}
+.report-detail .swiper-button-prev:hover {
+  opacity: 0.5;
+}
+.report-detail .swiper-button-next:hover {
+  opacity: 0.5;
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
@@ -1738,11 +1751,14 @@ a:focus {
   justify-content: center;
 }
 .finance__p {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 .finance__p a {
   color: var(--color-black);
   border-bottom: 1px solid var(--color-black);
+}
+.finance__p a:hover {
+  opacity: 0.5;
 }
 .fin-detail__heading {
   text-align: center;
@@ -1753,6 +1769,7 @@ a:focus {
 .fin-detail__heading-s {
   margin-bottom: 0;
   text-transform: uppercase;
+  letter-spacing: .03em;
 }
 .fin-detail__heading-l {
   margin-top: 5px;
@@ -1786,7 +1803,7 @@ a:focus {
 }
 .ft tfoot td,
 .ft__row-foot {
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .ft th,
@@ -1796,7 +1813,7 @@ a:focus {
 }
 .ft__row-head td {
   padding-top: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .ft__row-low td {
@@ -2754,6 +2771,9 @@ a:focus {
   text-transform: uppercase;
   position: relative;
 }
+.filter-head--back:hover {
+  opacity: 0.5;
+}
 .filter-head--menu {
   position: relative;
 }
@@ -2794,8 +2814,8 @@ a:focus {
 .report-detail .h--gamma {
   margin-top: 40px;
 }
-.report-detail{
-  padding: 120px 0 0 0;
+.report-detail {
+  padding: 140px 0 0 0;
 }
 .report-detail__text {
   padding: 10px 40px 40px 40px;
@@ -2803,6 +2823,9 @@ a:focus {
 .report-detail__text a {
   color: var(--color-black);
   border-bottom: 1px solid var(--color-black);
+}
+.report-detail__text a:hover {
+  opacity: 0.5;
 }
 .report-detail .hero__caption {
   text-align: center;
@@ -2823,7 +2846,6 @@ a:focus {
   justify-content: center;
   padding: 70px 0 0 0;
 }
-
 @media (max-width: 1100px) {
   .report-detail__text {
     padding: 10px 30px 30px 30px;
@@ -2925,7 +2947,7 @@ a:focus {
   bottom: 5px;
 }
 .chart__date-value {
-  font-weight: bold;
+  font-weight: 700;
 }
 .chart__button {
   display: inline-block;
