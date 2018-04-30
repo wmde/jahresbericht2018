@@ -2370,7 +2370,7 @@ a:focus {
 }
 .reports__background {
   position: absolute;
-  width: 50%;
+  width: 52%;
   height: 100%;
   top: 0;
   right: 0;
@@ -2379,7 +2379,7 @@ a:focus {
   background-color: var(--color-lightorange);
   background-blend-mode: overlay;
   opacity: 1;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.2s ease;
 }
 .reports__background.hidden {
   opacity: 0;

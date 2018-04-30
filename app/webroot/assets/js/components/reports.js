@@ -18,36 +18,36 @@ define('components/reports', [], function() {
         unseen: [], // Store indexes of unseen reports.
         lastStoreIndexes: [],
         loading: true,
-        backgroundTransition: false
+        backgroundTransition: false,
+        backgroundImage: 'none'
       };
 
       let background = this.element.querySelector('.reports__background');
       this.element.querySelectorAll('.reports__link').forEach(link => {
         link.addEventListener('mouseenter', () => {
-          if (link.dataset.cover) {
-            if (this.backgroundTransition) {
-              background.style.backgroundImage = 'url(' + link.dataset.cover + ')';
-            } else {
-              background.classList.add('hidden');
-              this.backgroundTransition = true;
-              setTimeout(() => {
-                if (this.backgroundTransition) {
-                  this.backgroundTransition = false;
-                  background.style.backgroundImage = 'url(' + link.dataset.cover + ')';
-                  background.classList.remove('hidden');
-                }
-              }, 300);
-            }
+          this.state.backgroundImage = (link.dataset.cover) ? 'url(' + link.dataset.cover + ')' : 'none';
+          // Just change the image if a transition is going.
+          if (this.backgroundTransition) {
+            background.style.backgroundImage = this.state.backgroundImage;
+          } else {
+            background.classList.add('hidden');
+            this.backgroundTransition = true;
+            setTimeout(() => {
+              this.backgroundTransition = false;
+              background.style.backgroundImage = this.state.backgroundImage;
+              background.classList.remove('hidden');
+            }, 200);
           }
         });
       });
       this.element.querySelector('.reports__link-wrapper').addEventListener('mouseleave', () => {
           background.classList.add('hidden');
-          this.backgroundTransition = false;
-            setTimeout(() => {
-              background.style.backgroundImage = 'none';
-              background.classList.remove('hidden');
-            }, 300);
+          this.backgroundTransition = true;
+          setTimeout(() => {
+            this.backgroundTransition = false;
+            background.style.backgroundImage = 'none';
+            background.classList.remove('hidden');
+          }, 200);
       });
 
 
