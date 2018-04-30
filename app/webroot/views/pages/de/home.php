@@ -176,45 +176,43 @@
 		</div>
 		<a href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new" class="chart__button button button--outline-white">Jetzt Mitglied werden</a>
 	</section>
-	<section class="reports clearfix loading">
-		<ul>
+	<section class="reports clearfix cp--component-section loading">
+		<ul class="reports__data">
 			<?php foreach ($reports as $report) : ?>
 				<li class="reports--store" data-url="<?= $url("/report/{$report['name']}", $lang) ?>" data-cover="<?= $report['cover'] ?>"><?= $report['title'][$lang] ?></li>
 			<?php endforeach ?>
 		</ul>
 		<div class="reports__background"></div>
-		<div class="reports-wrapper cp--component-section">
-			<div class="reports__left">
-				<div class="reports__canvas">
-					<div class="reports__cube reports__cube--1"></div>
-					<div class="reports__cube reports__cube--2"></div>
-					<div class="reports__cube reports__cube--3"></div>
-				</div>
+		<div class="reports__left">
+			<div class="reports__canvas">
+				<div class="reports__cube reports__cube--1"></div>
+				<div class="reports__cube reports__cube--2"></div>
+				<div class="reports__cube reports__cube--3"></div>
 			</div>
-			<div class="reports__right">
-				<div class="reports__link-wrapper">
-					<a class="reports__link h--beta" href="">
-						<div class="reports__link-title">Movement Strategy</div>
-						<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
-					</a>
-					<a class="reports__link h--beta" href="">
-						<div class="reports__link-title">Fellow Programm</div>
-						<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
-					</a>
-					<a class="reports__link h--beta" href="">
-						<div class="reports__link-title">Freiwillige unterstützen</div>
-						<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
-					</a>
-				</div>
-				<button class="animation-ctl-button reports__button reports__button--reload t--zeta-emph invis">
-					<div class="animation-ctl-button__symbol"></div>
-					Neue Themen laden
-				</button>
-				<a href="<?= $lang . '/report' ?>" class="animation-ctl-button reports__button reports__button--all t--zeta-emph invis">
-					<div class="animation-ctl-button__symbol"></div>
-					Alle Themen anzeigen
+		</div>
+		<div class="reports__right">
+			<div class="reports__link-wrapper">
+				<a class="reports__link h--beta" href="">
+					<div class="reports__link-title">Movement Strategy</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+				</a>
+				<a class="reports__link h--beta" href="">
+					<div class="reports__link-title">Fellow Programm</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+				</a>
+				<a class="reports__link h--beta" href="">
+					<div class="reports__link-title">Freiwillige unterstützen</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
 				</a>
 			</div>
+			<button class="animation-ctl-button reports__button reports__button--reload t--zeta-emph invis">
+				<div class="animation-ctl-button__symbol"></div>
+				Neue Themen laden
+			</button>
+			<a href="<?= $lang . '/report' ?>" class="animation-ctl-button reports__button reports__button--all t--zeta-emph invis">
+				<div class="animation-ctl-button__symbol"></div>
+				Alle Themen anzeigen
+			</a>
 		</div>
 	</section>
 	<section class="finance-banner">
