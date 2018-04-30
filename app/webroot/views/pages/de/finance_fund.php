@@ -84,6 +84,10 @@
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">1.897 €</td>
 					</tr>
+					<tr class="ft__row-low ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__orange-border ft__empty"></td>
+					</tr>
 					<tfoot>
 						<td class="ft__col-key--black">Bilanzsumme</td>
 						<td class="ft__col-val ft__orange-border ft__orange-bg">8.334.913 €</td>
@@ -118,7 +122,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__row-foot ft__col-key--black">Gezeichnetes Kapital</td>
+						<td class="ft__col-key--black">Gezeichnetes Kapital</td>
 						<td class="ft__col-val ft__orange-border">25.000 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">25.000 €</td>
@@ -196,6 +200,10 @@
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
+					</tr>
+					<tr class="ft__row-low ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__orange-border ft__empty"></td>
 					</tr>
 					<tfoot>
 						<td class="ft__col-key--black">Bilanzsumme</td>

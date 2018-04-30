@@ -124,6 +124,10 @@
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">28.548 €</td>
 					</tr>
+					<tr class="ft__row-low ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__green-border ft__empty"></td>
+					</tr>
 					<tfoot>
 						<td class="ft__col-key">Bilanzsumme</td>
 						<td class="ft__col-val ft__green-border ft__green-bg">5.959.277 €</td>
@@ -231,7 +235,7 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Sonstige Verbindlichkeiten</td>
-						<td class="ft__col-val ft__green-border">198.778 €</td>
+						<td class="ft__col-val ft__green-border">198.777 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">99.701 €</td>
 						<td class="ft__col-void"></td>
@@ -252,6 +256,10 @@
 						<td class="ft__col-val">20.213 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">20.213 €</td>
+					</tr>
+					<tr class="ft__row-low ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__green-border ft__empty"></td>
 					</tr>
 					<tfoot>
 						<td class="ft__col-key">Bilanzsumme</td>
@@ -543,11 +551,11 @@
 					<td class="ft__col-val ft__green-border">490.186 €</td>
 				</tr>
 				<tr class="ft__row-line">
-					<td class="ft__col-key">Projektausgaben (ohne Umlagen)</td>
+					<td class="ft__col-key">Programmunterstützende Bereiche (z. B. Kommunikation, Veranstaltungsmanagement, etc.)</td>
 					<td class="ft__col-val ft__green-border">782.443 €</td>
 				</tr>
 				<tr class="ft__row-line">
-					<td class="ft__col-key">Verwaltungsausgaben (ohne Umlagen)</td>
+					<td class="ft__col-key">Indirekte Projektaufwendungen (Miete, Personal, Buchhaltung, IT, etc.</td>
 					<td class="ft__col-val ft__green-border">1.745.439 €</td>
 				</tr>
 				<tr class="ft__row-low ft__row-line">

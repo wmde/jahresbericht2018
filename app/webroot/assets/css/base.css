@@ -1829,7 +1829,7 @@ a:focus {
   color: var(--color-black);
 }
 .finance--fund .ft__row-line td {
-  border-bottom: 1px solid var(--color-gray);
+  border-bottom: 1px solid white;
 }
 .finance--fund .ft__row-line--black td,
 .finance--assn .ft__row-line td {
