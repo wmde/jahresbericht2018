@@ -92,7 +92,7 @@ define('components/chart', [], function() {
         element.appendChild(node);
       }
       // Remove active state of the dates omouseout to prevent date staying active.
-      element.addEventListener('mouseout',() => {
+      element.addEventListener('mouseleave',() => {
         this.element.querySelectorAll('.chart__date.active').forEach( date => {
           date.classList.remove('active');
         });

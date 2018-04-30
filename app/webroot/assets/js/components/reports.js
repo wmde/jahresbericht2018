@@ -17,8 +17,36 @@ define('components/reports', [], function() {
         store: this.element.querySelectorAll('.reports--store'),
         unseen: [], // Store indexes of unseen reports.
         lastStoreIndexes: [],
-        loading: true
+        loading: true,
+        backgroundTransition: false
       };
+
+      let background = this.element.querySelector('.reports__background');
+      this.element.querySelectorAll('.reports__link').forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          if (link.dataset.cover) {
+            background.classList.add('hidden');
+            if (this.backgroundTransition) {
+              background.style.backgroundImage = 'url(' + link.dataset.cover + ')';
+            } else {
+              this.backgroundTransition = true;
+              setTimeout(() => {
+                this.backgroundTransition = false;
+                background.style.backgroundImage = 'url(' + link.dataset.cover + ')';
+                background.classList.remove('hidden');
+              }, 300);
+            }
+          }
+        });
+      });
+      this.element.querySelector('.reports__link-wrapper').addEventListener('mouseleave', () => {
+          background.classList.add('hidden');
+            setTimeout(() => {
+              background.style.backgroundImage = 'none';
+              background.classList.remove('hidden');
+            }, 300);
+      });
+
 
       let cube1 = this.element.querySelector('.reports__cube--1');
       let cube2 = this.element.querySelector('.reports__cube--2');
@@ -111,6 +139,7 @@ define('components/reports', [], function() {
       let source = this.state.store[storeIndex];
       el.href = source.dataset.url;
       el.querySelector('.reports__link-title').innerHTML = source.innerHTML;
+      el.dataset.cover = source.dataset.cover;
     }
 
     loadNewReports() {

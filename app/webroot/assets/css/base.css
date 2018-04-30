@@ -2365,6 +2365,27 @@ a:focus {
   align-items: center;
   background-color: var(--color-lightorange);
 }
+.reports__background {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center center;
+  background-color: var(--color-lightorange);
+  background-blend-mode: overlay;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+.reports__background.hidden {
+  opacity: 0;
+}
+.reports-wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
 .reports__left {
   width: 50%;
   float: left;
@@ -2375,6 +2396,7 @@ a:focus {
   width: 50%;
   float: right;
   padding-left: 25px;
+  transition: background 0.5s ease;
 }
 .reports--store {
   display: none;
@@ -2473,6 +2495,9 @@ a:focus {
 }
 
 @media (max-width: 960px) {
+  .reports__background {
+    display: none;
+  }
   .reports__link-wrapper {
     height: 350px;
   }
