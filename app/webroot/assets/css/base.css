@@ -2417,7 +2417,7 @@ a:focus {
   background-color: var(--color-lightorange);
   background-blend-mode: overlay;
   opacity: 1;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease;
 }
 .reports__background.hidden {
   opacity: 0;
@@ -2447,7 +2447,8 @@ a:focus {
 .reports__link {
   display: block;
   color: var(--color-green);
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  margin: 0;
   transition: opacity 0.5s ease;
   opacity: 1;
 }

@@ -22,39 +22,21 @@ define('components/reports', [], function() {
         backgroundImage: 'none'
       };
 
-      let background = this.element.querySelector('.reports__background');
+      let backgroundEl = this.element.querySelector('.reports__background');
       this.element.querySelectorAll('.reports__link').forEach(link => {
         link.addEventListener('mouseenter', () => {
           this.state.backgroundImage = (link.dataset.cover) ? 'url(' + link.dataset.cover + ')' : 'none';
-          // Just change the image if a transition is going.
-          if (this.backgroundTransition) {
-            background.style.backgroundImage = this.state.backgroundImage;
-          } else {
-            background.classList.add('hidden');
-            this.backgroundTransition = true;
-            setTimeout(() => {
-              this.backgroundTransition = false;
-              background.style.backgroundImage = this.state.backgroundImage;
-              background.classList.remove('hidden');
-            }, 200);
-          }
+          backgroundEl.style.backgroundImage = this.state.backgroundImage;
+          backgroundEl.classList.remove('hidden');
+        });
+        link.addEventListener('mouseleave', () => {
+          this.state.backgroundImage = 'none';
+          backgroundEl.classList.add('hidden');
+          setTimeout(() => {
+            backgroundEl.style.backgroundimage = this.state.backgroundImage;
+          }, 300);
         });
       });
-      this.element.querySelector('.reports__link-wrapper').addEventListener('mouseleave', () => {
-          this.state.backgroundImage = 'none';
-          if (this.backgroundTransition) {
-            background.style.backgroundImage = this.state.backgroundImage;
-          } else {
-            background.classList.add('hidden');
-            this.backgroundTransition = true;
-            setTimeout(() => {
-              this.backgroundTransition = false;
-              background.style.backgroundImage = this.state.backgroundImage;
-              background.classList.remove('hidden');
-            }, 200);
-          }
-      });
-
 
       let cube1 = this.element.querySelector('.reports__cube--1');
       let cube2 = this.element.querySelector('.reports__cube--2');
