@@ -51,8 +51,9 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/4YE42ksz4XA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Networks & Politics - Zwischen nationaler Digitalpolitik und Internet Governance: Internetregulierung in Deutschland nach der Wahl
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+								Networks & Politics - Zwischen nationaler Digitalpolitik und Internet Governance: Internetregulierung in Deutschland nach der Wahl;
+								Networks & Politics - Zwischen nationaler Digitalpolitik und Internet Governance, Kamera und Schnitt: Verena Vargas Koch für Wikimedia Deutschland,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
 							</div>
 						</div>
 					</div>
@@ -62,8 +63,9 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/AsGxYAFe-b8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Am 10. Oktober 2017 wurde bei Wikimedia Deutschland die von der Bundesregierung befeuerte Debatte über ein so genanntes Dateneigentum diskutiert
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+								Am 10. Oktober 2017 wurde bei Wikimedia Deutschland die von der Bundesregierung befeuerte Debatte über ein so genanntes Dateneigentum diskutiert;
+								Networks & Politics – Luciano Floridi on Data Ownership, Kamera und Schnitt: Verena Vargas Koch für Wikimedia Deutschland,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
 							</div>
 						</div>
 					</div>
@@ -73,8 +75,9 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/8_URZDvowZQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Coding da Vinci ist der erste deutsche Hackathon für offene Kulturdaten. Der Film dokumentiert Coding da Vinci in Berlin 2017
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+								Coding da Vinci ist der erste deutsche Hackathon für offene Kulturdaten. Der Film dokumentiert Coding da Vinci in Berlin 2017;
+								Coding da Vinci 2017, Helmbrecht Film für Wikimedia Deutschland,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
 							</div>
 						</div>
 					</div>

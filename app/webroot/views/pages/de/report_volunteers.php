@@ -68,8 +68,8 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/ZJ6ecOJaGiw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Aufruf zum Mitmachen beim Fotowettbewerb Wiki Loves Monuments
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+								Aufruf zum Mitmachen beim Fotowettbewerb Wiki Loves Monuments; Wiki loves Monuments 2017, <a href="https://commons.wikimedia.org/wiki/File:Wiki_Loves_Monuments_2017_by_Wikimedia_UK_without_titles.webm" target="new">Wiki Loves Monuments 2017 by Wikimedia UK</a>, bearbeitet von Elisabeth Mandl (Wikimedia Deutschland),
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
 							</div>
 						</div>
 					</div>

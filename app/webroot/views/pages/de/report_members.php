@@ -52,8 +52,9 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/ys1Xc_iCId0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Die 20. Mitgliederversammlung von Wikimedia Deutschland am 17.06.2017 in Bamberg.
-								<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="new">CC BY-SA 3.0</a>
+								Die 20. Mitgliederversammlung von Wikimedia Deutschland am 17.06.2017 in Bamberg;
+								Mitgliederversammlung Wikimedia Deutschland 2017, Wikimedia Deutschland,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
 							</div>
 						</div>
 					</div>
