@@ -54,7 +54,7 @@
 		'cover' => '/assets/img/06_glam_hero.jpg',
 	],
 	[
-		'name' => 'glam',
+		'name' => 'fellow',
 		'title' => [
 			'de' => 'Offene Wissenschaft aktiv vorantreiben',
 			'en' => ''
