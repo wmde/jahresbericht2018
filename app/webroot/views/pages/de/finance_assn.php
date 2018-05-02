@@ -61,14 +61,6 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line">
-						<td class="ft__col-key">Geleistete Anzahlungen</td>
-						<td class="ft__col-val ft__green-border">0 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">2.151 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">0 €</td>
-					</tr>
-					<tr class="ft__row-line">
 						<td class="ft__col-key">Forderungen aus Mittelweitergabe&shy;verpflichtungen</td>
 						<td class="ft__col-val ft__green-border">1.667.383 €</td>
 						<td class="ft__col-void"></td>
@@ -88,7 +80,7 @@
 						<td class="ft__col-key">Sonstige Vermögens&shy;gegenstände</td>
 						<td class="ft__col-val ft__green-border">180.326 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">95.001 €</td>
+						<td class="ft__col-val">97.152 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">219.790 €</td>
 					</tr>

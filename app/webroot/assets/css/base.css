@@ -240,7 +240,7 @@ body > main {
   font-family: var(--font-family-sans);
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .t--zeta-emph {
   font-weight: 800;
