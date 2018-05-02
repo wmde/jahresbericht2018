@@ -143,7 +143,7 @@
 
 		<div class="limit--l">
 			<div class="chart__headline">
-				<div class="chart__headline--description">
+				<div class="chart__headline--description t--epsilon">
 					Januar 2013 - März 2018
 				</div>
 				<h1 class="h--beta">Mitgliederentwicklung</h1>
@@ -176,7 +176,7 @@
 		</div>
 		<a href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new" class="chart__button button button--outline-white">Jetzt Mitglied werden</a>
 	</section>
-	<section class="reports clearfix cp--component-section loading">
+	<section class="reports loading clearfix cp--component-section loading">
 		<ul class="reports__data">
 			<?php foreach ($reports as $report) : ?>
 				<li class="reports--store" data-url="<?= $url("/report/{$report['name']}", $lang) ?>" data-cover="<?= $report['cover'] ?>"><?= $report['title'][$lang] ?></li>

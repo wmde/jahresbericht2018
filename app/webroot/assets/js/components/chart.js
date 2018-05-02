@@ -43,22 +43,32 @@ define('components/chart', [], function() {
     }
 
     init() {
-      this.delayedDropClass(this.chartCards1, 50, '.chart__cards--desktop');
-      this.delayedDropClass(this.chartCards2, 50, '.chart__cards--small');
-      this.delayedDropClass(this.chartCards3, 50, '.chart__cards--mobile');
+      this.delayedDropClass(this.chartCards1, 50, 'fix', () => {
+        setTimeout(() => {
+          this.element.querySelector('.chart__cards--desktop').classList.remove('loading');
+        }, 1000);
+      });
+      this.delayedDropClass(this.chartCards2, 50, 'fix', () => {
+        setTimeout(() => {
+          this.element.querySelector('.chart__cards--small').classList.remove('loading');
+        }, 1000);
+      });
+      this.delayedDropClass(this.chartCards3, 50, 'fix', () => {
+        setTimeout(() => {
+          this.element.querySelector('.chart__cards--mobile').classList.remove('loading');
+        }, 1000);
+      });
     }
 
-    delayedDropClass(collection, delay, parentClass, i = undefined) {
+    delayedDropClass(collection, delay, removeClassName, onFinish = undefined, i = undefined) {
       if (i === undefined) { i = collection.length - 1; }
-      collection[i].classList.remove('fix');
+      collection[i].classList.remove(removeClassName);
       if (i > 0) {
         setTimeout(() => {
-          this.delayedDropClass(collection, delay, parentClass, (i - 1));
+          this.delayedDropClass(collection, delay, removeClassName, onFinish, (i - 1));
         }, delay + (Math.random() * 30));
-      } else {
-        setTimeout(() => {
-          this.element.querySelector(parentClass).classList.remove('loading');
-        }, 1000);
+      } else if (onFinish) {
+        onFinish();
       }
     }
 

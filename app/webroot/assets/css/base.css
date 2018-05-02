@@ -2412,11 +2412,12 @@ a:focus {
   height: 100%;
   top: 0;
   right: 0;
+  filter: saturate(0.3);
   background-size: cover;
   background-position: center center;
-  background-color: var(--color-lightorange);
-  background-blend-mode: overlay;
-  opacity: 1;
+  background-blend-mode: luminosity;
+  mix-blend-mode: overlay;
+  opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 .reports__background.hidden {
@@ -2440,7 +2441,7 @@ a:focus {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: end;
+  justify-content: flex-end;
   max-width: 400px;
   height: 475px;
 }
@@ -2455,7 +2456,7 @@ a:focus {
 .reports__link:hover .reports__link-title {
   color: var(--color-orange);
 }
-.reports.loading .reports__link {
+.reports__link.loading {
   transition: opacity 0.3s ease;
   opacity: 0;
 }
@@ -2503,6 +2504,12 @@ a:focus {
   vertical-align: middle;
   margin-bottom: 200px;
   transform: scale(0.875);
+  transition: all 0.5s;
+  opacity: 1;
+}
+.reports.loading .reports__canvas {
+  opacity: 0 !important;
+  margin-top: 150px !important;
 }
 .reports__cube {
   background: url(../img/cube_achievements.svg) no-repeat center/contain;
@@ -2910,9 +2917,6 @@ a:focus {
   color: #FFF;
   z-index: 10;
 }
-.chart__headline--description {
-  font-size: 12px;
-}
 .chart__headline h1 {
   margin-top: 10px;
 }
@@ -2989,6 +2993,13 @@ a:focus {
 .chart__cards--small,
 .chart__cards--mobile {
   display: none;
+}
+@media (min-width: 1280px) {
+  .chart__cards-wrapper {
+    position: relative;
+    max-width: 1280px;
+    left: -10px;
+  }
 }
 
 @media (max-width: 960px) {

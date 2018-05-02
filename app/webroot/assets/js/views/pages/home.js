@@ -43,7 +43,16 @@ require([
     offset: '70%'
   })
 
-  new Reports($1('.reports'));
+  let reports = new Reports($1('.reports'));
+  new Waypoint({
+    element: $1('.reports'),
+    handler: dir => {
+			if (dir === 'down') {
+        $1('.reports').classList.remove('loading')
+			}
+    },
+    offset: '60%'
+  })
 
   let chart = new Chart($1('.chart'));
   new Waypoint({

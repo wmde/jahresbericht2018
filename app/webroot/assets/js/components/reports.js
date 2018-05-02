@@ -18,7 +18,6 @@ define('components/reports', [], function() {
         unseen: [], // Store indexes of unseen reports.
         lastStoreIndexes: [],
         loading: true,
-        backgroundTransition: false,
         backgroundImage: 'none'
       };
 
@@ -89,9 +88,7 @@ define('components/reports', [], function() {
 
       this.element.querySelector('.reports__button--reload').addEventListener('click', () => {
         if (this.state.runningTransitions == 0) {
-          //this.toggleAnimationState(shuffleLoop);
           this.loadNewReports();
-          //this.performAnimation(shuffleLoop, () => { console.log(this.state); });
         }
       });
 
@@ -132,16 +129,31 @@ define('components/reports', [], function() {
       el.dataset.cover = source.dataset.cover;
     }
 
+    delayedDropClass(collection, delay, removeClassName, onFinish = undefined, i = undefined) {
+      if (i === undefined) { i = 0; }
+      if (i < collection.length) {
+        collection[i].classList.remove(removeClassName);
+        setTimeout(() => {
+          this.delayedDropClass(collection, delay, removeClassName, onFinish, (i + 1));
+        }, delay + (Math.random() * 30));
+      } else if (onFinish) {
+        onFinish();
+      }
+    }
+
     loadNewReports() {
       let el = this.element;
       let links = el.querySelectorAll('.reports__link');
 
       if (this.state.loading) {
-          el.classList.remove('loading');
-          this.state.loading = false;
+          this.delayedDropClass(links, 50, 'loading', () => {
+            this.state.loading = false;
+          });
       } else {
         this.toggleAnimationState(this.shuffleLoop);
-        el.classList.add('loading');
+        links.forEach(link => {
+          link.classList.add('loading');
+        });
         this.state.loading = true;
         this.state.runningTasks++;
 
