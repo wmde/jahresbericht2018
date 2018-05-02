@@ -18,6 +18,10 @@ require([
   let $1 = document.querySelector.bind(document);
   let $ = document.querySelectorAll.bind(document);
 
+  $('.achievement-box__number').forEach(number => {
+    number.innerHTML = parseInt(number.innerHTML).toLocaleString('de-DE');
+  });
+
   // Animate tiles on report landing page
   let jbs = $('.jb-hsplit');
   if (jbs.length) {
@@ -35,6 +39,7 @@ require([
       });
     }
   }
+
 
   // Animate slider
   let sliders = $('.slider');
