@@ -31,17 +31,11 @@ fi
 rm -f app/webroot/index.*-e
 rm -f app/webroot/views/elements/*/header.php-e
 
+echo $TARGET_BROWSERS | tr '|' '\n' > .browserslistrc
+
 # Babelify in-place for full current ESx compatiblity.
 cat << EOF > .babelrc
 {
-	"presets": [
-		["env", {"targets": {"browsers": [
-			"last 2 versions",
-			"> 5%",
-			"ie 11",
-			"ff >= 48"
-		]}}]
-	],
 	"ignore": [
 		"underscore.js",
 		"require.js",
