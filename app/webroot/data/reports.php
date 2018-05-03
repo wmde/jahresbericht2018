@@ -63,6 +63,15 @@
 		'cover' => '/assets/img/07_fellow_hero.jpg',
 	],
 	[
+		'name' => '2017',
+		'title' => [
+			'de' => 'Das Jahr 2017 bei Wikimedia Deutschland',
+			'en' => ''
+		],
+		'category' => 'wikimedia',
+		'cover' => '/assets/img/11_2017_hero.jpg',
+	],
+	[
 		'name' => 'members',
 		'title' => [
 			'de' => 'Schon Mitglied?',

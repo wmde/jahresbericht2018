@@ -11,7 +11,7 @@
 				<em>Wikimedias strategische Ausrichtung anpacken</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Was möchten wir – die internationale Wikimedia-Bewegung – in den nächsten 10-15 Jahren aufbauen und erreichen? Wofür soll Wikimedia im Jahr 2030 in der Welt bekannt sein? Und wer wird sich unserer Bewegung angeschlossen haben? Diesen großen Fragen widmeten sich im Jahr 2017 hunderte von Menschen und Organisationen, die gemeinsam die Zukunft von Wikimedia gestalten möchten. In einem groß angelegten, globalen Strategieprozess  <a href="https://meta.wikimedia.org/wiki/Strategy/Wikimedia_movement/2017/de" target="new">„Wikimedia 2030“</a> wurden sowohl Wikimedianerinnen und Wikimedianer als auch viele externe Partnerorganisationen sowie Lesende und Spendende zum Wikimedia der Zukunft befragt. Mithilfe dieser vielfältigen Beiträge sowie begleitenden Recherchen und Analysen haben wir im internationalen Movement-Strategieprozess eine neue Strategische Ausrichtung entwickelt.
+				Was möchten wir – die internationale Wikimedia-Bewegung – in den nächsten 10-15 Jahren aufbauen und erreichen? Wofür soll Wikimedia im Jahr 2030 in der Welt bekannt sein? Und wer wird sich unserer Bewegung angeschlossen haben? Diesen großen Fragen widmeten sich im Jahr 2017 hunderte von Menschen und Organisationen, die gemeinsam die Zukunft von Wikimedia gestalten möchten. In einem groß angelegten, globalen Strategieprozess  <a href="https://meta.wikimedia.org/wiki/Strategy/Wikimedia_movement/2017/de" target="new">„Wikimedia 2030“</a> wurden sowohl Wikimedianerinnen und Wikimedianer als auch viele externe Partnerorganisationen sowie Lesende und Spendende zur Zukunft Wikimedias befragt. Mithilfe dieser vielfältigen Beiträge sowie begleitenden Recherchen und Analysen haben wir im internationalen Movement-Strategieprozess eine neue Strategische Ausrichtung entwickelt.
 			</div>
 			<?php if (isset($achievements[0])): ?>
 			<div class="achievement-box">
@@ -53,7 +53,7 @@
 							</div>
 							<div class="video__caption limit--s">
 								Welche Zukunft möchten wir gemeinsam aufbauen? Dieses Video zeigt den globalen Prozess 2017, die zukünftige Rolle von Wikimedia in der Welt zu definieren;
-								Wikimedia 2013, Wikimedia Foundation,
+								Wikimedia 2030, Wikimedia Foundation,
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -75,7 +75,7 @@
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/2018" class="button button--report">
-			<p class="button--small"> Zum nächsten Projekt </p>
+			<p class="button--small"> Zum nächsten Thema </p>
 			<p> Ausblick: So geht es 2018 weiter </p>
 		</a>
 	</section>

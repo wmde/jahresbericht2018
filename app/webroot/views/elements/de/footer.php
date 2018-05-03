@@ -8,10 +8,10 @@
 						Wikimedia Deutschland — Gesellschaft zur Förderung Freien Wissens e. V.
 					</p>
 					<p>
-						Postfach 61 03 49 / 10925 Berlin
+						Postfach 61 03 49, 10925 Berlin
 					</p>
 					<p>
-						Tempelhofer Ufer 23-24 / 10963 Berlin</br>
+						Tempelhofer Ufer 23-24, 10963 Berlin</br>
 						Telefon: <a href="tel:004930219158260">030 219 158 26-0</a></br>
 						Fax: 030 219 158 26-9
 					</p>
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="main-footer__bottom clearfix cp">
+	<div class="main-footer__bottom clearfix">
 		<div class="limit--l">
 			<a class="imprint-toggle nav__link" href="#imprint-toggle">Impressum</a>
 			<a class="imprint-close image-replace invis" href="#imprint-close">Schließen</a>
@@ -76,13 +76,9 @@
 				</section>
 				<section>
 					<h1 class="h--delta">Lizenzhinweise</h1>
-					<p class="t--delta-serif">
-						Design und Umsetzung: Atelier Disko UG (haftungsbeschränkt) & Co. KG, <a href="https://atelierdisko.de" target="new">atelierdisko.de</a><br>
-						Redaktion: Elisabeth Mandl
-					</p>
 
 					<span class="h--delta">Konzeption:</span>
-					<span class="h--delta"> Tjane Hartenstein, Elisabeth Mandl, Atelier Disko</span><br>
+					<span class="t--delta-serif"> Tjane Hartenstein, Elisabeth Mandl, Atelier Disko</span><br>
 
 					<span class="h--delta">Redaktion:</span>
 					<span class="t--delta-serif"> Tjane Hartenstein</span><br>
@@ -91,9 +87,9 @@
 					<span class="t--delta-serif"> Abraham Taherivand</span><br>
 
 					<span class="h--delta">Design:</span>
-					<span class="t--delta-serif">Atelier Disko, <a href="https://atelierdisko.de" target="new">atelierdisko.de</a><br>
+					<span class="t--delta-serif">Atelier Disko, <a href="https://atelierdisko.de" target="new">atelierdisko.de</a><br><br>
 
-					<p class="t--delta">
+					<p class="t--delta-serif">
 						Soweit nicht anders angegeben, stehen die Texte, Bilder, das Layout und der Code dieser Webseite unter der <a href="https://creativecommons.org/licenses/by/4.0/" target="new">Creative Commons Attribution-Lizenz (CC BY-SA) in der Version 4.0</a>.
 					</p>
 					<a href="https://creativecommons.org/licenses/by/4.0/" target="new" class="imprint__cc-logo">

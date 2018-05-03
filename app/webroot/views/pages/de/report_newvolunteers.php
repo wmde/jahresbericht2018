@@ -11,7 +11,7 @@
 				<em>Mehr Menschen für die Wikipedia begeistern</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Fast alle Menschen haben schon einmal in der Wikipedia etwas nachgeschlagen, manche vielleicht nur ein paarmal, viele auch täglich. Die freie Online-Enzyklopädie ist jedenfalls aus unserem Alltag nicht mehr wegzudenken. Dabei machen sich die meisten allerdings nur selten bewusst, dass die Wikipedia ausschließlich von ehrenamtlichen Autorinnen und Autoren in ihrer Freizeit erstellt wird. Aber die Zahl der Aktiven, die die deutschsprachige Wikipedia mit ihrem Wissen lebendig halten, indem sie Artikel schreiben, ergänzen, verbessern, aktualisieren und bebildern, sinkt seit mehreren Jahren. Die rückläufigen Zahlen der Wikipedia-Autorenschaft sehen wir als eine Gefahr für eine lebendige und vielfältige Community und die Qualität der Inhalte der Wikipedia. 2017 haben wir versucht, dieser Gefahr entgegenzuwirken.
+				Fast alle Menschen haben schon einmal in der Wikipedia etwas nachgeschlagen, manche vielleicht nur ein paarmal, viele auch täglich. Die freie Online-Enzyklopädie ist jedenfalls aus unserem Alltag nicht mehr wegzudenken. Dabei machen sich die meisten allerdings nur selten bewusst, dass die Wikipedia ausschließlich von ehrenamtlichen Autorinnen und Autoren in ihrer Freizeit erstellt wird. Aber die Zahl der Aktiven, die die deutschsprachige Wikipedia mit ihrem Wissen lebendig halten, indem sie Artikel schreiben, ergänzen, verbessern, aktualisieren und bebildern, sinkt seit mehreren Jahren. Die rückläufigen Zahlen der Wikipedia-Autorenschaft sehen wir als eine Gefahr für eine lebendige und vielfältige Community und die Qualität der Inhalte der Wikipedia. 2017 haben wir versucht, dieser Entwicklung entgegenzuwirken.
 			</div>
 			<div class="section__body t--gamma-serif">
 				<p>
@@ -34,12 +34,12 @@
 				</div>
 				<?php endif ?>
 				<p>
-					Dabei konnten wir einige Erfolge verzeichnen. 1531 Menschen haben sich aufgrund unserer Bannerkampagnen ein Benutzerkonto in der Wikipedia angelegt, 334 von ihnen haben auch erfolgreich begonnen, in der Wikipedia Artikel zu bearbeiten. Das bedeutet, dass wir Menschen davon überzeugen können, mit ihrem Wissen aktiv die Wikipedia zu bereichern. Die von uns produzierten Hilfsmittel konnten gut vermitteln, wie die Mitarbeit bei Wikipedia funktioniert.
+					Dabei konnten wir einige Erfolge verzeichnen. 1.531 Menschen haben sich aufgrund unserer Bannerkampagnen ein Benutzerkonto in der Wikipedia angelegt, 334 von ihnen haben auch erfolgreich begonnen, in der Wikipedia Artikel zu bearbeiten. Das bedeutet, dass wir Menschen davon überzeugen können, mit ihrem Wissen aktiv die Wikipedia zu bereichern. Die von uns produzierten Hilfsmittel konnten gut vermitteln, wie die Mitarbeit bei Wikipedia funktioniert.
 				</p>
 					Haben wir mit unseren Bannerkampagnen 2017 nun die Gefahr, die von den sinkenden Autorenzahlen für die Wikipedia ausgeht, gebannt? Eindeutig nein. Aber wir haben viel dazugelernt. Wir wissen beispielsweise, dass sich während der Kampagnenzeit mehr Menschen als sonst ein Benutzerkonto anlegen, um in der Wikipedia zu editieren.
 					Das bedeutet, dass Kampagnen Leserinnen und Leser erreichen und sie überzeugen. Aus Befragungen wissen wir, dass es immer noch zu wenig Bewusstsein darüber gibt, dass alle zur Wikipedia beitragen können. Mit den Kampagnen stärken wir dieses Bewusstsein.
 				<p>
-					Trotzdem sind Online-Kampagnen nur ein erster Schritt. Sie erwecken Aufmerksamkeit. Aber der Weg zum Wikipedia-Aktiven ist lang. 2018 wollen wir aufgrund unserer Erkenntnisse aus der Kampagnenarbeit 2017 neue Möglichkeiten entwickeln und testen. Wir werden die <a href="www.wikipedia.de/lernewikipedia" target="new">Hilfsangebote</a> für Neueinsteigende weiter verbessern und damit den Anteil derjenigen erhöhen, die regelmäßig zur Wikipedia beitragen. Des Weiteren werden wir die bestehende Community dabei unterstützen, neue Autorinnen und Autoren der Wikipedia bei ihrem Einstieg in die Welt des Freien Wissens bestmöglich zu begleiten.
+					Trotzdem sind Online-Kampagnen nur ein erster Schritt. Sie erwecken Aufmerksamkeit. Aber der Weg zum Wikipedia-Aktiven ist lang. 2018 wollen wir aufgrund unserer Erkenntnisse aus der Kampagnenarbeit 2017 neue Möglichkeiten entwickeln und testen. Wir werden die <a href="https://de.wikipedia.org/wiki/Wikipedia:Wikimedia_Deutschland/LerneWikipedia" target="new">Hilfsangebote</a> für Neueinsteigende weiter verbessern und damit den Anteil derjenigen erhöhen, die regelmäßig zur Wikipedia beitragen. Des Weiteren werden wir die bestehende Community dabei unterstützen, neue Autorinnen und Autoren der Wikipedia bei ihrem Einstieg in die Welt des Freien Wissens bestmöglich zu begleiten.
 				</p>
 				<p>
 
@@ -58,7 +58,8 @@
 							</div>
 							<div class="video__caption limit--s">
 								Auf der 20. Mitgliederversammlung von Wikimedia Deutschland am 17.06.2017 in Bamberg wird der Vereinsschwerpunkt „Neue Freiwillige für die Wikipedia gewinnen und halten“ vorgestellt;
-								Wikimedia Deutschland sucht neue Freiwillige für die Wikipedia, Kamera und Schnitt: Stefan Brainbauer für Wikimedia Deutschland
+								<a href="http://commons.wikimedia.org/wiki/File:Neue_Ehrenamtliche_gewinnen_und_halten_-_Video_von_der_20._Mitgliederversammlung_-_Langversion.webm" target="new">Wikimedia Deutschland sucht neue Freiwillige für die Wikipedia</a>,
+								Kamera und Schnitt: Stefan Brainbauer für Wikimedia Deutschland
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -70,7 +71,7 @@
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/knowledge" class="button button--report">
-			<p class="button--small"> Zum nächsten Projekt </p>
+			<p class="button--small"> Zum nächsten Thema </p>
 			<p> Einfacher Wissen teilen </p>
 		</a>
 	</section>

@@ -11,7 +11,7 @@
 				<em>Offene Wissenschaft aktiv vorantreiben</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Als Gesellschaft zur Förderung Freien Wissens versucht Wikimedia Deutschland, die Grundprinzipien der Wikipedia auf alle gesellschaftlichen Bereiche zu übertragen. Mit dem Fellow-Programm Freies Wissen unterstützen wir deshalb junge Forschende dabei, die Methoden, Daten und Ergebnisse ihrer Arbeit frei verfügbar und für alle Menschen nachnutzbar zu machen. Die Idee ist, dass die Fellows nicht nur selbst lernen, Offene Wissenschaft zu praktizieren, sondern ihre Kenntnisse in den Institutionen weiterverbreiten.</br>
+				Als Gesellschaft zur Förderung Freien Wissens versucht Wikimedia Deutschland, die Grundprinzipien der Wikipedia auf alle gesellschaftlichen Bereiche zu übertragen. Mit dem Fellow-Programm Freies Wissen unterstützen wir deshalb junge Forschende dabei, die Methoden, Daten und Ergebnisse ihrer Arbeit frei verfügbar und für alle Menschen nachnutzbar zu machen. Die Idee ist, dass die Fellows nicht nur selbst lernen, Offene Wissenschaft zu praktizieren, sondern ihre Kenntnisse in den Institutionen weiterverbreiten.
 				Damit setzen wir uns für eine stärkere Öffnung wissenschaftlicher Forschung und Lehre ein.
 			</div>
 			<div class="section__body t--gamma-serif">
@@ -76,9 +76,9 @@
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/members" class="button button--report">
-			<p class="button--small"> Zum nächsten Projekt </p>
-			<p> Schon Mitglied? </p>
+		<a href="/report/2017" class="button button--report">
+			<p class="button--small"> Zum nächsten Thema </p>
+			<p> Das Jahr 2017 bei Wikimedia Deutschland </p>
 		</a>
 	</section>
 </main>

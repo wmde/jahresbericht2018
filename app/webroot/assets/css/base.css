@@ -860,6 +860,9 @@ a:focus {
   border-color: white;
   opacity: 0.5;
 }
+.main-footer__bottom {
+  padding: 0 40px 40px 40px;
+}
 .main-footer__bottom > div {
   display: flex;
 }
@@ -871,9 +874,9 @@ a:focus {
   margin-left: 300px;
 }
 
-@media (max-width:1000px) {
+@media (max-width:997px) {
   .imprint-toggle {
-    margin-left: 0px;
+    margin-left: -10px;
   }
 }
 
@@ -884,6 +887,11 @@ a:focus {
   .imprint-toggle {
     width: inherit;
     min-width: inherit;
+  }
+}
+@media (max-width: 550px) {
+  .imprint-toggle {
+    margin-left: -30px;
   }
 }
 
@@ -1525,12 +1533,21 @@ a:focus {
   transform: rotate(300deg);
 }
 
-@media (min-width: 1450px) {
+@media (max-width: 2100px) {
   .home__bagel--1 {
     left: 80px;
   }
   .home__bagel--2 {
-    right: 1000px;
+    right: 800px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .home__bagel--1 {
+    left: 80px;
+  }
+  .home__bagel--2 {
+    right: 800px;
   }
 }
 
@@ -1817,6 +1834,9 @@ a:focus {
 .ft-wrapper {
   overflow-x: auto;
   font-feature-settings: "tnum" 1;
+}
+.finance--assn .fin-detail__passiva .ft-wrapper tbody .ft__row-line:nth-of-type(2) {
+  font-size: 12px;
 }
 .ft {
   width: 100%;

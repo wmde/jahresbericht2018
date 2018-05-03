@@ -36,7 +36,7 @@
 				></figure>
 				<div class="jb-hsplit__content">
 					<h1 class="h--gamma jb-hsplit__title"><?= $report['title'][$lang] ?></h1>
-					<p class ="h--delta jb-hsplit__title">&mdash; Zum Projekt</p>
+					<p class ="h--delta jb-hsplit__title">&mdash; Zum Thema</p>
 				</div>
 			</a>
 		<?php endforeach ?>

@@ -76,7 +76,7 @@
 						href="<?= $url($achievements[0]['teaser'], $lang) ?>"
 						class="achievement__link t--zeta-emph"
 					>
-						&mdash;&nbsp;&nbsp; Zum Projekt
+						&mdash;&nbsp;&nbsp; Zum Thema
 					</a>
 				</div>
 			</div>
@@ -107,7 +107,7 @@
 						href="<?= $url($achievements[1]['teaser'], $lang) ?>"
 						class="achievement__link t--zeta-emph"
 					>
-						&mdash;&nbsp;&nbsp; Zum Projekt
+						&mdash;&nbsp;&nbsp; Zum Thema
 					</a>
 				</div>
 			</div>
@@ -144,7 +144,7 @@
 		<div class="limit--l">
 			<div class="chart__headline">
 				<div class="chart__headline--description t--epsilon">
-					Januar 2013 - März 2018
+					März 2013 - März 2018
 				</div>
 				<h1 class="h--beta">Mitgliederentwicklung</h1>
 			</div>
@@ -154,22 +154,22 @@
 				<div class="chart__cards chart__cards--mobile loading"></div>
 			</div>
 			<div class="chart__dates-wrapper t--epsilon">
-				<div class="chart__date"><div class="chart__date-line">&mdash;</div>01.01.2013
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>März 2013
 					<div class="chart__date-value">2.618</div>
 				</div>
-				<div class="chart__date"><div class="chart__date-line">&mdash;</div>01.01.2014
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>März 2014
 					<div class="chart__date-value">9.803</div>
 				</div>
-				<div class="chart__date"><div class="chart__date-line">&mdash;</div>01.01.2015
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>März 2015
 					<div class="chart__date-value">15.778</div>
 				</div>
-				<div class="chart__date"><div class="chart__date-line">&mdash;</div>01.01.2016
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>März 2016
 					<div class="chart__date-value">29.169</div>
 				</div>
-				<div class="chart__date"><div class="chart__date-line">&mdash;</div>03.01.2017
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>März 2017
 					<div class="chart__date-value">43.138</div>
 				</div>
-				<div class="chart__date"><div class="chart__date-line">&mdash;</div>07.03.2018
+				<div class="chart__date"><div class="chart__date-line">&mdash;</div>März 2018
 					<div class="chart__date-value">65.374</div>
 				</div>
 			</div>
@@ -194,15 +194,15 @@
 			<div class="reports__link-wrapper">
 				<a class="reports__link h--beta" href="">
 					<div class="reports__link-title">Movement Strategy</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Thema</div>
 				</a>
 				<a class="reports__link h--beta" href="">
 					<div class="reports__link-title">Fellow Programm</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Thema</div>
 				</a>
 				<a class="reports__link h--beta" href="">
 					<div class="reports__link-title">Freiwillige unterstützen</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Projekt</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Thema</div>
 				</a>
 			</div>
 			<button class="animation-ctl-button reports__button reports__button--reload t--zeta-emph invis">
