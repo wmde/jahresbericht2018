@@ -653,6 +653,11 @@ a:focus {
   opacity: 1;
 }
 
+/* TODO: Remove once we have english content */
+.lang-switch {
+  display: none !important;
+}
+
 @media (max-width: 860px) {
   .main-header__nav {
     display: none;
