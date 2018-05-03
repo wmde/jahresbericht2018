@@ -1,7 +1,7 @@
 <main class="report-detail">
 	<section
 		class="report-detail-hero cp cp--nav-zone"
-		style="background-image: url(/assets/img/09_international_hero.jpg)"
+		style="background-image: url(<?= $report['hero'] ?>)"
 	>
 	</section>
 	<section class="section cp report-detail__text">

@@ -6,7 +6,8 @@
 			'en' => ''
 		],
 		'category' => 'volunteers',
-		'cover' => '/assets/img/01_volunteers_hero.jpg',
+		'cover' => '/assets/img/01_volunteers_cover.jpg',
+		'hero' => '/assets/img/01_volunteers_hero.jpg',
 	],
 	[
 		'name' => 'newvolunteers',
@@ -15,7 +16,8 @@
 			'en' => ''
 		],
 		'category' => 'volunteers',
-		'cover' => '/assets/img/02_newvolunteers_hero.jpg',
+		'cover' => '/assets/img/02_newvolunteers_cover.jpg',
+		'hero' => '/assets/img/02_newvolunteers_hero.jpg',
 	],
 	[
 		'name' => 'knowledge',
@@ -24,7 +26,8 @@
 			'en' => ''
 		],
 		'category' => 'software',
-		'cover' => '/assets/img/03_knowledge_hero.jpg',
+		'cover' => '/assets/img/03_knowledge_cover.jpg',
+		'hero' => '/assets/img/03_knowledge_hero.jpg',
 	],
 	[
 		'name' => 'wikicon',
@@ -33,7 +36,8 @@
 			'en' => ''
 		],
 		'category' => 'software',
-		'cover' => '/assets/img/04_wikicon_hero.jpg',
+		'cover' => '/assets/img/04_wikicon_cover.jpg',
+		'hero' => '/assets/img/04_wikicon_hero.jpg',
 	],
 	[
 		'name' => 'digitalomat',
@@ -42,7 +46,8 @@
 			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '/assets/img/05_digitalomat_hero.jpg',
+		'cover' => '/assets/img/05_digitalomat_cover.jpg',
+		'hero' => '/assets/img/05_digitalomat_hero.jpg',
 	],
 	[
 		'name' => 'glam',
@@ -51,7 +56,8 @@
 			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '/assets/img/06_glam_hero.jpg',
+		'cover' => '/assets/img/06_glam_cover.jpg',
+		'hero' => '/assets/img/06_glam_hero.jpg',
 	],
 	[
 		'name' => 'fellow',
@@ -60,7 +66,8 @@
 			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '/assets/img/07_fellow_hero.jpg',
+		'cover' => '/assets/img/07_fellow_cover.jpg',
+		'hero' => '/assets/img/07_fellow_hero.jpg',
 	],
 	[
 		'name' => '2017',
@@ -69,7 +76,8 @@
 			'en' => ''
 		],
 		'category' => 'wikimedia',
-		'cover' => '/assets/img/11_2017_hero.jpg',
+		'cover' => '/assets/img/11_2017_cover.jpg',
+		'hero' => '/assets/img/11_2017_hero.jpg',
 	],
 	[
 		'name' => 'members',
@@ -78,7 +86,8 @@
 			'en' => ''
 		],
 		'category' => 'wikimedia',
-		'cover' => '/assets/img/08_members_hero.jpg',
+		'cover' => '/assets/img/08_members_cover.jpg',
+		'hero' => '/assets/img/08_members_hero.jpg',
 	],
 	[
 		'name' => 'international',
@@ -87,7 +96,8 @@
 			'en' => ''
 		],
 		'category' => 'wikimedia',
-		'cover' => '/assets/img/09_international_hero.jpg',
+		'cover' => '/assets/img/09_international_cover.jpg',
+		'hero' => '/assets/img/09_international_hero.jpg',
 	],
 	[
 		'name' => '2018',
@@ -96,6 +106,7 @@
 			'en' => ''
 		],
 		'category' => 'wikimedia',
-		'cover' => '/assets/img/10_2018_hero.jpg',
+		'cover' => '/assets/img/10_2018_cover.jpg',
+		'hero' => '/assets/img/10_2018_hero.jpg',
 	],
 ] ?>
