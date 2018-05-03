@@ -1543,7 +1543,16 @@ a:focus {
     left: 80px;
   }
   .home__bagel--2 {
-    right: 800px;
+    right: 1000px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .home__bagel--1 {
+    left: 80px;
+  }
+  .home__bagel--2 {
+    right: 900px;
   }
 }
 
@@ -1552,7 +1561,7 @@ a:focus {
     left: 80px;
   }
   .home__bagel--2 {
-    right: 800px;
+    right: 750px;
   }
 }
 
