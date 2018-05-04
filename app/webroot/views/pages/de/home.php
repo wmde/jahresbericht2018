@@ -216,25 +216,27 @@
 		</div>
 	</section>
 	<section class="finance-banner">
-		<div class="home__bagels">
-			<figure
-				class="home__bagel--1"
-				data-anchor-target=".finance-banner"
-				data-bottom-top="transform:rotate(0deg);"
-				data-top-bottom="transform:rotate(360deg);"
-			>
-				<img src="/assets/img/start_finanzen_circle_1.png" alt="Finanzvisualisierung">
-			</figure>
-			<figure
-				class="home__bagel--2"
-				data-anchor-target=".finance-banner"
-				data-bottom-top="transform:rotate(360deg);"
-				data-top-bottom="transform:rotate(0deg);"
-			>
-				<img src="/assets/img/start_finanzen_circle_2.png" alt="Finanzvisualisierung">
-			</figure>
+		<div class="limit--l cp--component-section">
+			<div class="home__bagels">
+				<figure
+					class="home__bagel--1"
+					data-anchor-target=".finance-banner"
+					data-bottom-top="transform:rotate(0deg);"
+					data-top-bottom="transform:rotate(360deg);"
+				>
+					<img src="/assets/img/start_finanzen_circle_1.png" alt="Finanzvisualisierung">
+				</figure>
+				<figure
+					class="home__bagel--2"
+					data-anchor-target=".finance-banner"
+					data-bottom-top="transform:rotate(360deg);"
+					data-top-bottom="transform:rotate(0deg);"
+				>
+					<img src="/assets/img/start_finanzen_circle_2.png" alt="Finanzvisualisierung">
+				</figure>
+			</div>
+			<p class="h--beta">Unsere Finanzen 2017</p>
+			<a class="finance-banner__button h--delta" href="<?= $url('finance', $lang) ?>">&mdash; Zum Finanzteil</a>
 		</div>
-		<p class="h--beta">Unsere Finanzen 2017</p>
-		<a class="finance-banner__button h--delta" href="<?= $url('finance', $lang) ?>">&mdash; Zum Finanzteil</a>
 	</section>
 </main>
