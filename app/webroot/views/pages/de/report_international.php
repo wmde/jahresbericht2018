@@ -76,7 +76,7 @@
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/2018" class="button button--report">
 			<p class="button--small"> Zum nächsten Thema </p>
-			<p> Ausblick: so geht es 2018 weiter </p>
+			<p> Ausblick: So geht es 2018 weiter </p>
 		</a>
 	</section>
 </main>

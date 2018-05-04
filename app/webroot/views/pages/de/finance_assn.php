@@ -560,6 +560,9 @@
 				</tfoot>
 			</table>
 		</div>
+		<div class="limit--m fin-detail__mittel">
+			Mehr Informationen zu unseren <a href="<?= $url('report/2017', $lang) ?>"target="new">Schwerpunkten 2017</a>
+		</div>
 	</section>
 	<section class="section cp">
 		<div class="limit--m finance__boxes">

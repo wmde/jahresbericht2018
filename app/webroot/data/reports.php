@@ -102,7 +102,7 @@
 	[
 		'name' => '2018',
 		'title' => [
-			'de' => 'Ausblick: so geht es 2018 weiter',
+			'de' => 'Ausblick: So geht es 2018 weiter',
 			'en' => ''
 		],
 		'category' => 'wikimedia',

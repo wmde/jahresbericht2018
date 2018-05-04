@@ -496,6 +496,17 @@ body > main {
 
 /* Content Sections
 ---------------------------------------------------------------- */
+.finance--assn .section .fin-detail__mittel a {
+  border-bottom: 1px solid var(--color-green);
+  color: var(--color-green);
+}
+.finance--assn .section .fin-detail__mittel a:hover {
+  opacity: 0.5;
+}
+.finance--assn .section .fin-detail__mittel:last-of-type {
+  padding-top: 80px;
+  color: var(--color-green);
+}
 .section {
   position: relative; /* __heading is absolute */
   overflow: hidden;
@@ -529,6 +540,14 @@ body > main {
 }
 .section__actions {
 	text-align: center;
+}
+
+@media (max-width: 550px) {
+  .finance--assn .section .fin-detail__mittel:last-of-type {
+    font-size: 12px;
+    font-weight: 200;
+    padding-top: 60px;
+  }
 }
 
 /* Hyperlinks
