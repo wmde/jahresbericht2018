@@ -1541,8 +1541,6 @@ a:focus {
 @media (max-width: 1300px) {
   .home__bagel--1 {
     left: 10px;
-    top: -110px;
-    transform: rotate(50deg);
   }
   .home__bagel--2 {
     right: 680px;
@@ -1560,7 +1558,6 @@ a:focus {
 @media (max-width: 900px) {
   .home__bagel--2 {
     right: 440px;
-    bottom: -350px;
   }
 }
 
@@ -1590,7 +1587,6 @@ a:focus {
 @media (max-width: 400px) {
   .home__bagel--1 {
     left: 10px;
-    top: -60px;
   }
   .home__bagel--2 {
     right: 200px;
