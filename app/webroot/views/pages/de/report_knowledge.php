@@ -43,7 +43,7 @@
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/wikicon" class="button button--report">
 			<p class="button--small"> Zum nächsten Thema </p>
-			<p> WikidataCon: Die erste internationale Konferenz rund um Wikidata </p>
+			<p> WikidataCon: die erste internationale Konferenz rund um Wikidata </p>
 		</a>
 	</section>
 </main>

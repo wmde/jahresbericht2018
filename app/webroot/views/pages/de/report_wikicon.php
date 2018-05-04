@@ -79,7 +79,7 @@
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/digitalomat" class="button button--report">
 			<p class="button--small"> Zum nächsten Thema </p>
-			<p> Digital-O-Mat: Die netzpolitische Wahlhilfe </p>
+			<p> Digital-O-Mat: die netzpolitische Wahlhilfe </p>
 		</a>
 	</section>
 </main>

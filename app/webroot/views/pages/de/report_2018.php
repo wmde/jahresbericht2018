@@ -8,7 +8,7 @@
 		<div class="report-detail hero__caption t--zeta">annalenaschiller (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Deutschland_2018.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
-				<em>Ausblick: So geht es 2018 weiter</em>
+				<em>Ausblick: so geht es 2018 weiter</em>
 			</h1>
 			<div class="section__teaser t--gamma">
 				2018 werden wir weiter an unserem Auftrag als Gesellschaft zur Förderung Freien Wissens arbeiten. Dabei konzentrieren wir uns auf unsere drei inhaltlichen Handlungsfelder.
@@ -24,7 +24,7 @@
 			</p>
 			<div class="section__body t--gamma-serif">
 				<p>
-					Auch 2018 werden wir gemeinsam mit Ehrenamtlichen und der Wikimedia-Foundation die Software, mit der sämtliche Wikimedia-Projekte betrieben werden, weiter verbessern. Wir werden uns weiter um die Verbesserung der Datenqualität von Wikidata kümmern und dafür sorgen, die freie Wissensdatenbank im Zusammenspiel mit den Wikimedia-Projekten und auch für externe Projekte noch nutzbarer zu gestalten.  
+					Auch 2018 werden wir gemeinsam mit Ehrenamtlichen und der Wikimedia Foundation die Software, mit der sämtliche Wikimedia-Projekte betrieben werden, weiter verbessern. Wir werden uns weiter um die Verbesserung der Datenqualität von Wikidata kümmern und dafür sorgen, die freie Wissensdatenbank im Zusammenspiel mit den Wikimedia-Projekten und auch für externe Projekte noch nutzbarer zu gestalten.  
 				</p>
 			</div>
 			<p class="h--gamma">Rahmenbedingungen

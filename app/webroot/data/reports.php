@@ -32,7 +32,7 @@
 	[
 		'name' => 'wikicon',
 		'title' => [
-			'de' => 'Die erste internationale Konferenz rund um Wikidata',
+			'de' => 'WikidataCon: die erste internationale Konferenz rund um Wikidata',
 			'en' => ''
 		],
 		'category' => 'software',
@@ -42,7 +42,7 @@
 	[
 		'name' => 'digitalomat',
 		'title' => [
-			'de' => 'Digital-O-Mat: Die netzpolitische Wahlhilfe',
+			'de' => 'Digital-O-Mat: die netzpolitische Wahlhilfe',
 			'en' => ''
 		],
 		'category' => 'framework',
@@ -102,7 +102,7 @@
 	[
 		'name' => '2018',
 		'title' => [
-			'de' => 'Ausblick: So geht es 2018 weiter',
+			'de' => 'Ausblick: so geht es 2018 weiter',
 			'en' => ''
 		],
 		'category' => 'wikimedia',

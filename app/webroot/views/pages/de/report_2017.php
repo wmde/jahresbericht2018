@@ -20,7 +20,7 @@
 				</p>
 				<p>
 					Wir haben technische Verbesserungen an unserer freien Wissensdatenbank Wikidata vorgenommen, die innerhalb der Wikimedia-Projekte immer mehr genutzt wird. Über eine wachsende Zahl an Datenpartnerschaften wird Wikidata auch außerhalb der Wikimedia-Bewegung für Wissensprojekte genutzt. Mit der ersten Wikidata-Konferenz in Berlin konnten wir in diesem Jahr die Wikidata-Community auch sozial nachhaltig stärken.
-					Gemeinsam mit unseren Partnern bei der Wikimedia-Foundation und vielen Ehrenamtlichen haben wir auch die Software MediaWiki, mit der sämtliche Wikimedia-Projekte betrieben werden, verbessert und ausgebaut.
+					Gemeinsam mit unseren Partnern bei der Wikimedia Foundation und vielen Ehrenamtlichen haben wir auch die Software MediaWiki, mit der sämtliche Wikimedia-Projekte betrieben werden, verbessert und ausgebaut.
 				</p>
 				<p>
 					Wir konnten sowohl auf politisch-rechtlicher Ebene als auch in der Zusammenarbeit mit Institutionen neue wichtige Partnerschaften knüpfen, Einfluss nehmen und Diskussionen starten und vertiefen.
