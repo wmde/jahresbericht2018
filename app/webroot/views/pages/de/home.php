@@ -235,8 +235,10 @@
 					<img src="/assets/img/start_finanzen_circle_2.png" alt="Finanzvisualisierung">
 				</figure>
 			</div>
-			<p class="h--beta">Unsere Finanzen 2017</p>
-			<a class="finance-banner__button h--delta" href="<?= $url('finance', $lang) ?>">&mdash; Zum Finanzteil</a>
+			<a href="<?= $url('finance', $lang) ?>">
+				<p class="h--beta">Unsere Finanzen 2017</p>
+				<p class="finance-banner__button h--delta">&mdash; Zum Finanzteil</p>
+			</a>
 		</div>
 	</section>
 </main>

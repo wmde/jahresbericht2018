@@ -1625,21 +1625,22 @@ a:focus {
   display: block;
   text-align: left;
 }
+.finance-banner a {
+  display: block;
+}
+.finance-banner a:hover {
+  opacity: 0.5;
+}
 .finance-banner p {
   position: relative;
   z-index: 10;
   margin: 0;
   text-align: left;
   display: block;
-}
-.finance-banner__button {
-  position: relative;
-  z-index: 10;
-  margin-top: 40px;
   color: white;
 }
-.finance-banner__button:hover {
-  opacity: 0.5;
+.finance-banner__button {
+  margin-top: 40px;
 }
 
 @media (max-width: 550px) {
