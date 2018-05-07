@@ -34,17 +34,15 @@ rm -f app/webroot/index.*-e
 # is because we cannot know if certain assets will need
 # special compressors.
 
+for f in $(ls app/resources/g11n/po/*/LC_MESSAGES/*.po); do
+	msgfmt -o ${f/.po/.mo} --verbose $f
+done
+
+echo $TARGET_BROWSERS | tr '|' '\n' > .browserslistrc
+
 # Babelify in-place for full current ESx compatiblity.
 cat << EOF > .babelrc
 {
-	"presets": [
-		["env", {"targets": {"browsers": [
-			"last 2 versions",
-			"> 5%",
-			"ie 11",
-			"ff >= 48"
-		]}}]
-	],
 	"ignore": [
 		"underscore.js",
 		"require.js",
@@ -61,11 +59,7 @@ for f in $(find assets/js -type f -name *.js); do
 	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
 done
 
-for f in $(ls assets/css/*.css); do
-	cssnextgen $f > $f.tmp && mv $f.tmp $f
-	sqwish $f -o $f.min && mv $f.min $f
-done
-for f in $(find assets/css/views -type f -name *.css); do
+for f in $(find assets/css -type f -name *.css); do
     cssnextgen $f > $f.tmp && mv $f.tmp $f
     sqwish $f -o $f.min && mv $f.min $f
 done
