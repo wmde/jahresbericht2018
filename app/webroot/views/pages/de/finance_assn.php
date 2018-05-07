@@ -561,7 +561,7 @@
 			</table>
 		</div>
 		<div class="limit--m fin-detail__mittel">
-			Mehr Informationen zu unseren <a href="<?= $url('report/2017', $lang) ?>"target="new">Schwerpunkten 2017</a>
+			Mehr Informationen zu unseren <a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Jahresplanung_2017"target="new">Schwerpunkten 2017</a>
 		</div>
 	</section>
 	<section class="section cp">
