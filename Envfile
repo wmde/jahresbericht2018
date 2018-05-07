@@ -29,4 +29,4 @@ DEBUG="y"
 # -----------------------------------------------------------
 # Supported browsers, separate multiple constraints with a pipe symbol.
 # https://github.com/browserslist/browserslist#queries
-TARGET_BROWSERS="last 2 Chrome versions|last 2 Firefox versions|last 2 Safari versions|last 2 Edge versions|last 2 ChromeAndroid versions|last 2 iOS versions"
+TARGET_BROWSERS="and_chr 66|chrome 66|chrome 65|edge 17|edge 16|firefox 59|firefox 58|ios_saf 11.3|ios_saf 11.0-11.2|safari 11.1|safari 11"
