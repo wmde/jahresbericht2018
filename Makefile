@@ -66,6 +66,7 @@ update-assets:
 	curl -L https://raw.githubusercontent.com/zloirock/core-js/master/client/shim.js > $(ASSETS_PATH)/js/compat/core.js
 
 freeze-target-browsers:
-	@echo $(TARGET_BROWSERS) | tr '|' "\n" > .browserslist
+	echo $(TARGET_BROWSERS) | tr '|' "\n" > .browserslist
 	sed -i -e "s/TARGET_BROWSERS=.*/TARGET_BROWSERS=\"$(shell npx -q browserslist | tr "\n" '|')\"/g" Envfile
-	@rm .browserslist
+	rm .browserslist
+	rm -f Envfile-e
