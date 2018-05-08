@@ -9,8 +9,7 @@
 # in writing, software distributed on an "AS IS" BASIS, WITHOUT
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
-NAME ?= $(shell basename $(CURDIR))
-DOMAIN ?= $(subst _,-,$(NAME)).test
+include Envfile
 
 # Used when building the project, allowed to be overwritten, so external scripts
 # may pick a unique or simply different location where they want to process
@@ -28,9 +27,10 @@ install: prefill
 
 .PHONY: prefill
 prefill: 
-	sed -i -e "s|__NAME__|$(NAME)|g" Hoifile Envfile Deployfile
-	sed -i -e "s|__DOMAIN__|$(DOMAIN)|g" Hoifile Envfile
-	sed -i -e "s|__SECRET_BASE__|$(SECRET_BASE)|g" Envfile
+	sed -i -e "s|__NAME__|$(shell basename $(CURDIR))|g" Hoifile Envfile Deployfile
+	sed -i -e "s|__DOMAIN__|$(subst _,-,$(shell basename $(CURDIR))).test|g" Hoifile Envfile
+	sed -i -e "s|__SECRET_BASE__|$(shell openssl rand -base64 60 | tr -d '\n')|g" Envfile
+	sed -i -e "s|__DB_PASSWORD__||g" Hoifile Envfile 
 	# Some sed leave stray files.
 	rm -f Hoifile-e Envfile-e Deployfile-e
 
@@ -64,3 +64,8 @@ update-assets:
 	curl https://raw.githubusercontent.com/requirejs/domReady/latest/domReady.js > $(ASSETS_PATH)/js/require/domready.js
 	curl http://underscorejs.org/underscore.js > $(ASSETS_PATH)/js/underscore.js
 	curl -L https://raw.githubusercontent.com/zloirock/core-js/master/client/shim.js > $(ASSETS_PATH)/js/compat/core.js
+
+freeze-target-browsers:
+	@echo $(TARGET_BROWSERS) | tr '|' "\n" > .browserslist
+	sed -i -e "s/TARGET_BROWSERS=.*/TARGET_BROWSERS=\"$(shell npx -q browserslist | tr "\n" '|')\"/g" Envfile
+	@rm .browserslist
