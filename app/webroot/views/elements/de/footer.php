@@ -62,6 +62,29 @@
 					<h1 class="h--delta">Datenschutzerklärung</h1>
 					<p class="t--delta-serif">
 						Auf <a href="https://wikimedia.de/de/impressum" target="new">https://wikimedia.de/de/impressum</a> finden Sie alle Hinweise darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese oder andere Websites von Wikimedia Deutschland besuchen.
+					</p>
+				</section>
+				<section>
+					<h1 class="h--delta">Lizenzhinweise</h1>
+
+					<span class="h--delta">Konzeption:</span>
+					<span class="t--delta-serif"> Tjane Hartenstein, Elisabeth Mandl, Atelier Disko</span><br>
+
+					<span class="h--delta">Redaktion:</span>
+					<span class="t--delta-serif"> Tjane Hartenstein</span><br>
+
+					<span class="h--delta">Inhaltlich verantwortlich:</span>
+					<span class="t--delta-serif"> Abraham Taherivand</span><br>
+
+					<span class="h--delta">Design:</span>
+					<span class="t--delta-serif">Atelier Disko, <a href="https://atelierdisko.de" target="new">atelierdisko.de</a><br><br>
+
+					<p class="t--delta-serif">
+						Soweit nicht anders angegeben, stehen die Texte, Bilder, das Layout und der Code dieser Webseite unter der <a href="https://creativecommons.org/licenses/by/4.0/" target="new">Creative Commons Attribution-Lizenz (CC BY-SA) in der Version 4.0</a>.
+					</p>
+					<a href="https://creativecommons.org/licenses/by/4.0/" target="new" class="imprint__cc-logo">
+						<img src="/assets/ico/by.svg" alt="Creative Commons Logo" width="120" height="42" />
+					</a>
 				</section>
 			</article>
 		</div>
