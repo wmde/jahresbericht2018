@@ -46,7 +46,7 @@ bin/build.sh
 cd -
 
 if [[ $TRANSFER_METHOD == "manual" ]]; then
-	BUILD_FILE=$TMP/${NAME}_$(date +%Y-%m-%d-%H-%M).tar.gz
+	BUILD_FILE=$HOME/$(basename $SOURCE_PATH)_$(date +%Y-%m-%d-%H-%M).tar.gz
 	tar cvfz $BUILD_FILE *
 
 	printf "Transfer method 'manual' was selected, to finalize the deployment you must\n"
