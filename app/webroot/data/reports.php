@@ -3,7 +3,7 @@
 		'name' => 'volunteers',
 		'title' => [
 			'de' => 'Digitales Ehrenamt unterstützen',
-			'en' => ''
+			'en' => 'Support digital volunteering'
 		],
 		'category' => 'volunteers',
 		'cover' => '/assets/img/01_volunteers_cover.jpg',
@@ -13,7 +13,7 @@
 		'name' => 'newvolunteers',
 		'title' => [
 			'de' => 'Mehr Menschen für die Wikipedia begeistern',
-			'en' => ''
+			'en' => 'Getting more people excited about Wikipedia'
 		],
 		'category' => 'volunteers',
 		'cover' => '/assets/img/02_newvolunteers_cover.jpg',
@@ -23,7 +23,7 @@
 		'name' => 'knowledge',
 		'title' => [
 			'de' => 'Einfacher Wissen teilen',
-			'en' => ''
+			'en' => 'Share knowledge more easily'
 		],
 		'category' => 'software',
 		'cover' => '/assets/img/03_knowledge_cover.jpg',
@@ -33,7 +33,7 @@
 		'name' => 'wikicon',
 		'title' => [
 			'de' => 'WikidataCon: die erste internationale Konferenz rund um Wikidata',
-			'en' => ''
+			'en' => 'WikidataCon: the first international Wikidata conference'
 		],
 		'category' => 'software',
 		'cover' => '/assets/img/04_wikicon_cover.jpg',
@@ -43,7 +43,7 @@
 		'name' => 'digitalomat',
 		'title' => [
 			'de' => 'Digital-O-Mat: die netzpolitische Wahlhilfe',
-			'en' => ''
+			'en' => 'Digital-O-Mat: an election aid for net politics'
 		],
 		'category' => 'framework',
 		'cover' => '/assets/img/05_digitalomat_cover.jpg',
@@ -53,7 +53,7 @@
 		'name' => 'glam',
 		'title' => [
 			'de' => 'Auf Tour zu Kulturgütern für die Wikipedia',
-			'en' => ''
+			'en' => 'Cultural heritage for Wikipedia'
 		],
 		'category' => 'framework',
 		'cover' => '/assets/img/06_glam_cover.jpg',
@@ -63,7 +63,7 @@
 		'name' => 'fellow',
 		'title' => [
 			'de' => 'Offene Wissenschaft aktiv vorantreiben',
-			'en' => ''
+			'en' => 'Driving forward open science'
 		],
 		'category' => 'framework',
 		'cover' => '/assets/img/07_fellow_cover.jpg',
@@ -73,7 +73,7 @@
 		'name' => '2017',
 		'title' => [
 			'de' => 'Das Jahr 2017 bei Wikimedia Deutschland',
-			'en' => ''
+			'en' => 'Looking back at 2017'
 		],
 		'category' => 'wikimedia',
 		'cover' => '/assets/img/11_2017_cover.jpg',
@@ -83,7 +83,7 @@
 		'name' => 'members',
 		'title' => [
 			'de' => 'Schon Mitglied?',
-			'en' => ''
+			'en' => 'Join us as a member!'
 		],
 		'category' => 'wikimedia',
 		'cover' => '/assets/img/08_members_cover.jpg',
@@ -93,7 +93,7 @@
 		'name' => 'international',
 		'title' => [
 			'de' => 'Wikimedias strategische Ausrichtung anpacken',
-			'en' => ''
+			'en' => 'Addressing Wikimedia’s strategic direction'
 		],
 		'category' => 'wikimedia',
 		'cover' => '/assets/img/09_international_cover.jpg',
@@ -103,7 +103,7 @@
 		'name' => '2018',
 		'title' => [
 			'de' => 'Ausblick: So geht es 2018 weiter',
-			'en' => ''
+			'en' => 'Prospects for 2018'
 		],
 		'category' => 'wikimedia',
 		'cover' => '/assets/img/10_2018_cover.jpg',
