@@ -56,8 +56,8 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/CL3P62YWOY4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Auf der 20. Mitgliederversammlung von Wikimedia Deutschland am 17.06.2017 in Bamberg wird der Vereinsschwerpunkt „Neue Freiwillige für die Wikipedia gewinnen und halten“ vorgestellt;
-								<a href="http://commons.wikimedia.org/wiki/File:Neue_Ehrenamtliche_gewinnen_und_halten_-_Video_von_der_20._Mitgliederversammlung_-_Langversion.webm" target="new">Wikimedia Deutschland sucht neue Freiwillige für die Wikipedia</a>, kreative Leitung: Elisabeth Mandl, Kamera und Schnitt: Stefan Brainbauer für Wikimedia Deutschland
+								At Wikimedia Deutschland’s 20th General Assembly on 17. 06. 2017 in Bamberg, we presented one of the main topics of our work: attract and retain new volunteers for Wikipedia
+								<a href="http://commons.wikimedia.org/wiki/File:Neue_Ehrenamtliche_gewinnen_und_halten_-_Video_von_der_20._Mitgliederversammlung_-_Langversion.webm" target="new">Wikimedia deutschland is looking for new Volunteers for Wikipedia</a>, creative director: Elisabeth Mandl, camera and editing:  Stefan Brainbauer for Wikimedia Deutschland
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -69,7 +69,7 @@
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to focal points’ overview</a>
 		<a href="/en/report/knowledge" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
+			<p class="button--small">next topic</p>
 			<p>Share knowledge more easily</p>
 		</a>
 	</section>

@@ -21,14 +21,14 @@
 				>
 				<img class="home-hero__img--second" src="assets/img/wk_conference_tinted.jpg" alt="Wikimedia Konferenz">
 			</figure>
-			<p>Jason Krüger for Wikimedia Deutschland e.V.; adapted by user: David Saroyan (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2017_–_Group_photo_2_(big)_with_WMCON_logo.jpg" target="new">Wikimedia Commons</a>), beschnitten, eingefärbt von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new"> <span style ="white-space: nowrap">CC BY-SA 4.0</span></a></p>
+			<p>Jason Krüger for Wikimedia Deutschland e.V.; adapted by user: David Saroyan (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2017_–_Group_photo_2_(big)_with_WMCON_logo.jpg" target="new">Wikimedia Commons</a>), cropped, coloured by Atelier Disko for WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new"> <span style ="white-space: nowrap">CC BY-SA 4.0</span></a></p>
 		</div>
 		<section class="section cp home__intro">
 			<img src="assets/img/wk_conference_tinted.jpg" alt="Wikimedia Konferenz">
 			<div class="home__intro--layer"></div>
 		</section>
 		<div class="home__box">
-			<div class="limit--m h--alpha">Gemeinsam wissen wir mehr</div>
+			<div class="limit--m h--alpha">Together we know more</div>
 		</div>
 	</div>
 	</section>
@@ -114,7 +114,7 @@
 		</div>
 		<button class="achievements__button t--zeta-emph animation-ctl-button invis">
 			<div class="animation-ctl-button__symbol"></div>
-			Neue Erfolge laden
+			Show more achievements
 		</button>
 	</section>
 	<section class="chart cp--component-section">
@@ -146,7 +146,7 @@
 				<div class="chart__headline--description t--epsilon">
 					March 2013 - March 2018
 				</div>
-				<h1 class="h--beta">Mitgliederentwicklung</h1>
+				<h1 class="h--beta">Member development</h1>
 			</div>
 			<div class="chart__cards-wrapper">
 				<div class="chart__cards chart__cards--desktop loading"></div>
@@ -207,11 +207,11 @@
 			</div>
 			<button class="animation-ctl-button reports__button reports__button--reload t--zeta-emph invis">
 				<div class="animation-ctl-button__symbol"></div>
-				Neue Themen laden
+				Show more topics
 			</button>
 			<a href="<?= $lang . '/report' ?>" class="animation-ctl-button reports__button reports__button--all t--zeta-emph invis">
 				<div class="animation-ctl-button__symbol"></div>
-				Alle Themen anzeigen
+				Show all topics
 			</a>
 		</div>
 	</section>

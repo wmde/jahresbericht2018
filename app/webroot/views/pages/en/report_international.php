@@ -52,8 +52,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/5CKFKyc7We4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Welche Zukunft möchten wir gemeinsam aufbauen? Dieses Video zeigt den globalen Prozess 2017, die zukünftige Rolle von Wikimedia in der Welt zu definieren;
-								Wikimedia 2030, Wikimedia Foundation,
+								What kind of future do we want to build together? This video shows the global process 2017, to define Wikimedia’s future role in the world; Wikimedia 2030, Wikimedia Foundation,
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -67,7 +66,7 @@
 			<div class="border-box border-box--report">
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
-					<li><a href="https://meta.wikimedia.org/wiki/Strategy/Wikimedia_movement/2017/Direction/de#Unsere_Strategische_Ausrichtung:_Dienst_und_Gerechtigkeit" target="new">Die strategische Ausrichtung von Wikimedia</a></li>
+					<li><a href="https://meta.wikimedia.org/wiki/Strategy/Wikimedia_movement/2017/Direction/de#Unsere_Strategische_Ausrichtung:_Dienst_und_Gerechtigkeit" target="new">Wikimedia’s strategic direction</a></li>
 				</ul>
 			</div>
 		</div>
@@ -75,7 +74,7 @@
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to focal points’ overview</a>
 		<a href="/en/report/2018" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
+			<p class="button--small">next topic</p>
 			<p>Prospects for 2018</p>
 		</a>
 	</section>

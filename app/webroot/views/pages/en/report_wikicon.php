@@ -5,7 +5,7 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Fuzheado (<a href="https://commons.wikimedia.org/wiki/File:Wikidatacon-2017-group-pano-1.jpg" target="new">Wikimedia Commons</a>), beschnitten von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">Fuzheado (<a href="https://commons.wikimedia.org/wiki/File:Wikidatacon-2017-group-pano-1.jpg" target="new">Wikimedia Commons</a>), cropped by Atelier Disko for WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>WikidataCon: the first international Wikidata conference</em>
@@ -52,7 +52,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/-qC0otvWIiU?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Am 29. November wurde die freie Wissensdatenbank Wikidata 5 Jahre alt. Wikimedia Deutschland dankt der Community für ihr Engagement!; 5 Jahre Wikidata – Happy Birthday!, Elisabeth Mandl und Denis Schröder für Wikimedia Deutschland,
+								On October 29th the Free Knowledge database Wikidata celebrated its 5th birthday. Wikimedia Deutschland says thanks to the community for its commitment!, 5 years of Wikidata – Happy Birthday!, Elisabeth Mandl and Denis Schröder for Wikimedia Deutschland
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -63,7 +63,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/DC32C220Cuw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Am 22.11.2017 hielt Lydia Pintscher den Vortrag "Wikidata - Curating Data about the World with 17000 Volunteers" im Rahmen der Ringvorlesung "Open Technology For An Open Society" #ot4os , von der Freie Universität Berlin und Wikimedia Deutschland; Lydia Pintscher: Wikidata #ot4os, Kamera und Schnitt: Henning Röhrborn, Wikimedia Deutschland, Freie Universität Berlin, Center für Digitale Systeme (CeDiS);
+								On 22.11.2017 Lydia Pintscher gave a talk on "Wikidata – Curating Data about the World with 17000 Volunteers" as part of the public lecture series "Open Technology For An Open Society" #ot4os co-hosted by the Free University Berlin and Wikimedia Deutschland; Lydia Pintscher: Wikidata #ot4os, camera and editing: Henning Röhrborn, Wikimedia Deutschland, Freie Universität Berlin, Center für Digitale Systeme (CeDiS)
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -77,7 +77,7 @@
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to focal points’ overview</a>
 		<a href="/en/report/digitalomat" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
+			<p class="button--small">next topic</p>
 			<p>Digital-O-Mat: an election aid for net politics</p>
 		</a>
 	</section>

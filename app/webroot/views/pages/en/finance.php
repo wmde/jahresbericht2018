@@ -2,7 +2,7 @@
 	<section class="section section__body cp">
 		<div class="limit--s finance__intro">
 			<h1 class="h--beta finance__intro-heading">Finances</h1>
-			<p class="t--gamma">2017 war für Wikimedia Deutschland aus finanzieller Sicht erneut ein gutes Jahr.</p>
+			<p class="t--gamma">From a financial point of view, 2017 was yet again a good year for Wikimedia Deutschland.</p>
 		</div>
 		<div class="limit--m finance__boxes">
 			<a class="border-box border-box--finance t--epsilon" href="<?= $url('finance/assn', $lang) ?>">

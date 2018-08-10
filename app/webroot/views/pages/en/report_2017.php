@@ -44,7 +44,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/tR-hUCN9Jl8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Roter Faden 2017 Zeitraffer, Wikimedia Deutschland,
+								Common thread 2017 time lapse, Wikimedia Deutschland,
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -56,7 +56,7 @@
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to focal points’ overview</a>
 		<a href="/en/report/members" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
+			<p class="button--small">next topic</p>
 			<p>Join us as a member!</p>
 		</a>
 	</section>

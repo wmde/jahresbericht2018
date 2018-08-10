@@ -71,7 +71,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/ZJ6ecOJaGiw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Aufruf zum Mitmachen beim Fotowettbewerb Wiki Loves Monuments; <a href="http://commons.wikimedia.org/wiki/File:Wiki_loves_Monuments_2017_Video.webm" target="new">Wiki Loves Monuments 2017</a>, Wiki Loves Monuments 2017 by Wikimedia UK, bearbeitet von Elisabeth Mandl (Wikimedia Deutschland),
+								Invitation to participate in the photo competition Wiki Loves Monuments; <a href="http://commons.wikimedia.org/wiki/File:Wiki_loves_Monuments_2017_Video.webm" target="new">Wiki Loves Monuments 2017</a>, Wiki Loves Monuments 2017 by Wikimedia UK, adapted by Elisabeth Mandl (Wikimedia Deutschland),
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -83,7 +83,7 @@
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to focal points’ overview</a>
 		<a href="/en/report/newvolunteers" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
+			<p class="button--small">next topic</p>
 			<p>Getting more people excited about Wikipedia</p>
 		</a>
 	</section>

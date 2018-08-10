@@ -5,7 +5,7 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Denis Schroeder (WMDE) (<a href="https://commons.wikimedia.org/wiki/File:Screenshot_Digital-O-Mat.png" target="new">Wikimedia Commons</a>), beschnitten von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">Denis Schroeder (WMDE) (<a href="https://commons.wikimedia.org/wiki/File:Screenshot_Digital-O-Mat.png" target="new">Wikimedia Commons</a>),  cropped by Atelier Disko for WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Digital-O-Mat: an election aid for net politics</em>
@@ -52,8 +52,8 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/4YE42ksz4XA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Networks & Politics - Zwischen nationaler Digitalpolitik und Internet Governance: Internetregulierung in Deutschland nach der Wahl;
-								Networks & Politics - Zwischen nationaler Digitalpolitik und Internet Governance, Kamera und Schnitt: Verena Vargas Koch für Wikimedia Deutschland,
+								Networks & Politics - between national digital policy and internet governance: internet regulation in germany after the elections;
+								Networks & Politics - between national digital policy and internet governance, camera and editing: Verena Vargas Koch for Wikimedia Deutschland,
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -64,8 +64,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/AsGxYAFe-b8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Am 10. Oktober 2017 wurde bei Wikimedia Deutschland die von der Bundesregierung befeuerte Debatte über ein so genanntes Dateneigentum diskutiert;
-								Networks & Politics – Luciano Floridi on Data Ownership, Kamera und Schnitt: Verena Vargas Koch für Wikimedia Deutschland,
+								On 10. October 2017 the debate on the so-called data ownership, fuelled by the federal government, was discussed at Wikimedia Deutschland; Networks & Politics – Luciano Floridi on Data Ownership, camera and editing: Verena Vargas Koch for Wikimedia Deutschland
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -76,8 +75,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/8_URZDvowZQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Coding da Vinci ist der erste deutsche Hackathon für offene Kulturdaten. Der Film dokumentiert Coding da Vinci in Berlin 2017;
-								Coding da Vinci 2017, Helmbrecht Film für Wikimedia Deutschland,
+								Coding da Vinci is the first German open cultural data hackathon. The film documents Coding da Vinci 2017 in Berlin; Coding da Vinci 2017, Helmbrecht Film for Wikimedia Deutschland,
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -91,7 +89,7 @@
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to focal points’ overview</a>
 		<a href="/en/report/glam" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
+			<p class="button--small">next topic</p>
 			<p>Cultural heritage for Wikipedia</p>
 		</a>
 	</section>

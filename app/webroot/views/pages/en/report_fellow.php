@@ -49,8 +49,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/ZQ6iXhlwBAM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Das Fellow-Programm Freies Wissen ist ein gemeinsames Projekt von Wikimedia Deutschland, dem Stifterverband und der VolkswagenStiftung, und richtet sich an Nachwuchswissenschaftlerinnen und -wissenschaftler, die ihre Forschungsprozesse offen gestalten möchten;
-								Fellow-Programm Freies Wissen, Kamera: Ian Delú, Joana Kauer, Schnitt: Joana Kauer für Wikimedia Deutschland,
+								The Open Science Fellows Program is a joined project by Wikimedia Deutschland, the Stifterverband and the VolkswagenStiftung and is targeted towards young scientists that want to open their research process. Fellow-Programm Freies Wissen (Open Science Fellows Program), camera: Ian Delú, Joana Kauer, editing: Joana Kauer for Wikimedia Deutschland,
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
 							</div>
 						</div>
@@ -64,11 +63,11 @@
 			<div class="border-box border-box--report">
 				<div class="t--delta">LINKS</div>
 				<p>
-					Die beiden Programm-Verantwortlichen bei Wikimedia, Sarah Behrens und Christopher Schwarzkopf, erzählen im im Open Science Radio mehr über die Idee, die Motivation, den bereits erfolgreich absolvierten ersten Durchlauf, sowie den gegenwärtigen Durchlauf und die Zukunft des Programms.
+					In the Open Science Radio, the two program managers at Wikimedia Deutschland, Sarah behrens and Christopher Schwarzkopf, talk about the idea and motivation for the Open Science Fellows Program, its successfully completed first round as well as the ongoing second round and the future of the program.
 				</p>
 				<ul class="bullet-list">
-					<li><a href="http://www.openscienceradio.org/2017/12/12/osr094-freies-wissen-in-der-wissenschaft-wmde-de/" target="new">Folge 1</a></li>
-					<li><a href="http://www.openscienceradio.org/2018/02/07/osr096-fellow-programm-projekte-ring-a-scientist-organizing-openness-wmde-de/" target="new">Folge 2</a></li>
+					<li><a href="http://www.openscienceradio.org/2017/12/12/osr094-freies-wissen-in-der-wissenschaft-wmde-de/" target="new">Part 1</a></li>
+					<li><a href="http://www.openscienceradio.org/2018/02/07/osr096-fellow-programm-projekte-ring-a-scientist-organizing-openness-wmde-de/" target="new">Part 2</a></li>
 				</ul>
 			</div>
 		</div>
@@ -76,7 +75,7 @@
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to focal points’ overview</a>
 		<a href="/en/report/2017" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
+			<p class="button--small">next topic</p>
 			<p>Looking back at 2017</p>
 		</a>
 	</section>

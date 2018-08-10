@@ -53,7 +53,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/-qC0otvWIiU?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Am 29. November wurde die freie Wissensdatenbank Wikidata 5 Jahre alt. Wikimedia Deutschland dankt der Community für ihr Engagement!; 5 Jahre Wikidata – Happy Birthday!, Elisabeth Mandl und Denis Schröder für Wikimedia Deutschland,
+								Am 29. Oktober wurde die freie Wissensdatenbank Wikidata 5 Jahre alt. Wikimedia Deutschland dankt der Community für ihr Engagement!; 5 Jahre Wikidata – Happy Birthday!, Elisabeth Mandl und Denis Schröder für Wikimedia Deutschland,
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
 							</div>
 						</div>
