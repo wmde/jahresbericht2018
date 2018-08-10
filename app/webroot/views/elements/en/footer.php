@@ -38,11 +38,11 @@
 			<a class="imprint-close image-replace invis" href="#imprint-close">Close</a>
 			<article id="imprint" class="imprint invis cp--2x-bottom">
 				<h1 class="h--delta">
-					Dieses Impressum gilt für die Domain
+					This imprint applies to the Domain
 					<a href="http://2017.wikimedia.de">2017.wikimedia.de</a>.
 				</h1>
 				<section>
-					<h1 class="h--delta">Diensteanbieter</h1>
+					<h1 class="h--delta">Service provider</h1>
 					<p class="t--delta-serif">
 						Wikimedia Deutschland – Gesellschaft zur Förderung Freien Wissens e. V.<br>
 						Tempelhofer Ufer 23/24<br>
@@ -50,11 +50,11 @@
 					</p>
 					<p class="t--delta-serif">
 						E-Mail: info@wikimedia.de<br>
-						Telefon: +49 (0)30-219 15 826-0<br>
+						Telephone: +49 (0)30-219 15 826-0<br>
 						Fax: +49 (0)30-219 158 26-9
 					</p>
 					<p class="t--delta-serif">
-						Geschäftsführender Vorstand: Abraham Taherivand
+						Executive president: Abraham Taherivand
 					</p>
 					<p class="t--delta-serif">
 						Eingetragen im Vereinsregister des Amtsgerichts Charlottenburg, VR 23855. Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: Abraham Taherivand (Anschrift wie oben).
@@ -67,12 +67,12 @@
 					</p>
 				</section>
 				<section>
-					<h1 class="h--delta">Lizenzhinweise</h1>
+					<h1 class="h--delta">Licences</h1>
 
-					<span class="h--delta">Konzeption:</span>
+					<span class="h--delta">Concept:</span>
 					<span class="t--delta-serif"> Tjane Hartenstein, Elisabeth Mandl, Atelier Disko</span><br>
 
-					<span class="h--delta">Redaktion:</span>
+					<span class="h--delta">Editor:</span>
 					<span class="t--delta-serif"> Tjane Hartenstein</span><br>
 
 					<span class="h--delta">Responsible for content:</span>
