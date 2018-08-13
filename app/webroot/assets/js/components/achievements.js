@@ -107,17 +107,18 @@ define('components/achievements', [], function() {
     }
 
     countUp(el, onCountedUp, duration = 700, maxRange = 13) {
-      let number = el.dataset.number;
+      let number = parseInt(el.dataset.number, 10);
+      let lang = document.documentElement.getAttribute('lang')
+
       let current = 0;
       maxRange = Math.min(maxRange, number);
       let stepTime = Math.abs(Math.floor(duration / maxRange));
       let stepSize = Math.floor(number / maxRange);
-      let numberSeperatorRegex = /\B(?=(\d{3})+(?!\d))/g;
 
       // Freeze the size of the placeholder.
       let placeholder = el.querySelector('.achievement__number-placeholder');
       placeholder.style.width = 'auto';
-      placeholder.innerHTML = number.toString().replace(numberSeperatorRegex, '.'); // Add thousands seperator.
+      placeholder.innerHTML = number.ToLocaleString(lang);
       placeholder.style.width = placeholder.offsetWidth + 'px';
 
       let timer = setInterval(() => {
@@ -128,13 +129,12 @@ define('components/achievements', [], function() {
         stepSize = (stepSize < 1) ? 1 : stepSize;
         current = current + stepSize;
         current = (current > number) ? number : current;
-        placeholder.innerHTML = current.toString().replace(numberSeperatorRegex, '.');
-        placeholder.innerHTML = current.toString().replace(numberSeperatorRegex, '.');
+        placeholder.innerHTML = current.toLocaleString(lang);
         if (current == number) {
           clearInterval(timer);
           onCountedUp();
         }
       }, stepTime);
     }
-  }
+ }
 });
