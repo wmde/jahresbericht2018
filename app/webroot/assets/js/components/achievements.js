@@ -118,7 +118,7 @@ define('components/achievements', [], function() {
       // Freeze the size of the placeholder.
       let placeholder = el.querySelector('.achievement__number-placeholder');
       placeholder.style.width = 'auto';
-      placeholder.innerHTML = number.ToLocaleString(lang);
+      placeholder.innerHTML = number.toLocaleString(lang);
       placeholder.style.width = placeholder.offsetWidth + 'px';
 
       let timer = setInterval(() => {
