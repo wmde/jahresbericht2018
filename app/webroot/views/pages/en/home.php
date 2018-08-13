@@ -155,22 +155,22 @@
 			</div>
 			<div class="chart__dates-wrapper t--epsilon">
 				<div class="chart__date"><div class="chart__date-line">&mdash;</div>March 2013
-					<div class="chart__date-value">2.618</div>
+					<div class="chart__date-value">2,618</div>
 				</div>
 				<div class="chart__date"><div class="chart__date-line">&mdash;</div>March 2014
-					<div class="chart__date-value">9.803</div>
+					<div class="chart__date-value">9,803</div>
 				</div>
 				<div class="chart__date"><div class="chart__date-line">&mdash;</div>March 2015
-					<div class="chart__date-value">15.778</div>
+					<div class="chart__date-value">15,778</div>
 				</div>
 				<div class="chart__date"><div class="chart__date-line">&mdash;</div>March 2016
-					<div class="chart__date-value">29.169</div>
+					<div class="chart__date-value">29,169</div>
 				</div>
 				<div class="chart__date"><div class="chart__date-line">&mdash;</div>March 2017
-					<div class="chart__date-value">43.138</div>
+					<div class="chart__date-value">43,138</div>
 				</div>
 				<div class="chart__date"><div class="chart__date-line">&mdash;</div>March 2018
-					<div class="chart__date-value">65.374</div>
+					<div class="chart__date-value">65,374</div>
 				</div>
 			</div>
 		</div>
