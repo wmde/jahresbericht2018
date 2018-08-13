@@ -111,29 +111,6 @@ define('components/chart', [], function() {
       return element.querySelectorAll('.chart__card');
     }
 
-    insertDates(element, number, cards) {
-      let dateDiv = document.createElement('div');
-      dateDiv.className = 'chart__date';
-
-      for (let i = 0; i < number; i++) {
-        let node = dateDiv.cloneNode();
-        // Get the date and value at that fraction of this.source.
-        let fraction = i / (number -1);
-        let days = this.source[0].days + Math.floor(fraction * this.rangeOfDays);
-
-        let date = new Date ((days + 1) * 60*60*24*1000);
-        let day = date.getDate().toString();
-        let month = date.getMonth().toString();
-        let year = date.getFullYear();
-        if (day.length < 2) day = '0' + day;
-        if (month.length < 2) month = '0' + month;
-
-        let value = Math.floor(this.getValue(fraction) * (this.maxValue - this.minValue) + this.minValue);
-        node.innerHTML = day + '.' + month + '.' + year + '<div class="chart__date-value">' + value.toLocaleString() + '</div>';
-        element.appendChild(node);
-      }
-    }
-
     // Gets the interpolated value at a specified fraction of the whole table
     getValue(fraction) {
       // Get the number of days.
