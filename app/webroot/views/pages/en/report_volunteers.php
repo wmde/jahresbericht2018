@@ -11,7 +11,7 @@
 				<em>Support digital volunteering</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Voluntary Wikipedia contributors share their knowledge for free through the free encyclopaedia by correcting errors, adding photographs, ensuring information is kept up-to-date as well as writing entire articles. There is a whole range of other Wikimedia projects that work on the same principle as Wikipedia. This includes the free travel guide Wikivoyage, the free dictionary Wiktionary and the free knowledge database Wikidata. We regard this contributions to the Wikimedia knowledge-sharing projects as digital volunteering and provide support to strengthen it wherever we can. Without the tireless efforts of many thousands of volunteers, projects such as Wikipedia simply could not exist.
+				Voluntary Wikipedia contributors share their knowledge for free through the free encyclopaedia by correcting errors, adding photographs, ensuring information is kept up-to-date as well as writing entire articles. There is a whole range of other Wikimedia projects that work on the same principle as Wikipedia. This includes the free travel guide Wikivoyage, the free dictionary Wiktionary and the Free Knowledge database Wikidata. We regard this contributions to the Wikimedia knowledge-sharing projects as digital volunteering and provide support to strengthen it wherever we can. Without the tireless efforts of many thousands of volunteers, projects such as Wikipedia simply could not exist.
 			</div>
 			<div class="section__body t--gamma-serif">
 				<p>

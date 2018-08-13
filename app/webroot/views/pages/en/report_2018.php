@@ -24,14 +24,14 @@
 			</p>
 			<div class="section__body t--gamma-serif">
 				<p>
-					In 2018 we will continue to work with volunteers and the Wikimedia Foundation to improve the software that runs all Wikimedia projects. We will continue working to improve the quality of the data in Wikidata and ensure that the free knowledge database is made even more usable for other Wikimedia projects as well as external projects.
+					In 2018 we will continue to work with volunteers and the Wikimedia Foundation to improve the software that runs all Wikimedia projects. We will continue working to improve the quality of the data in Wikidata and ensure that the Free Knowledge database is made even more usable for other Wikimedia projects as well as external projects.
 				</p>
 			</div>
-			<p class="h--gamma">Conditions for free knowledge
+			<p class="h--gamma">Conditions for Free Knowledge
 			</p>
 			<div class="section__body t--gamma-serif">
 				<p>
-					In 2018 we will continue working to strengthen the conditions for Free Knowledge. We will  explain the benefits of Free Knowledge in the fields of education, science and culture and actively support relevant institutions in making their own contributions to Wikimedia projects as a role model for others. Our aims in the political area include ensuring that publicly financed knowledge, such as studies carried out by the state and copyright-free information from official documents, is freely available to all and can be used by Wikipedia.
+					In 2018 we will continue working to strengthen the conditions for Free Knowledge. We will  explain the benefits of Free Knowledge in the fields of education, science and culture and actively support relevant institutions in making their own contributions to Wikimedia projects as a role model for others. Our aims in the political area include ensuring that publicly financed knowledge, such as studies carried out by the state and copyright-free information from official documents, is freely available to all and can be used in Wikipedia.
 				</p>
 			</div>
 		</div>

@@ -5,7 +5,7 @@
 			<div class="main-footer__info">
 				<div class="main-footer__info-1 t--delta-serif">
 					<p>
-						Wikimedia Deutschland — Gesellschaft zur Förderung Freien Wissens e. V.
+						Wikimedia Deutschland - Association for the promotion of Free Knowledge e. V.
 					</p>
 					<p>
 						Postfach 61 03 49<br>
@@ -14,7 +14,7 @@
 					<p>
 						Tempelhofer Ufer 23-24<br>
 						10963 Berlin, Germany</br>
-						Telephone: <a href="tel:004930219158260">030 219 158 26-0</a></br>
+						Phone: <a href="tel:004930219158260">030 219 158 26-0</a></br>
 						Fax: 030 219 158 26-9
 					</p>
 				</div>
@@ -38,36 +38,36 @@
 			<a class="imprint-close image-replace invis" href="#imprint-close">Close</a>
 			<article id="imprint" class="imprint invis cp--2x-bottom">
 				<h1 class="h--delta">
-					This imprint applies to the Domain
+					This imprint is valid for the domain
 					<a href="http://2017.wikimedia.de">2017.wikimedia.de</a>.
 				</h1>
 				<section>
 					<h1 class="h--delta">Service provider</h1>
 					<p class="t--delta-serif">
-						Wikimedia Deutschland – Gesellschaft zur Förderung Freien Wissens e. V.<br>
+						Wikimedia Deutschland – Association for the promotion of Free Knowledge e. V.<br>
 						Tempelhofer Ufer 23/24<br>
 						10963 Berlin, Germany
 					</p>
 					<p class="t--delta-serif">
-						E-Mail: info@wikimedia.de<br>
-						Telephone: +49 (0)30-219 15 826-0<br>
+						Mail: info@wikimedia.de<br>
+						Phone: +49 (0)30-219 15 826-0<br>
 						Fax: +49 (0)30-219 158 26-9
 					</p>
 					<p class="t--delta-serif">
-						Executive president: Abraham Taherivand
+						Executive Director: Abraham Taherivand
 					</p>
 					<p class="t--delta-serif">
-						Eingetragen im Vereinsregister des Amtsgerichts Charlottenburg, VR 23855. Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: Abraham Taherivand (Anschrift wie oben).
+						Registered in the Register of Associations of the district court Berlin-Charlottenburg, VR 23855. Responsible for content according to § 55 paragraph 2 RStV: Abraham Taherivand (address as above).
 					</p>
 				</section>
 				<section>
 					<h1 class="h--delta">Data protection</h1>
 					<p class="t--delta-serif">
-						At <a href="https://wikimedia.de/de/impressum" target="new">https://wikimedia.de/de/impressum</a> you will find all the information about what happens with your personal data when you visit this website or other websites of Wikimedia Deutschland.
+						At <a href="https://wikimedia.de/de/impressum" target="new">https://wikimedia.de/de/impressum</a> you will find notes that provide a basic overview of what happens to your personal data when you visit this or other Wikimedia Deutschland websites.
 					</p>
 				</section>
 				<section>
-					<h1 class="h--delta">Licences</h1>
+					<h1 class="h--delta">Credits</h1>
 
 					<span class="h--delta">Concept:</span>
 					<span class="t--delta-serif"> Tjane Hartenstein, Elisabeth Mandl, Atelier Disko</span><br>
@@ -82,7 +82,7 @@
 					<span class="t--delta-serif">Atelier Disko, <a href="https://atelierdisko.de" target="new">atelierdisko.de</a><br><br>
 
 					<p class="t--delta-serif">
-						The text, graphics, and layout of this website are published under the terms of the <a href="https://creativecommons.org/licenses/by/4.0/" target="new">“Creative Commons Attribution” license (CC BY­SA) Version 4.0</a>.
+						If not stated otherwise, the text, images, graphics, layout and code used in this website are licensed under the terms and conditions of <a href="https://creativecommons.org/licenses/by/4.0/" target="new">version 4.0 of the Creative Commons Attribution license (CC-BY-SA)</a>.
 					</p>
 					<a href="https://creativecommons.org/licenses/by/4.0/" target="new" class="imprint__cc-logo">
 						<img src="/assets/ico/by.svg" alt="Creative Commons Logo" width="120" height="42" />

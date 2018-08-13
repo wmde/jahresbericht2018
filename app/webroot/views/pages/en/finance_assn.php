@@ -535,7 +535,7 @@
 					<td class="ft__col-val ft__green-border">1.848.354 €</td>
 				</tr>
 				<tr class="ft__row-line">
-					<td class="ft__col-key">Focal point 4: Strengthen political and legal work efforts aimed at promoting free knowledge</td>
+					<td class="ft__col-key">Focal point 4: Strengthen political and legal work efforts aimed at promoting Free Knowledge</td>
 					<td class="ft__col-val ft__green-border">523.731 €</td>
 				</tr>
 				<tr class="ft__row-line">
