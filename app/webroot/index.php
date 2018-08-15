@@ -56,6 +56,13 @@ $helpers['switchLanguageFromUrl'] = function($lang) use ($path) {
 	return rtrim('/' . ($lang === 'de' ? 'en' : 'de') . '' . $path, '/');
 };
 
+$helpers['formatNumber'] = function($number, $lang) {
+	if ($lang !== 'de') {
+		return number_format($number);
+	}
+	return number_format($number, 0, ',', '.');
+};
+
 //
 // Scripts
 //
