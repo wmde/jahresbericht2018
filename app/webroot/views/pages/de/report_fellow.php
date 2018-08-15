@@ -24,7 +24,7 @@
 						<?= $achievements[0]['category'][$lang] ?>
 					</span>
 					<span class="achievement-box__number h--alpha">
-						<?= $achievements[0]['number'] ?>
+						<?= $formatNumber($achievements[0]['number'], $lang) ?>
 					</span>
 					<span class="achievement-box__teaser t--delta-serif">
 						<?= $achievements[0]['teaser'][$lang] ?>

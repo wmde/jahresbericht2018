@@ -67,7 +67,7 @@
 					</div>
 					<div class="achievement__number t--alpha" data-number="<?= $achievements[0]['number'] ?>">
 						<div class="achievement__number-placeholder">
-							<?= $achievements[0]['number'] ?>
+							<?= $formatNumber($achievements[0]['number'], $lang) ?>
 						</div>
 						<div class="achievement__number-postfix"></div>
 					</div>
