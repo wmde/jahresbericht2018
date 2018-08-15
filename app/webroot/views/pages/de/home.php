@@ -39,7 +39,7 @@
 				class="achievement--store"
 				data-category="<?= $item['category'][$lang] ?>"
 				data-number="<?= $item['number'] ?>"
-				data-url="<?= $item['url'] ?>"
+				data-url="/<?= $lang ?><?= $item['url'] ?>"
 				data-postfix=""
 			>
 				<?= $item['teaser'][$lang] ?>
