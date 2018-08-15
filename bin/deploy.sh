@@ -47,7 +47,9 @@ cd -
 
 if [[ $TRANSFER_METHOD == "manual" ]]; then
 	BUILD_FILE=$HOME/$(basename $SOURCE_PATH)_$(date +%Y-%m-%d-%H-%M).tar.gz
+	cd $TMP
 	tar cvfz $BUILD_FILE *
+	cd -
 
 	printf "Transfer method 'manual' was selected, to finalize the deployment you must\n"
 	printf "now copy the files yourself. Archive is available at:\n -> %s\n" $BUILD_FILE
