@@ -82,7 +82,7 @@ if (isset($report)) {
 	</ul>
 	<div class="mn__mini-nav">
 		<a class="t--epsilon lang-switch" href="<?= $switchLanguageFromUrl($lang) ?>">Deutsch</a>
-		<a class="pdf-download t--epsilon" download href="/assets/doc/WMDE_annualreport_2017.pdf">PDF</a>
+		<a class="pdf-download t--epsilon" download href="/assets/doc/annual_report_2017_en.pdf">PDF</a>
 		<a class="t--epsilon" href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new">Become a member</a>
 	</div>
 </div>
@@ -118,7 +118,7 @@ if (isset($report)) {
 				</ul>
 				<main class="nav__list--upper">
 					<a class="lang-switch" href="<?= $switchLanguageFromUrl($lang) ?>">Deutsch</a>
-					<a class="pdf-download" download href="/assets/doc/WMDE_annualreport_2017.pdf">PDF</a>
+					<a class="pdf-download" download href="/assets/doc/annual_report_2017_en.pdf">PDF</a>
 					<a href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new">Become a member</a>
 				</main>
 			</nav>
