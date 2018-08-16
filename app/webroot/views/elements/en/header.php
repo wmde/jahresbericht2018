@@ -77,7 +77,7 @@ if (isset($report)) {
 <div class="mn-container cp">
 	<div class="mn-close"></div>
 	<ul class="mn__list">
-		<li><a class="mn__link" href="<?= $url('report', $lang) ?>">Focal Points</a></li>
+		<li><a class="mn__link" href="<?= $url('report', $lang) ?>">Topics</a></li>
 		<li><a class="mn__link" href="<?= $url('finance', $lang) ?>">Finances</a></li>
 	</ul>
 	<div class="mn__mini-nav">
@@ -104,7 +104,7 @@ if (isset($report)) {
 							class="nav__link<?= (preg_match('#^/report.*$#', $path) ? ' active' : '')?>"
 							href="<?= $url('report', $lang) ?>"
 						>
-							Focal Points
+							Topics
 						</a>
 					</li>
 					<li>

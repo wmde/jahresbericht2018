@@ -523,23 +523,23 @@
 					<th class="ft__col-val ft__green-bg ft__green-border">31.12.2017</th>
 				</thead>
 				<tr class="ft__row-line">
-					<td class="ft__col-key">Focal point 1: Attract and retain new volunteers for Wikimedia projets</td>
+					<td class="ft__col-key">Topic 1: Attract and retain new volunteers for Wikimedia projets</td>
 					<td class="ft__col-val ft__green-border">230,119 €</td>
 				</tr>
 				<tr class="ft__row-line">
-					<td class="ft__col-key">Focal point 2: Support Wikimedia project volunteers</td>
+					<td class="ft__col-key">Topic 2: Support Wikimedia project volunteers</td>
 					<td class="ft__col-val ft__green-border">1,189,857 €</td>
 				</tr>
 				<tr class="ft__row-line">
-					<td class="ft__col-key">Focal point 3: Expand Wikidata and further develop MediaWiki</td>
+					<td class="ft__col-key">Topic 3: Expand Wikidata and further develop MediaWiki</td>
 					<td class="ft__col-val ft__green-border">1,848,354 €</td>
 				</tr>
 				<tr class="ft__row-line">
-					<td class="ft__col-key">Focal point 4: Strengthen political and legal work efforts aimed at promoting Free Knowledge</td>
+					<td class="ft__col-key">Topic 4: Strengthen political and legal work efforts aimed at promoting Free Knowledge</td>
 					<td class="ft__col-val ft__green-border">523,731 €</td>
 				</tr>
 				<tr class="ft__row-line">
-					<td class="ft__col-key">Focal point 5: Work together with the communities to get content released through collaborations with institutions</td>
+					<td class="ft__col-key">Topic 5: Work together with the communities to get content released through collaborations with institutions</td>
 					<td class="ft__col-val ft__green-border">490,186 €</td>
 				</tr>
 				<tr class="ft__row-line">

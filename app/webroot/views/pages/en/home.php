@@ -76,7 +76,7 @@
 						href="<?= $url($achievements[0]['teaser'], $lang) ?>"
 						class="achievement__link t--zeta-emph"
 					>
-						&mdash;&nbsp;&nbsp; More on this focal point
+						&mdash;&nbsp;&nbsp; More on this topic
 					</a>
 				</div>
 			</div>
@@ -107,7 +107,7 @@
 						href="<?= $url($achievements[1]['teaser'], $lang) ?>"
 						class="achievement__link t--zeta-emph"
 					>
-						&mdash;&nbsp;&nbsp; More on this focal point
+						&mdash;&nbsp;&nbsp; More on this topic
 					</a>
 				</div>
 			</div>
@@ -146,7 +146,7 @@
 				<div class="chart__headline--description t--epsilon">
 					March 2013 - March 2018
 				</div>
-				<h1 class="h--beta">Member development</h1>
+				<h1 class="h--beta">Membership development</h1>
 			</div>
 			<div class="chart__cards-wrapper">
 				<div class="chart__cards chart__cards--desktop loading"></div>
@@ -194,15 +194,15 @@
 			<div class="reports__link-wrapper">
 				<a class="reports__link h--beta" href="">
 					<div class="reports__link-title">Movement Strategy</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; More on this focal point</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; More on this topic</div>
 				</a>
 				<a class="reports__link h--beta" href="">
 					<div class="reports__link-title">Fellow Programm</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; More on this focal point</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; More on this topic</div>
 				</a>
 				<a class="reports__link h--beta" href="">
 					<div class="reports__link-title">Freiwillige unterstützen</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; More on this focal point</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; More on this topic</div>
 				</a>
 			</div>
 			<button class="animation-ctl-button reports__button reports__button--reload t--zeta-emph invis">

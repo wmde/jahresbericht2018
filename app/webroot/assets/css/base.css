@@ -2845,6 +2845,9 @@ a:focus {
   text-align: left;
   margin: -200px auto 0 auto;
 }
+.report-landing .filter-head-back-align a {
+  border-bottom: none;
+}
 
 @media(max-width: 1100px) {
   .filter-head {
@@ -2859,6 +2862,16 @@ a:focus {
   }
   .filter-text {
     margin-top: -150px;
+  }
+  .report-landing .filter-head--back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .report-landing .filter-head-back-align {
+    max-width: 110px;
+    line-height: 15px;
+    margin-bottom: -15px;
   }
 }
 
@@ -2908,6 +2921,7 @@ a:focus {
 .report__boxes a:hover {
   opacity: 0.5;
 }
+
 @media (max-width: 1100px) {
   .report-detail__text {
     padding: 10px 30px 30px 30px;

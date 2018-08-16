@@ -40,7 +40,7 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to focal points’ overview</a>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topics’ overview</a>
 		<a href="/en/report/wikicon" class="button button--report">
 			<p class="button--small">next topic</p>
 			<p>WikidataCon: the first international Wikidata conference</p>
