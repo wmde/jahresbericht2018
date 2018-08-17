@@ -16,7 +16,7 @@
 	</section>
 	<?php else: ?>
 	<section class="report-landing-hero cp cp--6x-top cp--4x-bottom">
-		<h1 class="h--beta report-landing-hero__title">topics’ overview</h1>
+		<h1 class="h--beta report-landing-hero__title">topic overview</h1>
 		<div class="report-landing-hero__cubes limit--l cp--2x-top">
 			<?php foreach ($filters as $f): ?>
 				<a

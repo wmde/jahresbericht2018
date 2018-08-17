@@ -73,7 +73,7 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topics’ overview</a>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
 		<a href="/en/report/2017" class="button button--report">
 			<p class="button--small">next topic</p>
 			<p>Looking back at 2017</p>
