@@ -36,6 +36,16 @@ rm -f app/webroot/index.*-e
 
 echo $TARGET_BROWSERS | tr '|' '\n' > .browserslistrc
 
+# Babel cli can be installed locally, but presets are always search locally.
+cat << EOF > package.json
+{
+	"devDependencies": {
+		"@babel/preset-env": "^7.0.0"
+	}
+}
+EOF
+npm install --save-dev
+
 # Babelify in-place for full current ESx compatiblity.
 cat << EOF > .babelrc
 {
@@ -45,7 +55,15 @@ cat << EOF > .babelrc
 		"require",
 		"jquery.js",
 		"modernizr.js",
-		"core.js"
+		"core.js",
+		"three.js"
+	],
+	"presets": [
+		[
+			"@babel/preset-env", {
+				"debug": true
+			}
+		]
 	]
 }
 EOF
@@ -55,6 +73,11 @@ for f in $(find assets/js -type f -name *.js); do
 	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
 done
 
+# We want the minifier to remove file headers of inlined files, the main CSS
+# file (base.css) already has a good enough header.
+for f in $(find assets/css/{globals,components} -type f -name *.css); do
+	sed -i 's/\/\*!/\/\*/g' $f
+done
 for f in $(ls assets/css/*.css); do
     cssnextgen $f > $f.tmp && mv $f.tmp $f
     cleancss --skip-rebase $f -o $f.min && mv $f.min $f
@@ -89,4 +112,5 @@ if [[ -f app/composer.json ]]; then
 	composer dump-autoload  -d app --optimize
 fi
 
+rm -r node_modules packages.json .browserslistrc .babelrc
 rm -fr .git*
