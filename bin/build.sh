@@ -112,5 +112,5 @@ if [[ -f app/composer.json ]]; then
 	composer dump-autoload  -d app --optimize
 fi
 
-rm -r node_modules packages.json package-lock.json .browserslistrc .babelrc
+rm -r node_modules package.json package-lock.json .browserslistrc .babelrc
 rm -fr .git*
