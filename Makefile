@@ -58,12 +58,11 @@ dist-clean:
 
 .PHONY: update-assets
 update-assets:
-	curl https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css > $(ASSETS_PATH)/css/normalize.css
-	curl https://code.jquery.com/jquery-3.2.1.js > $(ASSETS_PATH)/js/jquery.js
-	curl http://requirejs.org/docs/release/2.3.2/comments/require.js > $(ASSETS_PATH)/js/require.js
-	curl https://raw.githubusercontent.com/requirejs/domReady/latest/domReady.js > $(ASSETS_PATH)/js/require/domready.js
-	curl http://underscorejs.org/underscore.js > $(ASSETS_PATH)/js/underscore.js
-	curl -L https://raw.githubusercontent.com/zloirock/core-js/master/client/shim.js > $(ASSETS_PATH)/js/compat/core.js
+	curl -L https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css > $(ASSETS_PATH)/css/normalize.css
+	curl -L http://requirejs.org/docs/release/2.3.2/comments/require.js > $(ASSETS_PATH)/js/require.js
+	curl -L https://raw.githubusercontent.com/requirejs/domReady/latest/domReady.js > $(ASSETS_PATH)/js/require/domready.js
+	curl -L http://underscorejs.org/underscore.js > $(ASSETS_PATH)/js/underscore.js
+	curl -L https://raw.githubusercontent.com/zloirock/core-js/v2/client/shim.js > $(ASSETS_PATH)/js/compat/core.js
 
 freeze-target-browsers:
 	echo $(TARGET_BROWSERS) | tr '|' "\n" > .browserslist
