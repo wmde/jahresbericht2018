@@ -50,13 +50,13 @@ npm install --save-dev
 cat << EOF > .babelrc
 {
 	"ignore": [
-		"underscore.js",
-		"require.js",
-		"require",
-		"jquery.js",
-		"modernizr.js",
-		"core.js",
-		"three.js"
+		"**/underscore.js",
+		"**/require.js",
+		"**/require",
+		"**/jquery.js",
+		"**/modernizr.js",
+		"**/core.js",
+		"**/three.js"
 	],
 	"presets": [
 		[
