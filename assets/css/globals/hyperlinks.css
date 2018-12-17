@@ -1,6 +1,21 @@
 /*!
  * Copyright 2017 Atelier Disko. All rights reserved.
  *
+ * Use of this source code is governed by the AD General Software
+ * License v1 that can be found under https://atelierdisko.de/licenses
+ *
+ * This software is proprietary and confidential. Redistribution
+ * not permitted. Unless required by applicable law or agreed to
+ * in writing, software distributed on an "AS IS" BASIS, WITHOUT-
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ */
+
+/*!
+<<<<<<< HEAD
+ * App
+ *
+ * Copyright (c) 2017 Atelier Disko - All rights reserved.
+ *
  * Licensed under the AD App Software License v1.
  *
  * This software is proprietary and confidential. Redistribution
@@ -10,6 +25,12 @@
  *
  * You should have received a copy of the AD App Software
  * License. If not, see https://atelierdisko.de/licenses.
+=======
+ * Copyright 2017 Atelier Disko. All rights reserved.
+ *
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+>>>>>>> upstream/1.5
  */
 
 a {

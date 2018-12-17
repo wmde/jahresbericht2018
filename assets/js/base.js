@@ -2,15 +2,13 @@
  * Copyright 2013 David Persson. All rights reserved.
  * Copyright 2016 Atelier Disko. All rights reserved.
  *
- * Licensed under the AD App Software License v1.
+ * Use of this source code is governed by the AD General Software
+ * License v1 that can be found under https://atelierdisko.de/licenses
  *
  * This software is proprietary and confidential. Redistribution
  * not permitted. Unless required by applicable law or agreed to
  * in writing, software distributed on an "AS IS" BASIS, WITHOUT-
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *
- * You should have received a copy of the AD App Software
- * License. If not, see https://atelierdisko.de/licenses.
  */
 
 requirejs.config({
@@ -18,7 +16,6 @@ requirejs.config({
   waitSeconds: 60,
   paths: {
     // Base
-    'jquery': 'jquery',
     'underscore': 'underscore',
 
     // More requirejs plugins are available in
@@ -27,18 +24,14 @@ requirejs.config({
     'async': 'require/async',
 
     // App
-    // Add your app specific js paths here.
+    'router': 'router',
+    'notify': 'notify',
+    // Add your app specific JavaScript paths here.
 
-    // For compat and polyfills it is recommended to use
-    // Atelier Disko's compat distribution and agument
-    // the existing libraries found in js/compat.
-    //
-    // See https://github.com/atelierdisko/compat
+    // Compat
     'modernizr': 'compat/modernizr'
   },
   shim: {
-    // Base
-
     // App
     // Add your app specific shims here...
 
@@ -49,3 +42,5 @@ requirejs.config({
     }
   }
 });
+
+
