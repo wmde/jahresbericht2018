@@ -13,19 +13,16 @@
 
 set -o nounset
 set -o errexit
+set -o pipefail
 
-# Must be executed from the project root (where Envfile is located). Will
-# operate on and modify the *current* files in tree. Be sure to operate on a
-# copy.
+# Must be executed from the project root (where Envfile is located). As the
+# following actions are destructive we should also require to be invoked from
+# inside a container, but that cannot be reliably be determined. Which we assume
+# uses a copy of the project to work on.
 [[ ! -f Envfile ]] && echo "error: not invoked from project root" && exit 1
 
 source Envfile
-revision=$(git rev-parse --short HEAD)
 
-sed -i -e "s|__VERSION_BUILD__|$revision|g" VERSION.txt
-# Workaround for older BSD versions of sed that need
-# a suffix after -i while interpreting -e as the suffix.
-[[ -f VERSION.txt-e ]] && rm VERSION.txt-e
 sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/index.*
 rm -f app/webroot/index.*-e
 
@@ -35,16 +32,6 @@ rm -f app/webroot/index.*-e
 # special compressors.
 
 echo $TARGET_BROWSERS | tr '|' '\n' > .browserslistrc
-
-# Babel cli can be installed locally, but presets are always search locally.
-cat << EOF > package.json
-{
-	"devDependencies": {
-		"@babel/preset-env": "^7.0.0"
-	}
-}
-EOF
-npm install --save-dev
 
 # Babelify in-place for full current ESx compatiblity.
 cat << EOF > .babelrc
@@ -79,11 +66,11 @@ for f in $(find assets/css/{globals,components} -type f -name *.css); do
 	sed -i 's/\/\*!/\/\*/g' $f
 done
 for f in $(ls assets/css/*.css); do
-    cssnextgen $f > $f.tmp && mv $f.tmp $f
+    css-nextgen $f > $f.tmp && mv $f.tmp $f
     cleancss --skip-rebase $f -o $f.min && mv $f.min $f
 done
 for f in $(find assets/css/views -type f -name *.css); do
-    cssnextgen $f > $f.tmp && mv $f.tmp $f
+    css-nextgen $f > $f.tmp && mv $f.tmp $f
     cleancss --skip-rebase $f -o $f.min && mv $f.min $f
 done
 
@@ -101,16 +88,5 @@ for f in $(find assets -type f -name *.jpg); do
 	jpegtran -optimize -copy none -outfile $f.tmp $f && mv $f.tmp $f
 done
 
-# Ensure we don't install dev tooling in production, for security (potential
-# information disclosure) and performance (larger file search trees) reasons.
-if [[ -f app/composer.json ]]; then
-	if [[ $CONTEXT != "prod" ]]; then
-		composer install -d app --prefer-dist
-	else
-		composer install -d app --prefer-dist --no-dev
-	fi
-	composer dump-autoload  -d app --optimize
-fi
-
-rm -r node_modules package.json package-lock.json .browserslistrc .babelrc
-rm -fr .git*
+rm -r .browserslistrc .babelrc
+rm -fr .git* app/libraries/*/*/.git* app/libraries/*/.git*

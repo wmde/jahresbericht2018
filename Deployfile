@@ -8,6 +8,9 @@
 # in writing, software distributed on an "AS IS" BASIS, WITHOUT
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
+# Docker container in which the bin/build.sh script will be executed.
+BUILD_CONTAINER="atelierdisko/builder:1.0.0-alpha"
+
 # One or multiple target hosts to deploy to. 
 TARGET_HOSTS="web0.disko.io"
 
@@ -33,9 +36,10 @@ TRANSFER_METHOD="ssh+rsync"
 # with a slash are anchored at the base path (when used with rsync).
 TRANSFER_IGNORE="/log/"
 
-# Command/s to execute after transferring. Commands will be executed by
+# Command/s to execute before and after transferring. Commands will be executed by
 # TARGET_USER on a target host using TARGET_PATH as the working directory.
-POST_TRANSFER_COMMANDS="chmod -R a+rwX tmp log && sudo hoictl load"
+PRE_TRANSFER_COMMANDS="mkdir -p log tmp && find tmp log -type f -delete"
+POST_TRANSFER_COMMANDS="sudo hoictl load"
 
 # Listing branches that should be deployed automatically, 
 # i.e. when receiving a push.

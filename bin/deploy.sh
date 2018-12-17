@@ -37,13 +37,23 @@ TMP=$(mktemp -d -t deploy.XXXX)
 function cleanup { rm -rf $TMP; }
 trap cleanup EXIT
 
-# This is the entire build phase.
 git clone --verbose --single-branch --recursive --no-hardlinks \
 	--branch $(git rev-parse --abbrev-ref HEAD) \
 	$SOURCE_PATH $TMP
-cd $TMP
-bin/build.sh
-cd -
+
+bin/set-version.sh
+
+du -hs $TMP
+docker run --rm -it \
+	--user $UID \
+	--mount type=bind,source="$(dirname ${SSH_AUTH_SOCK})",target=$(dirname ${SSH_AUTH_SOCK}) \
+	--mount type=bind,source="${HOME}/.composer",target=/composer \
+	--mount type=bind,source="${TMP}",target=/built \
+	--env SSH_AUTH_SOCK=${SSH_AUTH_SOCK} \
+	--env COMPOSER_HOME=/composer \
+	${BUILD_CONTAINER} \
+	/bin/sh -c 'cd built && bin/build.sh'
+du -hs $TMP
 
 if [[ $TRANSFER_METHOD == "manual" ]]; then
 	BUILD_FILE=$HOME/$(basename $SOURCE_PATH)_$(date +%Y-%m-%d-%H-%M).tar.gz
@@ -54,8 +64,12 @@ if [[ $TRANSFER_METHOD == "manual" ]]; then
 	printf "Transfer method 'manual' was selected, to finalize the deployment you must\n"
 	printf "now copy the files yourself. Archive is available at:\n -> %s\n" $BUILD_FILE
 
+	if [[ $PRE_TRANSFER_COMMANDS != "" ]]; then
+		echo "Do not have SSH. You must execute these commands on target host/s manually before deploying:"
+		echo $PRE_TRANSFER_COMMANDS
+	fi
 	if [[ $POST_TRANSFER_COMMANDS != "" ]]; then
-		echo "Do not have SSH. You must execute these commands on target host/s manually:"
+		echo "Do not have SSH. You must execute these commands on target host/s manually after deploying:"
 		echo $POST_TRANSFER_COMMANDS
 	fi
 
@@ -90,6 +104,13 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 				exit 1
 			fi
 		fi
+
+		if [[ $PRE_TRANSFER_COMMANDS != "" ]]; then
+			echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> command execution ${TARGET_USER}@${H}:${TARGET_PATH}"
+			ssh -p ${TARGET_PORT} -T ${TARGET_USER}@${H} "cd ${TARGET_PATH} && ${PRE_TRANSFER_COMMANDS}"
+			echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< command execution ${TARGET_USER}@${H}:${TARGET_PATH} "
+		fi
+
 		rsync --stats -h -z -r \
 				--rsh "ssh -p ${TARGET_PORT}" \
 				--delete \
@@ -99,15 +120,13 @@ elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
 				--verbose \
 				--itemize-changes \
 				${TMP}/ ${TARGET_USER}@${H}:${TARGET_PATH}
-	done
 
-	if [[ $POST_TRANSFER_COMMANDS != "" ]]; then
-		for H in $TARGET_HOSTS; do
+		if [[ $POST_TRANSFER_COMMANDS != "" ]]; then
 			echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> command execution ${TARGET_USER}@${H}:${TARGET_PATH}"
 			ssh -p ${TARGET_PORT} -T ${TARGET_USER}@${H} "cd ${TARGET_PATH} && ${POST_TRANSFER_COMMANDS}"
 			echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< command execution ${TARGET_USER}@${H}:${TARGET_PATH} "
-		done
-	fi
+		fi
+	done
 else
 	echo "error: invalid transfer method"
 	exit 1
