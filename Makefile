@@ -78,6 +78,10 @@ patch-unseal-%:
 
 # -- Maintainer --
 
+.PHONY: update-deps
+update-deps:
+	composer7.1 -d app update
+
 .PHONY: update-assets
 update-assets:
 	curl -L https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css > $(ASSETS_PATH)/css/normalize.css

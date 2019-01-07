@@ -88,5 +88,16 @@ for f in $(find assets -type f -name *.jpg); do
 	jpegtran -optimize -copy none -outfile $f.tmp $f && mv $f.tmp $f
 done
 
+# Ensure we don't install dev tooling in production, for security (potential
+# information disclosure) and performance (larger file search trees) reasons.
+if [[ -f app/composer.json ]]; then
+	if [[ $CONTEXT != "prod" ]]; then
+		composer install --no-interaction --ignore-platform-reqs -d app --prefer-dist
+	else
+		composer install --no-interaction --ignore-platform-reqs -d app --prefer-dist --no-dev
+	fi
+	composer dump-autoload --no-interaction -d app --optimize
+fi
+
 rm -r .browserslistrc .babelrc
 rm -fr .git* app/libraries/*/*/.git* app/libraries/*/.git*
