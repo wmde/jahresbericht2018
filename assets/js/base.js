@@ -12,25 +12,25 @@
  */
 
 requirejs.config({
-  baseUrl: '/assets/js',
+  baseUrl: App.assets.base,
   waitSeconds: 60,
   paths: {
     // Base
-    'underscore': 'underscore',
+    'underscore': 'js/underscore',
 
     // More requirejs plugins are available in
     // js/require/*. Register them here if needed.
-    'domready': 'require/domReady',
-    'async': 'require/async',
+    'domready': 'js/require/domReady',
+    'async': 'js/require/async',
 
     // App
-    'router': 'router',
-    'notify': 'notify',
+    'router': 'js/router',
+    'notify': 'js/notify',
     // Add your app specific JavaScript paths here.
 
     // Compat
-    'modernizr': 'compat/modernizr',
-    'fetch': 'compat/fetch'
+    'modernizr': 'js/compat/modernizr',
+    'fetch': 'js/compat/fetch'
   },
   shim: {
     // App
