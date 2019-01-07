@@ -13,11 +13,6 @@ include Envfile
 VERSION := $(subst __VERSION_BUILD__,$(shell git rev-parse --short HEAD),$(shell cat VERSION.txt))
 VERSION_NOBUILD := $(subst +__VERSION_BUILD__,,$(shell cat VERSION.txt))
 
-# Used when building the project, allowed to be overwritten, so external scripts
-# may pick a unique or simply different location where they want to process
-# the build for themselves.
-DIST_BUNDLE ?= /tmp/dist_$(NAME)_$(CONTEXT)_$(VERSION_NOBUILD).tar.gz
-
 # Base path for assets, here to make it easy to change.
 ASSETS_PATH = assets
 
@@ -64,19 +59,22 @@ config/ssl/%.key:
 config/ssl/%.crt: config/ssl/%.ca-bundle config/ssl/%.pure-crt
 	cat config/ssl/$*.pure-crt config/ssl/$*.ca-bundle > $@
 
-# -- Dist --
+# -- Context Patches --
 
-# Prepares a copy of the project for distribution under /tmp/dist. When updating
-# run dist-clean first.
-dist: 
-	git clone --verbose --single-branch --recursive --no-hardlinks \
-		--branch $(shell git rev-parse --abbrev-ref HEAD) \
-		$(CURDIR) $(BUILD_PATH)
-	cd $(BUILD_PATH) && bin/build.sh
+# Will only pick the topmost commit, assuming all changes have been made in a
+# single "Setup xxx" commit. This greatly simplifies this as we don't need to do
+# rebasing which requires stashing and creation/cleanup of a temporary branch, to 
+# find out about the commits unique to the context branch.
+patch-create-%: 
+	git show $* > config/contexts/$*.patch
 
-.PHONY: dist-clean
-dist-clean:
-	rm -fr $(BUILD_PATH)
+patch-seal-%:
+	gpg --output config/contexts/$*.patch.gpg --encrypt --recipient marius@atelierdisko.de config/contexts/$*.patch
+	rm config/contexts/$*.patch
+
+patch-unseal-%:
+	gpg --output config/contexts/$*.patch --decrypt config/contexts/$*.patch.gpg
+	rm config/contexts/$*.patch.gpg
 
 # -- Maintainer --
 
@@ -87,6 +85,7 @@ update-assets:
 	curl -L https://raw.githubusercontent.com/requirejs/domReady/latest/domReady.js > $(ASSETS_PATH)/js/require/domready.js
 	curl -L http://underscorejs.org/underscore.js > $(ASSETS_PATH)/js/underscore.js
 	curl -L https://raw.githubusercontent.com/zloirock/core-js/v2/client/shim.js > $(ASSETS_PATH)/js/compat/core.js
+	curl -L https://github.com/github/fetch/releases/download/v3.0.0/fetch.umd.js > $(ASSETS_PATH)/js/compat/fetch.js
 
 # Uses current target browser browserslist potentially relaitve definition and
 # replaces it with an absolute definition. 

@@ -29,7 +29,8 @@ requirejs.config({
     // Add your app specific JavaScript paths here.
 
     // Compat
-    'modernizr': 'compat/modernizr'
+    'modernizr': 'compat/modernizr',
+    'fetch': 'compat/fetch'
   },
   shim: {
     // App
