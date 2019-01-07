@@ -30,7 +30,8 @@ requirejs.config({
 
     // Compat
     'modernizr': 'js/compat/modernizr',
-    'fetch': 'js/compat/fetch'
+    'fetch': 'js/compat/fetch',
+    'scrollBehavior': 'js/compat/scrollBehavior'
   },
   shim: {
     // App
@@ -40,6 +41,9 @@ requirejs.config({
     'modernizr': {
       exports: 'Modernizr',
       deps: ['domready!']
+    },
+    'scrollBehavior': {
+      exports: 'smoothscroll'
     }
   }
 });
