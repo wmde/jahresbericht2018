@@ -33,3 +33,5 @@ if [[ -d .git ]]; then
 	# a suffix after -i while interpreting -e as the suffix.
 	[[ -f VERSION.txt-e ]] && rm VERSION.txt-e
 fi
+
+exit 0

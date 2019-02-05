@@ -15,15 +15,14 @@ context = "dev"
 app {
 	kind = "static"
 	# kind = "php"
-	# version = "5.6.0"
+	# version = "7.1.0"
 }
 
 domain "__DOMAIN__" {
 	www = "drop"
-	# Either paths or special string "!self-signed"
 	SSL = {
-		certificate = "!self-signed"
-		certificateKey = "!self-signed"
+		certificate = "!selfsigned"
+		certificateKey = "!generate"
 	}
 	# auth {
 	# 	password = "__DOMAIN_AUTH_PASSWORD__"

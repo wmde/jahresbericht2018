@@ -9,7 +9,7 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 # Docker container in which the bin/build.sh script will be executed.
-BUILD_CONTAINER="atelierdisko/builder:1.0.0-alpha"
+BUILD_CONTAINER="atelierdisko/builder:1.0.0-alpha.2"
 
 # One or multiple target hosts to deploy to. 
 TARGET_HOSTS="web0.disko.io"
@@ -34,16 +34,12 @@ TRANSFER_METHOD="ssh+rsync"
 # Possible used with rsync and lftp. fnmatch(5) patterns are allowed. To exclude
 # whole directory (not just its contents) DO append slash. Patterns prefixed
 # with a slash are anchored at the base path (when used with rsync).
-TRANSFER_IGNORE="/log/"
+TRANSFER_IGNORE="/media/ /media_versions/ /log/ /tmp/ /files/"
 
 # Command/s to execute before and after transferring. Commands will be executed by
 # TARGET_USER on a target host using TARGET_PATH as the working directory.
 PRE_TRANSFER_COMMANDS="mkdir -p log tmp && find tmp log -type f -delete"
 POST_TRANSFER_COMMANDS="sudo hoictl load"
 
-# Listing branches that should be deployed automatically, 
-# i.e. when receiving a push.
-AUTO_DEPLOY_BRANCHES="stage"
-
 # To enable notifications via Slack, provide a valid webhook URL here.
-SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
+SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"

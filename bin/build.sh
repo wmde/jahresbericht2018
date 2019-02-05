@@ -23,15 +23,16 @@ set -o pipefail
 
 source Envfile
 
-sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/index.*
-rm -f app/webroot/index.*-e
-
 # Restricts assets building to app's assets. Libraries must
 # provide their own buildscript when they ship assets. This
 # is because we cannot know if certain assets will need
 # special compressors.
 
-echo $TARGET_BROWSERS | tr '|' '\n' > .browserslistrc
+for f in $(ls app/resources/g11n/po/*/LC_MESSAGES/*.po); do
+	msgfmt -o ${f/.po/.mo} --verbose $f
+done
+
+make \\.browserslistrc
 
 # Babelify in-place for full current ESx compatiblity.
 cat << EOF > .babelrc
@@ -66,8 +67,8 @@ for f in $(find assets/css/{globals,components} -type f -name *.css); do
 	sed -i 's/\/\*!/\/\*/g' $f
 done
 for f in $(ls assets/css/*.css); do
-    css-nextgen $f > $f.tmp && mv $f.tmp $f
-    cleancss --skip-rebase $f -o $f.min && mv $f.min $f
+	css-nextgen $f > $f.tmp && mv $f.tmp $f
+	cleancss --skip-rebase $f -o $f.min && mv $f.min $f
 done
 for f in $(find assets/css/views -type f -name *.css); do
     css-nextgen $f > $f.tmp && mv $f.tmp $f
@@ -88,16 +89,20 @@ for f in $(find assets -type f -name *.jpg); do
 	jpegtran -optimize -copy none -outfile $f.tmp $f && mv $f.tmp $f
 done
 
-# Ensure we don't install dev tooling in production, for security (potential
-# information disclosure) and performance (larger file search trees) reasons.
 if [[ -f app/composer.json ]]; then
+	# Ensure we don't install dev tooling in production, for security (potential
+	# information disclosure) and performance (larger file search trees) reasons.
+	#
+	# The composer binary may be executed by a higher or lower PHP version the
+	# installed dependencies require. As we're simply installing and not updating we
+	# can ignore this, to simplify build time requirements.
 	if [[ $CONTEXT != "prod" ]]; then
-		composer install --no-interaction --ignore-platform-reqs -d app --prefer-dist
+		composer install --no-progress --no-interaction --ignore-platform-reqs -d app --prefer-dist
 	else
-		composer install --no-interaction --ignore-platform-reqs -d app --prefer-dist --no-dev
+		composer install --no-progress --no-interaction --ignore-platform-reqs -d app --prefer-dist --no-dev
 	fi
 	composer dump-autoload --no-interaction -d app --optimize
 fi
 
-rm -r .browserslistrc .babelrc
+rm .browserslistrc .babelrc
 rm -fr .git* app/libraries/*/*/.git* app/libraries/*/.git*

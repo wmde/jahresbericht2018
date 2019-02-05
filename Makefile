@@ -14,26 +14,40 @@ VERSION := $(subst __VERSION_BUILD__,$(shell git rev-parse --short HEAD),$(shell
 VERSION_NOBUILD := $(subst +__VERSION_BUILD__,,$(shell cat VERSION.txt))
 
 # Base path for assets, here to make it easy to change.
-ASSETS_PATH = assets
+ASSETS_PATH := assets
 
-# -- Integrator/Creator --
+# -- Initialization --
 
 .PHONY: install
-install: prefill
+install: prefill app/composer.lock fix-perms
 
 # Special rule which initializes the Envfile (and other) we just included.
 .PHONY: prefill
 prefill: 
 	sed -i -e "s|__NAME__|$(shell basename $(CURDIR))|g" Hoifile Envfile Deployfile
 	sed -i -e "s|__DOMAIN__|$(subst _,-,$(shell basename $(CURDIR))).test|g" Hoifile Envfile
+	sed -i -e "s|__SECRET_BASE__|$(shell openssl rand -base64 60 | tr -d '\n')|g" Envfile
 	# Some sed leave stray files.
 	rm -f Hoifile-e Envfile-e Deployfile-e
 
-# -- Utilities --
+app/composer.lock:
+	composer7.1 install -d app
 
 .PHONY: fix-perms
 fix-perms:
 	chmod -R a+rwX tmp log
+
+# -- Compatibility --
+
+# Uses current target browser browserslist potentially relaitve definition and
+# replaces it with an absolute definition.
+freeze-target-browsers: \.browserslistrc
+	sed -i -e "s/TARGET_BROWSERS=.*/TARGET_BROWSERS=\"$(shell npx -q browserslist | tr "\n" '|')\"/g" Envfile
+	rm $<
+	rm -f Envfile-e
+
+\.browserslistrc:
+	echo $(TARGET_BROWSERS) | tr '|' "\n" > $@
 
 # -- SSL Certificate Management --
 # http://www.rackspace.com/knowledge_center/article/generate-a-csr-with-openssl
@@ -60,27 +74,43 @@ config/ssl/%.crt: config/ssl/%.ca-bundle config/ssl/%.pure-crt
 	cat config/ssl/$*.pure-crt config/ssl/$*.ca-bundle > $@
 
 # -- Context Patches --
+# The following targets expects the secret to be available in
+# CONTEXT_PATCH_CRYPT_SECRET, if not given the targets will prompt for the
+# secret.
+#
+# Example usage on the commandline:
+# $ CONTEXT_PATCH_CRYPT_SECRET=$(pass show context-patch-crypt | head -n1) make context-patch-stage
 
+# Creates an encrypted patch file from the diff of the same named and
+# corresponding context branch or updates from it.
+#
 # Will only pick the topmost commit, assuming all changes have been made in a
 # single "Setup xxx" commit. This greatly simplifies this as we don't need to do
 # rebasing which requires stashing and creation/cleanup of a temporary branch, to 
 # find out about the commits unique to the context branch.
-patch-create-%: 
+context-patch-%:
+	rm -f config/contexts/$*.patch
+	rm -f config/contexts/$*.patch.gpg
 	git show $* > config/contexts/$*.patch
+	gpg --batch --passphrase $(CONTEXT_PATCH_CRYPT_SECRET) --symmetric config/contexts/$*.patch
+	rm config/contexts/$*.patch
+	git add config/contexts/$*.patch.gpg
+	git commit -m "Update $* context patch"
 
-patch-seal-%:
-	gpg --output config/contexts/$*.patch.gpg --encrypt --recipient marius@atelierdisko.de config/contexts/$*.patch
+# Reencrypts the context patch using OLD_CONTEXT_PATCH_CRYPT_SECRET env var,
+# which must be set alongside the standard CONTEXT_PATCH_CRYPT_SECRET.
+context-patch-reencrypt-%:
+	gpg --batch --passphrase $(OLD_CONTEXT_PATCH_CRYPT_SECRET) --output config/contexts/$*.patch --decrypt config/contexts/$*.patch.gpg
+	gpg --batch --passphrase $(CONTEXT_PATCH_CRYPT_SECRET) --symmetric config/contexts/$*.patch
+
+# Creates a context branch from given context patch.
+context-branch-%:
+	gpg --batch --passphrase $(CONTEXT_PATCH_CRYPT_SECRET) --output config/contexts/$*.patch --decrypt config/contexts/$*.patch.gpg
+	git checkout -b $*
+	patch < config/contexts/$*.patch
 	rm config/contexts/$*.patch
 
-patch-unseal-%:
-	gpg --output config/contexts/$*.patch --decrypt config/contexts/$*.patch.gpg
-	rm config/contexts/$*.patch.gpg
-
-# -- Maintainer --
-
-.PHONY: update-deps
-update-deps:
-	composer7.1 -d app update
+# -- Distribution --
 
 .PHONY: update-assets
 update-assets:
@@ -92,10 +122,3 @@ update-assets:
 	curl -L https://github.com/github/fetch/releases/download/v3.0.0/fetch.umd.js > $(ASSETS_PATH)/js/compat/fetch.js
 	curl -L https://raw.githubusercontent.com/iamdustan/smoothscroll/master/src/smoothscroll.js > $(ASSETS_PATH)/js/compat/scrollBehavior.js
 
-# Uses current target browser browserslist potentially relaitve definition and
-# replaces it with an absolute definition. 
-freeze-target-browsers:
-	echo $(TARGET_BROWSERS) | tr '|' "\n" > .browserslist
-	sed -i -e "s/TARGET_BROWSERS=.*/TARGET_BROWSERS=\"$(shell npx -q browserslist | tr "\n" '|')\"/g" Envfile
-	rm .browserslist
-	rm -f Envfile-e

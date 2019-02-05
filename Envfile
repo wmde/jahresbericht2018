@@ -1,30 +1,32 @@
 # Copyright 2013 David Persson. All rights reserved.
 # Copyright 2016 Atelier Disko. All rights reserved.
 #
-# Licensed under the AD General Software License v1.
+# Use of this source code is governed by the AD General Software
+# License v1 that can be found under https://atelierdisko.de/licenses
 #
 # This software is proprietary and confidential. Redistributions
 # not permitted. Unless required by applicable law or agreed to
 # in writing, software distributed on an "AS IS" BASIS, WITHOUT
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#
-# You should have received a copy of the AD General Software
-# License. If not, see https://atelierdisko.de/licenses.
+
+# "The twelve-factor app stores config in environment variables [...]. 
+# Env vars are easy to change between deploys without changing any code [...]"
 
 # -----------------------------------------------------------
 # Environment
 # -----------------------------------------------------------
-
 # The context of this environment.
 CONTEXT="dev"
 
 # The projects name.
 NAME="__NAME__"
 
+# The domain under which the project is served.
+DOMAIN="__DOMAIN__"
+
 # -----------------------------------------------------------
 # Debugging / Analysis
 # -----------------------------------------------------------
-
 # Enables/disables debug mode.
 DEBUG="y"
 
