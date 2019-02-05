@@ -12,39 +12,21 @@
  */
 
 requirejs.config({
-  baseUrl: App.assets.base,
+  baseUrl: `${App.assets.base}/js`,
   waitSeconds: 60,
   paths: {
-    // Base
-    'underscore': 'js/underscore',
-
-    // More requirejs plugins are available in
-    // js/require/*. Register them here if needed.
-    'domready': 'js/require/domReady',
-    'async': 'js/require/async',
-
-    // App
-    'router': 'js/router',
-    'notify': 'js/notify',
-    // Add your app specific JavaScript paths here.
-
-    // Compat
-    'modernizr': 'js/compat/modernizr',
-    'fetch': 'js/compat/fetch',
-    'scrollBehavior': 'js/compat/scrollBehavior'
+    // Add your app specific JavaScript paths here,
+    // if they need to be aliased or fetched from a CDN.
   },
   shim: {
-    // App
-    // Add your app specific shims here...
-
-    // Compat
-    'modernizr': {
+    'compat/modernizr': {
       exports: 'Modernizr',
-      deps: ['domready!']
+      deps: ['require/domready!']
     },
-    'scrollBehavior': {
+    'compat/scrollBehavior': {
       exports: 'smoothscroll'
     }
+    // Add your app specific shims here.
   }
 });
 

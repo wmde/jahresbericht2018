@@ -121,4 +121,6 @@ update-assets:
 	curl -L https://raw.githubusercontent.com/zloirock/core-js/v2/client/shim.js > $(ASSETS_PATH)/js/compat/core.js
 	curl -L https://github.com/github/fetch/releases/download/v3.0.0/fetch.umd.js > $(ASSETS_PATH)/js/compat/fetch.js
 	curl -L https://raw.githubusercontent.com/iamdustan/smoothscroll/master/src/smoothscroll.js > $(ASSETS_PATH)/js/compat/scrollBehavior.js
+	curl -L https://unpkg.com/react@16/umd/react.development.js > $(ASSETS_PATH)/js/react.js
+	curl -L https://unpkg.com/react-dom@16/umd/react-dom.development.js > $(ASSETS_PATH)/js/react/dom.js
 
