@@ -19,7 +19,7 @@ ASSETS_PATH := assets
 # -- Initialization --
 
 .PHONY: install
-install: prefill app/composer.lock fix-perms
+install: prefill fix-perms
 
 # Special rule which initializes the Envfile (and other) we just included.
 .PHONY: prefill
