@@ -21,6 +21,22 @@ To enable PHP on this project simply rename `app/webroot/index.html` to
 `index.php`. You may also create `app/composer.json` when you plan to
 use composer. You also need to change the `app` directive inside the `Hoifile`.
 
+# Contexts
+
+`dev`, `stage`, `prod` are the default contexts this project is run withiin.
+Socalled context patches are stored in `config/contexts/`. These patches can
+be applied to the project to prepare it for a certain context. By default all
+projects run within the `dev` contexts, so patches are only needed for all the
+other ones.
+
+As contexts usually contain sensitive information, we encrypt their patches
+using `git-crypt`.
+
+```
+git-crypt unlock /path/to/key
+patch < config/contexts/<CONTEXT>.patch
+```
+
 # Copyright & License
 
 ```

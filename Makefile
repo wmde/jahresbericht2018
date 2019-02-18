@@ -73,43 +73,6 @@ config/ssl/%.key:
 config/ssl/%.crt: config/ssl/%.ca-bundle config/ssl/%.pure-crt
 	cat config/ssl/$*.pure-crt config/ssl/$*.ca-bundle > $@
 
-# -- Context Patches --
-# The following targets expects the secret to be available in
-# CONTEXT_PATCH_CRYPT_SECRET, if not given the targets will prompt for the
-# secret.
-#
-# Example usage on the commandline:
-# $ CONTEXT_PATCH_CRYPT_SECRET=$(pass show context-patch-crypt | head -n1) make context-patch-stage
-
-# Creates an encrypted patch file from the diff of the same named and
-# corresponding context branch or updates from it.
-#
-# Will only pick the topmost commit, assuming all changes have been made in a
-# single "Setup xxx" commit. This greatly simplifies this as we don't need to do
-# rebasing which requires stashing and creation/cleanup of a temporary branch, to 
-# find out about the commits unique to the context branch.
-context-patch-%:
-	rm -f config/contexts/$*.patch
-	rm -f config/contexts/$*.patch.gpg
-	git show $* > config/contexts/$*.patch
-	gpg --batch --passphrase $(CONTEXT_PATCH_CRYPT_SECRET) --symmetric config/contexts/$*.patch
-	rm config/contexts/$*.patch
-	git add config/contexts/$*.patch.gpg
-	git commit -m "Update $* context patch"
-
-# Reencrypts the context patch using OLD_CONTEXT_PATCH_CRYPT_SECRET env var,
-# which must be set alongside the standard CONTEXT_PATCH_CRYPT_SECRET.
-context-patch-reencrypt-%:
-	gpg --batch --passphrase $(OLD_CONTEXT_PATCH_CRYPT_SECRET) --output config/contexts/$*.patch --decrypt config/contexts/$*.patch.gpg
-	gpg --batch --passphrase $(CONTEXT_PATCH_CRYPT_SECRET) --symmetric config/contexts/$*.patch
-
-# Creates a context branch from given context patch.
-context-branch-%:
-	gpg --batch --passphrase $(CONTEXT_PATCH_CRYPT_SECRET) --output config/contexts/$*.patch --decrypt config/contexts/$*.patch.gpg
-	git checkout -b $*
-	patch < config/contexts/$*.patch
-	rm config/contexts/$*.patch
-
 # -- Distribution --
 
 .PHONY: update-assets
