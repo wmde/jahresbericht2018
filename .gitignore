@@ -13,7 +13,6 @@
 
 /app/libraries
 node_modules 
-config/contexts/*.patch
 config/ssl/*.key
 /tmp/*
 /log/*
