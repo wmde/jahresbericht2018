@@ -8,9 +8,9 @@
  */
 
 require([
-  'modernizr',
-  'waypoint',
-  'domready!'
+  'compat/modernizr',
+  'waypoints',
+  'require/domReady!'
 ], function(
   Modernizr,
   Waypoint

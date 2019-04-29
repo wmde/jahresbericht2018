@@ -58,6 +58,9 @@ if (isset($report)) {
 		// gtag('config', 'UA-116576892-1', { 'anonymize_ip': true });
 	</script>
 
+	<script>
+		App = { assets: { base: '/assets' }};
+	</script>
 	<script src="/assets/js/compat/core.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/require.js?v=__PROJECT_VERSION__"></script>
 	<script src="/assets/js/base.js?v=__PROJECT_VERSION__"></script>

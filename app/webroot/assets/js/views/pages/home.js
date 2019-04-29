@@ -9,12 +9,12 @@
 
 require([
   'skrollr',
-  'modernizr',
-  'waypoint',
+  'compat/modernizr',
+  'waypoints',
   'components/achievements',
   'components/reports',
   'components/chart',
-  'domready!'
+  'require/domReady!'
 ], function(
   Skrollr,
   Modernizr,

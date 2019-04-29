@@ -16,13 +16,13 @@ requirejs.config({
   },
   shim: {
     // Add your app specific shims here...
-    'waypoint': {
+    'waypoints': {
       exports: 'Waypoint',
-      deps: ['domready!']
+      deps: ['require/domReady!']
     },
-    'modernizr': {
+    'compat/modernizr': {
       exports: 'Modernizr',
-      deps: ['require/domready!']
+      deps: ['require/domReady!']
     },
     'compat/scrollBehavior': {
       exports: 'smoothscroll'

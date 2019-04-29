@@ -11,7 +11,7 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
-require(['require/domready!'], function() {
+require(['require/domReady!'], function() {
   'use strict';
   // ...
 });
