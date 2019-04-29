@@ -20,6 +20,7 @@
   --color-black: #1a1a1a;
   --color-darkgray: #636466;
   --color-gray: #f6f6f6;
+  --color-white: #fff;
 
   --font-family-sans: 'Montserrat', sans-serif;
   --font-family-serif: 'Source Serif Pro', serif;
@@ -42,7 +43,7 @@ body {
   text-size-adjust: none;
 
   color: var(--color-black);
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 * {
   box-sizing: border-box;
@@ -1637,6 +1638,9 @@ a:focus {
 .finance-banner__button {
   margin-top: 40px;
 }
+.finance-banner__button span + span {
+  padding-left: 8px;
+}
 
 @media (max-width: 550px) {
   .finance-banner {
@@ -2242,7 +2246,7 @@ a:focus {
 ---------------------------------------------------------------- */
 .achievements {
   text-align: center;
-  background-color: var(--color-lightpurple);
+  background-color: var(--color-white);
 }
 .achievements__flex-wrapper {
   display: flex;
@@ -2330,7 +2334,7 @@ a:focus {
 }
 .achievement__category {
   display: inline-block;
-  background-color: #FFF;
+  background-color: var(--color-white);
   padding: 3px 5px;
   font-family: var(--font-family-sans);
   text-transform: uppercase;
@@ -2343,10 +2347,10 @@ a:focus {
   position: relative;
   padding-top: 25px;
   float: right;
-  color: var(--color-darkgray);
+  color: var(--color-black);
 }
 .achievement__number {
-  color: var(--color-purple);
+  color: var(--color-blue);
   display: block;
   white-space: nowrap;
   font-feature-settings: "tnum" 1;
@@ -2431,7 +2435,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-lightpurple);
+  background-color: var(--color-white);
 }
 .reports__data {
   display: none;
@@ -2477,14 +2481,15 @@ a:focus {
 }
 .reports__link {
   display: block;
-  color: var(--color-blue);
+  color: var(--color-black);
   padding-bottom: 40px;
   margin: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease, color 0.2s ease;
   opacity: 1;
 }
 .reports__link:hover .reports__link-title {
-  color: var(--color-purple);
+  color: var(--color-darkgray);
+  transition: color 0.2s ease;
 }
 .reports__link.loading {
   transition: opacity 0.3s ease;
@@ -2967,7 +2972,7 @@ a:focus {
 .chart__headline {
   position: absolute;
   text-align: left;
-  color: #FFF;
+  color: var(--color-white);
   z-index: 10;
 }
 .chart__headline h1 {
@@ -3017,7 +3022,7 @@ a:focus {
 }
 .chart__date {
   position: relative;
-  color: #FFF;
+  color: var(--color-white);
   bottom: 0px;
   transition: bottom 0.5s;
 }

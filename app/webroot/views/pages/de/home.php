@@ -236,8 +236,11 @@
 				</figure>
 			</div>
 			<a href="<?= $url('finance', $lang) ?>">
-				<p class="h--beta">Unsere Finanzen 2017</p>
-				<p class="finance-banner__button h--delta">&mdash; Zum Finanzteil</p>
+				<p class="h--beta">Unsere Finanzen 2018</p>
+				<p class="finance-banner__button h--delta">
+					<span>&mdash;</span>
+					<span>Zum Finanzteil</span>
+				</p>
 			</a>
 		</div>
 	</section>
