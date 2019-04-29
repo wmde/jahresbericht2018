@@ -10,16 +10,16 @@
  */
 
 :root {
-  --color-orange: #f29400;
-  --color-green: #339966;
+  --color-purple: #652D90;
+  --color-blue: #009EE0;
+  --color-lightblue: #E5F5FC;
+  --color-lightpurple: #EFE9F3;
+  --color-gradient-purple: linear-gradient(#8c42c6, #652D90 30%);
+  --color-gradient-blue: linear-gradient(#009EE0, #0077ab 90%);
+  --color-gradient-blue--inverse: linear-gradient(#05b4ff, #009EE0 60%);
   --color-black: #1a1a1a;
   --color-darkgray: #636466;
   --color-gray: #f6f6f6;
-  --color-lightgreen: #e2efe9;
-  --color-lightorange: #fceed9;
-  --color-gradient-orange: linear-gradient(#F8B54A, #f29400 30%);
-  --color-gradient-green: linear-gradient(#339966, #50B78D 90%);
-  --color-gradient-green--inverse: linear-gradient(#5AC59B, #339966 60%);
 
   --font-family-sans: 'Montserrat', sans-serif;
   --font-family-serif: 'Source Serif Pro', serif;
@@ -302,7 +302,7 @@ body > main {
 .h--gamma em,
 .h--delta em {
   font-style: normal;
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 
 @media (max-width: 1100px) {
@@ -333,7 +333,7 @@ body > main {
 ---------------------------------------------------------------- */
 .quote {
   margin: 60px 80px 80px -80px;
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 .quote__body > p:first-of-type {
   margin-top: 0;
@@ -393,7 +393,7 @@ body > main {
   padding-top: 5px;
 }
 .border-box--report {
-  border-color: var(--color-green);
+  border-color: var(--color-blue);
   margin: 80px 30px;
 }
 .border-box--report .bullet-list li {
@@ -420,7 +420,7 @@ body > main {
   display: flex;
 }
 .border-box--finance:hover {
-  color: var(--color-orange);
+  color: var(--color-purple);
   background-color: white;
 }
 .border-box--finance em {
@@ -432,15 +432,15 @@ body > main {
   line-height: 1.35;
 }
 .border-box--fund {
-  color: var(--color-orange);
-  border-color: var(--color-orange);
+  color: var(--color-purple);
+  border-color: var(--color-purple);
   width: 450px;
   text-align: center;
   display: flex;
 }
 .border-box--fund:hover {
   color: white;
-  background-color: var(--color-orange);
+  background-color: var(--color-purple);
 }
 .border-box--fund em {
   display: block;
@@ -451,19 +451,19 @@ body > main {
   line-height: 1.35;
 }
 .border-box--assn {
-  color: var(--color-green);
-  border-color: var(--color-green);
+  color: var(--color-blue);
+  border-color: var(--color-blue);
   width: 450px;
   text-align: center;
   display: flex;
 }
 .border-box--assn a {
-  color: var(--color-green);
-  border-bottom: 1px solid var(--color-green);
+  color: var(--color-blue);
+  border-bottom: 1px solid var(--color-blue);
 }
 .border-box--assn:hover {
   color: white;
-  background-color: var(--color-green);
+  background-color: var(--color-blue);
 }
 .border-box--assn em {
   display: block;
@@ -477,11 +477,11 @@ body > main {
 /* Section Backgrounds
 ---------------------------------------------------------------- */
 .bg--green {
-  background-color: var(--color-green);
+  background-color: var(--color-blue);
 }
 .bg--finance-assn {
-  background: var(--color-lightorange);
-  color: var(--color-green);
+  background: var(--color-lightpurple);
+  color: var(--color-blue);
 }
 .bg--finance-main {
 /* no color variable here to support ios */
@@ -497,15 +497,15 @@ body > main {
 /* Content Sections
 ---------------------------------------------------------------- */
 .finance--assn .section .fin-detail__mittel a {
-  border-bottom: 1px solid var(--color-green);
-  color: var(--color-green);
+  border-bottom: 1px solid var(--color-blue);
+  color: var(--color-blue);
 }
 .finance--assn .section .fin-detail__mittel a:hover {
   opacity: 0.5;
 }
 .finance--assn .section .fin-detail__mittel:last-of-type {
   padding-top: 80px;
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 .section {
   position: relative; /* __heading is absolute */
@@ -513,7 +513,7 @@ body > main {
 }
 .section__heading { /* == h--delta special */
   font-family: var(--font-family-sans);
-  color: var(--color-green);
+  color: var(--color-blue);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
@@ -614,7 +614,7 @@ a:focus {
   z-index: -1000;
   text-align: center;
   transition: opacity .5s, left 0s .5s;
-  background: var(--color-gradient-green--inverse);
+  background: var(--color-gradient-blue--inverse);
 }
 .mn-container .logo {
   padding: 10px;
@@ -703,7 +703,7 @@ a:focus {
 }
 .video__caption a,
 .fig__caption a {
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 .video__caption a:hover,
 .fig__caption a:hover {
@@ -1004,30 +1004,30 @@ a:focus {
   justify-content: center;
 }
 .button--report:nth-of-type(2) {
-  color: var(--color-green);
+  color: var(--color-blue);
   background-image: none;
 	background-color: var(--color-gray);
   display: block;
 }
 .button--bg-green {
 	color: white;
-	background-color: var(--color-green);
-  border: 1px solid var(--color-green);
+	background-color: var(--color-blue);
+  border: 1px solid var(--color-blue);
   transition: all .5s;
 }
 .button--bg-green:hover {
-  color: var(--color-green);
+  color: var(--color-blue);
   background-color: white;
-  border: 1px solid var(--color-green);
+  border: 1px solid var(--color-blue);
 }
 .button--outline-green {
-	color: var(--color-green);
-	border-color: var(--color-green);
+	color: var(--color-blue);
+	border-color: var(--color-blue);
   transition: all .5s;
 }
 .button--outline-green:hover {
   color: white;
-  background-color: var(--color-green);
+  background-color: var(--color-blue);
   border: 1px solid white;
 }
 .button--outline-white {
@@ -1069,7 +1069,7 @@ a:focus {
 }
 .jb-vsplit__title {
 	margin: 0;
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 .jb-vsplit__content {
 	position: relative;
@@ -1134,7 +1134,7 @@ a:focus {
   text-align: right;
 }
 .jb-hsplit__title {
-  color: var(--color-green);
+  color: var(--color-blue);
   margin: 5px 0 0 0;
 }
 .jb-hsplit:hover .jb-hsplit__overlay {
@@ -1250,7 +1250,7 @@ a:focus {
 .home-hero {
   height: 880px;
   color: white;
-  background: var(--color-gradient-green--inverse);
+  background: var(--color-gradient-blue--inverse);
   transform-origin: 0 0;
   position: relative;
   overflow: hidden;
@@ -1311,7 +1311,7 @@ a:focus {
 }
 .home__intro--layer {
   height: 600px;
-  background-color: var(--color-orange);
+  background-color: var(--color-purple);
   opacity: 0.8;
   width: 100%;
   position: absolute;
@@ -1338,7 +1338,7 @@ a:focus {
   max-width: 750px;
 }
 .animation-ctl-button {
-  color: var(--color-green);
+  color: var(--color-blue);
   border: none;
   background: none;
   padding: 0;
@@ -1503,14 +1503,14 @@ a:focus {
   }
 }
 .home__facts .button {
-  color: var(--color-green);
+  color: var(--color-blue);
   background-color: white;
   border: 1px solid white;
   transition: all .5s;
 }
 .home__facts .button:hover {
   color: white;
-  background-color: var(--color-green);
+  background-color: var(--color-blue);
   border: 1px solid white;
 }
 
@@ -1519,7 +1519,7 @@ a:focus {
 }
 .home__join h1 {
   margin-bottom: 0;
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 .home__join p {
   margin-top: 10px;
@@ -1616,7 +1616,7 @@ a:focus {
   color: white;
   text-align: center;
   overflow: hidden;
-  background-color: var(--color-orange);
+  background-color: var(--color-purple);
   display: block;
   text-align: left;
 }
@@ -1873,7 +1873,7 @@ a:focus {
 }
 .ft__row-line td {
   border-bottom: 1px solid var(--color-gray);
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 .ft__row-line--black td {
   border-bottom: 1px solid white;
@@ -1893,10 +1893,10 @@ a:focus {
   border-bottom: 1px solid var(--color-lightgreen);
 }
 .finance--assn .ft__row-line .ft__col-val {
-  border-bottom: 1px solid var(--color-lightorange);
+  border-bottom: 1px solid var(--color-lightpurple);
 }
 .finance--assn .ft__cell-line {
-  border-bottom: 1px solid var(--color-lightorange);
+  border-bottom: 1px solid var(--color-lightpurple);
 }
 .finance--fund .ft__cell-line {
   border-bottom: 1px solid var(--color-lightgreen);
@@ -1904,7 +1904,7 @@ a:focus {
 .ft__col-key {
   width: 35%;
   padding-right: 35px;
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 .ft__col-key--black {
   color: var(--color-black);
@@ -1934,28 +1934,28 @@ a:focus {
 }
 .ft__green-bg {
   color: white;
-  background-color: var(--color-green);
+  background-color: var(--color-blue);
 }
 .ft__orange-bg {
   color: white;
-  background-color: var(--color-orange);
+  background-color: var(--color-purple);
 }
 .ft__em {
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 .ft__em--orange {
-  color: var(--color-orange);
+  color: var(--color-purple);
 }
 .finance--fund .ft__em {
   background-color: var(--color-lightgreen);
 }
 .ft__green-border {
- border-right: 3px solid var(--color-green);
- border-left: 3px solid var(--color-green);
+ border-right: 3px solid var(--color-blue);
+ border-left: 3px solid var(--color-blue);
 }
 .ft__orange-border {
- border-right: 3px solid var(--color-orange);
- border-left: 3px solid var(--color-orange);
+ border-right: 3px solid var(--color-purple);
+ border-left: 3px solid var(--color-purple);
 }
 
 @media (max-width: 1100px) {
@@ -2242,7 +2242,7 @@ a:focus {
 ---------------------------------------------------------------- */
 .achievements {
   text-align: center;
-  background-color: var(--color-lightorange);
+  background-color: var(--color-lightpurple);
 }
 .achievements__flex-wrapper {
   display: flex;
@@ -2346,7 +2346,7 @@ a:focus {
   color: var(--color-darkgray);
 }
 .achievement__number {
-  color: var(--color-orange);
+  color: var(--color-purple);
   display: block;
   white-space: nowrap;
   font-feature-settings: "tnum" 1;
@@ -2409,7 +2409,7 @@ a:focus {
   padding: 2px 5px;
 }
 .achievement-box__number {
-  color: var(--color-orange);
+  color: var(--color-purple);
   display: block;
   margin: 0;
 }
@@ -2431,7 +2431,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-lightorange);
+  background-color: var(--color-lightpurple);
 }
 .reports__data {
   display: none;
@@ -2477,14 +2477,14 @@ a:focus {
 }
 .reports__link {
   display: block;
-  color: var(--color-green);
+  color: var(--color-blue);
   padding-bottom: 40px;
   margin: 0;
   transition: opacity 0.5s ease;
   opacity: 1;
 }
 .reports__link:hover .reports__link-title {
-  color: var(--color-orange);
+  color: var(--color-purple);
 }
 .reports__link.loading {
   transition: opacity 0.3s ease;
@@ -2651,12 +2651,12 @@ a:focus {
 /* Report Landing Page
 ---------------------------------------------------------------- */
 .report-landing-hero {
-  background-color: var(--color-green);
+  background-color: var(--color-blue);
   text-align: center;
   color: white;
 }
 .report-landing .report-landing-hero {
-  background: var(--color-gradient-green--inverse);
+  background: var(--color-gradient-blue--inverse);
 }
 .report-landing-hero__cubes {
   display: flex;
@@ -2952,7 +2952,7 @@ a:focus {
 /* Chart
 ---------------------------------------------------------------- */
 .chart {
-  background: var(--color-gradient-green--inverse);
+  background: var(--color-gradient-blue--inverse);
   position: relative;
   width: 100%;
   text-align: center;
@@ -3039,7 +3039,7 @@ a:focus {
 }
 .chart__button.active,
 .chart__button:hover {
-  color: var(--color-green);
+  color: var(--color-blue);
   background-color: white;
 }
 .chart__date-linebreak,
