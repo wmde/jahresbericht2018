@@ -1,14 +1,11 @@
 #!/bin/bash
 #
-# Copyright 2018 Atelier Disko. All rights reserved.
+# Wikimedia Jahresbericht 2018
 #
-# Use of this source code is governed by the AD General Software
-# License v1 that can be found under https://atelierdisko.de/licenses
+# Copyright (c) 2017 Atelier Disko - All rights reserved.
 #
-# This software is proprietary and confidential. Redistributions
-# not permitted. Unless required by applicable law or agreed to
-# in writing, software distributed on an "AS IS" BASIS, WITHOUT
-# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# Use of this source code is governed by the AGPL v3
+# license that can be found in the LICENSE file.
 
 set -o nounset
 set -o errexit
