@@ -1,89 +1,108 @@
 #!/bin/bash -x
 #
-# Wikimedia Jahresbericht 2018
+# Copyright 2013 David Persson. All rights reserved.
+# Copyright 2016 Atelier Disko. All rights reserved.
 #
-# Copyright (c) 2017 Atelier Disko - All rights reserved.
+# Use of this source code is governed by the AD General Software
+# License v1 that can be found under https://atelierdisko.de/licenses
 #
-# Use of this source code is governed by the AGPL v3
-# license that can be found in the LICENSE file.
-#
+# This software is proprietary and confidential. Redistributions
+# not permitted. Unless required by applicable law or agreed to
+# in writing, software distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 set -o nounset
 set -o errexit
+set -o pipefail
 
-# Must be executed from the project root (where Envfile is located). Will
-# operate on and modify the *current* files in tree. Be sure to operate on a
-# copy.
+# Must be executed from the project root (where Envfile is located). As the
+# following actions are destructive we should also require to be invoked from
+# inside a container, but that cannot be reliably be determined. Which we assume
+# uses a copy of the project to work on.
 [[ ! -f Envfile ]] && echo "error: not invoked from project root" && exit 1
 
 source Envfile
-revision=$(git rev-parse --short HEAD)
 
-sed -i -e "s|__VERSION_BUILD__|$revision|g" VERSION.txt
-# Workaround for older BSD versions of sed that need
-# a suffix after -i while interpreting -e as the suffix.
-[[ -f VERSION.txt-e ]] && rm VERSION.txt-e
-sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/index.*
-sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/views/elements/de/header.php
-if [[ -f app/webroot/views/elements/en/header.php ]]; then
-	sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" app/webroot/views/elements/en/header.php
-fi
-rm -f app/webroot/index.*-e
-rm -f app/webroot/views/elements/*/header.php-e
+# Restricts assets building to app's assets. Libraries must
+# provide their own buildscript when they ship assets. This
+# is because we cannot know if certain assets will need
+# special compressors.
 
-echo $TARGET_BROWSERS | tr '|' '\n' > .browserslistrc
+for f in $(ls app/resources/g11n/po/*/LC_MESSAGES/*.po); do
+	msgfmt -o ${f/.po/.mo} --verbose $f
+done
+
+make \\.browserslistrc
 
 # Babelify in-place for full current ESx compatiblity.
 cat << EOF > .babelrc
 {
 	"ignore": [
-		"underscore.js",
-		"require.js",
-		"require",
-		"jquery.js",
-		"modernizr.js",
-		"core.js"
+		"**/underscore.js",
+		"**/require.js",
+		"**/require",
+		"**/jquery.js",
+		"**/modernizr.js",
+		"**/core.js",
+		"**/three.js"
+	],
+	"presets": [
+		[
+			"@babel/preset-env", {
+				"debug": true
+			}
+		]
 	]
 }
 EOF
-babel app/webroot/assets/js -d app/webroot/assets/js
+babel assets/js -d assets/js
 
-for f in $(find app/webroot/assets/js -type f -name *.js); do
+for f in $(find assets/js -type f -name *.js); do
 	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
 done
 
-for f in $(ls app/webroot/assets/css/*.css); do
-	cssnextgen $f > $f.tmp && mv $f.tmp $f
-	sqwish $f -o $f.min && mv $f.min $f
+# We want the minifier to remove file headers of inlined files, the main CSS
+# file (base.css) already has a good enough header.
+for f in $(find assets/css/{globals,components} -type f -name *.css); do
+	sed -i 's/\/\*!/\/\*/g' $f
 done
-for f in $(find app/webroot/assets/css/views -type f -name *.css); do
-    cssnextgen $f > $f.tmp && mv $f.tmp $f
-    sqwish $f -o $f.min && mv $f.min $f
+for f in $(ls assets/css/*.css); do
+	css-nextgen $f > $f.tmp && mv $f.tmp $f
+	cleancss --skip-rebase $f -o $f.min && mv $f.min $f
+done
+for f in $(find assets/css/views -type f -name *.css); do
+    css-nextgen $f > $f.tmp && mv $f.tmp $f
+    cleancss --skip-rebase $f -o $f.min && mv $f.min $f
 done
 
 # We can't restrict image search to ico and img directories as images may be
 # located in i.e. vid directories if they are posters.
-for f in $(find app/webroot/assets -type f -name *.png); do
+for f in $(find assets -type f -name *.png); do
 	# -ow flag requires pngcrush >=1.7.22
 	# pngcrush -rem alla -rem text -q -ow $f
 	pngcrush -rem alla -rem text -q $f $f.tmp && mv $f.tmp $f
 done
-for f in $(find app/webroot/assets -type f -name *.jpg); do
+for f in $(find assets -type f -name *.jpg); do
 	mogrify -strip $f
 	# in place optimization requires jpegtran >=8d
 	# jpegtran -optimize -copy none -outfile $f $f
 	jpegtran -optimize -copy none -outfile $f.tmp $f && mv $f.tmp $f
 done
 
-# Ensure we don't install dev tooling in production, for security (potential
-# information disclosure) and performance (larger file search trees) reasons.
 if [[ -f app/composer.json ]]; then
+	# Ensure we don't install dev tooling in production, for security (potential
+	# information disclosure) and performance (larger file search trees) reasons.
+	#
+	# The composer binary may be executed by a higher or lower PHP version the
+	# installed dependencies require. As we're simply installing and not updating we
+	# can ignore this, to simplify build time requirements.
 	if [[ $CONTEXT != "prod" ]]; then
-		composer install -d app --prefer-dist
+		composer install --no-progress --no-interaction --ignore-platform-reqs -d app --prefer-dist
 	else
-		composer install -d app --prefer-dist --no-dev
+		composer install --no-progress --no-interaction --ignore-platform-reqs -d app --prefer-dist --no-dev
 	fi
-	composer dump-autoload  -d app --optimize
+	composer dump-autoload --no-interaction -d app --optimize
 fi
 
-rm -fr .git*
+rm .browserslistrc .babelrc
+rm -fr .git* app/libraries/*/*/.git* app/libraries/*/.git*

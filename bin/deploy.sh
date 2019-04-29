@@ -1,12 +1,15 @@
 #!/bin/bash
 #
-# Wikimedia Jahresbericht 2018
+# Copyright 2013 David Persson. All rights reserved.
+# Copyright 2016 Atelier Disko. All rights reserved.
 #
-# Copyright (c) 2017 Atelier Disko - All rights reserved.
+# Use of this source code is governed by the AD General Software
+# License v1 that can be found under https://atelierdisko.de/licenses
 #
-# Use of this source code is governed by the AGPL v3
-# license that can be found in the LICENSE file.
-#
+# This software is proprietary and confidential. Redistributions
+# not permitted. Unless required by applicable law or agreed to
+# in writing, software distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 set -o nounset
 set -o errexit
@@ -15,9 +18,17 @@ set -o pipefail
 # Must be executed from the project root (where Envfile is located).
 [[ ! -f Envfile ]] && echo "error: not invoked from project root" && exit 1
 
-ASSUME_YES="n"
-if [[ $# == 1 ]] && [[ $1 == "--yes" ]]; then
-	ASSUME_YES="y"
+DRY_RUN="y"
+if [[ $# == 1 ]] && [[ $1 == "--dry-run" ]]; then
+	echo "Enabled dry run mode in $0."
+else
+	DRY_RUN="n"
+	echo "Dry run mode disabled in $0!"
+fi
+
+SHARED_FLAGS=" "
+if [[ $DRY_RUN != "n" ]]; then
+	SHARED_FLAGS+="--dry-run"
 fi
 
 source Deployfile
@@ -34,88 +45,62 @@ TMP=$(mktemp -d -t deploy.XXXX)
 function cleanup { rm -rf $TMP; }
 trap cleanup EXIT
 
-# This is the entire build phase.
 git clone --verbose --single-branch --recursive --no-hardlinks \
 	--branch $(git rev-parse --abbrev-ref HEAD) \
 	$SOURCE_PATH $TMP
+
 cd $TMP
-bin/build.sh
-cd -
 
-if [[ $TRANSFER_METHOD == "manual" ]]; then
-	BUILD_FILE=$TMP/${NAME}_$(date +%Y-%m-%d-%H-%M).tar.gz
-	tar cvfz $BUILD_FILE *
+bin/set-version.sh$SHARED_FLAGS
 
-	printf "Transfer method 'manual' was selected, to finalize the deployment you must\n"
-	printf "now copy the files yourself. Archive is available at:\n -> %s\n" $BUILD_FILE
-
-	if [[ $POST_TRANSFER_COMMANDS != "" ]]; then
-		echo "Do not have SSH. You must execute these commands on target host/s manually:"
-		echo $POST_TRANSFER_COMMANDS
-	fi
-
-elif [[ $TRANSFER_METHOD == "ssh+rsync" ]]; then
-	for H in $TARGET_HOSTS; do
-		if [[ $ASSUME_YES != "y" ]]; then
-			out=$(
-				rsync --stats -h -z -r \
-					--rsh "ssh -p ${TARGET_PORT}" \
-					--delete \
-					--exclude=$(echo ${TRANSFER_IGNORE} | sed  's/ / --exclude=/g') \
-					--links \
-					--times \
-					--verbose \
-					--itemize-changes \
-					--dry-run \
-					${TMP}/ ${TARGET_USER}@${H}:${TARGET_PATH}
-			)
-			echo "To be created on target:"
-			echo "$out" | grep '^c' || true
-			echo
-			echo "To be changed on target:"
-			echo "$out" | grep -E '^<[a-z]+.*[a-z\?].*' || true
-			echo
-			echo "To be deleted on target:"
-			echo "$out" | grep deleting || true
-			echo
-			echo "It's now: $(date -u +%T) UTC"
-			echo "Confirm sync: ${TMP}/ -> ${TARGET_USER}@${H}:${TARGET_PATH}"
-			read -p "Looks good? (y/N) " continue
-			if [[ $continue != "y" ]]; then
-				exit 1
-			fi
-		fi
-		rsync --stats -h -z -r \
-				--rsh "ssh -p ${TARGET_PORT}" \
-				--delete \
-				--exclude=$(echo ${TRANSFER_IGNORE} | sed  's/ / --exclude=/g') \
-				--links \
-				--times \
-				--verbose \
-				--itemize-changes \
-				${TMP}/ ${TARGET_USER}@${H}:${TARGET_PATH}
-	done
-
-	if [[ $POST_TRANSFER_COMMANDS != "" ]]; then
-		for H in $TARGET_HOSTS; do
-			echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> command execution ${TARGET_USER}@${H}:${TARGET_PATH}"
-			ssh -p ${TARGET_PORT} -T ${TARGET_USER}@${H} "cd ${TARGET_PATH} && ${POST_TRANSFER_COMMANDS}"
-			echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< command execution ${TARGET_USER}@${H}:${TARGET_PATH} "
-		done
-	fi
+if [[ $DRY_RUN != "n" ]]; then
+	echo "DRY RUN: Skipping build phase."
 else
-	echo "error: invalid transfer method"
-	exit 1
+	docker run --rm -it \
+		--user $UID \
+		--mount type=bind,source="$(dirname ${SSH_AUTH_SOCK})",target=$(dirname ${SSH_AUTH_SOCK}) \
+		--mount type=bind,source="${HOME}/.composer",target=/composer \
+		--mount type=bind,source="${TMP}",target=/built \
+		--env SSH_AUTH_SOCK=${SSH_AUTH_SOCK} \
+		--env COMPOSER_HOME=/composer \
+		${BUILD_CONTAINER} \
+		/bin/sh -c 'cd built && bin/build.sh'
+fi
+
+if [[ $DRY_RUN != "n" ]]; then
+	bin/pre-transfer-commands.sh$SHARED_FLAGS
+	bin/transfer.sh$SHARED_FLAGS
+	bin/post-transfer-commands.sh$SHARED_FLAGS
+else
+	bin/pre-transfer-commands.sh --dry-run
+	bin/transfer.sh --dry-run
+	bin/post-transfer-commands.sh --dry-run
+
+	read -p "Looks good? (y/N) " continue
+	if [[ $continue != "y" ]]; then
+		echo "Cancelled transfer phase."
+		exit 1
+	fi
+
+	bin/pre-transfer-commands.sh
+	bin/transfer.sh
+	bin/post-transfer-commands.sh
 fi
 
 if [[ $SLACK_WEBHOOK_URL != "" ]]; then
-	JSON="{
-		\"text\": \"Deployed project *$(basename $(pwd))* (v$(cat $TMP/VERSION.txt)) successfully to ${TARGET_HOSTS// /, } without any errors.\"
-	}"
-	echo -n "Sending Slack notification..."
-	curl -s -S -X POST -H 'Content-type: application/json' --data "$JSON" $SLACK_WEBHOOK_URL
-	echo
+	if [[ $DRY_RUN == "y" ]]; then
+		JSON="{
+			\"text\": \"Deployed project *$(basename $(pwd))* (v$(cat $TMP/VERSION.txt)) successfully to ${TARGET_HOSTS// /, } without any errors.\"
+		}"
+		echo -n "Sending Slack notification..."
+		curl -s -S -X POST -H 'Content-type: application/json' --data "$JSON" $SLACK_WEBHOOK_URL
+		echo
+	else
+		echo "DRY RUN: Skipping Slack notification."
+	fi
 fi
 
-echo "Deployment finished without an error."
-echo "It's now: $(date -u +%T) UTC"
+if [[ $DRY_RUN == "n" ]]; then
+	echo "Deployment finished without an error."
+	echo "It's now: $(date -u +%T) UTC"else
+fi

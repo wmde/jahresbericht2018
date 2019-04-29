@@ -19,12 +19,9 @@ domain "wmde-bericht2018.test" {
 	www = "drop"
 	# Either paths or special string "!self-signed"
 	SSL = {
-		certificate = "!self-signed"
-		certificateKey = "!self-signed"
+		certificate = "!selfsigned"
+		certificateKey = "!generate"
 	}
-	# auth {
-	# 	password = "__DOMAIN_AUTH_PASSWORD__"
-	# }
 }
 
 volume "tmp" {

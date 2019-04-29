@@ -7,6 +7,9 @@
 # license that can be found in the LICENSE file.
 #
 
+# Docker container in which the bin/build.sh script will be executed.
+BUILD_CONTAINER="atelierdisko/builder:1.0.0-alpha.2"
+
 # One or multiple target hosts to deploy to. 
 TARGET_HOSTS="web0.disko.io"
 
@@ -18,7 +21,7 @@ TARGET_USER="deploy"
 TARGET_PORT="22"
 
 # The target path on target host.
-TARGET_PATH="/var/www/wmde_bericht2017"
+TARGET_PATH="/var/www/wmde_bericht2018"
 
 # The transfer method to use during deployment. Can be either the follwing. Most
 # methods use TARGET_HOST, TARGET_USER and TARGET_PASSWORD (when set) to connect.
@@ -30,15 +33,12 @@ TRANSFER_METHOD="ssh+rsync"
 # Possible used with rsync and lftp. fnmatch(5) patterns are allowed. To exclude
 # whole directory (not just its contents) DO append slash. Patterns prefixed
 # with a slash are anchored at the base path (when used with rsync).
-TRANSFER_IGNORE="/log/"
+TRANSFER_IGNORE="/media/ /media_versions/ /log/ /tmp/ /files/"
 
-# Command/s to execute after transferring. Commands will be executed by
+# Command/s to execute before and after transferring. Commands will be executed by
 # TARGET_USER on a target host using TARGET_PATH as the working directory.
-POST_TRANSFER_COMMANDS="chmod -R a+rwX tmp log && sudo hoictl load"
-
-# Listing branches that should be deployed automatically, 
-# i.e. when receiving a push.
-AUTO_DEPLOY_BRANCHES="stage"
+PRE_TRANSFER_COMMANDS="mkdir -p log tmp && find tmp log -type f -delete"
+POST_TRANSFER_COMMANDS="sudo hoictl load"
 
 # To enable notifications via Slack, provide a valid webhook URL here.
-SLACK_WEBHOOK_URL=""
+SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
