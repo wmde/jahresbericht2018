@@ -6,7 +6,7 @@
 					Wikimedia<br>
 					Deutschland<br>
 					Jahresbericht<br>
-					2017
+					2018
 				</div>
 				<img class="home-hero__17" src="assets/img/17.png" alt="2017">
 			</div>
