@@ -53,32 +53,23 @@ cat << EOF > .babelrc
 EOF
 babel assets/js -d assets/js
 
-for f in $(find assets/js -type f -name *.js); do
+for f in $(find app/webroot/assets/js -type f -name *.js); do
 	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
 done
 
-# We want the minifier to remove file headers of inlined files, the main CSS
-# file (base.css) already has a good enough header.
-for f in $(find assets/css/{globals,components} -type f -name *.css); do
-	sed -i 's/\/\*!/\/\*/g' $f
-done
-for f in $(ls assets/css/*.css); do
+for f in $(ls app/webroot/assets/css/*.css); do
 	css-nextgen $f > $f.tmp && mv $f.tmp $f
 	cleancss --skip-rebase $f -o $f.min && mv $f.min $f
-done
-for f in $(find assets/css/views -type f -name *.css); do
-    css-nextgen $f > $f.tmp && mv $f.tmp $f
-    cleancss --skip-rebase $f -o $f.min && mv $f.min $f
 done
 
 # We can't restrict image search to ico and img directories as images may be
 # located in i.e. vid directories if they are posters.
-for f in $(find assets -type f -name *.png); do
+for f in $(find app/webroot/assets -type f -name *.png); do
 	# -ow flag requires pngcrush >=1.7.22
 	# pngcrush -rem alla -rem text -q -ow $f
 	pngcrush -rem alla -rem text -q $f $f.tmp && mv $f.tmp $f
 done
-for f in $(find assets -type f -name *.jpg); do
+for f in $(find app/webroot/assets -type f -name *.jpg); do
 	mogrify -strip $f
 	# in place optimization requires jpegtran >=8d
 	# jpegtran -optimize -copy none -outfile $f $f
