@@ -1,5 +1,5 @@
 #
-# Wikimedia Jahresbericht 2017
+# Wikimedia Jahresbericht 2018
 #
 # Copyright (c) 2017 Atelier Disko - All rights reserved.
 #
@@ -15,7 +15,7 @@
 CONTEXT="dev"
 
 # The projects name.
-NAME="wmde_bericht2017"
+NAME="wmde_bericht2018"
 
 # -----------------------------------------------------------
 # Debugging / Analysis
