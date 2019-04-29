@@ -10,7 +10,7 @@
 
 define('PROJECT_CONTEXT', 'dev');
 define('PROJECT_APP_PATH', __DIR__);
-define('PROJECT_DOMAIN', 'wmde-bericht2017.test');
+define('PROJECT_DOMAIN', 'wmde-bericht2018.test');
 
 if (PROJECT_CONTEXT === 'dev') {
 	error_reporting(E_ALL);
