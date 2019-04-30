@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="230px" viewBox="0 0 200 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>cube_themen</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="40.0677826%" y1="70.6380802%" x2="50%" y2="5.12813015%" id="linearGradient-1">
+            <stop stop-color="#0095D3" offset="0%"></stop>
+            <stop stop-color="#652D90" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="54.4091125%" y1="64.9471435%" x2="41.578751%" y2="-32.4084567%" id="linearGradient-2">
+            <stop stop-color="#0094D2" offset="0%"></stop>
+            <stop stop-color="#652D90" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="13.8350003%" y1="40.8980316%" x2="288.799337%" y2="110.102185%" id="linearGradient-3">
+            <stop stop-color="#652D90" offset="0.04982462%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="DESIGN" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cube_themen" fill-rule="nonzero">
+            <polygon id="Shape" fill="url(#linearGradient-1)" points="101 115.52 101 230 0 172.48 0.326662421 58"></polygon>
+            <g id="Group" opacity="0.8" transform="translate(101.000000, 57.000000)" fill="url(#linearGradient-2)">
+                <g id="Shape">
+                    <polygon points="98.8785781 0.812304598 98.5534275 115.242856 -8.27680592e-13 173 -2.99916941e-12 58.2462312"></polygon>
+                </g>
+            </g>
+            <polygon id="Shape" fill="url(#linearGradient-3)" points="200 58.3788622 100.332288 116 0 57.5639098 99.5744834 0"></polygon>
+        </g>
+    </g>
+</svg>

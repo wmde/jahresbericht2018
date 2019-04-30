@@ -15,7 +15,7 @@ define('components/chart', [], function() {
     init() {
       setTimeout(() => {
         document.querySelector('.charts').classList.remove('loading');
-      }, 1000);
+      }, 800);
     }
   }
 });

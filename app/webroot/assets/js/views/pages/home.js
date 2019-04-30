@@ -62,7 +62,7 @@ require([
         chart.init();
 			}
     },
-    offset: '60%'
+    offset: '100%'
   })
 
   new Waypoint({

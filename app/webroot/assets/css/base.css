@@ -487,9 +487,9 @@ body > main {
 .bg--finance-main {
 /* no color variable here to support ios */
   background-image: url(../img/finanzen_bg.png),
-     linear-gradient(#F8B54A, #f29400 30%);
-  background-repeat: no-repeat;
+     linear-gradient(#8c42c6, #652D90 30%);
   background-position: center 180px, 0px;
+  background-repeat: no-repeat;
 }
 .bg--light-blue {
   background-color: var(--color-lightgreen);
@@ -1135,7 +1135,7 @@ a:focus {
   text-align: right;
 }
 .jb-hsplit__title {
-  color: var(--color-blue);
+  color: var(--color-black);
   margin: 5px 0 0 0;
 }
 .jb-hsplit:hover .jb-hsplit__overlay {
@@ -1782,6 +1782,7 @@ a:focus {
 .finance {
   overflow: hidden;
   position: relative;
+  color: var(--color-white);
 }
 .finance--fund {
   color: var(--color-black);
@@ -1806,8 +1807,8 @@ a:focus {
   margin-bottom: 60px;
 }
 .finance__p a {
-  color: var(--color-black);
-  border-bottom: 1px solid var(--color-black);
+  color: var(--color-white);
+  border-bottom: 1px solid var(--color-white);
 }
 .finance__p a:hover {
   opacity: 0.5;
@@ -2693,7 +2694,7 @@ a:focus {
   justify-content: center;
   width: 200px;
   height: 240px;
-  background: url(../img/cube_themen_green.svg) no-repeat center/contain;
+  background: url(../img/cube_themen_blue.svg) no-repeat center/contain;
   margin: 20px;
 }
 .nav-cube__title {
@@ -2701,7 +2702,7 @@ a:focus {
 }
 .nav-cube:hover,
 .nav-cube.active {
-  background-image: url(../img/cube_themen_orange.svg);
+  background-image: url(../img/cube_themen_purple.svg);
 }
 
 @media (min-width: 1181px) {

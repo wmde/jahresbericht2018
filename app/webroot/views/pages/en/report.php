@@ -9,7 +9,7 @@
 					</div>
 				</div>
 				<div class="filter-head--menu h--beta"><?= $filter['title'][$lang] ?></div>
-				<img class="filter-head--image" src="/assets/img/cube_themen_orange.svg" alt="Themenübersicht Illustration">
+				<img class="filter-head--image" src="/assets/img/cube_themen_purple.svg" alt="Themenübersicht Illustration">
 				<div class="filter-text t--gamma-serif"><?= $filter['teaser'][$lang] ?></div>
 			</div>
 		</div>
