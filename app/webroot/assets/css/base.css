@@ -3026,10 +3026,6 @@ a:focus {
   bottom: 0px;
   transition: bottom 0.5s;
 }
-.chart__date-line {
-  position: absolute;
-  left: -20px;
-}
 .chart__date.active {
   bottom: 5px;
 }
@@ -3072,9 +3068,6 @@ a:focus {
   }
   .chart__cards--small {
     display: block;
-  }
-  .chart__date-line {
-    display: none;
   }
 }
 
