@@ -1251,7 +1251,7 @@ a:focus {
 .home-hero {
   height: 880px;
   color: white;
-  background: var(--color-gradient-blue--inverse);
+  background: var(--color-gradient-blue);
   transform-origin: 0 0;
   position: relative;
   overflow: hidden;
@@ -1262,9 +1262,9 @@ a:focus {
   position: relative;
   z-index: 20;
 }
-.home-hero__17 {
+.home-hero__18 {
   position: absolute;
-  width: 620px;
+  width: 780px;
   bottom: -510px;
   left: 370px;
 }
@@ -1370,7 +1370,7 @@ a:focus {
   .home-hero {
     height: 820px;
   }
-  .home-hero__17 {
+  .home-hero__18 {
     width: 500px;
     bottom: -370px;
     left: 270px;
@@ -1403,7 +1403,7 @@ a:focus {
   .home-hero__title {
     margin-top: 60px;
   }
-  .home-hero__17 {
+  .home-hero__18 {
     width: 500px;
     bottom: -370px;
     left: 140px;
@@ -1433,7 +1433,7 @@ a:focus {
   .home-hero__title {
     margin-top: 0px;
   }
-  .home-hero__17 {
+  .home-hero__18 {
     width: 390px;
     bottom: -290px;
     left: 100px;
@@ -1464,7 +1464,7 @@ a:focus {
   .home-hero {
     height: 450px;
   }
-  .home-hero__17 {
+  .home-hero__18 {
     width: 250px;
     bottom: -130px;
     left: 51px;

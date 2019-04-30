@@ -8,7 +8,7 @@
 					Annual Report<br>
 					2017
 				</div>
-				<img class="home-hero__17" src="assets/img/17.png" alt="2017">
+				<img class="home-hero__18" src="assets/img/18.png" alt="The Year 2018">
 			</div>
 		</section>
 		<div class="home-hero__img t--zeta">
