@@ -2961,6 +2961,13 @@ a:focus {
   position: relative;
   width: 100%;
   text-align: center;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+.chart__container {
+  max-width: 960px;
+  position: relative;
+  margin: auto;
 }
 .chart.cp--component-section {
   padding-top: 60px;
@@ -2981,41 +2988,50 @@ a:focus {
 .chart__headline--description {
   text-transform: uppercase;
 }
-
 .charts {
-  height: 500px;
+  height: 600px;
+  position: relative;
+  width: 100%;
 }
 
 /* Chart Texts */
 .charts__texts {
   float: left;
   text-align: right;
-  width: 19%;
+  width: 120px;
 }
 .chart-text {
   position: relative;
   text-align: right;
   color: var(--color-white);
   background-color: var(--color-blue);
+  padding: 10px 20px;
+  margin-top: 0;
+  margin-bottom: 26px;
+  height: 53px;
+}
+.chart-bar {
+  height: 79px;
 }
 .chart-text__date, .chart-text__number {
   display: block;
 }
 .chart-text__date + .chart-text__number {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 /* Chart Bars */
 .charts__bars {
-  float: left;
-  padding: 10px 0;
+  float: right;
   position: relative;
-  width: 60%;
+  width: calc(100% - 120px);
+}
+.charts__images {
+  height: 79px;
+  float: left;
 }
 .chart-bar {
   float: left;
-  height: 50px;
-  margin-bottom: 20px;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -3026,18 +3042,45 @@ a:focus {
   bottom: 0;
   left: 0;
   top: 0;
+  margin-left: 46px;
+  margin-top: 26px;
 }
 
 /* Chart Bar animation */
+/*
+Calculation: 100% = number of 2019
+Other years are less than 100%
+100 % - (100 / year2019) * currentYear
+*/
 @-webkit-keyframes grow-2019 {
-   from { right: 100%; }
-   to   { right: 10%; }
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 72.611)))}
+}
+@-webkit-keyframes grow-2018 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 65.374))) }
+}
+@-webkit-keyframes grow-2017 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 43.138))) }
+}
+@-webkit-keyframes grow-2016 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 29.169))) }
+}
+@-webkit-keyframes grow-2015 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 15.778))) }
+}
+@-webkit-keyframes grow-2014 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 9.803))) }
+}
+@-webkit-keyframes grow-2013 {
+   from { right: 100% }
+   to   { right: 94% }
 }
 
-@-webkit-keyframes grow-2018 {
-   from { right: 100%; }
-   to   { right: 25%; }
-}
 .charts.loading .chart-bar .inner {
   animation: none;
   right: 100%;
@@ -3045,10 +3088,58 @@ a:focus {
 .chart-bar.percent-2019 .inner {
   -webkit-animation-duration: 2s;
   -webkit-animation-name: grow-2019;
-  right: 10%;
+  right: calc(1% * (100 - ((100 / 72.611) * 72.611)));
 }
 .chart-bar.percent-2018 .inner {
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 2.5s;
   -webkit-animation-name: grow-2018;
-  right: 25%;
+  right: calc(1% * (100 - ((100 / 72.611) * 65.374)));
+}
+.chart-bar.percent-2017 .inner {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: grow-2017;
+  right: calc(1% * (100 - ((100 / 72.611) * 43.138)));
+}
+.chart-bar.percent-2016 .inner {
+  -webkit-animation-duration: 3.5s;
+  -webkit-animation-name: grow-2016;
+  right: calc(1% * (100 - ((100 / 72.611) * 29.169)));
+}
+.chart-bar.percent-2015 .inner {
+  -webkit-animation-duration: 4s;
+  -webkit-animation-name: grow-2015;
+  right: calc(1% * (100 - ((100 / 72.611) * 15.778)));
+}
+.chart-bar.percent-2014 .inner {
+  -webkit-animation-duration: 4.5s;
+  -webkit-animation-name: grow-2014;
+  right: calc(1% * (100 - ((100 / 72.611) * 9.803)));
+}
+.chart-bar.percent-2013 .inner {
+  -webkit-animation-duration: 3.5s;
+  -webkit-animation-name: grow-2013;
+  right: 94%;
+}
+
+@media (max-width: 1100px) {
+  .chart {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 550px) {
+  .chart {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .charts__texts {
+    width: 90px;
+  }
+  .charts__bars {
+    width: calc(100% - 90px);
+  }
+  .chart-text {
+    padding: 8px 5px;
+  }
 }

@@ -118,7 +118,7 @@
 		</button>
 	</section>
 	<section class="chart cp--component-section">
-		<div class="limit--l">
+		<div class="chart__container">
 			<div class="chart__headline">
 				<div class="chart__headline--description t--epsilon">
 					März 2013 - März 2019
@@ -136,13 +136,55 @@
 						<span class="chart-text__date t--epsilon">01.03.2018</span>
 						<span class="chart-text__number t--epsilon-emph">65.374</span>
 					</p>
+					<p class="chart-text">
+						<span class="chart-text__date t--epsilon">01.03.2017</span>
+						<span class="chart-text__number t--epsilon-emph">43.138</span>
+					</p>
+					<p class="chart-text">
+						<span class="chart-text__date t--epsilon">01.03.2016</span>
+						<span class="chart-text__number t--epsilon-emph">29.169</span>
+					</p>
+					<p class="chart-text">
+						<span class="chart-text__date t--epsilon">01.03.2015</span>
+						<span class="chart-text__number t--epsilon-emph">15.778</span>
+					</p>
+					<p class="chart-text">
+						<span class="chart-text__date t--epsilon">01.03.2014</span>
+						<span class="chart-text__number t--epsilon-emph">9.803</span>
+					</p>
+					<p class="chart-text">
+						<span class="chart-text__date t--epsilon">01.03.2013</span>
+						<span class="chart-text__number t--epsilon-emph">2.618</span>
+					</p>
 				</div>
 
 				<div class="charts__bars">
 					<div class="chart-bar percent-2019">
+						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
 						<div class="inner"></div>
 					</div>
 					<div class="chart-bar percent-2018">
+						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<div class="inner"></div>
+					</div>
+					<div class="chart-bar percent-2017">
+						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<div class="inner"></div>
+					</div>
+					<div class="chart-bar percent-2016">
+						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<div class="inner"></div>
+					</div>
+					<div class="chart-bar percent-2015">
+						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<div class="inner"></div>
+					</div>
+					<div class="chart-bar percent-2014">
+						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<div class="inner"></div>
+					</div>
+					<div class="chart-bar percent-2013">
+						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
 						<div class="inner"></div>
 					</div>
 				</div>
