@@ -2957,7 +2957,7 @@ a:focus {
 /* Chart
 ---------------------------------------------------------------- */
 .chart {
-  background: var(--color-gradient-blue--inverse);
+  background: var(--color-gradient-blue);
   position: relative;
   width: 100%;
   text-align: center;
@@ -2970,7 +2970,7 @@ a:focus {
   padding-top: 50px 0;
 }
 .chart__headline {
-  position: absolute;
+  position: relative;
   text-align: left;
   color: var(--color-white);
   z-index: 10;
@@ -2982,121 +2982,73 @@ a:focus {
   text-transform: uppercase;
 }
 
-/* chart cards */
-.chart__cards-wrapper {
-  position: relative;
-  display: inline-block;
-  width: 100%;
+.charts {
   height: 500px;
-  padding-top: 264px;
-  padding-left: 150px;
-}
-.chart__cards {
-  position: relative;
-  height: 100%;
-}
-.chart__card {
-  position: absolute;
-  width: 152px;
-  height: 264px;
-  background: url(../img/chart_card.svg) no-repeat left/contain;
-  overflow: visible;
-  transition: margin-bottom 0.4s ease, bottom 0.8s ease;
-}
-.chart__cards:not(.loading) .chart__card:hover {
-  opacity: 1;
-  margin-bottom: 10px;
-  transition: margin-bottom 0.3s ease;
-}
-.chart__card.fix {
-  bottom: 0px !important;
 }
 
-/* chart dates */
-.chart__dates-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-  padding: 70px 0;
-  text-align: left;
+/* Chart Texts */
+.charts__texts {
+  float: left;
+  text-align: right;
+  width: 19%;
 }
-.chart__date {
+.chart-text {
   position: relative;
+  text-align: right;
   color: var(--color-white);
-  bottom: 0px;
-  transition: bottom 0.5s;
+  background-color: var(--color-blue);
 }
-.chart__date.active {
-  bottom: 5px;
+.chart-text__date, .chart-text__number {
+  display: block;
 }
-.chart__date-value {
-  font-weight: 700;
-}
-.chart__button {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 500;
-  border: 1px solid white;
-}
-.chart__button.active,
-.chart__button:hover {
-  color: var(--color-blue);
-  background-color: white;
-}
-.chart__date-linebreak,
-.chart__cards--small,
-.chart__cards--mobile {
-  display: none;
-}
-@media (min-width: 1280px) {
-  .chart__cards-wrapper {
-    position: relative;
-    max-width: 1280px;
-    left: -10px;
-  }
+.chart-text__date + .chart-text__number {
+  padding-top: 10px;
 }
 
-@media (max-width: 960px) {
-  .chart__cards-wrapper {
-    height: 400px;
-  }
-  .chart__headline {
-    position: relative;
-  }
-  .chart__cards--desktop {
-    display: none;
-  }
-  .chart__cards--small {
-    display: block;
-  }
+/* Chart Bars */
+.charts__bars {
+  float: left;
+  padding: 10px 0;
+  position: relative;
+  width: 60%;
+}
+.chart-bar {
+  float: left;
+  height: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.chart-bar .inner {
+  background-color: var(--color-white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
 }
 
-@media (max-width: 720px) {
-  .chart__cards--small {
-    display: none;
-  }
-  .chart__cards.chart__cards--mobile {
-    display: block;
-  }
-  .chart__cards-wrapper {
-    height: 350px;
-  }
+/* Chart Bar animation */
+@-webkit-keyframes grow-2019 {
+   from { right: 100%; }
+   to   { right: 10%; }
 }
 
-@media (max-width: 560px) {
-  .chart__dates-wrapper {
-    flex-flow: row wrap;
-    flex-wrap: wrap;
-    padding: 70px 10px 0 10px;
-  }
-  .chart__dates-wrapper:after {
-    content: '';
-    width: 100%;
-  }
-  .chart__date {
-    margin-bottom: 50px;
-  }
-  .chart__date:nth-child(n + 4) {
-    order: 1;
-  }
+@-webkit-keyframes grow-2018 {
+   from { right: 100%; }
+   to   { right: 25%; }
+}
+.charts.loading .chart-bar .inner {
+  animation: none;
+  right: 100%;
+}
+.chart-bar.percent-2019 .inner {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: grow-2019;
+  right: 10%;
+}
+.chart-bar.percent-2018 .inner {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: grow-2018;
+  right: 25%;
 }

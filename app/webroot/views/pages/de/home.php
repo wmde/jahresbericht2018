@@ -118,65 +118,33 @@
 		</button>
 	</section>
 	<section class="chart cp--component-section">
-		<?php
-			$chartValues = [
-				'01.01.2013' => 2618,
-				'03.05.2013' => 5480,
-				'01.09.2013' =>	6931,
-				'01.01.2014' =>	9803,
-				'01.05.2014' =>	10796,
-				'01.09.2014' =>	11470,
-				'01.01.2015' =>	15778,
-				'01.05.2015' =>	22015,
-				'01.09.2015' =>	23879,
-				'01.01.2016' =>	29169,
-				'02.05.2016' =>	34304,
-				'22.08.2016' =>	35959,
-				'03.01.2017' =>	43138,
-				'20.04.2017' =>	50249,
-				'07.09.2017' => 52710,
-				'03.01.2018' =>	53967,
-				'07.03.2018' =>	65374
-			];
-			echo '<script type="text/javascript">let chartValues = '.json_encode($chartValues).'</script>';
-		?>
-
 		<div class="limit--l">
 			<div class="chart__headline">
 				<div class="chart__headline--description t--epsilon">
-					März 2013 - März 2018
+					März 2013 - März 2019
 				</div>
 				<h1 class="h--beta">Mitgliederentwicklung</h1>
 			</div>
-			<div class="chart__cards-wrapper">
-				<div class="chart__cards chart__cards--desktop loading"></div>
-				<div class="chart__cards chart__cards--small loading"></div>
-				<div class="chart__cards chart__cards--mobile loading"></div>
-			</div>
-			<div class="chart__dates-wrapper t--epsilon">
-				<div class="chart__date">
-					01.03.2013
-					<div class="chart__date-value">2.618</div>
+
+			<div class="charts loading">
+				<div class="charts__texts">
+					<p class="chart-text">
+						<span class="chart-text__date t--epsilon">01.03.2019</span>
+						<span class="chart-text__number t--epsilon-emph">72.611</span>
+					</p>
+					<p class="chart-text">
+						<span class="chart-text__date t--epsilon">01.03.2018</span>
+						<span class="chart-text__number t--epsilon-emph">65.374</span>
+					</p>
 				</div>
-				<div class="chart__date">
-					01.03.2014
-					<div class="chart__date-value">9.803</div>
-				</div>
-				<div class="chart__date">
-					01.03.2015
-					<div class="chart__date-value">15.778</div>
-				</div>
-				<div class="chart__date">
-					01.03.2016
-					<div class="chart__date-value">29.169</div>
-				</div>
-				<div class="chart__date">
-					01.03.2017
-					<div class="chart__date-value">43.138</div>
-				</div>
-				<div class="chart__date">
-					01.03.2018
-					<div class="chart__date-value">65.374</div>
+
+				<div class="charts__bars">
+					<div class="chart-bar percent-2019">
+						<div class="inner"></div>
+					</div>
+					<div class="chart-bar percent-2018">
+						<div class="inner"></div>
+					</div>
 				</div>
 			</div>
 		</div>
