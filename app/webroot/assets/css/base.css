@@ -433,15 +433,15 @@ body > main {
   line-height: 1.35;
 }
 .border-box--fund {
-  color: var(--color-purple);
-  border-color: var(--color-purple);
+  color: var(--color-blue);
+  border-color: var(--color-blue);
   width: 450px;
   text-align: center;
   display: flex;
 }
 .border-box--fund:hover {
   color: white;
-  background-color: var(--color-purple);
+  background-color: var(--color-blue);
 }
 .border-box--fund em {
   display: block;
@@ -452,19 +452,19 @@ body > main {
   line-height: 1.35;
 }
 .border-box--assn {
-  color: var(--color-blue);
-  border-color: var(--color-blue);
+  color: var(--color-purple);
+  border-color: var(--color-purple);
   width: 450px;
   text-align: center;
   display: flex;
 }
 .border-box--assn a {
-  color: var(--color-blue);
-  border-bottom: 1px solid var(--color-blue);
+  color: var(--color-purple);
+  border-bottom: 1px solid var(--color-purple);
 }
 .border-box--assn:hover {
   color: white;
-  background-color: var(--color-blue);
+  background-color: var(--color-purple);
 }
 .border-box--assn em {
   display: block;
@@ -481,8 +481,8 @@ body > main {
   background-color: var(--color-blue);
 }
 .bg--finance-assn {
-  background: var(--color-lightpurple);
-  color: var(--color-blue);
+  background: var(--color-lightblue);
+  color: var(--color-black);
 }
 .bg--finance-main {
 /* no color variable here to support ios */
@@ -491,22 +491,22 @@ body > main {
   background-position: center 180px, 0px;
   background-repeat: no-repeat;
 }
-.bg--light-blue {
-  background-color: var(--color-lightgreen);
+.bg--finance-fund {
+  background-color: var(--color-lightpurple);
 }
 
 /* Content Sections
 ---------------------------------------------------------------- */
 .finance--assn .section .fin-detail__mittel a {
-  border-bottom: 1px solid var(--color-blue);
-  color: var(--color-blue);
+  border-bottom: 1px solid var(--color-purple);
+  color: var(--color-purple);
 }
 .finance--assn .section .fin-detail__mittel a:hover {
   opacity: 0.5;
 }
 .finance--assn .section .fin-detail__mittel:last-of-type {
   padding-top: 80px;
-  color: var(--color-blue);
+  color: var(--color-purple);
 }
 .section {
   position: relative; /* __heading is absolute */
@@ -1784,6 +1784,9 @@ a:focus {
   position: relative;
   color: var(--color-white);
 }
+.finance--assn {
+  color: var(--color-black);
+}
 .finance--fund {
   color: var(--color-black);
 }
@@ -1878,7 +1881,7 @@ a:focus {
 }
 .ft__row-line td {
   border-bottom: 1px solid var(--color-gray);
-  color: var(--color-blue);
+  color: var(--color-black);
 }
 .ft__row-line--black td {
   border-bottom: 1px solid white;
@@ -1909,7 +1912,7 @@ a:focus {
 .ft__col-key {
   width: 35%;
   padding-right: 35px;
-  color: var(--color-blue);
+  color: var(--color-black);
 }
 .ft__col-key--black {
   color: var(--color-black);
@@ -1937,30 +1940,30 @@ a:focus {
 .ft__empty {
   background-color: rgba(255, 255, 255, .2);
 }
-.ft__green-bg {
-  color: white;
-  background-color: var(--color-blue);
-}
-.ft__orange-bg {
+.ft__assn-bg {
   color: white;
   background-color: var(--color-purple);
 }
-.ft__em {
-  color: var(--color-blue);
+.ft__fund-bg {
+  color: white;
+  background-color: var(--color-blue);
 }
-.ft__em--orange {
+.ft__em {
   color: var(--color-purple);
+}
+.ft__em--fund {
+  color: var(--color-blue);
 }
 .finance--fund .ft__em {
   background-color: var(--color-lightgreen);
 }
-.ft__green-border {
- border-right: 3px solid var(--color-blue);
- border-left: 3px solid var(--color-blue);
+.ft__assn-border {
+  border-right: 3px solid var(--color-purple);
+  border-left: 3px solid var(--color-purple);
 }
-.ft__orange-border {
- border-right: 3px solid var(--color-purple);
- border-left: 3px solid var(--color-purple);
+.ft__fund-border {
+  border-right: 3px solid var(--color-blue);
+  border-left: 3px solid var(--color-blue);
 }
 
 @media (max-width: 1100px) {

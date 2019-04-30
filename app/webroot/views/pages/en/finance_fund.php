@@ -1,4 +1,4 @@
-<main class="finance finance--fund bg--light-blue">
+<main class="finance finance--fund bg--finance-fund">
 	<section class="section section__body cp">
 		<div class="limit--s finance__intro">
 			<h1 class="fin-detail__heading">
@@ -14,15 +14,15 @@
 				<table class="ft">
 					<thead>
 						<th class="ft__col-key--black"></th>
-						<th class="ft__col-val ft__orange-bg ft__orange-border">31.12.2017</th>
+						<th class="ft__col-val ft__fund-bg ft__fund-border">31.12.2017</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em--orange">31.12.2016</th>
+						<th class="ft__col-val ft__em--fund">31.12.2016</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em--orange">31.12.2015</th>
+						<th class="ft__col-val ft__em--fund">31.12.2015</th>
 					</thead>
 					<tr class="ft__row-head ft__row-line--black">
 						<td class="ft__col-key--black">Fixed assets</td>
-						<td class="ft__col-val ft__empty ft__orange-border"></td>
+						<td class="ft__col-val ft__empty ft__fund-border"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
@@ -30,7 +30,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Intangible assets</td>
-						<td class="ft__col-val ft__orange-border">0 €</td>
+						<td class="ft__col-val ft__fund-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>
 						<td class="ft__col-void"></td>
@@ -38,7 +38,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Tangible assets</td>
-						<td class="ft__col-val ft__orange-border">0 €</td>
+						<td class="ft__col-val ft__fund-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>
 						<td class="ft__col-void"></td>
@@ -46,7 +46,7 @@
 					</tr>
 					<tr class="ft__row-head ft__row-line--black">
 						<td class="ft__col-key--black">Current assets</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
@@ -54,7 +54,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Receivables and other assets</td>
-						<td class="ft__col-val ft__orange-border">50,980 €</td>
+						<td class="ft__col-val ft__fund-border">50,980 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">569,171 €</td>
 						<td class="ft__col-void"></td>
@@ -62,7 +62,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Bank deposits</td>
-						<td class="ft__col-val ft__orange-border">8,278,607 €</td>
+						<td class="ft__col-val ft__fund-border">8,278,607 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">7,765,241 €</td>
 						<td class="ft__col-void"></td>
@@ -70,7 +70,7 @@
 					</tr>
 					<tr class="ft__row-head ft__row-line--black">
 						<td class="ft__col-key--black">&nbsp;</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
@@ -78,7 +78,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__row-foot ft__col-key--black">Deferred items</td>
-						<td class="ft__col-val ft__orange-border">5,326 €</td>
+						<td class="ft__col-val ft__fund-border">5,326 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">1,820 €</td>
 						<td class="ft__col-void"></td>
@@ -86,15 +86,15 @@
 					</tr>
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 					</tr>
 					<tfoot>
 						<td class="ft__col-key--black">Balance sheet total</td>
-						<td class="ft__col-val ft__orange-border ft__orange-bg">8,334,913 €</td>
+						<td class="ft__col-val ft__fund-border ft__fund-bg">8,334,913 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--orange">8,336,232 €</td>
+						<td class="ft__col-val ft__em--fund">8,336,232 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--orange">8,697,986 €</td>
+						<td class="ft__col-val ft__em--fund">8,697,986 €</td>
 					</tfoot>
 				</table>
 			</div>
@@ -107,15 +107,15 @@
 				<table class="ft">
 					<thead>
 						<th class="ft__col-key--black"></th>
-						<th class="ft__col-val ft__orange-bg ft__orange-border">31.12.2017</th>
+						<th class="ft__col-val ft__fund-bg ft__fund-border">31.12.2017</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em--orange ft__cell-line">31.12.2016</th>
+						<th class="ft__col-val ft__em--fundft__cell-line">31.12.2016</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em--orange ft__cell-line">31.12.2015</th>
+						<th class="ft__col-val ft__em--fundft__cell-line">31.12.2015</th>
 					</thead>
 					<tr class="ft__row-head ft__row-line--black">
 						<td class="ft__col-key--black">Equity</td>
-						<td class="ft__col-val ft__empty ft__orange-border"></td>
+						<td class="ft__col-val ft__empty ft__fund-border"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
@@ -123,7 +123,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Subscribed capital</td>
-						<td class="ft__col-val ft__orange-border">25,000 €</td>
+						<td class="ft__col-val ft__fund-border">25,000 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">25,000 €</td>
 						<td class="ft__col-void"></td>
@@ -131,7 +131,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Surplus reserves</td>
-						<td class="ft__col-val ft__orange-border">217,141 € €</td>
+						<td class="ft__col-val ft__fund-border">217,141 € €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">0 €</td>
 						<td class="ft__col-void"></td>
@@ -139,7 +139,7 @@
 					</tr>
 					<tr class="ft__row-head ft__row-line--black">
 						<td class="ft__col-key--black">&nbsp;</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
@@ -147,7 +147,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__row-foot ft__col-key--black">Reserves</td>
-						<td class="ft__col-val ft__orange-border">178,581 €</td>
+						<td class="ft__col-val ft__fund-border">178,581 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">218,785 €</td>
 						<td class="ft__col-void"></td>
@@ -155,7 +155,7 @@
 					</tr>
 					<tr class="ft__row-head ft__row-line--black">
 						<td class="ft__col-key--black">&nbsp;</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
@@ -163,7 +163,7 @@
 					</tr>
 					<tr class="ft__row-head ft__row-line--black">
 						<td class="ft__col-key--black">Accounts payable</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
@@ -171,7 +171,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">From forwarded funds</td>
-						<td class="ft__col-val ft__orange-border">7,866,353 €</td>
+						<td class="ft__col-val ft__fund-border">7,866,353 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">8,065,148 €</td>
 						<td class="ft__col-void"></td>
@@ -179,7 +179,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">From trade payables and other accounts payable</td>
-						<td class="ft__col-val ft__orange-border">45,693 €</td>
+						<td class="ft__col-val ft__fund-border">45,693 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">24,517 €</td>
 						<td class="ft__col-void"></td>
@@ -187,7 +187,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Other accounts payable</td>
-						<td class="ft__col-val ft__orange-border">2,145 €</td>
+						<td class="ft__col-val ft__fund-border">2,145 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">2,782 €</td>
 						<td class="ft__col-void"></td>
@@ -195,7 +195,7 @@
 					</tr>
 					<tr class="ft__row-head ft__row-line--black">
 						<td class="ft__col-key--black">&nbsp;</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
@@ -203,15 +203,15 @@
 					</tr>
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 					</tr>
 					<tfoot>
 						<td class="ft__col-key--black">Balance sheet total</td>
-						<td class="ft__col-val ft__orange-border ft__orange-bg">8,334,913 €</td>
+						<td class="ft__col-val ft__fund-border ft__fund-bg">8,334,913 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--orange">8,336,232 €</td>
+						<td class="ft__col-val ft__em--fund">8,336,232 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--orange">8,697,986 €</td>
+						<td class="ft__col-val ft__em--fund">8,697,986 €</td>
 					</tfoot>
 				</table>
 			</div>
@@ -224,15 +224,15 @@
 				<table class="ft">
 					<thead>
 						<th class="ft__col-key--black"></th>
-						<th class="ft__col-val ft__orange-bg ft__orange-border">31.12.2017</th>
+						<th class="ft__col-val ft__fund-bg ft__fund-border">31.12.2017</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em--orange ft__cell-line">31.12.2016</th>
+						<th class="ft__col-val ft__em--fundft__cell-line">31.12.2016</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em--orange ft__cell-line">31.12.2015</th>
+						<th class="ft__col-val ft__em--fundft__cell-line">31.12.2015</th>
 					</thead>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Donation revenue</td>
-						<td class="ft__col-val ft__orange-border">10,281,485 €</td>
+						<td class="ft__col-val ft__fund-border">10,281,485 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">10,363,878 €</td>
 						<td class="ft__col-void"></td>
@@ -240,7 +240,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Other operational income</td>
-						<td class="ft__col-val ft__orange-border">954,522 €</td>
+						<td class="ft__col-val ft__fund-border">954,522 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">26,784 €</td>
 						<td class="ft__col-void"></td>
@@ -248,7 +248,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Other interest and related revenue</td>
-						<td class="ft__col-val ft__orange-border">123 €</td>
+						<td class="ft__col-val ft__fund-border">123 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">761 €</td>
 						<td class="ft__col-void"></td>
@@ -256,7 +256,7 @@
 					</tr>
 					<tr class="ft__row-head ft__row-line--black">
 						<td class="ft__col-key--black">&nbsp;</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
@@ -264,7 +264,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Expenditure from forwarded funds</td>
-						<td class="ft__col-val ft__orange-border">-10,281,485 €</td>
+						<td class="ft__col-val ft__fund-border">-10,281,485 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">-9,702,226 €</td>
 						<td class="ft__col-void"></td>
@@ -272,7 +272,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Personnel expenditures</td>
-						<td class="ft__col-val ft__orange-border">-257,404 €</td>
+						<td class="ft__col-val ft__fund-border">-257,404 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-179,321 €</td>
 						<td class="ft__col-void"></td>
@@ -280,7 +280,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Depreciation</td>
-						<td class="ft__col-val ft__orange-border">0 €</td>
+						<td class="ft__col-val ft__fund-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-180 €</td>
 						<td class="ft__col-void"></td>
@@ -288,7 +288,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Other operational expenditures</td>
-						<td class="ft__col-val ft__orange-border">-480,100 €</td>
+						<td class="ft__col-val ft__fund-border">-480,100 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-509,695 €</td>
 						<td class="ft__col-void"></td>
@@ -296,7 +296,7 @@
 					</tr>
 					<tr class="ft__row-head ft__row-line--black">
 						<td class="ft__col-key--black">&nbsp;</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 						<td class="ft__col-void"></td>
@@ -304,15 +304,15 @@
 					</tr>
 					<tr class="ft__row-foot ft__row-line--black">
 						<td class="ft__col-key--black">Annual surplus</td>
-						<td class="ft__col-val ft__orange-border">217,141 €</td>
+						<td class="ft__col-val ft__fund-border">217,141 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--orange">0 €</td>
+						<td class="ft__col-val ft__em--fund">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Allocation to reserves</td>
-						<td class="ft__col-val ft__orange-border">-217,141 €</td>
+						<td class="ft__col-val ft__fund-border">-217,141 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">0 €</td>
 						<td class="ft__col-void"></td>
@@ -320,15 +320,15 @@
 					</tr>
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
-						<td class="ft__col-val ft__orange-border ft__empty"></td>
+						<td class="ft__col-val ft__fund-border ft__empty"></td>
 					</tr>
 					<tfoot>
 						<td class="ft__col-key--black">Net profit</td>
-						<td class="ft__col-val ft__orange-border ft__orange-bg">0 €</td>
+						<td class="ft__col-val ft__fund-border ft__fund-bg">0 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--orange">0 €</td>
+						<td class="ft__col-val ft__em--fund">0 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--orange">0 €</td>
+						<td class="ft__col-val ft__em--fund">0 €</td>
 					</tfoot>
 				</table>
 			</div>
