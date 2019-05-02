@@ -901,17 +901,21 @@ a:focus {
 }
 
 @media (max-width: 800px) {
+  .main-footer__bottom {
+    padding: 0 30px 40px 30px;
+  }
   .main-footer__bottom > div {
     flex-direction: column;
   }
   .imprint-toggle {
     width: inherit;
     min-width: inherit;
+    margin-left: 0;
   }
 }
 @media (max-width: 550px) {
-  .imprint-toggle {
-    margin-left: -30px;
+  .main-footer__bottom {
+    padding: 0 10px 40px 10px;
   }
 }
 
