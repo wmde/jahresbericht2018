@@ -2731,7 +2731,10 @@ a:focus {
   margin: 20px;
 }
 .nav-cube__title {
-  color: white;
+  color: var(--color-black);
+}
+.nav-cube:hover .nav-cube__title {
+  color: var(--color-white);
 }
 .nav-cube:hover,
 .nav-cube.active {

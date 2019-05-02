@@ -38,4 +38,22 @@ require(['require/domReady!'], function() {
     close.classList.add('invis');
     imprint.classList.add('invis');
   });
+
+  // Animate mobile navigation
+  let menuContainer = document.querySelector('.mn-container');
+  let logo = document.querySelector('.real-logo');
+  let menuOpenButton = document.querySelector('.mn-trigger');
+  let menuCloseButton = document.querySelector('.mn-close');
+
+  menuOpenButton.addEventListener('click', () => {
+    menuContainer.classList.add('mn-inframe');
+    document.body.classList.add('no-scroll');
+    logo.classList.add('no-filter');
+  });
+
+  menuCloseButton.addEventListener('click', () => {
+    menuContainer.classList.remove('mn-inframe');
+    document.body.classList.remove('no-scroll');
+    logo.classList.remove('no-filter');
+  });
 });
