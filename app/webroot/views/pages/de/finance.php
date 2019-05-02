@@ -1,4 +1,4 @@
-<main class="finance bg--finance-main">
+<main class="finance finance--main bg--finance-main">
 	<section class="section section__body cp">
 		<div class="limit--s finance__intro">
 			<h1 class="h--beta finance__intro-heading">Finanzen</h1>
@@ -28,6 +28,121 @@
 			<h2 class="h--gamma">Wirtschaftsprüfung</h2>
 			<p class="t--gamma-serif finance__p">Wikimedia Deutschland lässt den Jahresabschluss, interne Abläufe und die Spendenverteilung freiwillig prüfen. Die Prüfung des Wikimedia Deutschland - Gesellschaft zur Förderung Freien Wissens e. V. und der Gemeinnützigen Wikimedia Fördergesellschaft mbH erfolgte durch die KWP Revision GmbH Wirtschaftsprüfungsgesellschaft Berlin und wurde im Dezember 2017 und Februar / März 2018 durchgeführt. Es wurde ein uneingeschränkter Bestätigungsvermerk erteilt. Demnach wurde die Buchführung des <a href="https://upload.wikimedia.org/wikipedia/commons/7/74/BEST%C3%84TIGUNGSVERMERK_an_den_Wikimedia_Deutschland_%E2%80%93_Gesellschaft_zur_F%C3%B6rderung_Freien_Wissens_e._V.pdf" target="new">Vereins</a> und der <a href="https://upload.wikimedia.org/wikipedia/commons/e/ea/BESTÄTIGUNGSVERMERK_an_die_Gemeinnützige_Wikimedia_Fördergesellschaft_mbH.pdf" target="new">Gesellschaft</a> vollständig und gewissenhaft vorgenommen und die Prüfung hat insgesamt zu keinerlei Einwänden geführt.</p>
 		</div>
+	</section>
+	<section class="section cp">
+		<div class="limit--m fin-detail__aktiva">
+			<h2 class="h--beta ft__heading">Bilanz &mdash; Aktiva</h2>
+			<div class="ft-wrapper ft-wrapper--four-column">
+				<table class="ft">
+					<thead>
+						<th class="ft__col-key--main"></th>
+						<th class="ft__col-val ft__main-bg ft__main-border">31.12.2017</th>
+						<th class="ft__col-void"></th>
+						<th class="ft__col-val ft__em--main">31.12.2016</th>
+						<th class="ft__col-void"></th>
+						<th class="ft__col-val ft__em--main">31.12.2015</th>
+						<th class="ft__col-void"></th>
+						<th class="ft__col-val ft__em--main">31.12.2015</th>
+					</thead>
+					<tr class="ft__row-head ft__row-line--white">
+						<td class="ft__col-key--main">Anlagevermögen</td>
+						<td class="ft__col-val ft__empty ft__main-border"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Immaterielle Vermögens&shy;gegenstände</td>
+						<td class="ft__col-val ft__main-border">0 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">0 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">1 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">1 €</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Sachanlagen</td>
+						<td class="ft__col-val ft__main-border">0 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">0 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">182 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">182 €</td>
+					</tr>
+					<tr class="ft__row-head ft__row-line--white">
+						<td class="ft__col-key--main">Umlaufvermögen</td>
+						<td class="ft__col-val ft__main-border ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Forderungen und sonstige Vermögens&shy;gegenstände</td>
+						<td class="ft__col-val ft__main-border">50.980 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">569.171 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">367.364 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">367.364 €</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Bankguthaben</td>
+						<td class="ft__col-val ft__main-border">8.278.607 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">7.765.241 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">8.328.541 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">8.328.541 €</td>
+					</tr>
+					<tr class="ft__row-head ft__row-line--white">
+						<td class="ft__col-key--main">&nbsp;</td>
+						<td class="ft__col-val ft__main-border ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__row-foot ft__col-key--main">Rechnungs&shy;abgrenzungs&shy;posten</td>
+						<td class="ft__col-val ft__main-border">5.326 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">1.820 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">1.897 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">1.897 €</td>
+					</tr>
+					<tr class="ft__row-low ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__main-border ft__empty"></td>
+					</tr>
+					<tfoot>
+						<td class="ft__col-key--main">Bilanzsumme</td>
+						<td class="ft__col-val ft__main-border ft__main-bg">8.334.913 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__em--main">8.336.232 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__em--main">8.697.986 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__em--main">8.697.986 €</td>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</section>
+	<secion class="section section__body cp">
 		<div class="limit--m finance__boxes">
 			<a class="border-box border-box--finance t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
 				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
