@@ -240,7 +240,7 @@
 					data-bottom-top="transform:rotate(0deg);"
 					data-top-bottom="transform:rotate(360deg);"
 				>
-					<img src="/assets/img/start_finanzen_circle_1.png" alt="Finanzvisualisierung">
+					<img src="/assets/img/home_circle_1.png" alt="Finanzvisualisierung">
 				</figure>
 				<figure
 					class="home__bagel--2"
@@ -248,7 +248,7 @@
 					data-bottom-top="transform:rotate(360deg);"
 					data-top-bottom="transform:rotate(0deg);"
 				>
-					<img src="/assets/img/start_finanzen_circle_2.png" alt="Finanzvisualisierung">
+					<img src="/assets/img/home_circle_2.png" alt="Finanzvisualisierung">
 				</figure>
 			</div>
 			<a href="<?= $url('finance', $lang) ?>">

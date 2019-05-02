@@ -2716,7 +2716,18 @@ a:focus {
     padding-bottom: 100px
   }
 }
+
 @media (max-width: 550px) {
+  .report-landing .cp--6x-top {
+    padding-bottom: 160px;
+  }
+  .report-landing .cp {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 500px) {
   .report-landing .cp--6x-top {
     padding-bottom: 510px;
   }
@@ -2794,6 +2805,7 @@ a:focus {
     display: block;
     margin: 0;
     height: 160px;
+    width: 150px;
     position: absolute;
   }
   .nav-cube:nth-of-type(2) {
@@ -2809,18 +2821,18 @@ a:focus {
   }
   .nav-cube__title {
     margin-top: 30px;
-    left: 60px;
+    left: 36px;
     position: absolute;
   }
   .nav-cube:nth-of-type(2) .nav-cube__title {
-    left: 54px;
+    left: 28px;
   }
   .nav-cube:nth-of-type(3) .nav-cube__title {
     left: 9px;
     top: -5px;
   }
   .nav-cube:nth-of-type(4) .nav-cube__title {
-    left: 49px;
+    left: 27px;
     max-width: 100px;
     text-align: center;
   }
