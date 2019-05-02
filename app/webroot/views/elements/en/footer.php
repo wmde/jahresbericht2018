@@ -39,7 +39,7 @@
 			<article id="imprint" class="imprint invis cp--2x-bottom">
 				<h1 class="h--delta">
 					This imprint is valid for the domain
-					<a href="http://2017.wikimedia.de">2017.wikimedia.de</a>.
+					<a href="http://2018.wikimedia.de">2018.wikimedia.de</a>.
 				</h1>
 				<section>
 					<h1 class="h--delta">Service provider</h1>

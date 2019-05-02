@@ -994,9 +994,9 @@ a:focus {
   transition: all .5s;
 }
 .button--report:nth-of-type(1) {
-  color: white;
+  color: var(--color-black);
   /* no color variable here to support ios */
-  background: #339966 url(../img/cubes_themenuebersicht.svg);
+  background: var(--color-blue) url(../img/cubes_themenuebersicht.svg);
   background-repeat: no-repeat;
   background-position: center 40px, 0;
   background-size: 60%,100%;
@@ -1005,7 +1005,7 @@ a:focus {
   justify-content: center;
 }
 .button--report:nth-of-type(2) {
-  color: var(--color-blue);
+  color: var(--color-back);
   background-image: none;
 	background-color: var(--color-gray);
   display: block;
@@ -1828,8 +1828,8 @@ a:focus {
   letter-spacing: .03em;
 }
 .fin-detail__heading-l {
-  margin-top: 5px;
-  margin-bottom: 0;
+  margin: 10px auto 0 auto;
+  max-width: 500px;
 }
 .fin-detail__mittel {
   color: var(--color-black);
@@ -2437,7 +2437,7 @@ a:focus {
 /* Achievement Box
 ---------------------------------------------------------------- */
 .achievement-box {
-  max-width: 300px;
+  max-width: 320px;
   background-color: var(--color-gray);
   padding: 10px 20px 20px 20px;
   margin: 20px 40px 20px -80px;
@@ -2481,16 +2481,15 @@ a:focus {
   height: 100%;
   top: 0;
   right: 0;
-  filter: saturate(0.3);
+  filter: saturate(0.1);
   background-size: cover;
   background-position: center center;
-  background-blend-mode: luminosity;
-  mix-blend-mode: overlay;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+  opacity: 0.15;
+  transition: opacity .3s ease;
 }
 .reports__background.hidden {
   opacity: 0;
+  transition: opacity .3s ease;
 }
 .reports__left {
   width: 50%;
@@ -2839,7 +2838,9 @@ a:focus {
   justify-content: center;
   align-items: center;
   min-height: 66vh;
-  background: var(--color-lightgreen) no-repeat center/cover;
+  background: var(--color-lightgreen) no-repeat;
+  background-size: cover;
+  background-position: center center;
   position: relative;
 }
 .report-detail-hero__center-illu {

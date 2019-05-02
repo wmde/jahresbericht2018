@@ -9,5 +9,33 @@
 
 require(['require/domReady!'], function() {
   'use strict';
-  // ...
+
+   // Imprint toggle
+  let toggle = document.querySelector('.imprint-toggle');
+  let close = document.querySelector('.imprint-close');
+  let imprint = document.querySelector('.imprint');
+
+  toggle.addEventListener('click', function(ev) {
+    ev.preventDefault();
+
+    imprint.classList.toggle('invis');
+    close.classList.toggle('invis');
+
+    if (!imprint.classList.contains('invis')) {
+      let rect = imprint.getBoundingClientRect();
+      if ('scrollBehavior' in document.documentElement.style) {
+          window.scrollTo({top: window.pageYOffset + rect.top - 40, behavior: 'smooth'});
+      } else {
+        require(['smoothscroll'], function() {
+          window.scrollTo({top: window.pageYOffset + rect.top - 40, behavior: 'smooth'});
+        });
+      }
+    }
+
+  });
+  close.addEventListener('click', function(ev) {
+    ev.preventDefault();
+    close.classList.add('invis');
+    imprint.classList.add('invis');
+  });
 });
