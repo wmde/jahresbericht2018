@@ -1,43 +1,43 @@
 <?php return [
 	[
-		'name' => 'volunteers',
+		'name' => 'day-of-action',
 		'title' => [
-			'de' => 'Digitales Ehrenamt unterstützen',
+			'de' => 'Zu Gast bei der Wikipedia',
 			'en' => 'Support digital volunteering'
 		],
 		'category' => 'volunteers',
-		'cover' => '/assets/img/01_volunteers_cover.jpg',
-		'hero' => '/assets/img/01_volunteers_hero.jpg',
+		'cover' => '',
+		'hero' => '',
 	],
 	[
-		'name' => 'newvolunteers',
+		'name' => 'wiki-loves-monuments',
 		'title' => [
-			'de' => 'Mehr Menschen für die Wikipedia begeistern',
-			'en' => 'Getting more people excited about Wikipedia'
+			'de' => 'Wiki Loves Monuments im europäischen Kulturerbejahr',
+			'en' => ''
 		],
 		'category' => 'volunteers',
-		'cover' => '/assets/img/02_newvolunteers_cover.jpg',
-		'hero' => '/assets/img/02_newvolunteers_hero.jpg',
+		'cover' => '',
+		'hero' => '',
 	],
 	[
-		'name' => 'knowledge',
+		'name' => 'data',
 		'title' => [
-			'de' => 'Einfacher Wissen teilen',
-			'en' => 'Share knowledge more easily'
+			'de' => 'Lexikografische Daten',
+			'en' => ''
 		],
-		'category' => 'software',
-		'cover' => '/assets/img/03_knowledge_cover.jpg',
-		'hero' => '/assets/img/03_knowledge_hero.jpg',
+		'category' => 'technology',
+		'cover' => '',
+		'hero' => '',
 	],
 	[
-		'name' => 'wikicon',
+		'name' => 'search',
 		'title' => [
-			'de' => 'WikidataCon: die erste internationale Konferenz rund um Wikidata',
-			'en' => 'WikidataCon: the first international Wikidata conference'
+			'de' => 'Verbesserte Suchfunktion für Wikipedia & Co.',
+			'en' => ''
 		],
-		'category' => 'software',
-		'cover' => '/assets/img/04_wikicon_cover.jpg',
-		'hero' => '/assets/img/04_wikicon_hero.jpg',
+		'category' => 'technology',
+		'cover' => '',
+		'hero' => '',
 	],
 	[
 		'name' => 'digitalomat',
@@ -70,14 +70,14 @@
 		'hero' => '/assets/img/07_fellow_hero.jpg',
 	],
 	[
-		'name' => '2017',
+		'name' => 'year-review',
 		'title' => [
-			'de' => 'Das Jahr 2017 bei Wikimedia Deutschland',
-			'en' => 'Looking back at 2017'
+			'de' => 'Das Jahr 2018 bei Wikimedia Deutschland',
+			'en' => 'Looking back at 2018'
 		],
 		'category' => 'wikimedia',
-		'cover' => '/assets/img/11_2017_cover.jpg',
-		'hero' => '/assets/img/11_2017_hero.jpg',
+		'cover' => '',
+		'hero' => '',
 	],
 	[
 		'name' => 'members',

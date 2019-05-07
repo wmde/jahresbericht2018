@@ -22,10 +22,10 @@
 		]
 	],
 	[
-		'name' => 'software',
+		'name' => 'technology',
 		'title' => [
-			'de' => 'Software-Entwicklung',
-			'en' => 'Software Development'
+			'de' => 'Technolgie',
+			'en' => 'technology'
 		],
 		'teaser' => [
 			'de' => 'Wikimedia Deutschland unterstützt nicht nur die Ehrenamtlichen, die in den Wikimedia-Projekten ihr Wissen mit der Welt teilen, sondern kümmert sich auch um die stetige Verbesserung der technischen Infrastruktur für Wikipedia & Co. Das beinhaltet beispielsweise die Arbeit an der Software, mit der sämtliche Wikimedia-Projekte betrieben werden. Darüber hinaus entwickeln wir im engen Austausch mit Freiwilligen technische Produkte zur Weiterentwicklung von Wikipedia und zur Verbreitung Freien Wissens. Ein Großprojekt, an dem wir Hand in Hand mit einer internationalen Community arbeiten, ist die freie, kollaborativ gepflegte Wissensdatenbank Wikidata, die 2012 bei Wikimedia Deutschland in Berlin startete und seitdem federführend durch uns ausgebaut und weiterentwickelt wird. Unsere Arbeit im Bereich der Software-Entwicklung folgt dem Ziel, dem sich auch die Tausenden von Wikimedia-Aktiven verschrieben haben: mehr Menschen mehr Zugang zu mehr Wissen zu ermöglichen.',

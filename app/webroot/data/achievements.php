@@ -37,8 +37,8 @@
 	],
 	[
 		'category' => [
-			'de' => 'Software',
-			'en' => 'Software'
+			'de' => 'Technologie',
+			'en' => 'technology'
 		],
 		'number' => '450',
 		'teaser' => [
@@ -49,8 +49,8 @@
 	],
 	[
 		'category' => [
-			'de' => 'Software',
-			'en' => 'Software'
+			'de' => 'Technologie',
+			'en' => 'technology'
 		],
 		'number' => '180',
 		'teaser' => [
