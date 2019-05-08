@@ -3235,37 +3235,37 @@ Other years are less than 100%
    to   { right: 94% }
 }
 
-.chart-bar.percent-2019 .inner {
+.chart__container .percent-2019 .inner {
   -webkit-animation-duration: 2s;
   -webkit-animation-name: grow-2019;
   right: calc(1% * (100 - ((100 / 72.611) * 72.611)));
 }
-.chart-bar.percent-2018 .inner {
+.chart__container .percent-2018 .inner {
   -webkit-animation-duration: 2.5s;
   -webkit-animation-name: grow-2018;
   right: calc(1% * (100 - ((100 / 72.611) * 65.374)));
 }
-.chart-bar.percent-2017 .inner {
+.chart__container .percent-2017 .inner {
   -webkit-animation-duration: 3s;
   -webkit-animation-name: grow-2017;
   right: calc(1% * (100 - ((100 / 72.611) * 43.138)));
 }
-.chart-bar.percent-2016 .inner {
+.chart__container .percent-2016 .inner {
   -webkit-animation-duration: 3.5s;
   -webkit-animation-name: grow-2016;
   right: calc(1% * (100 - ((100 / 72.611) * 29.169)));
 }
-.chart-bar.percent-2015 .inner {
+.chart__container .percent-2015 .inner {
   -webkit-animation-duration: 4s;
   -webkit-animation-name: grow-2015;
   right: calc(1% * (100 - ((100 / 72.611) * 15.778)));
 }
-.chart-bar.percent-2014 .inner {
+.chart__container .percent-2014 .inner {
   -webkit-animation-duration: 4.5s;
   -webkit-animation-name: grow-2014;
   right: calc(1% * (100 - ((100 / 72.611) * 9.803)));
 }
-.chart-bar.percent-2013 .inner {
+.chart__container .percent-2013 .inner {
   -webkit-animation-duration: 3.5s;
   -webkit-animation-name: grow-2013;
   right: 94%;
