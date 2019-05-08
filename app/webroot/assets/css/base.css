@@ -407,6 +407,17 @@ body > main {
   color: var(--color-black);
   border-bottom: 1px solid var(--color-black);
 }
+
+@media (max-width: 1100px) {
+  .border-box:first-child,
+  .border-box:last-child {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .border-box + .border-box {
+    margin-top: 10px;
+  }
+}
 @media (max-width: 550px) {
   .border-box--report {
     margin: 40px 30px;
@@ -1843,6 +1854,7 @@ a:focus {
 @media (max-width: 1100px) {
   .finance__boxes {
     padding: 40px 0;
+    justify-content: center;
   }
 }
 
@@ -2010,9 +2022,18 @@ a:focus {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .ft-wrapper--four-column {
-    box-shadow: inset -40px 0 20px -30px rgb(59, 27, 84);
-    z-index: 100;
+}
+
+@media (max-width: 1010px) {
+  /* Shadow for better UX */
+  .ft-wrapper--four-column:after{
+    content: "";
+    position: absolute;
+    top: 221px;
+    bottom: 30px;
+    left: -15px;
+    right: 30px;
+    box-shadow: inset -40px 0 20px -30px #4c0088d1;
   }
 }
 
@@ -2038,6 +2059,12 @@ a:focus {
   .finance--assn tr,
   .finance--fund tr {
     font-weight: 200;
+  }
+  /* Shadow for better UX */
+  .ft-wrapper--four-column:after{
+    top: 187px;
+    bottom: 10px;
+    right: 10px;
   }
 }
 
@@ -3106,8 +3133,40 @@ a:focus {
   margin-left: 46px;
   margin-top: 26px;
 }
+.chart__container .loading .chart-bar .inner {
+  animation: none; /* Default state */
+  right: 100%;
+}
 
-/* Chart Bar animation */
+
+@media (max-width: 1100px) {
+  .chart {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 550px) {
+  .chart {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .charts__texts {
+    width: 90px;
+  }
+  .charts__bars {
+    width: calc(100% - 90px);
+  }
+  .chart-text {
+    padding: 8px 5px;
+  }
+}
+
+
+
+/* Chart Animation
+---------------------------------------------------------------- */
+
 /*
 Calculation: 100% = number of 2019
 Other years are less than 100%
@@ -3176,10 +3235,6 @@ Other years are less than 100%
    to   { right: 94% }
 }
 
-.charts.loading .chart-bar .inner {
-  animation: none;
-  right: 100%;
-}
 .chart-bar.percent-2019 .inner {
   -webkit-animation-duration: 2s;
   -webkit-animation-name: grow-2019;
@@ -3214,27 +3269,4 @@ Other years are less than 100%
   -webkit-animation-duration: 3.5s;
   -webkit-animation-name: grow-2013;
   right: 94%;
-}
-
-@media (max-width: 1100px) {
-  .chart {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-
-@media (max-width: 550px) {
-  .chart {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .charts__texts {
-    width: 90px;
-  }
-  .charts__bars {
-    width: calc(100% - 90px);
-  }
-  .chart-text {
-    padding: 8px 5px;
-  }
 }
