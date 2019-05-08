@@ -3107,29 +3107,63 @@ Calculation: 100% = number of 2019
 Other years are less than 100%
 100 % - (100 / year2019) * currentYear
 */
+@-keyframes grow-2019 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 72.611)))}
+}
 @-webkit-keyframes grow-2019 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 72.611)))}
+}
+
+@-keyframes grow-2018 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 65.374))) }
 }
 @-webkit-keyframes grow-2018 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 65.374))) }
 }
+
+@-keyframes grow-2017 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 43.138))) }
+}
 @-webkit-keyframes grow-2017 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 43.138))) }
+}
+
+@-keyframes grow-2016 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 29.169))) }
 }
 @-webkit-keyframes grow-2016 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 29.169))) }
 }
+
+@-keyframes grow-2015 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 15.778))) }
+}
 @-webkit-keyframes grow-2015 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 15.778))) }
 }
+
+@-keyframes grow-2014 {
+   from { right: 100% }
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 9.803))) }
+}
 @-webkit-keyframes grow-2014 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 9.803))) }
+}
+
+@-keyframes grow-2013 {
+   from { right: 100% }
+   to   { right: 94% }
 }
 @-webkit-keyframes grow-2013 {
    from { right: 100% }
