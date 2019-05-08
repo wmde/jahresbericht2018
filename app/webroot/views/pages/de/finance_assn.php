@@ -272,59 +272,59 @@
 				<table class="ft">
 					<thead>
 						<th class="ft__col-key"></th>
-						<th class="ft__col-val ft__assn-bg ft__assn-border">31.12.2017</th>
+						<th class="ft__col-val ft__assn-bg ft__assn-border">31.12.2018</th>
+						<th class="ft__col-void"></th>
+						<th class="ft__col-val ft__em ft__cell-line">31.12.2017</th>
 						<th class="ft__col-void"></th>
 						<th class="ft__col-val ft__em ft__cell-line">31.12.2016</th>
-						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em ft__cell-line">31.12.2015</th>
 					</thead>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Spendenerträge</td>
-						<td class="ft__col-val ft__assn-border">2.339.176 €</td>
+						<td class="ft__col-val ft__assn-border">1.147.760 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ">2.339.176 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">3.218.133 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val ">3.530.014 €</td>
 					</tr>
 					<tr class="ft__row-line">
-						<td class="ft__col-key">Mitgliedsbeiträge incl. Förderbeiträge</td>
-						<td class="ft__col-val ft__assn-border">2.542.663 €</td>
+						<td class="ft__col-key">Mitgliedsbeiträge</td>
+						<td class="ft__col-val ft__assn-border">3.229.156 €/td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">2.542.663 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">1.632.360 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">1.196.638 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Übrige Erlöse</td>
-						<td class="ft__col-val ft__assn-border">1.891.880 €</td>
+						<td class="ft__col-val ft__assn-border">4.498.984 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">1.891.880 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">265.760 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">443.686 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Sonstige betriebliche Erträge</td>
-						<td class="ft__col-val ft__assn-border">34.044 €</td>
+						<td class="ft__col-val ft__assn-border">73.160 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">34.044 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">61.096 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">195.256 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Erträge aus anderen Wertpapieren und sonstige Zinsen</td>
-						<td class="ft__col-val ft__assn-border">2.367 €</td>
+						<td class="ft__col-val ft__assn-border">7 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">2.367 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">360 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">7.411 €</td>
 					</tr>
 					<tr class="ft__row-foot ft__row-line">
 						<td class="ft__col-key">Summe Erträge</td>
-						<td class="ft__col-val ft__assn-border">6.810.129 €</td>
+						<td class="ft__col-val ft__assn-border">8.949.066 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">6.810.129 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">5.177.709 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">5.373.004 €</td>
 					</tr>
 					<tr class="ft__row-head ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
@@ -336,35 +336,35 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Personal&shy;aufwendungen</td>
-						<td class="ft__col-val ft__assn-border">-3.510.509 €</td>
+						<td class="ft__col-val ft__assn-border">-4.409.092 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-3.510.509 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-3.095.159 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-2.916.042 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Abschreibungen</td>
-						<td class="ft__col-val ft__assn-border">-115.931 €</td>
+						<td class="ft__col-val ft__assn-border">-149.054 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-115.931 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-78.572 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-50.584 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Sonstige betriebliche Aufwendungen</td>
-						<td class="ft__col-val ft__assn-border">-3.183.689 €</td>
+						<td class="ft__col-val ft__assn-border">-4.385.006 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-3.183.689 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-2.003.978 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-1.923.667 €</td>
 					</tr>
 					<tr class="ft__row-foot ft__row-line">
 						<td class="ft__col-key">Summe Aufwendungen aus gewöhnlicher Geschäftstätigkeit</td>
-						<td class="ft__col-val ft__assn-border">-6.810.129 €</td>
+						<td class="ft__col-val ft__assn-border">-8.943.151 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-6.810.129 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-5.177.709 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-4.890.293 €</td>
 					</tr>
 					<tr class="ft__row-head ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
@@ -375,12 +375,20 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line">
+						<td class="ft__col-key">Abschreibungen auf Finanzanlagen und auf Wertpapiere des Umlaufvermögens</td>
+						<td class="ft__col-val ft__assn-border">-5.915 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">0 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">0 €</td>
+					</tr>
+					<tr class="ft__row-line">
 						<td class="ft__col-key">Steuern vom Einkommen und Ertrag</td>
 						<td class="ft__col-val ft__assn-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-4.099 €</td>
+						<td class="ft__col-val">0 €</td>
 					</tr>
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
@@ -392,7 +400,7 @@
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">478.612 €</td>
+						<td class="ft__col-val">0 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Einstellungen in satzungsmäßige Rücklagen</td>
@@ -400,7 +408,7 @@
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-478.612 €</td>
+						<td class="ft__col-val">0 €</td>
 					</tr>
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
