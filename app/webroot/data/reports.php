@@ -2,7 +2,7 @@
 	[
 		'name' => 'da-vinci',
 		'title' => [
-			'de' => 'Coding da Vinci – wie Kulturinstitutionen zu Plattformen für kulturellen Austausch werden',
+			'de' => 'Coding da Vinci',
 			'en' => ''
 		],
 		'category' => 'framework',
@@ -12,7 +12,7 @@
 	[
 		'name' => 'data-new-water',
 		'title' => [
-			'de' => 'Daten sind das neue Grundwasser: Für mehr Gemeinwohlorientierung in der Datenpolitik.',
+			'de' => 'Daten sind das neue Grundwasser',
 			'en' => ''
 		],
 		'category' => 'framework',
@@ -33,7 +33,7 @@
 		'name' => 'day-of-action',
 		'title' => [
 			'de' => 'Zu Gast bei der Wikipedia',
-			'en' => 'Support digital volunteering'
+			'en' => ''
 		],
 		'category' => 'volunteers',
 		'cover' => '',
@@ -62,7 +62,7 @@
 	[
 		'name' => 'members',
 		'title' => [
-			'de' => 'Mehr als 70.000 Mitglieder – Ein starkes Fundament',
+			'de' => 'Mehr als 70.000 Mitglieder',
 			'en' => ''
 		],
 		'category' => 'wikimedia',
@@ -72,7 +72,7 @@
 	[
 		'name' => 'prospects',
 		'title' => [
-			'de' => 'Ausblick 2019 und kommende Jahre',
+			'de' => 'Ausblick 2019',
 			'en' => ''
 		],
 		'category' => 'wikimedia',
@@ -82,7 +82,7 @@
 	[
 		'name' => 'search',
 		'title' => [
-			'de' => 'Verbesserte Suchfunktion für Wikipedia & Co.',
+			'de' => 'Verbesserte Suchfunktion',
 			'en' => ''
 		],
 		'category' => 'technology',
@@ -92,7 +92,7 @@
 	[
 		'name' => 'upload',
 		'title' => [
-			'de' => 'Vom Nischenthema zur gesellschaftlichen Debatte: 15 Organisationen gegen Upload-Filter',
+			'de' => 'Gegen Upload-Filter',
 			'en' => ''
 		],
 		'category' => 'framework',
@@ -103,7 +103,7 @@
 	[
 		'name' => 'wiki-loves-monuments',
 		'title' => [
-			'de' => 'Wiki Loves Monuments im europäischen Kulturerbejahr',
+			'de' => 'Wiki Loves Monuments',
 			'en' => ''
 		],
 		'category' => 'volunteers',
@@ -113,7 +113,7 @@
 	[
 		'name' => 'wikibase',
 		'title' => [
-			'de' => 'Die Software Wikibase als Basis für neue Wissensprojekte',
+			'de' => 'Wikibase',
 			'en' => ''
 		],
 		'category' => 'technology',
@@ -123,8 +123,8 @@
 	[
 		'name' => 'year-review',
 		'title' => [
-			'de' => 'Das Jahr 2018 bei Wikimedia Deutschland',
-			'en' => 'Looking back at 2018'
+			'de' => 'Das Jahr 2018',
+			'en' => ''
 		],
 		'category' => 'wikimedia',
 		'cover' => '',
