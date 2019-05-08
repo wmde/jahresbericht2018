@@ -40,6 +40,48 @@
 		'hero' => '',
 	],
 	[
+		'name' => 'wikibase',
+		'title' => [
+			'de' => 'Die Software Wikibase als Basis für neue Wissensprojekte',
+			'en' => ''
+		],
+		'category' => 'technology',
+		'cover' => '',
+		'hero' => '',
+	],
+	[
+		'name' => 'data-new-water',
+		'title' => [
+			'de' => 'Daten sind das neue Grundwasser: Für mehr Gemeinwohlorientierung in der Datenpolitik.',
+			'en' => ''
+		],
+		'category' => 'framework',
+		'cover' => '',
+		'hero' => '',
+	],
+	[
+		'name' => 'upload',
+		'title' => [
+			'de' => 'Vom Nischenthema zur gesellschaftlichen Debatte: 15 Organisationen gegen Upload-Filter',
+			'en' => ''
+		],
+		'category' => 'framework',
+		'cover' => '',
+		'hero' => '',
+	],
+	[
+		'name' => 'glam',
+		'title' => [
+			'de' => 'Wie die Kunst ins Netz kommt',
+			'en' => ''
+		],
+		'category' => 'framework',
+		'cover' => '',
+		'hero' => '',
+	],
+
+
+	[
 		'name' => 'digitalomat',
 		'title' => [
 			'de' => 'Digital-O-Mat: die netzpolitische Wahlhilfe',
