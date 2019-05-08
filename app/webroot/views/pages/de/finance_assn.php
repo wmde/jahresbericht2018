@@ -14,11 +14,11 @@
 				<table class="ft">
 					<thead>
 						<th class="ft__col-key"></th>
-						<th class="ft__col-val ft__assn-bg ft__assn-border">31.12.2017</th>
+						<th class="ft__col-val ft__assn-bg ft__assn-border">31.12.2018</th>
+						<th class="ft__col-void"></th>
+						<th class="ft__col-val ft__em">31.12.2017</th>
 						<th class="ft__col-void"></th>
 						<th class="ft__col-val ft__em">31.12.2016</th>
-						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em">31.12.2015</th>
 					</thead>
 					<tr class="ft__row-head ft__row-line">
 						<td class="ft__col-key">Anlagevermögen</td>
@@ -30,19 +30,19 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Immaterielle Vermögens&shy;gegenstände</td>
-						<td class="ft__col-val ft__assn-border">66.929 €</td>
+						<td class="ft__col-val ft__assn-border">49.984 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">66.929 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">24.460 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">1.789 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Sachanlagen</td>
-						<td class="ft__col-val ft__assn-border">338.408 €</td>
+						<td class="ft__col-val ft__assn-border">320.938 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">338.408 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">222.560 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">174.976 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Finanzanlagen</td>
@@ -62,43 +62,43 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Forderungen aus Mittelweitergabe&shy;verpflichtungen</td>
-						<td class="ft__col-val ft__assn-border">1.667.383 €</td>
+						<td class="ft__col-val ft__assn-border">2.446.731 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">1.667.383 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">1.581.856 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">3.040.732 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Forderungen aus Lieferungen und Leistungen</td>
-						<td class="ft__col-val ft__assn-border">67.435 €</td>
+						<td class="ft__col-val ft__assn-border">88.950 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">67.435 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">64.567 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">101.241 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Sonstige Vermögens&shy;gegenstände</td>
-						<td class="ft__col-val ft__assn-border">180.326 €</td>
+						<td class="ft__col-val ft__assn-border">298.386 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">180.326 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">97.152 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">219.790 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Wertpapiere</td>
-						<td class="ft__col-val ft__assn-border">104.198 €</td>
+						<td class="ft__col-val ft__assn-border">16.500 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">104.198 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">107.164 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">265.665 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Kassenbestand und Bankguthaben</td>
-						<td class="ft__col-val ft__assn-border">3.453.485 €</td>
+						<td class="ft__col-val ft__assn-border">5.181.003 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">3.453.485 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">2.552.120 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">1.263.264 €</td>
 					</tr>
 					<tr class="ft__row-head ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
@@ -110,11 +110,11 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__row-foot ft__col-key">Rechnungs&shy;abgrenzungs&shy;posten</td>
-						<td class="ft__col-val ft__assn-border">55.459 €</td>
+						<td class="ft__col-val ft__assn-border">67.414 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">55.459 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">48.322 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">28.548 €</td>
 					</tr>
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
@@ -122,11 +122,11 @@
 					</tr>
 					<tfoot>
 						<td class="ft__col-key">Bilanzsumme</td>
-						<td class="ft__col-val ft__assn-border ft__assn-bg">5.959.277 €</td>
+						<td class="ft__col-val ft__assn-border ft__assn-bg">8.495.561 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__em">5.959.277 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__em">4.723.856 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em">5.121.660 €</td>
 					</tfoot>
 				</table>
 			</div>
@@ -139,25 +139,25 @@
 				<table class="ft">
 					<thead>
 						<th class="ft__col-key"></th>
-						<th class="ft__col-val ft__assn-bg ft__assn-border">31.12.2017</th>
+						<th class="ft__col-val ft__assn-bg ft__assn-border">31.12.2018</th>
+						<th class="ft__col-void"></th>
+						<th class="ft__col-val ft__em ft__cell-line">31.12.2017</th>
 						<th class="ft__col-void"></th>
 						<th class="ft__col-val ft__em ft__cell-line">31.12.2016</th>
-						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em ft__cell-line">31.12.2015</th>
 					</thead>
 					<tr class="ft__row-line">
 						<td class="ft__col-key ft__row-foot">Noch nicht verbrauchte Spendenmittel</td>
-						<td class="ft__col-val ft__assn-border">4.968.500 €</td>
+						<td class="ft__col-val ft__assn-border">7.298.764 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ">4.968.500 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">4.349.061 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val ">4.238.145 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">davon steuerliche Rücklagen nach §62 AO</td>
-						<td class="ft__col-val ft__assn-border">4.968.500 €</td>
+						<td class="ft__col-val ft__assn-border">7.298.764 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">605.246 €</td>
+						<td class="ft__col-val">4.968.500 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">605.246 €</td>
 					</tr>
@@ -179,19 +179,19 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Steuer&shy;rückstellungen</td>
-						<td class="ft__col-val ft__assn-border">54 €</td>
+						<td class="ft__col-val ft__assn-border">106 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">54 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">198 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">187 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Sonstige Rückstellungen</td>
-						<td class="ft__col-val ft__assn-border">222.110 €</td>
+						<td class="ft__col-val ft__assn-border">627.306 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">222.110 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">143.626 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">149.257 €</td>
 					</tr>
 					<tr class="ft__row-head ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
@@ -211,27 +211,27 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Erhaltene Anzahlungen</td>
-						<td class="ft__col-val ft__assn-border">280.206 €</td>
+						<td class="ft__col-val ft__assn-border">188.336 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">0 €</td>
+						<td class="ft__col-val">280.206 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Aus Lieferungen und Leistungen</td>
-						<td class="ft__col-val ft__assn-border">289.630 €</td>
+						<td class="ft__col-val ft__assn-border">313.903 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">289.630 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">111.057 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">195.969 €</td>
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Sonstige Verbindlichkeiten</td>
-						<td class="ft__col-val ft__assn-border">198.777 €</td>
+						<td class="ft__col-val ft__assn-border">67.147 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">198.777 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">99.701 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">517.889 €</td>
 					</tr>
 					<tr class="ft__row-head ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
@@ -245,7 +245,7 @@
 						<td class="ft__col-key ft__row-foot">Rechnungs&shy;abgrenzungs&shy;posten</td>
 						<td class="ft__col-val ft__assn-border">0 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">20.213 €</td>
+						<td class="ft__col-val">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">20.213 €</td>
 					</tr>
@@ -255,11 +255,11 @@
 					</tr>
 					<tfoot>
 						<td class="ft__col-key">Bilanzsumme</td>
-						<td class="ft__col-val ft__assn-border ft__assn-bg">5.959.277 €</td>
+						<td class="ft__col-val ft__assn-border ft__assn-bg">8.495.561 €</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__em">5.959.277 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__em">4.723.856 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em">5.121.660 €</td>
 					</tfoot>
 				</table>
 			</div>
