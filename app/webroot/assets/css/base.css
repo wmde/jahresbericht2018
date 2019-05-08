@@ -3044,25 +3044,23 @@ a:focus {
 
 /* Chart
 ---------------------------------------------------------------- */
+/* General Styling */
 .chart {
   background: var(--color-gradient-blue);
   position: relative;
   width: 100%;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-left: 110px;
   padding-right: 110px;
+  height: 100%;
 }
-.chart__container {
+.chart__headline,
+.chart__bars {
   max-width: 960px;
   position: relative;
   margin: auto;
-}
-.chart.cp--component-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.chart-wrapper {
-  padding-top: 50px 0;
 }
 .chart__headline {
   position: relative;
@@ -3071,24 +3069,24 @@ a:focus {
   z-index: 10;
 }
 .chart__headline h1 {
-  margin-top: 10px;
+  margin-top: 10px; /* Special margin */
 }
 .chart__headline--description {
   text-transform: uppercase;
 }
-.charts {
-  height: 600px;
-  position: relative;
-  width: 100%;
+.chart__button {
+  margin-top: 60px;
 }
 
+
 /* Chart Texts */
-.charts__texts {
+
+.chart-bars__texts {
   float: left;
   text-align: right;
   width: 120px;
 }
-.chart-text {
+.chart-bars__text {
   position: relative;
   text-align: right;
   color: var(--color-white);
@@ -3101,20 +3099,24 @@ a:focus {
 .chart-bar {
   height: 79px;
 }
-.chart-text__date, .chart-text__number {
+.chart-bars__text--date, .chart-bars__text--number {
   display: block;
 }
-.chart-text__date + .chart-text__number {
+.chart-bars__text--date + .chart-bars__text--number {
   padding-top: 5px;
 }
 
 /* Chart Bars */
-.charts__bars {
+.chart .loading .chart-bar .chart-bar__inner {
+  animation: none; /* Default state */
+  right: 100%;
+}
+.chart-bars__animation {
   float: right;
   position: relative;
   width: calc(100% - 120px);
 }
-.charts__images {
+.chart-bar__image {
   height: 79px;
   float: left;
 }
@@ -3124,7 +3126,7 @@ a:focus {
   width: 100%;
   z-index: 1;
 }
-.chart-bar .inner {
+.chart-bar .chart-bar__inner {
   background-color: var(--color-white);
   position: absolute;
   bottom: 0;
@@ -3134,10 +3136,7 @@ a:focus {
   margin-left: 46px;
   margin-top: 26px;
 }
-.chart__container .loading .chart-bar .inner {
-  animation: none; /* Default state */
-  right: 100%;
-}
+
 
 
 @media (max-width: 1100px) {
@@ -3152,13 +3151,13 @@ a:focus {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .charts__texts {
+  .chart-bars__texts {
     width: 90px;
   }
-  .charts__bars {
+  .chart-bars__animation {
     width: calc(100% - 90px);
   }
-  .chart-text {
+  .chart-bars__text {
     padding: 8px 5px;
   }
 }
@@ -3182,7 +3181,7 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 72.611)))} /* 0% */
 }
-.chart__container .percent-2019 .inner {
+.chart__bars .percent-2019 .chart-bar__inner {
   -webkit-animation-duration: 2s;
   -webkit-animation-name: grow-2019;
   right: calc(1% * (100 - ((100 / 72.611) * 72.611))); /* 0% */
@@ -3197,7 +3196,7 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 65.374))) }
 }
-.chart__container .percent-2018 .inner {
+.chart__bars .percent-2018 .chart-bar__inner {
   -webkit-animation-duration: 2.5s;
   -webkit-animation-name: grow-2018;
   right: calc(1% * (100 - ((100 / 72.611) * 65.374)));
@@ -3212,7 +3211,7 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 43.138))) }
 }
-.chart__container .percent-2017 .inner {
+.chart__bars .percent-2017 .chart-bar__inner {
   -webkit-animation-duration: 3s;
   -webkit-animation-name: grow-2017;
   right: calc(1% * (100 - ((100 / 72.611) * 43.138)));
@@ -3227,7 +3226,7 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 29.169))) }
 }
-.chart__container .percent-2016 .inner {
+.chart__bars .percent-2016 .chart-bar__inner {
   -webkit-animation-duration: 3.5s;
   -webkit-animation-name: grow-2016;
   right: calc(1% * (100 - ((100 / 72.611) * 29.169)));
@@ -3242,7 +3241,7 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 15.778))) }
 }
-.chart__container .percent-2015 .inner {
+.chart__bars .percent-2015 .chart-bar__inner {
   -webkit-animation-duration: 4s;
   -webkit-animation-name: grow-2015;
   right: calc(1% * (100 - ((100 / 72.611) * 15.778)));
@@ -3257,7 +3256,7 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 9.803))) }
 }
-.chart__container .percent-2014 .inner {
+.chart__bars .percent-2014 .chart-bar__inner {
   -webkit-animation-duration: 4.5s;
   -webkit-animation-name: grow-2014;
   right: calc(1% * (100 - ((100 / 72.611) * 9.803)));
@@ -3276,7 +3275,7 @@ Value ist too small
    from { right: 100% }
    to   { right: 94% }
 }
-.chart__container .percent-2013 .inner {
+.chart__bars .percent-2013 .chart-bar__inner {
   -webkit-animation-duration: 3.5s;
   -webkit-animation-name: grow-2013;
   right: 94%;

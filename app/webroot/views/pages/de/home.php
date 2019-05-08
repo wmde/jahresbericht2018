@@ -118,77 +118,75 @@
 		</button>
 	</section>
 	<section class="chart cp--component-section">
-		<div class="chart__container">
-			<div class="chart__headline">
-				<div class="chart__headline--description t--epsilon">
-					März 2013 - März 2019
-				</div>
-				<h1 class="h--beta">Mitgliederentwicklung</h1>
+		<div class="chart__headline">
+			<div class="chart__headline--description t--epsilon">
+				März 2013 - März 2019
 			</div>
-
-			<div class="charts loading">
-				<div class="charts__texts">
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2019</span>
-						<span class="chart-text__number t--epsilon-emph">72.611</span>
+			<h1 class="h--beta">Mitgliederentwicklung</h1>
+		</div>
+		<div class="chart__bars chart-bars loading">
+				<div class="chart-bars__texts">
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2019</span>
+						<span class="chart-bars__text--number t--epsilon-emph">72.611</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2018</span>
-						<span class="chart-text__number t--epsilon-emph">65.374</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2018</span>
+						<span class="chart-bars__text--number t--epsilon-emph">65.374</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2017</span>
-						<span class="chart-text__number t--epsilon-emph">43.138</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2017</span>
+						<span class="chart-bars__text--number t--epsilon-emph">43.138</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2016</span>
-						<span class="chart-text__number t--epsilon-emph">29.169</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2016</span>
+						<span class="chart-bars__text--number t--epsilon-emph">29.169</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2015</span>
-						<span class="chart-text__number t--epsilon-emph">15.778</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2015</span>
+						<span class="chart-bars__text--number t--epsilon-emph">15.778</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2014</span>
-						<span class="chart-text__number t--epsilon-emph">9.803</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2014</span>
+						<span class="chart-bars__text--number t--epsilon-emph">9.803</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2013</span>
-						<span class="chart-text__number t--epsilon-emph">2.618</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2013</span>
+						<span class="chart-bars__text--number t--epsilon-emph">2.618</span>
 					</p>
 				</div>
 
-				<div class="charts__bars">
+				<div class="chart-bars__animation">
 					<div class="chart-bar percent-2019">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2018">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2017">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2016">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2015">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2014">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2013">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
+						<div class="chart-bar__inner"></div>
 					</div>
 				</div>
-			</div>
+
 		</div>
 		<a href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new" class="chart__button button button--outline-white">Jetzt Mitglied werden</a>
 	</section>

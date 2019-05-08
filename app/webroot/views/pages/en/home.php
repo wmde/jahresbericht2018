@@ -158,33 +158,33 @@
 					</p>
 				</div>
 
-				<div class="charts__bars">
+				<div class="chart-bars__animation">
 					<div class="chart-bar percent-2019">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
 						<div class="inner"></div>
 					</div>
 					<div class="chart-bar percent-2018">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
 						<div class="inner"></div>
 					</div>
 					<div class="chart-bar percent-2017">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
 						<div class="inner"></div>
 					</div>
 					<div class="chart-bar percent-2016">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
 						<div class="inner"></div>
 					</div>
 					<div class="chart-bar percent-2015">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
 						<div class="inner"></div>
 					</div>
 					<div class="chart-bar percent-2014">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
 						<div class="inner"></div>
 					</div>
 					<div class="chart-bar percent-2013">
-						<img class="charts__images" src="/../../assets/img/charts_illustration.svg">
+						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
 						<div class="inner"></div>
 					</div>
 				</div>
