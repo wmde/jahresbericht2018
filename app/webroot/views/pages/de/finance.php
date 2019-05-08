@@ -31,112 +31,201 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m fin-detail__aktiva">
-			<h2 class="h--beta ft__heading">Bilanz &mdash; Aktiva</h2>
+			<h2 class="h--beta">Mittelverwendung</h2>
+			<p class="t--gamma">Stand: 07.05.2019/#2</p>
 			<div class="ft-wrapper ft-wrapper--four-column">
 				<table class="ft">
 					<thead>
 						<th class="ft__col-key--main"></th>
-						<th class="ft__col-val ft__main-bg ft__main-border">31.12.2017</th>
+						<th class="ft__col-val ft__em--main">Wikimedia Deutschland e.V.</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em--main">31.12.2016</th>
+						<th class="ft__col-val ft__em--main">Gemeinnützige Wikimedia Fördergesellschaft mbH</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em--main">31.12.2015</th>
+						<th class="ft__col-val ft__em--main">Anpassungen</th>
 						<th class="ft__col-void"></th>
-						<th class="ft__col-val ft__em--main">31.12.2015</th>
+						<th class="ft__col-val ft__em--main">Konsolidiert</th>
 					</thead>
-					<tr class="ft__row-head ft__row-line--white">
-						<td class="ft__col-key--main">Anlagevermögen</td>
-						<td class="ft__col-val ft__empty ft__main-border"></td>
-						<td class="ft__col-void"></td>
+					<tr class="ft__row-low ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
 						<td class="ft__col-val ft__empty"></td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__empty"></td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__empty"></td>
-					</tr>
-					<tr class="ft__row-line--white">
-						<td class="ft__col-key--main">Immaterielle Vermögens&shy;gegenstände</td>
-						<td class="ft__col-val ft__main-border">0 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">0 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">1 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">1 €</td>
-					</tr>
-					<tr class="ft__row-line--white">
-						<td class="ft__col-key--main">Sachanlagen</td>
-						<td class="ft__col-val ft__main-border">0 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">0 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">182 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">182 €</td>
 					</tr>
 					<tr class="ft__row-head ft__row-line--white">
-						<td class="ft__col-key--main">Umlaufvermögen</td>
-						<td class="ft__col-val ft__main-border ft__empty"></td>
+						<td class="ft__col-key--main">Erträge</td>
+						<td class="ft__col-val">8.949.066 AED</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-val">11.828.121 AED</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-val">-2.490.912 AED</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__empty"></td>
-					</tr>
-					<tr class="ft__row-line--white">
-						<td class="ft__col-key--main">Forderungen und sonstige Vermögens&shy;gegenstände</td>
-						<td class="ft__col-val ft__main-border">50.980 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">569.171 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">367.364 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">367.364 €</td>
-					</tr>
-					<tr class="ft__row-line--white">
-						<td class="ft__col-key--main">Bankguthaben</td>
-						<td class="ft__col-val ft__main-border">8.278.607 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">7.765.241 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">8.328.541 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">8.328.541 €</td>
-					</tr>
-					<tr class="ft__row-head ft__row-line--white">
-						<td class="ft__col-key--main">&nbsp;</td>
-						<td class="ft__col-val ft__main-border ft__empty"></td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__empty"></td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__empty"></td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__empty"></td>
-					</tr>
-					<tr class="ft__row-line--white">
-						<td class="ft__row-foot ft__col-key--main">Rechnungs&shy;abgrenzungs&shy;posten</td>
-						<td class="ft__col-val ft__main-border">5.326 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">1.820 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">1.897 €</td>
-						<td class="ft__col-void"></td>
-						<td class="ft__col-val">1.897 €</td>
+						<td class="ft__col-val">18.286.275 AED</td>
 					</tr>
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
-						<td class="ft__col-val ft__main-border ft__empty"></td>
+						<td class="ft__col-val ft__empty"></td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Spenden (aufwandswirksam)</td>
+						<td class="ft__col-val">1.147.760 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">10.948.538 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-2.460.795 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">9.635.503 AED</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Mitgliedsbeiträge</td>
+						<td class="ft__col-val">3.229.156 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">3.229.156 AED</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Projektförderung</td>
+						<td class="ft__col-val">2.567.173 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">850.181 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">3.417.354 AED</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">davon Wikimedia Foundation</td>
+						<td class="ft__col-val">2.073.753 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">850.181 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">WMFG-Untervermietung</td>
+						<td class="ft__col-val">30.117 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-30.117 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Sonstiges</td>
+						<td class="ft__col-val">1.974.860 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">29.402 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">2.004.262 AED</td>
+					</tr>
+					<tr class="ft__row-head ft__row-line--white">
+						<td class="ft__col-key--main"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+					</tr>
+					<tr class="ft__row-head ft__row-line--white">
+						<td class="ft__col-key--main">Aufwendungen</td>
+						<td class="ft__col-val">-8.949.066 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-11.734.381 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">2.490.912 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-18.192.535 AED</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Handlungsfeld Freiwillige</td>
+						<td class="ft__col-val">-1.680.784 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-1.680.784 AED</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Handlungsfeld Technologie</td>
+						<td class="ft__col-val">-2.179.505 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-2.179.505 AED</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Handlungsfeld Rahmenbedingungen</td>
+						<td class="ft__col-val">-1.496.328 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-1.496.328 AED</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Ö-Arbeit und Werbung</td>
+						<td class="ft__col-val">-805.415 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-755.725 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-1.561.140 AED</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Verwaltungskosten</td>
+						<td class="ft__col-val">-2.787.034 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-2.787.034 AED</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">Mittelweiterleitung WMFG</td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-8.487.744 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">-8.487.744 AED</td>
+					</tr>
+					<tr class="ft__row-line--white">
+						<td class="ft__col-key--main">WMFG-Untermiete</td>
+						<td class="ft__col-val"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">WMFG-Untermiete</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val">30.117 AED</td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val"></td>
+					</tr>
+					<tr class="ft__row-low ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tfoot>
-						<td class="ft__col-key--main">Bilanzsumme</td>
-						<td class="ft__col-val ft__main-border ft__main-bg">8.334.913 €</td>
+						<td class="ft__col-key--main">Jahresüberschuss der WMFG: Einstellung in andere Gewinnrücklagen</td>
+						<td class="ft__col-val ft__em--main"></td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--main">8.336.232 €</td>
+						<td class="ft__col-val ft__em--main">-93.740 AED</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--main">8.697.986 €</td>
+						<td class="ft__col-val ft__em--main"></td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--main">8.697.986 €</td>
+						<td class="ft__col-val ft__em--main">-93.740 AED</td>
 					</tfoot>
 				</table>
 			</div>
