@@ -428,53 +428,7 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m fin-detail__mittel">
-			<h2 class="h--beta ft__heading">Mittelverwendung</h2>
-
-			<table class="ft ft--alloc">
-				<thead>
-					<th class="ft__col-key"></th>
-					<th class="ft__col-val ft__assn-bg ft__assn-border">31.12.2017</th>
-				</thead>
-				<tr class="ft__row-line">
-					<td class="ft__col-key">Schwerpunkt 1: Neue Freiwillige für Wikimedia-Projekte gewinnen und halten</td>
-					<td class="ft__col-val ft__assn-border">230.119 €</td>
-				</tr>
-				<tr class="ft__row-line">
-					<td class="ft__col-key">Schwerpunkt 2: Freiwillige in den Wikimedia-Projekten unterstützen</td>
-					<td class="ft__col-val ft__assn-border">1.189.857 €</td>
-				</tr>
-				<tr class="ft__row-line">
-					<td class="ft__col-key">Schwerpunkt 3: Wikidata ausbauen und MediaWiki weiterentwickeln</td>
-					<td class="ft__col-val ft__assn-border">1.848.354 €</td>
-				</tr>
-				<tr class="ft__row-line">
-					<td class="ft__col-key">Schwerpunkt 4: Politische und rechtliche Rahmenbedingungen für Freies Wissen stärken</td>
-					<td class="ft__col-val ft__assn-border">523.731 €</td>
-				</tr>
-				<tr class="ft__row-line">
-					<td class="ft__col-key">Schwerpunkt 5: Gemeinsam mit den Communitys Inhalte durch Kooperationen mit Institutionen befreien</td>
-					<td class="ft__col-val ft__assn-border">490.186 €</td>
-				</tr>
-				<tr class="ft__row-line">
-					<td class="ft__col-key">Programmunterstützende Bereiche (z. B. Kommunikation, Veranstaltungsmanagement, etc.)</td>
-					<td class="ft__col-val ft__assn-border">782.443 €</td>
-				</tr>
-				<tr class="ft__row-line">
-					<td class="ft__col-key">Indirekte Projektaufwendungen (Miete, Personal, Buchhaltung, IT, etc.</td>
-					<td class="ft__col-val ft__assn-border">1.745.439 €</td>
-				</tr>
-				<tr class="ft__row-low ft__row-line">
-					<td class="ft__col-key">&nbsp;</td>
-					<td class="ft__col-val ft__assn-border ft__empty"></td>
-				</tr>
-				<tfoot>
-					<td class="ft__col-key">Gesamt</td>
-					<td class="ft__col-val ft__assn-border ft__assn-bg">6.810.129 €</td>
-				</tfoot>
-			</table>
-		</div>
-		<div class="limit--m fin-detail__mittel">
-			Mehr Informationen zu unseren <a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Jahresplanung_2017"target="new">Schwerpunkten 2017</a>
+			Mehr Informationen zu unseren <a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Jahresplanung_2018"target="new">Schwerpunkten 2018</a>
 		</div>
 	</section>
 	<section class="section cp">

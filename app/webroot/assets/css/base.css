@@ -375,7 +375,7 @@ body > main {
 .border-box {
   border: 1px solid var(--color-black);
   padding: 30px 40px;
-  margin: 15px;
+  margin-bottom: 15px;
   justify-content: center;
   align-items: center;
   transition: all .5s;
@@ -383,9 +383,11 @@ body > main {
 }
 .border-box:first-child {
   margin-top: 0;
+  margin-right: 15px;
 }
 .border-box:last-child {
   margin-top: 0;
+  margin-left: 15px;
 }
 .report-detail .border-box:last-child {
   margin-top: 90px;
@@ -498,15 +500,15 @@ body > main {
 /* Content Sections
 ---------------------------------------------------------------- */
 .finance--assn .section .fin-detail__mittel a {
-  border-bottom: 1px solid var(--color-purple);
-  color: var(--color-purple);
+  border-bottom: 1px solid var(--color-black);
+  color: var(--color-black);
 }
 .finance--assn .section .fin-detail__mittel a:hover {
   opacity: 0.5;
 }
 .finance--assn .section .fin-detail__mittel:last-of-type {
   padding-top: 80px;
-  color: var(--color-purple);
+  color: var(--color-black);
 }
 .section {
   position: relative; /* __heading is absolute */
@@ -1808,7 +1810,6 @@ a:focus {
   justify-content: space-between;
   padding: 80px 0;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .finance__p {
   margin-bottom: 60px;
@@ -1849,6 +1850,11 @@ a:focus {
 ---------------------------------------------------------------- */
 .ft__heading {
   padding: 40px 0 40px 0;
+}
+.ft__subtitle {
+  display: block;
+  font-weight: normal;
+  padding-top: 10px;
 }
 .ft-wrapper {
   overflow-x: auto;
@@ -1910,6 +1916,8 @@ a:focus {
 }
 .finance--main .ft__col-val {
   min-width: 175px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .finance--fund .ft__row-line--black .ft__col-val {
   border-bottom: 1px solid var(--color-lightgreen);
@@ -2058,8 +2066,6 @@ a:focus {
 .bagel__image {
   position: absolute;
   height: 280px;
-}
-.bagel__image--l {
 }
 .bagel__image--s {
   padding: 20px;

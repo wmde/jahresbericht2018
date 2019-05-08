@@ -30,9 +30,13 @@
 		</div>
 	</section>
 	<section class="section cp">
-		<div class="limit--m fin-detail__aktiva">
-			<h2 class="h--beta">Mittelverwendung</h2>
-			<p class="t--gamma">Stand: 07.05.2019/#2</p>
+		<div class="limit--m">
+			<h2 class="h--beta ft__heading">
+				Mittelverwendung
+				<span class="ft__subtitle t--delta">
+					Stand: 07.05.2019
+				</span>
+			</h2>
 			<div class="ft-wrapper ft-wrapper--four-column">
 				<table class="ft">
 					<thead>
@@ -48,7 +52,14 @@
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
 						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
 					</tr>
+
 					<tr class="ft__row-head ft__row-line--white">
 						<td class="ft__col-key--main">Erträge</td>
 						<td class="ft__col-val">8.949.066 AED</td>
@@ -61,6 +72,12 @@
 					</tr>
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line--white">
@@ -216,16 +233,22 @@
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
 						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tfoot>
 						<td class="ft__col-key--main">Jahresüberschuss der WMFG: Einstellung in andere Gewinnrücklagen</td>
-						<td class="ft__col-val ft__em--main"></td>
+						<td class="ft__col-val ft__main-bg"></td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--main">-93.740 AED</td>
+						<td class="ft__col-val ft__main-bg">-93.740 AED</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--main"></td>
+						<td class="ft__col-val ft__main-bg"></td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--main">-93.740 AED</td>
+						<td class="ft__col-val ft__main-bg">-93.740 AED</td>
 					</tfoot>
 				</table>
 			</div>
