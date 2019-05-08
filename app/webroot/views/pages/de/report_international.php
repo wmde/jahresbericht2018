@@ -8,10 +8,10 @@
 		<div class="report-detail hero__caption t--zeta">Jason Krüger for Wikimedia Deutschland e.V. (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2017_–_147.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
-				<em>Wikimedias strategische Ausrichtung anpacken</em>
+				<em>Wikimedia 2030</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Was möchten wir – die internationale Wikimedia-Bewegung – in den nächsten 10-15 Jahren aufbauen und erreichen? Wofür soll Wikimedia im Jahr 2030 in der Welt bekannt sein? Und wer wird sich unserer Bewegung angeschlossen haben? Diesen großen Fragen widmeten sich im Jahr 2017 hunderte von Menschen und Organisationen, die gemeinsam die Zukunft von Wikimedia gestalten möchten. In einem groß angelegten, globalen Strategieprozess  <a href="https://meta.wikimedia.org/wiki/Strategy/Wikimedia_movement/2017/de" target="new">„Wikimedia 2030“</a> wurden sowohl Wikimedianerinnen und Wikimedianer als auch viele externe Partnerorganisationen sowie Lesende und Spendende zur Zukunft Wikimedias befragt. Mithilfe dieser vielfältigen Beiträge sowie begleitenden Recherchen und Analysen haben wir im internationalen Movement-Strategieprozess eine neue Strategische Ausrichtung entwickelt.
+				Was möchten wir – die internationale Wikimedia-Bewegung – in den nächsten 10-15 Jahren aufbauen und erreichen? Wofür soll Wikimedia im Jahr 2030 in der Welt bekannt sein? Und wer wird sich unserer Bewegung angeschlossen haben? Mit diesen Fragen beschäftigen wir uns seit 2017.
 			</div>
 			<?php if (isset($achievements[0])): ?>
 			<div class="achievement-box">
@@ -28,16 +28,16 @@
 			<?php endif ?>
 			<div class="section__body t--gamma-serif">
 				<p>
-					Zum ersten Mal bekennt sich Wikimedia dazu, eine soziale Bewegung zu sein, die weit über die Grenzen der Enzyklopädie hinaus auf die Gesellschaft wirken will: Wir wollen die essenzielle Infrastruktur im Ökosystems des Freien Wissens werden. Alle, die unsere Vision teilen, können sich uns anschließen. Dabei legen wir besonderen Fokus auf die Konzepte „Wissen als Dienst“ und „Gerechtigkeit des Wissens“.
+					Wohin wir wollen haben wir inzwischen festgelegt: Wikimedia hat sich das Ziel gegeben die wichtigste, unterstützende Struktur für die gesamte Bewegung für Freies Wissen zu werden – und alle, die sich uns anschließen möchten, sind jederzeit willkommen mitzumachen.
 				</p>
 				<p>
-					Wissen als Dienst: Wir werden zu einer Plattform, die über Schnittstellen und Communitys der ganzen Welt Freies Wissen anbietet, immer mit dem Ziel, verschiedene Arten von Freiem Wissen zu sammeln und möglichst vielen Organisationen, Menschen und Maschinen zur Verfügung zu stellen.
+					Wir wollen das über unsere beiden Ziele „Wissen als Dienst“ (Knowledge as a Service) und „Chancengleichheit auf Wissen“ (Knowledge Equity) erreichen. Wissen als Dienst verkörpert dabei vor allem den Gedanken die Plattform für das gesamte Wissen der Welt zu sein – alle können beitragen, es aber auch verändern, und im eigenen Sinne weiternutzen. Chancengleichheit auf Wissen bedeutet, dass wir uns noch stärker den Menschen und deren Wissen zuwenden wollen, die bisher aufgrund von Machtstrukturen und Privilegien sowie politischen oder sozialen Hürden ausgeschlossen waren.
 				</p>
 				<p>
-					Gerechtigkeit des Wissens bedeutet, dass wir uns verstärkt den Menschen und dem Wissen zuwenden, die bisher aufgrund von Machtstrukturen und Privilegien sowie politischen oder sozialen Hürden ausgeschlossen waren.
+					Das sind hehre Ziele, die sich Wikimedia vorgenommen hat. Doch wie erreichen wir diese? Was müssen wir an unseren Strukturen in und um die Wikimedia-Projekte verändern, damit wir 2030 dort sind, wo wir sein wollen?
 				</p>
 				<p>
-					Diese strategische Ausrichtung wurde von einer überwältigenden Mehrheit an Wikimedia-Organisationen unterstützt, und auch Wikimedia Deutschland hat sie aus ganzem Herzen bestätigt. Jetzt ist es die Aufgabe aller Beteiligten innerhalb der Wikimedia-Bewegung, gemeinsam mit unseren Partnern herauszufinden, wie wir die neue Ausrichtung in unsere tägliche Arbeit integrieren. Die Zeichen stehen auf Wandel, und Wikimedia Deutschland wird sich auch in der nächsten Phase des Prozesses aktiv in die internationale Debatte einbringen.
+					Mit diesen Fragen beschäftigt sich Wikimedia Deutschland seit Mitte letzten Jahres intensiv – zusammen mit zahlreichen Haupt- und Ehrenamtlichen des globalen Wikimedia-Netzwerkes. In neun thematischen Arbeitsgruppen erarbeiten etwa 117 Wikimedianerinnen und Wikimedianer Empfehlungen, wie wir unsere Strukturen so weitreichend modernisieren, dass wir gemeinsam erfolgreich diesen neuen Kurs verfolgen können. Wikimedia Deutschland unterstützt diesen Prozess bestmöglich, denn wir glauben, dass dieser umfangreiche und inklusive Prozess essentiell für die Zukunft Freien Wissens ist.
 				</p>
 			</div>
 		</div>

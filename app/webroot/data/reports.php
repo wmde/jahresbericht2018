@@ -1,51 +1,11 @@
 <?php return [
 	[
-		'name' => 'day-of-action',
+		'name' => 'da-vinci',
 		'title' => [
-			'de' => 'Zu Gast bei der Wikipedia',
-			'en' => 'Support digital volunteering'
-		],
-		'category' => 'volunteers',
-		'cover' => '',
-		'hero' => '',
-	],
-	[
-		'name' => 'wiki-loves-monuments',
-		'title' => [
-			'de' => 'Wiki Loves Monuments im europäischen Kulturerbejahr',
+			'de' => 'Coding da Vinci – wie Kulturinstitutionen zu Plattformen für kulturellen Austausch werden',
 			'en' => ''
 		],
-		'category' => 'volunteers',
-		'cover' => '',
-		'hero' => '',
-	],
-	[
-		'name' => 'data',
-		'title' => [
-			'de' => 'Lexikografische Daten',
-			'en' => ''
-		],
-		'category' => 'technology',
-		'cover' => '',
-		'hero' => '',
-	],
-	[
-		'name' => 'search',
-		'title' => [
-			'de' => 'Verbesserte Suchfunktion für Wikipedia & Co.',
-			'en' => ''
-		],
-		'category' => 'technology',
-		'cover' => '',
-		'hero' => '',
-	],
-	[
-		'name' => 'wikibase',
-		'title' => [
-			'de' => 'Die Software Wikibase als Basis für neue Wissensprojekte',
-			'en' => ''
-		],
-		'category' => 'technology',
+		'category' => 'framework',
 		'cover' => '',
 		'hero' => '',
 	],
@@ -60,12 +20,22 @@
 		'hero' => '',
 	],
 	[
-		'name' => 'upload',
+		'name' => 'data',
 		'title' => [
-			'de' => 'Vom Nischenthema zur gesellschaftlichen Debatte: 15 Organisationen gegen Upload-Filter',
+			'de' => 'Lexikografische Daten',
 			'en' => ''
 		],
-		'category' => 'framework',
+		'category' => 'technology',
+		'cover' => '',
+		'hero' => '',
+	],
+	[
+		'name' => 'day-of-action',
+		'title' => [
+			'de' => 'Zu Gast bei der Wikipedia',
+			'en' => 'Support digital volunteering'
+		],
+		'category' => 'volunteers',
 		'cover' => '',
 		'hero' => '',
 	],
@@ -79,37 +49,76 @@
 		'cover' => '',
 		'hero' => '',
 	],
-
-
 	[
-		'name' => 'digitalomat',
+		'name' => 'international',
 		'title' => [
-			'de' => 'Digital-O-Mat: die netzpolitische Wahlhilfe',
-			'en' => 'Digital-O-Mat: an election aid for net politics'
+			'de' => 'Wikimedia 2030',
+			'en' => ''
 		],
-		'category' => 'framework',
-		'cover' => '/assets/img/05_digitalomat_cover.jpg',
-		'hero' => '/assets/img/05_digitalomat_hero.jpg',
+		'category' => 'wikimedia',
+		'cover' => '',
+		'hero' => '',
 	],
 	[
-		'name' => 'glam',
+		'name' => 'members',
 		'title' => [
-			'de' => 'Auf Tour zu Kulturgütern für die Wikipedia',
-			'en' => 'Cultural heritage for Wikipedia'
+			'de' => 'Mehr als 70.000 Mitglieder – Ein starkes Fundament',
+			'en' => ''
 		],
-		'category' => 'framework',
-		'cover' => '/assets/img/06_glam_cover.jpg',
-		'hero' => '/assets/img/06_glam_hero.jpg',
+		'category' => 'wikimedia',
+		'cover' => '',
+		'hero' => '',
 	],
 	[
-		'name' => 'fellow',
+		'name' => 'prospects',
 		'title' => [
-			'de' => 'Offene Wissenschaft aktiv vorantreiben',
-			'en' => 'Driving forward open science'
+			'de' => 'Ausblick 2019 und kommende Jahre',
+			'en' => ''
+		],
+		'category' => 'wikimedia',
+		'cover' => '',
+		'hero' => '',
+	],
+	[
+		'name' => 'search',
+		'title' => [
+			'de' => 'Verbesserte Suchfunktion für Wikipedia & Co.',
+			'en' => ''
+		],
+		'category' => 'technology',
+		'cover' => '',
+		'hero' => '',
+	],
+	[
+		'name' => 'upload',
+		'title' => [
+			'de' => 'Vom Nischenthema zur gesellschaftlichen Debatte: 15 Organisationen gegen Upload-Filter',
+			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '/assets/img/07_fellow_cover.jpg',
-		'hero' => '/assets/img/07_fellow_hero.jpg',
+		'cover' => '',
+		'hero' => '',
+	],
+
+	[
+		'name' => 'wiki-loves-monuments',
+		'title' => [
+			'de' => 'Wiki Loves Monuments im europäischen Kulturerbejahr',
+			'en' => ''
+		],
+		'category' => 'volunteers',
+		'cover' => '',
+		'hero' => '',
+	],
+	[
+		'name' => 'wikibase',
+		'title' => [
+			'de' => 'Die Software Wikibase als Basis für neue Wissensprojekte',
+			'en' => ''
+		],
+		'category' => 'technology',
+		'cover' => '',
+		'hero' => '',
 	],
 	[
 		'name' => 'year-review',
@@ -120,35 +129,5 @@
 		'category' => 'wikimedia',
 		'cover' => '',
 		'hero' => '',
-	],
-	[
-		'name' => 'members',
-		'title' => [
-			'de' => 'Schon Mitglied?',
-			'en' => 'Join us as a member!'
-		],
-		'category' => 'wikimedia',
-		'cover' => '/assets/img/08_members_cover.jpg',
-		'hero' => '/assets/img/08_members_hero.jpg',
-	],
-	[
-		'name' => 'international',
-		'title' => [
-			'de' => 'Wikimedias strategische Ausrichtung anpacken',
-			'en' => 'Addressing Wikimedia’s strategic direction'
-		],
-		'category' => 'wikimedia',
-		'cover' => '/assets/img/09_international_cover.jpg',
-		'hero' => '/assets/img/09_international_hero.jpg',
-	],
-	[
-		'name' => '2018',
-		'title' => [
-			'de' => 'Ausblick: So geht es 2018 weiter',
-			'en' => 'Prospects for 2018'
-		],
-		'category' => 'wikimedia',
-		'cover' => '/assets/img/10_2018_cover.jpg',
-		'hero' => '/assets/img/10_2018_hero.jpg',
 	],
 ] ?>
