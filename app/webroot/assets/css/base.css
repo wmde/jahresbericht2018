@@ -3130,6 +3130,7 @@ a:focus {
   bottom: 0;
   left: 0;
   top: 0;
+  right: 0;
   margin-left: 46px;
   margin-top: 26px;
 }
@@ -3166,21 +3167,28 @@ a:focus {
 
 /* Chart Animation
 ---------------------------------------------------------------- */
-
 /*
 Calculation: 100% = number of 2019
 Other years are less than 100%
 100 % - (100 / year2019) * currentYear
 */
+
+/* 2019 */
 @-keyframes grow-2019 {
    from { right: 100% }
-   to   { right: calc(1% * (100 - ((100 / 72.611) * 72.611)))}
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 72.611)))} /* 0% */
 }
 @-webkit-keyframes grow-2019 {
    from { right: 100% }
-   to   { right: calc(1% * (100 - ((100 / 72.611) * 72.611)))}
+   to   { right: calc(1% * (100 - ((100 / 72.611) * 72.611)))} /* 0% */
+}
+.chart__container .percent-2019 .inner {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: grow-2019;
+  right: calc(1% * (100 - ((100 / 72.611) * 72.611))); /* 0% */
 }
 
+/* 2018 */
 @-keyframes grow-2018 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 65.374))) }
@@ -3189,7 +3197,13 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 65.374))) }
 }
+.chart__container .percent-2018 .inner {
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-name: grow-2018;
+  right: calc(1% * (100 - ((100 / 72.611) * 65.374)));
+}
 
+/* 2017 */
 @-keyframes grow-2017 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 43.138))) }
@@ -3198,7 +3212,13 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 43.138))) }
 }
+.chart__container .percent-2017 .inner {
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: grow-2017;
+  right: calc(1% * (100 - ((100 / 72.611) * 43.138)));
+}
 
+/* 2016 */
 @-keyframes grow-2016 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 29.169))) }
@@ -3207,7 +3227,13 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 29.169))) }
 }
+.chart__container .percent-2016 .inner {
+  -webkit-animation-duration: 3.5s;
+  -webkit-animation-name: grow-2016;
+  right: calc(1% * (100 - ((100 / 72.611) * 29.169)));
+}
 
+/* 2015 */
 @-keyframes grow-2015 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 15.778))) }
@@ -3216,7 +3242,13 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 15.778))) }
 }
+.chart__container .percent-2015 .inner {
+  -webkit-animation-duration: 4s;
+  -webkit-animation-name: grow-2015;
+  right: calc(1% * (100 - ((100 / 72.611) * 15.778)));
+}
 
+/* 2014 */
 @-keyframes grow-2014 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 9.803))) }
@@ -3225,7 +3257,17 @@ Other years are less than 100%
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 9.803))) }
 }
+.chart__container .percent-2014 .inner {
+  -webkit-animation-duration: 4.5s;
+  -webkit-animation-name: grow-2014;
+  right: calc(1% * (100 - ((100 / 72.611) * 9.803)));
+}
 
+/* 2013 */
+/*
+Special value to display short white stripe at least –
+Value ist too small
+*/
 @-keyframes grow-2013 {
    from { right: 100% }
    to   { right: 94% }
@@ -3233,37 +3275,6 @@ Other years are less than 100%
 @-webkit-keyframes grow-2013 {
    from { right: 100% }
    to   { right: 94% }
-}
-
-.chart__container .percent-2019 .inner {
-  -webkit-animation-duration: 2s;
-  -webkit-animation-name: grow-2019;
-  right: calc(1% * (100 - ((100 / 72.611) * 72.611)));
-}
-.chart__container .percent-2018 .inner {
-  -webkit-animation-duration: 2.5s;
-  -webkit-animation-name: grow-2018;
-  right: calc(1% * (100 - ((100 / 72.611) * 65.374)));
-}
-.chart__container .percent-2017 .inner {
-  -webkit-animation-duration: 3s;
-  -webkit-animation-name: grow-2017;
-  right: calc(1% * (100 - ((100 / 72.611) * 43.138)));
-}
-.chart__container .percent-2016 .inner {
-  -webkit-animation-duration: 3.5s;
-  -webkit-animation-name: grow-2016;
-  right: calc(1% * (100 - ((100 / 72.611) * 29.169)));
-}
-.chart__container .percent-2015 .inner {
-  -webkit-animation-duration: 4s;
-  -webkit-animation-name: grow-2015;
-  right: calc(1% * (100 - ((100 / 72.611) * 15.778)));
-}
-.chart__container .percent-2014 .inner {
-  -webkit-animation-duration: 4.5s;
-  -webkit-animation-name: grow-2014;
-  right: calc(1% * (100 - ((100 / 72.611) * 9.803)));
 }
 .chart__container .percent-2013 .inner {
   -webkit-animation-duration: 3.5s;
