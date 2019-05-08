@@ -3,11 +3,7 @@
 	<section class="report-landing-hero cp cp--4x-top cp--4x-bottom">
 		<div class="filter">
 			<div class ="filter-head">
-				<div class="filter-head--back h--delta">
-					<div class="filter-head-back-align">
-						<a href="<?= $url('report', $lang) ?>">Back to topic overview</a>
-					</div>
-				</div>
+				<a href="<?= $url('report', $lang) ?>" class="filter-head--back h--delta">Zur Übersicht</a>
 				<div class="filter-head--menu h--beta"><?= $filter['title'][$lang] ?></div>
 				<img class="filter-head--image" src="/assets/img/cube_themen_purple.svg" alt="Themenübersicht Illustration">
 				<div class="filter-text t--gamma-serif"><?= $filter['teaser'][$lang] ?></div>
@@ -16,7 +12,7 @@
 	</section>
 	<?php else: ?>
 	<section class="report-landing-hero cp cp--6x-top cp--4x-bottom">
-		<h1 class="h--beta report-landing-hero__title">topic overview</h1>
+		<h1 class="h--beta report-landing-hero__title">Unsere Themen im Überblick</h1>
 		<div class="report-landing-hero__cubes limit--l cp--2x-top">
 			<?php foreach ($filters as $f): ?>
 				<a
@@ -40,7 +36,7 @@
 				></figure>
 				<div class="jb-hsplit__content">
 					<h1 class="h--gamma jb-hsplit__title"><?= $report['title'][$lang] ?></h1>
-					<p class ="h--delta jb-hsplit__title">&mdash; More on this topic</p>
+					<p class ="h--delta jb-hsplit__title">&mdash; Zum Thema</p>
 				</div>
 			</a>
 		<?php endforeach ?>

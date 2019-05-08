@@ -8,10 +8,10 @@
 		<div class="report-detail hero__caption t--zeta">Brunswyk (<a href="https://commons.wikimedia.org/wiki/File:GLAM-on-Tour_Museum_Schloss_Fuerstenberg_Wikipedianer_bei_der_Arbeit_(Brunswyk_2017).JPG" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
-				<em>Cultural heritage for Wikipedia</em>
+				<em>Wie die Kunst ins Netz kommt</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Working together with volunteers and collaborating with institutions to make cultural heritage accessible to everyone free of charge – this is the crazy idea behind Wikimedia’s GLAM work. GLAM is an abbreviation for the types of institutions that we would like to inspire with the idea of open access to cultural data: Galleries, Libraries, Archives and Museums. Numerous exciting partnerships have been created and continued to grow due to the dedication of the Wikimedia community in 2017.
+				<strong>G</strong>alerien, Bibliotheken (<strong>L</strong>ibraries), <strong>A</strong>rchive und <strong>M</strong>useen (kurz GLAMs) bewahren Wissen und vermitteln es. Wikimedia Deutschlands Ziel ist es, dieses Wissen im digitalen Raum mithilfe der <a href="https://meta.wikimedia.org/wiki/Wikimedia_projects" target="new">Wikimedia-Projekte</a> und dem Engagement kulturbegeisterter Ehrenamtlicher frei und offen für alle Menschen verfügbar zu machen. Das Konzept überzeugt: 15 Kulturinstitutionen von Berlin bis Zürich haben 2018 ihre Türen für GLAM on Tour-Stationen geöffnet. Besonders gefreut haben wir uns über die Einladung in ein weiteres Juwel der Stiftung Preußische Schlösser und Gärten: das Jagdschloss Grunewald.
 			</div>
 			<?php if (isset($achievements[0])): ?>
 			<div class="achievement-box">
@@ -28,22 +28,22 @@
 			<?php endif ?>
 			<div class="section__body t--gamma-serif">
 				<p>
-					Using the GLAM on Tour format, we are promoting cooperation between volunteers from the various Wikimedia projects and cultural institutions. The tour went to eight different locations in 2017 and travelled from the musical instruments department of the Museum of Art and Industry in Hamburg to the Monte Verita in Ticino. Special guided tours, scientific talks and editing workshops allowed volunteers to work directly with the represented institutions to share more specialist knowledge with the entire world through the Wikimedia projects.
+					Das Amsterdamer <a href="https://www.rijksmuseum.nl/en/rijksstudio?ii=0&p=0&from=2018-12-19T13%3A11%3A50.4346035Z" target="new">Rijksmuseum</a>, das <a href="https://kottke.org/18/11/the-art-institute-of-chicago-has-put-50000-high-res-images-from-their-collection-online" target="new">Art Institute of Chicago</a>, zuletzt das <a href="https://wikimediafoundation.org/2019/01/24/we-applaud-the-cleveland-museum-of-arts-new-open-access-policy-and-heres-what-remains-to-be-done/" target="new">Cleveland Museum of Art</a>: Sie alle haben Tausende Werke von Hokusai bis Edward Hopper online unter freier Lizenz veröffentlicht. Auch die deutsche Kulturszene sucht nach neuen Wegen der Interaktion mit ihrem Publikum und gänzlich neuen Zielgruppen – nicht mehr bloß vor Ort.
 				</p>
 				<p>
-					For example, in 2017, 21 Wikipedia contributors visited the Fürstenberg Palace and were able to further their knowledge of Germany’s oldest porcelain factory. The volunteers spent an entire weekend gaining exclusive insights into the porcelain workshops at the museums, listening to presentations from experts and working together on making this cultural heritage available in Wikipedia. 39 new articles were created, 25 existing articles were expanded and many more had new images added. The appreciation of the volunteers and their work for Wikipedia was made clear by the presence of the mayor on the opening day.
+					Umso größer ist das Interesse an neuen Partnern in den Netzcommunitys: Als populärste Wissenssammlung im Internet ist Wikipedia für Millionen Menschen die erste Anlaufstelle für Informationen und damit auch ein wichtiges Medium für Kulturinstitutionen. Aus diesem gemeinsamen Interesse von Kulturszene und Wikipedia-Freiwilligen ist eine sehr aktive GLAM-Community entstanden: Mit fachkundiger Unterstützung der einladenden Institution dokumentieren, fotografieren und schreiben Wikipedia-Freiwillige Artikel zu Sammlungen, Institutionen und einzelnen Werken. Wikimedia Deutschland fungiert als Organisator und Ansprechpartner für Museen und Stiftungen und unterstützt die Freiwilligen vor Ort. Im besten Fall entstehen daraus dann langfristige Partnerschaften.
 				</p>
 				<p>
-					We will continue working to link volunteers with GLAM institutions in 2018. The European Cultural Heritage Year will also carry great significance in that it should help strengthen the awareness of common European cultural heritage across borders.
+					Eine solche ist die Kooperation mit der Stiftung Preußische Schlösser und Gärten, die 2015 erstmals Wikimedia-Aktive ins Schloss Caputh einlud. 2018 folgte ein Wochenende zu Gast im Jagdschloss Grunewald: Dem Anlass zu Ehren führte die “Schlossherrin” selbst durch den historischen Bau und seine Geschichte, ein Kunsthistoriker der Stiftung trug mit seinem enormen Wissensschatz rund um die Cranach-Sammlung zur Überarbeitung und Neuerstellung von über 50 Wikipedia-Artikeln durch die Freiwilligen bei. Auch 2019 wird diese erfolgreiche Partnerschaft mit einer sommerlichen Kulturreise in die Parkanlage Sanssouci fortgesetzt.
 				</p>
 			</div>
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
-		<a href="/en/report/fellow" class="button button--report">
-			<p class="button--small">next topic</p>
-			<p>Driving forward open science</p>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
+		<a href="/report/fellow" class="button button--report">
+			<p class="button--small"> Zum nächsten Thema </p>
+			<p> Offene Wissenschaft aktiv vorantreiben </p>
 		</a>
 	</section>
 </main>
