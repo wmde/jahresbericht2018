@@ -3067,12 +3067,13 @@ a:focus {
 }
 .chart__headline h1 {
   margin-top: 10px; /* Special margin */
+  padding-bottom: 30px;
 }
 .chart__headline--description {
   text-transform: uppercase;
 }
 .chart__button {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 /* Chart Bars Texts */

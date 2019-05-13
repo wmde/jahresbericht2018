@@ -16,8 +16,8 @@
 			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/02_data_new_water_cover.jpg',
+		'hero' => '/assets/img/02_data_new_water_hero.jpg',
 	],
 	[
 		'name' => 'data',
@@ -26,8 +26,8 @@
 			'en' => ''
 		],
 		'category' => 'technology',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/03_data_cover.jpg',
+		'hero' => '/assets/img/03_data_hero.jpg',
 	],
 	[
 		'name' => 'day-of-action',
@@ -36,8 +36,8 @@
 			'en' => ''
 		],
 		'category' => 'volunteers',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/04_day_of_action_cover.jpg',
+		'hero' => '/assets/img/04_day_of_action_hero.jpg',
 	],
 	[
 		'name' => 'glam',
@@ -46,8 +46,8 @@
 			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/05_glam_cover.jpg',
+		'hero' => '/assets/img/05_glam_hero.jpg',
 	],
 	[
 		'name' => 'international',
@@ -56,8 +56,8 @@
 			'en' => ''
 		],
 		'category' => 'wikimedia',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/06_international_cover.jpg',
+		'hero' => '/assets/img/06_international_hero.jpg',
 	],
 	[
 		'name' => 'members',
@@ -66,8 +66,8 @@
 			'en' => ''
 		],
 		'category' => 'wikimedia',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/07_members_cover.jpg',
+		'hero' => '/assets/img/07_members_cover.jpg',
 	],
 	[
 		'name' => 'prospects',
@@ -76,8 +76,8 @@
 			'en' => ''
 		],
 		'category' => 'wikimedia',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/08_prospects_cover.jpg',
+		'hero' => '/assets/img/08_prospects_hero.jpg',
 	],
 	[
 		'name' => 'search',
@@ -86,8 +86,8 @@
 			'en' => ''
 		],
 		'category' => 'technology',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/09_search_cover.jpg',
+		'hero' => '/assets/img/09_search_hero.jpg',
 	],
 	[
 		'name' => 'upload',
@@ -96,8 +96,8 @@
 			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/10_upload_cover.jpg',
+		'hero' => '/assets/img/10_upload_hero.jpg',
 	],
 
 	[
@@ -107,8 +107,8 @@
 			'en' => ''
 		],
 		'category' => 'volunteers',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/11_wiki_loves_monuments_cover.jpg',
+		'hero' => '/assets/img/11_wiki_loves_monuments_hero.jpg',
 	],
 	[
 		'name' => 'wikibase',
@@ -117,8 +117,8 @@
 			'en' => ''
 		],
 		'category' => 'technology',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/12_wikibase_cover.jpg',
+		'hero' => '/assets/img/12_wikibase_hero.jpg',
 	],
 	[
 		'name' => 'year-review',
@@ -127,7 +127,7 @@
 			'en' => ''
 		],
 		'category' => 'wikimedia',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/13_year_review_cover.jpg',
+		'hero' => '/assets/img/13_year_review_hero.jpg',
 	],
 ] ?>
