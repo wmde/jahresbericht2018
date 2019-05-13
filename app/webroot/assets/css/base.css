@@ -3159,116 +3159,88 @@ a:focus {
 /* Chart Animation
 ---------------------------------------------------------------- */
 /*
-Calculation: 100% = number of 2019
-Other years are less than 100%
-100 % - (100 / year2019) * currentYear
+  Calculation: 100% = number of 2019
+  Other years are less than 100%
+  100 % - (100 / year2019) * currentYear
 */
 
 /* 2019 */
-@-keyframes grow-2019 {
-   from { right: 100% }
-   to   { right: calc(1% * (100 - ((100 / 72.611) * 72.611)))} /* 0% */
-}
-@-webkit-keyframes grow-2019 {
+@keyframes grow-2019 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 72.611)))} /* 0% */
 }
 .percent-2019 .chart-bar__inner {
-  -webkit-animation-duration: 2s;
-  -webkit-animation-name: grow-2019;
+  animation-duration: 2s;
+  animation-name: grow-2019;
   right: calc(1% * (100 - ((100 / 72.611) * 72.611))); /* 0% */
 }
 
 /* 2018 */
-@-keyframes grow-2018 {
-   from { right: 100% }
-   to   { right: calc(1% * (100 - ((100 / 72.611) * 65.374))) }
-}
-@-webkit-keyframes grow-2018 {
+@keyframes grow-2018 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 65.374))) }
 }
 .percent-2018 .chart-bar__inner {
-  -webkit-animation-duration: 2.5s;
-  -webkit-animation-name: grow-2018;
+  animation-duration: 2.5s;
+  animation-name: grow-2018;
   right: calc(1% * (100 - ((100 / 72.611) * 65.374)));
 }
 
 /* 2017 */
-@-keyframes grow-2017 {
-   from { right: 100% }
-   to   { right: calc(1% * (100 - ((100 / 72.611) * 43.138))) }
-}
-@-webkit-keyframes grow-2017 {
+@keyframes grow-2017 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 43.138))) }
 }
 .percent-2017 .chart-bar__inner {
-  -webkit-animation-duration: 3s;
-  -webkit-animation-name: grow-2017;
+  animation-duration: 3s;
+  animation-name: grow-2017;
   right: calc(1% * (100 - ((100 / 72.611) * 43.138)));
 }
 
 /* 2016 */
-@-keyframes grow-2016 {
-   from { right: 100% }
-   to   { right: calc(1% * (100 - ((100 / 72.611) * 29.169))) }
-}
-@-webkit-keyframes grow-2016 {
+@keyframes grow-2016 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 29.169))) }
 }
 .percent-2016 .chart-bar__inner {
-  -webkit-animation-duration: 3.5s;
-  -webkit-animation-name: grow-2016;
+  animation-duration: 3.5s;
+  animation-name: grow-2016;
   right: calc(1% * (100 - ((100 / 72.611) * 29.169)));
 }
 
 /* 2015 */
-@-keyframes grow-2015 {
-   from { right: 100% }
-   to   { right: calc(1% * (100 - ((100 / 72.611) * 15.778))) }
-}
-@-webkit-keyframes grow-2015 {
+@keyframes grow-2015 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 15.778))) }
 }
 .percent-2015 .chart-bar__inner {
-  -webkit-animation-duration: 4s;
-  -webkit-animation-name: grow-2015;
+  animation-duration: 4s;
+  animation-name: grow-2015;
   right: calc(1% * (100 - ((100 / 72.611) * 15.778)));
 }
 
 /* 2014 */
-@-keyframes grow-2014 {
-   from { right: 100% }
-   to   { right: calc(1% * (100 - ((100 / 72.611) * 9.803))) }
-}
-@-webkit-keyframes grow-2014 {
+@keyframes grow-2014 {
    from { right: 100% }
    to   { right: calc(1% * (100 - ((100 / 72.611) * 9.803))) }
 }
 .percent-2014 .chart-bar__inner {
-  -webkit-animation-duration: 4.5s;
-  -webkit-animation-name: grow-2014;
+  animation-duration: 4.5s;
+  animation-name: grow-2014;
   right: calc(1% * (100 - ((100 / 72.611) * 9.803)));
 }
 
 /* 2013 */
 /*
-Special value to display short white stripe at least –
-Value ist too small
+  Special value to display short white stripe at least –
+  Value ist too small
 */
-@-keyframes grow-2013 {
-   from { right: 100% }
-   to   { right: 94% }
-}
-@-webkit-keyframes grow-2013 {
+@keyframes grow-2013 {
    from { right: 100% }
    to   { right: 94% }
 }
 .percent-2013 .chart-bar__inner {
-  -webkit-animation-duration: 3.5s;
-  -webkit-animation-name: grow-2013;
+  animation-duration: 3.5s;
+  animation-name: grow-2013;
   right: 94%;
 }
