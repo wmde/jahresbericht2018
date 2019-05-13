@@ -14,22 +14,22 @@
 				Seit mehreren Jahren sinkt die Zahl der freiwilligen Autorinnen und Autoren, die in der Wikipedia ihr Wissen mit allen Menschen teilen. Seit 2016 versucht Wikimedia Deutschland aktiv, dieser Entwicklung entgegenzuwirken. Denn wenn nicht mehr genug Menschen in der Wikipedia Artikel schreiben, Fehler ausbessern, Bilder einpflegen und Informationen aktuell halten, dann leidet die Qualität der freien Online-Enzyklopädie. Was die Wikipedia also dringend braucht, sind neue Menschen, die sich am bekanntesten Wissensprojekt unserer Zeit beteiligen wollen.
 			</div>
 			<div class="section__body t--gamma-serif">
+				<?php if (isset($achievements[0])): ?>
+					<div class="achievement-box">
+						<span class="achievement-box__category t--epsilon">
+							<?= $achievements[0]['category'][$lang] ?>
+						</span>
+						<span class="achievement-box__number h--alpha">
+							<?= $formatNumber($achievements[0]['number'], $lang) ?>
+						</span>
+						<span class="achievement-box__teaser t--delta-serif">
+							<?= $achievements[0]['teaser'][$lang] ?>
+						</span>
+					</div>
+				<?php endif ?>
 				<p>
 					In den letzten Jahren hat Wikimedia Deutschland daher versucht, mehr Mitwirkende für die Arbeit an Wikipedia zu gewinnen. Dazu gehört immer wieder grundlegende Aufklärungsarbeit über die Funktionsweise der Enzyklopädie: Noch immer ist vielen Lesenden der Wikipedia nicht bewusst, dass sich hier wirklich alle beteiligen können und Wikipedia ausschließlich von ehrenamtlichem Engagement lebt. Mit großen Bannerkampagnen haben wir einfache Möglichkeiten zur Mitarbeit aufgezeigt, jedoch mit nur mäßigem Erfolg: Selbst wenn viele Menschen verstanden haben, dass alle mitmachen können bei Wikipedia – den Schritt zur langfristigen Beteiligung gingen nur sehr wenige. Auch verbesserte Online-Hilfsangebote für Wikipedia-Neulinge, wie Erklärvideos oder Hilfeseiten, konnten den Trend des Autorenschwundes nicht umkehren.
 				</p>
-				<?php if (isset($achievements[0])): ?>
-				<div class="achievement-box">
-					<span class="achievement-box__category t--epsilon">
-						<?= $achievements[0]['category'][$lang] ?>
-					</span>
-					<span class="achievement-box__number h--alpha">
-						<?= $formatNumber($achievements[0]['number'], $lang) ?>
-					</span>
-					<span class="achievement-box__teaser t--delta-serif">
-						<?= $achievements[0]['teaser'][$lang] ?>
-					</span>
-				</div>
-				<?php endif ?>
 				<p>
 					2018 haben wir mehrere neue Ansätze ausprobiert, um mehr Menschen für die Mitarbeit an Wikipedia zu begeistern. Wir haben zwar weiterhin auf verbesserte Online-Angebote für Neulinge gesetzt, wodurch beispielsweise <a href="https://outreachdashboard.wmflabs.org/training/wikipedia-editieren" target="new">vier angeleitete Trainingsmodule</a> zur Arbeit in der Wikipedia entstanden sind. Hier können die Grundlagen des Editierens der Enzyklopädie gut erlernt werden. Eine <a href="https://tools.wmflabs.org/mitmachen/" target="new">neue Mitmach-Seite</a> zeigt auf, in welchen Wissensgebieten die Wikipedia noch Lücken aufweist und welche Artikel nicht mehr ganz aktuell sind, sodass neue Autorinnen und Autoren mit konkreten Aufgaben ihre Mitarbeit an der Enzyklopädie direkt beginnen können.
 				</p>

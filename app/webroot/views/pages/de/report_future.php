@@ -8,10 +8,10 @@
 		<div class="report-detail hero__caption t--zeta">Jason Krüger for Wikimedia Deutschland e.V. (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2017_–_147.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
-				<em>Wikimedia 2030</em>
+				<em>Ausblick: So geht’s 2019 und in den kommenden Jahren weiter</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Was möchten wir – die internationale Wikimedia-Bewegung – in den nächsten 10-15 Jahren aufbauen und erreichen? Wofür soll Wikimedia im Jahr 2030 in der Welt bekannt sein? Und wer wird sich unserer Bewegung angeschlossen haben? Mit diesen Fragen beschäftigen wir uns seit 2017.
+				Unsere Vision ist eine Welt, in der alle Menschen am Wissen der Menschheit teilhaben, es nutzen und mehren können. Diese große Idee erfordert auch große Veränderungen innerhalb unserer Gesellschaft.
 			</div>
 			<?php if (isset($achievements[0])): ?>
 			<div class="achievement-box">
@@ -28,16 +28,33 @@
 			<?php endif ?>
 			<div class="section__body t--gamma-serif">
 				<p>
-					Wohin wir wollen haben wir inzwischen festgelegt: Wikimedia hat sich das Ziel gegeben die wichtigste, unterstützende Struktur für die gesamte Bewegung für Freies Wissen zu werden – und alle, die sich uns anschließen möchten, sind jederzeit willkommen mitzumachen.
+					Projekte wie Wikipedia sind tolle Beispiele für gelebtes Freies Wissen. Wir müssen sie in den nächsten Jahren weiterentwickeln und dafür sorgen, dass sie relevant bleiben.
 				</p>
 				<p>
-					Wir wollen das über unsere beiden Ziele „Wissen als Dienst“ (Knowledge as a Service) und „Chancengleichheit auf Wissen“ (Knowledge Equity) erreichen. Wissen als Dienst verkörpert dabei vor allem den Gedanken die Plattform für das gesamte Wissen der Welt zu sein – alle können beitragen, es aber auch verändern, und im eigenen Sinne weiternutzen. Chancengleichheit auf Wissen bedeutet, dass wir uns noch stärker den Menschen und deren Wissen zuwenden wollen, die bisher aufgrund von Machtstrukturen und Privilegien sowie politischen oder sozialen Hürden ausgeschlossen waren.
+					Wir wissen aber auch: Die Welt besteht nicht nur aus Wikimedia-Projekten. Wir wollen mehr Menschen und Institutionen für den freien Zugang zu Wissen begeistern. Wir müssen uns mit anderen Organisationen vernetzen, unsere Vision hinaus in die Welt tragen und dafür sorgen, dass Freies Wissen in unserem Alltag zur Selbstverständlichkeit wird.
 				</p>
 				<p>
-					Das sind hehre Ziele, die sich Wikimedia vorgenommen hat. Doch wie erreichen wir diese? Was müssen wir an unseren Strukturen in und um die Wikimedia-Projekte verändern, damit wir 2030 dort sind, wo wir sein wollen?
+					Für die Arbeit in unseren drei Handlungsfeldern bedeutet das für die nächsten Jahre folgendes:
 				</p>
+			</div>
+			<p class="h--gamma">
+				Freiwillige
+			</p>
+			<div class="section__body t--gamma-serif">
 				<p>
-					Mit diesen Fragen beschäftigt sich Wikimedia Deutschland seit Mitte letzten Jahres intensiv – zusammen mit zahlreichen Haupt- und Ehrenamtlichen des globalen Wikimedia-Netzwerkes. In neun thematischen Arbeitsgruppen erarbeiten etwa 117 Wikimedianerinnen und Wikimedianer Empfehlungen, wie wir unsere Strukturen so weitreichend modernisieren, dass wir gemeinsam erfolgreich diesen neuen Kurs verfolgen können. Wikimedia Deutschland unterstützt diesen Prozess bestmöglich, denn wir glauben, dass dieser umfangreiche und inklusive Prozess essentiell für die Zukunft Freien Wissens ist.
+					Wir unterstützen die Wikimedia-Communitys – also die Ehrenamtlichen, die ihr Wissen in Projekten wie Wikipedia oder Wikidata mit der gesamten Welt teilen – da wo sie Hilfe benötigen. Wir begleiten sie aktiv dabei, neue Freiwillige aufzunehmen und zu integrieren und neue Technologien und Formate einzubeziehen.
+				</p>
+			</div>
+			<p class="h--gamma">Technolgie</p>
+			<div class="section__body t--gamma-serif">
+				<p>
+					Wir wollen erreichen, dass unsere freie Wissensdatenbank Wikidata ein zentraler  Knotenpunkt und die Software Wikibase ein essentieller Baustein in einem Netzwerk offener strukturierter Daten wird. Daran arbeiten wir gemeinsam mit Wikimedia-Aktiven, der Wikimedia-Bewegung und Partnerorganisationen. Je mehr Menschen dieses Netzwerk nutzen, desto mehr Nutzen zieht die gesamte Menschheit daraus.
+				</p>
+			</div>
+			<p class="h--gamma">Rahmenbedingungen</p>
+			<div class="section__body t--gamma-serif">
+				<p>
+					Wir wollen dafür sorgen, dass mehr Inhalte als Freies Wissen nutzbar sind. Dazu gehören beispielsweise Digitalisate von Kunstwerken, die nicht mehr urheberrechtlich geschützt sind und steuerfinanziertes Wissen wie staatlich beauftragte Studien. In einem Netzwerk mit Partnerorganisationen verstärken wir unsere politische Wirkung auch auf internationaler Ebene und bauen unsere Kooperationen mit Kulturinstitutionen weiter aus. Wir wollen, dass Menschen ein kritisches Bewusstsein für Informationen im Netz entwickeln und sich im digitalen Raum beteiligen können. Erst dann können sie aktiv zu Freiem Wissen beitragen und sich unserer Vision anschließen.
 				</p>
 			</div>
 		</div>

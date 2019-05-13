@@ -6,8 +6,8 @@
 			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '/assets/img/01_da_vinci_cover.jpg',
-		'hero' => '/assets/img/01_da_vinci_hero.jpg',
+		'cover' => '/assets/img/reports/da_vinci_cover.jpg',
+		'hero' => '/assets/img/reports/da_vinci_hero.jpg',
 	],
 	[
 		'name' => 'data-new-water',
@@ -16,88 +16,88 @@
 			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '/assets/img/02_data_new_water_cover.jpg',
-		'hero' => '/assets/img/02_data_new_water_hero.jpg',
+		'cover' => '/assets/img/reports/data_new_water_cover.jpg',
+		'hero' => '/assets/img/reports/data_new_water_hero.jpg',
 	],
 	[
 		'name' => 'data',
 		'title' => [
-			'de' => 'Lexikografische Daten',
+			'de' => 'Lexeme in Wikidata',
 			'en' => ''
 		],
 		'category' => 'technology',
-		'cover' => '/assets/img/03_data_cover.jpg',
-		'hero' => '/assets/img/03_data_hero.jpg',
+		'cover' => '/assets/img/reports/data_cover.jpg',
+		'hero' => '/assets/img/reports/data_hero.jpg',
 	],
 	[
 		'name' => 'day-of-action',
 		'title' => [
-			'de' => 'Zu Gast bei der Wikipedia',
+			'de' => 'Wikipedia Aktionstag',
 			'en' => ''
 		],
 		'category' => 'volunteers',
-		'cover' => '/assets/img/04_day_of_action_cover.jpg',
-		'hero' => '/assets/img/04_day_of_action_hero.jpg',
+		'cover' => '/assets/img/reports/day_of_action_cover.jpg',
+		'hero' => '/assets/img/reports/day_of_action_hero.jpg',
 	],
 	[
-		'name' => 'glam',
-		'title' => [
-			'de' => 'Wie die Kunst ins Netz kommt',
-			'en' => ''
-		],
-		'category' => 'framework',
-		'cover' => '/assets/img/05_glam_cover.jpg',
-		'hero' => '/assets/img/05_glam_hero.jpg',
-	],
-	[
-		'name' => 'international',
-		'title' => [
-			'de' => 'Wikimedia 2030',
-			'en' => ''
-		],
-		'category' => 'wikimedia',
-		'cover' => '/assets/img/06_international_cover.jpg',
-		'hero' => '/assets/img/06_international_hero.jpg',
-	],
-	[
-		'name' => 'members',
-		'title' => [
-			'de' => 'Mehr als 70.000 Mitglieder',
-			'en' => ''
-		],
-		'category' => 'wikimedia',
-		'cover' => '/assets/img/07_members_cover.jpg',
-		'hero' => '/assets/img/07_members_cover.jpg',
-	],
-	[
-		'name' => 'prospects',
+		'name' => 'future',
 		'title' => [
 			'de' => 'Ausblick 2019',
 			'en' => ''
 		],
 		'category' => 'wikimedia',
-		'cover' => '/assets/img/08_prospects_cover.jpg',
-		'hero' => '/assets/img/08_prospects_hero.jpg',
+		'cover' => '/assets/img/reports/future_cover.jpg',
+		'hero' => '/assets/img/reports/future_hero.jpg',
+	],
+	[
+		'name' => 'glam',
+		'title' => [
+			'de' => 'Glam on Tour Grunewald',
+			'en' => ''
+		],
+		'category' => 'framework',
+		'cover' => '/assets/img/reports/glam_cover.jpg',
+		'hero' => '/assets/img/reports/glam_hero.jpg',
+	],
+	[
+		'name' => 'members',
+		'title' => [
+			'de' => 'Mitglieder',
+			'en' => ''
+		],
+		'category' => 'wikimedia',
+		'cover' => '/assets/img/reports/members_cover.jpg',
+		'hero' => '/assets/img/reports/members_cover.jpg',
+	],
+	[
+		'name' => 'prospects',
+		'title' => [
+			'de' => 'Internationales: Wikimedia 2030',
+			'en' => ''
+		],
+		'category' => 'wikimedia',
+		'cover' => '/assets/img/reports/prospects_cover.jpg',
+		'hero' => '/assets/img/reports/prospects_hero.jpg',
 	],
 	[
 		'name' => 'search',
 		'title' => [
-			'de' => 'Verbesserte Suchfunktion',
+			'de' => 'Technische Wünsche',
 			'en' => ''
 		],
 		'category' => 'technology',
-		'cover' => '/assets/img/09_search_cover.jpg',
-		'hero' => '/assets/img/09_search_hero.jpg',
+		'cover' => '/assets/img/reports/search_cover.jpg',
+		'hero' => '/assets/img/reports/search_hero.jpg',
 	],
 	[
 		'name' => 'upload',
 		'title' => [
-			'de' => 'Gegen Upload-Filter',
+			'de' => 'No Upload-Filter',
 			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '/assets/img/10_upload_cover.jpg',
-		'hero' => '/assets/img/10_upload_hero.jpg',
+		'cover' => '/assets/img/reports/upload_cover.jpg',
+		'hero' => '/assets/img/reports/upload_hero.jpg',
 	],
 
 	[
@@ -107,8 +107,8 @@
 			'en' => ''
 		],
 		'category' => 'volunteers',
-		'cover' => '/assets/img/11_wiki_loves_monuments_cover.jpg',
-		'hero' => '/assets/img/11_wiki_loves_monuments_hero.jpg',
+		'cover' => '/assets/img/reports/wiki_loves_monuments_cover.jpg',
+		'hero' => '/assets/img/reports/wiki_loves_monuments_hero.jpg',
 	],
 	[
 		'name' => 'wikibase',
@@ -117,8 +117,8 @@
 			'en' => ''
 		],
 		'category' => 'technology',
-		'cover' => '/assets/img/12_wikibase_cover.jpg',
-		'hero' => '/assets/img/12_wikibase_hero.jpg',
+		'cover' => '/assets/img/reports/wikibase_cover.jpg',
+		'hero' => '/assets/img/reports/wikibase_hero.jpg',
 	],
 	[
 		'name' => 'year-review',
@@ -127,7 +127,7 @@
 			'en' => ''
 		],
 		'category' => 'wikimedia',
-		'cover' => '/assets/img/13_year_review_cover.jpg',
-		'hero' => '/assets/img/13_year_review_hero.jpg',
+		'cover' => '/assets/img/reports/year_review_cover.jpg',
+		'hero' => '/assets/img/reports/year_review_hero.jpg',
 	],
 ] ?>

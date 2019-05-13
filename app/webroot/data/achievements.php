@@ -1,6 +1,80 @@
 <?php return [
 	[
 		'category' => [
+			'de' => 'Rahmenbedingungen',
+			'en' => 'Conditions'
+		],
+		'number' => '146',
+		'teaser' => [
+			'de' => 'Kulturinstitutionen haben seit der ersten Veranstaltung 2014 im Rahmen von Coding da Vinci insgesamt 218 Datensets unter einer freien Lizenz zur Verfügung gestellt.',
+			'en' => ''
+		],
+		'url' => '/report/da-vinci'
+	],
+	[
+		'category' => [
+			'de' => 'Rahmenbedingungen',
+			'en' => 'Conditions'
+		],
+		'number' => '1',
+		'teaser' => [
+			'de' => 'neue Daten-Metapher sorgt für mehr Sichtbarkeit von  Gemeinwohlorientierung in der Datenpolitik.',
+			'en' => ''
+		],
+		'url' => '/report/data-new-water'
+	],
+	[
+		'category' => [
+			'de' => 'Technologie',
+			'en' => 'technology'
+		],
+		'number' => '40442',
+		'teaser' => [
+			'de' => 'Lexeme wurden 2018 in Wikidata angelegt (statt der erwarteten 5000',
+			'en' => ''
+		],
+		'url' => '/report/data'
+	],
+	[
+		'category' => [
+			'de' => 'Wikimedia',
+			'en' => 'Wikimedia'
+		],
+		'number' => '850',
+		'teaser' => [
+			'de' => 'Besuchende kamen zum Wikipedia-Aktionstag in 11 lokale Community-Räume im deutschsprachigen Raum, um hinter die Kulissen der Wikipedia zu schauen.',
+			'en' => ''
+		],
+		'url' => '/report/day-of-action'
+	],
+	[
+		'category' => [
+			'de' => 'Rahmenbedingungen',
+			'en' => 'Conditions'
+		],
+		'number' => '15',
+		'teaser' => [
+			'de' => 'Kulturinstitutionen von Berlin bis Zürich haben 2018 ihre Türen im Rahmen von GLAM on Tour-Stationen und anderen Formaten  geöffnet.',
+			'en' => ''
+		],
+		'url' => '/report/glam'
+	],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	[
+		'category' => [
 			'de' => 'Freiwillige',
 			'en' => 'Volunteers'
 		],
@@ -35,18 +109,7 @@
 		],
 		'url' => '/report/newvolunteers'
 	],
-	[
-		'category' => [
-			'de' => 'Technologie',
-			'en' => 'technology'
-		],
-		'number' => '450',
-		'teaser' => [
-			'de' => 'Wikimedia-Aktive arbeiteten gemeinsam mit uns an technischen Wünschen.',
-			'en' => 'Wikimedia contributors work together with us on our Technical Wishes project.'
-		],
-		'url' => '/report/knowledge'
-	],
+
 	[
 		'category' => [
 			'de' => 'Technologie',
@@ -59,18 +122,7 @@
 		],
 		'url' => '/report/wikicon'
 	],
-	[
-		'category' => [
-			'de' => 'Rahmenbedingungen',
-			'en' => 'Conditions'
-		],
-		'number' => '39345',
-		'teaser' => [
-			'de' => 'Mal wurde der Digital-O-Mat vor der Bundestagswahl genutzt.',
-			'en' => 'times the Digital-O-Mat was used before the federal elections.'
-		],
-		'url' => '/report/digitalomat'
-	],
+
 	[
 		'category' => [
 			'de' => 'Rahmenbedingungen',
@@ -95,18 +147,7 @@
 		],
 		'url' => '/report/fellow'
 	],
-	[
-		'category' => [
-			'de' => 'Wikimedia',
-			'en' => 'Wikimedia'
-		],
-		'number' => '65000',
-		'teaser' => [
-			'de' => 'Menschen unterstützen Freies Wissen als Mitglied bei Wikimedia Deutschland.',
-			'en' => 'people support Free Knowledge as members of Wikimedia Deutschland.'
-		],
-		'url' => '/report/members'
-	],
+
 	[
 		'category' => [
 			'de' => 'Wikimedia',

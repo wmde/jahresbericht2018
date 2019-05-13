@@ -17,22 +17,22 @@
 				<p>
 					Die Erweiterung von Wikidata um Sprachdaten ist eine spannende neue Anwendung. Während strukturierte Daten über die Summe allen menschlichen Wissens Maschinen und künstlicher Intelligenz helfen können, die Welt zu verstehen, können sprachliche Daten in Wikidata ihnen helfen zu verstehen, wie Menschen ihr Wissen mit Wörtern ausdrücken. Mit all den Sprachkombinationen, die wir in Wikimedia-Projekten haben, eröffnen sich ganz neue Möglichkeiten: Übersetzungen aus dem Estnischen ins Maltesische oder von Tamil nach Zulu – obwohl ein gedrucktes Wörterbuch für diese Kombinationen wahrscheinlich nicht existiert, kann es mit strukturierten Daten über Sprachen generiert werden.
 				</p>
-				<?php if (isset($achievements[0])): ?>
-				<div class="achievement-box">
-					<span class="achievement-box__category t--epsilon">
-						<?= $achievements[0]['category'][$lang] ?>
-					</span>
-					<span class="achievement-box__number h--alpha">
-						<?= $formatNumber($achievements[0]['number'], $lang) ?>
-					</span>
-					<span class="achievement-box__teaser t--delta-serif">
-						<?= $achievements[0]['teaser'][$lang] ?>
-					</span>
-				</div>
-				<?php endif ?>
 				<p>
 					Datenobjekte in Wikidata beschreiben bislang einen Gegenstand, eine Person oder ein Konzept in dieser Welt. Was Wikidata bis 2018 nicht hatte, war die sprachliche Seite der Dinge: die Wörter, um diese Objekte so zu beschreiben, wie sie in einer Sprache erscheinen, ihre grammatikalischen Formen und Bedeutungen. Seit 2017 haben wir Funktionen in Wikidata und der Software Wikibase entwickelt, die es ermöglichen, sprachliche Daten zu beschreiben. Wir nennen diese <strong>lexikographische Daten</strong>. Als offizieller Teil Wikidatas wurden sie im Mai 2018 eingeführt. Zeit, einen genaueren Blick darauf zu werfen.
 				</p>
+				<?php if (isset($achievements[0])): ?>
+					<div class="achievement-box">
+						<span class="achievement-box__category t--epsilon">
+							<?= $achievements[0]['category'][$lang] ?>
+						</span>
+						<span class="achievement-box__number h--alpha">
+							<?= $formatNumber($achievements[0]['number'], $lang) ?>
+						</span>
+						<span class="achievement-box__teaser t--delta-serif">
+							<?= $achievements[0]['teaser'][$lang] ?>
+						</span>
+					</div>
+				<?php endif ?>
 				<p>
 					Lexikographische Daten bedeuten genau das: Daten, die in einem Lexikon vorkommen können. Womit wir es hier zu tun haben, ist die linguistische Seite der Wörter. Da das Wort "Wort" bereits sehr überladen ist, verwenden wir den sprachwissenschaftlichen Begriff Lexem — ein <a href="https://de.wikipedia.org/wiki/Lexem" target="new">Lexem</a> ist ein Eintrag in einem Wörterbuch.
 				</p>
