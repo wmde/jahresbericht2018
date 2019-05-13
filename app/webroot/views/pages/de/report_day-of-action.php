@@ -79,9 +79,9 @@
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/newvolunteers" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
-			<p> Mehr Menschen für die Wikipedia begeistern </p>
+		<a href="/report/future" class="button button--report">
+			<p class="button--small">Zum nächsten Thema</p>
+			<p>Ausblick 2019</p>
 		</a>
 	</section>
 </main>

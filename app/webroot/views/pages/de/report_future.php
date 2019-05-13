@@ -91,9 +91,9 @@
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/2018" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
-			<p> Ausblick: So geht es 2018 weiter </p>
+		<a href="/report/glam" class="button button--report">
+			<p class="button--small">Zum nächsten Thema</p>
+			<p>Glam on Tour Grunewald</p>
 		</a>
 	</section>
 </main>

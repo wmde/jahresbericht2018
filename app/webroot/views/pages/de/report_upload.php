@@ -77,9 +77,9 @@
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/2017" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
-			<p> Das Jahr 2017 bei Wikimedia Deutschland </p>
+		<a href="/report/wiki-loves-monuments" class="button button--report">
+			<p class="button--small">Zum nächsten Thema</p>
+			<p>Wiki Loves Monuments</p>
 		</a>
 	</section>
 </main>

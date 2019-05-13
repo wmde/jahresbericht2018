@@ -70,9 +70,9 @@
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/digitalomat" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
-			<p> Digital-O-Mat: die netzpolitische Wahlhilfe </p>
+		<a href="/report/upload" class="button button--report">
+			<p class="button--small">Zum nächsten Thema</p>
+			<p>No Upload-Filter</p>
 		</a>
 	</section>
 </main>

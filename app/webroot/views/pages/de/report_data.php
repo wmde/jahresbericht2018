@@ -53,9 +53,9 @@
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/wikicon" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
-			<p> WikidataCon: die erste internationale Konferenz rund um Wikidata </p>
+		<a href="/report/day-of-action" class="button button--report">
+			<p class="button--small">Zum nächsten Thema</p>
+			<p>Wikipedia Aktionstag</p>
 		</a>
 	</section>
 </main>

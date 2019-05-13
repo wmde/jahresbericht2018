@@ -43,9 +43,9 @@
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/volunteers" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
-			<p> Digitales Ehrenamt unterstützen </p>
+		<a href="/report/search" class="button button--report">
+			<p class="button--small">Zum nächsten Thema</p>
+			<p>Technische Wünsche</p>
 		</a>
 	</section>
 </main>

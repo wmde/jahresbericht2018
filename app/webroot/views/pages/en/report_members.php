@@ -65,7 +65,7 @@
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/international" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
+			<p class="button--small">Zum nächsten Thema</p>
 			<p> Wikimedias strategische Ausrichtung anpacken </p>
 		</a>
 	</section>

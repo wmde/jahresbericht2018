@@ -41,9 +41,9 @@
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/fellow" class="button button--report">
-			<p class="button--small"> Zum nächsten Thema </p>
-			<p> Offene Wissenschaft aktiv vorantreiben </p>
+		<a href="/report/data-new-water" class="button button--report">
+			<p class="button--small">Zum nächsten Thema</p>
+			<p>Daten sind das neue Grundwasser</p>
 		</a>
 	</section>
 </main>
