@@ -1011,7 +1011,7 @@ a:focus {
   transition: all .5s;
 }
 .button--report:nth-of-type(1) {
-  color: var(--color-black);
+  color: var(--color-white);
   /* no color variable here to support ios */
   background: var(--color-blue) url(../img/cubes_themenuebersicht.svg);
   background-repeat: no-repeat;
@@ -2779,9 +2779,6 @@ a:focus {
   margin: 20px;
 }
 .nav-cube__title {
-  color: var(--color-black);
-}
-.nav-cube:hover .nav-cube__title {
   color: var(--color-white);
 }
 .nav-cube:hover,
