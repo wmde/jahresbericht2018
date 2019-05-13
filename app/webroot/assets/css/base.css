@@ -2474,7 +2474,7 @@ a:focus {
 /* Achievement Box
 ---------------------------------------------------------------- */
 .achievement-box {
-  max-width: 320px;
+  max-width: 356px;
   background-color: var(--color-gray);
   padding: 10px 20px 20px 20px;
   margin: 20px 40px 20px -80px;

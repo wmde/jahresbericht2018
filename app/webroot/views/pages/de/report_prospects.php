@@ -17,6 +17,19 @@
 				<p>
 					Wohin wir wollen haben wir inzwischen festgelegt: Wikimedia hat sich das Ziel gegeben die wichtigste, unterstützende Struktur für die gesamte Bewegung für Freies Wissen zu werden – und alle, die sich uns anschließen möchten, sind jederzeit willkommen mitzumachen.
 				</p>
+				<?php if (isset($achievements[0])): ?>
+					<div class="achievement-box">
+						<span class="achievement-box__category t--epsilon">
+							<?= $achievements[0]['category'][$lang] ?>
+						</span>
+						<span class="achievement-box__number h--alpha">
+							<?= $formatNumber($achievements[0]['number'], $lang) ?>
+						</span>
+						<span class="achievement-box__teaser t--delta-serif">
+							<?= $achievements[0]['teaser'][$lang] ?>
+						</span>
+					</div>
+				<?php endif ?>
 				<p>
 					Wir wollen das über unsere beiden Ziele „Wissen als Dienst“ (Knowledge as a Service) und „Chancengleichheit auf Wissen“ (Knowledge Equity) erreichen. Wissen als Dienst verkörpert dabei vor allem den Gedanken die Plattform für das gesamte Wissen der Welt zu sein – alle können beitragen, es aber auch verändern, und im eigenen Sinne weiternutzen. Chancengleichheit auf Wissen bedeutet, dass wir uns noch stärker den Menschen und deren Wissen zuwenden wollen, die bisher aufgrund von Machtstrukturen und Privilegien sowie politischen oder sozialen Hürden ausgeschlossen waren.
 				</p>

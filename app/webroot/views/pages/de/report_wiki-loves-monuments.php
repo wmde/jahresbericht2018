@@ -14,25 +14,25 @@
 				Wikipedia kennen alle, Millionen Menschen schauen täglich in die größte gemeinschaftlich erstellte digitale Wissenssammlung unserer Zeit. Aber sie könnte noch viel bunter sein. Fotos machen das Wissen der Welt auf anschauliche Weise erlebbar. Daher lädt die internationale Wikipedia-Community jedes Jahr im September alle Menschen dazu ein, bei Wiki Loves Monuments mitzumachen und Bilder von Kulturdenkmälern mit der ganzen Welt zu teilen.
 			</div>
 			<div class="section__body t--gamma-serif">
+				<?php if (isset($achievements[0])): ?>
+					<div class="achievement-box">
+						<span class="achievement-box__category t--epsilon">
+							<?= $achievements[0]['category'][$lang] ?>
+						</span>
+						<span class="achievement-box__number h--alpha">
+							<?= $formatNumber($achievements[0]['number'], $lang) ?>
+						</span>
+						<span class="achievement-box__teaser t--delta-serif">
+							<?= $achievements[0]['teaser'][$lang] ?>
+						</span>
+					</div>
+				<?php endif ?>
 				<p>
 					Wiki Loves Monuments gilt seit 2012 laut Guinnes-Buch der Rekorde als größter Fotowettbewerb der Welt und wird von ehrenamtlichen Wikipedia-Aktiven organisiert. Jährlich werden dabei allein in Deutschland ca. 20.000 Bilder unter einer freien Lizenz ins Medienarchiv Wikimedia Commons geladen und stehen damit für Wikipedia und alle Menschen zur freien Verfügung. Der Wettbewerb leistet einen großen Beitrag zum Denkmalschutz und der Bewahrung kultureller Vielfalt.
 				</p>
 				<p>
 					2018 stand Wiki Loves Monuments ganz im Zeichen des <a href="https://sharingheritage.de/" target="new">Europäischen Kulturerbejahres</a>. Gefördert von der <a href="https://de.wikipedia.org/wiki/Beauftragter_der_Bundesregierung_für_Kultur_und_Medien" target="new">Beauftragten der Bundesregierung für Kultur und Medien</a> setzte Wikimedia Deutschland gemeinsam mit Wikimedia-Aktiven verschiedene Maßnahmen ein, um den Fotowettbewerb in der Öffentlichkeit noch bekannter und attraktiver zu machen. Mit einem internationalen Sonderpreis wurde beispielsweise der Blick auf das Besondere am europäischen Kulturerbe und seiner Geschichte gelenkt: Wo finden sich Spuren gemeinsamer europäischer Geschichte? Welches Denkmal in meiner Nähe zeugt von unserer geteilten Geschichte? Der Sonderpreis lud Menschen aller Altersklassen dazu ein, bei einer Spurensuche Kulturerbe zu erkunden.
 				</p>
-				<?php if (isset($achievements[0])): ?>
-				<div class="achievement-box">
-					<span class="achievement-box__category t--epsilon">
-						<?= $achievements[0]['category'][$lang] ?>
-					</span>
-					<span class="achievement-box__number h--alpha">
-						<?= $formatNumber($achievements[0]['number'], $lang) ?>
-					</span>
-					<span class="achievement-box__teaser t--delta-serif">
-						<?= $achievements[0]['teaser'][$lang] ?>
-					</span>
-				</div>
-				<?php endif ?>
 				<p>
 					Insbesondere an jüngere Zielgruppen richtete sich ein <a href="https://blog.wikimedia.de/2018/06/08/sie-haben-uns-ein-denkmal-gebaut/" target="new">Jugendfotoworkshop</a>, der im Juni in Erfurt stattfand. Hier wurden Jugendliche befähigt, Denkmäler zu erkennen, in guter Qualität abzulichten und die Bilder für den Wettbewerb hochzuladen. Nach einer theoretischen Einführung konnten die Fotografie-Begeisterten ihre neu erworbenen Kenntnisse bei einem Fotowalk durch die denkmalgeschützte Innenstadt direkt in die Praxis umsetzen.
 				</p>

@@ -59,105 +59,76 @@
 		],
 		'url' => '/report/glam'
 	],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	[
-		'category' => [
-			'de' => 'Freiwillige',
-			'en' => 'Volunteers'
-		],
-		'number' => '436',
-		'teaser' => [
-			'de' => 'Freiwillige haben wir 2017 direkt gefördert.',
-			'en' => 'volunteers received direct support in 2017.'
-		],
-		'url' => '/report/volunteers'
-	],
-	[
-		'category' => [
-			'de' => 'Freiwillige',
-			'en' => 'Volunteers'
-		],
-		'number' => '5844',
-		'teaser' => [
-			'de' => 'Mal haben Menschen an Aktivitäten rund um die Wikimedia-Projekte teilgenommen.',
-			'en' => 'times people took part in activities related to the Wikimedia projects.'
-		],
-		'url' => '/report/volunteers'
-	],
-	[
-		'category' => [
-			'de' => 'Freiwillige',
-			'en' => 'Volunteers'
-		],
-		'number' => '1531',
-		'teaser' => [
-			'de' => 'Neuregistrierungen bei Wikipedia erfolgten aufgrund unserer 4 Kampagnen.',
-			'en' => 'new registrations on Wikipedia as a result of our 4 campaigns.'
-		],
-		'url' => '/report/newvolunteers'
-	],
-
-	[
-		'category' => [
-			'de' => 'Technologie',
-			'en' => 'technology'
-		],
-		'number' => '180',
-		'teaser' => [
-			'de' => 'ehrenamtlich Entwickelnde nahmen an der ersten WikidataCon teil.',
-			'en' => 'volunteer developers and Wikidata enthusiasts took part in the first WikidataCon.'
-		],
-		'url' => '/report/wikicon'
-	],
-
-	[
-		'category' => [
-			'de' => 'Rahmenbedingungen',
-			'en' => 'Conditions'
-		],
-		'number' => '8',
-		'teaser' => [
-			'de' => 'Kulturinstitutionen öffneten im Rahmen von Glam on Tour ihre Türen für Freiwillige.',
-			'en' => 'cultural institutions opened their doors to volunteers as part of Glam on Tour.'
-		],
-		'url' => '/report/glam'
-	],
-	[
-		'category' => [
-			'de' => 'Rahmenbedingungen',
-			'en' => 'Conditions'
-		],
-		'number' => '20',
-		'teaser' => [
-			'de' => 'Nachwuchs-Wissenschaftlerinnen und -Wissenschaftler wurden im Fellow-Programm Freies Wissen gefördert (doppelt so viele wie im Vorjahr).',
-			'en' => 'young scientists have been supported by the Open Science Fellows Program (twice as many as last year).'
-		],
-		'url' => '/report/fellow'
-	],
-
 	[
 		'category' => [
 			'de' => 'Wikimedia',
 			'en' => 'Wikimedia'
 		],
-		'number' => '94',
+		'number' => '70000',
 		'teaser' => [
-			'de' => 'Organisationen aus der Wikimedia-Bewegung haben die neue strategische Ausrichtung unterstützt.',
-			'en' => 'organisations from the Wikimedia Movement have given their support to the new strategic direction.'
+			'de' => 'Mitglieder engagieren sich gemeinsam mit uns für Freies Wissen.',
+			'en' => 'members are committed to Free Knowledge together with us.'
 		],
-		'url' => '/report/international'
+		'url' => '/report/members'
+	],
+	[
+		'category' => [
+			'de' => 'Wikimedia',
+			'en' => 'Wikimedia'
+		],
+		'number' => '117',
+		'teaser' => [
+			'de' => 'Ehren- und Hauptamtliche in 9 thematischen Arbeitsgruppen erarbeiten seit 2018 Empfehlungen wie sich Wikimedia verändern muss.',
+			'en' => 'honorary and full-time members of 9 thematic working groups have been working out recommendations in 2018 on'
+		],
+		'url' => '/report/prospects'
+	],
+	[
+		'category' => [
+			'de' => 'Technologie',
+			'en' => 'technology'
+		],
+		'number' => '496',
+		'teaser' => [
+			'de' => 'Wikis nutzen die Vorteile der neuen Suchfunktion, damit sich Inhalte leichter finden lassen.',
+			'en' => 'Wikis use the advantages of the new search feature to make it easier to find content.'
+		],
+		'url' => '/report/search'
+	],
+	[
+		'category' => [
+			'de' => 'Rahmenbedingungen',
+			'en' => 'Conditions'
+		],
+		'number' => '15',
+		'teaser' => [
+			'de' => 'Organisationen aus Internetwirtschaft und Zivilgesellschaft haben wir Anfang 2018 in einem Offenen Brief gegen die umstrittenen Upload-Filter vereint.',
+			'en' => 'organisations from the Internet industry and civil society united 2018 in an open letter against the controversial upload filters.'
+		],
+		'url' => '/report/upload'
+	],
+	[
+		'category' => [
+			'de' => 'Freiwillige',
+			'en' => 'Volunteers'
+		],
+		'number' => '25000',
+		'teaser' => [
+			'de' => 'Bilder wurden allein in Deutschland im Rahmen des Fotowettbewerbs Wiki Loves Monuments ins freie Medienarchiv Wikimedia Commons hochgeladen.',
+			'en' => 'pictures were uploaded to the free media archive Wikimedia Commons in Germany alone as part of the photo competition Wiki Loves Monuments.'
+		],
+		'url' => '/report/wiki-loves-monuments'
+	],
+	[
+		'category' => [
+			'de' => 'Technologie',
+			'en' => 'technology'
+		],
+		'number' => '100000',
+		'teaser' => [
+			'de' => 'Audiodateien in 46 Sprachen wurden mit der Wikibase-Installation Lingua Libre 2018 aufgenommen.',
+			'en' => 'audio files in 46 languages were recorded with the Wikibase installation Lingua Libre in 2018.'
+		],
+		'url' => '/report/wikibase'
 	],
 ] ?>

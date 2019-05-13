@@ -14,25 +14,25 @@
 				Als Gesellschaft zur Förderung Freien Wissens engagieren wir uns auf zahlreichen Wegen, um unsere Vision einer Welt, in der das Wissen der Welt allen Menschen zur freien Verfügung steht, zu verwirklichen. Möglich ist das vor allem Dank der Unterstützung unserer Vereinsmitglieder. Sie sind neben den tausenden Spendenden ein tragender Pfeiler für Wikimedia Deutschland und unser Engagement für Freies Wissen.
 			</div>
 			<div class="section__body t--gamma-serif">
+				<?php if (isset($achievements[0])): ?>
+					<div class="achievement-box">
+						<span class="achievement-box__category t--epsilon">
+							<?= $achievements[0]['category'][$lang] ?>
+						</span>
+						<span class="achievement-box__number h--alpha">
+							<?= $formatNumber($achievements[0]['number'], $lang) ?>
+						</span>
+						<span class="achievement-box__teaser t--delta-serif">
+							<?= $achievements[0]['teaser'][$lang] ?>
+						</span>
+					</div>
+				<?php endif ?>
 				<p>
 					Die Zahl der Menschen, die uns dauerhaft in unserer Arbeit unterstützen, wächst von Jahr zu Jahr – mittlerweile sind es bereits über 70.000 Mitglieder (Stand: März 2019). Sie geben unseren Zielen nicht nur das so wichtige Fundament, sondern gestalten auch aktiv den Verein und seine Zukunft mit. So beispielsweise auf den Mitgliederversammlungen, die 2018 in Karlsruhe und Berlin stattfanden:
 				</p>
 				<p>
 					Mehr als 250 Besucherinnen, Besucher und Mitglieder kamen im Mai im Zentrum für Kunst und Medien in Karlsruhe zusammen. Über eine interaktive Ausstellungsfläche, in Kurzvorträgen und offenen Gesprächsrunden konnten sie die Welt rund um Wikipedia und Wikimedia besser kennenlernen.
 				</p>
-				<?php if (isset($achievements[0])): ?>
-				<div class="achievement-box">
-					<span class="achievement-box__category t--epsilon">
-						<?= $achievements[0]['category'][$lang] ?>
-					</span>
-					<span class="achievement-box__number h--alpha">
-						<?= $formatNumber($achievements[0]['number'], $lang) ?>
-					</span>
-					<span class="achievement-box__teaser t--delta-serif">
-						<?= $achievements[0]['teaser'][$lang] ?>
-					</span>
-				</div>
-				<?php endif ?>
 				<p>
 					Im Dezember kam dann die 23. Mitgliederversammlung in Berlin zusammen. Neben der <a href="https://blog.wikimedia.de/2018/12/01/6-praesidium-von-wikimedia-deutschland-ist-gewaehlt/" target="new">Neuwahl des ehrenamtlichen Präsidiums</a> wurden hier richtungsweisende Entscheidungen zur Zukunft des Vereins getroffen. So entscheiden die Mitglieder künftig im Rahmen der Mitgliederversammlung direkt die strategische Ausrichtung des Vereins mit. In diesem Zuge beschloss die Mitgliederversammlung die <a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Zukunftsprozess/Strategien" target="new">strategischen Richtungen für die drei Handlungsfelder</a> (Freiwillige, Technologie, Rahmenbedingungen), die die Arbeit Wikimedias in den nächsten Jahren maßgeblich prägen werden.
 				</p>
