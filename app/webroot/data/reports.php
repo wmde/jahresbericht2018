@@ -6,8 +6,8 @@
 			'en' => ''
 		],
 		'category' => 'framework',
-		'cover' => '',
-		'hero' => '',
+		'cover' => '/assets/img/01_da_vinci_cover.jpg',
+		'hero' => '/assets/img/01_da_vinci_hero.jpg',
 	],
 	[
 		'name' => 'data-new-water',
