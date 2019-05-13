@@ -14,9 +14,9 @@
   --color-blue: #009EE0;
   --color-lightblue: #E5F5FC;
   --color-lightpurple: #EFE9F3;
-  --color-gradient-purple: linear-gradient(#8c42c6, #652D90 30%);
-  --color-gradient-blue: linear-gradient(#009EE0, #0077ab 90%);
-  --color-gradient-blue--inverse: linear-gradient(#05b4ff, #009EE0 60%);
+  --color-gradient-purple: linear-gradient(#8848BA, #652D90 70%);
+  --color-gradient-blue: linear-gradient(#009EE0, #0092D0 90%);
+  --color-gradient-blue--inverse: linear-gradient(#0092D0, #009EE0 60%);
   --color-black: #1a1a1a;
   --color-darkgray: #636466;
   --color-gray: #f6f6f6;
@@ -1634,7 +1634,7 @@ a:focus {
   color: white;
   text-align: center;
   overflow: hidden;
-  background-color: var(--color-purple);
+  background: var(--color-gradient-purple);
   display: block;
   text-align: left;
 }
