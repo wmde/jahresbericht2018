@@ -51,6 +51,17 @@
 			</div>
 		</div>
 	</section>
+	<section class="section report__links">
+		<div class="limit--s">
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
+				<ul class="bullet-list">
+					<li>
+						<a href="https://blog.wikimedia.de/2019/03/25/lexikographische-daten-in-wikidata/" target="new">Blogbeitrag</a>
+				</ul>
+			</div>
+		</div>
+	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/day-of-action" class="button button--report">

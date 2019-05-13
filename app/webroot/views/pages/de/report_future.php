@@ -59,36 +59,6 @@
 			</div>
 		</div>
 	</section>
-	<section class="section report__links">
-		<div class="limit--l">
-			<div class="section__body slider swiper-container loading">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/5CKFKyc7We4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Welche Zukunft möchten wir gemeinsam aufbauen? Dieses Video zeigt den globalen Prozess 2017, die zukünftige Rolle von Wikimedia in der Welt zu definieren;
-								Wikimedia 2030, Wikimedia Foundation,
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section report__links">
-		<div class="limit--s">
-			<div class="border-box border-box--report">
-				<div class="t--delta">LINKS</div>
-				<ul class="bullet-list">
-					<li><a href="https://meta.wikimedia.org/wiki/Strategy/Wikimedia_movement/2017/Direction/de#Unsere_Strategische_Ausrichtung:_Dienst_und_Gerechtigkeit" target="new">Die strategische Ausrichtung von Wikimedia</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/glam" class="button button--report">

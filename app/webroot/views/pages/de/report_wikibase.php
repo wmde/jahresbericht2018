@@ -37,34 +37,13 @@
 		</div>
 	</section>
 	<section class="section report__links">
-		<div class="limit--l">
-			<div class="section__body slider swiper-container loading">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/-qC0otvWIiU?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Am 29. Oktober wurde die freie Wissensdatenbank Wikidata 5 Jahre alt. Wikimedia Deutschland dankt der Community für ihr Engagement!; 5 Jahre Wikidata – Happy Birthday!, Elisabeth Mandl und Denis Schröder für Wikimedia Deutschland,
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/DC32C220Cuw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Am 22.11.2017 hielt Lydia Pintscher den Vortrag "Wikidata - Curating Data about the World with 17000 Volunteers" im Rahmen der Ringvorlesung "Open Technology For An Open Society" #ot4os , von der Freie Universität Berlin und Wikimedia Deutschland; Lydia Pintscher: Wikidata #ot4os, Kamera und Schnitt: Henning Röhrborn, Wikimedia Deutschland, Freie Universität Berlin, Center für Digitale Systeme (CeDiS);
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-button-next swiper-button-next--black"></div>
-				<div class="swiper-button-prev swiper-button-prev--black"></div>
+		<div class="limit--s">
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
+				<ul class="bullet-list">
+					<li>
+						<a href="https://blog.wikimedia.de/2018/12/14/many-faces-of-wikibase-lingua-libre-macht-ˈʃpʁa%CB%90xə-hoerbar/" target="new">Blogbeitrag</a>
+				</ul>
 			</div>
 		</div>
 	</section>

@@ -48,15 +48,26 @@
 					<div class="swiper-slide">
 						<div class="video">
 							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/ZQ6iXhlwBAM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								<iframe src="https://www.youtube-nocookie.com/embed/upMR4T4lKl8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Das Fellow-Programm Freies Wissen ist ein gemeinsames Projekt von Wikimedia Deutschland, dem Stifterverband und der VolkswagenStiftung, und richtet sich an Nachwuchswissenschaftlerinnen und -wissenschaftler, die ihre Forschungsprozesse offen gestalten möchten;
-								Fellow-Programm Freies Wissen, Kamera: Ian Delú, Joana Kauer, Schnitt: Joana Kauer für Wikimedia Deutschland,
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
+								Filter-Verteilaktion
 							</div>
 						</div>
 					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://www.youtube-nocookie.com/embed/tvc7hcmbTds?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Monsters of Law zu Uploadfiltern
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next swiper-button-next--black"></div>
+				<div class="swiper-button-prev swiper-button-prev--black"></div>
 				</div>
 			</div>
 		</div>
@@ -65,12 +76,17 @@
 		<div class="limit--s">
 			<div class="border-box border-box--report">
 				<div class="t--delta">LINKS</div>
-				<p>
-					Die beiden Programm-Verantwortlichen bei Wikimedia, Sarah Behrens und Christopher Schwarzkopf, erzählen im im Open Science Radio mehr über die Idee, die Motivation, den bereits erfolgreich absolvierten ersten Durchlauf, sowie den gegenwärtigen Durchlauf und die Zukunft des Programms.
-				</p>
 				<ul class="bullet-list">
-					<li><a href="http://www.openscienceradio.org/2017/12/12/osr094-freies-wissen-in-der-wissenschaft-wmde-de/" target="new">Folge 1</a></li>
-					<li><a href="http://www.openscienceradio.org/2018/02/07/osr096-fellow-programm-projekte-ring-a-scientist-organizing-openness-wmde-de/" target="new">Folge 2</a></li>
+					<li>
+						<a href="https://blog.wikimedia.de/2019/02/11/probleme-der-eu-urheberrechtsreform-bleiben-bestehen/" target="new">Blogbeitrag (Stand Februar 2019)</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/03/16/wird-die-wikipedia-bald-vorgefiltert-upload-filter-nein-danke/" target="new">Blogbeitrag zum Offenen Brief</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/03/16/wird-die-wikipedia-bald-vorgefiltert-upload-filter-nein-danke/" target="new">Blogbeitrag zum WP-Protest 2019</a>
+					<li>
+						Mehr Informationen:
+							<a href="https://blog.wikimedia.de/2019/04/16/freies-wissen-auf-europaeischer-ebene-angekommen/" target="new">Blogbeitrag</a>
+						(Stand: April 2019)
 				</ul>
 			</div>
 		</div>

@@ -50,25 +50,6 @@
 				</div>
 		</div>
 	</section>
-	<section class="section report__links">
-		<div class="limit--l">
-			<div class="section__body slider swiper-container loading">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/tR-hUCN9Jl8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Roter Faden 2017 Zeitraffer, Wikimedia Deutschland,
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/da-vinci" class="button button--report">

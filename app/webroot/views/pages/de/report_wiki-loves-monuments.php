@@ -53,16 +53,31 @@
 					<div class="swiper-slide">
 						<div class="video">
 							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/CL3P62YWOY4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								<iframe src="https://www.youtube-nocookie.com/embed/UaceBXVYOKI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Auf der 20. Mitgliederversammlung von Wikimedia Deutschland am 17.06.2017 in Bamberg wird der Vereinsschwerpunkt „Neue Freiwillige für die Wikipedia gewinnen und halten“ vorgestellt;
-								<a href="http://commons.wikimedia.org/wiki/File:Neue_Ehrenamtliche_gewinnen_und_halten_-_Video_von_der_20._Mitgliederversammlung_-_Langversion.webm" target="new">Wikimedia Deutschland sucht neue Freiwillige für die Wikipedia</a>, kreative Leitung: Elisabeth Mandl, Kamera und Schnitt: Stefan Brainbauer für Wikimedia Deutschland
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">CC BY-SA 4.0</a>
+
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section report__links">
+		<div class="limit--s">
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
+				<ul class="bullet-list">
+					<li>
+						<a href="https://blog.wikimedia.de/2018/09/26/endspurt-bei-wiki-loves-monuments/" target="new">Blogbeitrag 1</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/06/08/sie-haben-uns-ein-denkmal-gebaut/" target="new">Blogbeitrag 2</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/05/25/wikipedia-im-europaeischen-jahr-des-kulturerbes/" target="new">Blogbeitrag 3</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2019/02/13/europaeisches-kulturerbe-in-beeindruckenden-fotos-die-gewinner-des-wiki-loves-monuments-sonderpreises/" target="new">Blogbeitrag 4</a>
+				</ul>
 			</div>
 		</div>
 	</section>

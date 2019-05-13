@@ -48,35 +48,12 @@
 		</div>
 	</section>
 	<section class="section report__links">
-		<div class="limit--l">
-			<div class="section__body slider swiper-container loading">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/ZQ6iXhlwBAM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Das Fellow-Programm Freies Wissen ist ein gemeinsames Projekt von Wikimedia Deutschland, dem Stifterverband und der VolkswagenStiftung, und richtet sich an Nachwuchswissenschaftlerinnen und -wissenschaftler, die ihre Forschungsprozesse offen gestalten möchten;
-								Fellow-Programm Freies Wissen, Kamera: Ian Delú, Joana Kauer, Schnitt: Joana Kauer für Wikimedia Deutschland,
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section report__links">
 		<div class="limit--s">
 			<div class="border-box border-box--report">
 				<div class="t--delta">LINKS</div>
-				<p>
-					Die beiden Programm-Verantwortlichen bei Wikimedia, Sarah Behrens und Christopher Schwarzkopf, erzählen im im Open Science Radio mehr über die Idee, die Motivation, den bereits erfolgreich absolvierten ersten Durchlauf, sowie den gegenwärtigen Durchlauf und die Zukunft des Programms.
-				</p>
 				<ul class="bullet-list">
-					<li><a href="http://www.openscienceradio.org/2017/12/12/osr094-freies-wissen-in-der-wissenschaft-wmde-de/" target="new">Folge 1</a></li>
-					<li><a href="http://www.openscienceradio.org/2018/02/07/osr096-fellow-programm-projekte-ring-a-scientist-organizing-openness-wmde-de/" target="new">Folge 2</a></li>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/09/15/daten-sind-das-neue-grundwasser/" target="new">https://blog.wikimedia.de/2018/09/15/daten-sind-das-neue-grundwasser/</a>
 				</ul>
 			</div>
 		</div>

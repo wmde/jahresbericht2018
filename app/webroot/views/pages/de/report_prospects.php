@@ -41,6 +41,43 @@
 				</p>
 		</div>
 	</section>
+	<section class="section report__links">
+		<div class="limit--l">
+			<div class="section__body slider swiper-container loading">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<video controls>
+									<source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/1/1b/Knowledge_belongs_to_all_of_us_-_2030.wikimedia.org.webm/Knowledge_belongs_to_all_of_us_-_2030.wikimedia.org.webm.1080p.vp9.webm" type="video/webm; codecs=vp9">
+								</video>
+							</div>
+							<div class="video__caption limit--s">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section report__links">
+		<div class="limit--s">
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
+				<ul class="bullet-list">
+					<li>
+						<a href="https://2030.wikimedia.org " target="new">https://2030.wikimedia.org </a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/05/05/freies_wissen_weltweit_teil_1/" target="new">Freies Wissen weltweit: Die Gesichter hinter Wikimedia – Teil 1</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/05/12/freies-wissen-weltweit-die-gesichter-hinter-wikimedia-teil-2/" target="new">Freies Wissen weltweit: Die Gesichter hinter Wikimedia – Teil 2</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/05/19/freies-wissen-weltweit-die-gesichter-hinter-wikimedia-teil-3/" target="new">Freies Wissen weltweit: Die Gesichter hinter Wikimedia – Teil 3</a>
+				</ul>
+			</div>
+		</div>
+	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/search" class="button button--report">

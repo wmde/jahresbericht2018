@@ -49,16 +49,39 @@
 					<div class="swiper-slide">
 						<div class="video">
 							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/ys1Xc_iCId0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								<iframe src="https://www.youtube-nocookie.com/embed/a6BK1yBJhpg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Die 20. Mitgliederversammlung von Wikimedia Deutschland am 17.06.2017 in Bamberg;
-								Mitgliederversammlung Wikimedia Deutschland 2017, Kreative Leitung: Elisabeth Mandl, Kamera und Schnitt: Stefan Brainbauer für Wikimedia Deutschland,
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
+								Mitgliederversion
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://www.youtube-nocookie.com/embed/L6pZtGB56xw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Videobotschaft Präsidium
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="swiper-button-next swiper-button-next--black"></div>
+				<div class="swiper-button-prev swiper-button-prev--black"></div>
+			</div>
+		</div>
+	</section>
+	<section class="section report__links">
+		<div class="limit--s">
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
+				<ul class="bullet-list">
+					<li>
+						<a href="https://blog.wikimedia.de/2018/05/28/die-22-mv-im-rueckblick-wer-nicht-wagt/" target="new">Rückblick Karlsruhe</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/12/01/6-praesidium-von-wikimedia-deutschland-ist-gewaehlt/" target="new">Rückblick Berlin</a>
+				</ul>
 			</div>
 		</div>
 	</section>

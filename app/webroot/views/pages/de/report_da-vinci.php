@@ -39,6 +39,49 @@
 			</div>
 		</div>
 	</section>
+	<section class="section report__links">
+		<div class="limit--l">
+			<div class="section__body slider swiper-container loading">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://www.youtube-nocookie.com/embed/8_URZDvowZQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Coding da Vinci Berlin 2017
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://www.youtube-nocookie.com/embed/QqbUis0fluk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Coding da Vinci Ost 2018
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next swiper-button-next--black"></div>
+				<div class="swiper-button-prev swiper-button-prev--black"></div>
+			</div>
+		</div>
+	</section>
+	<section class="section report__links">
+		<div class="limit--s">
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
+				<ul class="bullet-list">
+					<li>
+						<a href="https://blog.wikimedia.de/2018/06/28/zwitschernde-voegel-fallendes-obst-und-eine-virtuelle-mittagsfrau-preistraeger-von-coding-da-vinci-ost/" target="new">Blogbeitrag CdVOst</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/12/10/mittelalterliche-monster-wandelbare-kunstwerke-und-chattende-kaiser-erster-kultur-hackathon-coding-da-vinci-rhein-main/" target="new">Blogbeitrag CvVReihnMain</a>
+				</ul>
+			</div>
+		</div>
+	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
 		<a href="/report/data-new-water" class="button button--report">
