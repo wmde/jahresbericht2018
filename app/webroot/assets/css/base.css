@@ -3006,6 +3006,10 @@ a:focus {
     line-height: 1.6;
     padding-bottom: 25px;
 }
+.report-detail__panorama {
+  width: 100%;
+  height: 500px;
+}
 .report__boxes {
   display: flex;
   justify-content: space-between;

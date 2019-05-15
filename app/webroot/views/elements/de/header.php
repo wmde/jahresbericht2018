@@ -67,6 +67,9 @@ if (isset($report)) {
 	<?php foreach ($scripts as $script): ?>
 		<script async src="/assets/js/<?= $script ?>.js?v=__PROJECT_VERSION__"></script>
 	<?php endforeach ?>
+
+	<link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
 </head>
 <body>
 
