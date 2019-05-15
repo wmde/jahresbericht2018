@@ -209,7 +209,7 @@
 						<td class="ft__col-key--black">Bilanzsumme</td>
 						<td class="ft__col-val ft__fund-border ft__fund-bg">9.215.921 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val ft__em--fund">8.334.913 €/td>
+						<td class="ft__col-val ft__em--fund">8.334.913 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__em--fund">8.336.232 €</td>
 					</tfoot>

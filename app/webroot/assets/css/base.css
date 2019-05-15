@@ -2552,6 +2552,7 @@ a:focus {
   justify-content: flex-end;
   max-width: 400px;
   height: 475px;
+  padding-bottom: 50px;
 }
 .reports__link {
   display: block;
@@ -2653,6 +2654,7 @@ a:focus {
   .reports__link-wrapper {
     height: 350px;
     max-width: none;
+    padding-bottom: 0;
   }
   .reports {
     align-items: flex-start;

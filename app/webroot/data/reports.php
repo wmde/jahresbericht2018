@@ -67,7 +67,7 @@
 		],
 		'category' => 'wikimedia',
 		'cover' => '/assets/img/reports/members_cover.jpg',
-		'hero' => '/assets/img/reports/members_cover.jpg',
+		'hero' => '/assets/img/reports/members_hero.jpg',
 	],
 	[
 		'name' => 'prospects',

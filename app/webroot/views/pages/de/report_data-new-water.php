@@ -20,7 +20,7 @@
 				</p>
 			</div>
 			<p class="section__title h--beta">
-				<em>Daten sind das neue Grundwasser</em>
+				Daten sind das neue Grundwasser
 			</p>
 			<div class="section__body t--gamma-serif">
 					Daten sind kein „neues Öl“, sie entstehen jederzeit neu, wandeln sich, ohne sich zu verbrauchen und dürfen nur unter bestimmten Bedingungen zur Ware werden. Für die  Informationsgesellschaft sind Daten daher viel eher wie Grundwasser. Genau wie eine Welt ohne Wasser nicht denkbar ist, bilden Daten als transportable Form von Information die Grundlage für Freies Wissen und damit auch für die Wikipedia.
