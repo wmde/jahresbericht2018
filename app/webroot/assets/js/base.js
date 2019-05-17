@@ -26,7 +26,11 @@ requirejs.config({
     },
     'compat/scrollBehavior': {
       exports: 'smoothscroll'
-    }
+    },
+    'pannellum': {
+      exports: 'pannellum',
+        deps: ['libpannellum']
+    },
   }
 });
 

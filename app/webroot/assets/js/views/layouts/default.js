@@ -61,10 +61,12 @@ require(['require/domReady!'], function() {
   // Website: https://pannellum.org
   let panorama = document.getElementById('panorama');
   if (panorama) {
-    pannellum.viewer('panorama', {
-      'type': 'equirectangular',
-      'autoLoad' : true,
-      'panorama' : 'https://upload.wikimedia.org/wikipedia/commons/c/c6/2018-09-22-Jagdschloss_Grunewald_360-0010765.jpg'
+    require(['pannellum'], function() {
+      pannellum.viewer('panorama', {
+        'type': 'equirectangular',
+        'autoLoad' : true,
+        'panorama' : 'https://upload.wikimedia.org/wikipedia/commons/c/c6/2018-09-22-Jagdschloss_Grunewald_360-0010765.jpg'
+      });
     });
   }
 });
