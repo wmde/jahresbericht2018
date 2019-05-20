@@ -59,7 +59,7 @@ require(['require/domReady!'], function() {
 
   // Use panellum library to display panorama image in /report/glam
   // Website: https://pannellum.org
-  let panorama = document.getElementById('panorama');
+  let panorama = document.getElementsByClassName('report-detail__panorama');
   if (panorama) {
     require(['pannellum'], function() {
       pannellum.viewer('panorama', {
