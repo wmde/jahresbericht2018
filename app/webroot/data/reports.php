@@ -33,7 +33,7 @@
 		'name' => 'day-of-action',
 		'title' => [
 			'de' => 'Wikipedia Aktionstag',
-			'en' => ''
+			'en' => 'Visiting Wikipedia'
 		],
 		'category' => 'volunteers',
 		'cover' => '/assets/img/reports/day_of_action_cover.jpg',
@@ -73,7 +73,7 @@
 		'name' => 'prospects',
 		'title' => [
 			'de' => 'Internationales: Wikimedia 2030',
-			'en' => ''
+			'en' => 'International: Wikimedia 2030'
 		],
 		'category' => 'wikimedia',
 		'cover' => '/assets/img/reports/prospects_cover.jpg',

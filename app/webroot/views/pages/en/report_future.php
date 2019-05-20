@@ -63,10 +63,10 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/glam" class="button button--report">
-			<p class="button--small">Zum nächsten Thema</p>
-			<p>Glam on Tour Grunewald</p>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
+		<a href="/en/report/glam" class="button button--report">
+			<p class="button--small">Next topic</p>
+			<p>Glam on Tour</p>
 		</a>
 	</section>
 </main>

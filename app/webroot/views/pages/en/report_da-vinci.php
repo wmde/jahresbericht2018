@@ -73,10 +73,10 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/data-new-water" class="button button--report">
-			<p class="button--small">Zum nächsten Thema</p>
-			<p>Daten sind das neue Grundwasser</p>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
+		<a href="/en/report/data-new-water" class="button button--report">
+			<p class="button--small">Next topic</p>
+			<p>Data is the new Groundwater</p>
 		</a>
 	</section>
 </main>

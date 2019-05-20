@@ -67,9 +67,9 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/da-vinci" class="button button--report">
-			<p class="button--small">Zum nächsten Thema</p>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
+		<a href="/en/report/da-vinci" class="button button--report">
+			<p class="button--small">Next topic</p>
 			<p>Coding da Vinci</p>
 		</a>
 	</section>

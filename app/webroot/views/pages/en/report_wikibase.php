@@ -51,10 +51,10 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/year-review" class="button button--report">
-			<p class="button--small">Zum nächsten Thema</p>
-			<p>Das Jahr 2018</p>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
+		<a href="/en/report/year-review" class="button button--report">
+			<p class="button--small">Next topic</p>
+			<p>Looking back at 2018</p>
 		</a>
 	</section>
 </main>

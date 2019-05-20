@@ -5,17 +5,21 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">annalenaschiller (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Deutschland_2018.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+		At the Wikimedia Conference 2018, hosted by Wikimedia Deutschland, Wikimedians discussed passionately how the Wikimedia movement needs to adapt to be able to achieve its 2030 goals.
+		<!-- Jason Krüger for Wikimedia Deutschland e.V.
+		(<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2017_–_147.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Wikimedia 2030</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Was möchten wir – die internationale Wikimedia-Bewegung – in den nächsten 10-15 Jahren aufbauen und erreichen? Wofür soll Wikimedia im Jahr 2030 in der Welt bekannt sein? Und wer wird sich unserer Bewegung angeschlossen haben? Mit diesen Fragen beschäftigen wir uns seit 2017.
+				What do we – the international Wikimedia movement – want to build and achieve in the next 10-15 years? What should Wikimedia be known for in the world in 2030? And who will have joined our movement? We have been dealing with these questions since 2017.
 			</div>
 			<div class="section__body t--gamma-serif">
 				<p>
-					Wohin wir wollen haben wir inzwischen festgelegt: Wikimedia hat sich das Ziel gegeben die wichtigste, unterstützende Struktur für die gesamte Bewegung für Freies Wissen zu werden – und alle, die sich uns anschließen möchten, sind jederzeit willkommen mitzumachen.
+					We have now determined where we want to go: Wikimedia has set itself the goal of becoming the most important supporting structure for the entire Free Knowledge movement – and everyone who wants to join us ought to be welcome at any time.
 				</p>
 				<?php if (isset($achievements[0])): ?>
 					<div class="achievement-box">
@@ -31,13 +35,13 @@
 					</div>
 				<?php endif ?>
 				<p>
-					Wir wollen das über unsere beiden Ziele „Wissen als Dienst“ (Knowledge as a Service) und „Chancengleichheit auf Wissen“ (Knowledge Equity) erreichen. Wissen als Dienst verkörpert dabei vor allem den Gedanken die Plattform für das gesamte Wissen der Welt zu sein – alle können beitragen, es aber auch verändern, und im eigenen Sinne weiternutzen. Chancengleichheit auf Wissen bedeutet, dass wir uns noch stärker den Menschen und deren Wissen zuwenden wollen, die bisher aufgrund von Machtstrukturen und Privilegien sowie politischen oder sozialen Hürden ausgeschlossen waren.
+					We want to achieve this through our two goals "Knowledge as a Service" and "Knowledge Equity". Knowledge as a service embodies above all the idea of being the platform for the world’s knowledge – everyone can contribute, but also change it, and continue to put it to use in each person’s context. Knowledge equity means that we want to focus even more on people and their knowledge, who were previously excluded due to power structures and privileges as well as political or social hurdles.
 				</p>
 				<p>
-					Das sind hehre Ziele, die sich Wikimedia vorgenommen hat. Doch wie erreichen wir diese? Was müssen wir an unseren Strukturen in und um die Wikimedia-Projekte verändern, damit wir 2030 dort sind, wo wir sein wollen?
+					These are noble goals. But how do we achieve them? What do we have to change in our structures in and around the Wikimedia projects in order to be where we want to be in 2030?
 				</p>
 				<p>
-					Mit diesen Fragen beschäftigt sich Wikimedia Deutschland seit Mitte letzten Jahres intensiv – zusammen mit zahlreichen Haupt- und Ehrenamtlichen des globalen Wikimedia-Netzwerkes. In neun thematischen Arbeitsgruppen erarbeiten etwa 117 Wikimedianerinnen und Wikimedianer Empfehlungen, wie wir unsere Strukturen so weitreichend modernisieren, dass wir gemeinsam erfolgreich diesen neuen Kurs verfolgen können. Wikimedia Deutschland unterstützt diesen Prozess bestmöglich, denn wir glauben, dass dieser umfangreiche und inklusive Prozess essentiell für die Zukunft Freien Wissens ist.
+					Wikimedia Deutschland has been working intensively on these questions since the middle of last year – together with numerous full-time employees and volunteers of the global Wikimedia movement. In nine thematic working groups, about 117 Wikimedians develop recommendations on how we can modernize our structures to such an extent that we can successfully pursue this new course together. Wikimedia Deutschland supports this process in the best possible way, because we believe that this extensive and inclusive process is essential for the future of Free Knowledge.
 				</p>
 		</div>
 	</section>
@@ -53,7 +57,7 @@
 								</video>
 							</div>
 							<div class="video__caption limit--s">
-
+								Knowledge belongs to all of us
 							</div>
 						</div>
 					</div>
@@ -67,22 +71,18 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://2030.wikimedia.org " target="new">https://2030.wikimedia.org </a>
+						<a href="https://2030.wikimedia.org " target="new">https://2030.wikimedia.org</a>
 					<li>
-						<a href="https://blog.wikimedia.de/2018/05/05/freies_wissen_weltweit_teil_1/" target="new">Freies Wissen weltweit: Die Gesichter hinter Wikimedia – Teil 1</a>
-					<li>
-						<a href="https://blog.wikimedia.de/2018/05/12/freies-wissen-weltweit-die-gesichter-hinter-wikimedia-teil-2/" target="new">Freies Wissen weltweit: Die Gesichter hinter Wikimedia – Teil 2</a>
-					<li>
-						<a href="https://blog.wikimedia.de/2018/05/19/freies-wissen-weltweit-die-gesichter-hinter-wikimedia-teil-3/" target="new">Freies Wissen weltweit: Die Gesichter hinter Wikimedia – Teil 3</a>
+						<a href="https://blog.wikimedia.org/2018/02/08/wikimedia-2030-future-information-commons/ " target="new">Blog article</a>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/search" class="button button--report">
-			<p class="button--small">Zum nächsten Thema</p>
-			<p>Technische Wünsche</p>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
+		<a href="/en/report/search" class="button button--report">
+			<p class="button--small">Next topic</p>
+			<p>Technical wishes</p>
 		</a>
 	</section>
 </main>

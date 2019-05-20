@@ -5,7 +5,11 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">annalenaschiller (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Deutschland_2018.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+		Auf der Wikimedia Conference 2018, ausgerichtet von Wikimedia Deutschland, diskutierten Wikimedianerinnen und Wikimedianer die Notwendigkeiten das Wikimedia-Netzwerk zu verändern, um die Ziele für 2030 zu erreichen.
+		<!-- Jason Krüger for Wikimedia Deutschland e.V.
+		(<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2017_–_147.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Wikimedia 2030</em>

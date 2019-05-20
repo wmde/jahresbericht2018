@@ -56,10 +56,10 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/data" class="button button--report">
-			<p class="button--small">Zum nächsten Thema</p>
-			<p>Lexeme in Wikidata </p>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
+		<a href="/en/report/data" class="button button--report">
+			<p class="button--small">Next topic</p>
+			<p>Lexicographical Data on Wikidata</p>
 		</a>
 	</section>
 </main>

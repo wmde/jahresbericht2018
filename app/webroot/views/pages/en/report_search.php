@@ -51,9 +51,9 @@
 		</div>
 	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/upload" class="button button--report">
-			<p class="button--small">Zum nächsten Thema</p>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
+		<a href="/en/report/upload" class="button button--report">
+			<p class="button--small">Next topic</p>
 			<p>No Upload-Filter</p>
 		</a>
 	</section>

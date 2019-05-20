@@ -45,54 +45,11 @@
 			</div>
 		</div>
 	</section>
-	<section class="section report__links">
-		<div class="limit--l">
-			<div class="section__body slider swiper-container loading">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/a6BK1yBJhpg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Mitgliederversion
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/L6pZtGB56xw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Videobotschaft Präsidium
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-button-next swiper-button-next--black"></div>
-				<div class="swiper-button-prev swiper-button-prev--black"></div>
-			</div>
-		</div>
-	</section>
-	<section class="section report__links">
-		<div class="limit--s">
-			<div class="border-box border-box--report">
-				<div class="t--delta">LINKS</div>
-				<ul class="bullet-list">
-					<li>
-						<a href="https://blog.wikimedia.de/2018/05/28/die-22-mv-im-rueckblick-wer-nicht-wagt/" target="new">Rückblick Karlsruhe</a>
-					<li>
-						<a href="https://blog.wikimedia.de/2018/12/01/6-praesidium-von-wikimedia-deutschland-ist-gewaehlt/" target="new">Rückblick Berlin</a>
-				</ul>
-			</div>
-		</div>
-	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/prospects" class="button button--report">
-			<p class="button--small">Zum nächsten Thema</p>
-			<p>Internationales: Wikimedia 2030</p>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
+		<a href="/en/report/prospects" class="button button--report">
+			<p class="button--small">Next topic</p>
+			<p>International: Wikimedia 2030</p>
 		</a>
 	</section>
 </main>
