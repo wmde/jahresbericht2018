@@ -7,7 +7,7 @@
 		'number' => '146',
 		'teaser' => [
 			'de' => 'Kulturinstitutionen haben seit der ersten Veranstaltung 2014 im Rahmen von Coding da Vinci insgesamt 218 Datensets unter einer freien Lizenz zur Verfügung gestellt.',
-			'en' => ''
+			'en' => 'Cultural institutions have provided a total of 218 data sets under a free license since the first Coding da Vinci event in 2014.'
 		],
 		'url' => '/report/da-vinci'
 	],
@@ -19,7 +19,7 @@
 		'number' => '1',
 		'teaser' => [
 			'de' => 'neue Daten-Metapher sorgt für mehr Sichtbarkeit von  Gemeinwohlorientierung in der Datenpolitik.',
-			'en' => ''
+			'en' => 'new data metaphor increases visibility of the common good in data policy.'
 		],
 		'url' => '/report/data-new-water'
 	],
@@ -31,7 +31,7 @@
 		'number' => '40442',
 		'teaser' => [
 			'de' => 'Lexeme wurden 2018 in Wikidata angelegt (statt der erwarteten 5000',
-			'en' => ''
+			'en' => 'lexemes were created in Wikidata in 2018 (instead of the expected 5,000).'
 		],
 		'url' => '/report/data'
 	],
@@ -43,7 +43,7 @@
 		'number' => '850',
 		'teaser' => [
 			'de' => 'Besuchende kamen zum Wikipedia-Aktionstag in 11 lokale Community-Räume im deutschsprachigen Raum, um hinter die Kulissen der Wikipedia zu schauen.',
-			'en' => ''
+			'en' => 'visitors came to the Wikipedia day in 11 local community rooms in the German-speaking area to take a look behind the scenes of Wikipedia.'
 		],
 		'url' => '/report/day-of-action'
 	],
@@ -55,7 +55,7 @@
 		'number' => '15',
 		'teaser' => [
 			'de' => 'Kulturinstitutionen von Berlin bis Zürich haben 2018 ihre Türen im Rahmen von GLAM on Tour-Stationen und anderen Formaten  geöffnet.',
-			'en' => ''
+			'en' => 'Cultural institutions from Berlin to Zurich opened their doors in 2018 as part of GLAM on Tour events and other formats.'
 		],
 		'url' => '/report/glam'
 	],
@@ -78,8 +78,8 @@
 		],
 		'number' => '117',
 		'teaser' => [
-			'de' => 'Ehren- und Hauptamtliche in 9 thematischen Arbeitsgruppen erarbeiten seit 2018 Empfehlungen wie sich Wikimedia verändern muss.',
-			'en' => 'honorary and full-time members of 9 thematic working groups have been working out recommendations in 2018 on'
+			'de' => 'Ehren- und Hauptamtliche in 9 thematischen Arbeitsgruppen erarbeiten seit 2018 Empfehlungen für die Zukunft Wikimedias.',
+			'en' => 'volunteers and staff members of 9 thematic working groups have been working out recommendations in 2018 for Wikimedia’s future.'
 		],
 		'url' => '/report/prospects'
 	],
@@ -103,7 +103,7 @@
 		'number' => '15',
 		'teaser' => [
 			'de' => 'Organisationen aus Internetwirtschaft und Zivilgesellschaft haben wir Anfang 2018 in einem Offenen Brief gegen die umstrittenen Upload-Filter vereint.',
-			'en' => 'organisations from the Internet industry and civil society united 2018 in an open letter against the controversial upload filters.'
+			'en' => 'Organisations from the Internet industry and civil society united 2018 in an open letter against the controversial upload filters.'
 		],
 		'url' => '/report/upload'
 	],

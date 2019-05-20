@@ -2,14 +2,14 @@
 	<section class="section section__body cp">
 		<div class="limit--s finance__intro">
 			<h1 class="fin-detail__heading">
-				<div class="h--delta fin-detail__heading-s">Finanzen 2017</div>
+				<div class="h--delta fin-detail__heading-s">Finances 2018</div>
 				<div class="h--beta fin-detail__heading-l">Gemeinnützige Wikimedia Fördergesellschaft mbH</div>
 			</h1>
 		</div>
 	</section>
 	<section class="section cp">
 		<div class="limit--m fin-detail__aktiva">
-			<h2 class="h--beta ft__heading">Bilanz &mdash; Aktiva</h2>
+			<h2 class="h--beta ft__heading">Balance sheet &mdash; Assets</h2>
 			<div class="ft-wrapper">
 				<table class="ft">
 					<thead>
@@ -102,7 +102,7 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m fin-detail__passiva">
-			<h2 class="h--beta ft__heading">Bilanz &mdash; Passiva</h2>
+			<h2 class="h--beta ft__heading">Balance sheet &mdash; Liabilities</h2>
 			<div class="ft-wrapper">
 				<table class="ft">
 					<thead>
@@ -219,7 +219,7 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m fin-detail__rechnung">
-			<h2 class="h--beta ft__heading">Gewinn- und Verlustrechnung</h2>
+			<h2 class="h--beta ft__heading">Proﬁt and loss statement</h2>
 			<div class="ft-wrapper">
 				<table class="ft">
 					<thead>
@@ -337,10 +337,10 @@
 	<section class="section cp">
 		<div class="limit--m finance__boxes">
 			<a class="border-box border-box--fund t--epsilon" href="<?= $url('finance', $lang) ?>">
-				<span>Zur Übersicht  <em class="t--delta">Finanzreport 2017</em></span>
+				<span>Go to overview <em class="t--delta">Finances 2018</em></span>
 			</a>
 			<a class="border-box border-box--fund t--epsilon" href="<?= $url('finance/assn', $lang) ?>">
-				<span>Zum Finanzteil <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
+				<span>Go to financial section <em class="t--delta">Wikimedia Deutschland e. V.</em></span>
 			</a>
 		</div>
 	</section>

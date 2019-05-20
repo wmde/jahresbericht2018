@@ -1992,8 +1992,9 @@ a:focus {
   background-color: var(--color-blue);
 }
 .ft__main-bg {
-  color: white;
-  background-color: #b164da;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  font-weight: bold;
 }
 .ft__em {
   color: var(--color-purple);
@@ -3250,4 +3251,8 @@ a:focus {
   animation-duration: 3.5s;
   animation-name: grow-2013;
   right: 94%;
+}
+
+.nav__list--upper .pdf-download {
+  pointer-events: none; /* TODO: Delete ehen adding PDF */
 }
