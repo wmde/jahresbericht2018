@@ -5,13 +5,16 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Brunswyk (<a href="https://commons.wikimedia.org/wiki/File:GLAM-on-Tour_Museum_Schloss_Fuerstenberg_Wikipedianer_bei_der_Arbeit_(Brunswyk_2017).JPG" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			Successful combination: The Kulturhackathon Coding da Vinci brings together cultural institutions and creative people from design and software development.
+			<!-- (<a href="https://commons.wikimedia.org/wiki/File:GLAM-on-Tour_Museum_Schloss_Fuerstenberg_Wikipedianer_bei_der_Arbeit_(Brunswyk_2017).JPG" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
-				<em>Coding da Vinci – wie Kulturinstitutionen zu Plattformen für kulturellen Austausch werden</em>
+				<em>Coding da Vinci – How Cultural Institutions become Platforms for Cultural Exchange</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Gemeinsam mit der <a href="https://www.deutsche-digitale-bibliothek.de/" target="new">Deutschen Digitalen Bibliothek</a>, der <a href="https://www.okfn.de/" target="new">Open Knowledge Foundation Deutschland</a> und dem <a href="https://www.digis-berlin.de/" target="new">Forschungs- und Kompetenzzentrum Digitalisierung (digis)</a> brachte Wikimedia Deutschland 2014 erstmals Kulturinstitutionen wie Museen und Archive mit Kunstschaffenden aus Softwareentwicklung und Gestaltung für einen Kreativ-Wettbewerb mit offenen Daten zusammen – dem ersten Kulturhackathon Coding da Vinci. Aus den Aufnahmen von Vogelstimmen, die das Berliner Naturkundemuseum zur Verfügung stellte, entstand innerhalb von nur sechs Wochen beispielsweise der </a> und dem <a href="http://www.farbtrommel.de/zwitscherwecker/" target="new">zzZwitscherwecker</a>. Die App weckt Schlummernde mit fröhlichem Gezwitscher, das erst dann verstummt, wenn die richtige Vogelart zugeordnet wurde.
+				Together with the German Digital Library, the Open Knowledge Foundation Germany and the Research and Competence Center Digitization (digis), in 2014 Wikimedia Deutschland for the first time brought together cultural institutions such as museums and archives with artists from software development and design for a creative competition based on open data – the first cultural hackathon Coding da Vinci. The recordings of bird voices provided by the Berlin Museum of Natural History were used to create the zzZwitscherwecker, for example, in just six weeks. The app wakes you with cheerful chirping, which only stops once the right bird species has been assigned to the sound.
 			</div>
 			<?php if (isset($achievements[0])): ?>
 			<div class="achievement-box">
@@ -28,22 +31,52 @@
 			<?php endif ?>
 			<div class="section__body t--gamma-serif">
 				<p>
-					Sechs weitere Coding da Vinci Hackathons haben seitdem in unterschiedlichen Regionen der Bundesrepublik stattgefunden – insgesamt haben 146 Kulturinstitutionen ihre verborgenen Schätze in 218 digitalen Datensets mehr als 1.600 Kreativen zur Verfügung gestellt. Mehr als hundert tolle Prototypen und Webanwendungen, Apps und Spiele sind daraus als Open-Source-Projekte entstanden.
+					Six further Coding da Vinci Hackathons have since taken place in various regions of Germany – a total of 146 cultural institutions have made their hidden treasures available to more than 1,600 creative people via 218 digital data sets. More than a hundred great prototypes and web applications, apps and games have emerged as open source projects.
 				</p>
 				<p>
-					Coding da Vinci macht das kreative Potenzial von digitalem Kulturgut sichtbar und hilft, es zu entfalten. Vor allem für die teilnehmenden Kulturinstitutionen ist diese Erfahrung enorm wichtig – sie lernen, welche Chancen sich durch die digitale Öffnung ihrer Sammlungen bieten. Mit den innovativen Anwendungen wird nicht nur die Attraktivität von Kulturgut und die Sichtbarkeit der Kulturinstitutionen erhöht. Offene Kulturdaten laden auch in der vernetzten Gesellschaft neue Zielgruppen dazu ein, sich mit dem kulturellen Erbe schöpferisch auseinanderzusetzen und neues Wissen zu generieren. Museen wandeln sich von Orten des Bewahrens, Konservierens und Deponierens zu Plattformen für kulturellen Austausch – in den Städten und im Digitalen.
+					Coding da Vinci makes the creative potential of digital cultural assets visible and helps to unfold it. This experience is particularly important for the participating cultural institutions – they learn about the opportunities offered by the digital opening of their collections. The innovative applications not only increase the attractiveness of cultural assets and the visibility of cultural institutions. Open cultural data also invite new target groups in to deal creatively with cultural heritage and to generate new knowledge. From places of preservation, conservation and storage, museums are now turning into platforms for cultural exchange – on-site and online.
 				</p>
 				<p>
-					Die positiven Effekte von Coding da Vinci für die digitale Transformation von Kultur- und Gedächtnisinstitutionen sieht auch die Kulturstiftung des Bundes. Sie fördert die Weiterentwicklung des Hackathons in den nächsten Jahren mit 1,2 Millionen Euro.
+					The German Federal Cultural Foundation also sees the positive effects of Coding da Vinci for the digital transformation of cultural and memory institutions: It has decided to support the further development of the hackathon in the next few years with 1.2 million euros.
 				</p>
+			</div>
+		</div>
+	</section>
+	<section class="section report__links">
+		<div class="limit--l">
+			<div class="section__body slider swiper-container loading">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://www.youtube-nocookie.com/embed/8_URZDvowZQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Coding da Vinci Berlin 2017
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://www.youtube-nocookie.com/embed/QqbUis0fluk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								Coding da Vinci Ost 2018
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next swiper-button-next--black"></div>
+				<div class="swiper-button-prev swiper-button-prev--black"></div>
 			</div>
 		</div>
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/fellow" class="button button--report">
+		<a href="/report/data-new-water" class="button button--report">
 			<p class="button--small">Zum nächsten Thema</p>
-			<p> Offene Wissenschaft aktiv vorantreiben </p>
+			<p>Daten sind das neue Grundwasser</p>
 		</a>
 	</section>
 </main>

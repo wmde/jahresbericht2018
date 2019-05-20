@@ -5,7 +5,10 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Fuzheado (<a href="https://commons.wikimedia.org/wiki/File:Wikidatacon-2017-group-pano-1.jpg" target="new">Wikimedia Commons</a>), beschnitten von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			Die sprichwörtliche Suche nach der Nadel im Heuhaufen: Dank der verbesserten Suchfunktion lassen sich Inhalte in der Wikipedia leichter finden.
+			<!-- (<a href="https://commons.wikimedia.org/wiki/File:Wikidatacon-2017-group-pano-1.jpg" target="new">Wikimedia Commons</a>), beschnitten von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Verbesserte Suchfunktion für Wikipedia & Co.</em>
@@ -43,6 +46,8 @@
 				<ul class="bullet-list">
 					<li>
 						<a href="https://blog.wikimedia.de/2018/12/14/heureka-eine-neue-benutzeroberflaeche-fuer-spezialisierte-suchanfragen/" target="new">Blogbeitrag</a>
+					<li>
+						Mehr zum Projekt Technische Wünsche auf <a href="de.wikipedia.org/wiki/Wikipedia:Technische_Wünsche" target="new">de.wikipedia.org/wiki/Wikipedia:Technische_Wünsche</a>
 				</ul>
 			</div>
 		</div>

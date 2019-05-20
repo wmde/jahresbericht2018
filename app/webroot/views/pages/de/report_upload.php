@@ -5,7 +5,10 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Ralf Rebmann (<a href="https://commons.wikimedia.org/wiki/File:Auftaktveranstaltung_Fellow-Programm_Freies_Wissen_2017_189.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			Gemeinsam für ein freies Internet: 2018 haben wir uns mit Partnern aus Internetwirtschaft und Zivilgesellschaft gegen Upload-Filter engagiert.
+			<!-- (<a href="https://commons.wikimedia.org/wiki/File:Auftaktveranstaltung_Fellow-Programm_Freies_Wissen_2017_189.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Vom Nischenthema zur gesellschaftlichen Debatte: 15 Organisationen gegen Upload-Filter</em>

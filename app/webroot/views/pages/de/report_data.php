@@ -5,7 +5,10 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Elisabeth Mandl (WMDE) (<a href="https://commons.wikimedia.org/wiki/File:22._Mitgliederversammlung_28.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			Mehr verstehen: Durch Sprachdaten in unserer freien Wissensdatenbank Wikidata entsteht neues Wissen.
+			<!-- (<a href="https://commons.wikimedia.org/wiki/File:22._Mitgliederversammlung_28.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Lexikografische Daten in Wikidata: Wörter, Wörter, Wörter</em>
@@ -58,6 +61,8 @@
 				<ul class="bullet-list">
 					<li>
 						<a href="https://blog.wikimedia.de/2019/03/25/lexikographische-daten-in-wikidata/" target="new">Blogbeitrag</a>
+					<li>
+						Artikelspiel: <a href="http://auregann.fr/derdiedas/" target="new">deutsch</a>, <a href="http://auregann.fr/unune" target="new">französisch</a>, <a href="https://tools.wmflabs.org/enet/" target="new">dänisch</a>
 				</ul>
 			</div>
 		</div>

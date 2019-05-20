@@ -5,7 +5,7 @@
 				<div class="home-hero__title h--beta">
 					Wikimedia<br>
 					Deutschland<br>
-					Jahresbericht<br>
+					Annual Report<br>
 					2018
 				</div>
 				<img class="home-hero__18" src="assets/img/18.png" alt="Das Jahr 2018">
@@ -28,7 +28,7 @@
 			<div class="home__intro--layer"></div>
 		</section>
 		<div class="home__box">
-			<div class="limit--m h--alpha">Gemeinsam wissen wir mehr</div>
+			<div class="limit--m h--alpha">Together we know more</div>
 		</div>
 	</div>
 	</section>
@@ -76,7 +76,7 @@
 						href="<?= $url($achievements[0]['teaser'], $lang) ?>"
 						class="achievement__link t--zeta-emph"
 					>
-						&mdash;&nbsp;&nbsp; Zum Thema
+						&mdash;&nbsp;&nbsp; More on this topic
 					</a>
 				</div>
 			</div>
@@ -107,90 +107,88 @@
 						href="<?= $url($achievements[1]['teaser'], $lang) ?>"
 						class="achievement__link t--zeta-emph"
 					>
-						&mdash;&nbsp;&nbsp; Zum Thema
+						&mdash;&nbsp;&nbsp; More on this topic
 					</a>
 				</div>
 			</div>
 		</div>
 		<button class="achievements__button t--zeta-emph animation-ctl-button invis">
 			<div class="animation-ctl-button__symbol"></div>
-			Neue Erfolge laden
+			Show more achievements
 		</button>
 	</section>
 	<section class="chart cp--component-section">
-		<div class="chart__container">
-			<div class="chart__headline">
-				<div class="chart__headline--description t--epsilon">
-					März 2013 - März 2019
-				</div>
-				<h1 class="h--beta">Mitgliederentwicklung</h1>
+		<div class="chart__headline">
+			<div class="chart__headline--description t--epsilon">
+				March 2013 - March 2019
 			</div>
-
-			<div class="charts loading">
-				<div class="charts__texts">
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2019</span>
-						<span class="chart-text__number t--epsilon-emph">72.611</span>
+			<h1 class="h--beta">Membership development</h1>
+		</div>
+		<div class="chart__bars chart-bars loading">
+				<div class="chart-bars__texts">
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2019</span>
+						<span class="chart-bars__text--number t--epsilon-emph">72.611</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2018</span>
-						<span class="chart-text__number t--epsilon-emph">65.374</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2018</span>
+						<span class="chart-bars__text--number t--epsilon-emph">65.374</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2017</span>
-						<span class="chart-text__number t--epsilon-emph">43.138</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2017</span>
+						<span class="chart-bars__text--number t--epsilon-emph">43.138</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2016</span>
-						<span class="chart-text__number t--epsilon-emph">29.169</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2016</span>
+						<span class="chart-bars__text--number t--epsilon-emph">29.169</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2015</span>
-						<span class="chart-text__number t--epsilon-emph">15.778</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2015</span>
+						<span class="chart-bars__text--number t--epsilon-emph">15.778</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2014</span>
-						<span class="chart-text__number t--epsilon-emph">9.803</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2014</span>
+						<span class="chart-bars__text--number t--epsilon-emph">9.803</span>
 					</p>
-					<p class="chart-text">
-						<span class="chart-text__date t--epsilon">01.03.2013</span>
-						<span class="chart-text__number t--epsilon-emph">2.618</span>
+					<p class="chart-bars__text">
+						<span class="chart-bars__text--date t--epsilon">01.03.2013</span>
+						<span class="chart-bars__text--number t--epsilon-emph">2.618</span>
 					</p>
 				</div>
 
 				<div class="chart-bars__animation">
 					<div class="chart-bar percent-2019">
 						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2018">
 						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2017">
 						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2016">
 						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2015">
 						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2014">
 						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<div class="chart-bar__inner"></div>
 					</div>
 					<div class="chart-bar percent-2013">
 						<img class="chart-bar__image" src="/../../assets/img/charts_illustration.svg">
-						<div class="inner"></div>
+						<div class="chart-bar__inner"></div>
 					</div>
 				</div>
-			</div>
+
 		</div>
-		<a href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new" class="chart__button button button--outline-white">Jetzt Mitglied werden</a>
+		<a href="https://spenden.wikimedia.de/apply-for-membership?piwik_campaign=jb2017&piwik_kwd=mitglieds_btn" target="new" class="chart__button button button--outline-white">Become a member</a>
 	</section>
 	<section class="reports loading clearfix cp--component-section loading">
 		<ul class="reports__data">
@@ -210,24 +208,24 @@
 			<div class="reports__link-wrapper">
 				<a class="reports__link h--beta" href="">
 					<div class="reports__link-title">Movement Strategy</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Thema</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; More on this topic</div>
 				</a>
 				<a class="reports__link h--beta" href="">
 					<div class="reports__link-title">Fellow Programm</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Thema</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; More on this topic</div>
 				</a>
 				<a class="reports__link h--beta" href="">
 					<div class="reports__link-title">Freiwillige unterstützen</div>
-					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; Zum Thema</div>
+					<div class="reports__link-project t--zeta-emph">&mdash;&nbsp;&nbsp; More on this topic</div>
 				</a>
 			</div>
 			<button class="animation-ctl-button reports__button reports__button--reload t--zeta-emph invis">
 				<div class="animation-ctl-button__symbol"></div>
-				Neue Themen laden
+				 Show more topics
 			</button>
 			<a href="<?= $lang . '/report' ?>" class="animation-ctl-button reports__button reports__button--all t--zeta-emph invis">
 				<div class="animation-ctl-button__symbol"></div>
-				Alle Themen anzeigen
+				Show all topics
 			</a>
 		</div>
 	</section>
@@ -252,10 +250,10 @@
 				</figure>
 			</div>
 			<a href="<?= $url('finance', $lang) ?>">
-				<p class="h--beta">Unsere Finanzen 2018</p>
+				<p class="h--beta">Finances 2018</p>
 				<p class="finance-banner__button h--delta">
 					<span>&mdash;</span>
-					<span>Zum Finanzteil</span>
+					<span>Go to financial section</span>
 				</p>
 			</a>
 		</div>

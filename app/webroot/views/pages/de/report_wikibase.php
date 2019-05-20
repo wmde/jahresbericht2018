@@ -5,7 +5,10 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Fuzheado (<a href="https://commons.wikimedia.org/wiki/File:Wikidatacon-2017-group-pano-1.jpg" target="new">Wikimedia Commons</a>), beschnitten von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			Wie klingt das Wort? Mit der Wikibase-Installation Lingua Libre wird gesprochene Sprache strukturiert und bewahrt.
+				<!-- (<a href="https://commons.wikimedia.org/wiki/File:Wikidatacon-2017-group-pano-1.jpg" target="new">Wikimedia Commons</a>), beschnitten von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Die Software Wikibase als Basis für neue Wissensprojekte</em>
@@ -43,6 +46,8 @@
 				<ul class="bullet-list">
 					<li>
 						<a href="https://blog.wikimedia.de/2018/12/14/many-faces-of-wikibase-lingua-libre-macht-ˈʃpʁa%CB%90xə-hoerbar/" target="new">Blogbeitrag</a>
+					<li>
+						<a href="https://commons.wikimedia.org/wiki/Category:Lingua_Libre_pronunciation-deu" target="new">https://commons.wikimedia.org/wiki/Category:Lingua_Libre_pronunciation-deu</a>
 				</ul>
 			</div>
 		</div>

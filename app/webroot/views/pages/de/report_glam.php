@@ -1,8 +1,10 @@
 <main class="report-detail">
 	<section id="panorama" class="report-detail__panorama report-detail-hero cp cp--nav-zone"></section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Brunswyk (<a href="https://commons.wikimedia.org/wiki/File:GLAM-on-Tour_Museum_Schloss_Fuerstenberg_Wikipedianer_bei_der_Arbeit_(Brunswyk_2017).JPG" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
-
+		<div class="report-detail hero__caption t--zeta">
+			Kulturgüter für die Wikipedia erschließen: Diese 360-Grad-Aufnahme entstand bei der GLAM on Tour-Station im Jagdschloss Grunewald.
+			<!-- (<a href="https://commons.wikimedia.org/wiki/File:GLAM-on-Tour_Museum_Schloss_Fuerstenberg_Wikipedianer_bei_der_Arbeit_(Brunswyk_2017).JPG" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Wie die Kunst ins Netz kommt</em>
@@ -46,7 +48,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/PwYEfx4ojx0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-
+								GLAM on Tour
 							</div>
 						</div>
 					</div>

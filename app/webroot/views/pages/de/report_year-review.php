@@ -5,7 +5,10 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Visual Facilitators (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Jahresplan_2017.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			Mehr Freies Wissen für die ganze Welt: 2018 sind wir unseren Zielen ein gutes Stück näher gekommen.
+			<!-- (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Jahresplan_2017.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Das Jahr 2018 bei Wikimedia Deutschland</em>

@@ -5,75 +5,72 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Visual Facilitators (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Jahresplan_2017.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			More Free Knowledge for the whole world: In 2018 we have come a good deal closer to our goals.
+		<!-- (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Jahresplan_2017.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
-				<em>Das Jahr 2018 bei Wikimedia Deutschland</em>
+				<em>Looking back at 2018</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				2018 war für Wikimedia Deutschland ein Jahr, in dem wir viel Neues gelernt haben, viele Erfolge feiern und noch mehr Menschen für unsere Vision begeistern konnten. Das gesamte Wissen der Welt allen Menschen zur freien Verfügung zu stellen ist ein großes Ziel – 2018 sind wir auf dem Weg dahin ein gutes Stück vorangekommen.
+				2018 was a year in which we learned many new things, celebrated many successes and inspired even more people to join us in our vision. Making the world’s knowledge freely available to everyone is an ambitious goal – in 2018 we made good progress.
 			</div>
 			<div class="section__body t--gamma-serif">
 				<p>
-					2017 haben wir uns der gemeinsamen strategischen Ausrichtung der weltweiten Wikimedia-Bewegung angeschlossen. 2018 haben wir wichtige Vorarbeit geleistet, um die Ziele unserer Bewegung – „Wissen als Dienst“ (Knowledge as a Service) und „Chancengleichheit auf Wissen“ (Knowledge Equity) – für die deutschsprachigen und internationalen Freiwilligen-Communitys, die wir unterstützen, in den kommenden Jahren erfolgreich umsetzen zu können. Dazu haben wir uns angeschaut, wie sich die Welt um uns herum verändert und was wir tun müssen, um auch in Zukunft relevant zu bleiben und Freies Wissen weiterhin aktiv fördern zu können. Die <a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Zukunftsprozess" target="new">Ergebnisse aus diesem Prozess</a> bilden die Grundlage für die Planung unserer Arbeit für die nächsten Jahre. Als Gesellschaft zur Förderung Freien Wissens wollen wir große gesellschaftliche Veränderungen erreichen, nachhaltig Wirkung erzielen und die Zukunft aktiv gestalten.
+					We did important groundwork to successfully implement the goals of our movement – "Knowledge as a Service" and "Knowledge Equity" – for the German-speaking and international volunteer communities we support. We have looked at how the world around us is changing and what we need to do to actively promote Free Knowledge in the future. The <a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Zukunftsprozess/EN" target="new">results of this process</a> form the basis for planning our work for the coming years. As the association for the promotion of Free Knowledge, we want to achieve major social changes, create sustainable effects and actively shape the future.
 				</p>
 				<p>
-					Neben dieser wichtigen strategischen Arbeit haben wir 2018 auch in unseren drei Handlungsfeldern viel erreicht.
+					In addition to this important strategic work, we also achieved progress in 2018 in our three fields of action.
 				</p>
 				<p class="h--gamma">
-					Freiwillige
+					Volunteers
 				</p>
 				<div class="section__body t--gamma-serif">
 					<p>
-						Die Unterstützung der Ehrenamtlichen in den Wikimedia-Projekten ist seit Vereinsgründung 2004 ein wichtiger Grundpfeiler der Arbeit von Wikimedia Deutschland. 2018 haben wir unsere Förderangebote erfolgreich fortgeführt und weiterentwickelt. So konnten wir dem größten Fotowettbewerb der Welt – Wiki Loves Monuments – zu deutlich mehr Bekanntheit verhelfen und mit Angeboten wie Jugendfotoworkshops neue Zielgruppen für Freies Wissen begeistern.
+						Supporting the volunteers in the Wikimedia projects has been an essential part of the work of Wikimedia Deutschland since its founding in 2004. In 2018, we successfully continued and further developed our support programs. For instance, we were able to raise awareness of the world's largest photo competition – Wiki Loves Monuments – considerably and to engage new target groups with offers such as youth photo workshops.
 					</p>
 					<p>
-						Unsere Ziele bei der Gewinnung neuer Freiwilliger konnten wir dennoch nur teilweise erreichen. Obwohl die von uns geschaffenen Hilfsmittel den Einstieg in die Wikipedia für Neulinge erleichtern und sehr positive Resonanz bekommen, konnten wir den Trend des Rückgangs der aktiven Wikipedia-Autorenschaft nicht umkehren. Weitaus übertroffen wurden unsere Erwartungen allerdings beim ersten länderübergreifenden Wikipedia-Aktionstag, den wir in Zusammenarbeit mit den Communitys und den Wikimedia-Organisationen aus der Schweiz und Österreich mit großem Erfolg umsetzen konnten. 850 Wikipedia-Interessierte kamen in 11 Städten in die lokalen Wikipedia-Büros, um hinter die Kulissen der freien Enzyklopädie zu schauen.
+						However, we were only partially able to achieve our goals in recruiting new volunteers. Although the tools we have created make it easier for newcomers to join Wikipedia and have received very positive feedback, we have not been able to reverse the trend of a decline in active Wikipedia editors. However, our expectations were greatly exceeded at the first transnational Wikipedia Day, which we implemented with great success in cooperation with the communities and Wikimedia organizations from Switzerland and Austria. 850 people interested in Wikipedia came to the local Wikipedia offices in 11 cities to take a look behind the scenes of the free encyclopedia.
 					</p>
 				</div>
-				<p class="h--gamma">Software-Entwicklung
+				<p class="h--gamma">
+					Technology
 				</p>
 				<div class="section__body t--gamma-serif">
 					<p>
-						2018 haben wir viel dafür getan, die technische Infrastruktur für Freies Wissen weiter zu stärken. Unsere freie Wissensdatenbank Wikidata umfasst derzeit rund 56 Millionen Datensätze und entwickelt sich weiter ausgesprochen positiv – sowohl was die Datenmenge und -qualität, als auch die Datennutzung und die Entwicklung der Community betrifft. Die 2018 neu geschaffene Erweiterung um Sprachdaten (Lexeme) innerhalb Wikidata bietet zahlreiche spannende Möglichkeiten, neues Wissen zu generieren. Die Software hinter Wikidata – Wikibase – wird aufgrund unserer Maßnahmen von Institutionen zunehmend mehr genutzt. Mit den „Technischen Wünschen“ konnten wir die Nutzbarkeit der Wikimedia-Projekte erneut deutlich verbessern.
+						In 2018, we did a lot to further strengthen the technical infrastructure for Free Knowledge. Our free knowledge database Wikidata currently comprises around 56 million datasets and continues to develop extremely positively – both in terms of data volume and quality as well as data usage and community development. The newly created extension with lexicographical data (lexemes) within Wikidata offers numerous exciting possibilities to generate new knowledge. The software behind Wikidata – Wikibase – is increasingly used by institutions due to our measures. With the "Technical Wishes" we were once again able to significantly improve the usability of the Wikimedia projects.
 					</p>
 				</div>
-				<p class="h--gamma">Rahmenbedingungen
+				<p class="h--gamma">
+					Conditions
 				</p>
 				<div class="section__body t--gamma-serif">
 					<p>
-						Mit Blick auf die politischen und rechtlichen Rahmenbedingungen konnte wir 2018 feststellen, dass unser wachsendes Netzwerk es uns zunehmend ermöglicht, wichtige Argumente bei Institutionen und Entscheidenden zu platzieren und auch Gehör zu finden. Gerade in Hinblick auf die EU-Urheberrechtsreform konnten wir Freies Wissen auch auf europäischer Ebene als wichtiges Thema etablieren. Unsere Zusammenarbeit mit Kultur- Bildungs- und Wissenschaftsinstitutionen konnten wir erfolgreich fortführen und weiterentwickeln.
+						With regard to the political and legal conditions, we saw that our growing network is increasingly enabling us to place our key arguments with institutions and decision-makers and we’re being heard. Especially with regard to the EU copyright reform, we were able to establish Free Knowledge as an important topic at the European level. We have successfully continued and further developed our cooperation with cultural, educational and scientific institutions.
 					</p>
 					<p>
-						2018 führten wir unsere bisher erfolgreichste Spendenkampagne durch, im Rahmen derer uns rund 360.000 Menschen unterstützten. Wir konnten erneut eine große Anzahl neuer Mitglieder begrüßen. Mehr als 70.000 Menschen (Stand: März 2019) engagieren sich inzwischen gemeinsam mit uns für Freies Wissen. Auf dieser Basis werden wir gemeinsam mit unseren Partnerorganisationen und den vielen Tausend Ehrenamtlichen der Wikimedia-Projekte auch 2019 die Zukunft für Freies Wissen aktiv gestalten.
+						In 2018, we conducted our most successful fundraising campaign to date, in which around 360,000 people supported us. We were again able to welcome a large number of new members. More than 70,000 people (as of March 2019) have joined us in our commitment to Free Knowledge. On this basis, together with our partner organizations and the many thousands of volunteers of the Wikimedia projects, we will continue to actively shape the future of Free Knowledge in 2019.
 					</p>
 				</div>
 		</div>
 	</section>
 	<section class="section report__links">
-		<div class="limit--l">
-			<div class="section__body slider swiper-container loading">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/tR-hUCN9Jl8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Roter Faden 2017 Zeitraffer, Wikimedia Deutschland,
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
-							</div>
-						</div>
-					</div>
-				</div>
+		<div class="limit--s">
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
+				<ul class="bullet-list">
+					<li>
+						<a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Movement_Report_2018" target="new">https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Movement_Report_2018</a>
+				</ul>
 			</div>
 		</div>
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/members" class="button button--report">
+		<a href="/report/da-vinci" class="button button--report">
 			<p class="button--small">Zum nächsten Thema</p>
-			<p> Schon Mitglied? </p>
+			<p>Coding da Vinci</p>
 		</a>
 	</section>
 </main>

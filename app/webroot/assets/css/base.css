@@ -3251,8 +3251,3 @@ a:focus {
   animation-name: grow-2013;
   right: 94%;
 }
-
-.nav__list--upper .lang-switch,
-.nav__list--upper .pdf-download {
-  pointer-events: none; /* TODO: Delete ehen adding english content */
-}

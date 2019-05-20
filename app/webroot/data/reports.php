@@ -3,7 +3,7 @@
 		'name' => 'da-vinci',
 		'title' => [
 			'de' => 'Coding da Vinci',
-			'en' => ''
+			'en' => 'Coding da Vinci'
 		],
 		'category' => 'framework',
 		'cover' => '/assets/img/reports/da_vinci_cover.jpg',
@@ -13,7 +13,7 @@
 		'name' => 'data-new-water',
 		'title' => [
 			'de' => 'Daten sind das neue Grundwasser',
-			'en' => ''
+			'en' => 'Data is the new Groundwater'
 		],
 		'category' => 'framework',
 		'cover' => '/assets/img/reports/data_new_water_cover.jpg',
@@ -23,7 +23,7 @@
 		'name' => 'data',
 		'title' => [
 			'de' => 'Lexeme in Wikidata',
-			'en' => ''
+			'en' => 'Lexicographical Data on Wikidata'
 		],
 		'category' => 'technology',
 		'cover' => '/assets/img/reports/data_cover.jpg',
@@ -43,7 +43,7 @@
 		'name' => 'future',
 		'title' => [
 			'de' => 'Ausblick 2019',
-			'en' => ''
+			'en' => 'Outlook 2019'
 		],
 		'category' => 'wikimedia',
 		'cover' => '/assets/img/reports/future_cover.jpg',
@@ -53,7 +53,7 @@
 		'name' => 'glam',
 		'title' => [
 			'de' => 'Glam on Tour Grunewald',
-			'en' => ''
+			'en' => 'Glam on Tour'
 		],
 		'category' => 'framework',
 		'cover' => '/assets/img/reports/glam_cover.jpg',
@@ -63,7 +63,7 @@
 		'name' => 'members',
 		'title' => [
 			'de' => 'Mitglieder',
-			'en' => ''
+			'en' => 'Members'
 		],
 		'category' => 'wikimedia',
 		'cover' => '/assets/img/reports/members_cover.jpg',
@@ -83,7 +83,7 @@
 		'name' => 'search',
 		'title' => [
 			'de' => 'Technische Wünsche',
-			'en' => ''
+			'en' => 'Technical wishes'
 		],
 		'category' => 'technology',
 		'cover' => '/assets/img/reports/search_cover.jpg',
@@ -93,7 +93,7 @@
 		'name' => 'upload',
 		'title' => [
 			'de' => 'No Upload-Filter',
-			'en' => ''
+			'en' => 'No Upload-Filter'
 		],
 		'category' => 'framework',
 		'cover' => '/assets/img/reports/upload_cover.jpg',
@@ -104,7 +104,7 @@
 		'name' => 'wiki-loves-monuments',
 		'title' => [
 			'de' => 'Wiki Loves Monuments',
-			'en' => ''
+			'en' => 'Wiki Loves Monuments'
 		],
 		'category' => 'volunteers',
 		'cover' => '/assets/img/reports/wiki_loves_monuments_cover.jpg',
@@ -114,7 +114,7 @@
 		'name' => 'wikibase',
 		'title' => [
 			'de' => 'Wikibase',
-			'en' => ''
+			'en' => 'Wikibase'
 		],
 		'category' => 'technology',
 		'cover' => '/assets/img/reports/wikibase_cover.jpg',
@@ -124,7 +124,7 @@
 		'name' => 'year-review',
 		'title' => [
 			'de' => 'Das Jahr 2018',
-			'en' => ''
+			'en' => 'Looking back at 2018'
 		],
 		'category' => 'wikimedia',
 		'cover' => '/assets/img/reports/year_review_cover.jpg',

@@ -5,7 +5,10 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Lena Schall (motionensemble.de) (<a href="https://commons.wikimedia.org/wiki/File:Figur_Machmit_3_Wikipedia-Animation.png" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			1. Platz Europäischer Sonderpreis, Kathedrale von Gloucester
+				<!-- (<a href="https://commons.wikimedia.org/wiki/File:Figur_Machmit_3_Wikipedia-Animation.png" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Wiki Loves Monuments im europäischen Kulturerbejahr</em>
@@ -56,7 +59,7 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/UaceBXVYOKI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-
+								Wiki Loves Monuments 2018
 							</div>
 						</div>
 					</div>
@@ -77,6 +80,8 @@
 						<a href="https://blog.wikimedia.de/2018/05/25/wikipedia-im-europaeischen-jahr-des-kulturerbes/" target="new">Blogbeitrag 3</a>
 					<li>
 						<a href="https://blog.wikimedia.de/2019/02/13/europaeisches-kulturerbe-in-beeindruckenden-fotos-die-gewinner-des-wiki-loves-monuments-sonderpreises/" target="new">Blogbeitrag 4</a>
+					<li>
+						<a href="https://commons.wikimedia.org/wiki/File:Bildband_Wiki_Loves_Monuments_im_Europäischen_Kulturerbejahr.pdf" target="new">Bildband auf Commons</a>
 				</ul>
 			</div>
 		</div>

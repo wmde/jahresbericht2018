@@ -5,7 +5,10 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Ralf Rebmann (<a href="https://commons.wikimedia.org/wiki/File:Auftaktveranstaltung_Fellow-Programm_Freies_Wissen_2017_189.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			Eine Metapher zum Anfassen: Die neue Daten-Grundwasserpumpe steht für mehr Gemeinwohlorientierung in der Datenpolitik.
+			<!-- (<a href="https://commons.wikimedia.org/wiki/File:Auftaktveranstaltung_Fellow-Programm_Freies_Wissen_2017_189.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Daten sind das neue Grundwasser: Für mehr Gemeinwohlorientierung in der Datenpolitik.</em>
@@ -53,7 +56,7 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2018/09/15/daten-sind-das-neue-grundwasser/" target="new">https://blog.wikimedia.de/2018/09/15/daten-sind-das-neue-grundwasser/</a>
+						<a href="https://blog.wikimedia.de/2018/09/15/daten-sind-das-neue-grundwasser/" target="new">Blogbeitrag</a>
 				</ul>
 			</div>
 		</div>

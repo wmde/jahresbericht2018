@@ -5,7 +5,10 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Steffen Prößdorf (<a href="https://commons.wikimedia.org/wiki/File:Gruppenfoto_WikiCon2017_IMG_9159_LR10_by_Stepro.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			2018 hatten Interessierte im deutschsprachigen Raum die Möglichkeit, hinter die Kulissen der Wikipedia zu schauen.
+				<!-- (<a href="https://commons.wikimedia.org/wiki/File:Gruppenfoto_WikiCon2017_IMG_9159_LR10_by_Stepro.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Zu Gast bei der Wikipedia</em>
@@ -55,6 +58,24 @@
 				<p>
 					In allen 11 Städten gab es ein übergreifendes Fazit: Das Interesse, zu verstehen, wie die Wikipedia funktioniert und die “echten Menschen dahinter” kennenzulernen, ist extrem groß. Ob sich aus diesem Interesse auch die Bereitschaft entwickelt, selbst in der Wikipedia aktiv zu werden, bleibt abzuwarten. Wir werden 2019 auf dem Erfolg des Aktionstages aufbauen und weitere Wege ausprobieren, um Qualität und Fortbestand der Wikipedia für die Zukunft zu sichern.
 				</p>
+			</div>
+		</div>
+	</section>
+	<section class="section report__links">
+		<div class="limit--l">
+			<div class="section__body slider swiper-container loading">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<img src="/../../../assets/img/reports/day_of_action_additional.jpg"></img>
+							</div>
+							<div class="video__caption limit--s">
+								Wikipedia hautnah: Beim ersten Wikipedia-Aktionstag erzählen die ehrenamtlichen Autorinnen und Autoren  in 11 lokalen Wikipedia-Büros von ihrer Arbeit.
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

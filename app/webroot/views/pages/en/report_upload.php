@@ -5,17 +5,20 @@
 	>
 	</section>
 	<section class="section cp report-detail__text">
-		<div class="report-detail hero__caption t--zeta">Ralf Rebmann (<a href="https://commons.wikimedia.org/wiki/File:Auftaktveranstaltung_Fellow-Programm_Freies_Wissen_2017_189.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a></div>
+		<div class="report-detail hero__caption t--zeta">
+			Together for a free Internet: In 2018, we joined forces with partners from the Internet industry and civil society to campaign against upload filters.
+			<!-- (<a href="https://commons.wikimedia.org/wiki/File:Auftaktveranstaltung_Fellow-Programm_Freies_Wissen_2017_189.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
-				<em>Vom Nischenthema zur gesellschaftlichen Debatte: 15 Organisationen gegen Upload-Filter</em>
+				<em>From Niche Topic to Social Debate: 15 Organizations against Upload Filters</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Wikipedia lebt vom freien Austausch von Informationen. Die Online-Wissenssammlung gibt wieder, was in Büchern, Medien und wissenschaftlichen Artikeln dargelegt wird und durch weltweiten Austausch neuer Erkenntnisse entsteht. Deswegen setzen wir uns leidenschaftlich für ein freies Netz ein, das Austausch und Kooperation fördert.
+				Wikipedia thrives on the free exchange of information. The online knowledge collection reflects what is presented in books, media and scientific articles and is the result of the worldwide exchange of new ideas. That is why we are passionately committed to a free Internet that promotes exchange and cooperation.
 			</div>
 			<div class="section__body t--gamma-serif">
 				<p>
-					Im Rahmen der europäischen Reform des Urheberrechts, die teils wichtige Verbesserungen auch für den freien Zugang zu Wissen bringen wird, wurde 2016 erstmals die Einführung von Upload-Filtern zur Verhinderung von Urheberrechtsverletzungen propagiert. Egal ob Text, Bild oder Videobeitrag – sämtliche Inhalte einzelner Nutzenden auf größeren Internetplattformen sollen dem Vorschlag nach bereits vor dem Hochladen (Upload) auf vermeintliche Urheberrechtsverletzungen geprüft. Solche, die als potenziell rechtsverletzend maschinell erkannt werden, sollen blockiert werden. Differenzierte Urteile darüber, was rechtlich erlaubt ist oder nicht – sei es Kritik, Satire oder Kunst – können diese Filter aber nicht treffen. Somit bedrohen sie freie Meinungsäußerung und Vielfalt im Netz.
+					As part of the European reform of copyright law, which will also bring some important improvements for the free access to knowledge, the introduction of upload filters to prevent copyright infringements was propagated for the first time in 2016. No matter whether text, picture or video contribution – all contents of individual users on larger Internet platforms are to be examined  for alleged copyright infringements before the actual upload even takes place. Those that are automatically detected as potentially infringing should be blocked. Sophisticated judgements about what is legally permitted or not – be it criticism, satire or art – cannot, however, be achieved by these filters. That is why they are a threat to freedom of expression and diversity on the Internet.
 				</p>
 				<?php if (isset($achievements[0])): ?>
 				<div class="achievement-box">
@@ -33,31 +36,11 @@
 				<p>
 			</div>
 			<div class="section__body t--gamma-serif">
-					2018 haben wir und deshalb in einem Offenen Brief mit zahlreichen Partnern zusammengetan, um gegen die Einführung von Upload-Filtern zu kämpfen. Neben Wikimedia Deutschland haben sich 14 weitere Organisationen aus Zivilgesellschaft und Internetwirtschaft (darunter Bitkom, Verbraucherzentrale Bundesverband und die Open Knowledge Foundation) mit ihren Bedenken an Bundesregierung und EU-Abgeordnete gewandt und damit ein öffentliches Zeichen gesetzt. Wikipedia wurde letztendlich von der Filterpflicht ausgenommen, dennoch haben wir uns gemeinsam mit den Wikipedia-Freiwilligen weiter für Verbesserungen der Reform im Sinne des Freien Wissens eingesetzt.
+					In 2018, we joined forces with numerous partners in an open letter to fight against the introduction of upload filters. In addition to Wikimedia Deutschland, 14 other organizations from civil society and the Internet industry (including Bitkom, Verbraucherzentrale Bundesverband and the Open Knowledge Foundation) have addressed their concerns to the German government and EU parliamentarians, thereby sending a public signal. Wikipedia was ultimately exempted from the filter requirement, but we continued to work with the Wikipedia volunteers to lobby for a reform that provides better conditions for Free Knowledge.
 				</p>
 				<p>
-					Immer wieder haben wir zusammen mit zahlreichen Netzorganisationen über die Probleme der Reform und Alternativvorschläge informiert. Aus einem komplexen “Nischenthema” ist spätestens 2019 eine breite gesellschaftliche Debatte über <a href="https://blog.wikimedia.de/2019/04/16/freies-wissen-auf-europaeischer-ebene-angekommen/" target="new">Freiheit und Reglementierung des Netzes</a> geworden. Vor der Abstimmung im EU-Parlament gingen Tausende vor allem junge Menschen deutschlandweit gegen Upload-Filter auf die Straße. Die Unterstützung des Parlaments haben die Filter trotzdem erhalten, die Umsetzung der Richtlinie erfolgt nun aber unter dem kritischen Blick einer interessierten und informierten Öffentlichkeit.
+					Together with numerous Internet organizations, we have repeatedly provided information about the problematic aspects of the reform and alternative proposals. By 2019 at the latest, a complex "niche issue" has turned into a broad social debate about freedom and regulation of the Internet. Before the vote in the EU Parliament, thousands of mainly young people took to the streets all over Germany to protest against upload filters. The filters have nevertheless received the support of the Parliament, but the implementation of the directive is now taking place under the critical eye of an interested and informed public.
 				</p>
-			</div>
-		</div>
-	</section>
-	<section class="section report__links">
-		<div class="limit--l">
-			<div class="section__body slider swiper-container loading">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/ZQ6iXhlwBAM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Das Fellow-Programm Freies Wissen ist ein gemeinsames Projekt von Wikimedia Deutschland, dem Stifterverband und der VolkswagenStiftung, und richtet sich an Nachwuchswissenschaftlerinnen und -wissenschaftler, die ihre Forschungsprozesse offen gestalten möchten;
-								Fellow-Programm Freies Wissen, Kamera: Ian Delú, Joana Kauer, Schnitt: Joana Kauer für Wikimedia Deutschland,
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new"> CC BY-SA 4.0</a>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -65,21 +48,20 @@
 		<div class="limit--s">
 			<div class="border-box border-box--report">
 				<div class="t--delta">LINKS</div>
-				<p>
-					Die beiden Programm-Verantwortlichen bei Wikimedia, Sarah Behrens und Christopher Schwarzkopf, erzählen im im Open Science Radio mehr über die Idee, die Motivation, den bereits erfolgreich absolvierten ersten Durchlauf, sowie den gegenwärtigen Durchlauf und die Zukunft des Programms.
-				</p>
 				<ul class="bullet-list">
-					<li><a href="http://www.openscienceradio.org/2017/12/12/osr094-freies-wissen-in-der-wissenschaft-wmde-de/" target="new">Folge 1</a></li>
-					<li><a href="http://www.openscienceradio.org/2018/02/07/osr096-fellow-programm-projekte-ring-a-scientist-organizing-openness-wmde-de/" target="new">Folge 2</a></li>
+					<li>
+						More information:
+							<a href="https://blog.wikimedia.de/2019/04/24/free-knowledge-hard-won-impact-at-the-european-level/" target="new">Blog</a>
+						(April 2019)
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/2017" class="button button--report">
+		<a href="/report/wiki-loves-monuments" class="button button--report">
 			<p class="button--small">Zum nächsten Thema</p>
-			<p> Das Jahr 2017 bei Wikimedia Deutschland </p>
+			<p>Wiki Loves Monuments</p>
 		</a>
 	</section>
 </main>
