@@ -30,7 +30,7 @@
 		],
 		'number' => '40442',
 		'teaser' => [
-			'de' => 'Lexeme wurden 2018 in Wikidata angelegt (statt der erwarteten 5000',
+			'de' => 'Lexeme wurden 2018 in Wikidata angelegt (statt der erwarteten 5000).',
 			'en' => 'lexemes were created in Wikidata in 2018 (instead of the expected 5,000).'
 		],
 		'url' => '/report/data'

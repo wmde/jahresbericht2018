@@ -34,7 +34,8 @@
 						Unsere Ziele bei der Gewinnung neuer Freiwilliger konnten wir dennoch nur teilweise erreichen. Obwohl die von uns geschaffenen Hilfsmittel den Einstieg in die Wikipedia für Neulinge erleichtern und sehr positive Resonanz bekommen, konnten wir den Trend des Rückgangs der aktiven Wikipedia-Autorenschaft nicht umkehren. Weitaus übertroffen wurden unsere Erwartungen allerdings beim ersten länderübergreifenden Wikipedia-Aktionstag, den wir in Zusammenarbeit mit den Communitys und den Wikimedia-Organisationen aus der Schweiz und Österreich mit großem Erfolg umsetzen konnten. 850 Wikipedia-Interessierte kamen in 11 Städten in die lokalen Wikipedia-Büros, um hinter die Kulissen der freien Enzyklopädie zu schauen.
 					</p>
 				</div>
-				<p class="h--gamma">Software-Entwicklung
+				<p class="h--gamma">
+					Technolgie
 				</p>
 				<div class="section__body t--gamma-serif">
 					<p>
