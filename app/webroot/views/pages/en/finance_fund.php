@@ -21,7 +21,7 @@
 						<th class="ft__col-val ft__em--fund">31.12.2016</th>
 					</thead>
 					<tr class="ft__row-head ft__row-line--black">
-						<td class="ft__col-key--black">Anlagevermögen</td>
+						<td class="ft__col-key--black">Fixed assets</td>
 						<td class="ft__col-val ft__empty ft__fund-border"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
@@ -29,7 +29,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Immaterielle Vermögens&shy;gegenstände</td>
+						<td class="ft__col-key--black">Intangible assets</td>
 						<td class="ft__col-val ft__fund-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>
@@ -37,7 +37,7 @@
 						<td class="ft__col-val">0 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Sachanlagen</td>
+						<td class="ft__col-key--black">Tangible assets</td>
 						<td class="ft__col-val ft__fund-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>
@@ -45,7 +45,7 @@
 						<td class="ft__col-val">0 €</td>
 					</tr>
 					<tr class="ft__row-head ft__row-line--black">
-						<td class="ft__col-key--black">Umlaufvermögen</td>
+						<td class="ft__col-key--black">Current assets</td>
 						<td class="ft__col-val ft__fund-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
@@ -53,7 +53,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Forderungen und sonstige Vermögens&shy;gegenstände</td>
+						<td class="ft__col-key--black">Receivables and other assets</td>
 						<td class="ft__col-val ft__fund-border">100.807 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">50.980 €</td>
@@ -61,7 +61,7 @@
 						<td class="ft__col-val">569.171 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Bankguthaben</td>
+						<td class="ft__col-key--black">Bank deposits</td>
 						<td class="ft__col-val ft__fund-border">9.112.142 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">8.278.607 €</td>
@@ -77,7 +77,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__row-foot ft__col-key--black">Rechnungs&shy;abgrenzungs&shy;posten</td>
+						<td class="ft__row-foot ft__col-key--black">DEFERRED ITEMS</td>
 						<td class="ft__col-val ft__fund-border">2.973 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">5.326 €</td>
@@ -89,7 +89,7 @@
 						<td class="ft__col-val ft__fund-border ft__empty"></td>
 					</tr>
 					<tfoot>
-						<td class="ft__col-key--black">Bilanzsumme</td>
+						<td class="ft__col-key--black">BALANCE SHEET TOTAL</td>
 						<td class="ft__col-val ft__fund-border ft__fund-bg">9.215.921 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__em--fund">8.334.913 €</td>
@@ -114,7 +114,7 @@
 						<th class="ft__col-val ft__em--fundft__cell-line">31.12.2016</th>
 					</thead>
 					<tr class="ft__row-head ft__row-line--black">
-						<td class="ft__col-key--black">Eigenkapital</td>
+						<td class="ft__col-key--black">EQUITY</td>
 						<td class="ft__col-val ft__empty ft__fund-border"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
@@ -122,7 +122,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Gezeichnetes Kapital</td>
+						<td class="ft__col-key--black">Subscribed capital</td>
 						<td class="ft__col-val ft__fund-border">25.000 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">25.000 €</td>
@@ -130,7 +130,7 @@
 						<td class="ft__col-val">25.000 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Gewinnrücklagen</td>
+						<td class="ft__col-key--black">Surplus reserves</td>
 						<td class="ft__col-val ft__fund-border">310.881 €/td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">217.141 €</td>
@@ -146,7 +146,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__row-foot ft__col-key--black">Rückstellungen</td>
+						<td class="ft__row-foot ft__col-key--black">RESERVES</td>
 						<td class="ft__col-val ft__fund-border">178.430 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">178.581 €</td>
@@ -162,7 +162,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-head ft__row-line--black">
-						<td class="ft__col-key--black">Verbindlichkeiten</td>
+						<td class="ft__col-key--black">ACCOUNTS PAYABLE</td>
 						<td class="ft__col-val ft__fund-border ft__empty"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__empty"></td>
@@ -170,7 +170,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Aus Mittelweitergabe&shy;verpflichtungen</td>
+						<td class="ft__col-key--black">From forwarded funds</td>
 						<td class="ft__col-val ft__fund-border">8.669.837 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">7.866.353 €</td>
@@ -178,7 +178,7 @@
 						<td class="ft__col-val ">8.065.148 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Aus Lieferungen und Leistungen</td>
+						<td class="ft__col-key--black">From trade payables and other accounts payable</td>
 						<td class="ft__col-val ft__fund-border">25.002 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">45.693 €</td>
@@ -186,7 +186,7 @@
 						<td class="ft__col-val">24.517 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Sonstige Verbindlichkeiten</td>
+						<td class="ft__col-key--black">Other accounts payable</td>
 						<td class="ft__col-val ft__fund-border">6.772 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">2.145 €</td>
@@ -206,7 +206,7 @@
 						<td class="ft__col-val ft__fund-border ft__empty"></td>
 					</tr>
 					<tfoot>
-						<td class="ft__col-key--black">Bilanzsumme</td>
+						<td class="ft__col-key--black">BALANCE SHEET TOTAL</td>
 						<td class="ft__col-val ft__fund-border ft__fund-bg">9.215.921 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__em--fund">8.334.913 €</td>
@@ -231,7 +231,7 @@
 						<th class="ft__col-val ft__em--fundft__cell-line">31.12.2016</th>
 					</thead>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Spendenerträge</td>
+						<td class="ft__col-key--black">Donation revenue</td>
 						<td class="ft__col-val ft__fund-border">10.948.538 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">10.281.485 €</td>
@@ -239,7 +239,7 @@
 						<td class="ft__col-val">10.363.878 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Sonstige betriebliche Erträge</td>
+						<td class="ft__col-key--black">Other operational income</td>
 						<td class="ft__col-val ft__fund-border">879.505 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">954.522 €</td>
@@ -247,7 +247,7 @@
 						<td class="ft__col-val ">26.784 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Sonstige Zinsen und ähnliche Erträge</td>
+						<td class="ft__col-key--black">Other interest and related revenue</td>
 						<td class="ft__col-val ft__fund-border">78 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">123 €</td>
@@ -263,7 +263,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Aufwendungen aus Mittelweitergabe</td>
+						<td class="ft__col-key--black">Expenditure from forwarded funds</td>
 						<td class="ft__col-val ft__fund-border">-10.948.538 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">-10.281.485 €</td>
@@ -271,7 +271,7 @@
 						<td class="ft__col-val ">-9.702.226 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Personal&shy;aufwendungen</td>
+						<td class="ft__col-key--black">Personnel expenditures</td>
 						<td class="ft__col-val ft__fund-border">-332.491 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-257.404 €</td>
@@ -279,7 +279,7 @@
 						<td class="ft__col-val">-179.321 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Abschreibungen</td>
+						<td class="ft__col-key--black">Depreciation</td>
 						<td class="ft__col-val ft__fund-border">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>
@@ -287,7 +287,7 @@
 						<td class="ft__col-val">-180 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Sonstige betriebliche Aufwendungen</td>
+						<td class="ft__col-key--black">Other operational expenditures</td>
 						<td class="ft__col-val ft__fund-border">-453.352 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-480.100 €</td>
@@ -303,7 +303,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-foot ft__row-line--black">
-						<td class="ft__col-key--black">Jahresüberschuss</td>
+						<td class="ft__col-key--black">ANNUAL SURPLUS</td>
 						<td class="ft__col-val ft__fund-border">93.740 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__em--fund">217.141 €</td>
@@ -311,7 +311,7 @@
 						<td class="ft__col-val">0 €</td>
 					</tr>
 					<tr class="ft__row-line--black">
-						<td class="ft__col-key--black">Einstellungen in Gewinnrücklagen</td>
+						<td class="ft__col-key--black">Allocation to reserves</td>
 						<td class="ft__col-val ft__fund-border">-93.740 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">-217.141 €</td>
@@ -323,7 +323,7 @@
 						<td class="ft__col-val ft__fund-border ft__empty"></td>
 					</tr>
 					<tfoot>
-						<td class="ft__col-key--black">Bilanzgewinn</td>
+						<td class="ft__col-key--black">NET PROFIT</td>
 						<td class="ft__col-val ft__fund-border ft__fund-bg">0 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ft__em--fund">0 €</td>
