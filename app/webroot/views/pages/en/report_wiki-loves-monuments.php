@@ -7,8 +7,20 @@
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
 			1st place European Special Prize, Cathedral of Gloucester
-				<!-- (<a href="https://commons.wikimedia.org/wiki/File:Figur_Machmit_3_Wikipedia-Animation.png" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a>-->
-			</div>
+			<a href="https://commons.wikimedia.org/wiki/User:Cjtcherrington" target="new">
+				Christopher JT Cherrington
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:The_Cloisters_at_Gloucester_Cathedral.jpg" target="new">
+				The Cloisters at Gloucester Cathedral
+			</a>,
+
+			cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Wiki Loves Monuments in the European Year of Cultural Heritage</em>

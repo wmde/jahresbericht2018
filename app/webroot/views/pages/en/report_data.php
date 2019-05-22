@@ -6,8 +6,11 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			Understanding more: through language data in our Free Knowledge database Wikidata new knowledge is generated.
-			<!-- (<a href="https://commons.wikimedia.org/wiki/File:22._Mitgliederversammlung_28.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			Understanding more: through language data in our Free Knowledge database Wikidata new knowledge is generated.<br>
+			Photo:
+			<a href="https://pixabay.com/vectors/hello-languages-word-cloud-foreign-3791381/" target="new">
+				https://pixabay.com/vectors/hello-languages-word-cloud-foreign-3791381/
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
@@ -62,7 +65,7 @@
 					<li>
 						<a href="https://blog.wikimedia.de/2019/03/25/lexicographical-data-on-wikidata-words-words-words/" target="new">Blog article</a>
 					<li>
-						Article play: <a href="http://auregann.fr/derdiedas/" target="new">german</a>, <a href="http://auregann.fr/unune" target="new">french</a>, <a href="https://tools.wmflabs.org/enet/" target="new">danish</a>
+						Article Game: <a href="http://auregann.fr/derdiedas/" target="new">german</a>, <a href="http://auregann.fr/unune" target="new">french</a>, <a href="https://tools.wmflabs.org/enet/" target="new">danish</a>
 				</ul>
 			</div>
 		</div>

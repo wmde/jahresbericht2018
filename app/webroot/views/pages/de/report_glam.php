@@ -2,8 +2,18 @@
 	<section id="panorama" class="report-detail__panorama report-detail-hero cp cp--nav-zone"></section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			Kulturgüter für die Wikipedia erschließen: Diese 360-Grad-Aufnahme entstand bei der GLAM on Tour-Station im Jagdschloss Grunewald.
-			<!-- (<a href="https://commons.wikimedia.org/wiki/File:GLAM-on-Tour_Museum_Schloss_Fuerstenberg_Wikipedianer_bei_der_Arbeit_(Brunswyk_2017).JPG" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			Kulturgüter für die Wikipedia erschließen: Diese 360-Grad-Aufnahme entstand bei der GLAM on Tour-Station im Jagdschloss Grunewald.<br>
+			© Superbass / CC BY-SA 4.0 (via Wikimedia Commons),
+
+			<a href="https://commons.wikimedia.org/wiki/File:2018-09-22-Jagdschloss_Grunewald_360-0010767.jpg" target="new">
+				2018-09-22-Jagdschloss Grunewald 360-0010767
+			</a>,
+
+			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">

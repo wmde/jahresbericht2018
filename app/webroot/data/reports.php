@@ -40,6 +40,16 @@
 		'hero' => '/assets/img/reports/day_of_action_hero.jpg',
 	],
 	[
+		'name' => 'explanation',
+		'title' => [
+			'de' => 'Wikimedia kurz erklärt',
+			'en' => 'Wikimedia briefly explained'
+		],
+		'category' => 'wikimedia',
+		'cover' => '/assets/img/reports/explanation_cover.jpg',
+		'hero' => '/assets/img/reports/explanation_hero.jpg',
+	],
+	[
 		'name' => 'future',
 		'title' => [
 			'de' => 'Ausblick 2019',
@@ -52,8 +62,8 @@
 	[
 		'name' => 'glam',
 		'title' => [
-			'de' => 'Glam on Tour Grunewald',
-			'en' => 'Glam on Tour'
+			'de' => 'GLAM on Tour Grunewald',
+			'en' => 'GLAM on Tour'
 		],
 		'category' => 'framework',
 		'cover' => '/assets/img/reports/glam_cover.jpg',
@@ -83,7 +93,7 @@
 		'name' => 'search',
 		'title' => [
 			'de' => 'Technische Wünsche',
-			'en' => 'Technical wishes'
+			'en' => 'Technical Wishes'
 		],
 		'category' => 'technology',
 		'cover' => '/assets/img/reports/search_cover.jpg',
@@ -123,7 +133,7 @@
 	[
 		'name' => 'year-review',
 		'title' => [
-			'de' => 'Das Jahr 2018',
+			'de' => 'Rückblick: Das Jahr 2018',
 			'en' => 'Looking back at 2018'
 		],
 		'category' => 'wikimedia',

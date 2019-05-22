@@ -7,7 +7,7 @@
 		'number' => '146',
 		'teaser' => [
 			'de' => 'Kulturinstitutionen haben seit der ersten Veranstaltung 2014 im Rahmen von Coding da Vinci insgesamt 218 Datensets unter einer freien Lizenz zur Verfügung gestellt.',
-			'en' => 'Cultural institutions have provided a total of 218 data sets under a free license since the first Coding da Vinci event in 2014.'
+			'en' => 'cultural institutions have provided a total of 218 data sets under a free license since the first Coding da Vinci event in 2014.'
 		],
 		'url' => '/report/da-vinci'
 	],
@@ -67,7 +67,7 @@
 		'number' => '70000',
 		'teaser' => [
 			'de' => 'Mitglieder engagieren sich gemeinsam mit uns für Freies Wissen.',
-			'en' => 'members are committed to Free Knowledge together with us.'
+			'en' => 'members are supporting us in our advocacy of Free Knowledge.'
 		],
 		'url' => '/report/members'
 	],
@@ -90,8 +90,8 @@
 		],
 		'number' => '496',
 		'teaser' => [
-			'de' => 'Wikis nutzen die Vorteile der neuen Suchfunktion, damit sich Inhalte leichter finden lassen.',
-			'en' => 'Wikis use the advantages of the new search feature to make it easier to find content.'
+			'de' => 'Wikis nutzen die Vorteile der neuen Suchfunktion, mit der sich Inhalte leichter finden lassen.',
+			'en' => 'Wikis use the advantages of the new search feature making it easier to find content.'
 		],
 		'url' => '/report/search'
 	],
@@ -103,7 +103,7 @@
 		'number' => '15',
 		'teaser' => [
 			'de' => 'Organisationen aus Internetwirtschaft und Zivilgesellschaft haben wir Anfang 2018 in einem Offenen Brief gegen die umstrittenen Upload-Filter vereint.',
-			'en' => 'Organisations from the Internet industry and civil society united 2018 in an open letter against the controversial upload filters.'
+			'en' => 'organizations from the Internet industry and civil society united in 2018 in an open letter against the controversial upload filters.'
 		],
 		'url' => '/report/upload'
 	],

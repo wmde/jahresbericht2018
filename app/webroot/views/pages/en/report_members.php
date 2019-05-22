@@ -6,8 +6,20 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			Participate in decisions: At the general assembly of Wikimedia Deutschland, important decisions on the future of the organization are made.
-			<!-- (<a href="https://commons.wikimedia.org/wiki/File:171118_Wikimedia_MV_08.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			Participate in decisions: At the general assembly of Wikimedia Deutschland, important decisions on the future of the organization are made.<br>
+			<a href="https://commons.wikimedia.org/wiki/User:Annika_Möller_%28WMDE%29" target="new">
+				Anne Braun for Wikimedia Deutschland
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:23._Mitgliederversammlung_Wikimedia_Deutschland_22.jpg" target="new">
+				23. Mitgliederversammlung Wikimedia Deutschland 22
+			</a>,
+
+			cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">

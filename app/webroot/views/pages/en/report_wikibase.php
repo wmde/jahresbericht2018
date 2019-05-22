@@ -6,8 +6,20 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			How does that word sound? The Wikibase installation Lingua Libre structures and preserves spoken language.
-				<!-- (<a href="https://commons.wikimedia.org/wiki/File:Wikidatacon-2017-group-pano-1.jpg" target="new">Wikimedia Commons</a>), beschnitten von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			How does that word sound? The Wikibase installation Lingua Libre structures and preserves spoken language.<br>
+			<a href="https://commons.wikimedia.org/wiki/User:Seeris" target="new">
+				Seeris
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:LinguaLibreAtikamkew1.jpg" target="new">
+				LinguaLibreAtikamkew1
+			</a>,
+
+			cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">

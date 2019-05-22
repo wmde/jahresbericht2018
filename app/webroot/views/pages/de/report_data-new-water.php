@@ -6,21 +6,26 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			Eine Metapher zum Anfassen: Die neue Daten-Grundwasserpumpe steht für mehr Gemeinwohlorientierung in der Datenpolitik.
-			<!-- (<a href="https://commons.wikimedia.org/wiki/File:Auftaktveranstaltung_Fellow-Programm_Freies_Wissen_2017_189.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			Eine Metapher zum Anfassen: Die neue Daten-Grundwasserpumpe steht für mehr Gemeinwohlorientierung in der Datenpolitik.<br>
+
+			Wikimedia Deutschland e. V,
+
+			<a href="https://commons.wikimedia.org/wiki/File:Datenpumpe_09.png" target="new">
+				Datenpumpe 09
+			</a>,
+
+			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Daten sind das neue Grundwasser: Für mehr Gemeinwohlorientierung in der Datenpolitik.</em>
 			</h1>
 			<div class="section__teaser t--gamma">
-				Als Gesellschaft zur Förderung Freien Wissens versucht Wikimedia Deutschland, die Grundprinzipien der Wikipedia auf alle gesellschaftlichen Bereiche zu übertragen. Mit dem Fellow-Programm Freies Wissen unterstützen wir deshalb junge Forschende dabei, die Methoden, Daten und Ergebnisse ihrer Arbeit frei verfügbar und für alle Menschen nachnutzbar zu machen. Die Idee ist, dass die Fellows nicht nur selbst lernen, Offene Wissenschaft zu praktizieren, sondern ihre Kenntnisse in den Institutionen weiterverbreiten.
-				Damit setzen wir uns für eine stärkere Öffnung wissenschaftlicher Forschung und Lehre ein.
-			</div>
-			<div class="section__body t--gamma-serif">
-				<p>
-					Wenn es um Daten geht, wird meist nur diskutiert, wer wie mit Daten Geld verdienen darf. Dadurch werden jedoch wichtige Fragen ausgeblendet, die auch Freies Wissen betreffen: Wem sollen öffentliche Daten und ihre Verarbeitung nutzen? Wie können Daten als Ressource geschützt und zu einem sinnvoll genutzten Gemeingut werden? Wir meinen: In der Datenpolitik muss viel mehr über Gemeinwohl geredet werden. Dafür schlagen wir eine neue Daten-Metapher vor.
-				</p>
+				Wenn es um Daten geht, wird meist nur diskutiert, wer wie mit Daten Geld verdienen darf. Dadurch werden jedoch wichtige Fragen ausgeblendet, die auch Freies Wissen betreffen: Wem sollen öffentliche Daten und ihre Verarbeitung nutzen? Wie können Daten als Ressource geschützt und zu einem sinnvoll genutzten Gemeingut werden? Wir meinen: In der Datenpolitik muss viel mehr über Gemeinwohl geredet werden. Dafür schlagen wir eine neue Daten-Metapher vor.
 			</div>
 			<p class="section__title h--beta">
 				Daten sind das neue Grundwasser

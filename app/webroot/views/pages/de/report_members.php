@@ -6,8 +6,20 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			Mitentscheiden: Auf der Mitgliederversammlung von Wikimedia Deutschland werden richtungsweisende Entscheidungen zur Zukunft des Vereins getroffen.
-			<!-- (<a href="https://commons.wikimedia.org/wiki/File:171118_Wikimedia_MV_08.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			Mitentscheiden: Auf der Mitgliederversammlung von Wikimedia Deutschland werden richtungsweisende Entscheidungen zur Zukunft des Vereins getroffen.<br>
+			<a href="https://commons.wikimedia.org/wiki/User:Annika_Möller_%28WMDE%29" target="new">
+				Anne Braun for Wikimedia Deutschland
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:23._Mitgliederversammlung_Wikimedia_Deutschland_22.jpg" target="new">
+				23. Mitgliederversammlung Wikimedia Deutschland 22
+			</a>,
+
+			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
@@ -40,7 +52,7 @@
 					Im Dezember kam dann die 23. Mitgliederversammlung in Berlin zusammen. Neben der <a href="https://blog.wikimedia.de/2018/12/01/6-praesidium-von-wikimedia-deutschland-ist-gewaehlt/" target="new">Neuwahl des ehrenamtlichen Präsidiums</a> wurden hier richtungsweisende Entscheidungen zur Zukunft des Vereins getroffen. So entscheiden die Mitglieder künftig im Rahmen der Mitgliederversammlung direkt die strategische Ausrichtung des Vereins mit. In diesem Zuge beschloss die Mitgliederversammlung die <a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Zukunftsprozess/Strategien" target="new">strategischen Richtungen für die drei Handlungsfelder</a> (Freiwillige, Technologie, Rahmenbedingungen), die die Arbeit Wikimedias in den nächsten Jahren maßgeblich prägen werden.
 				</p>
 				<p>
-					Eine weitere Neuerung ist der Beschluss der Mitglieder, sich ab 2019 nur noch einmal jährlich zur Mitgliederversammlung zu treffen. Diese wird dann Teil eines ganzen Wikimedia-Wochenendes – erstmals am 15. und 16. Juni 2019 in Berlin. Am Samstag laden wir Mitglieder, Partner, Freunde, Ehrenamtliche und die Öffentlichkeit am großen <a href="https://tagdesfreienwissens.wikimedia.de/" target="new">Tag des Freien Wissens</a> dazu ein, den Verein und die Wikimedia-Projekte besser kennenzulernen. Die formelle Mitgliederversammlung findet dann am Sonntag statt und schließt damit das erste Wikimedia-Wochenende.
+					Eine weitere Neuerung ist der Beschluss der Mitglieder, sich ab 2019 nur noch einmal jährlich zur Mitgliederversammlung zu treffen. Diese wird dann Teil eines ganzen Wikimedia-Wochenendes – erstmals am 15. und 16. Juni 2019 in Berlin. Am Samstag laden wir Mitglieder, Partnerorganisationen, Freunde, Ehrenamtliche und die Öffentlichkeit am großen <a href="https://tagdesfreienwissens.wikimedia.de/" target="new">Tag des Freien Wissens</a> dazu ein, den Verein und die Wikimedia-Projekte besser kennenzulernen. Die formelle Mitgliederversammlung findet dann am Sonntag statt und schließt damit das erste Wikimedia-Wochenende.
 				</p>
 			</div>
 		</div>

@@ -6,9 +6,21 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			1. Platz Europäischer Sonderpreis, Kathedrale von Gloucester
-				<!-- (<a href="https://commons.wikimedia.org/wiki/File:Figur_Machmit_3_Wikipedia-Animation.png" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
-			</div>
+			1. Platz Europäischer Sonderpreis, Kathedrale von Gloucester<br>
+			<a href="https://commons.wikimedia.org/wiki/User:Cjtcherrington" target="new">
+				Christopher JT Cherrington
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:The_Cloisters_at_Gloucester_Cathedral.jpg" target="new">
+				The Cloisters at Gloucester Cathedral
+			</a>,
+
+			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Wiki Loves Monuments im europäischen Kulturerbejahr</em>
@@ -31,7 +43,7 @@
 					</div>
 				<?php endif ?>
 				<p>
-					Wiki Loves Monuments gilt seit 2012 laut Guinnes-Buch der Rekorde als größter Fotowettbewerb der Welt und wird von ehrenamtlichen Wikipedia-Aktiven organisiert. Jährlich werden dabei allein in Deutschland ca. 20.000 Bilder unter einer freien Lizenz ins Medienarchiv Wikimedia Commons geladen und stehen damit für Wikipedia und alle Menschen zur freien Verfügung. Der Wettbewerb leistet einen großen Beitrag zum Denkmalschutz und der Bewahrung kultureller Vielfalt.
+					Wiki Loves Monuments gilt seit 2012 laut Guinness-Buch der Rekorde als größter Fotowettbewerb der Welt und wird von ehrenamtlichen Wikipedia-Aktiven organisiert. Jährlich werden dabei allein in Deutschland ca. 20.000 Bilder unter einer freien Lizenz ins Medienarchiv Wikimedia Commons geladen und stehen damit für Wikipedia und alle Menschen zur freien Verfügung. Der Wettbewerb leistet einen großen Beitrag zum Denkmalschutz und der Bewahrung kultureller Vielfalt.
 				</p>
 				<p>
 					2018 stand Wiki Loves Monuments ganz im Zeichen des <a href="https://sharingheritage.de/" target="new">Europäischen Kulturerbejahres</a>. Gefördert von der <a href="https://de.wikipedia.org/wiki/Beauftragter_der_Bundesregierung_für_Kultur_und_Medien" target="new">Beauftragten der Bundesregierung für Kultur und Medien</a> setzte Wikimedia Deutschland gemeinsam mit Wikimedia-Aktiven verschiedene Maßnahmen ein, um den Fotowettbewerb in der Öffentlichkeit noch bekannter und attraktiver zu machen. Mit einem internationalen Sonderpreis wurde beispielsweise der Blick auf das Besondere am europäischen Kulturerbe und seiner Geschichte gelenkt: Wo finden sich Spuren gemeinsamer europäischer Geschichte? Welches Denkmal in meiner Nähe zeugt von unserer geteilten Geschichte? Der Sonderpreis lud Menschen aller Altersklassen dazu ein, bei einer Spurensuche Kulturerbe zu erkunden.

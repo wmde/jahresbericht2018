@@ -6,9 +6,20 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-		At the Wikimedia Conference 2018, hosted by Wikimedia Deutschland, Wikimedians discussed passionately how the Wikimedia movement needs to adapt to be able to achieve its 2030 goals.
-		<!-- Jason Krüger for Wikimedia Deutschland e.V.
-		(<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2017_–_147.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			At the Wikimedia Conference 2018, hosted by Wikimedia Deutschland, Wikimedians discussed passionately how the Wikimedia movement needs to adapt to be able to achieve its 2030 goals.<br>
+			<a href="https://commons.wikimedia.org/wiki/User:Vkw.studiogood" target="new">
+				Jason Krüger for Wikimedia Deutschland e.V.
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2018_–_108.jpg" target="new">
+				Wikimedia Conference 2018 – 108
+			</a>,
+
+			cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">

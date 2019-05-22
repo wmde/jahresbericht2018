@@ -6,9 +6,20 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-		Auf der Wikimedia Conference 2018, ausgerichtet von Wikimedia Deutschland, diskutierten Wikimedianerinnen und Wikimedianer die Notwendigkeiten das Wikimedia-Netzwerk zu verändern, um die Ziele für 2030 zu erreichen.
-		<!-- Jason Krüger for Wikimedia Deutschland e.V.
-		(<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2017_–_147.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			Auf der Wikimedia Conference 2018, ausgerichtet von Wikimedia Deutschland, diskutierten Wikimedianerinnen und Wikimedianer die Notwendigkeiten das Wikimedia-Netzwerk zu verändern, um die Ziele für 2030 zu erreichen.<br>
+			<a href="https://commons.wikimedia.org/wiki/User:Vkw.studiogood" target="new">
+				Jason Krüger for Wikimedia Deutschland e.V.
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2018_–_108.jpg" target="new">
+				Wikimedia Conference 2018 – 108
+			</a>,
+
+			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">

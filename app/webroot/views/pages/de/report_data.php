@@ -6,8 +6,11 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			Mehr verstehen: Durch Sprachdaten in unserer freien Wissensdatenbank Wikidata entsteht neues Wissen.
-			<!-- (<a href="https://commons.wikimedia.org/wiki/File:22._Mitgliederversammlung_28.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			Mehr verstehen: Durch Sprachdaten in unserer freien Wissensdatenbank Wikidata entsteht neues Wissen.<br>
+			Foto:
+			<a href="https://pixabay.com/vectors/hello-languages-word-cloud-foreign-3791381/" target="new">
+				https://pixabay.com/vectors/hello-languages-word-cloud-foreign-3791381/
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">

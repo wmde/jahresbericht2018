@@ -6,9 +6,25 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			The proverbial search for the needle in the haystack: The improved search function makes it easier to find content in Wikipedia.
-			<!-- (<a href="https://commons.wikimedia.org/wiki/File:Wikidatacon-2017-group-pano-1.jpg" target="new">Wikimedia Commons</a>), beschnitten von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
-			</div>
+			The proverbial search for the needle in the haystack: The improved search function makes it easier to find content in Wikipedia.<br>
+			<a href="https://commons.wikimedia.org/wiki/User:Richard_Bartz" target="new">
+				Richard Bartz
+			</a>,
+			Munich aka
+			<a href="https://commons.wikimedia.org/wiki/User:Makro_Freak" target="new">
+				Makro Freak
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:Murnauer_Moos_Marsh_2.jpg" target="new">
+				Murnauer Moos Marsh 2
+			</a>,
+
+			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/2.5/legalcode" target="new">
+				CC BY-SA 2.5
+			</a>
+		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
 				<em>Advanced Search for Wikipedia & Co.</em>

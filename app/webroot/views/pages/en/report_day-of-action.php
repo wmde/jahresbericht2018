@@ -7,7 +7,19 @@
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
 			In 2018, interested people in German-speaking countries had the opportunity to take a look behind the scenes of Wikipedia.
-		<!-- (<a href="https://commons.wikimedia.org/wiki/File:Gruppenfoto_WikiCon2017_IMG_9159_LR10_by_Stepro.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			<a href="https://commons.wikimedia.org/wiki/User:Vkw.studiogood" target="new">
+				Vkw.studiogood
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:Keyvisual-wikipedia-lokal-2018.png" target="new">
+				Keyvisual-wikipedia-lokal-2018
+			</a>,
+
+			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">

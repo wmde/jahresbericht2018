@@ -6,8 +6,18 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			Together for a free Internet: In 2018, we joined forces with partners from the Internet industry and civil society to campaign against upload filters.
-			<!-- (<a href="https://commons.wikimedia.org/wiki/File:Auftaktveranstaltung_Fellow-Programm_Freies_Wissen_2017_189.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			Together for a free Internet: In 2018, we joined forces with partners from the Internet industry and civil society to campaign against upload filters.<br>
+			Christian Schneider
+
+			<a href="https://commons.wikimedia.org/wiki/File:No-Upload-Filter_Verteilaktion_%286%29.jpg" target="new">
+				No-Upload-Filter Verteilaktion (6)
+			</a>,
+
+			cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">

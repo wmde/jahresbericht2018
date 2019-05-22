@@ -7,7 +7,19 @@
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
 			More Free Knowledge for the whole world: In 2018 we have come a good deal closer to our goals.
-		<!-- (<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Jahresplan_2017.jpg" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			<a href="https://commons.wikimedia.org/wiki/User:Annalenaschiller" target="new">
+				annalenaschiller
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Deutschland_2018.jpg" target="new">
+				Wikimedia Deutschland 2018
+			</a>,
+
+			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">

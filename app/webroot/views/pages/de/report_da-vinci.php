@@ -6,8 +6,20 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			Gelungene Kombination: Im Kulturhackathon Coding da Vinci kommen Kulturinstitutionen und Kreative aus Gestaltung und Software-Entwicklung zusammen.
-			<!-- (<a href="https://commons.wikimedia.org/wiki/File:GLAM-on-Tour_Museum_Schloss_Fuerstenberg_Wikipedianer_bei_der_Arbeit_(Brunswyk_2017).JPG" target="new">Wikimedia Commons</a>), <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a> -->
+			Gelungene Kombination: Im Kulturhackathon Coding da Vinci kommen Kulturinstitutionen und Kreative aus Gestaltung und Software-Entwicklung zusammen.<br>
+			<a href="https://commons.wikimedia.org/wiki/User:Wladimir_Raizberg_%28WMDE%29" target="new">
+				Wladimir Raizberg (WMDE)
+			</a>,
+
+			<a href="https://commons.wikimedia.org/wiki/File:CodingdaVinci2017_Preisverleihung.jpg" target="new">
+				CodingdaVinci2017 Preisverleihung
+			</a>,
+
+			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
