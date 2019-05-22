@@ -61,9 +61,13 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2018/12/14/heureka-eine-neue-benutzeroberflaeche-fuer-spezialisierte-suchanfragen/" target="new">Blogbeitrag</a>
+						Mehr Informationen auf der
+						<a href="de.wikipedia.org/wiki/Wikipedia:Technische_Wünsche" target="new">Projektwebsite</a>
 					<li>
-						Mehr zum Projekt Technische Wünsche auf <a href="de.wikipedia.org/wiki/Wikipedia:Technische_Wünsche" target="new">de.wikipedia.org/wiki/Wikipedia:Technische_Wünsche</a>
+						Blog:
+						<a href="https://blog.wikimedia.de/2018/12/14/heureka-eine-neue-benutzeroberflaeche-fuer-spezialisierte-suchanfragen/" target="new">
+							Heureka! Eine neue Benutzeroberfläche für spezialisierte Suchanfragen
+						</a>
 				</ul>
 			</div>
 		</div>

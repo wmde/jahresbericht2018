@@ -6,7 +6,7 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			Mehr Freies Wissen für die ganze Welt: 2018 sind wir unseren Zielen ein gutes Stück näher gekommen.
+			Mehr Freies Wissen für die ganze Welt: 2018 sind wir unseren Zielen ein gutes Stück näher gekommen.<br>
 			<a href="https://commons.wikimedia.org/wiki/User:Annalenaschiller" target="new">
 				annalenaschiller
 			</a>,

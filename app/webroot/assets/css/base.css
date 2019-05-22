@@ -717,7 +717,8 @@ a:focus {
 }
 .video__caption a,
 .fig__caption a {
-  color: var(--color-blue);
+  color: var(--color-black);
+  text-decoration: underline;
 }
 .video__caption a:hover,
 .fig__caption a:hover {

@@ -6,7 +6,7 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			<a href="https://commons.wikimedia.org/wiki/User:Tjane_Hartenstein_%28WMDE%29" target="new">Tjane Hartenstein (WMDE)</a>, <a href="https://commons.wikimedia.org/wiki/File:Gemeinsam_wissen_wir_mehr_–_Wikimedia_Deutschland.jpg" target="new">Gemeinsam wissen wir mehr – Wikimedia Deutschland</a>, Ausschnitt von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a>
+			<a href="https://commons.wikimedia.org/wiki/User:Tjane_Hartenstein_%28WMDE%29" target="new">Tjane Hartenstein (WMDE)</a>, <a href="https://commons.wikimedia.org/wiki/File:Gemeinsam_wissen_wir_mehr_–_Wikimedia_Deutschland.jpg" target="new">Gemeinsam wissen wir mehr – Wikimedia Deutschland</a>, Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
@@ -78,9 +78,9 @@
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/data-new-water" class="button button--report">
+		<a href="/report/future" class="button button--report">
 			<p class="button--small">Zum nächsten Thema</p>
-			<p>Daten sind das neue Grundwasser</p>
+			<p>Ausblick 2019</p>
 		</a>
 	</section>
 </main>

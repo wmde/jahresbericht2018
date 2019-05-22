@@ -57,9 +57,10 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2018/12/14/many-faces-of-wikibase-lingua-libre-macht-ˈʃpʁa%CB%90xə-hoerbar/" target="new">Blogbeitrag</a>
+						Blog:
+						<a href="https://blog.wikimedia.de/2018/12/14/many-faces-of-wikibase-lingua-libre-macht-ˈʃpʁa%CB%90xə-hoerbar/" target="new">Many Faces of Wikibase</a>
 					<li>
-						<a href="https://commons.wikimedia.org/wiki/Category:Lingua_Libre_pronunciation-deu" target="new">https://commons.wikimedia.org/wiki/Category:Lingua_Libre_pronunciation-deu</a>
+						<a href="https://commons.wikimedia.org/wiki/Category:Lingua_Libre_pronunciation-deu" target="new">Lingua Libre Audiodateien auf Wikimedia Commons</a>
 				</ul>
 			</div>
 		</div>

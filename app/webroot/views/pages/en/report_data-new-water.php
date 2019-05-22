@@ -61,7 +61,11 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2019/04/08/data-is-the-new-groundwater/" target="new">Blog article</a>
+						Learn more about our political work on the
+						<a href="https://meta.wikimedia.org/wiki/DE_policy" target="new">project website </a>
+					<li>
+						blog:
+						<a href="https://blog.wikimedia.de/2019/04/08/data-is-the-new-groundwater/" target="new">Data is the new groundwater</a>
 				</ul>
 			</div>
 		</div>

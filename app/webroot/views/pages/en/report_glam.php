@@ -49,20 +49,14 @@
 		</div>
 	</section>
 	<section class="section report__links">
-		<div class="limit--l">
-			<div class="section__body slider swiper-container loading">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/PwYEfx4ojx0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								GLAM on Tour
-							</div>
-						</div>
-					</div>
-				</div>
+		<div class="limit--s">
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
+				<ul class="bullet-list">
+					<li>
+						Learn more about GLAM on Tour on the
+						<a href="https://de.wikipedia.org/wiki/Wikipedia:GLAM/GLAM_on_Tour" target="new">project website</a>
+				</ul>
 			</div>
 		</div>
 	</section>

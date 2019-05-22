@@ -61,7 +61,11 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2018/09/15/daten-sind-das-neue-grundwasser/" target="new">Blogbeitrag</a>
+						Mehr Informationen zu unserer politischen Arbeit auf der
+						<a href="https://meta.wikimedia.org/wiki/DE_policy" target="new">Projektwebsite</a>
+					<li>
+						Blog:
+						<a href="https://blog.wikimedia.de/2018/09/15/daten-sind-das-neue-grundwasser/" target="new">Daten sind das neue Grundwasser</a>
 				</ul>
 			</div>
 		</div>

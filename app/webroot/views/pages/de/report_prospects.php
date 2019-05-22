@@ -68,7 +68,7 @@
 								</video>
 							</div>
 							<div class="video__caption limit--s">
-
+								Knowledge belongs to all of us
 							</div>
 						</div>
 					</div>
@@ -82,8 +82,10 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://2030.wikimedia.org " target="new">https://2030.wikimedia.org </a>
+						Mehr Informationen zur Strategie der weltweiten  Wikimedia-Bewegung auf der
+						<a href="https://2030.wikimedia.org " target="new">Projektwebsite</a>
 					<li>
+						Blog:
 						<a href="https://blog.wikimedia.de/2018/05/05/freies_wissen_weltweit_teil_1/" target="new">Freies Wissen weltweit: Die Gesichter hinter Wikimedia – Teil 1</a>
 					<li>
 						<a href="https://blog.wikimedia.de/2018/05/12/freies-wissen-weltweit-die-gesichter-hinter-wikimedia-teil-2/" target="new">Freies Wissen weltweit: Die Gesichter hinter Wikimedia – Teil 2</a>

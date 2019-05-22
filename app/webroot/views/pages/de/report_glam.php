@@ -72,9 +72,11 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://de.wikipedia.org/wiki/Wikipedia:GLAM/GLAM_on_Tour" target="new">https://de.wikipedia.org/wiki/Wikipedia:GLAM/GLAM_on_Tour</a>
+						Mehr über GLAM on Tour erfahren Sie auf  der
+						<a href="https://de.wikipedia.org/wiki/Wikipedia:GLAM/GLAM_on_Tour" target="new">Projektwebsite</a>
 					<li>
-						<a href="https://blog.wikimedia.de/2019/02/08/vorschau-auf-die-kulturarbeit-2019-wie-die-kunst-ins-internet-kommt/" target="new">Blogbeitrag</a>
+						Blog:
+						<a href="https://blog.wikimedia.de/2019/02/08/vorschau-auf-die-kulturarbeit-2019-wie-die-kunst-ins-internet-kommt/" target="new">Vorschau auf die Kulturarbeit 2019: Wie die Kunst ins Internet kommt</a>
 				</ul>
 			</div>
 		</div>

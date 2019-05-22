@@ -91,15 +91,17 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2019/02/11/probleme-der-eu-urheberrechtsreform-bleiben-bestehen/" target="new">Blogbeitrag (Stand Februar 2019)</a>
+						Mehr Informationen zu unserer politischen Arbeit auf der
+						<a href="https://meta.wikimedia.org/wiki/DE_policy" target="new">Projektwebsite</a>
 					<li>
-						<a href="https://blog.wikimedia.de/2018/03/16/wird-die-wikipedia-bald-vorgefiltert-upload-filter-nein-danke/" target="new">Blogbeitrag zum Offenen Brief</a>
+						Blog:
+						<a href="https://blog.wikimedia.de/2019/02/11/probleme-der-eu-urheberrechtsreform-bleiben-bestehen/" target="new">Probleme der EU-Urheberrechtsreform bleiben bestehen</a>
 					<li>
-						<a href="https://blog.wikimedia.de/2018/03/16/wird-die-wikipedia-bald-vorgefiltert-upload-filter-nein-danke/" target="new">Blogbeitrag zum WP-Protest 2019</a>
+						<a href="https://blog.wikimedia.de/2018/03/16/wird-die-wikipedia-bald-vorgefiltert-upload-filter-nein-danke/" target="new">Wird die Wikipedia bald vorgefiltert?</a>
 					<li>
-						Mehr Informationen:
-							<a href="https://blog.wikimedia.de/2019/04/16/freies-wissen-auf-europaeischer-ebene-angekommen/" target="new">Blogbeitrag</a>
-						(Stand: April 2019)
+						<a href="https://blog.wikimedia.de/2019/03/15/wikipedia-protest/" target="new">Wikipedia schaltet sich ab – für das freie Internet</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2019/04/16/freies-wissen-auf-europaeischer-ebene-angekommen/" target="new">Freies Wissen: Auf europäischer Ebene angekommen </a>
 				</ul>
 			</div>
 		</div>

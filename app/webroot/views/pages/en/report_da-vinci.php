@@ -84,6 +84,18 @@
 			</div>
 		</div>
 	</section>
+	<section class="section report__links">
+		<div class="limit--s">
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
+				<ul class="bullet-list">
+					<li>
+						Learn more on Coding da Vinci on the project website
+						<a href="https://codingdavinci.de/" target="new">project website</a>
+				</ul>
+			</div>
+		</div>
+	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
 		<a href="/en/report/data-new-water" class="button button--report">

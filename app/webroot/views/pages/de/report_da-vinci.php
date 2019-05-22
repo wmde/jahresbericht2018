@@ -90,9 +90,13 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2018/06/28/zwitschernde-voegel-fallendes-obst-und-eine-virtuelle-mittagsfrau-preistraeger-von-coding-da-vinci-ost/" target="new">Blogbeitrag CdVOst</a>
+						Mehr zum Kulturhackathon Coding da Vinci erfahren Sie auf der
+						<a href="https://codingdavinci.de/" target="new">Projektwebsite</a>
 					<li>
-						<a href="https://blog.wikimedia.de/2018/12/10/mittelalterliche-monster-wandelbare-kunstwerke-und-chattende-kaiser-erster-kultur-hackathon-coding-da-vinci-rhein-main/" target="new">Blogbeitrag CvVReihnMain</a>
+						Blog:
+						<a href="https://blog.wikimedia.de/2018/06/28/zwitschernde-voegel-fallendes-obst-und-eine-virtuelle-mittagsfrau-preistraeger-von-coding-da-vinci-ost/" target="new">Zwitschernde Vögel, fallendes Obst und eine virtuelle Mittagsfrau</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/12/10/mittelalterliche-monster-wandelbare-kunstwerke-und-chattende-kaiser-erster-kultur-hackathon-coding-da-vinci-rhein-main/" target="new">Mittelalterliche Monster, wandelbare Kunstwerke und chattende Kaiser</a>
 				</ul>
 			</div>
 		</div>

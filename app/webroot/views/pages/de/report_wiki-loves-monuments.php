@@ -85,15 +85,19 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2018/09/26/endspurt-bei-wiki-loves-monuments/" target="new">Blogbeitrag 1</a>
+						<a href="https://de.wikipedia.org/wiki/Wikipedia:Europäisches_Kulturerbejahr_2018" target="new">Projektwebsite</a>
 					<li>
-						<a href="https://blog.wikimedia.de/2018/06/08/sie-haben-uns-ein-denkmal-gebaut/" target="new">Blogbeitrag 2</a>
+						Blog
+						<a href="https://blog.wikimedia.de/2018/09/26/endspurt-bei-wiki-loves-monuments/" target="new">Endspurt bei Wiki Loves Monuments</a>
 					<li>
-						<a href="https://blog.wikimedia.de/2018/05/25/wikipedia-im-europaeischen-jahr-des-kulturerbes/" target="new">Blogbeitrag 3</a>
+						<a href="https://blog.wikimedia.de/2018/06/08/sie-haben-uns-ein-denkmal-gebaut/" target="new">Sie haben uns ein Denkmal gebaut</a>
 					<li>
-						<a href="https://blog.wikimedia.de/2019/02/13/europaeisches-kulturerbe-in-beeindruckenden-fotos-die-gewinner-des-wiki-loves-monuments-sonderpreises/" target="new">Blogbeitrag 4</a>
+						<a href="https://blog.wikimedia.de/2018/05/25/wikipedia-im-europaeischen-jahr-des-kulturerbes/" target="new">Wikipedia im Europäischen Kulturerbejahr</a>
 					<li>
-						<a href="https://commons.wikimedia.org/wiki/File:Bildband_Wiki_Loves_Monuments_im_Europäischen_Kulturerbejahr.pdf" target="new">Bildband auf Commons</a>
+						<a href="https://blog.wikimedia.de/2019/02/13/europaeisches-kulturerbe-in-beeindruckenden-fotos-die-gewinner-des-wiki-loves-monuments-sonderpreises/" target="new">Die Gewinner des Wiki-Loves-Monuments-Sonderpreises</a>
+					<li>
+						Bildband:
+						<a href="https://commons.wikimedia.org/wiki/File:Bildband_Wiki_Loves_Monuments_im_Europäischen_Kulturerbejahr.pdf" target="new">Wiki Loves Monuments im Europäischen Kulturerbejahr</a>
 				</ul>
 			</div>
 		</div>

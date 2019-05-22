@@ -6,7 +6,7 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			<a href="https://commons.wikimedia.org/wiki/User:Tjane_Hartenstein_%28WMDE%29" target="new">Tjane Hartenstein (WMDE)</a>, <a href="https://commons.wikimedia.org/wiki/File:Gemeinsam_wissen_wir_mehr_–_Wikimedia_Deutschland.jpg" target="new">Gemeinsam wissen wir mehr – Wikimedia Deutschland</a>, Ausschnitt von Atelier Disko für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a>
+			<a href="https://commons.wikimedia.org/wiki/User:Tjane_Hartenstein_%28WMDE%29" target="new">Tjane Hartenstein (WMDE)</a>, <a href="https://commons.wikimedia.org/wiki/File:Gemeinsam_wissen_wir_mehr_–_Wikimedia_Deutschland.jpg" target="new">Gemeinsam wissen wir mehr – Wikimedia Deutschland</a>, cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
@@ -47,11 +47,23 @@
 			</div>
 		</div>
 	</section>
+	<section class="section report__links">
+		<div class="limit--s">
+			<div class="border-box border-box--report">
+				<div class="t--delta">LINKS</div>
+				<ul class="bullet-list">
+					<li>
+						Learn more about Wikimedia on our website
+						<a href="www.wikimedia.de" target="new">www.wikimedia.de</a>
+				</ul>
+			</div>
+		</div>
+	</section>
 	<section class="report__boxes">
-		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/data-new-water" class="button button--report">
-			<p class="button--small">Zum nächsten Thema</p>
-			<p>Daten sind das neue Grundwasser</p>
+		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
+		<a href="/en/report/future" class="button button--report">
+			<p class="button--small">Next topic</p>
+			<p>Outlook 2019</p>
 		</a>
 	</section>
 </main>

@@ -93,9 +93,13 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2018/05/28/die-22-mv-im-rueckblick-wer-nicht-wagt/" target="new">Rückblick Karlsruhe</a>
+						Mehr Informationen zur Mitgliedschaft bei Wikimedia Deutschland auf unserer
+						<a href="https://wikimedia.de/de/mitglied-werden" target="new">Website</a>
 					<li>
-						<a href="https://blog.wikimedia.de/2018/12/01/6-praesidium-von-wikimedia-deutschland-ist-gewaehlt/" target="new">Rückblick Berlin</a>
+						Blog:
+						<a href="https://blog.wikimedia.de/2018/05/28/die-22-mv-im-rueckblick-wer-nicht-wagt/" target="new">Die 22. MV im Rückblick: Wer nicht wagt…</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/12/01/6-praesidium-von-wikimedia-deutschland-ist-gewaehlt/" target="new">6. Präsidium von Wikimedia Deutschland ist gewählt</a>
 				</ul>
 			</div>
 		</div>

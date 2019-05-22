@@ -6,7 +6,7 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			More Free Knowledge for the whole world: In 2018 we have come a good deal closer to our goals.
+			More Free Knowledge for the whole world: In 2018 we have come a good deal closer to our goals.<br>
 			<a href="https://commons.wikimedia.org/wiki/User:Annalenaschiller" target="new">
 				annalenaschiller
 			</a>,
@@ -15,7 +15,7 @@
 				Wikimedia Deutschland 2018
 			</a>,
 
-			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+			cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE,
 
 			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
 				CC BY-SA 4.0
@@ -73,7 +73,8 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Movement_Report_2018" target="new">https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Movement_Report_2018</a>
+						For more information, please visit our
+						<a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Movement_Report_2018" target="new">Movement Report 2018</a>
 				</ul>
 			</div>
 		</div>

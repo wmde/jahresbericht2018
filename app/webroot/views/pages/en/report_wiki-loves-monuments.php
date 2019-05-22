@@ -6,7 +6,7 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			1st place European Special Prize, Cathedral of Gloucester
+			1st place European Special Prize, Cathedral of Gloucester<br>
 			<a href="https://commons.wikimedia.org/wiki/User:Cjtcherrington" target="new">
 				Christopher JT Cherrington
 			</a>,
@@ -85,9 +85,13 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2019/03/22/final-stretch-at-wiki-loves-monuments/" target="new">Blog article 1</a>
+						Blog:
+						<a href="https://blog.wikimedia.de/2019/03/22/final-stretch-at-wiki-loves-monuments/" target="new">Final stretch at Wiki Loves Monuments</a>
 					<li>
-						<a href="https://blog.wikimedia.de/2018/07/30/wikipedia-in-the-european-year-of-cultural-heritage/" target="new">Blog article 2</a>
+						<a href="https://blog.wikimedia.de/2018/07/30/wikipedia-in-the-european-year-of-cultural-heritage/" target="new">Wikipedia in the European Year of Cultural Heritage</a>
+					<li>
+						Photobook:
+						<a href="https://commons.wikimedia.org/wiki/File:Bildband_Wiki_Loves_Monuments_im_Europäischen_Kulturerbejahr.pdf" target="new">Wiki Loves Monuments in the European Year of Cultural Heritage</a>
 				</ul>
 			</div>
 		</div>

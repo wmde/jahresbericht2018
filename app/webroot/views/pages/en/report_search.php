@@ -19,7 +19,7 @@
 				Murnauer Moos Marsh 2
 			</a>,
 
-			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+			cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE,
 
 			<a href="https://creativecommons.org/licenses/by-sa/2.5/legalcode" target="new">
 				CC BY-SA 2.5
@@ -61,7 +61,11 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://wikimediafoundation.org/2018/12/13/eureka-a-new-visual-interface-for-specialized-searches/" target="new">Blog article</a>
+						More information on the
+						<a href="http://de.wikipedia.org/wiki/Wikipedia:Technische_Wünsche" target="new">project website</a>
+					<li>
+						blog:
+						<a href="https://wikimediafoundation.org/2018/12/13/eureka-a-new-visual-interface-for-specialized-searches/" target="new">Eureka! A new visual interface for specialized searches</a>
 				</ul>
 			</div>
 		</div>

@@ -6,7 +6,7 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			In 2018, interested people in German-speaking countries had the opportunity to take a look behind the scenes of Wikipedia.
+			In 2018, interested people in German-speaking countries had the opportunity to take a look behind the scenes of Wikipedia.<br>
 			<a href="https://commons.wikimedia.org/wiki/User:Vkw.studiogood" target="new">
 				Vkw.studiogood
 			</a>,
@@ -15,7 +15,7 @@
 				Keyvisual-wikipedia-lokal-2018
 			</a>,
 
-			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+			cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE,
 
 			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
 				CC BY-SA 4.0
@@ -83,7 +83,20 @@
 								<img src="/../../../assets/img/reports/day_of_action_additional.jpg"></img>
 							</div>
 							<div class="video__caption limit--s">
-								Wikipedia up close: At the first Wikipedia day, volunteer authors talk about their work in 11 local Wikipedia offices.
+								Wikipedia up close: At the first Wikipedia day, volunteer authors talk about their work in 11 local Wikipedia offices.<br>
+								<a href="https://commons.wikimedia.org/wiki/User:Claudia.Garad" target="new">
+									Claudia.Garad
+								</a>,
+
+								<a href="https://commons.wikimedia.org/wiki/File:WikipediaVorOrt-Linz-2018.jpg" target="new">
+									WikipediaVorOrt-Linz-2018
+								</a>,
+
+								cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE,
+
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+									CC BY-SA 4.0
+								</a>
 							</div>
 						</div>
 					</div>
@@ -97,16 +110,17 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2019/03/22/wikipedia-day-an-unexpected-huge-success/" target="new">Blog article</a>
+						blog:
+						<a href="https://blog.wikimedia.de/2019/03/22/wikipedia-day-an-unexpected-huge-success/" target="new">Wikipedia day</a>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Go to topic overview</a>
-		<a href="/en/report/future" class="button button--report">
+		<a href="/en/report/explanation" class="button button--report">
 			<p class="button--small">Next topic</p>
-			<p>Outlook 2019</p>
+			<p>Wikimedia briefly explained</p>
 		</a>
 	</section>
 </main>

@@ -83,7 +83,20 @@
 								<img src="/../../../assets/img/reports/day_of_action_additional.jpg"></img>
 							</div>
 							<div class="video__caption limit--s">
-								Wikipedia hautnah: Beim ersten Wikipedia-Aktionstag erzählen die ehrenamtlichen Autorinnen und Autoren  in 11 lokalen Wikipedia-Büros von ihrer Arbeit.
+								Wikipedia hautnah: Beim ersten Wikipedia-Aktionstag erzählen die ehrenamtlichen Autorinnen und Autoren  in 11 lokalen Wikipedia-Büros von ihrer Arbeit.<br>
+								<a href="https://commons.wikimedia.org/wiki/User:Claudia.Garad" target="new">
+									Claudia.Garad
+								</a>,
+
+								<a href="https://commons.wikimedia.org/wiki/File:WikipediaVorOrt-Linz-2018.jpg" target="new">
+									WikipediaVorOrt-Linz-2018
+								</a>,
+
+								Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+									CC BY-SA 4.0
+								</a>
 							</div>
 						</div>
 					</div>
@@ -97,16 +110,17 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2018/11/13/aktionstag-wikipedia-vor-ort-ein-ungeahnter-riesen-erfolg/" target="new">Blogbeitrag</a>
+						Blog:
+						<a href="https://blog.wikimedia.de/2018/11/13/aktionstag-wikipedia-vor-ort-ein-ungeahnter-riesen-erfolg/" target="new">Aktionstag Wikipedia</a>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section class="report__boxes">
 		<a href="<?= $url('/report', $lang) ?>" class="button button--report">Zur Themenübersicht</a>
-		<a href="/report/future" class="button button--report">
+		<a href="/report/explanation" class="button button--report">
 			<p class="button--small">Zum nächsten Thema</p>
-			<p>Ausblick 2019</p>
+			<p>Wikimedia kurz erklärt</p>
 		</a>
 	</section>
 </main>

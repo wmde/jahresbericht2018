@@ -60,9 +60,11 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						More information:
-							<a href="https://blog.wikimedia.de/2019/04/24/free-knowledge-hard-won-impact-at-the-european-level/" target="new">Blog</a>
-						(April 2019)
+						Learn more about our political work on the
+							<a href="https://meta.wikimedia.org/wiki/DE_policy" target="new">project website </a>
+					<li>
+						Blog:
+							<a href="https://blog.wikimedia.de/2019/04/24/free-knowledge-hard-won-impact-at-the-european-level/" target="new">Free Knowledge: Hard-won Impact at the European Level</a>
 				</ul>
 			</div>
 		</div>

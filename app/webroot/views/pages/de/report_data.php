@@ -63,7 +63,8 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://blog.wikimedia.de/2019/03/25/lexikographische-daten-in-wikidata/" target="new">Blogbeitrag</a>
+						Blog:
+						<a href="https://blog.wikimedia.de/2019/03/25/lexikographische-daten-in-wikidata/" target="new">Lexikographische Daten in Wikidata</a>
 					<li>
 						Artikelspiel: <a href="http://auregann.fr/derdiedas/" target="new">deutsch</a>, <a href="http://auregann.fr/unune" target="new">französisch</a>, <a href="https://tools.wmflabs.org/enet/" target="new">dänisch</a>
 				</ul>

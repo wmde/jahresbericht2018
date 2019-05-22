@@ -82,9 +82,13 @@
 				<div class="t--delta">LINKS</div>
 				<ul class="bullet-list">
 					<li>
-						<a href="https://2030.wikimedia.org " target="new">https://2030.wikimedia.org</a>
+						Learn more on the
+						<a href="https://2030.wikimedia.org " target="new">project website</a>
 					<li>
-						<a href="https://blog.wikimedia.org/2018/02/08/wikimedia-2030-future-information-commons/ " target="new">Blog article</a>
+						Blog:
+						<a href="https://blog.wikimedia.de/2018/05/07/free-knowledge-worldwide-the-faces-behind-wikimedia-part-1/" target="new">Free Knowledge Worldwide: The Faces behind Wikimedia – Part 1</a>
+					<li>
+						<a href="https://blog.wikimedia.de/2018/05/07/free-knowledge-worldwide-the-faces-behind-wikimedia-part-1/" target="new">Wikimedia 2030: Wikimedia’s role in shaping the future of the information commons</a>
 				</ul>
 			</div>
 		</div>
