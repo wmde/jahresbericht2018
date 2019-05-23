@@ -7,7 +7,7 @@
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
 			Wikimedia – a global movement for Free Knowledge<br>
-			Jason Krüger for Wikimedia Deutschland e.V.,
+			Jason Krüger for Wikimedia Deutschland e. V.,
 
 			<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2018,_Group_photo_%282%29.jpg" target="new">
 				Wikimedia Conference 2018, Group photo (2)

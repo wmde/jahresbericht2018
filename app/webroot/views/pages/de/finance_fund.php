@@ -131,7 +131,7 @@
 					</tr>
 					<tr class="ft__row-line--black">
 						<td class="ft__col-key--black">Gewinnrücklagen</td>
-						<td class="ft__col-val ft__fund-border">310.881 €/td>
+						<td class="ft__col-val ft__fund-border">310.881 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">217.141 €</td>
 						<td class="ft__col-void"></td>

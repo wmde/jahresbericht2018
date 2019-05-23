@@ -153,7 +153,7 @@
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">4.349.061 €</td>
 					</tr>
-					<tr class="ft__row-line">
+					<tr class="ft__row-line ft__row-line--small">
 						<td class="ft__col-key">davon steuerliche Rücklagen nach §62 AO</td>
 						<td class="ft__col-val ft__assn-border">7.298.764 €</td>
 						<td class="ft__col-void"></td>
@@ -288,7 +288,7 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Mitgliedsbeiträge</td>
-						<td class="ft__col-val ft__assn-border">3.229.156 €/td>
+						<td class="ft__col-val ft__assn-border">3.229.156 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">2.542.663 €</td>
 						<td class="ft__col-void"></td>
@@ -304,7 +304,7 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Sonstige betriebliche Erträge</td>
-						<td class="ft__col-val ft__assn-border">73.160 €</td>
+						<td class="ft__col-val ft__assn-border">73.159 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">34.044 €</td>
 						<td class="ft__col-void"></td>
@@ -352,7 +352,7 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Sonstige betriebliche Aufwendungen</td>
-						<td class="ft__col-val ft__assn-border">-4.385.006 €</td>
+						<td class="ft__col-val ft__assn-border">-4.385.005 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-3.183.689 €</td>
 						<td class="ft__col-void"></td>
@@ -428,7 +428,7 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m fin-detail__mittel">
-			Mehr Informationen zu unseren <a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Jahresplanung_2018"target="new">Schwerpunkten 2018</a>
+			Mehr Informationen zu unseren <a href="https://meta.wikimedia.org/wiki/Wikimedia_Deutschland/Jahresplanung_2018"target="new">Handlungsfeldern 2018</a>
 		</div>
 	</section>
 	<section class="section cp">

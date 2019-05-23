@@ -12,7 +12,7 @@ if (isset($report)) {
 } elseif ($path === '/finance') {
 	$title[] = 'Finanzreport';
 } elseif ($path === '/finance/assn') {
-	$title[] = 'Finanzen WMDE e.V.';
+	$title[] = 'Finanzen WMDE e. V.';
 } elseif ($path === '/finance/fund') {
 	$title[] = 'Finanzen Fördergesellschaft';
 }

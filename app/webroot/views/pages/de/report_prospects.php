@@ -8,7 +8,7 @@
 		<div class="report-detail hero__caption t--zeta">
 			Auf der Wikimedia Conference 2018, ausgerichtet von Wikimedia Deutschland, diskutierten Wikimedianerinnen und Wikimedianer die Notwendigkeiten das Wikimedia-Netzwerk zu verändern, um die Ziele für 2030 zu erreichen.<br>
 			<a href="https://commons.wikimedia.org/wiki/User:Vkw.studiogood" target="new">
-				Jason Krüger for Wikimedia Deutschland e.V.
+				Jason Krüger for Wikimedia Deutschland e. V.
 			</a>,
 
 			<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2018_–_108.jpg" target="new">

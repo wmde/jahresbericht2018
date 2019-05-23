@@ -1876,9 +1876,6 @@ a:focus {
   overflow-x: auto;
   font-feature-settings: "tnum" 1;
 }
-.finance--assn .fin-detail__passiva .ft-wrapper tbody .ft__row-line:nth-of-type(2) {
-  font-size: 12px;
-}
 .ft {
   width: 100%;
   border-collapse: collapse;
@@ -1912,6 +1909,9 @@ a:focus {
 .ft__row-line td {
   border-bottom: 1px solid var(--color-gray);
   color: var(--color-black);
+}
+.ft__row-line--small {
+  font-size: 12px;
 }
 .ft__row-line--black td {
   border-bottom: 1px solid white;

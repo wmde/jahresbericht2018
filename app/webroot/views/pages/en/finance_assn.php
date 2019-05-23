@@ -153,7 +153,7 @@
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val ">4.349.061 €</td>
 					</tr>
-					<tr class="ft__row-line">
+					<tr class="ft__row-line ft__row-line--small">
 						<td class="ft__col-key">of which fiscal reserves according to §62 of the Fiscal Code</td>
 						<td class="ft__col-val ft__assn-border">7.298.764 €</td>
 						<td class="ft__col-void"></td>
@@ -288,7 +288,7 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Membership fees</td>
-						<td class="ft__col-val ft__assn-border">3.229.156 €/td>
+						<td class="ft__col-val ft__assn-border">3.229.156 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">2.542.663 €</td>
 						<td class="ft__col-void"></td>
@@ -304,7 +304,7 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Other operational income</td>
-						<td class="ft__col-val ft__assn-border">73.160 €</td>
+						<td class="ft__col-val ft__assn-border">73.159 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">34.044 €</td>
 						<td class="ft__col-void"></td>
@@ -352,7 +352,7 @@
 					</tr>
 					<tr class="ft__row-line">
 						<td class="ft__col-key">Other operational expenditures</td>
-						<td class="ft__col-val ft__assn-border">-4.385.006 €</td>
+						<td class="ft__col-val ft__assn-border">-4.385.005 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-3.183.689 €</td>
 						<td class="ft__col-void"></td>
@@ -375,7 +375,7 @@
 						<td class="ft__col-val ft__empty"></td>
 					</tr>
 					<tr class="ft__row-line">
-						<td class="ft__col-key">Abschreibungen auf Finanzanlagen und auf Wertpapiere des Umlaufvermögens</td>
+						<td class="ft__col-key">Depreciation on financial assets and securities held as current assets</td>
 						<td class="ft__col-val ft__assn-border">-5.915 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">0 €</td>

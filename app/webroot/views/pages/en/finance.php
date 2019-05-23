@@ -22,11 +22,11 @@
 			<h2 class="h--gamma">Expenditures</h2>
 			<p class="t--gamma-serif finance__p">
 				Expenditures increased to EUR 8.9 million (previous year: EUR 6.8 million). Personnel costs increased by EUR 4.4 million (previous year: EUR 3.5 million). Operational costs also rose to EUR 4.4 million (previous year: EUR 3.2 million), of which EUR 0.8 million are costs related to the aforementioned inheritance, including payments to a legatee.</br>
-				The summary "Use of funds" on page 27 of this report provides more detailed information on the use of funds.
+				The summary „<a href="<?= $url('finance/assn', $lang) ?>">Use of funds</a>“ provides more detailed information on the use of funds.
 			</p>
 			<h2 class="h--gamma">Unused Donations / Reserves</h2>
 			<p class="t--gamma-serif finance__p">
-				Wikimedia Deutschland applies the HFA 21 accounting standard. A special feature of this standard is that revenue from donations is not recognized in the income statement until the donations are made. Therefore, the item " Unused donations" on the liabilities side of the balance sheet is an important benchmark for assessing the financial situation of Wikimedia Deutschland. This amount increased to EUR 7.3 million (previous year: EUR 5.0 million). The total is shown in full as a tax reserve in accordance with §62 AO (German Fiscal Code).
+				Wikimedia Deutschland applies the HFA 21 accounting standard. A special feature of this standard is that revenue from donations is not recognized in the income statement until the donations are made. Therefore, the item "Unused donations" on the liabilities side of the balance sheet is an important benchmark for assessing the financial situation of Wikimedia Deutschland. This amount increased to EUR 7.3 million (previous year: EUR 5.0 million). The total is shown in full as a tax reserve in accordance with §62 AO (German Fiscal Code).
 			</p>
 			<h2 class="h--gamma">Gemeinnützige Wikimedia Fördergesellschaft mbH (WMFG)</h2>
 			<p class="t--gamma-serif finance__p">
@@ -46,15 +46,12 @@
 		<div class="limit--m">
 			<h2 class="h--beta ft__heading">
 				Use of funds
-				<span class="ft__subtitle t--delta">
-					07.05.2019
-				</span>
 			</h2>
 			<div class="ft-wrapper ft-wrapper--four-column">
 				<table class="ft">
 					<thead>
 						<th class="ft__col-key--main"></th>
-						<th class="ft__col-val ft__em--main">Wikimedia Deutschland e.V.</th>
+						<th class="ft__col-val ft__em--main">Wikimedia Deutschland e. V.</th>
 						<th class="ft__col-void"></th>
 						<th class="ft__col-val ft__em--main">Gemeinnützige Wikimedia Fördergesellschaft mbH</th>
 						<th class="ft__col-void"></th>
@@ -77,11 +74,11 @@
 						<td class="ft__col-key--main">Revenues</td>
 						<td class="ft__col-val">8.949.066 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">11.828.121 €</td>
+						<td class="ft__col-val">11.828.120 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-2.490.912 €</td>
+						<td class="ft__col-val">-2.476.848 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">18.286.275 €</td>
+						<td class="ft__col-val">18.300.338 €</td>
 					</tr>
 					<tr class="ft__row-low ft__row-line">
 						<td class="ft__col-key">&nbsp;</td>
@@ -99,9 +96,9 @@
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">10.948.538 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-2.460.795 €</td>
+						<td class="ft__col-val">-2.446.731 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">9.635.503 €</td>
+						<td class="ft__col-val">9.649.567 €</td>
 					</tr>
 					<tr class="ft__row-line--white">
 						<td class="ft__col-key--main">Membership fees</td>
@@ -117,17 +114,17 @@
 						<td class="ft__col-key--main">Project support</td>
 						<td class="ft__col-val">2.567.173 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">850.181 €</td>
+						<td class="ft__col-val">850.180 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val"></td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">3.417.354 €</td>
 					</tr>
-					<tr class="ft__row-line--white">
+					<tr class="ft__row-line--white ft__row-line--small">
 						<td class="ft__col-key--main">Thereof Wikimedia Foundation</td>
 						<td class="ft__col-val">2.073.753 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">850.181 €</td>
+						<td class="ft__col-val">850.180 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val"></td>
 						<td class="ft__col-void"></td>
@@ -167,11 +164,11 @@
 						<td class="ft__col-key--main">Expenditures</td>
 						<td class="ft__col-val">-8.949.066 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-11.734.381 €</td>
+						<td class="ft__col-val">-11.734.380 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">2.490.912 €</td>
+						<td class="ft__col-val">2.476.848 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-18.192.535 €</td>
+						<td class="ft__col-val">-18.206.598 €</td>
 					</tr>
 					<tr class="ft__row-line--white">
 						<td class="ft__col-key--main">Field of action Volunteers</td>
@@ -194,7 +191,7 @@
 						<td class="ft__col-val">-2.179.505 €</td>
 					</tr>
 					<tr class="ft__row-line--white">
-						<td class="ft__col-key--main">Field of action conditions</td>
+						<td class="ft__col-key--main">Field of action Conditions</td>
 						<td class="ft__col-val">-1.496.328 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val"></td>
@@ -214,7 +211,7 @@
 						<td class="ft__col-val">-1.561.140 €</td>
 					</tr>
 					<tr class="ft__row-line--white">
-						<td class="ft__col-key--main">Administrative costs</td>
+						<td class="ft__col-key--main">Administrative costs*</td>
 						<td class="ft__col-val">-2.787.034 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val"></td>
@@ -227,19 +224,19 @@
 						<td class="ft__col-key--main">Distribution of funds WMFG</td>
 						<td class="ft__col-val"></td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-8.487.744 €</td>
+						<td class="ft__col-val">-8.501.807 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val"></td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-8.487.744 €</td>
+						<td class="ft__col-val">-8.501.807 €</td>
 					</tr>
 					<tr class="ft__row-line--white">
 						<td class="ft__col-key--main">Distribution of funds WMDE</td>
 						<td class="ft__col-val"></td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">-2.460.795 €</td>
+						<td class="ft__col-val">-2.446.731 €</td>
 						<td class="ft__col-void"></td>
-						<td class="ft__col-val">2.460.795 €</td>
+						<td class="ft__col-val">2.446.731 €</td>
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val"></td>
 					</tr>
@@ -275,6 +272,11 @@
 					</tfoot>
 				</table>
 			</div>
+		</div>
+	</section>
+	<section class="section cp">
+		<div class="limit--m">
+			*797,524 of these expenses are due to the extraordinary item "inheritance" from 2013. Due to previous legal uncertainty, this was not recognised in the profit and loss statement until 2018.
 		</div>
 	</section>
 	<secion class="section section__body cp">

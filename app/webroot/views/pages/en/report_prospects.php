@@ -8,7 +8,7 @@
 		<div class="report-detail hero__caption t--zeta">
 			At the Wikimedia Conference 2018, hosted by Wikimedia Deutschland, Wikimedians discussed passionately how the Wikimedia movement needs to adapt to be able to achieve its 2030 goals.<br>
 			<a href="https://commons.wikimedia.org/wiki/User:Vkw.studiogood" target="new">
-				Jason Krüger for Wikimedia Deutschland e.V.
+				Jason Krüger for Wikimedia Deutschland e. V.
 			</a>,
 
 			<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2018_–_108.jpg" target="new">
