@@ -49,6 +49,31 @@
 		</div>
 	</section>
 	<section class="section report__links">
+		<div class="limit--l">
+			<div class="section__body slider swiper-container loading">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://www.youtube-nocookie.com/embed/PwYEfx4ojx0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								<a href="https://commons.wikimedia.org/wiki/File:GLAM_on_Tour_2018_Wikimedia_deutsch.webm" target="new">
+									GLAM on Tour: Wikipedia as guests at the Grunewald Hunting Lodge
+								</a>
+								<br>
+								Bear Film for Wikimedia Deutschland,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">
+									CC BY-SA 4.0
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section report__links">
 		<div class="limit--s">
 			<div class="border-box border-box--report">
 				<div class="t--delta">LINKS</div>

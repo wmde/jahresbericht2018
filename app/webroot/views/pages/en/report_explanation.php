@@ -6,7 +6,18 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			<a href="https://commons.wikimedia.org/wiki/User:Tjane_Hartenstein_%28WMDE%29" target="new">Tjane Hartenstein (WMDE)</a>, <a href="https://commons.wikimedia.org/wiki/File:Gemeinsam_wissen_wir_mehr_–_Wikimedia_Deutschland.jpg" target="new">Gemeinsam wissen wir mehr – Wikimedia Deutschland</a>, cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a>
+			Wikimedia – a global movement for Free Knowledge<br>
+			Jason Krüger for Wikimedia Deutschland e.V,
+
+			<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2018,_Group_photo_%282%29.jpg" target="new">
+				Wikimedia Conference 2018, Group photo (2)
+			</a>,
+
+			cutout by <a href="https://atelierdisko.de" target="new">Atelier Disko</a> for WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
@@ -44,6 +55,30 @@
 				<p>
 					The German version of the free online encyclopedia Wikipedia went online in March 2001 and is created exclusively by volunteer authors. They write articles, keep information up to date, correct mistakes and share their knowledge with the whole world. The organization Wikimedia Deutschland was founded in 2004 by Wikipedia volunteers. The support of Wikipedia authors has been an integral part of the work of Wikimedia Deutschland ever since. But as the association for the promotion of Free Knowledge, we do much more: We support volunteers in all the Wikimedia projects, develop free software and technology, advocate for open science, education, and culture, and strengthen political conditions that enable free access to knowledge.
 				</p>
+			</div>
+		</div>
+	</section>
+	<section class="section report__links">
+		<div class="limit--l">
+			<div class="section__body slider swiper-container loading">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="video">
+							<div class="video__embed-container">
+								<iframe src="https://www.youtube-nocookie.com/embed/dlC4-SQKXJM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+							<div class="video__caption limit--s">
+								<a href="https://www.youtube.com/watch?v=dlC4-SQKXJM&t" target="new">
+									Why knowledge should be free
+								</a><br>
+								Concept & Script: Elisabeth Mandl and Lisa Dittmer, additional illustrations: riesenspatz info illustration, Voiceover: Florian Maerlender,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+									CC BY-SA 4.0
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

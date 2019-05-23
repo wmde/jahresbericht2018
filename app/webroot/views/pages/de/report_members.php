@@ -64,26 +64,21 @@
 					<div class="swiper-slide">
 						<div class="video">
 							<div class="video__embed-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/a6BK1yBJhpg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</div>
-							<div class="video__caption limit--s">
-								Mitgliederversion
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="video">
-							<div class="video__embed-container">
 								<iframe src="https://www.youtube-nocookie.com/embed/L6pZtGB56xw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Videobotschaft Präsidium
+								<a href="https://www.youtube.com/watch?v=L6pZtGB56xw" target="new">
+								Grußbotschaft des 6. Präsidiums von Wikimedia Deutschland
+								</a>
+								<br>
+								Anne Braun für Wikimedia Deutschland,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">
+									CC BY-SA 4.0
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="swiper-button-next swiper-button-next--black"></div>
-				<div class="swiper-button-prev swiper-button-prev--black"></div>
 			</div>
 		</div>
 	</section>

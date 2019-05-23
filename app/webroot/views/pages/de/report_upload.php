@@ -63,8 +63,15 @@
 							<div class="video__embed-container">
 								<iframe src="https://www.youtube-nocookie.com/embed/upMR4T4lKl8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
-							<div class="video__caption limit--s">
-								Filter-Verteilaktion
+							<div class="video__caption limit--s"><br>
+								<a href="https://www.youtube.com/watch?v=upMR4T4lKl8" target="new">
+									Wikimedia Deutschland – Aktion gegen Upload-Filter
+								</a>
+								<br>
+								Aufnahme und Schnitt: halt die klappe für Wikimedia Deutschland,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">
+									CC BY-SA 4.0
+								</a>
 							</div>
 						</div>
 					</div>

@@ -6,7 +6,18 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			<a href="https://commons.wikimedia.org/wiki/User:Tjane_Hartenstein_%28WMDE%29" target="new">Tjane Hartenstein (WMDE)</a>, <a href="https://commons.wikimedia.org/wiki/File:Gemeinsam_wissen_wir_mehr_–_Wikimedia_Deutschland.jpg" target="new">Gemeinsam wissen wir mehr – Wikimedia Deutschland</a>, Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">CC BY-SA 4.0</a>
+			Wikimedia – eine internationale Bewegung für Freies Wissen<br>
+			Jason Krüger for Wikimedia Deutschland e.V.,
+
+			<a href="https://commons.wikimedia.org/wiki/File:Wikimedia_Conference_2018,_Group_photo_%282%29.jpg" target="new">
+				Wikimedia Conference 2018, Group photo (2)
+			</a>,
+
+			Ausschnitt von <a href="https://atelierdisko.de" target="new">Atelier Disko</a> für WMDE,
+
+			<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+				CC BY-SA 4.0
+			</a>
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
@@ -57,7 +68,13 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/dlC4-SQKXJM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Warum Wissen frei sein sollte
+								<a href="https://www.youtube.com/watch?v=dlC4-SQKXJM&t" target="new">
+									Warum Wissen frei sein sollte
+								</a><br>
+								Konzept & Skript: Elisabeth Mandl und Lisa Dittmer, Zusätzliche Illustrationen: riesenspatz Infoillustration, Sprecher: Florian Maerlender,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="new">
+									CC BY-SA 4.0
+								</a>
 							</div>
 						</div>
 					</div>

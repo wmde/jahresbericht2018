@@ -64,7 +64,14 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/8_URZDvowZQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								Coding da Vinci Berlin 2017
+								<a href="hhttps://youtu.be/8_URZDvowZQ" target="new">
+									Coding da Vinci Berlin 2017
+								</a>
+								<br>
+								Helmbrecht Film Productions for Wikimedia Deutschland,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">
+									CC BY-SA 4.0
+								</a>
 							</div>
 						</div>
 					</div>

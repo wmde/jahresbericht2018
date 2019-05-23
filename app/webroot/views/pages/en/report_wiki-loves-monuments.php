@@ -71,7 +71,14 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/UaceBXVYOKI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
+								<a href="https://www.youtube.com/watch?v=UaceBXVYOKI" target="new">
 								Wiki Loves Monuments 2018
+								</a>
+								<br>
+								Content: Elisabeth Mandl, camera and editing: Joachim Köhler for Wikimedia Deutschland,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">
+									CC BY-SA 4.0
+								</a>
 							</div>
 						</div>
 					</div>

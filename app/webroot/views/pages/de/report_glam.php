@@ -58,7 +58,14 @@
 								<iframe src="https://www.youtube-nocookie.com/embed/PwYEfx4ojx0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</div>
 							<div class="video__caption limit--s">
-								GLAM on Tour
+								<a href="https://commons.wikimedia.org/wiki/File:GLAM_on_Tour_2018_Wikimedia_deutsch.webm" target="new">
+									GLAM on Tour: Wikipedia zu Gast im Jagdschloss Grunewald
+								</a>
+								<br>
+								Bear Film für Wikimedia Deutschland,
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">
+									CC BY-SA 4.0
+								</a>
 							</div>
 						</div>
 					</div>

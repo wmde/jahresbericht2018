@@ -68,7 +68,14 @@
 								</video>
 							</div>
 							<div class="video__caption limit--s">
+								<a href="https://www.youtube.com/watch?v=UaceBXVYOKI" target="new">
 								Knowledge belongs to all of us
+								</a>
+								<br>
+								Video by Victor Grigas, Wikimedia Foundation, Cinematography by Anne Braun, Music by Wake and Lawrence Grey
+								<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="new">
+									CC BY-SA 4.0
+								</a>
 							</div>
 						</div>
 					</div>
