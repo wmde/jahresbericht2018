@@ -815,8 +815,8 @@ a:focus {
 .nav__list--upper a {
   color: white;
 }
-.nav__list--upper a:nth-last-of-type(2) {
-  margin: 0 20px 0 20px;
+.nav__list--upper a + a {
+  margin-left: 20px;
 }
 .nav__list--upper a:hover {
   opacity: 0.5;
@@ -3254,6 +3254,8 @@ a:focus {
   right: 94%;
 }
 
+/* TODO: Delete when adding PDF */
 .nav__list--upper .pdf-download {
-  pointer-events: none; /* TODO: Delete ehen adding PDF */
+  display: none;
+  pointer-events: none;
 }

@@ -33,7 +33,7 @@
 			</div>
 			<p class="h--gamma">
 				Wikimedia Deutschland –<br>
-				Gesellschaft zur Förderung&nbsp;Freien&nbsp;Wissens&nbsp;e.V.
+				Gesellschaft zur Förderung Freien Wissens&nbsp;e.&nbsp;V.
 			</p>
 			<div class="section__body t--gamma-serif">
 				<p>
