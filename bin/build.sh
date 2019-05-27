@@ -19,6 +19,12 @@ set -o pipefail
 
 source Envfile
 
+# Replace special version string, wherever we find it.
+for f in $(grep -R -l __PROJECT_VERSION__ app); do
+	sed -i -e "s|__PROJECT_VERSION__|$(cat VERSION.txt)|g" $f
+	rm -f ${f}*-e
+done
+
 # Restricts assets building to app's assets. Libraries must
 # provide their own buildscript when they ship assets. This
 # is because we cannot know if certain assets will need
