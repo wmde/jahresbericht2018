@@ -22,7 +22,7 @@
 			<h2 class="h--gamma">Expenditures</h2>
 			<p class="t--gamma-serif finance__p">
 				Expenditures increased to EUR 8.9 million (previous year: EUR 6.8 million). Personnel costs increased to EUR 4.4 million (previous year: EUR 3.5 million). Operational costs also rose to EUR 4.4 million (previous year: EUR 3.2 million), of which EUR 0.8 million are costs related to the aforementioned inheritance, including payments to a legatee.</br>
-				The summary „<a href="<?= $url('finance/assn', $lang) ?>">Use of funds</a>“ provides more detailed information on the use of funds.
+				The summary „<a href="#use-of-funds">Use of funds</a>“ provides more detailed information on the use of funds.
 			</p>
 			<h2 class="h--gamma">Unused Donations / Reserves</h2>
 			<p class="t--gamma-serif finance__p">
@@ -44,7 +44,7 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m">
-			<h2 class="h--beta ft__heading">
+			<h2 class="h--beta ft__heading" id="use-of-funds">
 				Use of funds
 			</h2>
 			<div class="ft-wrapper ft-wrapper--four-column">
