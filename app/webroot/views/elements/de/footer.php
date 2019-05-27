@@ -68,7 +68,7 @@
 					<h1 class="h--delta">Lizenzhinweise</h1>
 
 					<span class="h--delta">Konzeption:</span>
-					<span class="t--delta-serif"> Tjane Hartenstein, Elisabeth Mandl, Atelier Disko</span><br>
+					<span class="t--delta-serif"> Tjane Hartenstein, Atelier Disko</span><br>
 
 					<span class="h--delta">Redaktion:</span>
 					<span class="t--delta-serif"> Tjane Hartenstein</span><br>

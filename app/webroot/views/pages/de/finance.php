@@ -168,6 +168,16 @@
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-18.206.598 €</td>
 					</tr>
+					<tr class="ft__row-low ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+					</tr>
 					<tr class="ft__row-line--white">
 						<td class="ft__col-key--main">Handlungsfeld Freiwillige</td>
 						<td class="ft__col-val">-1.680.784 €</td>
@@ -274,7 +284,7 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m">
-			* 797.524 € dieser Aufwendungen sind im Sonderfaktor “Erbschaft” aus dem Jahr 2013 begründet. Aufgrund vorheriger Rechtsunsicherheit wurde diese erst in 2018 erfolgswirksam verbucht.
+			* 797.524 € dieser Aufwendungen sind im Sonderfaktor „Erbschaft“ aus dem Jahr 2013 begründet. Aufgrund vorheriger Rechtsunsicherheit wurde diese erst in 2018 erfolgswirksam verbucht.
 		</div>
 	</section>
 	<secion class="section section__body cp">

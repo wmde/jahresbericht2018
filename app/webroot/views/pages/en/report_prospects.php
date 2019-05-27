@@ -68,7 +68,7 @@
 								</video>
 							</div>
 							<div class="video__caption limit--s">
-								<a href="https://www.youtube.com/watch?v=UaceBXVYOKI" target="new">
+								<a href="https://commons.wikimedia.org/wiki/File:Knowledge_belongs_to_all_of_us_-_2030.wikimedia.org.webm" target="new">
 								Knowledge belongs to all of us
 								</a>
 								<br>

@@ -70,7 +70,7 @@
 					<h1 class="h--delta">Credits</h1>
 
 					<span class="h--delta">Concept:</span>
-					<span class="t--delta-serif"> Tjane Hartenstein, Elisabeth Mandl, Atelier Disko</span><br>
+					<span class="t--delta-serif"> Tjane Hartenstein, Atelier Disko</span><br>
 
 					<span class="h--delta">Editor:</span>
 					<span class="t--delta-serif"> Tjane Hartenstein</span><br>

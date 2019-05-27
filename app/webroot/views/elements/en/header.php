@@ -10,7 +10,7 @@ if (isset($report)) {
 } elseif ($path === '/report/monuments') {
 	$title[] = 'Wikipedia Loves Monuments';
 } elseif ($path === '/finance') {
-	$title[] = 'Finanzreport';
+	$title[] = 'Finanzbericht';
 } elseif ($path === '/finance/assn') {
 	$title[] = 'Finanzen WMDE e. V.';
 } elseif ($path === '/finance/fund') {

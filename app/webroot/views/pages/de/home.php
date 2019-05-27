@@ -127,31 +127,31 @@
 		<div class="chart__bars chart-bars loading">
 				<div class="chart-bars__texts">
 					<p class="chart-bars__text">
-						<span class="chart-bars__text--date t--epsilon">01.03.2019</span>
+						<span class="chart-bars__text--date t--epsilon">März 2019</span>
 						<span class="chart-bars__text--number t--epsilon-emph">72.611</span>
 					</p>
 					<p class="chart-bars__text">
-						<span class="chart-bars__text--date t--epsilon">01.03.2018</span>
+						<span class="chart-bars__text--date t--epsilon">März 2018</span>
 						<span class="chart-bars__text--number t--epsilon-emph">65.374</span>
 					</p>
 					<p class="chart-bars__text">
-						<span class="chart-bars__text--date t--epsilon">01.03.2017</span>
+						<span class="chart-bars__text--date t--epsilon">März 2017</span>
 						<span class="chart-bars__text--number t--epsilon-emph">43.138</span>
 					</p>
 					<p class="chart-bars__text">
-						<span class="chart-bars__text--date t--epsilon">01.03.2016</span>
+						<span class="chart-bars__text--date t--epsilon">März 2016</span>
 						<span class="chart-bars__text--number t--epsilon-emph">29.169</span>
 					</p>
 					<p class="chart-bars__text">
-						<span class="chart-bars__text--date t--epsilon">01.03.2015</span>
+						<span class="chart-bars__text--date t--epsilon">März 2015</span>
 						<span class="chart-bars__text--number t--epsilon-emph">15.778</span>
 					</p>
 					<p class="chart-bars__text">
-						<span class="chart-bars__text--date t--epsilon">01.03.2014</span>
+						<span class="chart-bars__text--date t--epsilon">März 2014</span>
 						<span class="chart-bars__text--number t--epsilon-emph">9.803</span>
 					</p>
 					<p class="chart-bars__text">
-						<span class="chart-bars__text--date t--epsilon">01.03.2013</span>
+						<span class="chart-bars__text--date t--epsilon">März 2013</span>
 						<span class="chart-bars__text--number t--epsilon-emph">2.618</span>
 					</p>
 				</div>

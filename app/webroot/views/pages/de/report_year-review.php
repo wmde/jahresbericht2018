@@ -58,7 +58,7 @@
 				</p>
 				<div class="section__body t--gamma-serif">
 					<p>
-						Mit Blick auf die politischen und rechtlichen Rahmenbedingungen konnte wir 2018 feststellen, dass unser wachsendes Netzwerk es uns zunehmend ermöglicht, wichtige Argumente bei Institutionen und Entscheidenden zu platzieren und auch Gehör zu finden. Gerade in Hinblick auf die EU-Urheberrechtsreform konnten wir Freies Wissen auch auf europäischer Ebene als wichtiges Thema etablieren. Unsere Zusammenarbeit mit Kultur- Bildungs- und Wissenschaftsinstitutionen konnten wir erfolgreich fortführen und weiterentwickeln.
+						Mit Blick auf die politischen und rechtlichen Rahmenbedingungen konnte wir 2018 feststellen, dass unser wachsendes Netzwerk es uns zunehmend ermöglicht, wichtige Argumente bei Institutionen und Entscheidenden zu platzieren und auch Gehör zu finden. Gerade in Hinblick auf die EU-Urheberrechtsreform konnten wir Freies Wissen auch auf europäischer Ebene als wichtiges Thema etablieren. Unsere Zusammenarbeit mit Kultur-, Bildungs- und Wissenschaftsinstitutionen konnten wir erfolgreich fortführen und weiterentwickeln.
 					</p>
 					<p>
 						2018 führten wir unsere bisher erfolgreichste Spendenkampagne durch, im Rahmen derer uns rund 360.000 Menschen unterstützten. Wir konnten erneut eine große Anzahl neuer Mitglieder begrüßen. Mehr als 70.000 Menschen (Stand: März 2019) engagieren sich inzwischen gemeinsam mit uns für Freies Wissen. Auf dieser Basis werden wir gemeinsam mit unseren Partnerorganisationen und den vielen Tausend Ehrenamtlichen der Wikimedia-Projekte auch 2019 die Zukunft für Freies Wissen aktiv gestalten.

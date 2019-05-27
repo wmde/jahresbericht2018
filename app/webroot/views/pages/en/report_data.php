@@ -66,7 +66,7 @@
 						Blog:
 						<a href="https://blog.wikimedia.de/2019/03/25/lexicographical-data-on-wikidata-words-words-words/" target="new">Lexicographical data on Wikidata</a>
 					<li>
-						Article Game: <a href="http://auregann.fr/derdiedas/" target="new">german</a>, <a href="http://auregann.fr/unune" target="new">french</a>, <a href="https://tools.wmflabs.org/enet/" target="new">danish</a>
+						Article Game: <a href="http://auregann.fr/derdiedas/" target="new">German</a>, <a href="http://auregann.fr/unune" target="new">French</a>, <a href="https://tools.wmflabs.org/enet/" target="new">Danish</a>
 				</ul>
 			</div>
 		</div>

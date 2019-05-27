@@ -17,11 +17,11 @@
 		<div class="limit--s">
 			<h2 class="h--gamma">Revenues</h2>
 			<p class="t--gamma-serif finance__p">
-				According to accounting, revenues increased to EUR 8.9 million in 2018 (compared with EUR 6.8 million in the previous year). Revenues from membership fees increased significantly to EUR 3.2 million (previous year: EUR 2.5 million), as the number of members rose to 65,439 as of December 31 (previous year: 52,650). Although donation revenues dropped nominally to EUR 1.1 million (previous year: EUR 2.3 million), other revenues increased to EUR 4.5 million (previous year: EUR 1.9 million). This was mainly due to the fact that an inheritance of EUR 1.9 million from 2013 was not recognised in the income statement until 2018 due to previous legal uncertainty.
+				According to accounting, revenues increased to EUR 8.9 million in 2018 (compared with EUR 6.8 million in the previous year). Revenues from membership fees increased significantly to EUR 3.2 million (previous year: EUR 2.5 million), as the number of members rose to 65,439 as of December 31 (previous year: 52,650). Although donation revenues dropped nominally to EUR 1.1 million (previous year: EUR 2.3 million), other revenues increased to EUR 4.5 million (previous year: EUR 1.9 million). This was mainly due to the fact that an inheritance of EUR 1.9 million from 2013 was not recognised in the profit and loss statement until 2018 due to previous legal uncertainty.
 			</p>
 			<h2 class="h--gamma">Expenditures</h2>
 			<p class="t--gamma-serif finance__p">
-				Expenditures increased to EUR 8.9 million (previous year: EUR 6.8 million). Personnel costs increased by EUR 4.4 million (previous year: EUR 3.5 million). Operational costs also rose to EUR 4.4 million (previous year: EUR 3.2 million), of which EUR 0.8 million are costs related to the aforementioned inheritance, including payments to a legatee.</br>
+				Expenditures increased to EUR 8.9 million (previous year: EUR 6.8 million). Personnel costs increased to EUR 4.4 million (previous year: EUR 3.5 million). Operational costs also rose to EUR 4.4 million (previous year: EUR 3.2 million), of which EUR 0.8 million are costs related to the aforementioned inheritance, including payments to a legatee.</br>
 				The summary „<a href="<?= $url('finance/assn', $lang) ?>">Use of funds</a>“ provides more detailed information on the use of funds.
 			</p>
 			<h2 class="h--gamma">Unused Donations / Reserves</h2>
@@ -38,7 +38,7 @@
 			</p>
 			<h2 class="h--gamma">Auditing</h2>
 			<p class="t--gamma-serif finance__p">
-				Wikimedia Deutschland voluntarily allows audits of internal processes, the allocation of donations as well as the assets, earnings and financial situation. The audit of Wikimedia Deutschland - Gesellschaft zur Förderung Freien Wissens e. V. and Gemeinnützige Wikimedia Fördergesellschaft mbH was conducted by KWP Revision GmbH Wirtschaftsprüfungsgesellschaft Berlin in December 2018 and March 2019. An unqualified audit opinion was issued. Accordingly, the accounts of the <a href="https://commons.wikimedia.org/wiki/File:2018_JAP_wmfg_Bestätigungsvermerk_Englisch.pdf" target="new">organization</a> and the <a href="https://commons.wikimedia.org/wiki/File:2018_JAP_wmde_Bestätigungsvermerk_Englisch.pdf" target="new">Fördergesellschaft</a> were kept properly and with due diligence, and the audit did not lead to any objections.
+				Wikimedia Deutschland voluntarily allows audits of internal processes, the allocation of donations as well as the assets, earnings and financial situation. The audit of Wikimedia Deutschland - Gesellschaft zur Förderung Freien Wissens e. V. and Gemeinnützige Wikimedia Fördergesellschaft mbH was conducted by KWP Revision GmbH Wirtschaftsprüfungsgesellschaft Berlin in December 2018 and March 2019. An unqualified audit certificate was issued. Accordingly, the accounts of the <a href="https://commons.wikimedia.org/wiki/File:2018_JAP_wmde_Bestätigungsvermerk_Englisch.pdf" target="new">organization</a> and the <a href="https://commons.wikimedia.org/wiki/File:2018_JAP_wmfg_Bestätigungsvermerk_Englisch.pdf" target="new">Fördergesellschaft</a> were kept properly and with due diligence, and the audit did not lead to any objections.
 			</p>
 		</div>
 	</section>
@@ -170,6 +170,16 @@
 						<td class="ft__col-void"></td>
 						<td class="ft__col-val">-18.206.598 €</td>
 					</tr>
+					<tr class="ft__row-low ft__row-line">
+						<td class="ft__col-key">&nbsp;</td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+						<td class="ft__col-void"></td>
+						<td class="ft__col-val ft__empty"></td>
+					</tr>
 					<tr class="ft__row-line--white">
 						<td class="ft__col-key--main">Field of action Volunteers</td>
 						<td class="ft__col-val">-1.680.784 €</td>
@@ -276,7 +286,7 @@
 	</section>
 	<section class="section cp">
 		<div class="limit--m">
-			*797,524 of these expenses are due to the extraordinary item "inheritance" from 2013. Due to previous legal uncertainty, this was not recognised in the profit and loss statement until 2018.
+			*797,524 € of these expenditures are due to the extraordinary item "inheritance" from 2013. Due to previous legal uncertainty, this was not recognised in the profit and loss statement until 2018.
 		</div>
 	</section>
 	<secion class="section section__body cp">
