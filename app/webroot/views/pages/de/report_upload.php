@@ -6,7 +6,7 @@
 	</section>
 	<section class="section cp report-detail__text">
 		<div class="report-detail hero__caption t--zeta">
-			Gemeinsam für ein freies Internet: 2018 haben wir uns mit Partnern aus Internetwirtschaft und Zivilgesellschaft gegen Upload-Filter engagiert.<br>
+			Gemeinsam für ein freies Internet: 2018 haben wir uns mit Partnerorganisationen aus Internetwirtschaft und Zivilgesellschaft gegen Upload-Filter engagiert.<br>
 			Christian Schneider
 
 			<a href="https://commons.wikimedia.org/wiki/File:No-Upload-Filter_Verteilaktion_%286%29.jpg" target="new">

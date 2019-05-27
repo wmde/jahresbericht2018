@@ -20,7 +20,7 @@
 			<h2 class="h--gamma">Aufwendungen</h2>
 			<p class="t--gamma-serif finance__p">
 				Die Höhe der Aufwendungen stieg auf 8,9 Mio. Euro (Vorjahr 6,8 Mio. Euro). Steigerungen gab es bei den Personalaufwendungen in Höhe von 4,4 Mio. Euro (Vorjahr: 3,5 Mio. Euro). Auch bei den betrieblichen Aufwendungen ist ein Anstieg auf 4,4 Mio. Euro (Vorjahr 3,2 Mio. Euro) zu verzeichnen, wobei davon 0,8 Mio. Euro Aufwendungen im Zusammenhang mit der erwähnten Erbschaft sind, darunter Zahlungen an eine Vermächtnisnehmerin.</br>
-				Aus der Übersicht „<a href="<?= $url('finance/assn', $lang) ?>">Mittelverwendung</a>“ wird die inhaltliche Verwendung der Mittel genauer ersichtlich.
+				Aus der Übersicht „<a href="#mittelverwendung">Mittelverwendung</a>“ wird die inhaltliche Verwendung der Mittel genauer ersichtlich.
 			</p>
 			<h2 class="h--gamma">Noch nicht verbrauchte Spendenmittel / Rücklagen</h2>
 			<p class="t--gamma-serif finance__p">
@@ -40,7 +40,7 @@
 			</p>
 		</div>
 	</section>
-	<section class="section cp">
+	<section class="section cp" id="mittelverwendung">
 		<div class="limit--m">
 			<h2 class="h--beta ft__heading">
 				Mittelverwendung

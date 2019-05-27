@@ -14,7 +14,7 @@
 		</div>
 		<div class="limit--s">
 			<h1 class="section__title h--beta">
-				<em>Lexikografische Daten in Wikidata: Wörter, Wörter, Wörter</em>
+				<em>lexikographische Daten in Wikidata: Wörter, Wörter, Wörter</em>
 			</h1>
 			<div class="section__teaser t--gamma">
 				Sprache macht unsere Welt schön, vielfältig und kompliziert. Unsere freie Wissensdatenbank <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" target="new">Wikidata</a> ist ein mehrsprachiges Projekt, das die mehr als 300 Sprachen der Wikimedia-Projekte bedient. Diese Mehrsprachigkeit im Kern von Wikidata bedeutet, dass von Anfang an jedes eingetragene Element zu einem Wissensgegenstand und jede Eigenschaft, die dieses Element beschreibt, eine Bezeichnung in einer der unterstützten Sprachen tragen kann. Dadurch wird Wikidata zu einer polyglotten Wissensdatenbank, die die Sprache ihrer Benutzerinnen und Benutzer spricht.
@@ -52,7 +52,7 @@
 					Natürlich können lexikographische Daten genauso abgefragt werden, wie andere Daten auch. Über Abfragen können beispielsweise tolle neue Anwendungen erstellt werden. Einer der häufigsten Gründe für Kopfschmerzen bei Deutschlernenden sind die Artikel von Substantiven: der, die, das. Dabei scheint es nur wenig Logik zu geben, was meist bedeutet, dass Artikel auswendig gelernt werden müssen. Zum Glück gibt es ein Spiel, das lexikographische Daten in Wikidata verwendet, um das Auswendiglernen einfacher zu machen: <a href="http://auregann.fr/derdiedas/" target="new">DerDieDas</a>. Wer schafft 10 zufällig ausgewählte deutsche Substantive mit dem richtigen Artikel? Für diejenigen, die bereits Deutsch sprechen, gibt es auch eine <a href="http://auregann.fr/unune" target="new">französische</a> und eine <a href="https://tools.wmflabs.org/enet/" target="new">dänische</a> Version.
 				</p>
 				<p>
-					Wikidata verfügt derzeit (Stand März 2019) über 43.440 Lexeme in 315 verschiedenen Sprachen, Dialekten oder Schriften. Das ist zwar bereits ein guter Anfang, aber es ist eindeutig nur der erste Schritt. Die Erforschung lexikografischer Daten auf Wikidata kann also beginnen –  zusammen können wir einen neuen Fundus für Freies Wissen an Sprachdaten aufbauen!
+					Wikidata verfügt derzeit (Stand März 2019) über 43.440 Lexeme in 315 verschiedenen Sprachen, Dialekten oder Schriften. Das ist zwar bereits ein guter Anfang, aber es ist eindeutig nur der erste Schritt. Die Erforschung lexikographischer Daten auf Wikidata kann also beginnen –  zusammen können wir einen neuen Fundus für Freies Wissen an Sprachdaten aufbauen!
 				</p>
 			</div>
 		</div>

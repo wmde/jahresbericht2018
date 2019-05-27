@@ -47,10 +47,10 @@
 					</div>
 				<?php endif ?>
 				<p>
-					Zur besseren Veranschaulichung unserer Forderung, Daten politisch nicht nur als Ware oder Machtfaktor, sondern auch als Gemeingut anzusehen, haben wir 2018 die Daten-Grundwasserpumpe bauen lassen. Oben auf der Pumpe befindet sich ein Display. Wird der Schwengel der Pumpe bedient, füllt sich das “Wasserbecken” mit blauem LED-Licht, bis der Wasserstand den Bildschirm erreicht hat. Dort werden dann vordefinierte Abfragen unserer freien Wissendatenbank Wikidata angezeigt: zum Beispiel eine Weltkarte mit allen Flughäfen, die nach Frauen benannt sind, oder das Durchschnittsalter der aktuellen Bundestagsabgeordneten – alles live übers Netz abgefragt.
+					Zur besseren Veranschaulichung unserer Forderung, Daten politisch nicht nur als Ware oder Machtfaktor, sondern auch als Gemeingut anzusehen, haben wir 2018 die Daten-Grundwasserpumpe bauen lassen. Oben auf der Pumpe befindet sich ein Display. Wird der Schwengel der Pumpe bedient, füllt sich das „Wasserbecken“ mit blauem LED-Licht, bis der Wasserstand den Bildschirm erreicht hat. Dort werden dann vordefinierte Abfragen unserer freien Wissendatenbank Wikidata angezeigt: zum Beispiel eine Weltkarte mit allen Flughäfen, die nach Frauen benannt sind, oder das Durchschnittsalter der aktuellen Bundestagsabgeordneten – alles live übers Netz abgefragt.
 				</p>
 				<p>
-					Wikimedia Deutschland versteht den Zugang zu Wissen und Bildung als Menschenrecht. Mit der 2018 vorgestellten Metapher von “Daten als Grundwasser” zeigen wir auf, dass Daten über unsere Welt (wie Wetter-, Verkehrs-, demographische Daten) als Gemeingut allen Menschen frei zur Verfügung stehen sollten.
+					Wikimedia Deutschland versteht den Zugang zu Wissen und Bildung als Menschenrecht. Mit der 2018 vorgestellten Metapher von „Daten als Grundwasser“ zeigen wir auf, dass Daten über unsere Welt (wie Wetter-, Verkehrs-, demographische Daten) als Gemeingut allen Menschen frei zur Verfügung stehen sollten.
 				</p>
 			</div>
 		</div>
