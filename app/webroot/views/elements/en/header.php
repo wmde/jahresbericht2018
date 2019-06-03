@@ -1,7 +1,7 @@
 <?php
 
 // Page Title Controller
-$title = ['Annual Report 2017'];
+$title = ['Annual Report 2018'];
 
 if (isset($report)) {
 	$title[] = $report['title'][$lang];
